@@ -123,7 +123,7 @@ border-radius: 5px;        /* CSS3草案 */
 	width: 100%;
 	background-color: rgb(191, 191, 191);
 	min-height: 500px;
-	padding: 125px 0 0 0;
+	padding: 125px 0 125px 0;
 
 }
 .midashi {
