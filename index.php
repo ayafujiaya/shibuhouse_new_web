@@ -56,10 +56,10 @@
 				<div class="flexslider">
 					<ul class="slides">
 						<li>
-							<img src="img/aeri/06.JPG"/>
+							<img src="http://www.denden-town.or.jp/audition2013/aeri/aeri603-1.JPG"/>
 						</li>
 						<li>
-							<img src="img/aeri/03.JPG"/>
+							<img src="http://www.denden-town.or.jp/audition2013/aeri/aeri527-1.JPG"/>
 						</li>
 					</ul>
 				</div>
@@ -81,12 +81,27 @@
 			</div><!-- #hot_topics -->
 			<div id="content">
 				<div id="what" class="midashi">
+					<div style="padding-top:28px; padding-bottom:26px;" class="inner_midashi">
+						<img  style="margin-bottom:47px" src="./img/whats_shibuhouse.png">
+					<div class="midashi_text">
+						集団的知性（しゅうだんてきちせい、英語：Collective Intelligence、CI）は、多くの個人の協力と競争の中から、その集団自体に知能、精神が存在するかのように見える知性である。Peter Russell（1983年）、Tom Atlee（1993年）、Howard Bloom（1995年）、Francis Heylighen（1995年）、ダグラス・エンゲルバート、Cliff Joslyn、Ron Dembo、Gottfried Mayer-Kress（2003年）らが理論を構築した。
+					</div>
+					<img style="margin:0 auto; display: block;" src="./img/hatena_midashi.png">
+					<img style="margin:0 auto; display: block;" src="./img/about_midahsi.png">
+					</div><!-- .inner_midashi -->
+
 				</div><!-- #what -->
 				<div id="bio" class="midashi">
+					<div class="inner_midashi">
+					</div>
 				</div><!-- #bio -->
 				<div id="member" class="midashi">
+					<div class="inner_midashi">
+					</div>
 				</div><!-- member -->
 				<div id="information" class="midashi">
+					<div class="inner_midashi">
+					</div>
 				</div><!-- #information -->
 			</div><!-- #content -->
 		</div><!-- #wrap -->

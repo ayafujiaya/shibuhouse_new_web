@@ -115,3 +115,40 @@ border-radius: 5px;        /* CSS3草案 */
 	position: absolute;
 	top: 5px;
 }
+
+
+#content {
+	position: relative;
+	display: block;
+	width: 100%;
+	background-color: rgb(191, 191, 191);
+	min-height: 500px;
+	padding: 125px 0 0 0;
+
+}
+.midashi {
+	display: block;
+	margin:100px auto 100px auto;
+	min-width: 1040px;
+	max-width: 1040px;
+	min-height: 100px;
+	background-color: #FFFFFF;
+	border-radius: 5px;        /* CSS3草案 */  
+    -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 5px;   /* Firefox用 */ 
+}
+.inner_midashi{
+	display: block;
+	width: 780px;
+	margin: 0 auto 0 auto;
+}
+.midashi_text {
+	line-height: 20px;
+	margin: 0 auto 48px auto;
+
+}
+
+
+#what {
+	margin:0px auto 100px auto;
+}
