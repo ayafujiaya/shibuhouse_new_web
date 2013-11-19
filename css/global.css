@@ -107,7 +107,7 @@ border-radius: 5px;        /* CSS3草案 */
 }
 
 .topics_date {
-	margin:33px;
+	margin:0px 10px 0px 30px;
 	height: 22px;
 }
 .arrow {
