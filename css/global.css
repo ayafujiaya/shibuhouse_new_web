@@ -19,6 +19,7 @@ a {
 	width: 100%;
 	padding: 13px 0 30px 0;
 	position: fixed;
+	opacity: 0.8;
 }
 #logo {
 	float: left;
