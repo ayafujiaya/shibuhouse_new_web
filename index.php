@@ -54,20 +54,36 @@
 
 				<div id="bio" class="midashi">
 					<div style="padding-top:28px; padding-bottom:26px;" class="inner_midashi">
-						<img src="./img/bio_midashi.png">
-					</div>
-					<div class="midashi_text">
-					</div>
+						<img style="margin-bottom:47px" src="./img/bio_midashi.png">
+						<div class="midashi_text">
+						集団的知性は、細菌、動物、人間、コンピュータなど様々な集団の、意思決定の過程で発生する。集団的知性の研究は、社会学、計算機科学、集団行動の研究[1]などに属する。
+Tom Atlee らは、Howard Bloom が「グループIQ」と呼んだものから一歩進み、人間の集団的知性に研究の焦点をあてている。Atlee は集団的知性を「集団思考（集団浅慮）や個人の認知バイアスに打ち勝って集団が協調し、より高い知的能力を発揮するため」のものと主張している。
+						</div>					
+						<img style="margin:0 auto; display: block;" src="./img/bio_images.png">
+					</div><!-- .inner_midashi -->
 				</div><!-- #bio -->
+
 				<div id="member" class="midashi">
 					<div style="padding-top:28px; padding-bottom:26px;" class="inner_midashi">
-						<img src="./img/member_midashi.png">
-					</div>
+						<img style="margin-bottom:47px" src="./img/member_midashi.png">
+						<div class="midashi_text">
+						集団的知性研究のパイオニアである George Por は、集団的知性現象を「協調と革新を通してより高次の複雑な思考、問題解決、統合を勝ち取りえる、人類コミュニティの能力」と定義している[2]。Tom Atlee と George Por は「集団的知性は、関心をひとつに集中し、適切な行動を選択するための基準を形成する能力がある」と述べている。彼らのアプローチは Scientific Community Metaphor を起源としている。
+						</div>					
+						<img style="margin:0 auto 30px auto; display: block;" src="./img/midashi_smile.png">
+						<img style="margin:0 auto; display: block;" src="./img/midashi_member.png">
+					</div><!-- .inner_midashi -->
 				</div><!-- member -->
+
 				<div id="information" class="midashi">
 					<div style="padding-top:28px; padding-bottom:26px;" class="inner_midashi">
-						<img src="./img/information.png">
-					</div>
+						<img style="margin-bottom:47px" src="./img/information.png">
+						<div class="midashi_text">
+						集合知には、collective intelligence, collective knowledge, wisdom of crowdsなどの異なる英語が対応する。経営学の一分野である知識管理論からのアプローチには、洞口治夫(Horaguchi Haruo)『集合知の経営－日本企業の知識管理戦略－』がある。
+						</div>					
+						<img style="margin:0 auto 30px auto; display: block;" src="./img/midashi_mail.png">
+						<img style="margin:0 auto 16px auto; display: block;" src="./img/call_number.png">
+						<img style="margin:0 auto; display: block;" src="./img/mailadd.png">
+					</div><!-- .inner_midashi -->
 				</div><!-- #information -->
 			</div><!-- #content -->
 		</div><!-- #wrap -->
