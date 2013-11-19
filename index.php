@@ -50,18 +50,23 @@
 					<img style="margin:0 auto; display: block;" src="./img/hatena_midashi.png">
 					<img style="margin:0 auto; display: block;" src="./img/about_midahsi.png">
 					</div><!-- .inner_midashi -->
-
 				</div><!-- #what -->
+
 				<div id="bio" class="midashi">
-					<div class="inner_midashi">
+					<div style="padding-top:28px; padding-bottom:26px;" class="inner_midashi">
+						<img src="./img/bio_midashi.png">
+					</div>
+					<div class="midashi_text">
 					</div>
 				</div><!-- #bio -->
 				<div id="member" class="midashi">
-					<div class="inner_midashi">
+					<div style="padding-top:28px; padding-bottom:26px;" class="inner_midashi">
+						<img src="./img/member_midashi.png">
 					</div>
 				</div><!-- member -->
 				<div id="information" class="midashi">
-					<div class="inner_midashi">
+					<div style="padding-top:28px; padding-bottom:26px;" class="inner_midashi">
+						<img src="./img/information.png">
 					</div>
 				</div><!-- #information -->
 			</div><!-- #content -->
