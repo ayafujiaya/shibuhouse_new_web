@@ -1,1 +1,45 @@
-body {}
+body {
+}
+
+
+#wrap {
+
+
+}
+#header {
+	display: block;
+	height: 40px;
+	background-color:rgb(73, 73, 73);
+	padding: 30px;
+	position: fixed;
+	z-index: 100;
+	width: 100%;
+}
+#logo {
+	float: left;
+	display: inline;
+}
+#nav {
+	float: left;
+	margin-top: -17px;
+	font-size: 12px;
+	color: #FFFFFF;
+}
+
+#nav img{
+	margin-bottom: 5px;
+}
+#text_logo {	
+	font-size:12px; 
+	color:#FFFFFF;
+}
+
+#slide {
+	width:1040px;
+	margin: 0 auto;
+	position: relative;
+	top: 100px;	
+}
+.flexslider {
+	width:1040px;
+}
