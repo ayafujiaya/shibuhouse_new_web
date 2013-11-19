@@ -73,9 +73,9 @@
 				</div><!-- hot_topics_pic -->
 				<div id="hot_topics_text">
 					<ul>
-						<li class="topics"><sep class="topics_date">2013/10/11</sep><img src="./img/arrow.png"><sep class="topics_date">アイコンを作ってみました＝〜〜〜〜〜！！！</sep></li>
-						<li class="topics"><sep class="topics_date">2013/10/11</sep><img src="./img/arrow.png"><sep class="topics_date">アイコンを作ってみました＝〜〜〜〜〜！！！</sep></li>
-						<li class="topics"><sep class="topics_date">2013/10/11</sep><img src="./img/arrow.png"><sep class="topics_date">アイコンを作ってみました＝〜〜〜〜〜！！！</sep></li>
+						<li class="topics"><sep class="topics_date">2013/10/11</sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">アイコンを作ってみました＝〜〜〜〜〜！！！</sep></li>
+						<li class="topics"><sep class="topics_date">2013/10/11</sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">アイコンを作ってみました＝〜〜〜〜〜！！！</sep></li>
+						<li class="topics"><sep class="topics_date">2013/10/11</sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">アイコンを作ってみました＝〜〜〜〜〜！！！</sep></li>
 					</ul>
 				</div><!-- hot_topics_text -->
 			</div><!-- #hot_topics -->

@@ -89,6 +89,7 @@ a {
 }
 
 .topics {
+	position: relative;
 	background-color:rgb(73, 73, 73);
 	list-style: none;
 margin: 10px;
@@ -96,7 +97,7 @@ color: #FFFFFF;
 border-radius: 5px;        /* CSS3草案 */  
     -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
     -moz-border-radius: 5px;   /* Firefox用 */ 
-    line-height: 30px;
+    line-height: 32px;
 }
 
 
@@ -106,6 +107,10 @@ border-radius: 5px;        /* CSS3草案 */
 }
 
 .topics_date {
-	margin: 20px;
+	margin:33px;
 	height: 22px;
+}
+.arrow {
+	position: absolute;
+	top: 5px;
 }
