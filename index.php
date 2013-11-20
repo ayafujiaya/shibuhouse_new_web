@@ -19,13 +19,13 @@
 				<div class="flexslider">
 					<ul class="slides">
 						<li>
-							<img src="http://www.denden-town.or.jp/audition2013/aeri/aeri22-1.JPG">
+							<img src="./img/aeri/aeri603-1 copy.jpg">
 						</li>
 						<li>
-							<img src="http://www.denden-town.or.jp/audition2013/aeri/aeri603-1.JPG"/>
+							<img src="./img/aeri/aeri527-1 copy.jpg"/>
 						</li>
 						<li>
-							<img src="http://www.denden-town.or.jp/audition2013/aeri/aeri527-1.JPG"/>
+							<img src="./img/aeri/aeri610-2 copy.jpg"/>
 						</li>
 					</ul>
 				</div>
