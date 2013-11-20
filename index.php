@@ -96,7 +96,7 @@ Tom Atlee らは、Howard Bloom が「グループIQ」と呼んだものから�
 			<img src="./img/site_map.png">
 			<div id="footer_table">
 				<table>
-					<tr align="center" style="margin:0 100px 0 25px">
+					<tr align="center" style="margin:0 100px 0 25px;">
 						<td style="padding-right:75px;"><img src="./img/house.png"></td>
 						<td style="padding-right:75px;"><img src="./img/hatena.png"></td>
 						<td style="padding-right:75px;"><img src="./img/document.png"></td>
@@ -115,6 +115,23 @@ Tom Atlee らは、Howard Bloom が「グループIQ」と呼んだものから�
 						<td style="padding-right:75px;">info</td>
 						<td style="padding-right:75px;">Twitter</td>
 						<td style="padding-right:0px;">Facebook</td>
+					</tr>
+					<tr align="left">
+						<td style=""></td>
+						<td style="">
+							<ul>
+								<li>concept</li>
+								<li>what is a shibuhouse?</li>
+								<li>contact</li>
+							</ul>
+						</td>
+						<td style="">
+						</td>
+						<td style=""></td>
+						<td style=""></td>
+						<td style=""></td>
+						<td style=""></td>
+						<td style="padding-right:0px;"></td>
 					</tr>
 				</table>
 			</div><!-- #footer_tale -->
