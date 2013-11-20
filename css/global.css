@@ -203,6 +203,7 @@ border-radius: 5px;        /* CSS3草案 */
 }
 
 footer {
+	clear: both;
 	display: block;
 	width: 100%;
 	min-height: 300px;
@@ -223,4 +224,76 @@ footer {
 	margin: 0 auto;
 	width: 480px;
 	padding: 10px;
+}
+
+
+#member_midashi {
+	display: block;
+	width: 1040px;
+padding-top: 125px;
+margin: 0 auto;
+}
+
+#member_midashi_text {
+	padding-top: 61px;
+margin-left: 147px;
+line-height: 26px;
+}
+
+#member_profile {
+	float:left;
+	display: block;
+	min-height: 500px;
+	width: 100%;
+	min-width: 1240px;
+	margin-top: 30px;
+	margin-bottom: 50px;
+	background-color: rgb(58,58,58);
+	padding-bottom: 65px;
+}
+
+#member_profile img {
+		border-radius: 5px;        /* CSS3草案 */  
+    -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 5px;   /* Firefox用 */ 
+}
+
+#inner_member_profile {
+	display: block;
+	width: 1040px;
+	margin: 0 auto;
+	color: #FFFFFF;
+	padding-top: 65px;
+}
+
+.small_image {
+	width: 165px;
+	height:247px;
+
+}
+
+.profile {
+	float: left;
+	width: 166px;
+	height: 247px;
+	position: relative;
+	margin: 3px;
+}
+
+.profile_name {
+	width: 165px;
+	position: absolute;
+	top: 0px;
+	left:0px;
+	background-color: #000000;
+	opacity: 0.7;
+	z-index: 2;
+	padding-top: 221px;
+			border-radius: 5px;        /* CSS3草案 */  
+    -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 5px;   /* Firefox用 */ 
+}
+
+.full_name {
+	margin:5px;
 }

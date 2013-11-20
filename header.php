@@ -32,7 +32,7 @@
 							<td class="nav_image" style="padding:0 50px;"><a href="./about.php"><img src="./img/about.png"></a></td>
 							<td class="nav_image" style="padding:0 50px;"><img src="./img/bio.png"></td>
 							<td class="nav_image" style="padding:0 50px;"><img src="./img/life.png"></td>
-							<td class="nav_image" style="padding:0 50px;"><img src="./img/member.png"></td>
+							<td class="nav_image" style="padding:0 50px;"><a href="./member.php"><img src="./img/member.png"></a></td>
 						</tr>
 						<tr>
 							<td style="padding:0 45px;">アバウト＞</td>
