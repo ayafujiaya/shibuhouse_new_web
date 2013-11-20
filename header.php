@@ -1,5 +1,4 @@
     <p id="scroll-top" style="bottom: 20px;">
-        <a href="http://costte.shop-pro.jp/#page_top">
             <img src="./img/arrow_to_top.png">
         </a>
     </p>
