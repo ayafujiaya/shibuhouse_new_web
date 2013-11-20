@@ -2,6 +2,8 @@
 				<div class="flexslider">
 					<ul class="slides">
 						<li><img src="./img/aeri/test_image.png"></li>
+						<li><img src="./img/aeri/test_image_02.png"></li>
+						<li><img src="./img/aeri/test_image_03.png"></li>
 						<!--
 						<li>
 							<img src="./img/aeri/aeri603-1 copy.jpg">
