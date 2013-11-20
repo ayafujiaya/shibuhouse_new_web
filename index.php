@@ -19,7 +19,7 @@
 				<div class="flexslider">
 					<ul class="slides">
 						<li>
-							<img src="http://www.arcenciel-g.jp/blog/luxenagoya/files/2010/07/9a5c264c41178a643895bbff5f1ffff6.jpg">
+							<img src="http://mail.denden-town.or.jp/audition2013/aeri/aeri15-1.JPG">
 						</li>
 						<li>
 							<img src="http://www.denden-town.or.jp/audition2013/aeri/aeri603-1.JPG"/>
@@ -92,69 +92,7 @@ Tom Atlee らは、Howard Bloom が「グループIQ」と呼んだものから�
 				</div><!-- #information -->
 			</div><!-- #content -->
 		</div><!-- #wrap -->
-		<footer>
-			<img src="./img/site_map.png">
-			<div id="footer_table">
-				<table>
-					<tr align="center" style="margin:0 100px 0 25px;">
-						<td style="padding-right:75px;"><img src="./img/house.png"></td>
-						<td style="padding-right:75px;"><img src="./img/hatena.png"></td>
-						<td style="padding-right:75px;"><img src="./img/document.png"></td>
-						<td style="padding-right:75px;"><img src="./img/carry.png"></td>
-						<td style="padding-right:75px;"><img src="./img/smile.png"></td>
-						<td style="padding-right:75px;"><img src="./img/mail_footer.png"></td>
-						<td style="padding-right:75px;"><img src="./img/twitter.png"></td>
-						<td style="padding-right:0px;"><img src="./img/facebook.png"></td>
-					</tr>
-					<tr align="center">
-						<td style="padding-right:75px;">home</td>
-						<td style="padding-right:75px;">about</td>
-						<td style="padding-right:75px;">biography</td>
-						<td style="padding-right:75px;">life</td>
-						<td style="padding-right:75px;">member</td>
-						<td style="padding-right:75px;">info</td>
-						<td style="padding-right:75px;">Twitter</td>
-						<td style="padding-right:0px;">Facebook</td>
-					</tr>
-					<tr>
-						<td>---------</td>
-						<td>---------</td>
-						<td>---------</td>
-						<td>---------</td>
-						<td>---------</td>
-						<td>---------</td>
-						<td>---------</td>
-						<td>---------</td>
-					</tr>
-					<tr align="left">
-						<td style=""></td>
-						<td style="">
-							<ul>
-								<li>concept</li>
-								<li>what is a shibuhouse?</li>
-								<li>contact</li>
-							</ul>
-						</td>
-						<td style="">
-							<ul>
-								<li>media</li>
-								<li>art</li>
-								<li>event</li>
-							</ul>
-						</td>
-						<td style=""></td>
-						<td style=""></td>
-						<td style=""></td>
-						<td style=""></td>
-						<td style="padding-right:0px;"></td>
-					</tr>
-				</table>
-			</div><!-- #footer_tale -->
-			<img src="./img/footer_underline.png">
-			<div id="copyrights" style="">
-				<p>Initialized by Shibuhouse Creative Team. © 2013 SHIBUHOUSE</p>
-			</div>
-		</footer>
+		<?php require './footer.php' ?>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 		<script defer src="js/jquery.flexslider.js"></script>
 		<script type="text/javascript">
