@@ -125,7 +125,7 @@ border-radius: 5px;        /* CSS3草案 */
 	width: 100%;
 	background-color: rgb(191, 191, 191);
 	min-height: 500px;
-	padding: 125px 0 125px 0;
+	padding: 125px 0 1px 0;
 
 }
 .midashi {
@@ -152,4 +152,19 @@ border-radius: 5px;        /* CSS3草案 */
 
 #what {
 	margin:0px auto 100px auto;
+}
+
+footer {
+	display: block;
+	width: 100%;
+	min-height: 300px;
+	background-color: rgb(58,58,58);
+	padding-top: 30px;
+	color:rgb(93,93,93);
+}
+
+#footer_table {
+	display: block;
+	margin: 30px auto 0 auto;
+	width: 875px;
 }
