@@ -10,6 +10,7 @@
 		<link href='./css/global.css' rel='stylesheet' type='text/css'>
 		<!-- スライドショー -->
 		<link href='./css/flexslider.css' rel='stylesheet' type='text/css'>
+		<link href="css/lightbox.css" rel="stylesheet" />
 		<script type="text/javascript" src="js/modernizr.js"></script>
 	</head>
 	<body>
@@ -24,82 +25,108 @@
 			<div id="member_profile">
 				<div id="inner_member_profile">
 					<div class="profile">
-						<img class="small_image" src="./img/aeri/01.gif">
-						<div class="profile_name">
+						<img class="small_image" src="./img/aeri/01.gif" >
+						<a  class="profile_name" title="AERI IKEDA" rel="lightbox[imagegroup]" data-lightbox="roadtrip" href="./img/aeri/01.gif" style="">
+						<div>
 							<p class="full_name">AERI IKEDA</p>
 						</div>
+						</a>
 					</div>
 					<div class="profile">
 						<img class="small_image" src="./img/aeri/02.gif">
-						<div class="profile_name">
+						<a  class="profile_name" title="AERI IKEDA" data-lightbox="roadtrip" href="./img/aeri/02.gif" style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						<div>
 							<p class="full_name">AERI IKEDA</p>
 						</div>
+						</a>
 					</div>
 					<div class="profile">
 						<img class="small_image" src="./img/aeri/03.gif">
-						<div class="profile_name">
+						<a  class="profile_name" title="AERI IKEDA" data-lightbox="roadtrip" href="./img/aeri/03.gif" style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						<div>
 							<p class="full_name">AERI IKEDA</p>
 						</div>
+						</a>
 					</div>
 					<div class="profile">
 						<img class="small_image" src="./img/aeri/04.gif">
-						<div class="profile_name">
+						<a  class="profile_name" title="AERI IKEDA" data-lightbox="roadtrip" href="./img/aeri/04.gif" style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						<div>
 							<p class="full_name">AERI IKEDA</p>
 						</div>
+						</a>
 					</div>
 					<div class="profile">
 						<img class="small_image" src="./img/aeri/05.gif">
-						<div class="profile_name">
+						<a  class="profile_name" title="AERI IKEDA" data-lightbox="roadtrip" href="./img/aeri/05.gif" style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						<div>
 							<p class="full_name">AERI IKEDA</p>
 						</div>
+						</a>
 					</div>
 					<div class="profile">
 						<img class="small_image" src="./img/aeri/06.gif">
-						<div class="profile_name">
+						<a  class="profile_name" title="AERI IKEDA" data-lightbox="roadtrip" href="./img/aeri/06.gif" style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						<div>
 							<p class="full_name">AERI IKEDA</p>
 						</div>
+						</a>
 					</div>
 					<div class="profile">
 						<img class="small_image" src="./img/aeri/07.gif">
-						<div class="profile_name">
+						<a  class="profile_name" title="AERI IKEDA" data-lightbox="roadtrip" href="./img/aeri/07.gif" style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						<div>
 							<p class="full_name">AERI IKEDA</p>
 						</div>
+						</a>
 					</div>
 					<div class="profile">
 						<img class="small_image" src="./img/aeri/09.gif">
-						<div class="profile_name">
+						<a  class="profile_name" title="AERI IKEDA" data-lightbox="roadtrip" href="./img/aeri/09.gif" style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						<div>
 							<p class="full_name">AERI IKEDA</p>
 						</div>
+						</a>
 					</div>
 					<div class="profile">
 						<img class="small_image" src="./img/aeri/10.gif">
-						<div class="profile_name">
+						<a  class="profile_name" title="AERI IKEDA" data-lightbox="roadtrip" href="./img/aeri/10.gif" style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						<div>
 							<p class="full_name">AERI IKEDA</p>
 						</div>
+						</a>
 					</div>
 					<div class="profile">
 						<img class="small_image" src="./img/aeri/11.gif">
-						<div class="profile_name">
+						<a  class="profile_name" title="AERI IKEDA" data-lightbox="roadtrip" href="./img/aeri/11.gif" style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						<div>
 							<p class="full_name">AERI IKEDA</p>
 						</div>
+						</a>
 					</div>
 					<div class="profile">
 						<img class="small_image" src="./img/aeri/12.gif">
-						<div class="profile_name">
+						<a  class="profile_name" title="AERI IKEDA" data-lightbox="roadtrip" href="./img/aeri/12.gif" style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						<div>
 							<p class="full_name">AERI IKEDA</p>
 						</div>
+						</a>
 					</div>
 					<div class="profile">
 						<img class="small_image" src="./img/aeri/13.gif">
-						<div class="profile_name">
+						<a  class="profile_name" title="AERI IKEDA" data-lightbox="roadtrip" href="./img/aeri/13.gif" style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						<div>
 							<p class="full_name">AERI IKEDA</p>
 						</div>
+						</a>
 					</div>
 					<div class="profile">
 						<img class="small_image" src="./img/aeri/13.gif">
-						<div class="profile_name">
+						<a  class="profile_name" title="AERI IKEDA" data-lightbox="roadtrip" href="./img/aeri/13.gif" style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						<div>
 							<p class="full_name">AERI IKEDA</p>
 						</div>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -123,6 +150,7 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 		<script defer src="js/jquery.flexslider.js"></script>
 		<script type="text/javascript" src="js/scroll_top.js"></script>
+		<script type="text/javascript"src="js/lightbox-2.6.min.js"></script>
 		<script type="text/javascript">
 		$(window).load(function() {
 			$('.flexslider').flexslider({

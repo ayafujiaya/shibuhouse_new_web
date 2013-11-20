@@ -288,10 +288,19 @@ line-height: 26px;
 	background-color: #000000;
 	opacity: 0.7;
 	z-index: 2;
-	padding-top: 221px;
+	/*padding-top: 221px;*/
 			border-radius: 5px;        /* CSS3草案 */  
     -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
     -moz-border-radius: 5px;   /* Firefox用 */ 
+    display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;
+}
+.lb-caption {
+	font-size: 40px !important;
+}
+
+a {
+	color: #FFFFFF;
+	text-decoration: none;
 }
 
 .full_name {
