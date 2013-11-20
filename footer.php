@@ -1,5 +1,6 @@
 		<footer>
 			<!--<img src="./img/site_map.png">-->
+			<hr style="width:30%; float:left;" ><img style="float:left;" src="./img/site_map.png"><hr style="">
 			<div id="footer_table">
 				<table>
 					<tr align="center" style="margin:0 100px 0 25px;">
@@ -57,6 +58,7 @@
 				</table>
 			</div><!-- #footer_tale -->
 			<!--<img src="./img/footer_underline.png">-->
+			<hr>
 			<div id="copyrights" style="">
 				<p>Initialized by Shibuhouse Creative Team. © 2013 SHIBUHOUSE</p>
 			</div>
