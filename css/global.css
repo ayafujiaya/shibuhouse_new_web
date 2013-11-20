@@ -10,6 +10,7 @@ a {
 	color:rgb(118, 153, 255);
 }
 #wrap {
+	min-width: 1140px;
 
 
 }
