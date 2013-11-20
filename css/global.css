@@ -165,6 +165,13 @@ footer {
 
 #footer_table {
 	display: block;
-	margin: 30px auto 0 auto;
+	margin: 30px auto 100px auto;
 	width: 875px;
+}
+
+#copyrights {
+	display: block;
+margin: 0 auto;
+width: 425px;
+padding: 10px;
 }

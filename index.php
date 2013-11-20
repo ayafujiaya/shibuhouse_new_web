@@ -116,6 +116,16 @@ Tom Atlee らは、Howard Bloom が「グループIQ」と呼んだものから�
 						<td style="padding-right:75px;">Twitter</td>
 						<td style="padding-right:0px;">Facebook</td>
 					</tr>
+					<tr>
+						<td>---------</td>
+						<td>---------</td>
+						<td>---------</td>
+						<td>---------</td>
+						<td>---------</td>
+						<td>---------</td>
+						<td>---------</td>
+						<td>---------</td>
+					</tr>
 					<tr align="left">
 						<td style=""></td>
 						<td style="">
@@ -126,6 +136,11 @@ Tom Atlee らは、Howard Bloom が「グループIQ」と呼んだものから�
 							</ul>
 						</td>
 						<td style="">
+							<ul>
+								<li>media</li>
+								<li>art</li>
+								<li>event</li>
+							</ul>
 						</td>
 						<td style=""></td>
 						<td style=""></td>
@@ -135,7 +150,10 @@ Tom Atlee らは、Howard Bloom が「グループIQ」と呼んだものから�
 					</tr>
 				</table>
 			</div><!-- #footer_tale -->
-
+			<img src="./img/footer_underline.png">
+			<div id="copyrights" style="">
+				<p>Initialized by Shibuhouse Creative Team. © 2013 SHIBUHOUSE</p>
+			</div>
 		</footer>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 		<script defer src="js/jquery.flexslider.js"></script>
