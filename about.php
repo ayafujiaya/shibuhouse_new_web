@@ -15,7 +15,7 @@
 	<body>
 		<div id="wrap">
 			<?php require './header.php' ?>
-				<div id="content" style="padding-top:200px;">
+				<div id="content">
 
 				<div id="what" class="midashi">
 					<div style="padding-top:28px; padding-bottom:60px;" class="inner_midashi">
