@@ -78,7 +78,8 @@ a {
 }
 
 .flex-control-nav {
-	display: none;
+	/*display: none;*/
+	bottom: 7px !important;
 }
 
 .flexslider .flex-next {
