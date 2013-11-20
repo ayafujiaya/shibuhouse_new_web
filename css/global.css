@@ -30,6 +30,7 @@ a {
 	color:rgb(118, 153, 255);
 }
 #wrap {
+	min-width: 1240px;
 	
 }
 #header {
@@ -41,11 +42,27 @@ a {
 	padding: 13px 0 30px 0;
 	position: fixed;
 	opacity: 0.8;
+	min-width: 1240px;
+}
+
+#slide {
+	width:100%;
+	margin: 0 auto;
+	position: relative;
+	min-width: 1240px;
+}
+#text_information {
+	text-align: center;
+	background-color:rgb(50, 65, 108);
+	padding: 8px;
+	color: #FFFFFF;
+	min-width: 1240px;
 }
 
 #header img  {
 	opacity: 1.0;
 }
+
 #logo {
 	float: left;
 	display: inline;
@@ -80,17 +97,7 @@ a {
 	color:#FFFFFF;
 }
 
-#slide {
-	width:100%;
-	margin: 0 auto;
-	position: relative;
-}
-#text_information {
-	text-align: center;
-	background-color:rgb(50, 65, 108);
-	padding: 8px;
-	color: #FFFFFF;
-}
+
 .flexslider {
 	width:100%;
 	margin: 0 !important;
@@ -161,10 +168,11 @@ border-radius: 5px;        /* CSS3草案 */
 #content {
 	position: relative;
 	display: block;
-	width: 100%;
+	width: 100% !important;
 	background-color: rgb(191, 191, 191);
 	min-height: 500px;
 	padding: 125px 0 1px 0;
+	min-width: 1240px;
 
 }
 .midashi {
@@ -201,6 +209,7 @@ footer {
 	background-color: rgb(58,58,58);
 	padding-top: 30px;
 	color:rgb(93,93,93);
+	min-width: 1240px;
 }
 
 #footer_table {
