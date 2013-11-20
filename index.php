@@ -95,6 +95,7 @@ Tom Atlee らは、Howard Bloom が「グループIQ」と呼んだものから�
 		<?php require './footer.php' ?>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 		<script defer src="js/jquery.flexslider.js"></script>
+		<script type="text/javascript" src="js/scroll_top.js"></script>
 		<script type="text/javascript">
 		$(window).load(function() {
 			$('.flexslider').flexslider({
