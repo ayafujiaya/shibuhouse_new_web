@@ -19,7 +19,7 @@
 				<div class="flexslider">
 					<ul class="slides">
 						<li>
-							<img src="http://mail.denden-town.or.jp/audition2013/aeri/aeri15-1.JPG">
+							<img src="http://www.denden-town.or.jp/audition2013/aeri/aeri22-1.JPG">
 						</li>
 						<li>
 							<img src="http://www.denden-town.or.jp/audition2013/aeri/aeri603-1.JPG"/>
