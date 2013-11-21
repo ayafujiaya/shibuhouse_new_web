@@ -306,3 +306,21 @@ a {
 .full_name {
 	margin:5px;
 }
+
+.lb-dataContainer {
+top: 0px;
+left: 10%;
+position: absolute;
+width: 90% !important;
+}
+
+.explain {
+	width: 36%;
+right: 4%;
+position: absolute;
+font-size: 12px;
+}
+
+.explain_text {
+	line-height: 19px;
+}

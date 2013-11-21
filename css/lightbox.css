@@ -122,7 +122,7 @@ body:after {
   float: left;
 }
 /* line 87, ../sass/lightbox.sass */
-.lb-prev:hover {
+.lb-prev { /*:hover {*/
   background: url(../img/prev.png) left 48% no-repeat;
 }
 
@@ -132,7 +132,7 @@ body:after {
   float: right;
 }
 /* line 93, ../sass/lightbox.sass */
-.lb-next:hover {
+.lb-next {/*:hover {*/
   background: url(../img/next.png) right 48% no-repeat;
 }
 
