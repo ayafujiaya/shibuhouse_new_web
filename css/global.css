@@ -309,18 +309,22 @@ a {
 
 .lb-dataContainer {
 top: 0px;
-left: 10%;
+left: 15%;
 position: absolute;
 width: 90% !important;
 }
 
 .explain {
-	width: 36%;
-right: 4%;
+	width: 29%;
+right: 14%;
 position: absolute;
 font-size: 12px;
 }
 
 .explain_text {
 	line-height: 19px;
+}
+
+.lb-number {
+	display: none !important;
 }
