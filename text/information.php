@@ -1,0 +1,1 @@
+集合知には、collective intelligence, collective knowledge, wisdom of crowdsなどの異なる英語が対応する。経営学の一分野である知識管理論からのアプローチには、洞口治夫(Horaguchi Haruo)『集合知の経営－日本企業の知識管理戦略－』がある。
