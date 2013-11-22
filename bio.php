@@ -65,11 +65,11 @@
 					<div id="explain">
 						<img src="./img/bio/bio_fotgrafie.png">
 						<div id="ex_image">
-							<img class="inner_ex_image" src="http://a0.twimg.com/profile_images/3742947294/3689919254d8874cabd4b4ae35e8f059.jpeg">
-							<img class="inner_ex_image" src="http://stat.ameba.jp/user_images/20130216/11/fanta-star-yume/4b/32/j/o0480048112421661551.jpg">
-							<img class="inner_ex_image" src="http://a0.twimg.com/profile_images/3742947294/3689919254d8874cabd4b4ae35e8f059.jpeg">
-							<img class="inner_ex_image" src="http://a0.twimg.com/profile_images/3742947294/3689919254d8874cabd4b4ae35e8f059.jpeg">
-							<img class="inner_ex_image" src="http://a0.twimg.com/profile_images/3742947294/3689919254d8874cabd4b4ae35e8f059.jpeg">
+							<img class="inner_ex_image" alt="" src="./img/AI/dammy.jpg">
+							<img class="inner_ex_image" src="./img/AI/dammy_02.jpg">
+							<img class="inner_ex_image" src="./img/AI/dammy_03.jpg">
+							<img class="inner_ex_image" src="./img/AI/dammy_04.jpg">
+							<img class="inner_ex_image" src="./img/AI/dammy_05.jpg">
 
 						</div>
 						<div id="ex_text">
