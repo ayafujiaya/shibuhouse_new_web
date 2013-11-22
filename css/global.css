@@ -401,3 +401,7 @@ font-size: 12px;
 	font-size: 12px;
 	line-height: 15px;
 }
+
+#nav_table_tr{
+	margin:0 25px 0 25px;
+}

@@ -1,0 +1,86 @@
+body {
+	
+		background-color: #FFFFFF;
+		background-color: rgb(58, 58, 58);
+}
+
+#wrap {
+	width: 90%;
+	margin: 0 auto;
+
+}
+
+#logo {
+	width: 480px;
+	min-width: 100%;
+	color: #FFFFFF;
+	margin-top: 50px;
+	margin-bottom: 50px;
+
+}
+
+#logo img {
+	width: 100%;
+}
+
+#nav {
+	color: rgb(58,58,58);
+	background-color: rgba(93, 93, 93, 100);
+	margin-bottom:  50px;
+	border-radius: 10px;        /* CSS3草案 */  
+    -webkit-border-radius: 10px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 10px;   /* Firefox用 */
+    max-height: 220px;
+}
+#contact {
+	display: none;
+}
+
+.nav_image img{
+	float: left;
+	width: 220px;
+	min-width: 100%;
+	margin-left: -50px;
+	margin-bottom: 60px;
+}
+#scroll-top {
+	display: none;
+}
+#hot_topics{
+	display: none;
+}
+
+
+#text_information{
+	display: none;
+}
+
+
+.midashi {
+	display: block;
+	margin:100px auto 100px auto;
+	min-height: 100px;
+	background-color: #FFFFFF;
+	border-radius: 5px;        /* CSS3草案 */  
+    -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 5px;   /* Firefox用 */ 
+    box-shadow: 1px 1px 3px #000;
+    padding: 40px;
+}
+.inner_midashi{
+	display: block;
+	margin: 0 auto 0 auto;
+}
+.midashi_text {
+	line-height: 35px;
+	margin: 0 auto 48px auto;
+
+}
+
+#what {
+	margin:0px auto 100px auto;
+}
+
+footer {
+	padding: 50px;
+}
