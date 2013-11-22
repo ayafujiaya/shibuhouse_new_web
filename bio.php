@@ -65,12 +65,10 @@
 					<div id="explain">
 						<img src="./img/bio/bio_fotgrafie.png">
 						<div id="ex_image">
-							<img class="inner_ex_image" alt="" src="./img/AI/dammy.jpg">
-							<img class="inner_ex_image" src="./img/AI/dammy_02.jpg">
-							<img class="inner_ex_image" src="./img/AI/dammy_03.jpg">
-							<img class="inner_ex_image" src="./img/AI/dammy_04.jpg">
-							<img class="inner_ex_image" src="./img/AI/dammy_05.jpg">
-
+							<img class="inner_ex_image" alt="" src="./img/AI/dammy_01.gif">
+							<img class="inner_ex_image" src="./img/AI/dammy_02.gif">
+							<img class="inner_ex_image" src="./img/AI/dammy_03.gif">
+							<img class="inner_ex_image" src="./img/AI/dammy_04.gif">
 						</div>
 						<div id="ex_text">
 							2013<br>
