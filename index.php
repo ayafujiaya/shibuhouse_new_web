@@ -18,9 +18,9 @@
 						<div id="slide">
 				<div class="flexslider">
 					<ul class="slides">
-						<li><img src="./img/aeri/test_image.png"></li>
-						<li><img src="./img/aeri/test_image_02.png"></li>
-						<li><img src="./img/aeri/test_image_03.png"></li>
+						<li><img src="./img/shibuhouse_01.jpg"></li>
+						<li><img src="./img/shibuhouse_02.jpg"></li>
+						<li><img src="./img/shibuhouse_03.jpg"></li>
 						<!--
 						<li>
 							<img src="./img/aeri/aeri603-1 copy.jpg">
