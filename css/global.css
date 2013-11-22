@@ -246,7 +246,6 @@ line-height: 26px;
 	min-height: 500px;
 	width: 100%;
 	min-width: 1240px;
-	margin-top: 30px;
 	margin-bottom: 50px;
 	background-color: rgb(58,58,58);
 	padding-bottom: 65px;
@@ -263,7 +262,7 @@ line-height: 26px;
 	width: 1040px;
 	margin: 0 auto;
 	color: #FFFFFF;
-	padding-top: 65px;
+	padding-top: 125px;
 }
 
 .small_image {
