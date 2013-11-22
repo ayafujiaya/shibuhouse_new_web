@@ -367,6 +367,7 @@ font-size: 12px;
 	width: 480px;
 	font-size: 14px;
 	padding-left: 25px;
+	line-height: 18px;
 }
 
 #cv {
@@ -399,4 +400,5 @@ font-size: 12px;
 	width: 255px;
 	float: left;
 	font-size: 12px;
+	line-height: 15px;
 }
