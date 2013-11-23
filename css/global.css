@@ -373,6 +373,15 @@ font-size: 12px;
 	float: left;
 }
 
+table th {
+	padding: 0;
+}
+
+table td {
+	padding: 0 0 0 10px;
+}
+
+
 #explain {
 	float: right;
 	width: 420px;
