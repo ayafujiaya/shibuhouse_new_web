@@ -1,1 +1,1 @@
-集団的知性（しゅうだんてきちせい、英語：Collective Intelligence、CI）は、多くの個人の協力と競争の中から、その集団自体に知能、精神が存在するかのように見える知性である。Peter Russell（1983年）、Tom Atlee（1993年）、Howard Bloom（1995年）、Francis Heylighen（1995年）、ダグラス・エンゲルバート、Cliff Joslyn、Ron Dembo、Gottfried Mayer-Kress（2003年）らが理論を構築した。
+石田優！！！１　ｆじゃおいえがおうぃえがｗ
