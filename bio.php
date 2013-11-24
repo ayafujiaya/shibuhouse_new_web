@@ -61,7 +61,9 @@
 			$("#ex_image").remove();
 			$("#ex_text").remove();
 			$.get(explain_text, function(data){
+				$("#inner_explain").css({opacity: 0});
 				$("#inner_explain").html(data);
+				$("#inner_explain").animate({opacity: 1.0}, 1500);
 			});
 		}
 		</script>
