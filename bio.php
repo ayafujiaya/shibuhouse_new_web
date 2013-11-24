@@ -67,5 +67,8 @@ Tom Atlee らは、Howard Bloom が「グループIQ」と呼んだものから�
 			});
 		});
 		</script>
+		<script type="text/javascript">
+		$.get("http://house-api-project.org/api/shibuhouse/1f/pir");
+		</script>
 	</body>
 </html>
