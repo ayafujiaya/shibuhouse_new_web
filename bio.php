@@ -35,22 +35,8 @@
 					</div>
 					<div id="explain">
 						<img src="./img/bio/bio_fotgrafie.png">
-						<div id="ex_image">
-							<img class="inner_ex_image" alt="" src="./img/AI/dammy_01.gif">
-							<img class="inner_ex_image" src="./img/AI/dammy_02.gif">
-							<img class="inner_ex_image" src="./img/AI/dammy_03.gif">
-							<img class="inner_ex_image" src="./img/AI/dammy_04.gif">
-						</div>
-						<div id="ex_text">
-							2013<br>
-							集団的知性は、細菌、動物、人間、コンピュータなど様々な集団の、意思決定の過程で発生する。集団的知性の研究は、社会学、計算機科学、集団行動の研究[1]などに属する。
-Tom Atlee らは、Howard Bloom が「グループIQ」と呼んだものから一歩進み、人間の集団的知性に研究の焦点をあてている。Atlee は集団的知性を「集団思考（集団浅慮）や個人の認知バイアスに打ち勝って集団が協調し、より高い知的能力を発揮するため」のものと主張している。	<br>
-<br>
-2013<br>
-ポケットモンスターとは、株式会社クリーチャーズおよび株式会社ゲームフリークによって開発、 任天堂株式会社によって流通する進化する生物兵器の総称で、その数は数百種に及び、電撃を放出するものから超能力のようなものを使う個体まで存在する。既に世界中で子供を中心に被害が及んでおり、1996年12月には、暴走した生物兵器の一種ないし数種が、超能力によって全国の少年少女（及び一部の大きなお友達）の脳を直接攻撃するという悪質な攻撃をしてまわった。
-
-
-						</div>
+						<!-- <?php require './text/bio_explain/01.php' ?>-->
+						<div id="inner_explain"></div>
 					</div>
 					<div style="clear:both;"></div>
 				</div>
@@ -69,6 +55,15 @@ Tom Atlee らは、Howard Bloom が「グループIQ」と呼んだものから�
 		</script>
 		<script type="text/javascript">
 		$.get("http://house-api-project.org/api/shibuhouse/1f/pir");
+		</script>
+		<script type="text/javascript">
+		function dynamic_ex_load(explain_text) {
+			$("#ex_image").remove();
+			$("#ex_text").remove();
+			$.get(explain_text, function(data){
+				$("#inner_explain").html(data);
+			});
+		}
 		</script>
 	</body>
 </html>

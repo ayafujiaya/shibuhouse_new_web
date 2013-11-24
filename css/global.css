@@ -414,3 +414,8 @@ table td {
 #nav_table_tr{
 	margin:0 25px 0 25px;
 }
+
+
+tr:hover {
+	color:#FF0000;
+}

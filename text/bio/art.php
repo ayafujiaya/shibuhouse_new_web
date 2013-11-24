@@ -1,11 +1,11 @@
 <table>
 <tr>
 <th>2008.10</th>
-<td>「お好きなものをお選びください展」/デザインフェスタギャラリー（グループ展）</td>
+<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/01.php");'>「お好きなものをお選びください展」/デザインフェスタギャラリー（グループ展）</td>
 </tr>
 <tr>
 <th>2009.02</th>
-<td>「リンカイ展」/多摩美術大学上野毛キャンパス（個展）</td>
+<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/02.php");'>「リンカイ展」/多摩美術大学上野毛キャンパス（個展）</td>
 </tr>
 <tr>
 <th>2010.03</th>
