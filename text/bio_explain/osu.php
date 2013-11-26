@@ -5,5 +5,7 @@
 	<img class="inner_ex_image" src="./img/AI/dammy_04.gif">
 </div>
 <div id="ex_text">
-	本文
+お好きなものをお選びください展　　<br />
+2008年10月15日 ～ 10月21日<br />
+デザイン・フェスタ・ギャラリー
 </div>
