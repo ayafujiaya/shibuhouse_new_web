@@ -5,5 +5,7 @@
 	<img class="inner_ex_image" src="./img/AI/dammy_04.gif">
 </div>
 <div id="ex_text">
-	リンカイ展の本文
+リンカイ展<br />
+2009年2月3日～2月4日<br />
+多摩美術大学上野毛キャンパス
 </div>
