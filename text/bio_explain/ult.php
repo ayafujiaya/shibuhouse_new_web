@@ -5,5 +5,7 @@
 	<img class="inner_ex_image" src="./img/AI/dammy_04.gif">
 </div>
 <div id="ex_text">
-  ULTRA004　本文
+ULTRA004展示<br />
+青山スパイラルガーデン<br />
+2011年11月1日～11月3日
 </div>
