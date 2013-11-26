@@ -5,5 +5,7 @@
 	<img class="inner_ex_image" src="./img/AI/dammy_04.gif">
 </div>
 <div id="ex_text">
-  ウルトラ・SUPER・ニュー　本文
+THE NEW BLACK<br />
+UltraSuperNew Gallery<br />
+2013年7月11日～7月26日文
 </div>
