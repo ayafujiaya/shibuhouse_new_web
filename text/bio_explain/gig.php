@@ -5,5 +5,7 @@
 	<img class="inner_ex_image" src="./img/AI/dammy_04.gif">
 </div>
 <div id="ex_text">
-  Tokyo art gig 怖いよママー本文
+ArtGigTokyo2: 怖いよ、ママー！<br />
+10月30日<br />
+初台玉井病院
 </div>
