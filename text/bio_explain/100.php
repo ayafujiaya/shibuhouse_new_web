@@ -5,5 +5,5 @@
 	<img class="inner_ex_image" src="./img/AI/dammy_04.gif">
 </div>
 <div id="ex_text">
-  ハウス100本文
+  ハウス100本文変更
 </div>
