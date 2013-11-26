@@ -5,5 +5,7 @@
 	<img class="inner_ex_image" src="./img/AI/dammy_04.gif">
 </div>
 <div id="ex_text">
-	DUMDUMPARTY　本文
+DUM-DUM PARTY2013 <br />
+2013.6.29<br />
+SHIBUYA O-WEST
 </div>
