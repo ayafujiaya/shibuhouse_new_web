@@ -57,6 +57,6 @@
 </tr>
 <tr>
 <th>2013.07</th>
-<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/usn.php");'>「Previous Exibitions」/Ultra Super New（グループ展）</td>
+<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/usn.php");'>「THE NEW BLACK」/Ultra Super New（グループ展）</td>
 </tr>
 </table>
