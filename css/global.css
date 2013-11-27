@@ -126,7 +126,7 @@ a {
 #hot_topics {
 	width: 780px;
 	min-height: 320px;
-	margin: 0 auto;
+	margin: 0 auto 50px auto;
 }
 
 #hot_topics_pic {
