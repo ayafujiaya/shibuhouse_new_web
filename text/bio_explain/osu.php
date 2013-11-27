@@ -1,17 +1,4 @@
 <div id="ex_image">
-	<a href="./img/AI/dammy_01.gif" rel="lightbox">
-		<img class="inner_ex_image" alt="" src="./img/AI/dammy_01.gif">
-	</a>
-	<a href="./img/AI/dammy_02.gif" rel="lightbox">
-		<img class="inner_ex_image" alt="" src="./img/AI/dammy_02.gif">
-	</a>
-	<a href="./img/AI/dammy_03.gif" rel="lightbox">
-		<img class="inner_ex_image" alt="" src="./img/AI/dammy_03.gif">
-	</a>
-
-	<a href="./img/AI/dammy_04.gif" rel="lightbox">
-		<img class="inner_ex_image" alt="" src="./img/AI/dammy_04.gif">
-	</a>
 	<img class="inner_ex_image" src="./img/exhibition_sum/osu/osu_001.jpg">
 	<img class="inner_ex_image" src="./img/exhibition_sum/osu/osu_002.jpg">
 	<img class="inner_ex_image" src="./img/exhibition_sum/osu/osu_003.jpg">
