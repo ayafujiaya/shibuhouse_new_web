@@ -85,8 +85,18 @@
 						<?php require './text/information.php' ?>	
 						</div>					
 						<img style="margin:0 auto 30px auto; display: block;" src="./img/midashi_mail.png">
-						<img style="margin:0 auto 16px auto; display: block;" src="./img/call_number.png">
-						<img style="margin:0 auto; display: block;" src="./img/mailadd.png">
+						<p style="margin: 0 auto;
+display: block;
+width: 380px;
+font-size: 49px;
+font-family: monospace;">080-4166-4123</p>
+						<p style="margin: 0 auto;
+width: 435px;
+font-size: 45px;
+font-family: monospace;
+display: block;">mail@ayafuji.com</p>
+						<!--<img style="margin:0 auto 16px auto; display: block;" src="./img/call_number.png">-->
+						<!--<img style="margin:0 auto; display: block;" src="./img/mailadd.png">-->
 					</div><!-- .inner_midashi -->
 				</div><!-- #information -->
 			</div><!-- #content -->
