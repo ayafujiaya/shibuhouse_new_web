@@ -20,15 +20,19 @@
 				<!--<img style="margin-bottom:45px; margin-top:45px;" src="./img/bio/bio_midashi.png">-->
 				<div id="inner_bio">
 					<div id="cv">
+						<div id="ac_art" style=""></div>
 						<img src="./img/bio/bio_art.png">
 						<div id="art" class="bio_content">
 							<?php require './text/bio/art.php' ?>
 						</div>
-						<img src="./img/bio/bio_event.png">
 
+						<div id="ac_event" style=""></div>
+						<img src="./img/bio/bio_event.png">
 						<div id="event" class="bio_content">
 							<?php require './text/bio/event.php' ?>
 						</div>
+
+						<div id="ac_media" style=""></div>
 						<img src="./img/bio/bio_media.png">
 						<div id="media" class="bio_content">
 							<?php require './text/bio/media.php' ?>

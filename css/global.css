@@ -432,3 +432,102 @@ min-height: 100px;
 max-height: 400px;
 
 }
+
+
+#nav_about{
+		display: block;
+		width: 50px;
+		height: 50px;
+	background: url('../img/hovers/default_home.png') no-repeat 0 0;
+
+}
+#nav_about:hover {
+	background: url('../img/hovers/hover_home.png') no-repeat 0 0;
+}
+
+#nav_bio{
+		display: block;
+		width: 50px;
+		height: 50px;
+	background: url('../img/hovers/default_document.png') no-repeat 0 0;
+
+}
+#nav_bio:hover {
+	background: url('../img/hovers/hover_document.png') no-repeat 0 0;
+}
+
+#nav_member{
+		display: block;
+		width: 50px;
+		height: 50px;
+	background: url('../img/hovers/default_smile.png') no-repeat 0 0;
+
+}
+#nav_member:hover {
+	background: url('../img/hovers/hover_smile.png') no-repeat 0 0;
+}
+
+#midashi_about {
+	width: 179px;
+	height: 208px;
+	background: url('../img/hovers/default_hatena.png') no-repeat 0 0;
+}
+
+#midashi_about:hover {
+	width: 179px;
+	height: 208px;
+	background: url('../img/hovers/hover_hatena.png') no-repeat 0 0;
+}
+
+#bio_art {
+	float: left;
+	display: block;
+	width: 188px;
+	height: 242px;
+	background: url('../img/hovers/default_kougu.png') no-repeat 0 0;
+	margin-left: 50px;
+	margin-right: 87px;
+}
+
+#bio_art:hover {
+	background: url('../img/hovers/hover_kougu.png') no-repeat 0 0;
+}
+
+#bio_event {
+		float: left;
+	display: block;
+	width: 152px;
+	height: 242px;
+	background: url('../img/hovers/default_tv.png') no-repeat 0 0;
+	margin-right: 86px;
+}
+
+#bio_event:hover {
+	background: url('../img/hovers/hover_tv.png') no-repeat 0 0;
+}
+
+#bio_media {
+		float: left;
+	display: block;
+	width: 172px;
+	height: 242px;
+	background: url('../img/hovers/default_dance.png') no-repeat 0 0;
+}
+
+#bio_media:hover {
+	background: url('../img/hovers/hover_dance.png') no-repeat 0 0;
+}
+
+#picture_member {
+	margin:0 auto 30px auto;
+	display: block;
+	width: 198px;
+	height: 122px;
+	background: url('../img/hovers/default_smilebig.png') no-repeat 0 0;
+}
+
+#picture_member:hover {
+	background: url('../img/hovers/hover_smilebig.png') no-repeat 0 0;
+}
+
+

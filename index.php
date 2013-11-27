@@ -56,7 +56,8 @@
 					<div class="midashi_text">
 						<?php require 'text/what.php' ?>
 					</div>
-					<img style="margin:0 auto; display: block;" src="./img/hatena_midashi.png">
+					<a style="margin:0 auto; display: block;" href="./about.php" id="midashi_about"></a>
+					<!--<img style="margin:0 auto; display: block;" src="./img/hatena_midashi.png">-->
 					<img style="margin:0 auto; display: block;" src="./img/about_midahsi.png">
 					</div><!-- .inner_midashi -->
 				</div><!-- #what -->
@@ -66,8 +67,13 @@
 						<img style="margin-bottom:47px" src="./img/bio_midashi.png">
 						<div class="midashi_text">
 						<?php require './text/bio.php' ?>
-						</div>					
-						<img style="margin:0 auto; display: block;" src="./img/bio_images.png">
+						</div>
+						<a href="./bio.php#ac_art" id="bio_art"></a>
+						<a href="./bio.php#ac_event" id="bio_event"></a>
+						<a href="./bio.php#ac_media" id="bio_media"></a>
+						<img style="margin:0 auto; display: block;" src="./img/hovers/bio_midashi.png">
+						<div style="clear:both;"></div>
+						<!-- <img style="margin:0 auto; display: block;" src="./img/bio_images.png"> -->
 					</div><!-- .inner_midashi -->
 				</div><!-- #bio -->
 
@@ -76,8 +82,10 @@
 						<img style="margin-bottom:47px" src="./img/member_midashi.png">
 						<div class="midashi_text">
 						<?php require './text/member.php' ?>
-						</div>					
-						<img style="margin:0 auto 30px auto; display: block;" src="./img/midashi_smile.png">
+						</div>				
+
+						<a href="./member.php" id="picture_member"></a>	
+						<!--<img style="margin:0 auto 30px auto; display: block;" src="./img/midashi_smile.png">-->
 						<img style="margin:0 auto; display: block;" src="./img/midashi_member.png">
 					</div><!-- .inner_midashi -->
 				</div><!-- member -->
