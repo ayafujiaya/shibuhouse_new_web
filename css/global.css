@@ -385,15 +385,11 @@ table td {
 
 
 #explain {
-	position: fixed;
 	float: right;
-	width: 430px;
+	width: 420px;
 	left: auto;
-margin: 0 0 0 530px;
-top: 125px;
 	min-height: 400px;
-	background-color: #e3e3e3;
-		border-radius: 10px;        /* CSS3草案 */  
+	border-radius: 10px;        /* CSS3草案 */  
     -webkit-border-radius: 10px;    /* Safari,Google Chrome用 */  
     -moz-border-radius: 10px;   /* Firefox用 */ 
 }
@@ -432,7 +428,7 @@ tr:hover {
 	opacity: 0;
 	opacity: 1;
 min-height: 100px;
-overflow: scroll;
+/*overflow: scroll;*/
 max-height: 400px;
 
 }
