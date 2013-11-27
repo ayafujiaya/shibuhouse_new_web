@@ -5,10 +5,12 @@
 	<img class="inner_ex_image" src="./img/AI/dammy_04.gif">
 </div>
 <div id="ex_text">
-Labor, Party, Nuclear &quot;After Nuclear Family<br />
-2012年11月23日～11月25日<br />
-TRAS ARTS TOKYO<br />
-http://ayafuji.com/after_nuclear_family/<br />
+「TRANS ARTS TOKYO」<br />
+日程：2012.11.23 - 11.25<br />
+会場：旧東京電機大学校舎11号館<br />
+<br />
+渋家が巨大なインスタレーションを展開します。役者の居ない演劇のように、それは神秘的に佇みます。私たちは労働によって楽園を作り上げます。そこでは平穏と祝祭が永遠に繰り返されるでしょう。私たちの核となる想像力はここにあります。やがてくる日のために私たちが準備できる最高の舞台を準備します。それは論理的なコンセプトとしてではなく、抽象的なイメージとして展開されます。私たちアーティストは増殖し、連帯し、個を失いません。それが無数の作品群として表現されます。溶け合うのではなく、共存すること。そのために対話や交渉を重ね、世界の中に並べられること。それは私たちが核家族という近代的な幻想の後にチャレンジしなければならない課題です。何かのPostではなくAfterとして私たちは生きています。脱中心的ではなく、非中心的な存在として私たちは在るでしょう。
+<a href="http://ayafuji.com/after_nuclear_family/" target="_blank">http://ayafuji.com/after_nuclear_family/</a><br /><br />
 <br />
 Labor, Party, Nuclear &quot;After Nuclear Family&quot;<br />
 今回の渋家の展示は前回のThe Containerで行われたHOUSE 100とは真逆の方向性を志向します。<br />
