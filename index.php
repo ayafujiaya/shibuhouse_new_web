@@ -25,8 +25,8 @@
 						<div id="slide">
 				<div class="flexslider">
 					<ul class="slides">
-						<li><img src="./img/aeri/main01.gif"></li>
-						<li><img src="./img/aeri/main02.gif"></li>
+						<li><img src="./img/topimage/top_01.jpg"></li>
+						<li><img src="./img/topimage/top_02.jpg"></li>
 					</ul>
 				</div>
 			</div><!-- #slide -->
