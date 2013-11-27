@@ -39,9 +39,13 @@
 				</div><!-- hot_topics_pic -->
 				<div id="hot_topics_text">
 					<ul>
-						<li class="topics"><sep class="topics_date">2013/10/11</sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">アイコンを作ってみました＝〜〜〜〜〜！！！</sep></li>
-						<li class="topics"><sep class="topics_date">2013/10/11</sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">アイコンを作ってみました＝〜〜〜〜〜！！！</sep></li>
-						<li class="topics"><sep class="topics_date">2013/10/11</sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">アイコンを作ってみました＝〜〜〜〜〜！！！</sep></li>
+						<li class="topics"><sep class="topics_date">2013/11/29</sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[NEWS]  11/29（金）「渋家」代表交代 6代目代表に齋藤桂太が就任</sep></li>
+						<li class="topics"><sep class="topics_date">2013/11/29</sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[MEDIA] <a href="http://www.eater.co.jp/" target="_blank">11/29（金）記事掲載 『EATER 2014 REBIRTH』（地引雄一:編集）発売</a></sep></li>
+						<li class="topics"><sep class="topics_date">2013/11/29</sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[MEDIA] <a href="http://www.nhk.or.jp/jirenma/" target="_blank">11/30（土）齋藤桂太 NHK Eテレ「ニッポンのジレンマ」出演</a></sep></li>
+						<li class="topics"><sep class="topics_date">2013/11/29</sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[EVENT] <a href="http://yama.cs8.biz/" target="_blank">12/20（金）Maltine Records主催イベント「山」（WWW）参加</a></sep></li>
+						<li class="topics"><sep class="topics_date">2013/11/29</sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[ART]   <a href="http://ca-mp.blogspot.jp/" target="_blank">12/21（土）CAMP主催イベント「現在のアート＜2013＞」（森美術館）出演</a></sep></li>
+						<li class="topics"><sep class="topics_date">2013/11/29</sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[EVENT] 12/22（日）「渋家ゴールデンマキシマムファンタスティックエクストリームホームパーティー」（風林会館ニュージャパン）主催</sep></li>
+						<li class="topics"><sep class="topics_date">2013/11/29</sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[ART]   <a href="http://www.mori.art.museum/contents/roppongix2013/" target="_blank">12/22（日）「六本木クロッシング2013展」関連イベント「ディスカーシブ・プラットホームとは？」（森美術館）出演</a></sep></li>
 					</ul>
 				</div><!-- hot_topics_text -->
 			</div><!-- #hot_topics -->
