@@ -46,6 +46,14 @@
 						</div>
 						</a>
 					</div>
+					
+					
+					
+					
+					
+					
+					
+					
 					<div class="profile">
 						<img class="small_image" src="./img/menber_sum/Keita_saito.jpg">
 						<a  class="profile_name" title="AERI IKEDA 
@@ -63,6 +71,14 @@ Tom Atlee らは、Howard Bloom が「グループIQ」と呼んだものから�
 						</div>
 						</a>
 					</div>
+					
+					
+					
+					
+					
+					
+					
+					
 					<div class="profile">
 						<img class="small_image" src="./img/menber_sum/Kenta_kobayashi.jpg">
 						<a  class="profile_name" title="AERI IKEDA 
@@ -80,6 +96,15 @@ Tom Atlee らは、Howard Bloom が「グループIQ」と呼んだものから�
 						</div>
 						</a>
 					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
 					<div class="profile">
 						<img class="small_image" src="./img/menber_sum/Mr.jpg">
 						<a  class="profile_name" title="AERI IKEDA 
@@ -97,6 +122,15 @@ Tom Atlee らは、Howard Bloom が「グループIQ」と呼んだものから�
 						</div>
 						</a>
 					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
 					<div class="profile">
 						<img class="small_image" src="./img/menber_sum/Sanae_sugai.jpg">
 						<a  class="profile_name" title="AERI IKEDA 
@@ -114,6 +148,15 @@ Tom Atlee らは、Howard Bloom が「グループIQ」と呼んだものから�
 						</div>
 						</a>
 					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
 					<div class="profile">
 						<img class="small_image" src="./img/menber_sum/Toshikuni_yamaguchi.jpg">
 						<a  class="profile_name" title="AERI IKEDA 
@@ -131,6 +174,15 @@ Tom Atlee らは、Howard Bloom が「グループIQ」と呼んだものから�
 						</div>
 						</a>
 					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
 					<div class="profile">
 						<img class="small_image" src="./img/menber_sum/ami_inaba02.jpg">
 						<a  class="profile_name" title="AERI IKEDA 
@@ -148,6 +200,15 @@ Tom Atlee らは、Howard Bloom が「グループIQ」と呼んだものから�
 						</div>
 						</a>
 					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
 					<div class="profile">
 						<img class="small_image" src="./img/menber_sum/atsushi_nishida.jpg">
 						<a  class="profile_name" title="AERI IKEDA 
@@ -165,6 +226,16 @@ Tom Atlee らは、Howard Bloom が「グループIQ」と呼んだものから�
 						</div>
 						</a>
 					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
 					<div class="profile">
 						<img class="small_image" src="./img/menber_sum/ayafuji_profile.jpg">
 						<a  class="profile_name" title="AERI IKEDA 
@@ -182,6 +253,15 @@ Tom Atlee らは、Howard Bloom が「グループIQ」と呼んだものから�
 						</div>
 						</a>
 					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
 					<div class="profile">
 						<img class="small_image" src="./img/menber_sum/dai.jpg">
 						<a  class="profile_name" title="AERI IKEDA 
@@ -199,6 +279,16 @@ Tom Atlee らは、Howard Bloom が「グループIQ」と呼んだものから�
 						</div>
 						</a>
 					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
 					<div class="profile">
 						<img class="small_image" src="./img/menber_sum/dokukinoko.jpg">
 						<a  class="profile_name" title="AERI IKEDA 
@@ -216,6 +306,14 @@ Tom Atlee らは、Howard Bloom が「グループIQ」と呼んだものから�
 						</div>
 						</a>
 					</div>
+					
+					
+					
+					
+					
+					
+					
+					
 					<div class="profile">
 						<img class="small_image" src="./img/menber_sum/gesuyama.jpg">
 						<a  class="profile_name" title="AERI IKEDA 
@@ -233,6 +331,16 @@ Tom Atlee らは、Howard Bloom が「グループIQ」と呼んだものから�
 						</div>
 						</a>
 					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
 					<div class="profile">
 						<img class="small_image" src="./img/menber_sum/gosupi.jpg">
 						<a  class="profile_name" title="AERI IKEDA 
@@ -250,6 +358,200 @@ Tom Atlee らは、Howard Bloom が「グループIQ」と呼んだものから�
 						</div>
 						</a>
 					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="profile">
+						<img class="small_image" src="./img/menber_sum/haga.jpg">
+						<a  class="profile_name" title="AERI IKEDA 
+						<div class='explain'>
+							<h1>Yuki Takada</h1>
+							<div class='explain_text'>
+								プロフィールテキスト
+							</div>
+						</div>
+						" data-lightbox="roadtrip" href="./img/aeri/03.gif" style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						<div>
+							<p class="full_name">name</p>
+						</div>
+						</a>
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="profile">
+						<img class="small_image" src="./img/menber_sum/hayasaka_masumi.jpg">
+						<a  class="profile_name" title="AERI IKEDA 
+						<div class='explain'>
+							<h1>Yuki Takada</h1>
+							<div class='explain_text'>
+								プロフィールテキスト
+							</div>
+						</div>
+						" data-lightbox="roadtrip" href="./img/aeri/03.gif" style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						<div>
+							<p class="full_name">name</p>
+						</div>
+						</a>
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="profile">
+						<img class="small_image" src="./img/menber_sum/hiryu.jpg">
+						<a  class="profile_name" title="AERI IKEDA 
+						<div class='explain'>
+							<h1>Yuki Takada</h1>
+							<div class='explain_text'>
+								プロフィールテキスト
+							</div>
+						</div>
+						" data-lightbox="roadtrip" href="./img/aeri/03.gif" style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						<div>
+							<p class="full_name">name</p>
+						</div>
+						</a>
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="profile">
+						<img class="small_image" src="./img/menber_sum/kajiya.jpg">
+						<a  class="profile_name" title="AERI IKEDA 
+						<div class='explain'>
+							<h1>Yuki Takada</h1>
+							<div class='explain_text'>
+								プロフィールテキスト
+							</div>
+						</div>
+						" data-lightbox="roadtrip" href="./img/aeri/03.gif" style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						<div>
+							<p class="full_name">name</p>
+						</div>
+						</a>
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="profile">
+						<img class="small_image" src="./img/menber_sum/kikawa?sei.jpg">
+						<a  class="profile_name" title="AERI IKEDA 
+						<div class='explain'>
+							<h1>Yuki Takada</h1>
+							<div class='explain_text'>
+								プロフィールテキスト
+							</div>
+						</div>
+						" data-lightbox="roadtrip" href="./img/aeri/03.gif" style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						<div>
+							<p class="full_name">name</p>
+						</div>
+						</a>
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="profile">
+						<img class="small_image" src="./img/menber_sum/kuroda.jpg">
+						<a  class="profile_name" title="AERI IKEDA 
+						<div class='explain'>
+							<h1>Yuki Takada</h1>
+							<div class='explain_text'>
+								プロフィールテキスト
+							</div>
+						</div>
+						" data-lightbox="roadtrip" href="./img/aeri/03.gif" style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						<div>
+							<p class="full_name">name</p>
+						</div>
+						</a>
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="profile">
+						<img class="small_image" src="./img/menber_sum/maharu.jpg">
+						<a  class="profile_name" title="AERI IKEDA 
+						<div class='explain'>
+							<h1>Yuki Takada</h1>
+							<div class='explain_text'>
+								プロフィールテキスト
+							</div>
+						</div>
+						" data-lightbox="roadtrip" href="./img/aeri/03.gif" style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						<div>
+							<p class="full_name">name</p>
+						</div>
+						</a>
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="profile">
+						<img class="small_image" src="./img/menber_sum/momo.jpg">
+						<a  class="profile_name" title="AERI IKEDA 
+						<div class='explain'>
+							<h1>Yuki Takada</h1>
+							<div class='explain_text'>
+								プロフィールテキスト
+							</div>
+						</div>
+						" data-lightbox="roadtrip" href="./img/aeri/03.gif" style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						<div>
+							<p class="full_name">name</p>
+						</div>
+						</a>
+					</div>
+					
+					
+					
+					
+					
 
 
 					
