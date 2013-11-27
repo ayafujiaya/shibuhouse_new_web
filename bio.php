@@ -16,7 +16,7 @@
 		<div id="wrap" style="background-color: rgb(231,231,231);">
 			<?php require './header.php' ?>
 			<div id="biography">
-				<img style="margin-bottom:45px; margin-top:45px;" src="./img/bio/bio_midashi.png">
+				<!--<img style="margin-bottom:45px; margin-top:45px;" src="./img/bio/bio_midashi.png">-->
 				<div id="inner_bio">
 					<div id="cv">
 						<img src="./img/bio/bio_art.png">

@@ -331,6 +331,7 @@ font-size: 12px;
 
 /*----------------------------------------------biography*/
 #biography {
+	position: relative;
 	display: block;
 	width: 1040px;
 	margin:0 auto;
@@ -342,6 +343,7 @@ font-size: 12px;
 }
 
 #inner_bio {
+	position: relative;
 	background-color:#FFFFFF;
 	/*min-width: 1040px;*/
 	min-height: 500px;
@@ -383,10 +385,17 @@ table td {
 
 
 #explain {
+	position: fixed;
 	float: right;
 	width: 420px;
-	/*background-color: #FF0000;*/
-	min-height: 300px;
+	left: auto;
+margin: 0 0 0 530px;
+top: 125px;
+	min-height: 400px;
+	background-color: #e3e3e3;
+		border-radius: 10px;        /* CSS3草案 */  
+    -webkit-border-radius: 10px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 10px;   /* Firefox用 */ 
 }
 
 #ex_image {
@@ -421,4 +430,9 @@ tr:hover {
 
 #inner_explain {
 	opacity: 0;
+	opacity: 1;
+min-height: 100px;
+overflow: scroll;
+max-height: 400px;
+
 }
