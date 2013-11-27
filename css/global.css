@@ -217,7 +217,7 @@ footer {
 #footer_table {
 	display: block;
 	margin: 30px auto 100px auto;
-	width: 875px;
+	width: 1000px;
 }
 
 #copyrights {
@@ -337,7 +337,7 @@ font-size: 12px;
 	margin:0 auto;
 	min-height: 500px;
 	/*float: left;*/
-	padding-top: 100px;
+	padding-top: 150px;
 	padding-bottom:135px;
 
 }
