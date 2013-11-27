@@ -5,10 +5,10 @@
 	<img class="inner_ex_image" src="./img/AI/dammy_04.gif">
 </div>
 <div id="ex_text">
-Village Project HOUSE 100<br />
-2012年5月21日～7月30日<br />
-The Container<br />
-http://shibuhouse.com/1902<br />
+「Village Project HOUSE 100」<br />
+日程：2012.5.21 - 7.30&nbsp;&nbsp;<br />
+会場：The Conteiner<br />
+<a href="http://shibuhouse.com/1902" target="_blank">http://shibuhouse.com/1902</a><br />
 <br />
 Artist statement &quot;OUR HOUSE&quot; time specific village project&quot;HOUSE100&quot;<br />
 <br />
@@ -61,5 +61,8 @@ It is an art project and also a community which try to pursuit the possibility o
 <br />
 We are sharing a house with over 20 members. <br />
 This community means something different from just a family. <br />
-Each one of us have different aims.
+Each one of us have different aims.<br />
+<br />
+<br />
+この個展は、新しい形のシェア、新しい形のパブリックを思考し運営することで、アートの可能性を追求しようとするプロジェクトである渋家が「どのような村に住みたいか」という提案を行った。重要だと考えたのは「どのような人たちと一緒に住みたいか」という選択だ。私達は100人の村人になって欲しい、影響を受けたい人たちを選び、インタビューを行う。そして、その後に私達の村の中心である渋家で一緒に食事をする。新しい村を作るきっかけになるという期待を込めて。インタビューを行い、USTreamで配信し、Twitterで実況し、写真を撮影し、ギャラリーというアルバムに飾る。それがこの展示のすべてだ。
 </div>
