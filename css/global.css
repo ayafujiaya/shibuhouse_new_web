@@ -147,6 +147,7 @@ border-radius: 5px;        /* CSS3草案 */
     -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
     -moz-border-radius: 5px;   /* Firefox用 */ 
     line-height: 32px;
+    font-size: 10px;
 }
 
 
