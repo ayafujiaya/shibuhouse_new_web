@@ -44,8 +44,16 @@ Tom Atlee らは、Howard Bloom が「グループIQ」と呼んだものから�
 						集合知には、collective intelligence, collective knowledge, wisdom of crowdsなどの異なる英語が対応する。経営学の一分野である知識管理論からのアプローチには、洞口治夫(Horaguchi Haruo)『集合知の経営－日本企業の知識管理戦略－』がある。
 						</div>					
 						<img style="margin:0 auto 30px auto; display: block;" src="./img/about/about_call_mail.png">
-						<img style="margin:0 auto 16px auto; display: block;" src="./img/call_number.png">
-						<img style="margin:0 auto; display: block;" src="./img/mailadd.png">
+						<p style="margin: 0 auto;
+display: block;
+width: 380px;
+font-size: 49px;
+font-family: monospace;">080-4166-4123</p>
+						<p style="margin: 0 auto;
+width: 435px;
+font-size: 45px;
+font-family: monospace;
+display: block;">mail@ayafuji.com</p>
 					</div><!-- .inner_midashi -->
 				</div><!-- #information -->
 			</div><!-- #content -->
