@@ -35,7 +35,6 @@
 					</div>
 					<div id="explain">
 						<img src="./img/bio/bio_fotgrafie.png">
-						<!-- <?php require './text/bio_explain/01.php' ?>-->
 						<div id="inner_explain"></div>
 					</div>
 					<div style="clear:both;"></div>
@@ -54,18 +53,16 @@
 		});
 		</script>
 		<script type="text/javascript">
-		$.get("http://house-api-project.org/api/shibuhouse/1f/pir");
-		</script>
-		<script type="text/javascript">
 		function dynamic_ex_load(explain_text) {
 			$("#ex_image").remove();
 			$("#ex_text").remove();
 			$.get(explain_text, function(data){
 				$("#inner_explain").css({opacity: 0});
 				$("#inner_explain").html(data);
-				$("#inner_explain").animate({opacity: 1.0}, 1500);
+				$("#inner_explain").animate({opacity: 1.0}, 500);
 			});
 		}
 		</script>
+
 	</body>
 </html>
