@@ -1,8 +1,8 @@
 <div id="ex_image">
-	<img class="inner_ex_image" src="./img/AI/dammy_01.gif">
-	<img class="inner_ex_image" src="./img/AI/dammy_02.gif">
-	<img class="inner_ex_image" src="./img/AI/dammy_03.gif">
-	<img class="inner_ex_image" src="./img/AI/dammy_04.gif">
+	<img class="inner_ex_image" src="./img/exhibition_sum/ike/ike_001.jpg">
+	<img class="inner_ex_image" src="./img/exhibition_sum/ike/ike_002.jpg">
+	<img class="inner_ex_image" src="./img/exhibition_sum/ike/ike_003.jpg">
+	<img class="inner_ex_image" src="./img/exhibition_sum/ike/ike_004.jpg">
 </div>
 <div id="ex_text">
 「渋家「イケる気がする展」- 第一回渋家アート選手権大会 -」<br />
