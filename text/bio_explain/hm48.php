@@ -5,7 +5,12 @@
 	<img class="inner_ex_image" src="./img/AI/dammy_04.gif">
 </div>
 <div id="ex_text">
-2012年 8月 3日 (金曜日)<br />
+「H&amp;M48 - home party for 48 hours -」<br />
+日程：2012.8.3~5&nbsp;&nbsp; <br />
+会場：クヌギ<br />
+<br />
+さまざまなDJ、VJを呼んで渋家地下にある12畳のイベントスペース•クヌギにて48時間連続のクラブイベントを行った。屋上にはプールを設置。
+<br />
 21:00@chefoba<br />
 21:40@Dan_chooooooo<br />
 22:20 Silvanian Families<br />
@@ -52,5 +57,5 @@
 <br />
 <br />
 <br />
-http://hm48.cs8.biz/
+<a href="http://hm48.cs8.biz/" target="_blank">http://hm48.cs8.biz/</a>
 </div>
