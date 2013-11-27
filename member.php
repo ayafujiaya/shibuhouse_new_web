@@ -31,7 +31,7 @@
 			<div id="member_profile">
 				<div id="inner_member_profile">
 					<div class="profile">
-						<img class="small_image" src="./img/aeri/01.gif" >
+						<img class="small_image" src="./img/menber_sum/IMG01799.jpg">
 						<a  class="profile_name" title="<?php require './text/member/member_profile_01.php' ?>" rel="lightbox[imagegroup]" data-lightbox="roadtrip" href="./img/aeri/01.gif" style="">
 						<div>
 							<p class="full_name">AERI IKEDA</p>
@@ -39,7 +39,7 @@
 						</a>
 					</div>
 					<div class="profile">
-						<img class="small_image" src="./img/aeri/02.gif">
+						<img class="small_image" src="./img/menber_sum/IMG_7476.jpg">
 						<a  class="profile_name" title="<?php require './text/member/member_profile_01.php' ?>" data-lightbox="roadtrip" href="./img/aeri/02.gif" style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">AERI IKEDA</p>
@@ -47,7 +47,7 @@
 						</a>
 					</div>
 					<div class="profile">
-						<img class="small_image" src="./img/aeri/03.gif">
+						<img class="small_image" src="./img/menber_sum/Keita_saito.jpg">
 						<a  class="profile_name" title="AERI IKEDA 
 						<div class='explain'>
 							<h1>Yuki Takada</h1>
@@ -64,7 +64,7 @@ Tom Atlee らは、Howard Bloom が「グループIQ」と呼んだものから�
 						</a>
 					</div>
 					<div class="profile">
-						<img class="small_image" src="./img/aeri/04.gif">
+						<img class="small_image" src="./img/menber_sum/Kenta_kobayashi.jpg">
 						<a  class="profile_name" title="AERI IKEDA 
 						<div class='explain'>
 							<h1>Yuki Takada</h1>
@@ -81,7 +81,7 @@ Tom Atlee らは、Howard Bloom が「グループIQ」と呼んだものから�
 						</a>
 					</div>
 					<div class="profile">
-						<img class="small_image" src="./img/aeri/05.gif">
+						<img class="small_image" src="./img/menber_sum/Mr.jpg">
 						<a  class="profile_name" title="AERI IKEDA 
 						<div class='explain'>
 							<h1>Yuki Takada</h1>
@@ -98,7 +98,7 @@ Tom Atlee らは、Howard Bloom が「グループIQ」と呼んだものから�
 						</a>
 					</div>
 					<div class="profile">
-						<img class="small_image" src="./img/aeri/06.gif">
+						<img class="small_image" src="./img/menber_sum/Sanae_sugai.jpg">
 						<a  class="profile_name" title="AERI IKEDA 
 						<div class='explain'>
 							<h1>Yuki Takada</h1>
@@ -115,7 +115,7 @@ Tom Atlee らは、Howard Bloom が「グループIQ」と呼んだものから�
 						</a>
 					</div>
 					<div class="profile">
-						<img class="small_image" src="./img/aeri/07.gif">
+						<img class="small_image" src="./img/menber_sum/Toshikuni_yamaguchi.jpg">
 						<a  class="profile_name" title="AERI IKEDA 
 						<div class='explain'>
 							<h1>Yuki Takada</h1>
@@ -132,7 +132,7 @@ Tom Atlee らは、Howard Bloom が「グループIQ」と呼んだものから�
 						</a>
 					</div>
 					<div class="profile">
-						<img class="small_image" src="./img/aeri/09.gif">
+						<img class="small_image" src="./img/menber_sum/ami_inaba02.jpg">
 						<a  class="profile_name" title="AERI IKEDA 
 						<div class='explain'>
 							<h1>Yuki Takada</h1>
@@ -149,7 +149,7 @@ Tom Atlee らは、Howard Bloom が「グループIQ」と呼んだものから�
 						</a>
 					</div>
 					<div class="profile">
-						<img class="small_image" src="./img/aeri/10.gif">
+						<img class="small_image" src="./img/menber_sum/atsushi_nishida.jpg">
 						<a  class="profile_name" title="AERI IKEDA 
 						<div class='explain'>
 							<h1>Yuki Takada</h1>
@@ -166,7 +166,7 @@ Tom Atlee らは、Howard Bloom が「グループIQ」と呼んだものから�
 						</a>
 					</div>
 					<div class="profile">
-						<img class="small_image" src="./img/aeri/11.gif">
+						<img class="small_image" src="./img/menber_sum/ayafuji_profile.jpg">
 						<a  class="profile_name" title="AERI IKEDA 
 						<div class='explain'>
 							<h1>Yuki Takada</h1>
@@ -183,7 +183,7 @@ Tom Atlee らは、Howard Bloom が「グループIQ」と呼んだものから�
 						</a>
 					</div>
 					<div class="profile">
-						<img class="small_image" src="./img/aeri/12.gif">
+						<img class="small_image" src="./img/menber_sum/dai.jpg">
 						<a  class="profile_name" title="AERI IKEDA 
 						<div class='explain'>
 							<h1>Yuki Takada</h1>
@@ -200,7 +200,7 @@ Tom Atlee らは、Howard Bloom が「グループIQ」と呼んだものから�
 						</a>
 					</div>
 					<div class="profile">
-						<img class="small_image" src="./img/aeri/13.gif">
+						<img class="small_image" src="./img/menber_sum/dokukinoko.jpg">
 						<a  class="profile_name" title="AERI IKEDA 
 						<div class='explain'>
 							<h1>Yuki Takada</h1>
@@ -217,7 +217,7 @@ Tom Atlee らは、Howard Bloom が「グループIQ」と呼んだものから�
 						</a>
 					</div>
 					<div class="profile">
-						<img class="small_image" src="./img/aeri/13.gif">
+						<img class="small_image" src="./img/menber_sum/gesuyama.jpg">
 						<a  class="profile_name" title="AERI IKEDA 
 						<div class='explain'>
 							<h1>Yuki Takada</h1>
@@ -234,7 +234,7 @@ Tom Atlee らは、Howard Bloom が「グループIQ」と呼んだものから�
 						</a>
 					</div>
 					<div class="profile">
-						<img class="small_image" src="./img/member_big_image.png">
+						<img class="small_image" src="./img/menber_sum/gosupi.jpg">
 						<a  class="profile_name" title="AERI IKEDA 
 						<div class='explain'>
 							<h1>Yuki Takada</h1>
