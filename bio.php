@@ -35,7 +35,7 @@
 						</div>
 					</div>
 					<div id="explain">
-						<img src="./img/bio/bio_fotgrafie.png">
+						<!-- <img src="./img/bio/bio_fotgrafie.png"> -->
 						<div id="inner_explain"></div>
 					</div>
 					<div style="clear:both;"></div>
