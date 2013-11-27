@@ -1,8 +1,7 @@
 <div id="ex_image">
-	<img class="inner_ex_image" src="./img/AI/dammy_01.gif">
-	<img class="inner_ex_image" src="./img/AI/dammy_02.gif">
-	<img class="inner_ex_image" src="./img/AI/dammy_03.gif">
-	<img class="inner_ex_image" src="./img/AI/dammy_04.gif">
+	<img class="inner_ex_image" src="./img/exhibition_sum/100/100_001.jpg">
+	<img class="inner_ex_image" src="./img/exhibition_sum/100/100_002.jpg">
+	<img class="inner_ex_image" src="./img/exhibition_sum/100/100_003.jpg">
 </div>
 <div id="ex_text">
 「Village Project HOUSE 100」<br />

@@ -1,4 +1,5 @@
 <div id="ex_image">
+<<<<<<< HEAD
 	<a href="./img/AI/dammy_01.gif" rel="lightbox">
 		<img class="inner_ex_image" alt="" src="./img/AI/dammy_01.gif">
 	</a>
@@ -12,6 +13,12 @@
 	<a href="./img/AI/dammy_04.gif" rel="lightbox">
 		<img class="inner_ex_image" alt="" src="./img/AI/dammy_04.gif">
 	</a>
+=======
+	<img class="inner_ex_image" src="./img/exhibition_sum/osu/osu_001.jpg">
+	<img class="inner_ex_image" src="./img/exhibition_sum/osu/osu_002.jpg">
+	<img class="inner_ex_image" src="./img/exhibition_sum/osu/osu_003.jpg">
+	<img class="inner_ex_image" src="./img/exhibition_sum/osu/osu_004.jpg">
+>>>>>>> 54f092fee92327385f6fcf51df20e937761a6fd9
 </div>
 <div id="ex_text">
 「お好きなものをお選びください展」<br />
