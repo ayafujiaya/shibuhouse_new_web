@@ -10,6 +10,7 @@
 		<link href='./css/global.css' rel='stylesheet' type='text/css'>
 		<!-- スライドショー -->
 		<link href='./css/flexslider.css' rel='stylesheet' type='text/css'>
+		<link href="css/lightbox.css" rel="stylesheet" />
 		<script type="text/javascript" src="js/modernizr.js"></script>
 	</head>
 	<body>
@@ -45,6 +46,7 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 		<script defer src="js/jquery.flexslider.js"></script>
 		<script type="text/javascript" src="js/scroll_top.js"></script>
+		<script type="text/javascript"src="js/lightbox-2.6.min.js"></script>
 		<script type="text/javascript">
 		$(window).load(function() {
 			$('.flexslider').flexslider({

@@ -1,8 +1,17 @@
 <div id="ex_image">
-	<img class="inner_ex_image" alt="" src="./img/AI/dammy_01.gif">
-	<img class="inner_ex_image" src="./img/AI/dammy_02.gif">
-	<img class="inner_ex_image" src="./img/AI/dammy_03.gif">
-	<img class="inner_ex_image" src="./img/AI/dammy_04.gif">
+	<a href="./img/AI/dammy_01.gif" rel="lightbox">
+		<img class="inner_ex_image" alt="" src="./img/AI/dammy_01.gif">
+	</a>
+	<a href="./img/AI/dammy_02.gif" rel="lightbox">
+		<img class="inner_ex_image" alt="" src="./img/AI/dammy_02.gif">
+	</a>
+	<a href="./img/AI/dammy_03.gif" rel="lightbox">
+		<img class="inner_ex_image" alt="" src="./img/AI/dammy_03.gif">
+	</a>
+
+	<a href="./img/AI/dammy_04.gif" rel="lightbox">
+		<img class="inner_ex_image" alt="" src="./img/AI/dammy_04.gif">
+	</a>
 </div>
 <div id="ex_text">
 「お好きなものをお選びください展」<br />
