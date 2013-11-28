@@ -295,8 +295,8 @@ footer {
 
 #footer_house{
                 display: block;
-                width: 50px;
-                height: 50px;
+                width: 16px;
+                height: 30px;
         background: url('../img/facebook.png') no-repeat 0 0;
 
 
@@ -321,21 +321,21 @@ footer {
 
 #footer_document{
                 display: block;
-                width: 50px;
-                height: 50px;
+                width: 25px;
+                height: 30px;
         background: url('../img/document.png') no-repeat 0 0;
 
 
 }
 
 #footer_document:hover {
-        background: url('../img/document.png') no-repeat 0 0;
+        background: url('../img/hovers/footer_images/document_hover.png') no-repeat 0 0;
 }
 
 
 #footer_house{
                 display: block;
-                width: 25px;
+                width: 30px;
                 height: 30px;
         background: url('../img/house.png') no-repeat 0 0;
 }
@@ -346,7 +346,7 @@ footer {
 
 #footer_member{
                 display: block;
-                width: 50px;
+                width: 29px;
                 height: 30px;
         background: url('../img/member.png') no-repeat 0 0;
 }
@@ -368,7 +368,7 @@ footer {
 
 #footer_hatena{
                 display: block;
-                width: 50px;
+                width: 33px;
                 height: 30px;
         background: url('../img/hatena.png') no-repeat 0 0;
 }
@@ -390,7 +390,7 @@ footer {
 
 #footer_infomation{
                 display: block;
-                width: 50px;
+                width: 28px;
                 height: 30px;
         background: url('../img/infomation.png') no-repeat 0 0;
 }
@@ -401,7 +401,7 @@ footer {
 
 #footer_twitter{
                 display: block;
-                width: 50px;
+                width: 32px;
                 height: 30px;
         background: url('../img/twitter.png') no-repeat 0 0;
 }
