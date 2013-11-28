@@ -12,6 +12,7 @@
     <link href='./css/flexslider.css' rel='stylesheet' type='text/css'>
     <link href="css/lightbox.css" rel="stylesheet" />
     <script type="text/javascript" src="js/modernizr.js"></script>
+
   </head>
   <body>
     <div id="wrap" style="background-color: rgb(231,231,231);">
@@ -68,6 +69,17 @@
         $("#inner_explain").animate({opacity: 1.0}, 500);
       });
     }
+    </script>
+    <script type="text/javascript">
+    	$('#art > table > tbody > tr > td').click(function () {
+  			$('#explain').animate({paddingTop:0}, 1000);
+		});
+		$('#event > table > tbody > tr > td').click(function () {
+  			$('#explain').animate({paddingTop:360}, 1000);
+		});
+		$('#media > table > tbody > tr > td').click(function () {
+  			$('#explain').animate({paddingTop:715}, 1000);
+		});
     </script>
 
   </body>
