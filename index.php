@@ -99,12 +99,12 @@
 						<img style="margin:0 auto 30px auto; display: block;" src="./img/midashi_mail.png">
 						<p style="margin: 0 auto;
 display: block;
-width: 380px;
-font-size: 49px;
+width: 335px;
+font-size: 40px;
 font-family: monospace;">080-3310-4083</p>
 						<p style="margin: 0 auto;
 width: 435px;
-font-size: 45px;
+font-size: 34px;
 font-family: monospace;
 display: block;">shibuhouseinfo@gmail.com</p>
 						<!--<img style="margin:0 auto 16px auto; display: block;" src="./img/call_number.png">-->
