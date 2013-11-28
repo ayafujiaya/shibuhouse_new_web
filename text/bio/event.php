@@ -19,9 +19,6 @@
 <th>2012.12</th>
 <td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/repub_final.php");'>「REPUBLIC VOL.10 - THE FINAL -」/WOMB</td>
 </tr>
-
-
-
 <tr>
 <th>2012.11</th>
 <td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/yami_1.php");'>「インターネットヤミ市」/旧東京電機大学校舎11号館</td>
@@ -43,12 +40,12 @@
 <td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/esora.php");'>「Shibuhouse live party」/絵空箱</td>
 </tr>
 <tr>
-<th>2011.02</th>
-<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/nation.php");'>「house nation」/3rd house</td>
+<th>2012.04</th>
+<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/outof.php");'>「OUT OF HOUSE -シャッキシャキのキャベツを添えて-」/amate-raxi</td>
 </tr>
 <tr>
-<th>2012.05</th>
-<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/esora.php");'>「Shibuhouse live party」/絵空箱</td>
+<th>2011.02</th>
+<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/nation.php");'>「house nation」/3rd house</td>
 </tr>
 <tr>
 <th>2010.06</th>
