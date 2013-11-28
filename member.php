@@ -33,7 +33,7 @@
 					<!--------------------------Profile Start -------------------------->
 					<div class="profile">
 						<!-- サムネイルの画像のURL -->
-						<img class="small_image" src="./img/member_sum/Keita_saito.jpg" >
+						<img class="small_image" src="./img/menber_sum/Keita_saito.jpg" >
 						<a  class="profile_name" title="斎藤桂太 
 						<div class='explain'>
 							<h1>渋家代表</h1>
@@ -50,7 +50,7 @@
 							&nbsp;<a hrfe='saito-profile.pdf'>[pdf]</a>
 							</div>
 						</div>" 
-						rel="lightbox[imagegroup]" data-lightbox="roadtrip" href="./img/member_full/keita.jpg" style="">
+						rel="lightbox[imagegroup]" data-lightbox="roadtrip" href="./img/menber_full/keita.jpg" style="">
 						<div>
 							<p class="full_name">斎藤桂太</p>
 						</div>
@@ -60,15 +60,15 @@
 
 					<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/member_sum/Toshikuni_yamaguchi.jpg">
+						<img class="small_image" src="./img/menber_sum/Toshikuni_yamaguchi.jpg">
 						<a  class="profile_name" title="山口季邦/としくに　
 						<div class='explain'>
 							<h1>渋家株式会社代表取締役</h1>
-							<div class='explain_text'>1987年 東京都出身。アーティスト。
+							<div class='explain_text'>
 						1984年 東京都出身。渋家株式会社代表取締役。主な業務としては、クラブイベントのオーガナイズ、
 						アート展のキュレーションを中心に、渋家に所属する、DJ、ミュージシャン、ダンサー、写真家、映像作家、
 						グラフィックデザイナー、ファションクリエーターなど様々なアーティストの活動を支援している。
-						女の子を愛している。 本当に。。</br>
+						女の子を愛している。 本当に。</br>
 							</br>
 							<a href='https://twitter.com/kusokuniman'><img src='./img/twitter.png'  border='0'></a>
 							&nbsp;
@@ -78,7 +78,7 @@
 							&nbsp;<a hrfe='yamaguchi-profile.pdf'>[pdf]</a>
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/member_full/Toshikuni.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/menber_full/Toshikuni.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">山口季邦 / としくに</p>
 						</div>
@@ -86,20 +86,20 @@
 					</div>
 					<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/member_sum/momo.jpg">
+						<img class="small_image" src="./img/menber_sum/momo.jpg">
 						<a  class="profile_name" title="ちゃんもも◎　
 						<div class='explain'>
 							<h1>活動家</h1>
 							<div class='explain_text'>ファッションショー・イベントへのゲスト出演、全国クラブでのDJ活動、
 							ファッション誌『KERA！』へのコラム連載、商品デザイン、渋家メンバーとしてのアートワークなど、
-							肩書きに捉われず活動を展開。CX「テラスハウス」初代住人でもある。。</br>
+							肩書きに捉われず活動を展開。CX「テラスハウス」初代住人でもある。</br>
 							</br>
 							<a href='https://twitter.com/chanmomochan10'><img src='./img/twitter.png'  border='0'></a>
 							&nbsp;
 							<a href='http://ameblo.jp/chanmomochan10'><img src='./img/facebook.png'  border='0'></a>
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/member_full/momo.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/menber_full/momo.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">ちゃんもも◎　</p>
 						</div>
@@ -107,7 +107,7 @@
 					</div>
 				<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/member_sum/IMG01799.jpg">
+						<img class="small_image" src="./img/menber_sum/IMG01799.jpg">
 						<a  class="profile_name" title="金藤みなみ
 						<div class='explain'>
 							<h1>アーティスト</h1>
@@ -125,7 +125,7 @@
 							Email:&nbsp;minami.kinto@gmail.com
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/member_full/kinmi.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/menber_full/kinmi.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">金藤みなみ</p>
 						</div>
@@ -133,16 +133,16 @@
 					</div>
 				<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/member_sum/yuki_ishida.jpg">
+						<img class="small_image" src="./img/menber_sum/yuki_ishida.jpg">
 						<a  class="profile_name" title="石田祐規
 						<div class='explain'>
 							<h1>写真家</h1>
 							<div class='explain_text'>1989年生まれ。2012<a href='http://ikeikehappyhappyphotonewyear.tumblr.com/'>イケイケハッピーハッピー写真ニューイヤー</a>
-							毎月zine交換も行っている。。</br>
+							毎月zine交換も行っている。</br>
 							</br>
 							<a href='http://yukiishida.com/'>[HP]</a>
 						</div>
-						" data-lightbox="roadtrip" href='./img/member_full/yuki.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/menber_full/yuki.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">石田祐規</p>
 						</div>
@@ -150,20 +150,22 @@
 					</div>
 				<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/member_sum/id774.jpg">
+						<img class="small_image" src="./img/menber_sum/twitt.jpg">
 						<a  class="profile_name" title="Yasuhiro Nakayama　
 						<div class='explain'>
 							<h1>Software Engineer</h1>
-							<div class='explain_text'>I'm a software engineer working in Tokyo.</br>
-Interested in: Emacs, Debian, Ruby, Python, Lisp, Virtualization. Security, Cryptography, Machine-Learning, Text-Mining, NLP, Statistics etc.</br>
-Skilled at: Familiarity with Linux. Extensive experience with Ruby. At least several years of professional software development experience. Understanding of software architecture, OO principles and common design patterns.</br>
-Current work: Systems Engineering. R&D for faster web development, large-scale data processing, data analysis.</br>
-I'm always using huge screens, HHKB, Trackball, Debian and quiet environment. It's very important for me.</br>
-See below for details.</br>
-							<a href='http://id774.net'>http://id774.net</a>
+							<div class='explain_text'>I am a software engineer working in Tokyo. Interested in: Emacs, 
+							Debian, Ruby, Python, Lisp, Virtualization. Security, Cryptography, Machine-Learning, Text-Mining, 
+							NLP, Statistics etc. Skilled at: Familiarity with Linux. Extensive experience with Ruby. At least several 
+							years of professional software development experience. Understanding of software architecture, OO principles
+							and common design patterns. Current work: Systems Engineering. R&D for faster web development, large-scale 
+							data processing, data analysis. I'm always using huge screens, HHKB, Trackball, 
+							Debian and quiet environment. It's very important for me. See below for details.</br>
+							</br>
+							<a href='http://id774.net'>[HP]</a>
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/member_full/id774.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/menber_full/twitt.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">Yasuhiro Nakayama　</p>
 						</div>
@@ -171,7 +173,7 @@ See below for details.</br>
 					</div>
 				<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/member_sum/gesuyama.jpg">
+						<img class="small_image" src="./img/menber_sum/gesuyama.jpg">
 						<a  class="profile_name" title="下衆山毒淋　
 						<div class='explain'>
 							<h1>ソープ嬢 / アートコレクター</h1>
@@ -186,7 +188,7 @@ See below for details.</br>
 
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/member_full/gesuyama.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/menber_full/gesuyama.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">下衆山毒淋　</p>
 						</div>
@@ -194,11 +196,11 @@ See below for details.</br>
 					</div>
 				<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/member_sum/odagiri.jpg">
+						<img class="small_image" src="./img/menber_sum/odagiri.jpg">
 						<a  class="profile_name" title="小田切裕史　
 						<div class='explain'>
 							<h1>ニート</h1>
-							<div class='explain_text'>1993年 山梨生まれ。趣味はJohn Lennonを聞くこと。。</br>
+							<div class='explain_text'>1993年 山梨生まれ。趣味はJohn Lennonを聞くこと。</br>
 							</br>
 							<a href='https://twitter.com/yushi_oda'><img src='./img/twitter.png'  border='0'></a>
 							&nbsp;
@@ -206,7 +208,7 @@ See below for details.</br>
 						
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/member_full/odagiri.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/menber_full/odagiri.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">小田切裕史　</p>
 						</div>
@@ -214,7 +216,7 @@ See below for details.</br>
 					</div>
 					<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/member_sum/dai.jpg">
+						<img class="small_image" src="./img/menber_sum/dai.jpg">
 						<a  class="profile_name" title="dainmt　
 						<div class='explain'>
 							<h1>占い師</h1>
@@ -228,7 +230,7 @@ See below for details.</br>
 							<a href='http://uranai-tarim.jp/'>[HP]</a>
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/member_full/dai.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/menber_full/dai.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">dainmt　</p>
 						</div>
@@ -236,20 +238,19 @@ See below for details.</br>
 					</div>
 				<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/member_sum/haga.jpg">
+						<img class="small_image" src="./img/menber_sum/haga.jpg">
 						<a  class="profile_name" title="芳賀仁志
 						<div class='explain'>
 							<h1>会社員</h1>
 							<div class='explain_text'>1985年 神奈川県横須賀市出身。慶應義塾大学卒。2009年よりエイベックスに勤務
 							。レーベルプロモーター、バンドマネージャーを経て、最近異動した。会社員生活の傍ら、
-							DJパーティ'MONK!!!'の企画運営等も行なっている。2004年よりルームシェアをしてお
-							り、2013年5月より渋家に在籍。</br>
+							DJパーティ'MONK!!!'の企画運営等も行なっている。2004年よりルームシェアをしており、2013年5月より渋家に在籍。</br>
 							</br>
 							<a href='https://twitter.com/Shibuya403'><img src='./img/twitter.png' border='0'></a>
 						
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/member_full/haga.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/menber_full/haga.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">芳賀仁志</p>
 						</div>
@@ -257,7 +258,7 @@ See below for details.</br>
 					</div>
 				<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/member_sum/numa.jpg">
+						<img class="small_image" src="./img/menber_sum/numa.jpg">
 						<a  class="profile_name" title="ぬま
 						<div class='explain'>
 							<h1>映像屋</h1>
@@ -271,7 +272,7 @@ See below for details.</br>
 							<a href='http://d.hatena.ne.jp/the_tramp/'>[HP]</a>
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/member_full/numa.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/menber_full/numa.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">ぬま</p>
 						</div>
@@ -279,19 +280,18 @@ See below for details.</br>
 					</div>
 				<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/member_sum/yavao.jpg">
+						<img class="small_image" src="./img/menber_sum/yavao.jpg">
 						<a  class="profile_name" title="YAVAO / 小池将樹
 						<div class='explain'>
 							<h1>media artist</h1>
 							<div class='explain_text'>1988年生まれ。武蔵野美術大学芸術文化学科卒業
 							。身体的感覚の混乱をキーワードにデジタルメディアを基盤とした研究/制作、
 							ステージ演出を行う。2009年に「渋家」に加入。2011年にプログラマーの彩藤と
-							メディアアートユニット「huez」を結成。尚、YAVAOの由来は2010年当時「小池くん」と呼ぶ
-							ことを不憫に思った渋家住人が正反対の「ヤバ男」と呼び始めたのがきっかけ。</br>
+							メディアアートユニット「huez」を結成。尚、YAVAOの由来は2010年当時「小池くん」と呼ぶことを不憫に思った渋家住人が正反対の「ヤバ男」と呼び始めたのがきっかけ。</br>
 							</br>
 							<a href='https://twitter.com/EX_YAVAO'><img src='./img/twitter.png'  border='0'></a>
 						</div>
-						" data-lightbox="roadtrip" href='./img/member_full/yavao.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/menber_full/yavao.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">YAVAO / 小池将樹</p>
 						</div>
@@ -299,7 +299,7 @@ See below for details.</br>
 					</div>
 				<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/member_sum/Mr.jpg">
+						<img class="small_image" src="./img/menber_sum/Mr.jpg">
 						<a  class="profile_name" title="ストレンジラヴ
 						<div class='explain'>
 							<h1>ダダイスト</h1>
@@ -314,7 +314,7 @@ See below for details.</br>
 							<a href='http://ameblo.jp/strangelove-zukkyun/'>[HP]</a>
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/member_full/mr.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/menber_full/mr.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">ストレンジラヴ</p>
 						</div>
@@ -322,14 +322,14 @@ See below for details.</br>
 					</div>
 				<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/member_sum/atsushi_nishida.jpg">
+						<img class="small_image" src="./img/menber_sum/atsushi_nishida.jpg">
 						<a  class="profile_name" title="西田篤史　
 						<div class='explain'>
 							<h1>編集者</h1>
 							<div class='explain_text'>1986年 富山県出身。エディトリアルプロダクション451℃
 							代表。月刊誌の編集者を経て、2013年、編集プロダクションを設立。企画•編集•執
-							筆•販促などから、出版プロデュース、トークイベントの主催まで多岐
-							にわたって活動。現在、クラウドファンディングによる本の未来を作るプロジェクト推進中。</br>
+							筆•販促などから、出版プロデュース、トークイベントの主催まで多岐にわたって活動。現在、クラウドファンディングによる本の未来を作るプロジェクト推進中。</br>
+							
 							</br>
 							<a href='https://twitter.com/hon_nishi'><img src='./img/twitter.png'  border='0'></a>
 							&nbsp;
@@ -338,7 +338,7 @@ See below for details.</br>
 							Email:&nbsp;editorial.production.451@gmail.com
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/member_full/nishida.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/menber_full/nishida.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">西田篤史　</p>
 						</div>
@@ -346,7 +346,7 @@ See below for details.</br>
 					</div>
 				<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/member_sum/dokukinoko.jpg">
+						<img class="small_image" src="./img/menber_sum/dokukinoko.jpg">
 						<a  class="profile_name" title="毒k!n⊗k¤p!nk™
 						<div class='explain'>
 							<h1>FashionCreator / DJ / SJ</h1>
@@ -354,10 +354,12 @@ See below for details.</br>
 							</br>
 							<a href='https://twitter.com/kinokopink'><img src='./img/twitter.png'  border='0'></a>
 							&nbsp;
+							<a href='http://kinokopink.tumblr.com/'>Tumblr</a>
+							&nbsp;
 							Email:&nbsp;i.am.etranger@gmail.com 　 
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/member_full/kinoko.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/menber_full/kinoko.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">毒k!n⊗k¤p!nk™</p>
 						</div>
@@ -366,13 +368,11 @@ See below for details.</br>
 				
 				<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/member_sum/zaqi.jpg">
+						<img class="small_image" src="./img/menber_sum/zaqi.jpg">
 						<a  class="profile_name" title="磯崎愛生 / zaqi
 						<div class='explain'>
 							<h1>ビデオ・アーティスト / VJ</h1>
-							<div class='explain_text'>1988年生まれ。日藝映画学科映像コース卒業。2013年より渋家に参
-							加。一般的に多く普及されている【映像を用いて物語にアプローチする作品】【消費を志向した
-							映像】【エンターテイメントとしての映像】ではなく、【映像自体にアプローチをしていく作品
+							<div class='explain_text'>1988年生まれ。日藝映画学科映像コース卒業。2013年より渋家に参加。一般的に多く普及されている【映像を用いて物語にアプローチする作品】【消費を志向した映像】【エンターテイメントとしての映像】ではなく、【映像自体にアプローチをしていく作品
 							、消費しえない映像、アートとしての映像】を制作、発表している。また、別名義である zaqi 
 							として都内を中心にVJ活動も行っている。</br>
 							</br>
@@ -381,7 +381,7 @@ See below for details.</br>
 							<a href='https://www.facebook.com/yoshimi.isozaki.31'><img src='./img/facebook.png'  border='0'></a>
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/member_full/zaqi.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/menber_full/zaqi.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">磯崎愛生 / zaqi</p>
 						</div>
@@ -389,7 +389,7 @@ See below for details.</br>
 					</div>
 				<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/member_sum/ami_inaba02.jpg">
+						<img class="small_image" src="./img/menber_sum/ami_inaba02.jpg">
 						<a  class="profile_name" title="いなばあみ
 						<div class='explain'>
 							<h1>photographer</h1>
@@ -400,7 +400,7 @@ See below for details.</br>
 							<a href='http://amiamisg.tumblr.com'>[Tumblr]</a>
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/member_full/ami.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/menber_full/ami.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">いなばあみ</p>
 						</div>
@@ -408,7 +408,7 @@ See below for details.</br>
 					</div>
 					<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/member_sum/kajiya.jpg">
+						<img class="small_image" src="./img/menber_sum/kajiya.jpg">
 						<a  class="profile_name" title="加治屋文晶
 						<div class='explain'>
 							<h1>飲食店経営</h1>
@@ -416,7 +416,7 @@ See below for details.</br>
 							
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/member_full/kajiya.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/menber_full/kajiya.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">加治屋文晶</p>
 						</div>
@@ -424,7 +424,7 @@ See below for details.</br>
 					</div>
 					<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/member_sum/ayafuji_profile.jpg">
+						<img class="small_image" src="./img/menber_sum/ayafuji_profile.jpg">
 						<a  class="profile_name" title="ayafuji
 						<div class='explain'>
 							<h1>Interactive Media Engineer</h1>
@@ -433,7 +433,7 @@ See below for details.</br>
 							<a href='https://twitter.com/_ayafuji_'><img src='./img/twitter.png'  border='0'></a>
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/member_full/ayafuji.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/menber_full/ayafuji.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">ayafuji</p>
 						</div>
@@ -441,19 +441,16 @@ See below for details.</br>
 					</div>
 				<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/member_sum/gosupi.jpg">
+						<img class="small_image" src="./img/menber_sum/gosupi.jpg">
 						<a  class="profile_name" title="ゴッドスコーピオン
 						<div class='explain'>
 							<h1>ゴッドスコーピオン</h1>
-							<div class='explain_text'>2012年6月より高野政所、Tomad、芳川よしの
-							らに師事を受けDJ活動を開始。催眠術やクンダリーニ・ヨーガを駆使し料理、キック
-							ボクシング等を嗜む。タイ最大の音楽フェスBIG MOUNTAINへの参加や日本の平均的かつ
-							最先端なクラブアシッドパンダカフェやカルチャーハザード渋家の地下で行われるクラブイベント
-							など国内外のイベントに貯蓄が無くならない限り何処でも駆けつける。サソリ界の神。。</br>
+							<div class='explain_text'>2012年6月より高野政所、Tomad、芳川よしのらに師事を受けDJ活動を開始。催眠術やクンダリーニ・ヨーガを駆使し料理、キックボクシング等を嗜む。タイ最大の音楽フェスBIG MOUNTAINへの参加や日本の平均的かつ最先端なクラブアシッドパンダカフェやカルチャーハザード渋家の地下で行われるクラブイベント
+							など国内外のイベントに貯蓄が無くならない限り何処でも駆けつける。サソリ界の神。</br>
 						
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/member_full/gosupi.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/menber_full/gosupi.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">ゴッドスコーピオン</p>
 						</div>
@@ -462,20 +459,19 @@ See below for details.</br>
 					<!--------------------------Profile Start -------------------------->
 			
 					<div class="profile">
-						<img class="small_image" src="./img/member_sum/yu_oota.jpg">
+						<img class="small_image" src="./img/menber_sum/yu_oota.jpg">
 						<a  class="profile_name" title="太田悠
 						<div class='explain'>
 							<h1>アーティスト</h1>
 							<div class='explain_text'>美学校にて絵画とドローイングを学ぶ。2011年渋
-							家メンバーに加入。“有機的な線”をモチーフに砂のインスタレーション作品
-							や絵画を制作。2012年TRANS ARTS TOKYOに出展。モデルやSMパフォーマーとしても活動をしており、
+							家メンバーに加入。“有機的な線”をモチーフに砂のインスタレーション作品や絵画を制作。2012年TRANS ARTS TOKYOに出展。モデルやSMパフォーマーとしても活動をしており、
 							グラビア写真のアートディレクションも自らつとめる。HP制作中。</br>
 							</br>
 							<a href='http://twitter.com/kinpatukirei'><img src='./img/twitter.png'  border='0'></a>
 						
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/member_full/yu.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/menber_full/yu.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">太田悠</p>
 						</div>
@@ -483,13 +479,11 @@ See below for details.</br>
 					</div>
 					<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/member_sum/taiki_new.jpg">
+						<img class="small_image" src="./img/menber_sum/taiki_new.jpg">
 						<a  class="profile_name" title="増沢大輝
 						<div class='explain'>
 							<h1>ダンサー・振付家役</h1>
-							<div class='explain_text'>1989年生まれ。4人兄弟の真ん中の下の方とい
-							う絶妙なタイミングで生まれ自由奔放に育てられる。 16歳のときBREAK DANCEを入り
-							口に路上で夜な夜な踊り始め、１年後に創作ダンスをはじめる。 HIPHOP、ロック、舞
+							<div class='explain_text'>1989年生まれ。4人兄弟の真ん中の下の方という絶妙なタイミングで生まれ自由奔放に育てられる。 16歳のときBREAK DANCEを入り口に路上で夜な夜な踊り始め、１年後に創作ダンスをはじめる。 HIPHOP、ロック、舞
 							踏、コンテンポラリーなど広めのジャンルを浅めに経由しつつ独自のスタイルを模索中。</br>
 							</br>
 							<a href='http://twitter.com/taiki02'><img src='./img/twitter.png'  border='0'></a>
@@ -498,7 +492,7 @@ See below for details.</br>
 							Email:&nbsp;taiki_masuzawa@yahoo.co.jp
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/member_full/taiki.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/menber_full/taiki.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">増沢大輝</p>
 						</div>
@@ -506,20 +500,19 @@ See below for details.</br>
 					</div>
 					<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/member_sum/Kenta_kobayashi.jpg">
+						<img class="small_image" src="./img/menber_sum/Kenta_kobayashi.jpg">
 						<a  class="profile_name" title="小林健太
 						<div class='explain'>
 							<h1>写真家 / アーティスト</h1>
 							<div class='explain_text'>1992年生まれ。 デジタル一眼、フィルムカメラから
 							、iPhone、MacBookの内蔵カメラやスクリーンキャブチャ等、様々なメディアを使い
-							、身の回りの生活をモチーフにした写真を撮って、自身のブログにアップロードしてい
-							ます。2013年にBiG BANG PRESS（bigbangpress.net）という架空の出版社
-							を立ち上げ、写真にまつわるアートプロジェクトを運営しています。。</br>
+							、身の回りの生活をモチーフにした写真を撮って、自身のブログにアップロードしています。2013年にBiG BANG PRESS（bigbangpress.net）という架空の出版社
+							を立ち上げ、写真にまつわるアートプロジェクトを運営しています。</br>
 							</br>
 							<a href='http://ekabk.blogspot.com'>[HP]</a>
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/member_full/kenta.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/menber_full/kenta.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">小林健太</p>
 						</div>
@@ -527,21 +520,20 @@ See below for details.</br>
 					</div>
 					<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/member_sum/hiryu.jpg">
+						<img class="small_image" src="./img/menber_sum/hiryu.jpg">
 						<a  class="profile_name" title="岡村飛龍
 						<div class='explain'>
 							<h1>アーティスト / 料理人</h1>
-							<div class='explain_text'>1988年7月26日千葉県産まれ。2012年、多摩美術大学卒
-							業。同年、渋家、参加。幼少期より、料理に触れ、大学在学中に北大路魯山人の著書に感
+							<div class='explain_text'>1988年7月26日千葉県産まれ。2012年、多摩美術大学卒業。同年、渋家、参加。幼少期より、料理に触れ、大学在学中に北大路魯山人の著書に感
 							銘を受け、自らの表現に料理を取り入れる。主な活動に、ART FAIR TOKYO 2013（有楽町、国際フ
 							ォーラム）にてケータリング、CONEXIÓN ORIGEN DESTINO 東京BCN10443（バロセロナ、Olivart Art 
 							Gallery）に出展、MTV HAPPY TIME supported by NI
-							VEA（渋谷、2.5Ｄ）にてケータリングなどがある。。</br>
+							VEA（渋谷、2.5Ｄ）にてケータリングなどがある。</br>
 							</br>
 							Email:&nbsp;o.hiryu@gamail.com   &nbsp;Tel:&nbsp;08033190871
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/member_full/hiryu.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/menber_full/hiryu.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">岡村飛龍</p>
 						</div>
@@ -549,18 +541,16 @@ See below for details.</br>
 					</div>
 					<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/member_sum/hayasaka_masumi.jpg">
+						<img class="small_image" src="./img/menber_sum/hayasaka_masumi.jpg">
 						<a  class="profile_name" title="早坂真純
 						<div class='explain'>
 							<h1>学生 / ライフヒーラー</h1>
 							<div class='explain_text'>2010年渋家加入。造形大学5年目(現在３年生)。渋家のバスタオルと生
-							活用品が無くならな
-							いのは彼女のおかげ。彼女がいなければ渋家の生活は一瞬で荒むという噂。みんな頭が上がらないビ
-							ッグマザー。ボードゲームとTRPGを愛している。。</br>
+							活用品が無くならないのは彼女のおかげ。彼女がいなければ渋家の生活は一瞬で荒むという噂。みんな頭が上がらないビッグマザー。ボードゲームとTRPGを愛している。</br>
 							</br>
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/member_full/masumi.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/menber_full/masumi.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">早坂真純</p>
 						</div>
@@ -568,20 +558,19 @@ See below for details.</br>
 					</div>
 					<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/member_sum/kikawasei.jpg">
+						<img class="small_image" src="./img/menber_sum/kikawasei.jpg">
 						<a  class="profile_name" title="木皮成
 						<div class='explain'>
 							<h1>振付家 / ダンストゥルグ</h1>
 							<div class='explain_text'>1990年、和歌山県出身。多摩美術大学映像演劇学科卒。
 							2009年から渋家と関わりはじめ、ついに2013年メンバー入り。演劇界の振付家として
-							数々の演劇団体を手がける。2013年度こまばアゴラ劇場アーティスト会員。2010年からア
-							ジア舞台芸術祭にも関わっている。振付家としてスキルアップのため、十条のスタジオJ☆S
-							tudioで再下積み中。2014年、最前線に爆発的に帰ってくる予定。。</br>
+							数々の演劇団体を手がける。2013年度こまばアゴラ劇場アーティスト会員。2010年からアジア舞台芸術祭にも関わっている。振付家としてスキルアップのため、十条のスタジオJ☆S
+							tudioで再下積み中。2014年、最前線に爆発的に帰ってくる予定。</br>
 							</br>
 							<a href='http://sharakusei.jimdo.com/'>[HP]</a>
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/member_full/sei.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/menber_full/sei.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">木皮成</p>
 						</div>
@@ -589,7 +578,7 @@ See below for details.</br>
 					</div>
 					<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/member_sum/kuroda.jpg">
+						<img class="small_image" src="./img/menber_sum/kuroda.jpg">
 						<a  class="profile_name" title="黒田玲兎
 						<div class='explain'>
 							<h1>音楽家役</h1>
@@ -600,7 +589,7 @@ See below for details.</br>
 							ミュージカルの音楽を担当したりも。ボイストレーナーとしての一面もある。
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/member_full/kuroda.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/menber_full/kuroda.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">黒田玲兎</p>
 						</div>
@@ -610,7 +599,7 @@ See below for details.</br>
 					<!--
 					
 					<div class="profile">
-						<img class="small_image" src="./img/member_sum/IMG_7476.jpg">
+						<img class="small_image" src="./img/menber_sum/IMG_7476.jpg">
 						<a  class="profile_name" title="秋山亮
 						<div class='explain'>
 							<h1>Artist</h1>
@@ -623,7 +612,7 @@ See below for details.</br>
 							</br>
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/member_full/utsubo.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/menber_full/utsubo.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">秋山亮</p>
 						</div>
@@ -631,7 +620,7 @@ See below for details.</br>
 					</div>
 					
 					<div class="profile">
-						<img class="small_image" src="./img/member_sum/IMG_7476.jpg">
+						<img class="small_image" src="./img/menber_sum/IMG_7476.jpg">
 						<a  class="profile_name" title="角空穂
 						<div class='explain'>
 							<h1>utubo</h1>
@@ -642,7 +631,7 @@ See below for details.</br>
 							Email:&nbsp;utubo1.61803@gmail.com
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/member_full/utsubo.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/menber_full/utsubo.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">角空穂</p>
 						</div>
@@ -650,7 +639,7 @@ See below for details.</br>
 					</div>
 					
 					<div class="profile">
-						<img class="small_image" src="./img/member_sum/maharu.jpg">
+						<img class="small_image" src="./img/menber_sum/maharu.jpg">
 						<a  class="profile_name" title="カルロスまーちゃん
 						<div class='explain'>
 							<h1>アーティスト / テルミン奏者（練習中）</h1>
@@ -663,7 +652,7 @@ See below for details.</br>
 							<a href='http://maharu929.wix.com/maharu'>[HP]</a>
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/member_full/maharu.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/menber_full/maharu.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">カルロスまーちゃん/p>
 						</div>
