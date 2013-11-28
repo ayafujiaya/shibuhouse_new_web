@@ -469,13 +469,11 @@ line-height: 20px;
 	line-height: 18px;
 }
 
-#bio_background {
-	background-color:#FFFFFF;
+#bio_background:hover {
+	color:#ffffff;
+	background-color:##464646;
 }
 
-#bio_background:hover {
-	background-color:#FFFFCC;
-}
 
 
 #cv {
