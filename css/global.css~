@@ -315,7 +315,7 @@ width: 90% !important;
 
 .explain {
 	width: 29%;
-right: 14%;
+/*right: 1%;*/
 position: absolute;
 font-size: 12px;
 }
