@@ -45,7 +45,7 @@
 							<a href='https://twitter.com/satoketa'>Twitter</a>
 							</div>
 						</div>" 
-						rel="lightbox[imagegroup]" data-lightbox="roadtrip" href="./img/menber_sum/Keita_saito.jpg" style="">
+						rel="lightbox[imagegroup]" data-lightbox="roadtrip" href="./img/menber_full/keita.jpg" style="">
 						<div>
 							<p class="full_name">斎藤桂太</p>
 						</div>
