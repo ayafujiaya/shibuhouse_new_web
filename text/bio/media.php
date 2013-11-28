@@ -31,6 +31,14 @@
 <th>2012.03</th>
 <td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/artguide.php");'>『東京アートガイド』[美術手帖編集部]</td>
 </tr>
+
+
+<tr>
+<th>2012.06</th>
+<td style="cursor: pointer" onclick=''>『天然生活』/「物々交換を開催してみました」</td>
+</tr>
+
+
 <tr>
 <th>2012.06</th>
 <td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/endan.php");'>「#エンダン W」[NOTTV]</td>
@@ -71,4 +79,12 @@
 <th>2013.10</th>
 <td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/ropponngi_2013.php");'>『六本木クロッシング2013展 アウト・オブ・ダウト』[森美術館]</td>
 </tr>
+
+
+<tr>
+<th>2013.11</th>
+<td style="cursor: pointer" onclick=''>「ニッポンのジレンマ」[NHK]/「新ＴＯＫＹＯ論」</td>
+</tr>
+
+
 </table>
