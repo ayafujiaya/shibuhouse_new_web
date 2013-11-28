@@ -256,15 +256,15 @@ footer {
 }
 
 
-#footer_member{
+#footer_smile{
                 display: block;
                 width: 29px;
                 height: 30px;
-        background: url('../img/member.png') no-repeat 0 0;
+        background: url('../img/smile.png') no-repeat 0 0;
 }
 
-#footer_member:hover {
-        background: url('../img/hovers/footer_images/member_hover.png') no-repeat 0 0;
+#footer_smile:hover {
+        background: url('../img/hovers/footer_images/smile_hover.png') no-repeat 0 0;
 }
 
 #footer_carry{
@@ -288,14 +288,14 @@ footer {
         background: url('../img/hovers/footer_images/facebook_hover.png') no-repeat 0 0;
 }
 
-#footer_infomation{
+#footer_information{
                 display: block;
                 width: 28px;
                 height: 30px;
-        background: url('../img/infomation.png') no-repeat 0 0;
+        background: url('../img/information.png') no-repeat 0 0;
 }
-#footer_infomation:hover {
-        background: url('../img/hovers/footer_images/infomation_hover.png') no-repeat 0 0;
+#footer_information:hover {
+        background: url('../img/hovers/footer_images/information_hover.png') no-repeat 0 0;
 }
 
 #footer_twitter{
@@ -305,7 +305,7 @@ footer {
         background: url('../img/twitter.png') no-repeat 0 0;
 }
 #footer_twitter:hover {
-        background: url('../img/twitter.png') no-repeat 0 0;
+        background: url('../img/hovers/footer_images/twitter.png') no-repeat 0 0;
 }
 
 #footer_table {
