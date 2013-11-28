@@ -27,7 +27,8 @@ body {
 }
 
 a {
-	color:rgb(118, 153, 255);
+	color: #FFFFFF;
+	/*color:rgb(118, 153, 255);*/
 }
 #wrap {
 	min-width: 1240px;
@@ -532,6 +533,10 @@ max-height: 400px;
 }
 #twitter-widget-0 {
 	width: 80px !important;
+}
+
+#ex_text > a {
+	color:#000000;
 }
 
 
