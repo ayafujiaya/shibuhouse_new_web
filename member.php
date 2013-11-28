@@ -325,7 +325,7 @@ See below for details.</br>
               &nbsp;
               <a  target='_blank' href='http://www.facebook.com/StrangeloveZukkyun'><img src='./img/facebook.png'  border='0'></a>
               &nbsp;
-              <a  target='_blank' href='http://descendantsofhamlet.tumblr.com'>Tumblr</a>
+              <a  target='_blank' href='http://descendantsofhamlet.tumblr.com'>[Tumblr]</a>
               &nbsp;
               <a  target='_blank' href='http://ameblo.jp/strangelove-zukkyun/'>[HP]</a>
               </div>
