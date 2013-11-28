@@ -637,10 +637,8 @@ See below for details.</br>
             <a  class="profile_name" title="角空穂
             <div class='explain'>
               <h1>utubo</h1>
-              <div class='explain_text'>Born:1989男#Art#Martial Arts#武術#Karate#Ninja#Dancing#Pa
-              inting#現代美術#平行四辺形#Metamorphose#建築#Spirituality#</br>人間の能力の極地</br>
+              <div class='explain_text'>Born:1989男#Art#Martial Arts#武術#Karate#Ninja#Dancing#Painting#現代美術#平行四辺形#Metamorphose#建築#Spirituality#</br>人間の能力の極地</br>
               </br>
-            
               Email:&nbsp;utubo1.61803@gmail.com
               </div>
             </div>
