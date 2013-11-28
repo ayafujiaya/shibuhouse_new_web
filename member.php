@@ -169,6 +169,24 @@ See below for details.</br>
             </div>
             </a>
           </div>
+          <!--------------------------Profile Start -------------------------->
+          <div class="profile">
+            <img class="small_image" src="./img/member_sum/ayafuji.gif">
+            <a  class="profile_name" title="ayafuji
+            <div class='explain'>
+              <h1>Interactive Media Engineer</h1>
+              <div class='explain_text'>相互作用性を考えている人。</br>
+              </br>
+              <a  target='_blank' href='https://twitter.com/_ayafuji_'><img src='./img/twitter.png'  border='0'></a>
+              </div>
+            </div>
+            " data-lightbox="roadtrip" href='./img/member_full/ayafuji.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+            <div>
+              <p class="full_name">ayafuji</p>
+            </div>
+            </a>
+          </div>
+
         <!--------------------------Profile Start -------------------------->
           <div class="profile">
             <img class="small_image" src="./img/member_sum/gesuyama.jpg">
@@ -417,23 +435,6 @@ See below for details.</br>
             " data-lightbox="roadtrip" href='./img/member_full/kajiya.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
             <div>
               <p class="full_name">加治屋文晶</p>
-            </div>
-            </a>
-          </div>
-          <!--------------------------Profile Start -------------------------->
-          <div class="profile">
-            <img class="small_image" src="./img/member_sum/ayafuji_profile.jpg">
-            <a  class="profile_name" title="ayafuji
-            <div class='explain'>
-              <h1>Interactive Media Engineer</h1>
-              <div class='explain_text'>相互作用性を考えている人。</br>
-              </br>
-              <a  target='_blank' href='https://twitter.com/_ayafuji_'><img src='./img/twitter.png'  border='0'></a>
-              </div>
-            </div>
-            " data-lightbox="roadtrip" href='./img/member_full/ayafuji.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
-            <div>
-              <p class="full_name">ayafuji</p>
             </div>
             </a>
           </div>
