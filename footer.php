@@ -4,14 +4,14 @@
       <div id="footer_table">
         <table>
           <tr align="center" style="margin:0 100px 0 25px;">
-            <td style="padding-right:75px;"><a href="./index.php"><img src="./img/house.png"></a></td>
+            <td style="padding-right:75px;"><a href="./index.php" id="footer_house"></a></td>
             <td style="padding-right:75px;"><a href="./about.php" id="footer_hatena"></a></td>
-            <td style="padding-right:75px;"><img src="./img/document.png"></td>
-            <td style="padding-right:75px;"><img src="./img/carry.png"></td>
-            <td style="padding-right:75px;"><img src="./img/smile.png"></td>
-            <td style="padding-right:75px;"><img src="./img/mail_footer.png"></td>
-            <td style="padding-right:75px;"><img src="./img/twitter.png"></td>
-            <td style="padding-right:0px;"><img src="./img/facebook.png"></td>
+            <td style="padding-right:75px;"><a href="./bio.php" id="footer_document"></a></td>
+            <td style="padding-right:75px;"><a href="" id="footer_carry"></a></td>
+            <td style="padding-right:75px;"><a href="./member.php" id="footer_member"></a></td>
+            <td style="padding-right:75px;"><a href="./" id="footer_infomation"></a></td>
+            <td style="padding-right:75px;"><a href="https://twitter.com/shibuhouse" id="footer_twitter"></a></td>
+            <td style="padding-right:0px;"><a href="https://www.facebook.com/pages/%E6%B8%8B%E5%AE%B6-shibuhouse/171872296182719" id="footer_facebook"></a></td>
           </tr>
           <tr align="center">
             <td style="padding-right:75px;"><a href='./index.php'>home</a></td>
