@@ -1,8 +1,8 @@
 <div id="ex_image">
-	<img class="inner_ex_image" src="./img/AI/dammy_01.gif">
-	<img class="inner_ex_image" src="./img/AI/dammy_02.gif">
-	<img class="inner_ex_image" src="./img/AI/dammy_03.gif">
-	<img class="inner_ex_image" src="./img/AI/dammy_04.gif">
+	<img class="inner_ex_image" src="./img / event_sum/outof/outof_001.jpg">
+	<img class="inner_ex_image" src="./img / event_sum/outof/outof_002.jpg">
+	<img class="inner_ex_image" src="./img / event_sum/outof/outof_003.jpg">
+	<img class="inner_ex_image" src="./img / event_sum/outof/outof_004.jpg">
 </div>
 <div id="ex_text">
 「OUT OF HOUSE -シャッキシャキのキャベツを添えて-」<br />
