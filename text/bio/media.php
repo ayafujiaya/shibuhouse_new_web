@@ -5,11 +5,11 @@
 </tr>
 <tr>
 <th>2011.05</th>
-<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/twe.php");'>  Tokyo Weekender/「Uncovering a Tokyo discovery」</td>
+<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/twe.php");'>「Tokyo Weekender」/「Uncovering a Tokyo discovery」</td>
 </tr>
 <tr>
 <th>2011.08</th>
-<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/gaget_1.php");'>  ガジェット通信/「関係者に聞くシェアハウス”渋家”の過去・現在・未来」</td>
+<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/gaget_1.php");'>「ガジェット通信」/「関係者に聞くシェアハウス”渋家”の過去・現在・未来」</td>
 </tr>
 <tr>
 <th>2011.11</th>
@@ -49,11 +49,11 @@
 </tr>
 <tr>
 <th>2012.08</th>
-<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/aia.php");'>  Art it asia/「渋家」</td>
+<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/aia.php");'>「Art it asia」/「渋家」</td>
 </tr>
 <tr>
 <th>2012.09</th>
-<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/netokaru_1.php");'>  NETOKARU/「渋谷にあるオルタナティブスペース”渋家”新代表に菅井早苗が就任」</td>
+<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/netokaru_1.php");'>「NETOKARU」/「渋谷にあるオルタナティブスペース”渋家”新代表に菅井早苗が就任」</td>
 </tr>
 <tr>
 <th>2013.01</th>
@@ -65,11 +65,11 @@
 </tr>
 <tr>
 <th>2013.03</th>
-<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/25d_news.php");'>  2.5D/「「渋家」が新メンバー募集、新料金は 2.5 万」</td>
+<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/25d_news.php");'>「2.5D」/「「渋家」が新メンバー募集、新料金は 2.5 万」</td>
 </tr>
 <tr>
 <th>2013.03</th>
-<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/art_it_asia.php");'>Art it asia/「売り渋家」</td>
+<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/art_it_asia.php");'>「Art it asia」/「売り渋家」</td>
 </tr>
 <tr>
 <th>2013.06</th>
