@@ -36,9 +36,9 @@
 						</tr>
 						<tr>
 							<td style="padding:0 50px;">アバウト</td>
-							<td style="padding:0 25px;">バイオグラフィー</td>
-							<td style="padding:0 55px;">ライフ</td>
-							<td style="padding:0 50px;">メンバー</td>
+							<td style="padding:0 30px;">バイオグラフィー</td>
+							<td style="padding:0 58px;">ライフ</td>
+							<td style="padding:0 53px;">メンバー</td>
 						</tr>
 					</table>
 				</div><!-- #nav -->
