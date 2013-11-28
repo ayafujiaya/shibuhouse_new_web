@@ -481,9 +481,9 @@ See below for details.</br>
             <img class="small_image" src="./img/member_sum/taiki.jpg">
             <a  class="profile_name" title="増沢大輝
             <div class='explain'>
-              <h1>ダンサー・振付家役</h1>
-              <div class='explain_text'><br />
-1989年生まれ。<br />
+              <h1>ダンサー・振付家</h1>
+              <div class='explain_text'>
+1989年生まれ。
 ストリートダンスを入り口に広めのジャンルを浅めに経由。「今の中にしかない身体」をテーマにそれが持つ「ずるさ」をダンスとして、抱える「切実さ」はパフォーミングアーツとして分類し活動を展開中。現在は身体のアーカイブ化にも取り組む。<br />
 「<a href='http://www.youtube.com/watch?v=ZRM08-P79tQ' target='_blank'>cinema is dancing</a>」<br />
 「<a href='http://m.youtube.com/watch?v=OhMdGUjb8JI&amp;desktop_uri=%2Fwatch%3Fv%3DOhMdGUjb8JI' target='_blank'>penetration twin</a>」</br>
