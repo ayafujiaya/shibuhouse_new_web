@@ -120,7 +120,7 @@
               &nbsp;
               <a  target='_blank' href='https://www.facebook.com/kintominami'><img src='./img/facebook.png'  border='0'></a>
               &nbsp;
-              <a  target='_blank' href='http://kinto.arttimes.info/'><div id='bio_background'>[&nbsp;web&nbsp;]</div></a>
+              <a  target='_blank' href='http://kinto.arttimes.info/'>[&nbsp;web&nbsp;]</a>
               &nbsp;
               Email:&nbsp;minami.kinto@gmail.com
               </div>
@@ -665,7 +665,7 @@ See below for details.</br>
               「ハッピー感のある空間」が好き。</br>
               物事を宇宙規模で考えるように心がけています。</br>
               </br>
-              <a  target='_blank' href='http://maharu929.wix.com/maharu'>[]</a>
+              <a  target='_blank' href='http://maharu929.wix.com/maharu'>http://maharu929.wix.com/maharu</a>
               </div>
             </div>
             " data-lightbox="roadtrip" href='./img/member_full/maharu.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
