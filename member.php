@@ -163,7 +163,7 @@ See below for details.</br>
 							<a href='http://id774.net'>http://id774.net</a>
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/member_full/twitt.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/member_full/id774.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">Yasuhiro Nakayama　</p>
 						</div>
