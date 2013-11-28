@@ -51,30 +51,7 @@
 						</div>
 						</a>
 					</div>
-					<!--------------------------Profile Start -------------------------->
-					<div class="profile">
-						<img class="small_image" src="./img/menber_sum/Keita_saito.jpg">
-						<a  class="profile_name" title="Popup Name 
-						<div class='explain'>
-							<h1>渋家代表</h1>
-							<div class='explain_text'>1987年 東京都出身。アーティスト。
-							2008年、異なるジャンルのクリエーターが1つの家をシェアするコミュニケーションスペース「渋家」を創設し
-							、「人と人のコミュニケーションからコンテンツを生み出す文化事業」をコンセプトに、そこに集うメンバーと共に様々
-							な作品、企画、展示、イベント、プロジェクトなどを製作している。</br>
-							</br>
-							<a href='https://twitter.com/satoketa'><img src='./img/twitter.png'  border='0'></a>
-							&nbsp;
-							<a href='http://facebook.com/satoketa'><img src='./img/facebook.png'  border='0'></a>
-							&nbsp;
-							Email:&nbsp;saito.shibuhouse@gmail.com
-							</div>
-						</div>
-						" data-lightbox="roadtrip" href='./img/menber_sum/Keita_saito.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
-						<div>
-							<p class="full_name">Mouse Over Name</p>
-						</div>
-						</a>
-					</div>
+			
 
 					<!--------------------------Profile Start -------------------------->
 					<div class="profile">
@@ -97,7 +74,7 @@
 						</div>
 						" data-lightbox="roadtrip" href='./img/menber_full/Toshikuni.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
-							<p class="full_name">Mouse Over Name</p>
+							<p class="full_name">山口季邦 / としくに</p>
 						</div>
 						</a>
 					</div>
@@ -118,7 +95,7 @@
 						</div>
 						" data-lightbox="roadtrip" href='./img/menber_full/momo.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
-							<p class="full_name">Mouse Over Name</p>
+							<p class="full_name">ちゃんもも◎　</p>
 						</div>
 						</a>
 					</div>
@@ -144,7 +121,7 @@
 						</div>
 						" data-lightbox="roadtrip" href='./img/menber_full/kinmi.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
-							<p class="full_name">Mouse Over Name</p>
+							<p class="full_name">金藤みなみ</p>
 						</div>
 						</a>
 					</div>
@@ -161,7 +138,7 @@
 						</div>
 						" data-lightbox="roadtrip" href='./img/menber_full/yuki.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
-							<p class="full_name">Mouse Over Name</p>
+							<p class="full_name">石田祐規</p>
 						</div>
 						</a>
 					</div>
@@ -184,7 +161,7 @@
 						</div>
 						" data-lightbox="roadtrip" href='./img/menber_full/twitt.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
-							<p class="full_name">Mouse Over Name</p>
+							<p class="full_name">Yasuhiro Nakayama　</p>
 						</div>
 						</a>
 					</div>
@@ -207,7 +184,7 @@
 						</div>
 						" data-lightbox="roadtrip" href='./img/menber_full/gesuyama.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
-							<p class="full_name">Mouse Over Name</p>
+							<p class="full_name">下衆山毒淋　</p>
 						</div>
 						</a>
 					</div>
@@ -227,7 +204,7 @@
 						</div>
 						" data-lightbox="roadtrip" href='./img/menber_full/odagiri.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
-							<p class="full_name">Mouse Over Name</p>
+							<p class="full_name">小田切裕史　</p>
 						</div>
 						</a>
 					</div>
@@ -249,7 +226,7 @@
 						</div>
 						" data-lightbox="roadtrip" href='./img/menber_full/dai.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
-							<p class="full_name">Mouse Over Name</p>
+							<p class="full_name">dainmt　</p>
 						</div>
 						</a>
 					</div>
@@ -270,7 +247,7 @@
 						</div>
 						" data-lightbox="roadtrip" href='./img/menber_full/haga.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
-							<p class="full_name">Mouse Over Name</p>
+							<p class="full_name">芳賀仁志</p>
 						</div>
 						</a>
 					</div>
@@ -292,7 +269,7 @@
 						</div>
 						" data-lightbox="roadtrip" href='./img/menber_full/numa.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
-							<p class="full_name">Mouse Over Name</p>
+							<p class="full_name">ぬま</p>
 						</div>
 						</a>
 					</div>
@@ -312,7 +289,7 @@
 						</div>
 						" data-lightbox="roadtrip" href='./img/menber_full/yavao.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
-							<p class="full_name">Mouse Over Name</p>
+							<p class="full_name">YAVAO / 小池将樹</p>
 						</div>
 						</a>
 					</div>
@@ -335,7 +312,7 @@
 						</div>
 						" data-lightbox="roadtrip" href='./img/menber_full/mr.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
-							<p class="full_name">Mouse Over Name</p>
+							<p class="full_name">ストレンジラヴ</p>
 						</div>
 						</a>
 					</div>
@@ -359,7 +336,7 @@
 						</div>
 						" data-lightbox="roadtrip" href='./img/menber_full/nishida.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
-							<p class="full_name">Mouse Over Name</p>
+							<p class="full_name">西田篤史　</p>
 						</div>
 						</a>
 					</div>
@@ -378,24 +355,11 @@
 						</div>
 						" data-lightbox="roadtrip" href='./img/menber_full/kinoko.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
-							<p class="full_name">Mouse Over Name</p>
+							<p class="full_name">毒k!n⊗k¤p!nk™</p>
 						</div>
 						</a>
 					</div>
-					<!--------------------------Profile Start -------------------------->
-					<div class="profile">
-						<img class="small_image" src="./img/aeri/03.gif">
-						<a  class="profile_name" title="Popup Name 
-						<div class='explain'>
-							<h1>Yuki Takada</h1>
-							<div class='explain_text'>プロフィールテキスト</div>
-						</div>
-						" data-lightbox="roadtrip" href="./img/aeri/03.gif" style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
-						<div>
-							<p class="full_name">Mouse Over Name</p>
-						</div>
-						</a>
-					</div>
+				
 				<!--------------------------Profile Start -------------------------->
 					<div class="profile">
 						<img class="small_image" src="./img/menber_sum/zaqi.jpg">
@@ -415,7 +379,7 @@
 						</div>
 						" data-lightbox="roadtrip" href='./img/menber_full/zaqi.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
-							<p class="full_name">Mouse Over Name</p>
+							<p class="full_name">磯崎愛生 / zaqi</p>
 						</div>
 						</a>
 					</div>
@@ -434,7 +398,7 @@
 						</div>
 						" data-lightbox="roadtrip" href='./img/menber_full/ami.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
-							<p class="full_name">Mouse Over Name</p>
+							<p class="full_name">いなばあみ</p>
 						</div>
 						</a>
 					</div>
@@ -450,7 +414,7 @@
 						</div>
 						" data-lightbox="roadtrip" href='./img/menber_full/kajiya.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
-							<p class="full_name">Mouse Over Name</p>
+							<p class="full_name">加治屋文晶</p>
 						</div>
 						</a>
 					</div>
@@ -466,7 +430,7 @@
 						</div>
 						" data-lightbox="roadtrip" href='./img/menber_full/ayafuji.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
-							<p class="full_name">Mouse Over Name</p>
+							<p class="full_name">ayafuji</p>
 						</div>
 						</a>
 					</div>
@@ -486,7 +450,7 @@
 						</div>
 						" data-lightbox="roadtrip" href='./img/menber_full/gosupi.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
-							<p class="full_name">Mouse Over Name</p>
+							<p class="full_name">ゴッドスコーピオン</p>
 						</div>
 						</a>
 					</div>
@@ -508,7 +472,7 @@
 						</div>
 						" data-lightbox="roadtrip" href='./img/menber_full/yu.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
-							<p class="full_name">Mouse Over Name</p>
+							<p class="full_name">太田悠</p>
 						</div>
 						</a>
 					</div>
@@ -531,7 +495,7 @@
 						</div>
 						" data-lightbox="roadtrip" href='./img/menber_full/taiki.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
-							<p class="full_name">Mouse Over Name</p>
+							<p class="full_name">増沢大輝</p>
 						</div>
 						</a>
 					</div>
@@ -552,7 +516,7 @@
 						</div>
 						" data-lightbox="roadtrip" href='./img/menber_full/kenta.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
-							<p class="full_name">Mouse Over Name</p>
+							<p class="full_name">小林健太</p>
 						</div>
 						</a>
 					</div>
@@ -574,7 +538,7 @@
 						</div>
 						" data-lightbox="roadtrip" href='./img/menber_full/hiryu.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
-							<p class="full_name">Mouse Over Name</p>
+							<p class="full_name">岡村飛龍</p>
 						</div>
 						</a>
 					</div>
@@ -593,7 +557,7 @@
 						</div>
 						" data-lightbox="roadtrip" href='./img/menber_full/masumi.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
-							<p class="full_name">Mouse Over Name</p>
+							<p class="full_name">早坂真純</p>
 						</div>
 						</a>
 					</div>
@@ -614,7 +578,7 @@
 						</div>
 						" data-lightbox="roadtrip" href='./img/menber_full/sei.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
-							<p class="full_name">Mouse Over Name</p>
+							<p class="full_name">木皮成</p>
 						</div>
 						</a>
 					</div>
@@ -633,7 +597,7 @@
 						</div>
 						" data-lightbox="roadtrip" href='./img/menber_full/kuroda.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
-							<p class="full_name">Mouse Over Name</p>
+							<p class="full_name">黒田玲兎</p>
 						</div>
 						</a>
 					</div>
@@ -653,7 +617,7 @@
 						</div>
 						" data-lightbox="roadtrip" href='./img/menber_full/Toshikuni.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
-							<p class="full_name">Mouse Over Name</p>
+							<p class="full_name">秋山亮</p>
 						</div>
 						</a>
 					</div>
@@ -672,7 +636,7 @@
 						</div>
 						" data-lightbox="roadtrip" href='./img/menber_full/Toshikuni.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
-							<p class="full_name">Mouse Over Name</p>
+							<p class="full_name">角空穂</p>
 						</div>
 						</a>
 					</div>
@@ -693,7 +657,7 @@
 						</div>
 						" data-lightbox="roadtrip" href='./img/menber_full/maharu.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
-							<p class="full_name">Mouse Over Name</p>
+							<p class="full_name">カルロスまーちゃん/p>
 						</div>
 						</a>
 					</div>
