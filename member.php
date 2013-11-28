@@ -616,7 +616,7 @@ See below for details.</br>
           </div>
           
           <div class="profile">
-            <img class="small_image" src="./img/member_sum/IMG_7476.jpg">
+            <img class="small_image" src="./img/member_sum/akiyama.jpg">
             <a  class="profile_name" title="秋山亮
             <div class='explain'>
               <h1>Artist</h1>
@@ -629,7 +629,7 @@ See below for details.</br>
               </br>
               </div>
             </div>
-            " data-lightbox="roadtrip" href='./img/member_full/utsubo.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+            " data-lightbox="roadtrip" href='./img/member_full/akiyama.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
             <div>
               <p class="full_name">秋山亮</p>
             </div>
