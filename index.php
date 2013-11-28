@@ -103,7 +103,7 @@ display: block;
 width: 260px;
 font-size: 32px;
 font-family: monospace;">080-3310-4083</p>
-            <p style="margin: 10 auto;
+            <p style="margin: 0 auto;
 width: 420px;
 font-size: 34px;
 font-family: monospace;
