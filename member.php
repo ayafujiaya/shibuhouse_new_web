@@ -120,7 +120,7 @@
               &nbsp;
               <a  target='_blank' href='https://www.facebook.com/kintominami'><img src='./img/facebook.png'  border='0'></a>
               &nbsp;
-              <a  target='_blank' href='http://kinto.arttimes.info/'>http://kinto.arttimes.info</a>
+              <a  target='_blank' href='http://kinto.arttimes.info/'>[&nbsp;web&nbsp;]</a>
               &nbsp;
               Email:&nbsp;minami.kinto@gmail.com
               </div>
@@ -200,7 +200,7 @@ See below for details.</br>
               </br>
               <a  target='_blank' href='https://twitter.com/menherahhshitt '><img src='./img/twitter.png'  border='0'></a>
               &nbsp;
-              <a  target='_blank' href='http://s.ameblo.jp/menherahhshit'>[HP]</a>
+              <a  target='_blank' href='http://s.ameblo.jp/menherahhshit'>[&nbsp;ameblo&nbsp;]</a>
 
               </div>
             </div>
@@ -243,7 +243,7 @@ See below for details.</br>
               &nbsp;
               <a  target='_blank' href='https://www.facebook.com/dai.nmt'><img src='./img/facebook.png'  border='0'></a>
               &nbsp;
-              <a  target='_blank' href='http://uranai-tarim.jp/'>[HP]</a>
+              <a  target='_blank' href='http://uranai-tarim.jp/'>[&nbsp;web&nbsp;]</a>
               </div>
             </div>
             " data-lightbox="roadtrip" href='./img/member_full/dai.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
@@ -285,7 +285,7 @@ See below for details.</br>
               </br>
               <a  target='_blank' href='https://twitter.com/tak_fu_k_u'><img src='./img/twitter.png'  border='0'></a>
               &nbsp;
-              <a  target='_blank' href='http://d.hatena.ne.jp/the_tramp/'>[HP]</a>
+              <a  target='_blank' href='http://d.hatena.ne.jp/the_tramp/'>[&nbsp;HP&nbsp;]</a>
               </div>
             </div>
             " data-lightbox="roadtrip" href='./img/member_full/numa.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
@@ -306,6 +306,8 @@ See below for details.</br>
               メディアアートユニット「huez」を結成。尚、YAVAOの由来は2010年当時「小池くん」と呼ぶことを不憫に思った渋家住人が正反対の「ヤバ男」と呼び始めたのがきっかけ。</br>
               </br>
               <a  target='_blank' href='https://twitter.com/EX_YAVAO'><img src='./img/twitter.png'  border='0'></a>
+              &nbsp;
+              Email:&nbsp;oike.masaki@gmail.com
             </div>
             " data-lightbox="roadtrip" href='./img/member_full/yavao.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
             <div>
@@ -325,9 +327,9 @@ See below for details.</br>
               &nbsp;
               <a  target='_blank' href='http://www.facebook.com/StrangeloveZukkyun'><img src='./img/facebook.png'  border='0'></a>
               &nbsp;
-              <a  target='_blank' href='http://descendantsofhamlet.tumblr.com'>[Tumblr]</a>
+              <a  target='_blank' href='http://descendantsofhamlet.tumblr.com'>./img/tumblr.png</a>
               &nbsp;
-              <a  target='_blank' href='http://ameblo.jp/strangelove-zukkyun/'>[HP]</a>
+              <a  target='_blank' href='http://ameblo.jp/strangelove-zukkyun/'>[&nbsp;ameblo&nbsp;]</a>
               </div>
             </div>
             " data-lightbox="roadtrip" href='./img/member_full/mr.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
@@ -511,7 +513,7 @@ See below for details.</br>
               、身の回りの生活をモチーフにした写真を撮って、自身のブログにアップロードしています。2013年にBiG BANG PRESS（bigbangpress.net）という架空の出版社
               を立ち上げ、写真にまつわるアートプロジェクトを運営しています。</br>
               </br>
-              <a  target='_blank' href='http://ekabk.blogspot.com'>[HP]</a>
+              <a  target='_blank' href='http://ekabk.blogspot.com'>http://ekabk.blogspot.com</a>
               </div>
             </div>
             " data-lightbox="roadtrip" href='./img/member_full/kenta.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
@@ -586,7 +588,7 @@ See below for details.</br>
               数々の演劇団体を手がける。2013年度こまばアゴラ劇場アーティスト会員。2010年からアジア舞台芸術祭にも関わっている。振付家としてスキルアップのため、十条のスタジオJ☆S
               tudioで再下積み中。2014年、最前線に爆発的に帰ってくる予定。</br>
               </br>
-              <a  target='_blank' href='http://sharakusei.jimdo.com/'>[HP]</a>
+              <a  target='_blank' href='http://sharakusei.jimdo.com/'>http://sharakusei.jimdo.com</a>
               </div>
             </div>
             " data-lightbox="roadtrip" href='./img/member_full/sei.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
@@ -621,7 +623,10 @@ See below for details.</br>
             <div class='explain'>
               <h1>Artist</h1>
               <div class='explain_text'>
-              1980年生まれ。2013年10月から渋家メンバーになった。教育機関での美術教育は一切うけていない。独自の雰囲気と鋭い視点で渋家のアートチームで活動中。メンバーの中でも１、２を争う高身長。「vivivi」出演時ステージで舞台美術を作るパフォーマンスをした際には誰もが届かない場所に一発でビスを打ち込み共演者を驚かせた。</br>
+              1980年生まれ。2013年10月から渋家メンバーになった。教育機関での美術教育は一切うけていない。
+              独自の雰囲気と鋭い視点で渋家のアートチームで活動中。メンバーの中でも１、２を争う高身長。
+              「vivivi」出演時ステージで舞台美術を作るパフォーマンスをした際には誰もが届かない場所に一発
+              でビスを打ち込み共演者を驚かせた。</br>
               </br>
               </div>
             </div>
@@ -660,7 +665,7 @@ See below for details.</br>
               「ハッピー感のある空間」が好き。</br>
               物事を宇宙規模で考えるように心がけています。</br>
               </br>
-              <a  target='_blank' href='http://maharu929.wix.com/maharu'>[HP]</a>
+              <a  target='_blank' href='http://maharu929.wix.com/maharu'>[]</a>
               </div>
             </div>
             " data-lightbox="roadtrip" href='./img/member_full/maharu.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
