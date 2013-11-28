@@ -697,7 +697,7 @@ See below for details.</br>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script defer src="js/jquery.flexslider.js"></script>
     <script type="text/javascript" src="js/scroll_top.js"></script>
-    <script type="text/javascript"src="js/lightbox-2.6.min.js"></script>
+    <script type="text/javascript"src="js/lightbox.js"></script>
     <script type="text/javascript">
     $(window).load(function() {
       $('.flexslider').flexslider({
