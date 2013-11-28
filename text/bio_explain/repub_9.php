@@ -1,5 +1,5 @@
 <div id="ex_image">
-	<img class="inner_ex_image" src="./img/event_sum/repub_9_001.jpg">
+	<img class="inner_ex_image" src="./img/event_sum/repub_9/repub_9_001.jpg">
 
 </div>
 <div id="ex_text">
