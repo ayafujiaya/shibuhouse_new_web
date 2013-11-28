@@ -1,8 +1,5 @@
 <div id="ex_image">
 	<img class="inner_ex_image" src="./img/media_sum/spa_1/spa_1_001.jpg">
-	<img class="inner_ex_image" src="./img/media_sum/spa_1/spa_1_002.jpg">
-	<img class="inner_ex_image" src="./img/media_sum/spa_1/spa_1_003.jpg">
-	<img class="inner_ex_image" src="./img/media_sum/spa_1/spa_1_004.jpg">
 </div>
 <div id="ex_text">
 『SPA!』<br />
