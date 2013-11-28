@@ -316,15 +316,67 @@
 						</div>
 						</a>
 					</div>
-					<!---------Profile Start -------------------------->
+				<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/aeri/03.gif">
-						<a  class="profile_name" title="Popup Name 
+						<img class="small_image" src="./img/menber_sum/Mr.jpg">
+						<a  class="profile_name" title="ストレンジラヴ
 						<div class='explain'>
-							<h1>Yuki Takada</h1>
-							<div class='explain_text'>プロフィールテキスト</div>
+							<h1>ダダイスト</h1>
+							<div class='explain_text'>1993/08/30 詩を書かない詩人。</br>
+							</br>
+							<a href='https://twitter.com/Hamlet___telmaH'><img src='./img/twitter.png'  border='0'></a>
+							&nbsp;
+							<a href='http://www.facebook.com/StrangeloveZukkyun'><img src='./img/facebook.png'  border='0'></a>
+							&nbsp;
+							<a href='http://descendantsofhamlet.tumblr.com'>Tumblr</a>
+							&nbsp;
+							<a href='http://ameblo.jp/strangelove-zukkyun/'>[HP]</a>
+							</div>
 						</div>
-						" data-lightbox="roadtrip" href="./img/aeri/03.gif" style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/menber_full/mr.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						<div>
+							<p class="full_name">Mouse Over Name</p>
+						</div>
+						</a>
+					</div>
+				<!--------------------------Profile Start -------------------------->
+					<div class="profile">
+						<img class="small_image" src="./img/menber_sum/atsushi_nishida.jpg">
+						<a  class="profile_name" title="西田篤史　
+						<div class='explain'>
+							<h1>編集者</h1>
+							<div class='explain_text'>1986年 富山県出身。エディトリアルプロダクション451℃
+							代表。月刊誌の編集者を経て、2013年、編集プロダクションを設立。企画•編集•執
+							筆•販促などから、出版プロデュース、トークイベントの主催まで多岐
+							にわたって活動。現在、クラウドファンディングによる本の未来を作るプロジェクト推進中。</br>
+							</br>
+							<a href='https://twitter.com/hon_nishi'><img src='./img/twitter.png'  border='0'></a>
+							&nbsp;
+							<a href='https://www.facebook.com/profile.php?id=100005790223960'><img src='./img/facebook.png'  border='0'></a>
+							&nbsp;
+							Email:&nbsp;editorial.production.451@gmail.com
+							</div>
+						</div>
+						" data-lightbox="roadtrip" href='./img/menber_full/nishida.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						<div>
+							<p class="full_name">Mouse Over Name</p>
+						</div>
+						</a>
+					</div>
+				<!--------------------------Profile Start -------------------------->
+					<div class="profile">
+						<img class="small_image" src="./img/menber_sum/dokukinoko.jpg">
+						<a  class="profile_name" title="毒k!n⊗k¤p!nk™
+						<div class='explain'>
+							<h1>FashionCreator / DJ / SJ</h1>
+							<div class='explain_text'>拡張される身体。</br>
+							</br>
+							<a href='https://twitter.com/kinokopink'><img src='./img/twitter.png'  border='0'></a>
+							&nbsp;
+							Email:&nbsp;i.am.etranger@gmail.com 　 
+							</div>
+						</div>
+						" data-lightbox="roadtrip" href='./img/menber_full/kinoko.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">Mouse Over Name</p>
 						</div>
@@ -344,15 +396,43 @@
 						</div>
 						</a>
 					</div>
-					<!--------------------------Profile Start -------------------------->
+				<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/aeri/03.gif">
-						<a  class="profile_name" title="Popup Name 
+						<img class="small_image" src="./img/menber_sum/zaqi.jpg">
+						<a  class="profile_name" title="磯崎愛生 / zaqi
 						<div class='explain'>
-							<h1>Yuki Takada</h1>
-							<div class='explain_text'>プロフィールテキスト</div>
+							<h1>ビデオ・アーティスト / VJ</h1>
+							<div class='explain_text'>1988年生まれ。日藝映画学科映像コース卒業。2013年より渋家に参
+							加。一般的に多く普及されている【映像を用いて物語にアプローチする作品】【消費を志向した
+							映像】【エンターテイメントとしての映像】ではなく、【映像自体にアプローチをしていく作品
+							、消費しえない映像、アートとしての映像】を制作、発表している。また、別名義である zaqi 
+							として都内を中心にVJ活動も行っている。</br>
+							</br>
+							<a href='https://twitter.com/zaqizaqizaqi'><img src='./img/twitter.png'  border='0'></a>
+							&nbsp;
+							<a href='https://www.facebook.com/yoshimi.isozaki.31'><img src='./img/facebook.png'  border='0'></a>
+							</div>
 						</div>
-						" data-lightbox="roadtrip" href="./img/aeri/03.gif" style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/menber_full/zaqi.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						<div>
+							<p class="full_name">Mouse Over Name</p>
+						</div>
+						</a>
+					</div>
+				<!--------------------------Profile Start -------------------------->
+					<div class="profile">
+						<img class="small_image" src="./img/menber_sum/ami_inaba02.jpg">
+						<a  class="profile_name" title="いなばあみ
+						<div class='explain'>
+							<h1>photographer</h1>
+							<div class='explain_text'>日常生活を軸にスナップを撮っています。</br>
+							</br>
+							<a href='https://twitter.com/amiamisg1'><img src='./img/twitter.png'  border='0'></a>
+							&nbsp;
+							<a href='http://amiamisg.tumblr.com'>[Tumblr]</a>
+							</div>
+						</div>
+						" data-lightbox="roadtrip" href='./img/menber_full/ami.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">Mouse Over Name</p>
 						</div>
@@ -360,13 +440,15 @@
 					</div>
 					<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/aeri/03.gif">
-						<a  class="profile_name" title="Popup Name 
+						<img class="small_image" src="./img/menber_sum/kajiya.jpg">
+						<a  class="profile_name" title="加治屋文晶
 						<div class='explain'>
-							<h1>Yuki Takada</h1>
-							<div class='explain_text'>プロフィールテキスト</div>
+							<h1>飲食店経営</h1>
+							<div class='explain_text'>渋家４代目代表。マーチングで全米3位の過去がある。バイクと車が好き。</br>
+							
+							</div>
 						</div>
-						" data-lightbox="roadtrip" href="./img/aeri/03.gif" style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/menber_full/kajiya.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">Mouse Over Name</p>
 						</div>
@@ -374,13 +456,57 @@
 					</div>
 					<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/aeri/03.gif">
-						<a  class="profile_name" title="Popup Name 
-						<div class='explain'>
-							<h1>Yuki Takada</h1>
-							<div class='explain_text'>プロフィールテキスト</div>
+						<img class="small_image" src="./img/menber_sum/ayafuji_profile.jpg">
+						<a  class="profile_name" title="ayafuji
+							<h1>Interactive Media Engineer</h1>
+							<div class='explain_text'>相互作用性を考えている人。</br>
+							</br>
+							<a href='https://twitter.com/_ayafuji_'><img src='./img/twitter.png'  border='0'></a>
+							</div>
 						</div>
-						" data-lightbox="roadtrip" href="./img/aeri/03.gif" style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/menber_full/ayafuji.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						<div>
+							<p class="full_name">Mouse Over Name</p>
+						</div>
+						</a>
+					</div>
+				<!--------------------------Profile Start -------------------------->
+					<div class="profile">
+						<img class="small_image" src="./img/menber_sum/gosupi.jpg">
+						<a  class="profile_name" title="ゴッドスコーピオン
+						<div class='explain'>
+							<h1>ゴッドスコーピオン</h1>
+							<div class='explain_text'>2012年6月より高野政所、Tomad、芳川よしの
+							らに師事を受けDJ活動を開始。催眠術やクンダリーニ・ヨーガを駆使し料理、キック
+							ボクシング等を嗜む。タイ最大の音楽フェスBIG MOUNTAINへの参加や日本の平均的かつ
+							最先端なクラブアシッドパンダカフェやカルチャーハザード渋家の地下で行われるクラブイベント
+							など国内外のイベントに貯蓄が無くならない限り何処でも駆けつける。サソリ界の神。。</br>
+						
+							</div>
+						</div>
+						" data-lightbox="roadtrip" href='./img/menber_full/gosupi.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						<div>
+							<p class="full_name">Mouse Over Name</p>
+						</div>
+						</a>
+					</div>
+					<!--------------------------Profile Start -------------------------->
+			
+					<div class="profile">
+						<img class="small_image" src="./img/menber_sum/yu_oota.jpg">
+						<a  class="profile_name" title="太田悠
+						<div class='explain'>
+							<h1>アーティスト</h1>
+							<div class='explain_text'>美学校にて絵画とドローイングを学ぶ。2011年渋
+							家メンバーに加入。“有機的な線”をモチーフに砂のインスタレーション作品
+							や絵画を制作。2012年TRANS ARTS TOKYOに出展。モデルやSMパフォーマーとしても活動をしており、
+							グラビア写真のアートディレクションも自らつとめる。HP制作中。</br>
+							</br>
+							<a href='http://twitter.com/kinpatukirei'><img src='./img/twitter.png'  border='0'></a>
+						
+							</div>
+						</div>
+						" data-lightbox="roadtrip" href='./img/menber_full/yu.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">Mouse Over Name</p>
 						</div>
@@ -388,75 +514,111 @@
 					</div>
 					<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/aeri/03.gif">
-						<a  class="profile_name" title="Popup Name 
+						<img class="small_image" src="./img/menber_sum/taiki_new.jpg">
+						<a  class="profile_name" title="増沢大輝
 						<div class='explain'>
-							<h1>Yuki Takada</h1>
-							<div class='explain_text'>プロフィールテキスト</div>
-						</div>
-						" data-lightbox="roadtrip" href="./img/aeri/03.gif" style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
-						<div>
-							<p class="full_name">Mouse Over Name</p>
-						</div>
-						</a>
-					</div>
-					<!--------------------------Profile Start -------------------------->
-					<div class="profile">
-						<img class="small_image" src="./img/aeri/03.gif">
-						<a  class="profile_name" title="Popup Name 
-						<div class='explain'>
-							<h1>Yuki Takada</h1>
-							<div class='explain_text'>プロフィールテキスト</div>
-						</div>
-						" data-lightbox="roadtrip" href="./img/aeri/03.gif" style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
-						<div>
-							<p class="full_name">Mouse Over Name</p>
-						</div>
-						</a>
-					</div>
-					<!--------------------------Profile Start -------------------------->
-					<div class="profile">
-						<img class="small_image" src="./img/aeri/03.gif">
-						<a  class="profile_name" title="Popup Name 
-						<div class='explain'>
-							<h1>Yuki Takada</h1>
-							<div class='explain_text'>プロフィールテキスト</div>
-						</div>
-						" data-lightbox="roadtrip" href="./img/aeri/03.gif" style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
-						<div>
-							<p class="full_name">Mouse Over Name</p>
-						</div>
-						</a>
-					</div>
-					<!--------------------------Profile Start -------------------------->
-					<div class="profile">
-						<img class="small_image" src="./img/aeri/03.gif">
-						<a  class="profile_name" title="Popup Name 
-						<div class='explain'>
-							<h1>Yuki Takada</h1>
-							<div class='explain_text'>プロフィールテキスト</div>
-						</div>
-						" data-lightbox="roadtrip" href="./img/aeri/03.gif" style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
-						<div>
-							<p class="full_name">Mouse Over Name</p>
-						</div>
-						</a>
-					</div>
-					<!--------------------------Profile Start -------------------------->
-					<div class="profile">
-						<img class="small_image" src="./img/aeri/03.gif">
-						<a  class="profile_name" title="Popup Name 
-						<div class='explain'>
-							<h1>Yuki Takada</h1>
-							<div class='explain_text'>プロフィールテキスト</div>
-						</div>
-						" data-lightbox="roadtrip" href="./img/aeri/03.gif" style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
-						<div>
-							<p class="full_name">Mouse Over Name</p>
-						</div>
-						</a>
-					</div>
+							<h1>ダンサー・振付家役</h1>
+							<div class='explain_text'>1989年生まれ。4人兄弟の真ん中の下の方とい
+							う絶妙なタイミングで生まれ自由奔放に育てられる。 16歳のときBREAK DANCEを入り
+							口に路上で夜な夜な踊り始め、１年後に創作ダンスをはじめる。 HIPHOP、ロック、舞
+							踏、コンテンポラリーなど広めのジャンルを浅めに経由しつつ独自のスタイルを模索中。</br>
+							</br>
+							<a href='http://twitter.com/taiki02'><img src='./img/twitter.png'  border='0'></a>
+							&nbsp;
 
+							Email:&nbsp;taiki_masuzawa@yahoo.co.jp
+							</div>
+						</div>
+						" data-lightbox="roadtrip" href='./img/menber_full/taiki.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						<div>
+							<p class="full_name">Mouse Over Name</p>
+						</div>
+						</a>
+					</div>
+					<!--------------------------Profile Start -------------------------->
+					<div class="profile">
+						<img class="small_image" src="./img/menber_sum/Kenta_kobayashi.jpg">
+						<a  class="profile_name" title="小林健太
+						<div class='explain'>
+							<h1>写真家 / アーティスト</h1>
+							<div class='explain_text'>1992年生まれ。 デジタル一眼、フィルムカメラから
+							、iPhone、MacBookの内蔵カメラやスクリーンキャブチャ等、様々なメディアを使い
+							、身の回りの生活をモチーフにした写真を撮って、自身のブログにアップロードしてい
+							ます。2013年にBiG BANG PRESS（bigbangpress.net）という架空の出版社
+							を立ち上げ、写真にまつわるアートプロジェクトを運営しています。。</br>
+							</br>
+							<a href='http://ekabk.blogspot.com'>[HP]</a>
+							</div>
+						</div>
+						" data-lightbox="roadtrip" href='./img/menber_full/kenta.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						<div>
+							<p class="full_name">Mouse Over Name</p>
+						</div>
+						</a>
+					</div>
+					<!--------------------------Profile Start -------------------------->
+					<div class="profile">
+						<img class="small_image" src="./img/menber_sum/hiryu.jpg">
+						<a  class="profile_name" title="岡村飛龍
+						<div class='explain'>
+							<h1>アーティスト / 料理人</h1>
+							<div class='explain_text'>1988年7月26日千葉県産まれ。2012年、多摩美術大学卒
+							業。同年、渋家、参加。幼少期より、料理に触れ、大学在学中に北大路魯山人の著書に感
+							銘を受け、自らの表現に料理を取り入れる。主な活動に、ART FAIR TOKYO 2013（有楽町、国際フ
+							ォーラム）にてケータリング、CONEXIÓN ORIGEN DESTINO 東京BCN10443（バロセロナ、Olivart Art 
+							Gallery）に出展、MTV HAPPY TIME supported by NI
+							VEA（渋谷、2.5Ｄ）にてケータリングなどがある。。</br>
+							</br>
+							Email:&nbsp;o.hiryu@gamail.com   &nbsp;Tel:&nbsp;08033190871
+							</div>
+						</div>
+						" data-lightbox="roadtrip" href='./img/menber_full/hiryu.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						<div>
+							<p class="full_name">Mouse Over Name</p>
+						</div>
+						</a>
+					</div>
+					<!--------------------------Profile Start -------------------------->
+					<div class="profile">
+						<img class="small_image" src="./img/menber_sum/hayasaka_masumi.jpg">
+						<a  class="profile_name" title="早坂真純
+						<div class='explain'>
+							<h1>学生 / ライフヒーラー</h1>
+							<div class='explain_text'>2010年渋家加入。造形大学5年目(現在３年生)。渋家のバスタオルと生
+							活用品が無くならな
+							いのは彼女のおかげ。彼女がいなければ渋家の生活は一瞬で荒むという噂。みんな頭が上がらないビ
+							ッグマザー。ボードゲームとTRPGを愛している。。</br>
+							</br>
+							</div>
+						</div>
+						" data-lightbox="roadtrip" href='./img/menber_full/masumi.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						<div>
+							<p class="full_name">Mouse Over Name</p>
+						</div>
+						</a>
+					</div>
+					<!--------------------------Profile Start -------------------------->
+					<div class="profile">
+						<img class="small_image" src="./img/menber_sum/kikawa?sei.jpg">
+						<a  class="profile_name" title="木皮成
+						<div class='explain'>
+							<h1>振付家 / ダンストゥルグ</h1>
+							<div class='explain_text'>1990年、和歌山県出身。多摩美術大学映像演劇学科卒。
+							2009年から渋家と関わりはじめ、ついに2013年メンバー入り。演劇界の振付家として
+							数々の演劇団体を手がける。2013年度こまばアゴラ劇場アーティスト会員。2010年からア
+							ジア舞台芸術祭にも関わっている。振付家としてスキルアップのため、十条のスタジオJ☆S
+							tudioで再下積み中。2014年、最前線に爆発的に帰ってくる予定。。</br>
+							</br>
+							<a href='http://sharakusei.jimdo.com/'>[HP]</a>
+							</div>
+						</div>
+						" data-lightbox="roadtrip" href='./img/menber_full/sei.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						<div>
+							<p class="full_name">Mouse Over Name</p>
+						</div>
+						</a>
+					</div>
+					<!--------------------------End-------------------------->
 				</div>
 			</div>
 		</div><!-- #wrap -->
