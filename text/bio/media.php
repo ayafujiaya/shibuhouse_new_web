@@ -80,6 +80,6 @@
 </tr>
 <tr>
 <th>2011.03</th>
-<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/asahi_j.php");'>『朝日ジャーナル』/「特集 日本破壊計画 – シェアハウスの人々 -」</td>
+<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/asahi_j.php");'><div id="bio_background">『朝日ジャーナル』/「特集 日本破壊計画 – シェアハウスの人々 -」</div></td>
 </tr>
 </table>
