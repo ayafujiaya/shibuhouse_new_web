@@ -35,10 +35,10 @@
 							<td class="nav_image" style="padding:0 50px;"><a href="./member.php" id="nav_member"></a></td>
 						</tr>
 						<tr>
-							<td style="padding:0 45px;">アバウト＞</td>
-							<td style="padding:0 21px;">バイオグラフィー＞</td>
-							<td style="padding:0 50px;">ライフ＞</td>
-							<td style="padding:0 45px;">メンバー＞</td>
+							<td style="padding:0 45px;">アバウト</td>
+							<td style="padding:0 21px;">バイオグラフィー</td>
+							<td style="padding:0 50px;">ライフ</td>
+							<td style="padding:0 45px;">メンバー</td>
 						</tr>
 					</table>
 				</div><!-- #nav -->
