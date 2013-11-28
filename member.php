@@ -608,9 +608,11 @@
 						</div>
 						</a>
 					</div>
-					<!--------------------------Profile Start -------------------------->
+
+					<!--
+					
 					<div class="profile">
-						<img class="small_image" src="">
+						<img class="small_image" src="./img/menber_sum/IMG_7476.jpg">
 						<a  class="profile_name" title="秋山亮
 						<div class='explain'>
 							<h1>Artist</h1>
@@ -629,8 +631,8 @@
 						</div>
 						</a>
 					</div>
-					<!--------------------------Profile Start -------------------------->
-					<!--<div class="profile">
+					
+					<div class="profile">
 						<img class="small_image" src="./img/menber_sum/IMG_7476.jpg">
 						<a  class="profile_name" title="角空穂
 						<div class='explain'>
@@ -647,8 +649,8 @@
 							<p class="full_name">角空穂</p>
 						</div>
 						</a>
-					</div>-->
-					<!--------------------------Profile Start -------------------------->
+					</div>
+					
 					<div class="profile">
 						<img class="small_image" src="./img/menber_sum/maharu.jpg">
 						<a  class="profile_name" title="カルロスまーちゃん
@@ -669,7 +671,7 @@
 						</div>
 						</a>
 					</div>
-					<!--------------------------End-------------------------->
+					-->
 				</div>
 			</div>
 		</div><!-- #wrap -->
