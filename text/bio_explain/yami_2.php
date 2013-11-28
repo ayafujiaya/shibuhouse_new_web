@@ -12,6 +12,7 @@
 <br />
 出店渋家メンバー：YAVAO&nbsp;&nbsp;/ インターネットおじさん（としくに） / まはる / ちゃんもも◎ / 金藤みなみ / 岡村飛龍 / 毒キノコピンク<br />
 <br />
-http://yami1.biz/
+<br />
+<a href="http://yami1.biz/" target="_blank">[WEB]</a>
 <br />
 </div>
