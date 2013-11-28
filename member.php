@@ -12,11 +12,11 @@
     <link href="css/lightbox.css" rel="stylesheet" />
     <script type="text/javascript" src="js/modernizr.js"></script>
     <script type="text/javascript">
-    if (navigator.userAgent.indexOf('iPhone') != -1) {
-      document.write('<link rel="stylesheet" type="text/css" href="./layout/iphone.css">');
-    } else {
+    // if (navigator.userAgent.indexOf('iPhone') != -1) {
+    //   document.write('<link rel="stylesheet" type="text/css" href="./layout/iphone.css">');
+    // } else {
       document.write("<link href='./css/global.css' rel='stylesheet' type='text/css'>");
-    }
+    // }
     </script>
   </head>
   <body>
