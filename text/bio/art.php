@@ -45,7 +45,7 @@
 </tr>
 <tr>
 <th>2010.03</th>
-<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/bar.php");'><div id="bio_background">「BAR☆Time Line」/3331 Arts Chiyoda<</div>/td>
+<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/bar.php");'><div id="bio_background">「BAR☆Time Line」/3331 Arts Chiyoda</div></td>
 </tr>
 <tr>
 <th>2010.03</th>
