@@ -71,6 +71,7 @@ a {
 	position: fixed;
 	margin: 30px;
 	z-index: 2;
+	left: 20px;
 }
 #nav {
 	clear: both;
