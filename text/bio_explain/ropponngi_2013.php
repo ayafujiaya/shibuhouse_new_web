@@ -1,5 +1,5 @@
 <div id="ex_image">
-	<img class="inner_ex_image" src="./img/media_sum/ropponngi/roppnngi.jpg">
+	<img class="inner_ex_image" src="./img/media_sum/ropponngi/roppongi_2013_001.jpg">
 </div>
 <div id="ex_text">
 『六本木クロッシング2013展 アウト・オブ・ダウト 来たるべき風景のために』[森美術館/平凡社] <br />
