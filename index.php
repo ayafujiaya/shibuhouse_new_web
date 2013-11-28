@@ -100,11 +100,11 @@
             <img style="margin:0 auto 30px auto; display: block;" src="./img/midashi_mail.png">
             <p style="margin: 0 auto;
 display: block;
-width: 335px;
-font-size: 40px;
+width: 260px;
+font-size: 32px;
 font-family: monospace;">080-3310-4083</p>
-            <p style="margin: 0 auto;
-width: 490px;
+            <p style="margin: 10 auto;
+width: 420px;
 font-size: 34px;
 font-family: monospace;
 display: block;">shibuhouseinfo@gmail.com</p>
