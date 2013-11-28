@@ -13,6 +13,7 @@
 その名も「渋家5周年パーティー～2013年度☆渋家祭～」。ちゃんもも◎の初LIVE、ダンス、トークと家では見れないメンバーの
 パフォーマンスを行いました。多数の新メンバーも迎えた最初のイベントでした。
 <br />
+<br>
 出演者：ちゃんもも◎ / 菅井早苗 / 増沢大輝 / 齊藤桂太 / YAVAO（huez） / 彩藤（huez） / DOPE MEN（Stag Beat） / 
 Molphobia（Stag Beat） / 木皮成 / ゴッドスコーピオン / としくにおじさん
 Guest：tomad（Maltine Records）<br />
