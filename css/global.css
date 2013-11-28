@@ -469,6 +469,15 @@ line-height: 20px;
 	line-height: 18px;
 }
 
+#bio_background {
+	background-color:#FFFFFF;
+}
+
+#bio_background:hover {
+	background-color:#CCCC99;
+}
+
+
 #cv {
 	float: left;
 }
