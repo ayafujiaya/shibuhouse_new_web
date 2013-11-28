@@ -35,7 +35,6 @@
             <!-- サムネイルの画像のURL -->
             <img class="small_image" src="./img/member_sum/Keita_saito.jpg" title="Keita_Saito" >
             <a  class="profile_name" title="斎藤桂太 
-            title='<%topentry_discription>'
             <div class='explain'>
               <h1>渋家代表</h1>
               <div class='explain_text'>1987年 東京都出身。アーティスト。
