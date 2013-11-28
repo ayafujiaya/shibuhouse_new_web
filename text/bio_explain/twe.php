@@ -1,8 +1,5 @@
 <div id="ex_image">
 	<img class="inner_ex_image" src="./img/media_sum/twe/twe_001.jpg">
-	<img class="inner_ex_image" src="./img/media_sum/twe/twe_002.jpg">
-	<img class="inner_ex_image" src="./img/media_sum/twe/twe_003.jpg">
-	<img class="inner_ex_image" src="./img/media_sum/twe/twe_004.jpg">
 </div>
 <div id="ex_text">
 「Tokyo Weekender」<br />
