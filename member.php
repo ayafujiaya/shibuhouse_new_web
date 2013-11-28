@@ -675,7 +675,9 @@ See below for details.</br>
     </div><!-- #wrap -->
     <?php require './footer.php' ?>
     <script type="text/javascript">
-      $(".profile_name").hide();
+    if (navigator.userAgent.indexOf('iPhone') != -1) {
+  	} else {
+       $(".profile_name").hide();
       $(".profile").hover(
         function () {
           $(this).children(".profile_name").addClass( "hover" );
@@ -685,9 +687,9 @@ See below for details.</br>
           $(".hover").hide();
           $(this).children(".profile_name").removeClass( "hover" );
           
-
         }
       );
+  	}
     </script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script defer src="js/jquery.flexslider.js"></script>
