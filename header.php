@@ -21,7 +21,7 @@
 								<td style="padding: 2px 5px 6px 14px; color:#FFFFFF; font-family: monospace;"><img src="./img/like_facebook.png"></td>
 							</tr>
 							<tr>
-								<td colspan="3" style="padding: 2px 5px 6px 14px; color:#FFFFFF; font-family: monospace;">shibnuhouseinfo@gmail.com<td>
+								<td colspan="3" style="padding: 2px 5px 6px 14px; color:#FFFFFF; font-family: monospace;">shibuhouseinfo@gmail.com<td>
 							</tr>
 						</table>
 					</div>
