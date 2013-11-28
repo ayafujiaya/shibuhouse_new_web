@@ -30,11 +30,11 @@
 			</div>-->
 			<div id="member_profile">
 				<div id="inner_member_profile">
-
+					<!--------------------------Profile Start -------------------------->
 					<div class="profile">
 						<!-- サムネイルの画像のURL -->
 						<img class="small_image" src="./img/menber_sum/Keita_saito.jpg" >
-						<a  class="profile_name" title="Popup Name 
+						<a  class="profile_name" title="斎藤桂太 
 						<div class='explain'>
 							<h1>斎藤桂太</h1>
 							<div class='explain_text'>1987年 東京都出身。アーティスト。
@@ -51,17 +51,6 @@
 						</div>
 						</a>
 					</div>
-
-					<div class="profile">
-						<img class="small_image" src="./img/menber_sum/Keita_saito.jpg">
-						<a  class="profile_name" title="<?php require './text/member/member_profile_01.php' ?>" data-lightbox="roadtrip"
-						href="./img/aeri/02.gif" style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
-						<div>
-							<p class="full_name">AERI IKEDA</p>
-						</div>
-						</a>
-					</div>
-					
 					<!--------------------------Profile Start -------------------------->
 					<div class="profile">
 						<img class="small_image" src="./img/menber_sum/Keita_saito.jpg">
@@ -73,7 +62,7 @@
 							、「人と人のコミュニケーションからコンテンツを生み出す文化事業」をコンセプトに、そこに集うメンバーと共に様々
 							な作品、企画、展示、イベント、プロジェクトなどを製作している。</br>
 							
-							<a href='https://twitter.com/satoketa'>Twitter</a></div>
+							<a href='https://twitter.com/satoketa'><img src="./img/twitter_header.png" border="0"></a></div>
 						</div>
 						" data-lightbox="roadtrip" href="./img/menber_sum/Keita_saito.jpg" style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
@@ -84,13 +73,14 @@
 
 					<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/aeri/03.gif">
+						<img class="small_image" src="./img/menber_sum/03.gif">
 						<a  class="profile_name" title="Popup Name 
 						<div class='explain'>
 							<h1>Yuki Takada</h1>
 							<div class='explain_text'>プロフィールテキスト</div>
 						</div>
-						" data-lightbox="roadtrip" href="./img/aeri/03.gif" style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href="./img/menber_full/" 
+						style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">Mouse Over Name</p>
 						</div>
