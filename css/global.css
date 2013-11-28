@@ -531,5 +531,8 @@ max-height: 400px;
 #picture_member:hover {
 	background: url('../img/hovers/hover_smilebig.png') no-repeat 0 0;
 }
+#twitter-widget-0 {
+	width: 80px !important;
+}
 
 
