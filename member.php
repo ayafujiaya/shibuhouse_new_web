@@ -59,10 +59,14 @@
 					
 					
 					<div class="profile">
+						<!-- サムネイルの画像 -->
 						<img class="small_image" src="./img/aeri/03.gif">
-						<a  class="profile_name" title="AERI IKEDA 
+						
+						<a  class="profile_name" title="AERI IKEDA<!-- ポップアップ時に表示される名前 -->
 						<div class='explain'>
 							<h1>Yuki Takada</h1>
+							<!-- href="./img/aeri/03.gif' という部分が ポップアップ時の画像のパス -->
+							<!--ポップアップ時に表示される人物のプロフィールやCV -->
 							<div class='explain_text'>
 								集団的知性（しゅうだんてきちせい、英語：Collective Intelligence、CI）は、多くの個人の協力と競争の中から、その集団自体に知能、精神が存在するかのように見える知性である。Peter Russell（1983年）、Tom Atlee（1993年）、Howard Bloom（1995年）、Francis Heylighen（1995年）、ダグラス・エンゲルバート、Cliff Joslyn、Ron Dembo、Gottfried Mayer-Kress（2003年）らが理論を構築した。集団的知性は、細菌、動物、人間、コンピュータなど様々な集団の、意思決定の過程で発生する。集団的知性の研究は、社会学、計算機科学、集団行動の研究[1]などに属する。
 Tom Atlee らは、Howard Bloom が「グループIQ」と呼んだものから一歩進み、人間の集団的知性に研究の焦点をあてている。Atlee は集団的知性を「集団思考（集団浅慮）や個人の認知バイアスに打ち勝って集団が協調し、より高い知的能力を発揮するため」のものと主張している。
@@ -71,6 +75,7 @@ Tom Atlee らは、Howard Bloom が「グループIQ」と呼んだものから�
 						</div>
 						" data-lightbox="roadtrip" href="./img/aeri/03.gif" style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
+							<!-- マウスオーバー時に表示される名前 -->
 							<p class="full_name">AERI IKEDA</p>
 						</div>
 						</a>
