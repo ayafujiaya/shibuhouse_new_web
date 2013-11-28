@@ -546,7 +546,7 @@ See below for details.</br>
             <img class="small_image" src="./img/member_sum/Sanae_sugai.jpg">
             <a  class="profile_name" title="菅井早苗
             <div class='explain'>
-              <h1>5代目渋家代表/デザイナー</h1>
+              <h1>5代目渋家代表 / デザイナー</h1>
               <div class='explain_text'>終電で帰るつもりだったけど3年が経ちました。よろしくどうぞ
               。デザインの仕事をちょくちょくやってます。よろしくどうぞ。
               </br>
@@ -600,7 +600,7 @@ See below for details.</br>
             <img class="small_image" src="./img/member_sum/kuroda.jpg">
             <a  class="profile_name" title="黒田玲兎
             <div class='explain'>
-              <h1>音楽家役</h1>
+              <h1>音楽家</h1>
               <div class='explain_text'>くろだれいと。kurodalate. シンガーソングライタ
               ーであるが、2013年を振り返れば、その活動は全体の２割くらいであろうか。
               ピアニスト、キーボーディストとして、バンド、シンガーのライブサポートやレ
