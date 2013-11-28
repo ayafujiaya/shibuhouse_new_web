@@ -1,5 +1,5 @@
 <div id="ex_image">
-	<img class="inner_ex_image" src="./img/media_sum/jirenma/jirenma_001.jpg">
+	<img class="inner_ex_image" src="./img/media_sum/jirenma/jirenma_001.png">
 </div>
 <div id="ex_text">
 「ニッポンのジレンマ」(NHK)<br />
