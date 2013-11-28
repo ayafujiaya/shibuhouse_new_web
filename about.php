@@ -51,10 +51,10 @@
             <img style="margin:0 auto 30px auto; display: block;" src="./img/about/about_call_mail.png">
             <p style="margin: 0 auto;
             display: block;
-            width: 335px;
-            font-size: 40px;
+            width: 260px;
+            font-size: 32px;
             font-family: monospace;">080-3310-4083</p>
-            <p style="margin: 0 auto;
+            <p style="margin: 10 auto;
             width: 420px;
             font-size: 34px;
             font-family: monospace;
