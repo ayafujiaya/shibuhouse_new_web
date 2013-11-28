@@ -25,8 +25,9 @@
             <div id="slide">
         <div class="flexslider">
           <ul class="slides">
-            <li><img src="./img/topimage/top_01.jpg"></li>
+            <li><img src="./img/topimage/top_05.jpg"></li>
             <li><img src="./img/topimage/top_02.jpg"></li>
+            <li><img src="./img/topimage/saitou2.jpg"></li>
           </ul>
         </div>
       </div><!-- #slide -->
