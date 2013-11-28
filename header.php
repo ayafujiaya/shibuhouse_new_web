@@ -16,12 +16,12 @@
 					<div id="contact">
 						<table>
 							<tr>
-								<td style="padding: 2px 5px 6px 14px; color:#FFFFFF; font-family: monospace;">080-4166-4123</td>
+								<td style="padding: 2px 5px 6px 14px; color:#FFFFFF; font-family: monospace;">080-3310-4083</td>
 								<td style="padding: 2px 5px 6px 14px; color:#FFFFFF; font-family: monospace;"><img src="./img/twitter_header.png"></td>
 								<td style="padding: 2px 5px 6px 14px; color:#FFFFFF; font-family: monospace;"><img src="./img/like_facebook.png"></td>
 							</tr>
 							<tr>
-								<td colspan="3" style="padding: 2px 5px 6px 14px; color:#FFFFFF; font-family: monospace;">mail@ayafuji.com<td>
+								<td colspan="3" style="padding: 2px 5px 6px 14px; color:#FFFFFF; font-family: monospace;">shibnuhouseinfo@gmail.com<td>
 							</tr>
 						</table>
 					</div>
