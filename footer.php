@@ -9,7 +9,7 @@
             <td style="padding-right:75px;"><a href="./bio.php" id="footer_document"></a></td>
             <td style="padding-right:75px;"><a href="" id="footer_carry"></a></td>
             <td style="padding-right:75px;"><a href="./member.php" id="footer_smile"></a></td>
-            <td style="padding-right:75px;"><a href="./about.php/#information" id="footer_information"></a></td>
+            <td style="padding-right:75px;"><a href="./index.php#information" id="footer_information"></a></td>
             <td style="padding-right:75px;"><a href="https://twitter.com/shibuhouse" id="footer_twitter"></a></td>
             <td style="padding-right:0px;"><a href="https://www.facebook.com/pages/%E6%B8%8B%E5%AE%B6-shibuhouse/171872296182719" id="footer_facebook"></a></td>
           </tr>
