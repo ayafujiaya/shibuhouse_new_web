@@ -21,11 +21,11 @@
 </tr>
 <tr>
 <th>2010.12</th>
-<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/viv.php");'>「VIVA☆校」/棚ガレリ</td>
+<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/via.php");'>「via art 2010」/シンワアートミュージアム</td>
 </tr>
 <tr>
 <th>2010.12</th>
-<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/via.php");'>「via art 2010」/シンワアートミュージアム</td>
+<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/viv.php");'>「VIVA☆校」/棚ガレリ</td>
 </tr>
 <tr>
 <th>2011.01</th>
