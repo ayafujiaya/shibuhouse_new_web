@@ -61,8 +61,9 @@
 							2008年、異なるジャンルのクリエーターが1つの家をシェアするコミュニケーションスペース「渋家」を創設し
 							、「人と人のコミュニケーションからコンテンツを生み出す文化事業」をコンセプトに、そこに集うメンバーと共に様々
 							な作品、企画、展示、イベント、プロジェクトなどを製作している。</br>
-							
-							<a href='https://twitter.com/satoketa'><img src='./img/twitter_header.png' border='0'></a></div>
+							</br>
+							<a href='https://twitter.com/satoketa'><img src='./img/twitter_header.png' alt='Twitter' border='0'></a>
+							</div>
 						</div>
 						" data-lightbox="roadtrip" href='./img/menber_sum/Keita_saito.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
