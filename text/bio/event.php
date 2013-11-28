@@ -44,7 +44,7 @@
 <td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/yami_2.php");'>「インターネットヤミ市2」/カイブツ社</td>
 </tr>
 <tr>
-<th>2013.06</th>
+<th>2013.10</th>
 <td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/vivivi.php");'>「VIVIVI」/Club Asia</td>
 </tr>
 </table>
