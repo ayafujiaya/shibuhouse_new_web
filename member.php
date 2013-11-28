@@ -50,7 +50,7 @@
 							&nbsp;<a hrfe='saito-profile.pdf'>[pdf]</a>
 							</div>
 						</div>" 
-						rel="lightbox[imagegroup]" data-lightbox="roadtrip" href="./img/member_full/Keita_saito.jpg" style="">
+						rel="lightbox[imagegroup]" data-lightbox="roadtrip" href="./img/member_full/keita.jpg" style="">
 						<div>
 							<p class="full_name">斎藤桂太</p>
 						</div>
