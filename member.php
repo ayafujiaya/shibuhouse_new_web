@@ -47,6 +47,7 @@
 							<a href=' http://facebook.com/satoketa'><img src='./img/facebook.png'  border='0'></a>
 							&nbsp;
 							Email:&nbsp;saito.shibuhouse@gmail.com
+							&nbsp;<a hrfe='saito-profile.pdf'>[pdf]</a>
 							</div>
 						</div>" 
 						rel="lightbox[imagegroup]" data-lightbox="roadtrip" href="./img/menber_full/keita.jpg" style="">
@@ -74,6 +75,7 @@
 							<a href='https://www.facebook.com/toshikuni.yamaguchi'><img src='./img/facebook.png'  border='0'></a>
 							&nbsp;
 							Email:&nbsp;stokke33@gmail.com
+							&nbsp;<a hrfe='yamaguchi-profile.pdf'>[pdf]</a>
 							</div>
 						</div>
 						" data-lightbox="roadtrip" href='./img/menber_full/Toshikuni.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
@@ -568,7 +570,7 @@
 					</div>
 					<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/menber_sum/kikawa?sei.jpg">
+						<img class="small_image" src="./img/menber_sum/kikawasei.jpg">
 						<a  class="profile_name" title="木皮成
 						<div class='explain'>
 							<h1>振付家 / ダンストゥルグ</h1>
