@@ -14,7 +14,7 @@
 						<td style="padding-right:0px;"><img src="./img/facebook.png"></td>
 					</tr>
 					<tr align="center">
-						<td style="padding-right:75px;">home</td>
+						<td style="padding-right:75px;"><a href='./index.php'>home</a></td>
 						<td style="padding-right:75px;">about</td>
 						<td style="padding-right:75px;">biography</td>
 						<td style="padding-right:75px;">life</td>
