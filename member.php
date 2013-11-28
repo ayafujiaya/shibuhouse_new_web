@@ -34,7 +34,17 @@
 					<div class="profile">
 						<!-- サムネイルの画像のURL -->
 						<img class="small_image" src="./img/menber_sum/Keita_saito.jpg" >
-						<a  class="profile_name" title="<?php require './text/member/member_profile_01.php' ?>" 
+						<a  class="profile_name" title="Popup Name 
+						<div class='explain'>
+							<h1>斎藤桂太</h1>
+							<div class='explain_text'>1987年 東京都出身。アーティスト。
+							2008年、異なるジャンルのクリエーターが1つの家をシェアするコミュニケーションスペース「渋家」を創設し
+							、「人と人のコミュニケーションからコンテンツを生み出す文化事業」をコンセプトに、そこに集うメンバーと共に様々
+							な作品、企画、展示、イベント、プロジェクトなどを製作している。</br>
+							
+							<a hre="https://twitter.com/satoketa">Twitter</a>
+							</div>
+						</div>" 
 						rel="lightbox[imagegroup]" data-lightbox="roadtrip" href="./img/ menber_sum/Keita_saito.jpg" style="">
 						<div>
 							<p class="full_name">斎藤桂太</p>
@@ -43,8 +53,9 @@
 					</div>
 
 					<div class="profile">
-						<img class="small_image" src="./img/aeri/02.gif">
-						<a  class="profile_name" title="<?php require './text/member/member_profile_01.php' ?>" data-lightbox="roadtrip" href="./img/aeri/02.gif" style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						<img class="small_image" src="./img/menber_sum/Keita_saito.jpg">
+						<a  class="profile_name" title="<?php require './text/member/member_profile_01.php' ?>" data-lightbox="roadtrip"
+						href="./img/aeri/02.gif" style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">AERI IKEDA</p>
 						</div>
