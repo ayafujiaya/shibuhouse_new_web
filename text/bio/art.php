@@ -57,6 +57,6 @@
 </tr>
 <tr>
 <th>2008.10</th>
-<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/osu.php");'>「お好きなものをお選びください展」/デザインフェスタギャラリー</td>
+<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/osu.php");'><div id="bio_background">「お好きなものをお選びください展」/デザインフェスタギャラリー</div></td>
 </tr>
 </table>
