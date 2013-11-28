@@ -167,7 +167,7 @@
 					</div>
 				<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/menber_sum/Ttwitt.jpg">
+						<img class="small_image" src="./img/menber_sum/twitt.jpg">
 						<a  class="profile_name" title="Yasuhiro Nakayama　
 						<div class='explain'>
 							<h1>Software Engineer</h1>
