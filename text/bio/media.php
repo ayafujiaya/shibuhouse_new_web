@@ -65,7 +65,7 @@
 </tr>
 <tr>
 <th>2013.06</th>
-<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/kamidane.php");'>「もはや神ダネ!」[フジテレビ]/「アーティストの卵が集まるシェアハウスで神ダネ探し」</td>
+<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/kamidane.php");'>「もはや神ダネ!」[フジテレビ]/「アーティストの卵が集まるシェアハウス」</td>
 </tr>
 <tr>
 <th>2013.10</th>
