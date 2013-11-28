@@ -9,7 +9,7 @@
 </tr>
 <tr>
 <th>2011.08</th>
-<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/gaget_1.php");'>「ガジェット通信」/「関係者に聞くシェアハウス”渋家”の過去・現在・未来」</td>
+<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/gaget_1.php");'>「ガジェット通信」/「シェアハウス”渋家”の過去・現在・未来」</td>
 </tr>
 <tr>
 <th>2011.11</th>
