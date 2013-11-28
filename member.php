@@ -96,7 +96,7 @@
               </br>
               <a  target='_blank' href='https://twitter.com/chanmomochan10'><img src='./img/twitter.png'  border='0'></a>
               &nbsp;
-              <a  target='_blank' href='http://ameblo.jp/chanmomochan10'>[ameblo]</a>
+              <a  target='_blank' href='http://ameblo.jp/chanmomochan10'>[&nbsp;ameblo&nbsp;]</a>
               </div>
             </div>
             " data-lightbox="roadtrip" href='./img/member_full/momo.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
@@ -120,7 +120,7 @@
               &nbsp;
               <a  target='_blank' href='https://www.facebook.com/kintominami'><img src='./img/facebook.png'  border='0'></a>
               &nbsp;
-              <a  target='_blank' href='http://kinto.arttimes.info/'>[&nbsp;web&nbsp;]</a>
+              <a  target='_blank' href='http://kinto.arttimes.info/'>http://kinto.arttimes.info</a>
               &nbsp;
               Email:&nbsp;minami.kinto@gmail.com
               </div>
@@ -140,7 +140,7 @@
               <div class='explain_text'>1989年生まれ。2012<a href='http://ikeikehappyhappyphotonewyear.tumblr.com/'>イケイケハッピーハッピー写真ニューイヤー</a>
               毎月zine交換も行っている。</br>
               </br>
-              <a  target='_blank' href='http://yukiishida.com/'>[HP]</a>
+              <a  target='_blank' href='http://yukiishida.com/'>http://yukiishida.com</a>
             </div>
             " data-lightbox="roadtrip" href='./img/member_full/yuki.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
             <div>
