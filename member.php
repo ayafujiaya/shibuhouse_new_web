@@ -135,7 +135,7 @@
 						<a  class="profile_name" title="石田祐規
 						<div class='explain'>
 							<h1>写真家</h1>
-							<div class='explain_text'>1989年生まれ。2012[イケイケハッピーハッピー写真ニューイヤー] 
+							<div class='explain_text'>1989年生まれ。2012<a href='http://ikeikehappyhappyphotonewyear.tumblr.com/'>イケイケハッピーハッピー写真ニューイヤー</a>
 							毎月zine交換も行っている。。</br>
 							</br>
 							<a href='http://yukiishida.com/'>[HP]</a>
