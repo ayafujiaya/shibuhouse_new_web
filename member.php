@@ -33,7 +33,7 @@
 					<!--------------------------Profile Start -------------------------->
 					<div class="profile">
 						<!-- サムネイルの画像のURL -->
-						<img class="small_image" src="./img/menber_sum/Keita_saito.jpg" >
+						<img class="small_image" src="./img/member_sum/Keita_saito.jpg" >
 						<a  class="profile_name" title="斎藤桂太 
 						<div class='explain'>
 							<h1>渋家代表</h1>
