@@ -310,13 +310,13 @@ a {
 .lb-dataContainer {
 /*top: 0px;
 left: 4%;
-position: absolute;
-width: 90% !important;*/
+position: absolute;*/
+width: 90% !important;
 }
 
 .explain {
 	width: 300px;
-/*right: 1%;*/
+right: 1%;
 /*position: absolute;*/
 font-size: 12px;
 }
