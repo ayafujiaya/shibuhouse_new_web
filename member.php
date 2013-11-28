@@ -96,7 +96,7 @@
               </br>
               <a  target='_blank' href='https://twitter.com/chanmomochan10'><img src='./img/twitter.png'  border='0'></a>
               &nbsp;
-              <a  target='_blank' href='http://ameblo.jp/chanmomochan10'>[BLOG]</a>
+              <a  target='_blank' href='http://ameblo.jp/chanmomochan10'>[ameblo]</a>
               </div>
             </div>
             " data-lightbox="roadtrip" href='./img/member_full/momo.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
@@ -120,7 +120,7 @@
               &nbsp;
               <a  target='_blank' href='https://www.facebook.com/kintominami'><img src='./img/facebook.png'  border='0'></a>
               &nbsp;
-              <a  target='_blank' href='http://kinto.arttimes.info/'>[HP]</a>
+              <a  target='_blank' href='http://kinto.arttimes.info/'>[&nbsp;web&nbsp;]</a>
               &nbsp;
               Email:&nbsp;minami.kinto@gmail.com
               </div>
