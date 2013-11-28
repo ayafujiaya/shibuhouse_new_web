@@ -55,7 +55,7 @@
             font-size: 40px;
             font-family: monospace;">080-3310-4083</p>
             <p style="margin: 0 auto;
-            width: 435px;
+            width: 490px;
             font-size: 34px;
             font-family: monospace;
             display: block;">shibuhouseinfo@gmail.com</p>
