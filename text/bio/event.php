@@ -12,14 +12,15 @@
 <td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/dumdum.php");'> 「DUM-DUM PARTY 2013」/Shibuya O-WEST</td>
 </tr>
 <tr>
+<th>2013.4</th>
+<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/5th.php");'>「渋家5周年パーティー」/2.5D</td>
+</tr>
+<tr>
 <th>2012.12</th>
 <td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/repub_final.php");'>「REPUBLIC VOL.10 - THE FINAL -」/WOMB</td>
 </tr>
 
-<tr>
-<th>2013.4</th>
-<td style="cursor: pointer" onclick=''>「渋家5周年パーティー」/2.5D</td>
-</tr>
+
 
 <tr>
 <th>2012.11</th>
