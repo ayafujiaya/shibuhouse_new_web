@@ -1,7 +1,7 @@
 <div id="ex_image">
 	<img class="inner_ex_image" src="./img/exhibition_sum/rin/rin_001.jpg">
-	<img class="inner_ex_image" src="./img/exhibition_sum/rin/rin_002.jpg">
 	<img class="inner_ex_image" src="./img/exhibition_sum/rin/rin_003.jpg">
+	<img class="inner_ex_image" src="./img/exhibition_sum/rin/rin_002.jpg">
 </div>
 <div id="ex_text">
 「リンカイ展」<br />
