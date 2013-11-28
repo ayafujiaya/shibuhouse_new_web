@@ -33,7 +33,7 @@
 
 					<div class="profile">
 						<!-- サムネイルの画像のURL -->
-						<img class="small_image" src="./img/ menber_sum/Keita_saito.jpg" >
+						<img class="small_image" src="./img/menber_sum/Keita_saito.jpg" >
 						<a  class="profile_name" title="<?php require './text/member/member_profile_01.php' ?>" 
 						rel="lightbox[imagegroup]" data-lightbox="roadtrip" href="./img/ menber_sum/Keita_saito.jpg" style="">
 						<div>
