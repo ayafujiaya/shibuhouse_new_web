@@ -12,10 +12,6 @@
 <td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/outof.php");'>「OUT OF HOUSE -シャッキシャキのキャベツを添えて-」/amate-raxi</td>
 </tr>
 <tr>
-<th>2012.03</th>
-<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/door.php");'>「Door code.」/eleven</td>
-</tr>
-<tr>
 <th>2012.05</th>
 <td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/esora.php");'>「Shibuhouse live party」/絵空箱</td>
 </tr>
