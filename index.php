@@ -104,7 +104,7 @@ width: 260px;
 font-size: 32px;
 font-family: monospace;">
 ------->
-<div style="text-align:center; display:block; width:100%;">080-3310-4083</div>
+<div style="text-align:center; display:block; width:100%; font-size:34px;">080-3310-4083</div>
             <p style="margin:0 auto;
 width: 420px;
 font-size: 34px;
