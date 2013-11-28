@@ -261,10 +261,10 @@
 							<h1>会社員</h1>
 							<div class='explain_text'>1985年 神奈川県横須賀市出身。慶應義塾大学卒。2009年よりエイベックスに勤務
 							。レーベルプロモーター、バンドマネージャーを経て、最近異動した。会社員生活の傍ら、
-							DJパーティ"MONK!!!"の企画運営等も行なっている。2004年よりルームシェアをしてお
+							DJパーティ'MONK!!!'の企画運営等も行なっている。2004年よりルームシェアをしてお
 							り、2013年5月より渋家に在籍。</br>
 							</br>
-							<a href='https://twitter.com/Shibuya403'><img src='./img/twitter.png'  border='0'></a>
+							<a href='https://twitter.com/Shibuya403'><img src='./img/twitter.png' border='0'></a>
 						
 							</div>
 						</div>
@@ -315,7 +315,8 @@
 							<p class="full_name">Mouse Over Name</p>
 						</div>
 						</a>
-					</div>---------Profile Start -------------------------->
+					</div>
+					<!---------Profile Start -------------------------->
 					<div class="profile">
 						<img class="small_image" src="./img/aeri/03.gif">
 						<a  class="profile_name" title="Popup Name 
