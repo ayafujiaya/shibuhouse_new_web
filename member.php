@@ -36,7 +36,7 @@
 						<img class="small_image" src="./img/menber_sum/Keita_saito.jpg" >
 						<a  class="profile_name" title="斎藤桂太 
 						<div class='explain'>
-							<h1>斎藤桂太</h1>
+							<h1>渋家代表</h1>
 							<div class='explain_text'>1987年 東京都出身。アーティスト。
 							2008年、異なるジャンルのクリエーターが1つの家をシェアするコミュニケーションスペース「渋家」を創設し
 							、「人と人のコミュニケーションからコンテンツを生み出す文化事業」をコンセプトに、そこに集うメンバーと共に様々
@@ -56,7 +56,7 @@
 					<!--------------------------Profile Start -------------------------->
 					<div class="profile">
 						<img class="small_image" src="./img/menber_sum/Toshikuni_yamaguchi.jpg">
-						<a  class="profile_name" title="山口季邦 / としくに　
+						<a  class="profile_name" title="山口季邦/としくに　
 						<div class='explain'>
 							<h1>渋家株式会社代表取締役</h1>
 							<div class='explain_text'>1987年 東京都出身。アーティスト。
@@ -623,7 +623,7 @@
 					</div>
 					<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/menber_sum/Toshikuni_yamaguchi.jpg">
+						<img class="small_image" src="./img/menber_sum/IMG_7476.jpg">
 						<a  class="profile_name" title="角空穂
 						<div class='explain'>
 							<h1>utubo</h1>
@@ -634,7 +634,7 @@
 							Email:&nbsp;utubo1.61803@gmail.com
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/menber_full/Toshikuni.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/menber_full/utsubo.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">角空穂</p>
 						</div>
