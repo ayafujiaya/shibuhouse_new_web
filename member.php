@@ -50,7 +50,7 @@
 							&nbsp;<a hrfe='saito-profile.pdf'>[pdf]</a>
 							</div>
 						</div>" 
-						rel="lightbox[imagegroup]" data-lightbox="roadtrip" href="./img/menber_full/keita.jpg" style="">
+						rel="lightbox[imagegroup]" data-lightbox="roadtrip" href="./img/member_full/keita.jpg" style="">
 						<div>
 							<p class="full_name">斎藤桂太</p>
 						</div>
@@ -60,7 +60,7 @@
 
 					<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/menber_sum/Toshikuni_yamaguchi.jpg">
+						<img class="small_image" src="./img/member_sum/Toshikuni_yamaguchi.jpg">
 						<a  class="profile_name" title="山口季邦/としくに　
 						<div class='explain'>
 							<h1>渋家株式会社代表取締役</h1>
@@ -78,7 +78,7 @@
 							&nbsp;<a hrfe='yamaguchi-profile.pdf'>[pdf]</a>
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/menber_full/Toshikuni.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/member_full/Toshikuni.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">山口季邦 / としくに</p>
 						</div>
@@ -86,7 +86,7 @@
 					</div>
 					<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/menber_sum/momo.jpg">
+						<img class="small_image" src="./img/member_sum/momo.jpg">
 						<a  class="profile_name" title="ちゃんもも◎　
 						<div class='explain'>
 							<h1>活動家</h1>
@@ -99,7 +99,7 @@
 							<a href='http://ameblo.jp/chanmomochan10'><img src='./img/facebook.png'  border='0'></a>
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/menber_full/momo.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/member_full/momo.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">ちゃんもも◎　</p>
 						</div>
@@ -107,7 +107,7 @@
 					</div>
 				<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/menber_sum/IMG01799.jpg">
+						<img class="small_image" src="./img/member_sum/IMG01799.jpg">
 						<a  class="profile_name" title="金藤みなみ
 						<div class='explain'>
 							<h1>アーティスト</h1>
@@ -125,7 +125,7 @@
 							Email:&nbsp;minami.kinto@gmail.com
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/menber_full/kinmi.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/member_full/kinmi.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">金藤みなみ</p>
 						</div>
@@ -133,7 +133,7 @@
 					</div>
 				<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/menber_sum/yuki_ishida.jpg">
+						<img class="small_image" src="./img/member_sum/yuki_ishida.jpg">
 						<a  class="profile_name" title="石田祐規
 						<div class='explain'>
 							<h1>写真家</h1>
@@ -142,7 +142,7 @@
 							</br>
 							<a href='http://yukiishida.com/'>[HP]</a>
 						</div>
-						" data-lightbox="roadtrip" href='./img/menber_full/yuki.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/member_full/yuki.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">石田祐規</p>
 						</div>
@@ -150,22 +150,20 @@
 					</div>
 				<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/menber_sum/twitt.jpg">
+						<img class="small_image" src="./img/member_sum/id774.jpg">
 						<a  class="profile_name" title="Yasuhiro Nakayama　
 						<div class='explain'>
 							<h1>Software Engineer</h1>
-							<div class='explain_text'>I am a software engineer working in Tokyo. Interested in: Emacs, 
-							Debian, Ruby, Python, Lisp, Virtualization. Security, Cryptography, Machine-Learning, Text-Mining, 
-							NLP, Statistics etc. Skilled at: Familiarity with Linux. Extensive experience with Ruby. At least several 
-							years of professional software development experience. Understanding of software architecture, OO principles
-							and common design patterns. Current work: Systems Engineering. R&D for faster web development, large-scale 
-							data processing, data analysis. I'm always using huge screens, HHKB, Trackball, 
-							Debian and quiet environment. It's very important for me. See below for details.</br>
-							</br>
-							<a href='http://id774.net'>[HP]</a>
+							<div class='explain_text'>I'm a software engineer working in Tokyo.</br>
+Interested in: Emacs, Debian, Ruby, Python, Lisp, Virtualization. Security, Cryptography, Machine-Learning, Text-Mining, NLP, Statistics etc.</br>
+Skilled at: Familiarity with Linux. Extensive experience with Ruby. At least several years of professional software development experience. Understanding of software architecture, OO principles and common design patterns.</br>
+Current work: Systems Engineering. R&D for faster web development, large-scale data processing, data analysis.</br>
+I'm always using huge screens, HHKB, Trackball, Debian and quiet environment. It's very important for me.</br>
+See below for details.</br>
+							<a href='http://id774.net'>http://id774.net</a>
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/menber_full/twitt.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/member_full/id774.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">Yasuhiro Nakayama　</p>
 						</div>
@@ -173,7 +171,7 @@
 					</div>
 				<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/menber_sum/gesuyama.jpg">
+						<img class="small_image" src="./img/member_sum/gesuyama.jpg">
 						<a  class="profile_name" title="下衆山毒淋　
 						<div class='explain'>
 							<h1>ソープ嬢 / アートコレクター</h1>
@@ -188,7 +186,7 @@
 
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/menber_full/gesuyama.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/member_full/gesuyama.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">下衆山毒淋　</p>
 						</div>
@@ -196,7 +194,7 @@
 					</div>
 				<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/menber_sum/odagiri.jpg">
+						<img class="small_image" src="./img/member_sum/odagiri.jpg">
 						<a  class="profile_name" title="小田切裕史　
 						<div class='explain'>
 							<h1>ニート</h1>
@@ -208,7 +206,7 @@
 						
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/menber_full/odagiri.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/member_full/odagiri.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">小田切裕史　</p>
 						</div>
@@ -216,7 +214,7 @@
 					</div>
 					<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/menber_sum/dai.jpg">
+						<img class="small_image" src="./img/member_sum/dai.jpg">
 						<a  class="profile_name" title="dainmt　
 						<div class='explain'>
 							<h1>占い師</h1>
@@ -230,7 +228,7 @@
 							<a href='http://uranai-tarim.jp/'>[HP]</a>
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/menber_full/dai.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/member_full/dai.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">dainmt　</p>
 						</div>
@@ -238,7 +236,7 @@
 					</div>
 				<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/menber_sum/haga.jpg">
+						<img class="small_image" src="./img/member_sum/haga.jpg">
 						<a  class="profile_name" title="芳賀仁志
 						<div class='explain'>
 							<h1>会社員</h1>
@@ -251,7 +249,7 @@
 						
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/menber_full/haga.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/member_full/haga.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">芳賀仁志</p>
 						</div>
@@ -259,7 +257,7 @@
 					</div>
 				<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/menber_sum/numa.jpg">
+						<img class="small_image" src="./img/member_sum/numa.jpg">
 						<a  class="profile_name" title="ぬま
 						<div class='explain'>
 							<h1>映像屋</h1>
@@ -273,7 +271,7 @@
 							<a href='http://d.hatena.ne.jp/the_tramp/'>[HP]</a>
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/menber_full/numa.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/member_full/numa.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">ぬま</p>
 						</div>
@@ -281,7 +279,7 @@
 					</div>
 				<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/menber_sum/yavao.jpg">
+						<img class="small_image" src="./img/member_sum/yavao.jpg">
 						<a  class="profile_name" title="YAVAO / 小池将樹
 						<div class='explain'>
 							<h1>media artist</h1>
@@ -293,7 +291,7 @@
 							</br>
 							<a href='https://twitter.com/EX_YAVAO'><img src='./img/twitter.png'  border='0'></a>
 						</div>
-						" data-lightbox="roadtrip" href='./img/menber_full/yavao.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/member_full/yavao.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">YAVAO / 小池将樹</p>
 						</div>
@@ -301,7 +299,7 @@
 					</div>
 				<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/menber_sum/Mr.jpg">
+						<img class="small_image" src="./img/member_sum/Mr.jpg">
 						<a  class="profile_name" title="ストレンジラヴ
 						<div class='explain'>
 							<h1>ダダイスト</h1>
@@ -316,7 +314,7 @@
 							<a href='http://ameblo.jp/strangelove-zukkyun/'>[HP]</a>
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/menber_full/mr.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/member_full/mr.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">ストレンジラヴ</p>
 						</div>
@@ -324,7 +322,7 @@
 					</div>
 				<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/menber_sum/atsushi_nishida.jpg">
+						<img class="small_image" src="./img/member_sum/atsushi_nishida.jpg">
 						<a  class="profile_name" title="西田篤史　
 						<div class='explain'>
 							<h1>編集者</h1>
@@ -340,7 +338,7 @@
 							Email:&nbsp;editorial.production.451@gmail.com
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/menber_full/nishida.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/member_full/nishida.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">西田篤史　</p>
 						</div>
@@ -348,7 +346,7 @@
 					</div>
 				<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/menber_sum/dokukinoko.jpg">
+						<img class="small_image" src="./img/member_sum/dokukinoko.jpg">
 						<a  class="profile_name" title="毒k!n⊗k¤p!nk™
 						<div class='explain'>
 							<h1>FashionCreator / DJ / SJ</h1>
@@ -359,7 +357,7 @@
 							Email:&nbsp;i.am.etranger@gmail.com 　 
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/menber_full/kinoko.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/member_full/kinoko.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">毒k!n⊗k¤p!nk™</p>
 						</div>
@@ -368,7 +366,7 @@
 				
 				<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/menber_sum/zaqi.jpg">
+						<img class="small_image" src="./img/member_sum/zaqi.jpg">
 						<a  class="profile_name" title="磯崎愛生 / zaqi
 						<div class='explain'>
 							<h1>ビデオ・アーティスト / VJ</h1>
@@ -383,7 +381,7 @@
 							<a href='https://www.facebook.com/yoshimi.isozaki.31'><img src='./img/facebook.png'  border='0'></a>
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/menber_full/zaqi.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/member_full/zaqi.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">磯崎愛生 / zaqi</p>
 						</div>
@@ -391,7 +389,7 @@
 					</div>
 				<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/menber_sum/ami_inaba02.jpg">
+						<img class="small_image" src="./img/member_sum/ami_inaba02.jpg">
 						<a  class="profile_name" title="いなばあみ
 						<div class='explain'>
 							<h1>photographer</h1>
@@ -402,7 +400,7 @@
 							<a href='http://amiamisg.tumblr.com'>[Tumblr]</a>
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/menber_full/ami.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/member_full/ami.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">いなばあみ</p>
 						</div>
@@ -410,7 +408,7 @@
 					</div>
 					<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/menber_sum/kajiya.jpg">
+						<img class="small_image" src="./img/member_sum/kajiya.jpg">
 						<a  class="profile_name" title="加治屋文晶
 						<div class='explain'>
 							<h1>飲食店経営</h1>
@@ -418,7 +416,7 @@
 							
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/menber_full/kajiya.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/member_full/kajiya.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">加治屋文晶</p>
 						</div>
@@ -426,7 +424,7 @@
 					</div>
 					<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/menber_sum/ayafuji_profile.jpg">
+						<img class="small_image" src="./img/member_sum/ayafuji_profile.jpg">
 						<a  class="profile_name" title="ayafuji
 						<div class='explain'>
 							<h1>Interactive Media Engineer</h1>
@@ -435,7 +433,7 @@
 							<a href='https://twitter.com/_ayafuji_'><img src='./img/twitter.png'  border='0'></a>
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/menber_full/ayafuji.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/member_full/ayafuji.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">ayafuji</p>
 						</div>
@@ -443,7 +441,7 @@
 					</div>
 				<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/menber_sum/gosupi.jpg">
+						<img class="small_image" src="./img/member_sum/gosupi.jpg">
 						<a  class="profile_name" title="ゴッドスコーピオン
 						<div class='explain'>
 							<h1>ゴッドスコーピオン</h1>
@@ -455,7 +453,7 @@
 						
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/menber_full/gosupi.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/member_full/gosupi.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">ゴッドスコーピオン</p>
 						</div>
@@ -464,7 +462,7 @@
 					<!--------------------------Profile Start -------------------------->
 			
 					<div class="profile">
-						<img class="small_image" src="./img/menber_sum/yu_oota.jpg">
+						<img class="small_image" src="./img/member_sum/yu_oota.jpg">
 						<a  class="profile_name" title="太田悠
 						<div class='explain'>
 							<h1>アーティスト</h1>
@@ -477,7 +475,7 @@
 						
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/menber_full/yu.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/member_full/yu.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">太田悠</p>
 						</div>
@@ -485,7 +483,7 @@
 					</div>
 					<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/menber_sum/taiki_new.jpg">
+						<img class="small_image" src="./img/member_sum/taiki_new.jpg">
 						<a  class="profile_name" title="増沢大輝
 						<div class='explain'>
 							<h1>ダンサー・振付家役</h1>
@@ -500,7 +498,7 @@
 							Email:&nbsp;taiki_masuzawa@yahoo.co.jp
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/menber_full/taiki.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/member_full/taiki.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">増沢大輝</p>
 						</div>
@@ -508,7 +506,7 @@
 					</div>
 					<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/menber_sum/Kenta_kobayashi.jpg">
+						<img class="small_image" src="./img/member_sum/Kenta_kobayashi.jpg">
 						<a  class="profile_name" title="小林健太
 						<div class='explain'>
 							<h1>写真家 / アーティスト</h1>
@@ -521,7 +519,7 @@
 							<a href='http://ekabk.blogspot.com'>[HP]</a>
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/menber_full/kenta.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/member_full/kenta.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">小林健太</p>
 						</div>
@@ -529,7 +527,7 @@
 					</div>
 					<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/menber_sum/hiryu.jpg">
+						<img class="small_image" src="./img/member_sum/hiryu.jpg">
 						<a  class="profile_name" title="岡村飛龍
 						<div class='explain'>
 							<h1>アーティスト / 料理人</h1>
@@ -543,7 +541,7 @@
 							Email:&nbsp;o.hiryu@gamail.com   &nbsp;Tel:&nbsp;08033190871
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/menber_full/hiryu.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/member_full/hiryu.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">岡村飛龍</p>
 						</div>
@@ -551,7 +549,7 @@
 					</div>
 					<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/menber_sum/hayasaka_masumi.jpg">
+						<img class="small_image" src="./img/member_sum/hayasaka_masumi.jpg">
 						<a  class="profile_name" title="早坂真純
 						<div class='explain'>
 							<h1>学生 / ライフヒーラー</h1>
@@ -562,7 +560,7 @@
 							</br>
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/menber_full/masumi.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/member_full/masumi.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">早坂真純</p>
 						</div>
@@ -570,7 +568,7 @@
 					</div>
 					<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/menber_sum/kikawasei.jpg">
+						<img class="small_image" src="./img/member_sum/kikawasei.jpg">
 						<a  class="profile_name" title="木皮成
 						<div class='explain'>
 							<h1>振付家 / ダンストゥルグ</h1>
@@ -583,7 +581,7 @@
 							<a href='http://sharakusei.jimdo.com/'>[HP]</a>
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/menber_full/sei.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/member_full/sei.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">木皮成</p>
 						</div>
@@ -591,7 +589,7 @@
 					</div>
 					<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/menber_sum/kuroda.jpg">
+						<img class="small_image" src="./img/member_sum/kuroda.jpg">
 						<a  class="profile_name" title="黒田玲兎
 						<div class='explain'>
 							<h1>音楽家役</h1>
@@ -602,7 +600,7 @@
 							ミュージカルの音楽を担当したりも。ボイストレーナーとしての一面もある。
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/menber_full/kuroda.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/member_full/kuroda.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">黒田玲兎</p>
 						</div>
@@ -612,7 +610,7 @@
 					<!--
 					
 					<div class="profile">
-						<img class="small_image" src="./img/menber_sum/IMG_7476.jpg">
+						<img class="small_image" src="./img/member_sum/IMG_7476.jpg">
 						<a  class="profile_name" title="秋山亮
 						<div class='explain'>
 							<h1>Artist</h1>
@@ -625,7 +623,7 @@
 							</br>
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/menber_full/utsubo.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/member_full/utsubo.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">秋山亮</p>
 						</div>
@@ -633,7 +631,7 @@
 					</div>
 					
 					<div class="profile">
-						<img class="small_image" src="./img/menber_sum/IMG_7476.jpg">
+						<img class="small_image" src="./img/member_sum/IMG_7476.jpg">
 						<a  class="profile_name" title="角空穂
 						<div class='explain'>
 							<h1>utubo</h1>
@@ -644,7 +642,7 @@
 							Email:&nbsp;utubo1.61803@gmail.com
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/menber_full/utsubo.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/member_full/utsubo.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">角空穂</p>
 						</div>
@@ -652,7 +650,7 @@
 					</div>
 					
 					<div class="profile">
-						<img class="small_image" src="./img/menber_sum/maharu.jpg">
+						<img class="small_image" src="./img/member_sum/maharu.jpg">
 						<a  class="profile_name" title="カルロスまーちゃん
 						<div class='explain'>
 							<h1>アーティスト / テルミン奏者（練習中）</h1>
@@ -665,7 +663,7 @@
 							<a href='http://maharu929.wix.com/maharu'>[HP]</a>
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/menber_full/maharu.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/member_full/maharu.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">カルロスまーちゃん/p>
 						</div>
