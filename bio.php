@@ -39,8 +39,20 @@
               <?php require './text/bio/media.php' ?>
             </div>
           </div>
+          
           <div id="explain">
+          	<div id="ex_title" style="
+          	font-size: 25px; 
+          	padding: 10px; 
+          	background-color: #e3e3e3;
+          	border-radius: 5px;        /* CSS3草案 */  
+    		-webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
+    		-moz-border-radius: 5px;   /* Firefox用 */ 
+    		">
+    		Photos & Text
+          	</div>
             <!-- <img src="./img/bio/bio_fotgrafie.png"> -->
+            
             <div id="inner_explain"></div>
           </div>
           <div style="clear:both;"></div>
@@ -73,12 +85,19 @@
     <script type="text/javascript">
     	$('#art > table > tbody > tr > td').click(function () {
   			$('#explain').animate({paddingTop:0}, 1000);
+  			var text = $(this).text();
+  			$('#ex_title').html(text);
 		});
 		$('#event > table > tbody > tr > td').click(function () {
   			$('#explain').animate({paddingTop:360}, 1000);
+  			var text = $(this).text();
+  			$('#ex_title').html(text);
+
 		});
 		$('#media > table > tbody > tr > td').click(function () {
   			$('#explain').animate({paddingTop:715}, 1000);
+  			var text = $(this).text();
+  			$('#ex_title').html(text);
 		});
     </script>
 
