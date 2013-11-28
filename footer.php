@@ -5,7 +5,7 @@
         <table>
           <tr align="center" style="margin:0 100px 0 25px;">
             <td style="padding-right:75px;"><a href="./index.php"><img src="./img/house.png"></a></td>
-            <td style="padding-right:75px;"><a href="./about.php" id="nav_about"></a></td>
+            <td style="padding-right:75px;"><a href="./about.php" id="footer_about"></a></td>
             <td style="padding-right:75px;"><img src="./img/document.png"></td>
             <td style="padding-right:75px;"><img src="./img/carry.png"></td>
             <td style="padding-right:75px;"><img src="./img/smile.png"></td>
