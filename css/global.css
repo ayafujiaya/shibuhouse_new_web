@@ -415,7 +415,7 @@ table td {
 	width: 255px;
 	float: left;
 	font-size: 12px;
-	line-height: 15px;
+	line-height: 20px;
 }
 
 #nav_table_tr{
@@ -537,7 +537,7 @@ max-height: 400px;
 
 #ex_text > a {
 	color:#000000;
-	
+
 }
 
 
