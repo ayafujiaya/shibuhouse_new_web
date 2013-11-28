@@ -1,7 +1,7 @@
 <table>
 <tr>
 <th>2013.11</th>
-<td style="cursor: pointer" onclick=''>「ニッポンのジレンマ」[NHK]/「新ＴＯＫＹＯ論」</td>
+<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/jirenma.php");'>「ニッポンのジレンマ」[NHK]/「新ＴＯＫＹＯ論」</td>
 </tr>
 
 <tr>
@@ -47,7 +47,7 @@
 
 <tr>
 <th>2012.06</th>
-<td style="cursor: pointer" onclick=''>『天然生活』/「物々交換を開催してみました」</td>
+<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/tennen.php");'>『天然生活』/「物々交換を開催してみました」</td>
 </tr>
 
 <tr>
