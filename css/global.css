@@ -315,14 +315,15 @@ width: 90% !important;
 }
 
 .explain {
-	width: 300px;
+
+width: 370px;
+line-height: 60px;
 right: 1%;
-/*position: absolute;*/
-font-size: 12px;
+font-size:12px;
 }
 
 .explain_text {
-	line-height: 19px;
+line-height: 20px;
 }
 
 .lb-number {
