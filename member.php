@@ -96,7 +96,7 @@
               </br>
               <a  target='_blank' href='https://twitter.com/chanmomochan10'><img src='./img/twitter.png'  border='0'></a>
               &nbsp;
-              <a  target='_blank' href='http://ameblo.jp/chanmomochan10'>アメブロ</a>
+              <a  target='_blank' href='http://ameblo.jp/chanmomochan10'>[BLOG]</a>
               </div>
             </div>
             " data-lightbox="roadtrip" href='./img/member_full/momo.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
@@ -325,7 +325,7 @@ See below for details.</br>
               &nbsp;
               <a  target='_blank' href='http://www.facebook.com/StrangeloveZukkyun'><img src='./img/facebook.png'  border='0'></a>
               &nbsp;
-              <a  target='_blank' href='http://descendantsofhamlet.tumblr.com'>Tumblr</a>
+              <a  target='_blank' href='http://descendantsofhamlet.tumblr.com'>[Tumblr]</a>
               &nbsp;
               <a  target='_blank' href='http://ameblo.jp/strangelove-zukkyun/'>[HP]</a>
               </div>
@@ -370,7 +370,7 @@ See below for details.</br>
               </br>
               <a  target='_blank' href='https://twitter.com/kinokopink'><img src='./img/twitter.png'  border='0'></a>
               &nbsp;
-              <a  target='_blank' href='http://kinokopink.tumblr.com/'>Tumblr</a>
+              <a  target='_blank' href='http://kinokopink.tumblr.com/'>[Tumblr]</a>
               &nbsp;
               Email:&nbsp;i.am.etranger@gmail.com 　 
               </div>
