@@ -98,11 +98,13 @@
             <?php require './text/information.php' ?>  
             </div>          
             <img style="margin:0 auto 30px auto; display: block;" src="./img/midashi_mail.png">
-            <p style="margin: 0 auto;
+   <!--         <p style="margin: 0 auto;
 display: block;
 width: 260px;
 font-size: 32px;
-font-family: monospace;">080-3310-4083</p>
+font-family: monospace;">
+------->
+<div style="text-align:center; display:block; width:100%;">080-3310-4083</div>
             <p style="margin:0 auto;
 width: 420px;
 font-size: 34px;
