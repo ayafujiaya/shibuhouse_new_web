@@ -110,7 +110,7 @@ width: 420px;
 font-size: 34px;
 font-family: monospace;
 display: block;">--------->
-<div style="text-align:center; display:block; width:100%; font-size:40px;">
+<div style="text-align:center; display:block; width:100%; font-size:34px;">
 shibuhouseinfo@gmail.com</div>
             <!--<img style="margin:0 auto 16px auto; display: block;" src="./img/call_number.png">-->
             <!--<img style="margin:0 auto; display: block;" src="./img/mailadd.png">-->
