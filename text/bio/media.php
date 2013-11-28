@@ -30,7 +30,7 @@
 </tr>
 <tr>
 <th>2012.09</th>
-<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/netokaru_1.php");'>「NETOKARU」/「オルタナティブスペース”渋家”新代表に菅井早苗が就任」</td>
+<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/netokaru_1.php");'>「NETOKARU」/「“渋家”新代表に菅井早苗が就任」</td>
 </tr>
 <tr>
 <th>2012.08</th>
