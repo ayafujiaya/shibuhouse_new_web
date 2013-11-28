@@ -308,10 +308,10 @@ a {
 }
 
 .lb-dataContainer {
-/*top: 0px;
+top: 0px;
 left: 4%;
-position: absolute;*/
-width: 90% !important;
+position: absolute;
+/*width: 90% !important;*/
 }
 
 .explain {
