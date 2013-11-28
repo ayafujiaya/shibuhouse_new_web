@@ -31,6 +31,14 @@
 <th>2012.11</th>
 <td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/yami_1.php");'>「インターネットヤミ市」/旧東京電機大学校舎11号館</td>
 </tr>
+
+
+<tr>
+<th>2013.4</th>
+<td style="cursor: pointer" onclick=''>「渋家5周年パーティー」/2.5D</td>
+</tr>
+
+
 <tr>
 <th>2012.12</th>
 <td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/repub_final.php");'>「REPUBLIC VOL.10 - THE FINAL -」/WOMB</td>
