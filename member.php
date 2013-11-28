@@ -64,13 +64,18 @@
 					
 					<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/aeri/03.gif">
+						<img class="small_image" src="./img/menber_sum/Keita_saito.jpg">
 						<a  class="profile_name" title="Popup Name 
 						<div class='explain'>
-							<h1>Yuki Takada</h1>
-							<div class='explain_text'>プロフィールテキスト</div>
+							<h1>斉藤桂太</h1>
+							<div class='explain_text'>1987年 東京都出身。アーティスト。
+							2008年、異なるジャンルのクリエーターが1つの家をシェアするコミュニケーションスペース「渋家」を創設し
+							、「人と人のコミュニケーションからコンテンツを生み出す文化事業」をコンセプトに、そこに集うメンバーと共に様々
+							な作品、企画、展示、イベント、プロジェクトなどを製作している。</br>
+							
+							<a hre="https://twitter.com/satoketa">Twitter</a></div>
 						</div>
-						" data-lightbox="roadtrip" href="./img/aeri/03.gif" style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href="./img/menber_sum/Keita_saito.jpg" style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">Mouse Over Name</p>
 						</div>
