@@ -16,8 +16,20 @@
             <table>
               <tr>
                 <td style="padding: 2px 5px 6px 14px; color:#FFFFFF; font-family: monospace;">080-3310-4083</td>
-                <td style="padding: 2px 5px 6px 14px; color:#FFFFFF; font-family: monospace;"><a href='https://twitter.com/shibuhouse'><img src="./img/twitter_header.png"></a></td>
-                <td style="padding: 2px 5px 6px 14px; color:#FFFFFF; font-family: monospace;"><a href='https://www.facebook.com/pages/%E6%B8%8B%E5%AE%B6-shibuhouse/171872296182719'><img src="./img/like_facebook.png"></a></td>
+                <td style="padding: 2px 5px 6px 14px; color:#FFFFFF; font-family: monospace;">
+<a href="https://twitter.com/share" class="twitter-share-button" data-hashtags="shibuhouse">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+		</td>
+                <td style="padding: 2px 5px 6px 14px; color:#FFFFFF; font-family: monospace;">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+		</td>
               </tr>
               <tr>
                 <td colspan="3" style="padding: 2px 5px 6px 14px; color:#FFFFFF; font-family: monospace;">shibuhouseinfo@gmail.com<td>
