@@ -49,17 +49,19 @@
             渋家はさまざまな設備を備えたイベントスペースでもあります。毎月22日に「渋家ホームパーティ」を開催しているほか、地下にある多目的部屋•クヌギで継続的に音楽イベントや映像上映会を行っています。訪問方法、メンバー募集、取材などのお問い合わせについては、以下までご連絡ください。 
             </div>          
             <img style="margin:0 auto 30px auto; display: block;" src="./img/about/about_call_mail.png">
-            <p style="margin: 0 auto;
+            <!---<p style="margin: 0 auto;
             display: block;
             width: 260px;
             font-size: 32px;
             #help_me,  x:-moz-any-link, x:default  { color: red; }
-            font-family: monospace;">080-3310-4083</p>
-            <p style="margin:0 auto;
+            font-family: monospace;">---->
+            <div style="text-align:center; display:block; width:100%; font-size:34px;">080-3310-4083</div>
+            <!-------<p style="margin:0 auto;
             width: 420px;
             font-size: 34px;
             font-family: monospace;
-            display: block;">shibuhouseinfo@gmail.com</p>
+            display: block;">-->
+            <div style="text-align:center; display:block; width:100%; font-size:34px;">shibuhouseinfo@gmail.com</div>
           </div><!-- .inner_midashi -->
         </div><!-- #information -->
       </div><!-- #content -->
