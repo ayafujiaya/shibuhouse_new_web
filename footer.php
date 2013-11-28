@@ -4,7 +4,7 @@
       <div id="footer_table">
         <table>
           <tr align="center" style="margin:0 100px 0 25px;">
-            <td style="padding-right:75px;"><img src="./img/house.png"></td>
+            <td style="padding-right:75px;"><a href="./index.php'>.><img src="./img/house.png"></a></td>
             <td style="padding-right:75px;"><img src="./img/hatena.png"></td>
             <td style="padding-right:75px;"><img src="./img/document.png"></td>
             <td style="padding-right:75px;"><img src="./img/carry.png"></td>
