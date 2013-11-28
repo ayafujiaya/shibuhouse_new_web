@@ -654,7 +654,7 @@ See below for details.</br>
 						</div>
 						" data-lightbox="roadtrip" href='./img/member_full/maharu.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
-							<p class="full_name">カルロスまーちゃん/p>
+							<p class="full_name">カルロスまーちゃん</p>
 						</div>
 						</a>
 					</div>
