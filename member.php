@@ -618,6 +618,85 @@
 						</div>
 						</a>
 					</div>
+					<!--------------------------Profile Start -------------------------->
+					<div class="profile">
+						<img class="small_image" src="./img/menber_sum/kuroda.jpg">
+						<a  class="profile_name" title="黒田玲兎
+						<div class='explain'>
+							<h1>音楽家役</h1>
+							<div class='explain_text'>くろだれいと。kurodalate. シンガーソングライタ
+							ーであるが、2013年を振り返れば、その活動は全体の２割くらいであろうか。
+							ピアニスト、キーボーディストとして、バンド、シンガーのライブサポートやレ
+							コーディングに参加。歌詞先での楽曲提供を得意とし、
+							ミュージカルの音楽を担当したりも。ボイストレーナーとしての一面もある。
+							</div>
+						</div>
+						" data-lightbox="roadtrip" href='./img/menber_full/kuroda.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						<div>
+							<p class="full_name">Mouse Over Name</p>
+						</div>
+						</a>
+					</div>
+					<!--------------------------Profile Start -------------------------->
+					<div class="profile">
+						<img class="small_image" src="./img/menber_sum/still image">
+						<a  class="profile_name" title="秋山亮
+						<div class='explain'>
+							<h1>Artist</h1>
+							<div class='explain_text'>1980年生まれ。2013年10月から渋家メンバーになった。
+							教育機関での美術教育は一切うけていない。独自の雰囲気と鋭い視点で渋家のアー
+							トチームで活動中。メンバーの中でも１、２を争う高身長。「vivivi」出演時ステー
+							ジで舞台美術を作るパフォーマンスを
+							した際には誰もが届かない場所に一発でビスを打ち込み共演者を驚かせた。</br>
+							</br>
+							</div>
+						</div>
+						" data-lightbox="roadtrip" href='./img/menber_full/Toshikuni.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						<div>
+							<p class="full_name">Mouse Over Name</p>
+						</div>
+						</a>
+					</div>
+					<!--------------------------Profile Start -------------------------->
+					<div class="profile">
+						<img class="small_image" src="./img/menber_sum/Toshikuni_yamaguchi.jpg">
+						<a  class="profile_name" title="角空穂
+						<div class='explain'>
+							<h1>utubo</h1>
+							<div class='explain_text'>Born:1989男#Art#Martial Arts#武術#Karate#Ninja#Dancing#Pa
+							inting#現代美術#平行四辺形#Metamorphose#建築#Spirituality#</br>人間の能力の極地</br>
+							</br>
+						
+							Email:&nbsp;utubo1.61803@gmail.com
+							</div>
+						</div>
+						" data-lightbox="roadtrip" href='./img/menber_full/Toshikuni.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						<div>
+							<p class="full_name">Mouse Over Name</p>
+						</div>
+						</a>
+					</div>
+					<!--------------------------Profile Start -------------------------->
+					<div class="profile">
+						<img class="small_image" src="./img/menber_sum/maharu.jpg">
+						<a  class="profile_name" title="カルロスまーちゃん
+						<div class='explain'>
+							<h1>アーティスト / テルミン奏者（練習中）</h1>
+							<div class='explain_text'>一人称は、まはる。</br>
+							自分自身を楽器とし、常に場に対して演奏し、</br>
+							時にはメロディーをつけステージに立つことも。</br>
+							「ハッピー感のある空間」が好き。</br>
+							物事を宇宙規模で考えるように心がけています。</br>
+							</br>
+							<a href='http://maharu929.wix.com/maharu'>[HP]</a>
+							</div>
+						</div>
+						" data-lightbox="roadtrip" href='./img/menber_full/maharu.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						<div>
+							<p class="full_name">Mouse Over Name</p>
+						</div>
+						</a>
+					</div>
 					<!--------------------------End-------------------------->
 				</div>
 			</div>
