@@ -47,7 +47,7 @@
               <a target='_blank' href=' http://facebook.com/satoketa'><img src='./img/facebook.png'  border='0'></a>
               &nbsp;
               Email:&nbsp;saito.shibuhouse@gmail.com
-              &nbsp;<a href='saito-profile.pdf'>[pdf]</a>
+              &nbsp;<a href='./img/pdf/saito-profile.pdf'>[pdf]</a>
               </div>
             </div>" 
             rel="lightbox[imagegroup]" data-lightbox="roadtrip" href="./img/member_full/Keita_saito.jpg" style="">
@@ -75,7 +75,7 @@
               <a  target='_blank' href='https://www.facebook.com/toshikuni.yamaguchi'><img src='./img/facebook.png'  border='0'></a>
               &nbsp;
               Email:&nbsp;stokke33@gmail.com
-              &nbsp;<a  target='_blank' href='yamaguchi-profile.pdf'>[pdf]</a>
+              &nbsp;<a  target='_blank' href='./img/pdf/yamaguchi-profile.pdf'>[pdf]</a>
               </div>
             </div>
             " data-lightbox="roadtrip" href='./img/member_full/Toshikuni.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
