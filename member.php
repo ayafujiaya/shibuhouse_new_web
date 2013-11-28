@@ -608,11 +608,12 @@
 					</div>
 					<!--------------------------Profile Start -------------------------->
 					<div class="profile">
-						<img class="small_image" src="./img/menber_sum/still image">
+						<img class="small_image" src="">
 						<a  class="profile_name" title="秋山亮
 						<div class='explain'>
 							<h1>Artist</h1>
-							<div class='explain_text'>1980年生まれ。2013年10月から渋家メンバーになった。
+							<div class='explain_text'>
+							1980年生まれ。2013年10月から渋家メンバーになった。
 							教育機関での美術教育は一切うけていない。独自の雰囲気と鋭い視点で渋家のアー
 							トチームで活動中。メンバーの中でも１、２を争う高身長。「vivivi」出演時ステー
 							ジで舞台美術を作るパフォーマンスを
@@ -620,14 +621,14 @@
 							</br>
 							</div>
 						</div>
-						" data-lightbox="roadtrip" href='./img/menber_full/Toshikuni.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						" data-lightbox="roadtrip" href='./img/menber_full/utsubo.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
 							<p class="full_name">秋山亮</p>
 						</div>
 						</a>
 					</div>
 					<!--------------------------Profile Start -------------------------->
-					<div class="profile">
+					<!--<div class="profile">
 						<img class="small_image" src="./img/menber_sum/IMG_7476.jpg">
 						<a  class="profile_name" title="角空穂
 						<div class='explain'>
@@ -644,7 +645,7 @@
 							<p class="full_name">角空穂</p>
 						</div>
 						</a>
-					</div>
+					</div>-->
 					<!--------------------------Profile Start -------------------------->
 					<div class="profile">
 						<img class="small_image" src="./img/menber_sum/maharu.jpg">
