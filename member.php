@@ -481,9 +481,9 @@ See below for details.</br>
             <img class="small_image" src="./img/member_sum/taiki.jpg">
             <a  class="profile_name" title="増沢大輝
             <div class='explain'>
-              <h1>ダンサー・振付家役</h1>
-              <div class='explain_text'><br />
-1989年生まれ。<br />
+              <h1>ダンサー・振付家</h1>
+              <div class='explain_text'>
+1989年生まれ。
 ストリートダンスを入り口に広めのジャンルを浅めに経由。「今の中にしかない身体」をテーマにそれが持つ「ずるさ」をダンスとして、抱える「切実さ」はパフォーミングアーツとして分類し活動を展開中。現在は身体のアーカイブ化にも取り組む。<br />
 「<a href='http://www.youtube.com/watch?v=ZRM08-P79tQ' target='_blank'>cinema is dancing</a>」<br />
 「<a href='http://m.youtube.com/watch?v=OhMdGUjb8JI&amp;desktop_uri=%2Fwatch%3Fv%3DOhMdGUjb8JI' target='_blank'>penetration twin</a>」</br>
@@ -621,11 +621,7 @@ See below for details.</br>
             <div class='explain'>
               <h1>Artist</h1>
               <div class='explain_text'>
-              1980年生まれ。2013年10月から渋家メンバーになった。
-              教育機関での美術教育は一切うけていない。独自の雰囲気と鋭い視点で渋家のアー
-              トチームで活動中。メンバーの中でも１、２を争う高身長。「vivivi」出演時ステー
-              ジで舞台美術を作るパフォーマンスを
-              した際には誰もが届かない場所に一発でビスを打ち込み共演者を驚かせた。</br>
+              1980年生まれ。2013年10月から渋家メンバーになった。教育機関での美術教育は一切うけていない。独自の雰囲気と鋭い視点で渋家のアートチームで活動中。メンバーの中でも１、２を争う高身長。「vivivi」出演時ステージで舞台美術を作るパフォーマンスをした際には誰もが届かない場所に一発でビスを打ち込み共演者を驚かせた。</br>
               </br>
               </div>
             </div>
@@ -641,10 +637,8 @@ See below for details.</br>
             <a  class="profile_name" title="角空穂
             <div class='explain'>
               <h1>utubo</h1>
-              <div class='explain_text'>Born:1989男#Art#Martial Arts#武術#Karate#Ninja#Dancing#Pa
-              inting#現代美術#平行四辺形#Metamorphose#建築#Spirituality#</br>人間の能力の極地</br>
+              <div class='explain_text'>Born:1989男#Art#Martial Arts#武術#Karate#Ninja#Dancing#Painting#現代美術#平行四辺形#Metamorphose#建築#Spirituality#</br>人間の能力の極地</br>
               </br>
-            
               Email:&nbsp;utubo1.61803@gmail.com
               </div>
             </div>
