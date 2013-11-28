@@ -597,8 +597,6 @@ See below for details.</br>
 						</div>
 						</a>
 					</div>
-
-					<!--
 					
 					<div class="profile">
 						<img class="small_image" src="./img/member_sum/IMG_7476.jpg">
@@ -660,7 +658,7 @@ See below for details.</br>
 						</div>
 						</a>
 					</div>
-					-->
+					
 				</div>
 			</div>
 		</div><!-- #wrap -->
