@@ -50,15 +50,15 @@
 						</div>					
 						<img style="margin:0 auto 30px auto; display: block;" src="./img/about/about_call_mail.png">
 						<p style="margin: 0 auto;
-display: block;
-width: 380px;
-font-size: 49px;
-font-family: monospace;">080-4166-4123</p>
+						display: block;
+						width: 380px;
+						font-size: 49px;
+						font-family: monospace;">080-3310-4083</p>
 						<p style="margin: 0 auto;
-width: 435px;
-font-size: 45px;
-font-family: monospace;
-display: block;">mail@ayafuji.com</p>
+						width: 435px;
+						font-size: 45px;
+						font-family: monospace;
+						display: block;">shibuhouseinfo@gmail.com</p>
 					</div><!-- .inner_midashi -->
 				</div><!-- #information -->
 			</div><!-- #content -->
