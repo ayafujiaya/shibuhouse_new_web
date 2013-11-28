@@ -33,10 +33,11 @@
 
 					<div class="profile">
 						<!-- サムネイルの画像のURL -->
-						<img class="small_image" src="./img/aeri/01.gif" >
-						<a  class="profile_name" title="<?php require './text/member/member_profile_01.php' ?>" rel="lightbox[imagegroup]" data-lightbox="roadtrip" href="./img/aeri/01.gif" style="">
+						<img class="small_image" src="./img/ menber_sum/Keita_saito.jpg" >
+						<a  class="profile_name" title="<?php require './text/member/member_profile_01.php' ?>" 
+						rel="lightbox[imagegroup]" data-lightbox="roadtrip" href="./img/ menber_sum/Keita_saito.jpg" style="">
 						<div>
-							<p class="full_name">AERI IKEDA</p>
+							<p class="full_name">斎藤桂太</p>
 						</div>
 						</a>
 					</div>
