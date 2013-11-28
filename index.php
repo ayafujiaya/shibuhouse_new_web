@@ -69,8 +69,8 @@
 						<?php require './text/bio.php' ?>
 						</div>
 						<a href="./bio.php#ac_art" id="bio_art"></a>
-						<a href="./bio.php#ac_event" id="bio_event"></a>
-						<a href="./bio.php#ac_media" id="bio_media"></a>
+						<a href="./bio.php#ac_media" id="bio_event"></a>
+						<a href="./bio.php#ac_event" id="bio_media"></a>
 						<img style="margin:0 auto; display: block;" src="./img/hovers/bio_midashi.png">
 						<div style="clear:both;"></div>
 						<!-- <img style="margin:0 auto; display: block;" src="./img/bio_images.png"> -->
