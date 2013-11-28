@@ -309,9 +309,14 @@ a {
 
 .lb-dataContainer {
 top: 0px;
-left: 4%;
+left: 20%;
 position: absolute;
 width: 90% !important;
+}
+
+.lb-outerContainer {
+	margin: 0px;
+	left: 58%;
 }
 
 .explain {
