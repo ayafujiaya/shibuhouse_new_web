@@ -42,9 +42,9 @@
               、「人と人のコミュニケーションからコンテンツを生み出す文化事業」をコンセプトに、そこに集うメンバーと共に様々
               な作品、企画、展示、イベント、プロジェクトなどを製作している。</br>
               
-              <a href='https://twitter.com/satoketa'><img src='./img/twitter.png'  border='0'></a>
+              <a target='_blank' href='https://twitter.com/satoketa'><img src='./img/twitter.png'  border='0'></a>
               &nbsp;
-              <a href=' http://facebook.com/satoketa'><img src='./img/facebook.png'  border='0'></a>
+              <a target='_blank' href=' http://facebook.com/satoketa'><img src='./img/facebook.png'  border='0'></a>
               &nbsp;
               Email:&nbsp;saito.shibuhouse@gmail.com
               &nbsp;<a hrfe='saito-profile.pdf'>[pdf]</a>
@@ -70,12 +70,12 @@
             グラフィックデザイナー、ファションクリエーターなど様々なアーティストの活動を支援している。
             女の子を愛している。 本当に。</br>
               </br>
-              <a href='https://twitter.com/kusokuniman'><img src='./img/twitter.png'  border='0'></a>
+              <a  target='_blank' href='https://twitter.com/kusokuniman'><img src='./img/twitter.png'  border='0'></a>
               &nbsp;
-              <a href='https://www.facebook.com/toshikuni.yamaguchi'><img src='./img/facebook.png'  border='0'></a>
+              <a  target='_blank' href='https://www.facebook.com/toshikuni.yamaguchi'><img src='./img/facebook.png'  border='0'></a>
               &nbsp;
               Email:&nbsp;stokke33@gmail.com
-              &nbsp;<a hrfe='yamaguchi-profile.pdf'>[pdf]</a>
+              &nbsp;<a  target='_blank' hrfe='yamaguchi-profile.pdf'>[pdf]</a>
               </div>
             </div>
             " data-lightbox="roadtrip" href='./img/member_full/Toshikuni.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
@@ -94,9 +94,9 @@
               ファッション誌『KERA！』へのコラム連載、商品デザイン、渋家メンバーとしてのアートワークなど、
               肩書きに捉われず活動を展開。CX「テラスハウス」初代住人でもある。</br>
               </br>
-              <a href='https://twitter.com/chanmomochan10'><img src='./img/twitter.png'  border='0'></a>
+              <a  target='_blank' href='https://twitter.com/chanmomochan10'><img src='./img/twitter.png'  border='0'></a>
               &nbsp;
-              <a href='http://ameblo.jp/chanmomochan10'><img src='./img/facebook.png'  border='0'></a>
+              <a  target='_blank' href='http://ameblo.jp/chanmomochan10'><img src='./img/facebook.png'  border='0'></a>
               </div>
             </div>
             " data-lightbox="roadtrip" href='./img/member_full/momo.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
@@ -116,11 +116,11 @@
               「黄金町車道ワーク」、ZERODATE Art Projectにて秋田県滞在後個展「毟る」を発表。多摩美術大学大学院修了。
               小道具団体Nichecraft。</br>
               </br>
-              <a href='https://twitter.com/goldenmilk'><img src='./img/twitter.png'  border='0'></a>
+              <a  target='_blank' href='https://twitter.com/goldenmilk'><img src='./img/twitter.png'  border='0'></a>
               &nbsp;
-              <a href='https://www.facebook.com/kintominami'><img src='./img/facebook.png'  border='0'></a>
+              <a  target='_blank' href='https://www.facebook.com/kintominami'><img src='./img/facebook.png'  border='0'></a>
               &nbsp;
-              <a href='http://kinto.arttimes.info/'>[HP]</a>
+              <a  target='_blank' href='http://kinto.arttimes.info/'>[HP]</a>
               &nbsp;
               Email:&nbsp;minami.kinto@gmail.com
               </div>
@@ -140,7 +140,7 @@
               <div class='explain_text'>1989年生まれ。2012<a href='http://ikeikehappyhappyphotonewyear.tumblr.com/'>イケイケハッピーハッピー写真ニューイヤー</a>
               毎月zine交換も行っている。</br>
               </br>
-              <a href='http://yukiishida.com/'>[HP]</a>
+              <a  target='_blank' href='http://yukiishida.com/'>[HP]</a>
             </div>
             " data-lightbox="roadtrip" href='./img/member_full/yuki.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
             <div>
@@ -160,7 +160,7 @@ Skilled at: Familiarity with Linux. Extensive experience with Ruby. At least sev
 Current work: Systems Engineering. R&D for faster web development, large-scale data processing, data analysis.</br>
 I'm always using huge screens, HHKB, Trackball, Debian and quiet environment. It's very important for me.</br>
 See below for details.</br>
-              <a href='http://id774.net'>http://id774.net</a>
+              <a  target='_blank' href='http://id774.net'>http://id774.net</a>
               </div>
             </div>
             " data-lightbox="roadtrip" href='./img/member_full/id774.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
@@ -180,9 +180,9 @@ See below for details.</br>
               、風俗嬢という立場から性や男女の問題に関するイベントに出演。
               避妊を訴え、コンドームを配布する「セックス漫談」を渋家ホームパーティーで不定期開催。</br>
               </br>
-              <a href='https://twitter.com/menherahhshitt '><img src='./img/twitter.png'  border='0'></a>
+              <a  target='_blank' href='https://twitter.com/menherahhshitt '><img src='./img/twitter.png'  border='0'></a>
               &nbsp;
-              <a href='http://s.ameblo.jp/menherahhshit'>[HP]</a>
+              <a  target='_blank' href='http://s.ameblo.jp/menherahhshit'>[HP]</a>
 
               </div>
             </div>
@@ -200,9 +200,9 @@ See below for details.</br>
               <h1>ニート</h1>
               <div class='explain_text'>1993年 山梨生まれ。趣味はJohn Lennonを聞くこと。</br>
               </br>
-              <a href='https://twitter.com/yushi_oda'><img src='./img/twitter.png'  border='0'></a>
+              <a  target='_blank' href='https://twitter.com/yushi_oda'><img src='./img/twitter.png'  border='0'></a>
               &nbsp;
-              <a href='https://www.facebook.com/yushi.odagiri'><img src='./img/facebook.png'  border='0'></a>
+              <a  target='_blank' href='https://www.facebook.com/yushi.odagiri'><img src='./img/facebook.png'  border='0'></a>
             
               </div>
             </div>
@@ -221,11 +221,11 @@ See below for details.</br>
               <div class='explain_text'>1981年 神奈川県出身。日本最古の占い館 原宿占い館 塔里木（タリム)®専属鑑定師。
               神出鬼没に現れ、都内を中心に存在拡散が行われはじめている。主な出演イベントは「†Majyocco Sabbath†」「Sex Pot Night」など。</br>
               </br>
-              <a href='https://twitter.com/dainmt'><img src='./img/twitter.png'  border='0'></a>
+              <a  target='_blank' href='https://twitter.com/dainmt'><img src='./img/twitter.png'  border='0'></a>
               &nbsp;
-              <a href='https://www.facebook.com/dai.nmt'><img src='./img/facebook.png'  border='0'></a>
+              <a  target='_blank' href='https://www.facebook.com/dai.nmt'><img src='./img/facebook.png'  border='0'></a>
               &nbsp;
-              <a href='http://uranai-tarim.jp/'>[HP]</a>
+              <a  target='_blank' href='http://uranai-tarim.jp/'>[HP]</a>
               </div>
             </div>
             " data-lightbox="roadtrip" href='./img/member_full/dai.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
@@ -244,7 +244,7 @@ See below for details.</br>
               。レーベルプロモーター、バンドマネージャーを経て、最近異動した。会社員生活の傍ら、
               DJパーティ'MONK!!!'の企画運営等も行なっている。2004年よりルームシェアをしており、2013年5月より渋家に在籍。</br>
               </br>
-              <a href='https://twitter.com/Shibuya403'><img src='./img/twitter.png' border='0'></a>
+              <a  target='_blank' href='https://twitter.com/Shibuya403'><img src='./img/twitter.png' border='0'></a>
             
               </div>
             </div>
@@ -265,9 +265,9 @@ See below for details.</br>
               ショップを受講して以来、映像制作を開始す
               る。以降、街頭ビジョン用のPRビデオの制作や、イベントの撮影、編集を手がける。</br>
               </br>
-              <a href='https://twitter.com/tak_fu_k_u'><img src='./img/twitter.png'  border='0'></a>
+              <a  target='_blank' href='https://twitter.com/tak_fu_k_u'><img src='./img/twitter.png'  border='0'></a>
               &nbsp;
-              <a href='http://d.hatena.ne.jp/the_tramp/'>[HP]</a>
+              <a  target='_blank' href='http://d.hatena.ne.jp/the_tramp/'>[HP]</a>
               </div>
             </div>
             " data-lightbox="roadtrip" href='./img/member_full/numa.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
@@ -287,7 +287,7 @@ See below for details.</br>
               ステージ演出を行う。2009年に「渋家」に加入。2011年にプログラマーの彩藤と
               メディアアートユニット「huez」を結成。尚、YAVAOの由来は2010年当時「小池くん」と呼ぶことを不憫に思った渋家住人が正反対の「ヤバ男」と呼び始めたのがきっかけ。</br>
               </br>
-              <a href='https://twitter.com/EX_YAVAO'><img src='./img/twitter.png'  border='0'></a>
+              <a  target='_blank' href='https://twitter.com/EX_YAVAO'><img src='./img/twitter.png'  border='0'></a>
             </div>
             " data-lightbox="roadtrip" href='./img/member_full/yavao.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
             <div>
@@ -303,13 +303,13 @@ See below for details.</br>
               <h1>ダダイスト</h1>
               <div class='explain_text'>1993/08/30 詩を書かない詩人。</br>
               </br>
-              <a href='https://twitter.com/Hamlet___telmaH'><img src='./img/twitter.png'  border='0'></a>
+              <a  target='_blank' href='https://twitter.com/Hamlet___telmaH'><img src='./img/twitter.png'  border='0'></a>
               &nbsp;
-              <a href='http://www.facebook.com/StrangeloveZukkyun'><img src='./img/facebook.png'  border='0'></a>
+              <a  target='_blank' href='http://www.facebook.com/StrangeloveZukkyun'><img src='./img/facebook.png'  border='0'></a>
               &nbsp;
-              <a href='http://descendantsofhamlet.tumblr.com'>Tumblr</a>
+              <a  target='_blank' href='http://descendantsofhamlet.tumblr.com'>Tumblr</a>
               &nbsp;
-              <a href='http://ameblo.jp/strangelove-zukkyun/'>[HP]</a>
+              <a  target='_blank' href='http://ameblo.jp/strangelove-zukkyun/'>[HP]</a>
               </div>
             </div>
             " data-lightbox="roadtrip" href='./img/member_full/mr.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
@@ -329,9 +329,9 @@ See below for details.</br>
               筆•販促などから、出版プロデュース、トークイベントの主催まで多岐にわたって活動。現在、クラウドファンディングによる本の未来を作るプロジェクト推進中。</br>
               
               </br>
-              <a href='https://twitter.com/hon_nishi'><img src='./img/twitter.png'  border='0'></a>
+              <a  target='_blank' href='https://twitter.com/hon_nishi'><img src='./img/twitter.png'  border='0'></a>
               &nbsp;
-              <a href='https://www.facebook.com/profile.php?id=100005790223960'><img src='./img/facebook.png'  border='0'></a>
+              <a  target='_blank' href='https://www.facebook.com/profile.php?id=100005790223960'><img src='./img/facebook.png'  border='0'></a>
               &nbsp;
               Email:&nbsp;editorial.production.451@gmail.com
               </div>
@@ -350,9 +350,9 @@ See below for details.</br>
               <h1>FashionCreator / DJ / SJ</h1>
               <div class='explain_text'>拡張される身体。</br>
               </br>
-              <a href='https://twitter.com/kinokopink'><img src='./img/twitter.png'  border='0'></a>
+              <a  target='_blank' href='https://twitter.com/kinokopink'><img src='./img/twitter.png'  border='0'></a>
               &nbsp;
-              <a href='http://kinokopink.tumblr.com/'>Tumblr</a>
+              <a  target='_blank' href='http://kinokopink.tumblr.com/'>Tumblr</a>
               &nbsp;
               Email:&nbsp;i.am.etranger@gmail.com 　 
               </div>
@@ -374,9 +374,9 @@ See below for details.</br>
               、消費しえない映像、アートとしての映像】を制作、発表している。また、別名義である zaqi 
               として都内を中心にVJ活動も行っている。</br>
               </br>
-              <a href='https://twitter.com/zaqizaqizaqi'><img src='./img/twitter.png'  border='0'></a>
+              <a  target='_blank' href='https://twitter.com/zaqizaqizaqi'><img src='./img/twitter.png'  border='0'></a>
               &nbsp;
-              <a href='https://www.facebook.com/yoshimi.isozaki.31'><img src='./img/facebook.png'  border='0'></a>
+              <a  target='_blank' href='https://www.facebook.com/yoshimi.isozaki.31'><img src='./img/facebook.png'  border='0'></a>
               </div>
             </div>
             " data-lightbox="roadtrip" href='./img/member_full/zaqi.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
@@ -393,9 +393,9 @@ See below for details.</br>
               <h1>photographer</h1>
               <div class='explain_text'>日常生活を軸にスナップを撮っています。</br>
               </br>
-              <a href='https://twitter.com/amiamisg1'><img src='./img/twitter.png'  border='0'></a>
+              <a  target='_blank' href='https://twitter.com/amiamisg1'><img src='./img/twitter.png'  border='0'></a>
               &nbsp;
-              <a href='http://amiamisg.tumblr.com'>[Tumblr]</a>
+              <a  target='_blank' href='http://amiamisg.tumblr.com'>[Tumblr]</a>
               </div>
             </div>
             " data-lightbox="roadtrip" href='./img/member_full/ami.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
@@ -428,7 +428,7 @@ See below for details.</br>
               <h1>Interactive Media Engineer</h1>
               <div class='explain_text'>相互作用性を考えている人。</br>
               </br>
-              <a href='https://twitter.com/_ayafuji_'><img src='./img/twitter.png'  border='0'></a>
+              <a  target='_blank' href='https://twitter.com/_ayafuji_'><img src='./img/twitter.png'  border='0'></a>
               </div>
             </div>
             " data-lightbox="roadtrip" href='./img/member_full/ayafuji.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
@@ -465,7 +465,7 @@ See below for details.</br>
               家メンバーに加入。“有機的な線”をモチーフに砂のインスタレーション作品や絵画を制作。2012年TRANS ARTS TOKYOに出展。モデルやSMパフォーマーとしても活動をしており、
               グラビア写真のアートディレクションも自らつとめる。HP制作中。</br>
               </br>
-              <a href='http://twitter.com/kinpatukirei'><img src='./img/twitter.png'  border='0'></a>
+              <a  target='_blank' href='http://twitter.com/kinpatukirei'><img src='./img/twitter.png'  border='0'></a>
             
               </div>
             </div>
@@ -487,7 +487,7 @@ See below for details.</br>
 「<a href='http://www.youtube.com/watch?v=ZRM08-P79tQ' target='_blank'>cinema is dancing</a>」<br />
 「<a href='http://m.youtube.com/watch?v=OhMdGUjb8JI&amp;desktop_uri=%2Fwatch%3Fv%3DOhMdGUjb8JI' target='_blank'>penetration twin</a>」</br>
               </br>
-              <a href='http://twitter.com/taiki02'><img src='./img/twitter.png'  border='0'></a>
+              <a  target='_blank' href='http://twitter.com/taiki02'><img src='./img/twitter.png'  border='0'></a>
               &nbsp;
 
               Email:&nbsp;taiki_masuzawa@yahoo.co.jp
@@ -510,7 +510,7 @@ See below for details.</br>
               、身の回りの生活をモチーフにした写真を撮って、自身のブログにアップロードしています。2013年にBiG BANG PRESS（bigbangpress.net）という架空の出版社
               を立ち上げ、写真にまつわるアートプロジェクトを運営しています。</br>
               </br>
-              <a href='http://ekabk.blogspot.com'>[HP]</a>
+              <a  target='_blank' href='http://ekabk.blogspot.com'>[HP]</a>
               </div>
             </div>
             " data-lightbox="roadtrip" href='./img/member_full/kenta.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
@@ -585,7 +585,7 @@ See below for details.</br>
               数々の演劇団体を手がける。2013年度こまばアゴラ劇場アーティスト会員。2010年からアジア舞台芸術祭にも関わっている。振付家としてスキルアップのため、十条のスタジオJ☆S
               tudioで再下積み中。2014年、最前線に爆発的に帰ってくる予定。</br>
               </br>
-              <a href='http://sharakusei.jimdo.com/'>[HP]</a>
+              <a  target='_blank' href='http://sharakusei.jimdo.com/'>[HP]</a>
               </div>
             </div>
             " data-lightbox="roadtrip" href='./img/member_full/sei.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
@@ -665,7 +665,7 @@ See below for details.</br>
               「ハッピー感のある空間」が好き。</br>
               物事を宇宙規模で考えるように心がけています。</br>
               </br>
-              <a href='http://maharu929.wix.com/maharu'>[HP]</a>
+              <a  target='_blank' href='http://maharu929.wix.com/maharu'>[HP]</a>
               </div>
             </div>
             " data-lightbox="roadtrip" href='./img/member_full/maharu.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
