@@ -42,7 +42,11 @@
 							、「人と人のコミュニケーションからコンテンツを生み出す文化事業」をコンセプトに、そこに集うメンバーと共に様々
 							な作品、企画、展示、イベント、プロジェクトなどを製作している。</br>
 							
-							<a href='https://twitter.com/satoketa'>Twitter</a>
+							<a href='https://twitter.com/satoketa'><img src='./img/twitter.png'  border='0'></a>
+							&nbsp;
+							<a href=' http://facebook.com/satoketa'><img src='./img/facebook.png'  border='0'></a>
+							&nbsp;
+							Email:&nbsp;saito.shibuhouse@gmail.com
 							</div>
 						</div>" 
 						rel="lightbox[imagegroup]" data-lightbox="roadtrip" href="./img/menber_full/keita.jpg" style="">
