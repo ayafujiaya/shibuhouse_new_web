@@ -1,7 +1,7 @@
 <table>
 <tr>
-<div id="bio_background" <th>2013.10</th>
-<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/vivivi.php");'>「VIVIVI」/Club Asia</td></div>
+<th>2013.10</th>
+<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/vivivi.php");'><div id="bio_background" 「VIVIVI」/Club Asia</div></td>
 </tr>
 <tr>
 <th>2013.06</th>
