@@ -53,6 +53,7 @@
             display: block;
             width: 260px;
             font-size: 32px;
+            #help_me,  x:-moz-any-link, x:default  { color: red; }
             font-family: monospace;">080-3310-4083</p>
             <p style="margin:0 auto;
             width: 420px;
