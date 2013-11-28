@@ -2,6 +2,7 @@
 	<img class="inner_ex_image" src="./img/exhibition_sum/tri/tri_001.jpg">
 	<img class="inner_ex_image" src="./img/exhibition_sum/tri/tri_002.jpg">
 	<img class="inner_ex_image" src="./img/exhibition_sum/tri/tri_003.jpg">
+	<img class="inner_ex_image" src="./img/exhibition_sum/tri/tru_004.jpg">
 </div>
 <div id="ex_text">
 「渋家トリエンナーレ」<br />
