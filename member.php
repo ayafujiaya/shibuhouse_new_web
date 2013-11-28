@@ -120,7 +120,7 @@
               &nbsp;
               <a  target='_blank' href='https://www.facebook.com/kintominami'><img src='./img/facebook.png'  border='0'></a>
               &nbsp;
-              <a  target='_blank' href='http://kinto.arttimes.info/'><div id="bio_background">[&nbsp;web&nbsp;]</div></a>
+              <a  target='_blank' href='http://kinto.arttimes.info/'><div id='bio_background'>[&nbsp;web&nbsp;]</div></a>
               &nbsp;
               Email:&nbsp;minami.kinto@gmail.com
               </div>
