@@ -52,11 +52,11 @@
 						<p style="margin: 0 auto;
 						display: block;
 						width: 380px;
-						font-size: 49px;
+						font-size: 30px;
 						font-family: monospace;">080-3310-4083</p>
 						<p style="margin: 0 auto;
-						width: 435px;
-						font-size: 45px;
+						width: 680px;
+						font-size: 40px;
 						font-family: monospace;
 						display: block;">shibuhouseinfo@gmail.com</p>
 					</div><!-- .inner_midashi -->
