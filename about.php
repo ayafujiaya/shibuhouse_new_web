@@ -51,12 +51,12 @@
 						<img style="margin:0 auto 30px auto; display: block;" src="./img/about/about_call_mail.png">
 						<p style="margin: 0 auto;
 						display: block;
-						width: 380px;
-						font-size: 30px;
+						width: 335px;
+						font-size: 40px;
 						font-family: monospace;">080-3310-4083</p>
 						<p style="margin: 0 auto;
-						width: 680px;
-						font-size: 40px;
+						width: 435px;
+						font-size: 34px;
 						font-family: monospace;
 						display: block;">shibuhouseinfo@gmail.com</p>
 					</div><!-- .inner_midashi -->
