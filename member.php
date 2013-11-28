@@ -370,7 +370,7 @@ See below for details.</br>
               </br>
               <a  target='_blank' href='https://twitter.com/kinokopink'><img src='./img/twitter.png'  border='0'></a>
               &nbsp;
-              <a  target='_blank' href='http://kinokopink.tumblr.com/'>Tumblr</a>
+              <a  target='_blank' href='http://kinokopink.tumblr.com/'>[Tumblr]</a>
               &nbsp;
               Email:&nbsp;i.am.etranger@gmail.com 　 
               </div>
