@@ -17,7 +17,7 @@
             <td style="padding-right:75px;"><a href='./index.php'>home</a></td>
             <td style="padding-right:75px;"><a href='./about.php'>about</a></td>
             <td style="padding-right:75px;"><a href='./bio.php'>biography</a></td>
-            <td style="padding-right:75px;"><a href='./img/life.png'>life</a></td>
+            <td style="padding-right:75px;"><a href=''>life</a></td>
             <td style="padding-right:75px;"><a href='./member.php'>member</a></td>
             <td style="padding-right:75px;"><a href='./about.php'>info</a></td>
             <td style="padding-right:75px;"><a href='https://twitter.com/shibuhouse'>Twitter</a></td>
