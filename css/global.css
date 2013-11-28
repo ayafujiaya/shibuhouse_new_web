@@ -292,7 +292,7 @@ footer {
                 display: block;
                 width: 28px;
                 height: 30px;
-        background: url('../img/information.png') no-repeat 0 0;
+        background: url('../img/mail_footer.png') no-repeat 0 0;
 }
 #footer_information:hover {
         background: url('../img/hovers/footer_images/information_hover.png') no-repeat 0 0;
@@ -305,7 +305,7 @@ footer {
         background: url('../img/twitter.png') no-repeat 0 0;
 }
 #footer_twitter:hover {
-        background: url('../img/hovers/footer_images/twitter.png') no-repeat 0 0;
+        background: url('../img/hovers/footer_images/twitter_hover.png') no-repeat 0 0;
 }
 
 #footer_table {
