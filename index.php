@@ -39,7 +39,7 @@
 				</div><!-- hot_topics_pic -->
 				<div id="hot_topics_text">
 					<ul>
-						<li class="topics"><sep class="topics_date">2013/11/29</sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[NEWS]  11/29（金）「渋家」代表交代 6代目代表に齋藤桂太が就任</sep></li>
+						<li class="topics"><sep class="topics_date">2013/11/29</sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[NEWS]  <a href="https://www.facebook.com/events/702796986406881/?ref_dashboard_filter=upcoming" target="_blank">11/29（金）「渋家」代表交代 6代目代表に齋藤桂太が就任</sep></li>
 						<li class="topics"><sep class="topics_date">2013/11/29</sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[MEDIA] <a href="http://www.eater.co.jp/" target="_blank">11/29（金）記事掲載 『EATER 2014 REBIRTH』（地引雄一:編集）発売</a></sep></li>
 						<li class="topics"><sep class="topics_date">2013/11/29</sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[MEDIA] <a href="http://www.nhk.or.jp/jirenma/" target="_blank">11/30（土）齋藤桂太 NHK Eテレ「ニッポンのジレンマ」出演</a></sep></li>
 						<li class="topics"><sep class="topics_date">2013/11/29</sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[EVENT] <a href="http://yama.cs8.biz/" target="_blank">12/20（金）Maltine Records主催イベント「山」（WWW）参加</a></sep></li>
