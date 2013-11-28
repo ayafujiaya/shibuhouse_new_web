@@ -15,13 +15,13 @@
 					</tr>
 					<tr align="center">
 						<td style="padding-right:75px;"><a href='./index.php'>home</a></td>
-						<td style="padding-right:75px;">about</td>
-						<td style="padding-right:75px;">biography</td>
-						<td style="padding-right:75px;">life</td>
-						<td style="padding-right:75px;">member</td>
-						<td style="padding-right:75px;">info</td>
-						<td style="padding-right:75px;">Twitter</td>
-						<td style="padding-right:0px;">Facebook</td>
+						<td style="padding-right:75px;"><a href='./about.php'>about</a></td>
+						<td style="padding-right:75px;"><a href='./bio.php'>biography</a></td>
+						<td style="padding-right:75px;"><a href='./img/life.png'>life</a></td>
+						<td style="padding-right:75px;"><a href='./member.php'>member</a></td>
+						<td style="padding-right:75px;"><a href='./about.php'>info</a></td>
+						<td style="padding-right:75px;"><a href='https://twitter.com/shibuhouse'>Twitter</a></td>
+						<td style="padding-right:0px;"><a href='https://www.facebook.com/pages/%E6%B8%8B%E5%AE%B6-shibuhouse/171872296182719'>Facebook</a></td>
 					</tr>
 					<tr>
 						<td>---------</td>
