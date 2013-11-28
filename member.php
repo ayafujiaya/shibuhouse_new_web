@@ -42,7 +42,7 @@
 							、「人と人のコミュニケーションからコンテンツを生み出す文化事業」をコンセプトに、そこに集うメンバーと共に様々
 							な作品、企画、展示、イベント、プロジェクトなどを製作している。</br>
 							
-							<a href="https://twitter.com/satoketa">Twitter</a>
+							<a href='https://twitter.com/satoketa'>Twitter</a>
 							</div>
 						</div>" 
 						rel="lightbox[imagegroup]" data-lightbox="roadtrip" href="./img/menber_full/keita.jpg" style="">
@@ -62,7 +62,11 @@
 							、「人と人のコミュニケーションからコンテンツを生み出す文化事業」をコンセプトに、そこに集うメンバーと共に様々
 							な作品、企画、展示、イベント、プロジェクトなどを製作している。</br>
 							</br>
-							<a href='https://twitter.com/satoketa'><img src='./img/twitter_header.png' alt='Twitter' border='0'></a>
+							<a href='https://twitter.com/satoketa'><img src='./img/twitter.png'  border='0'></a>
+							&nbsp;
+							<a href='http://facebook.com/satoketa'><img src='./img/facebook.png'  border='0'></a>
+							&nbsp;
+							Email:&nbsp;saito.shibuhouse@gmail.com
 							</div>
 						</div>
 						" data-lightbox="roadtrip" href='./img/menber_sum/Keita_saito.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
@@ -359,7 +363,7 @@
 						<a  class="profile_name" title="Popup Name 
 						<div class='explain'>
 							<h1>Yuki Takada</h1>
-							<div class='explain_text'><a href='http://shibuhouse.trapgirl.net'>hello!!</a></div>
+							<div class='explain_text'>プロフィールテキスト</div>
 						</div>
 						" data-lightbox="roadtrip" href="./img/aeri/03.gif" style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
 						<div>
