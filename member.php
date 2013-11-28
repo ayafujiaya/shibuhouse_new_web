@@ -477,7 +477,7 @@ See below for details.</br>
           </div>
           <!--------------------------Profile Start -------------------------->
           <div class="profile">
-            <img class="small_image" src="./img/member_sum/taiki_new.jpg">
+            <img class="small_image" src="./img/member_sum/taiki.jpg">
             <a  class="profile_name" title="増沢大輝
             <div class='explain'>
               <h1>ダンサー・振付家役</h1>
