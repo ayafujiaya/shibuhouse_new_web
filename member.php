@@ -541,6 +541,23 @@ See below for details.</br>
 						</div>
 						</a>
 					</div>
+						<!--------------------------Profile Start -------------------------->
+					<div class="profile">
+						<img class="small_image" src="./img/member_sum/Sanae_sugai.jpg">
+						<a  class="profile_name" title="菅井早苗
+						<div class='explain'>
+							<h1>5代目渋家代表/デザイナー</h1>
+							<div class='explain_text'>終電で帰るつもりだったけど3年が経ちました。よろしくどうぞ
+							。デザインの仕事をちょくちょくやってます。よろしくどうぞ。
+							</br>
+							</div>
+						</div>
+						" data-lightbox="roadtrip" href='./img/member_full/sugai.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+						<div>
+							<p class="full_name">菅井早苗</p>
+						</div>
+						</a>
+					</div>
 					<!--------------------------Profile Start -------------------------->
 					<div class="profile">
 						<img class="small_image" src="./img/member_sum/hayasaka_masumi.jpg">

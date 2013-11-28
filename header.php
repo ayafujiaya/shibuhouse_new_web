@@ -1,6 +1,5 @@
     <p id="scroll-top" style="bottom: 20px;">
             <img src="./img/arrow_to_top.png">
-        </a>
     </p>
 
 				<div id="logo">
@@ -30,7 +29,7 @@
 					<table id="nav_table">
 						<tr align="center" style="" id="nav_table_tr">
 							<td class="nav_image" style="padding:0 50px;"><a href="./about.php" id="nav_about"></a></td>
-							<td class="nav_image" style="padding:0 50px;"><a href="./bio.php" id="nav_bio"></td>
+							<td class="nav_image" style="padding:0 50px;"><a href="./bio.php" id="nav_bio"></a></td>
 							<td class="nav_image" style="padding:0 50px; opacity:0.2;"><img src="./img/life.png"></td>
 							<td class="nav_image" style="padding:0 50px;"><a href="./member.php" id="nav_member"></a></td>
 						</tr>
