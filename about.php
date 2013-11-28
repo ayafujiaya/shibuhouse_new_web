@@ -21,8 +21,7 @@
 					<div style="padding-top:28px; padding-bottom:60px;" class="inner_midashi">
 						<img style="margin-bottom:47px" src="./img/about/about_what.png">
 						<div class="midashi_text">
-						集団的知性は、細菌、動物、人間、コンピュータなど様々な集団の、意思決定の過程で発生する。集団的知性の研究は、社会学、計算機科学、集団行動の研究[1]などに属する。
-Tom Atlee らは、Howard Bloom が「グループIQ」と呼んだものから一歩進み、人間の集団的知性に研究の焦点をあてている。Atlee は集団的知性を「集団思考（集団浅慮）や個人の認知バイアスに打ち勝って集団が協調し、より高い知的能力を発揮するため」のものと主張している。
+						「渋家（シブハウス）」は、 コミュニケーションを主体とした「場所」であり「集団」です。家を24時間365日解放しておくことで新たな関係性を生み出し、それを多くの人と共有することで「物語」を生産しています。これまで3度の引っ越しを行い、渋谷駅周辺を点々としながら借りる家を大きくし、現在進行形で変化し続けています。メンバーは年齢や職業を問わず、生活や活動も固定しません。自由なコミュニケーションからさまざまなコンテンツ生み出しています。 
 						</div>					
 						<img style="margin:0 auto; display: block;" src="./img/about/about_hatena.png">
 					</div><!-- .inner_midashi -->
@@ -32,7 +31,11 @@ Tom Atlee らは、Howard Bloom が「グループIQ」と呼んだものから�
 					<div style="padding-top:28px; padding-bottom:60px;" class="inner_midashi">
 						<img  style="margin-bottom:47px" src="./img/about/about_concept.png">
 					<div class="midashi_text">
-						集団的知性（しゅうだんてきちせい、英語：Collective Intelligence、CI）は、多くの個人の協力と競争の中から、その集団自体に知能、精神が存在するかのように見える知性である。Peter Russell（1983年）、Tom Atlee（1993年）、Howard Bloom（1995年）、Francis Heylighen（1995年）、ダグラス・エンゲルバート、Cliff Joslyn、Ron Dembo、Gottfried Mayer-Kress（2003年）らが理論を構築した。
+						現在の渋家は、渋家の内部から外部へさまざななコンテンツやプロジェクトを持ち出すことをテーマとして、コミュニティマネジメント、イベントオーガナイズ、アートインキュベーションの３つを柱として活動しています。
+具体的には、コミュニティマネジメントでは、代表の齋藤桂太が NHK「ニッポンのジレンマ」に出演するなど、新たなコミュニティのプロトタイプとして渋家が評価されたことを受け、これまであまり表に出さなかった生活コンテンツの公開やアーカイブ化を進めています。
+次に、イベントオーガナイズは、より多くの人と関わることを目的として、イベントの主催や出演を積極的に行っており、毎月22日に開催している「渋家ホームパーティ」を外に拡大させた400人規模のイベントを主催するなどキャパシティを拡大させています。
+また、アート方面では、森美術館「六本木クロッシング展」のなかで「全国のディスカーシブ・プラットホーム」として選出されたことを受け、アーティストメンバーが中心となり、外部の人間も参加可能な“対話の場”である「Shibuhouse Art Secret Meeting」の発足を準備しています。
+メンバー同士のコミュニケーションが活発に行われ、さまざまなクリエイションが行われるようになったいま、渋家は単一のコミュニティからネットワーク上の1つのポイントへと変化するべく、さまざまな現場で活躍する人たちとのコミュニケーションを目指していきます。
 					</div>
 					<img style="margin:0 auto; display: block;" src="./img/about/about_cloud.png">
 					</div><!-- .inner_midashi -->
@@ -43,7 +46,7 @@ Tom Atlee らは、Howard Bloom が「グループIQ」と呼んだものから�
 					<div style="padding-top:28px; padding-bottom:26px;" class="inner_midashi">
 						<img style="margin-bottom:47px" src="./img/about/about_information.png">
 						<div class="midashi_text">
-						集合知には、collective intelligence, collective knowledge, wisdom of crowdsなどの異なる英語が対応する。経営学の一分野である知識管理論からのアプローチには、洞口治夫(Horaguchi Haruo)『集合知の経営－日本企業の知識管理戦略－』がある。
+						渋家はさまざまな設備を備えたイベントスペースでもあります。毎月22日に「渋家ホームパーティ」を開催しているほか、地下にある多目的部屋•クヌギで継続的に音楽イベントや映像上映会を行っています。訪問方法、メンバー募集、取材などのお問い合わせについては、以下までご連絡ください。 
 						</div>					
 						<img style="margin:0 auto 30px auto; display: block;" src="./img/about/about_call_mail.png">
 						<p style="margin: 0 auto;
