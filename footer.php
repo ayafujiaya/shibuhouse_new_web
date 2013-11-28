@@ -21,7 +21,7 @@
             <td style="padding-right:75px;"><a href='./member.php'>member</a></td>
             <td style="padding-right:75px;"><a href='./about.php'>info</a></td>
             <td style="padding-right:75px;"><a href='https://twitter.com/shibuhouse'>Twitter</a></td>
-            <td style="padding-right:0px;"><a href='https://www.facebook.com/pages/%E6%B8%8B%E5%AE%B6-shibuhouse/171872296182719'>Facebook</a></td>
+            <td style="padding-right:20px;"><a href='https://www.facebook.com/pages/%E6%B8%8B%E5%AE%B6-shibuhouse/171872296182719'>Facebook</a></td>
           </tr>
           <tr align="left">
             <td style=""></td>
