@@ -11,5 +11,7 @@
 <br />
 「TRANS ART TOKYO」にて行われた、100年前からある秘密結社•IDPW主催のイベント「インターネット闇市」に参加。渋家は各国のビールのラベルを剥がした闇ビールを販売したほか、インターネットのすべてを身体で表現するパフォーマンス「インターネットおじさん」を行った。さまざまな高度な技術を駆使したブースが並ぶなかで、お腹のでた全身白タイツのおじさんが“リアルリツイート”と称して数分ごとに指定された言葉を叫び、会場を盛り上げた。<br />
 <br />
-<a href="http://idpw.org/fest/blackmarket/" target="_blank">[Web]</a>
+<br />
+<a href="http://idpw.org/fest/blackmarket/" target="_blank">[WEB]</a>
+<br />
 </div>
