@@ -1,9 +1,10 @@
 <div id="ex_image">
-	<img class="inner_ex_image" src="./img/AI/dammy_01.gif">
-	<img class="inner_ex_image" src="./img/AI/dammy_02.gif">
-	<img class="inner_ex_image" src="./img/AI/dammy_03.gif">
-	<img class="inner_ex_image" src="./img/AI/dammy_04.gif">
+	<img class="inner_ex_image" src="./img/media_sum/dommune/dommune_001.jpg">
 </div>
 <div id="ex_text">
-	dommune
+『DOMMUNE オフィシャルガイドブック 2』 [DOMMUNE/河出書房新社]<br />
+記事名：「特集&nbsp;&nbsp;2012 年の日本を発電させるカルチャーエネルギーベスト100!!!!!!!! - 渋家というプロジェクトについて -」<br />
+刊行日：2011.12.21<br />
+<br />
+ファイナル・メディアを謳うライブ・ストリーミング放送局「DOMMUNE」のオフィシャルガイドブック第2弾。「2012年の日本を発電させるカルチャーエネルギー」をテーマに、2011年のカルチャーシーンを、100のキーワードを通して紹介している。その1つとして、齋藤桂太が「渋家というプロジェクトについて」を寄稿。
 </div>
