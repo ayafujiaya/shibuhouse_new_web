@@ -422,6 +422,7 @@
 					<div class="profile">
 						<img class="small_image" src="./img/menber_sum/ayafuji_profile.jpg">
 						<a  class="profile_name" title="ayafuji
+						<div class='explain'>
 							<h1>Interactive Media Engineer</h1>
 							<div class='explain_text'>相互作用性を考えている人。</br>
 							</br>
