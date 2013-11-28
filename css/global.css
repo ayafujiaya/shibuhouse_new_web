@@ -217,34 +217,22 @@ footer {
 }
 
 
-#footer_about{
+#footer_hatena{
                 display: block;
                 width: 33px;
                 height: 30px;
         background: url('../img/hatena.png') no-repeat 0 0;
 }
 
-#footer_about:hover {
+#footer_hatena:hover {
         background: url('../img/hovers/footer_images/hatena_hover.png') no-repeat 0 0;
 }
 
-#footer_about{
-                display: block;
-                width: 50px;
-                height: 50px;
-        background: url('../img/about.png') no-repeat 0 0;
-
-
-}
-
-#footer_about:hover {
-        background: url('../img/hovers/footer_images/hatena_hover.png') no-repeat 0 0;
-}
 
 #footer_house{
                 display: block;
-                width: 50px;
-                height: 50px;
+                width: 30px;
+                height: 30px;
         background: url('../img/house.png') no-repeat 0 0;
 
 
@@ -254,99 +242,23 @@ footer {
         background: url('../img/hovers/footer_images/house_hover.png') no-repeat 0 0;
 }
 
-#footer_member{
-                display: block;
-                width: 50px;
-                height: 50px;
-        background: url('../img/member.png') no-repeat 0 0;
-
-
-}
-
-#footer_member:hover {
-        background: url('../img/hovers/footer_images/house_hover.png') no-repeat 0 0;
-}
-
-#footer_house{
-                display: block;
-                width: 50px;
-                height: 50px;
-        background: url('../img/carry.png') no-repeat 0 0;
-
-
-}
-
-#footer_carry:hover {
-        background: url('../img/hovers/footer_images/carry_hover.png') no-repeat 0 0;
-}
-
-#footer_house{
-                display: block;
-                width: 50px;
-                height: 50px;
-        background: url('../img/hatena.png') no-repeat 0 0;
-
-
-}
-
-#footer_hatena:hover {
-        background: url('../img/hovers/footer_images/hatena_hover.png') no-repeat 0 0;
-}
-
-#footer_house{
-                display: block;
-                width: 50px;
-                height: 50px;
-        background: url('../img/facebook.png') no-repeat 0 0;
-
-
-}
-
-#footer_facebook:hover {
-        background: url('../img/hovers/footer_images/facebook_hover.png') no-repeat 0 0;
-}
-
-#footer_house{
-                display: block;
-                width: 50px;
-                height: 50px;
-        background: url('../img/infomation.png') no-repeat 0 0;
-
-
-}
-
-#footer_infomation:hover {
-        background: url('../img/hovers/footer_images/infomation_hover.png') no-repeat 0 0;
-}
-
 #footer_document{
                 display: block;
-                width: 50px;
-                height: 50px;
+                width: 25px;
+                height: 30px;
         background: url('../img/document.png') no-repeat 0 0;
 
 
 }
 
 #footer_document:hover {
-        background: url('../img/document.png') no-repeat 0 0;
+        background: url('../img/hovers/footer_images/document_hover.png') no-repeat 0 0;
 }
 
-
-#footer_house{
-                display: block;
-                width: 25px;
-                height: 30px;
-        background: url('../img/house.png') no-repeat 0 0;
-}
-
-#footer_house:hover {
-        background: url('../img/hovers/footer_images/house_hover.png') no-repeat 0 0;
-}
 
 #footer_member{
                 display: block;
-                width: 50px;
+                width: 29px;
                 height: 30px;
         background: url('../img/member.png') no-repeat 0 0;
 }
@@ -366,64 +278,47 @@ footer {
         background: url('../img/hovers/footer_images/carry_hover.png') no-repeat 0 0;
 }
 
-#footer_hatena{
-                display: block;
-                width: 50px;
-                height: 30px;
-        background: url('../img/hatena.png') no-repeat 0 0;
-}
-
-#footer_hatena:hover {
-        background: url('../img/hovers/footer_images/hatena_hover.png') no-repeat 0 0;
-}
-
 #footer_facebook{
                 display: block;
                 width: 50px;
                 height: 30px;
         background: url('../img/facebook.png') no-repeat 0 0;
 }
-
 #footer_facebook:hover {
         background: url('../img/hovers/footer_images/facebook_hover.png') no-repeat 0 0;
 }
 
 #footer_infomation{
                 display: block;
-                width: 50px;
+                width: 28px;
                 height: 30px;
         background: url('../img/infomation.png') no-repeat 0 0;
 }
-
 #footer_infomation:hover {
         background: url('../img/hovers/footer_images/infomation_hover.png') no-repeat 0 0;
 }
 
 #footer_twitter{
                 display: block;
-                width: 50px;
+                width: 32px;
                 height: 30px;
         background: url('../img/twitter.png') no-repeat 0 0;
 }
-
 #footer_twitter:hover {
         background: url('../img/twitter.png') no-repeat 0 0;
 }
-
 
 #footer_table {
 	display: block;
 	margin: 30px auto 100px auto;
 	width: 1000px;
 }
-
 #copyrights {
 	display: block;
 	margin: 0 auto;
 	width: 480px;
 	padding: 10px;
 }
-
 
 #member_midashi {
 	display: block;
