@@ -526,16 +526,6 @@ Tom Atlee らは、Howard Bloom が「グループIQ」と呼んだものから�
 						</div>
 						</a>
 					</div>
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
 					<div class="profile">
 						<img class="small_image" src="./img/menber_sum/momo.jpg">
 						<a  class="profile_name" title="AERI IKEDA 
