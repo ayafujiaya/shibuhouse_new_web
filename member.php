@@ -622,6 +622,14 @@ See below for details.</br>
               ピアニスト、キーボーディストとして、バンド、シンガーのライブサポートやレ
               コーディングに参加。歌詞先での楽曲提供を得意とし、
               ミュージカルの音楽を担当したりも。ボイストレーナーとしての一面もある。
+              </br>
+              <a target='_blank' href='https://twitter.com/kurodalate'><img src='./img/twitter.png'  border='0'></a>
+              &nbsp;
+              <a target='_blank' href='https://www.facebook.com/late.kuroda'><img src='./img/facebook.png'  border='0'></a>
+              &nbsp;
+              <a  target='_blank' href='http://kurodalate.jimdo.com/'>[&nbsp;web&nbsp;]</a>
+              &nbsp;
+              <a  target='_blank' href='https://soundcloud.com/kuroda-late'>[&nbsp;SoundCloud&nbsp;]</a>
               </div>
             </div>
             " data-lightbox="roadtrip" href='./img/member_full/kuroda.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
