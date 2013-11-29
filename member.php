@@ -151,16 +151,21 @@
         <!--------------------------Profile Start -------------------------->
           <div class="profile">
             <img class="small_image" src="./img/member_sum/id774.jpg">
-            <a  class="profile_name" title="Yasuhiro Nakayama　
+            <a class="profile_name" title="Yasuhiro Nakayama　
             <div class='explain'>
               <h1>Software Engineer</h1>
-              <div class='explain_text'>I'm a software engineer working in Tokyo.</br>
+              <div class='explain_text'>Software engineer, working in Tokyo.</br>
 Interested in: Emacs, Debian, Ruby, Python, Lisp, Virtualization. Security, Cryptography, Machine-Learning, Text-Mining, NLP, Statistics etc.</br>
-Skilled at: Familiarity with Linux. Extensive experience with Ruby. At least several years of professional software development experience. Understanding of software architecture, OO principles and common design patterns.</br>
-Current work: Systems Engineering. R&D for faster web development, large-scale data processing, data analysis.</br>
+Skilled at: Familiarity with Linux. Extensive experience with Ruby. Contributions to the several open source project. Automation for server management and software testing. At least several years of professional software development experience. Understanding of OO principles software architecture and common design patterns.</br>
+Current work: Systems Engineering. R&D for faster web development. Data analysis and large-scale data processing.</br>
 I'm always using huge screens, HHKB, Trackball, Debian and quiet environment. It's very important for me.</br>
 See below for details.</br>
-              <a  target='_blank' href='http://id774.net'>http://id774.net</a>
+              <a target='_blank' href='http://id774.net'>http://id774.net</a></br>
+
+              Email:&nbsp;774@id774.net</br>
+              <a target='_blank' href='https://twitter.com/twitt'><img src='./img/twitter.png'  border='0'></a>
+              &nbsp;
+              <a target='_blank' href=' http://facebook.com/id774'><img src='./img/facebook.png'  border='0'></a>
               </div>
             </div>
             " data-lightbox="roadtrip" href='./img/member_full/id774.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
