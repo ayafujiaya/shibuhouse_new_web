@@ -154,8 +154,7 @@
             <a class="profile_name" title="Yasuhiro Nakayama　
             <div class='explain'>
               <h1>Software Engineer</h1>
-              <div class='explain_text'>Software engineer, working in Tokyo.</br>
-Interested in: Emacs, Debian, Ruby, Python, Lisp, Virtualization. Security, Cryptography, Machine-Learning, Text-Mining, NLP, Statistics etc.</br>
+              <div class='explain_text'>Interested in: Emacs, Debian, Ruby, Python, Lisp, Virtualization. Security, Cryptography, Machine-Learning, Text-Mining, NLP, Statistics etc.</br>
 Skilled at: Familiarity with Linux. Extensive experience with Ruby. Contributions to the several open source project. Automation for server management and software testing. At least several years of professional software development experience. Understanding of OO principles software architecture and common design patterns.</br>
 Current work: Systems Engineering. R&D for faster web development. Data analysis and large-scale data processing.</br>
 I'm always using huge screens, HHKB, Trackball, Debian and quiet environment. It's very important for me.</br>
