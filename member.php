@@ -175,18 +175,29 @@ See below for details.</br>
           </div>
           <!--------------------------Profile Start -------------------------->
           <div class="profile">
-            <img class="small_image" src="./img/member_sum/ayafuji.gif">
-            <a class="profile_name" title="ayafuji
+            <img class="small_image" src="./img/member_sum/ayafuji.jpg">
+            <a class="profile_name" title="ayafuji / Yuki Takada
             <div class='explain'>
-              <h1>Interactive Media Engineer</h1>
-              <div class='explain_text'>相互作用性を考えている人。</br>
+              <h1>Interactive Media Engineer / Burner(Burningman 2012)</h1>
+              <div class='explain_text'>
+		様々なメディアを駆使し相互作用性 / インタラクティビティを考える人。<br>
+		<hr>
+		VJアプリケーション</br>
+		<a href='https://www.youtube.com/watch?v=4tcx01-wffs'>ofxHuez</a>
+		<br>
+		<br>
+		House API Project<br>
+                <a href='http://house-api-project.org'>Hoouse API Project</a>
+		
+              </br>
               </br>
               <a  target='_blank' href='https://twitter.com/_ayafuji_'><img src='./img/twitter.png'  border='0'></a>
+	      <a target='_blank' href='https://www.facebook.com/yuki.takada2'><img src='./img/facebook.png'></a>
               </div>
             </div>
-            " data-lightbox="roadtrip" href='./img/member_full/ayafuji.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+            " data-lightbox="roadtrip" href='./img/member_sum/ayafuji.gif' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
             <div>
-              <p class="full_name">ayafuji</p>
+              <p class="full_name">ayafuji / Yuki Takada</p>
             </div>
             </a>
           </div>
