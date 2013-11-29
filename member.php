@@ -12,7 +12,7 @@
     <link href="css/lightbox.css" rel="stylesheet" />
     <script type="text/javascript" src="js/modernizr.js"></script>
     <script type="text/javascript">
-    if (navigator.userAgent.indexOf('iPhone') != -1) {
+    if (navigator.userAgent.indexOf('iPhone') > 0 || navigator.userAgent.indexOf('iPad') > 0 || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0 || navigator.userAgent.indexOf('Mobile') > 0) {
       document.write("<link href='./css/iphone.css' rel='stylesheet' type='text/css'>");
     } else {
       document.write("<link href='./css/global.css' rel='stylesheet' type='text/css'>");
