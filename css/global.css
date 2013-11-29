@@ -358,6 +358,10 @@ line-height: 26px;
 	padding-top: 125px;
 }
 
+#footer_font {
+	color:#5D5D5D;
+}
+
 .small_image {
 	width: 165px;
 	height:247px;
@@ -425,6 +429,7 @@ line-height: 20px;
 .lb-number {
 	display: none !important;
 }
+
 
 
 /*----------------------------------------------biography*/
