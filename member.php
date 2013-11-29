@@ -180,16 +180,18 @@ See below for details.</br>
             <div class='explain'>
               <h1>Interactive Media Engineer / Burner(Burningman 2012)</h1>
               <div class='explain_text'>
-		様々なメディアを駆使しシステムと人との相互作用性 / インタラクティビティを考える人。<br>
-		
-		<hr>
-		VJアプリケーション</br>
-		<a href='https://www.youtube.com/watch?v=4tcx01-wffs'>ofxHuez</a>
-		<br>
-		<br>
-		House API Project<br>
+		人とシステムとの間の関係性に着目し、その中での「相互作用性」をテーマに、web, ハードウェア, VJアプリケーション等、多岐にわたるメディアでのクリエイティブなシステムを\\
+作り続けている。フリーランスのエンジニアとして活動する傍ら、表現者として作品作りも行う。代表作に、ステージと観客との関係性に着目した「ofxHuez」, 建築とそこに住まう人々との関係性に\\
+着目した「House API Project」がある。
+                <hr>
+                VJアプリケーション</br>
+                <a href='https://www.youtube.com/watch?v=4tcx01-wffs'>ofxHuez</a>
+                <img style='width:370px;' src='./img/member_sum/ofxhuez.png'>
+                <br>
+                <br>
+                House API Project<br>
                 <a href='http://house-api-project.org'>Hoouse API Project</a>
-		
+
               </br>
               </br>
               <a  target='_blank' href='https://twitter.com/_ayafuji_'><img src='./img/twitter.png'  border='0'></a>
