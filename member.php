@@ -180,7 +180,8 @@ See below for details.</br>
             <div class='explain'>
               <h1>Interactive Media Engineer / Burner(Burningman 2012)</h1>
               <div class='explain_text'>
-		様々なメディアを駆使し相互作用性 / インタラクティビティを考える人。<br>
+		様々なメディアを駆使しシステムと人との相互作用性 / インタラクティビティを考える人。<br>
+		
 		<hr>
 		VJアプリケーション</br>
 		<a href='https://www.youtube.com/watch?v=4tcx01-wffs'>ofxHuez</a>
