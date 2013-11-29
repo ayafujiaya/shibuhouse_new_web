@@ -2,6 +2,10 @@
  * scroll-top
  ********************************************************************/
 
+
+.undisplay {
+	display: none;
+}
 #scroll-top {
     z-index: 10;
     position: fixed;
@@ -36,14 +40,14 @@ a {
 }
 #header {
 	display: block;
-	height: 57px;
+	height: 300px;
 	background-color:rgb(73, 73, 73);
 	z-index:1;
 	width: 100%;
-	padding: 13px 0 30px 0;
-	position: fixed;
+	padding: 200px 0px 30px 0;
 	opacity: 0.8;
 	min-width: 1240px;
+	color: rgb(73, 73, 73);
 }
 
 #slide {
@@ -51,7 +55,6 @@ a {
 	margin: 0 auto;
 	position: relative;
 	min-width: 1240px;
-	padding-top: 100px;
 }
 #text_information {
 	text-align: center;
@@ -62,15 +65,25 @@ a {
 }
 
 #header img  {
+	width: 150px;
 	opacity: 1.0;
 }
 
 #logo {
+	position: relative;
 	float: left;
 	display: inline;
-	position: fixed;
 	margin: 30px;
 	z-index: 2;
+	left: 0px;
+	top:0px;
+}
+
+#logo img {
+
+	width: 1140px;
+	margin: 0 auto;
+
 }
 #nav {
 	clear: both;
@@ -78,6 +91,7 @@ a {
 	font-size: 12px;
 	color: #FFFFFF;
 	margin: 0px;
+	color: rgb(73, 73, 73);
 }
 #nav_table {
 	/*margin:13px auto 0 auto;*/
@@ -85,7 +99,7 @@ a {
 }
 
 #contact {
-	display: inline;
+	display: none;
 	position: fixed;
 	top: 20px;
 	right: 22px;
@@ -648,9 +662,11 @@ max-height: 400px;
 
 #nav_about{
 		display: block;
-		width: 50px;
-		height: 50px;
+		width: 250px;
+		height: 250px;
 	background: url('../img/hovers/default_home.png') no-repeat 0 0;
+	-moz-background-size:contain;
+background-size:contain;
 
 }
 #nav_about:hover {
@@ -659,9 +675,11 @@ max-height: 400px;
 
 #nav_bio{
 		display: block;
-		width: 50px;
-		height: 50px;
+		width: 250px;
+		height: 250px;
 	background: url('../img/hovers/default_document.png') no-repeat 0 0;
+	-moz-background-size:contain;
+background-size:contain;
 
 }
 #nav_bio:hover {
@@ -670,9 +688,12 @@ max-height: 400px;
 
 #nav_member{
 		display: block;
-		width: 50px;
-		height: 50px;
+		width: 250px;
+		height: 250px;
 	background: url('../img/hovers/default_smile.png') no-repeat 0 0;
+	-moz-background-size:contain;
+background-size:contain;
+
 
 }
 #nav_member:hover {
@@ -755,4 +776,14 @@ max-height: 400px;
 	 left:150px !important;
 }
 
+#td_about {
+	margin-left: 100px !important;
+}
 
+#td_bio {
+	margin: 0px 100px !important;
+}
+
+#td_member {
+
+}
