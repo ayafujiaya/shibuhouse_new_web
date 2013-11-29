@@ -285,7 +285,7 @@ See below for details.</br>
               </br>
               <a  target='_blank' href='https://twitter.com/tak_fu_k_u'><img src='./img/twitter.png'  border='0'></a>
               &nbsp;
-              <a  target='_blank' href='http://d.hatena.ne.jp/the_tramp/'>[&nbsp;HP&nbsp;]</a>
+              <a  target='_blank' href='http://d.hatena.ne.jp/the_tramp/'>[&nbsp;web&nbsp;]</a>
               </div>
             </div>
             " data-lightbox="roadtrip" href='./img/member_full/numa.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
