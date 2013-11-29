@@ -162,9 +162,12 @@ See below for details.</br>
               Web: <a target='_blank' href='http://id774.net'>http://id774.net</a></br>
 
               Email:&nbsp;774@id774.net</br>
-              <a target='_blank' href='https://twitter.com/twitt'><img src='./img/twitter.png'  border='0'></a>
+              <a target='_blank' href='https://twitter.com/twitt'><img src='./img/twitter.png' border='0'></a>
               &nbsp;
-              <a target='_blank' href=' http://facebook.com/id774'><img src='./img/facebook.png'  border='0'></a>
+              <a target='_blank' href=' http://facebook.com/id774'><img src='./img/facebook.png' border='0'></a>
+              &nbsp;
+              <a target='_blank' href='http://blog.id774.net/post/'>[&nbsp;blog&nbsp;]</a>
+              </br>
               </div>
             </div>
             " data-lightbox="roadtrip" href='./img/member_full/id774.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
