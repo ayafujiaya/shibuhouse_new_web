@@ -160,7 +160,7 @@ Skilled at: Familiarity with Linux. Extensive experience with Ruby. Contribution
 Current work: Systems Engineering. R&D for faster web development. Data analysis and large-scale data processing.</br>
 I'm always using huge screens, HHKB, Trackball, Debian and quiet environment. It's very important for me.</br>
 See below for details.</br>
-              <a target='_blank' href='http://id774.net'>http://id774.net</a></br>
+              Web: <a target='_blank' href='http://id774.net'>http://id774.net</a></br>
 
               Email:&nbsp;774@id774.net</br>
               <a target='_blank' href='https://twitter.com/twitt'><img src='./img/twitter.png'  border='0'></a>
