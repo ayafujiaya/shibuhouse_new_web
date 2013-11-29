@@ -44,7 +44,7 @@
               
               <a target='_blank' href='https://twitter.com/satoketa'><img src='./img/twitter.png'  border='0'></a>
               &nbsp;
-              <a target='_blank' href=' http://facebook.com/satoketa'><img src='./img/facebook.png'  border='0'></a>
+              <a target='_blank' href='http://facebook.com/satoketa'><img src='./img/facebook.png'  border='0'></a>
               &nbsp;
               Email:&nbsp;saito.shibuhouse@gmail.com
               &nbsp;<a href='./img/pdf/saito-profile.pdf'>[pdf]</a>
