@@ -27,7 +27,7 @@
           <ul class="slides">
             <li><a href="./member.php"><img src="./img/topimage/top_05.jpg"></a></li>
             <li><a href="http://golden-maximum-fantastic-extream.tumblr.com/"><img src="./img/topimage/top_02.jpg"></a></li>
-            <li><a href="https://www.facebook.com/events/702796986406881/?ref_dashboard_filter=upcoming"><img src="./img/topimage/saitou2.jpg"></a></li>
+            <li><a href="http://great-saito.jimdo.com/"><img src="./img/topimage/saitou2.jpg"></a></li>
           </ul>
         </div>
       </div><!-- #slide -->
