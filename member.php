@@ -291,13 +291,10 @@ See below for details.</br>
         <!--------------------------Profile Start -------------------------->
           <div class="profile">
             <img class="small_image" src="./img/member_sum/numa.jpg">
-            <a class="profile_name" title="ぬま
+            <a class="profile_name" title="ぬま / 福原拓海
             <div class='explain'>
               <h1>映像屋</h1>
-              <div class='explain_text'>1988年生まれ。高校中退後、ドラマー、ラッパー等
-              の音楽活動を経て、2011年にジョン・ジョストが講師を務めるデジタル・シネマ・ワーク
-              ショップを受講して以来、映像制作を開始す
-              る。以降、街頭ビジョン用のPRビデオの制作や、イベントの撮影、編集を手がける。</br>
+              <div class='explain_text'>1988年生まれ。高校中退後、ドラマー、ラッパー等の音楽活動を経て、2011年にジョン・ジョストが講師を務めるデジタル・シネマ・ワークショップを受講して以来、映像制作を開始する。以降、街頭ビジョン用のPRビデオの制作や、イベントの撮影、編集を手がける。2013年8月に渋家メンバー入り。自身の映像作品も制作する傍、他のメンバーの活動の記録映像なども制作している。。</br>
               </br>
               <a  target='_blank' href='https://twitter.com/tak_fu_k_u'><img src='./img/twitter.png'  border='0'></a>
               &nbsp;
