@@ -15,10 +15,14 @@
         <div id="logo">
           <table>
             <tr>
-              <a href="./index.php"><img src="img/logo.png"></a></br>
+              <td>
+                <a href="./index.php"><img src="img/logo.png"></a></br>
+              </td>
             </tr>
             <tr>
-              <p id="text_logo">シブハウスオフィシャルホームページ</p>
+              <td>
+                <p id="text_logo">シブハウスオフィシャルホームページ</p>
+              </td>
             </tr>
           </table>  
         </div><!-- #logo -->
@@ -27,7 +31,7 @@
               <tr>
                 <td style="padding: 2px 5px 6px 14px; color:#FFFFFF; font-family: monospace;">080-3310-4083</td>
                 <td style="padding: 2px 5px 6px 14px; color:#FFFFFF; font-family: monospace;">
-<a width="80" href="https://twitter.com/share" class="twitter-share-button" data-hashtags="shibuhouse">Tweet</a>
+<a style="width:80px;" href="https://twitter.com/share" class="twitter-share-button" data-hashtags="shibuhouse">Tweet</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 		</td>
                 <td style="padding: 2px 5px 6px 14px; color:#FFFFFF; font-family: monospace;">
