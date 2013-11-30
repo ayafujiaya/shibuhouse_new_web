@@ -34,7 +34,7 @@
           <div class="profile">
             <!-- サムネイルの画像のURL -->
             <img class="small_image" src="./img/member_sum/Keita_saito.jpg" title="Keita_Saito" >
-            <a class="profile_name" title="斎藤桂太 
+            <a class="profile_name" name="斎藤桂太 
             <div class='explain'>
               <h1>渋家代表</h1>
               <div class='explain_text'>1987年 東京都出身。アーティスト。
@@ -61,7 +61,7 @@
           <!--------------------------Profile Start -------------------------->
           <div class="profile">
             <img class="small_image" src="./img/member_sum/Toshikuni_yamaguchi.jpg">
-            <a class="profile_name" title="山口季邦/としくに　
+            <a class="profile_name" name="山口季邦/としくに　
             <div class='explain'>
               <h1>渋家株式会社代表取締役</h1>
               <div class='explain_text'>
@@ -87,7 +87,7 @@
           <!--------------------------Profile Start -------------------------->
           <div class="profile">
             <img class="small_image" src="./img/member_sum/momo.jpg">
-            <a class="profile_name" title="ちゃんもも◎　
+            <a class="profile_name" name="ちゃんもも◎　
             <div class='explain'>
               <h1>活動家</h1>
               <div class='explain_text'>ファッションショー・イベントへのゲスト出演、全国クラブでのDJ活動、
@@ -108,7 +108,7 @@
         <!--------------------------Profile Start -------------------------->
           <div class="profile">
             <img class="small_image" src="./img/member_sum/IMG01799.jpg">
-            <a class="profile_name" title="金藤みなみ
+            <a class="profile_name" name="金藤みなみ
             <div class='explain'>
               <h1>アーティスト</h1>
               <div class='explain_text'>1988年 徳島県出身。女子美術大学卒業後、韓国の弘益大学校で現代美術の基礎を学ぶ。
@@ -134,7 +134,7 @@
         <!--------------------------Profile Start -------------------------->
           <div class="profile">
             <img class="small_image" src="./img/member_sum/yuki_ishida.jpg">
-            <a class="profile_name" title="石田祐規
+            <a class="profile_name" name="石田祐規
             <div class='explain'>
               <h1>写真家</h1>
               <div class='explain_text'>1989年生まれ。2012<a href='http://ikeikehappyhappyphotonewyear.tumblr.com/'>イケイケハッピーハッピー写真ニューイヤー</a>
@@ -151,7 +151,7 @@
         <!--------------------------Profile Start -------------------------->
           <div class="profile">
             <img class="small_image" src="./img/member_sum/id774.jpg">
-            <a class="profile_name" title="Yasuhiro Nakayama　
+            <a class="profile_name" name="Yasuhiro Nakayama　
             <div class='explain'>
               <h1>Software Engineer</h1>
               <div class='explain_text'>Interested in: Emacs, Debian, Ruby, Python, Lisp, Virtualization. Security, Cryptography, Machine-Learning, Text-Mining, NLP, Statistics etc.</br>
@@ -179,7 +179,7 @@ See below for details.</br>
           <!--------------------------Profile Start -------------------------->
           <div class="profile">
             <img class="small_image" src="./img/member_sum/ayafuji.jpg">
-            <a class="profile_name" title="ayafuji / Yuki Takada
+            <a class="profile_name" name="ayafuji / Yuki Takada
             <div class='explain'>
               <h1>Interactive Media Engineer / Burner(Burningman 2012)</h1>
               <div class='explain_text'>
@@ -210,7 +210,7 @@ See below for details.</br>
         <!--------------------------Profile Start -------------------------->
           <div class="profile">
             <img class="small_image" src="./img/member_sum/gesuyama.jpg">
-            <a class="profile_name" title="下衆山毒淋　
+            <a class="profile_name" name="下衆山毒淋　
             <div class='explain'>
               <h1>ソープ嬢 / アートコレクター</h1>
               <div class='explain_text'>ソープ嬢として働く傍ら、国内の女性美術家を中心にアート作品を収集。
@@ -233,7 +233,7 @@ See below for details.</br>
         <!--------------------------Profile Start -------------------------->
           <div class="profile">
             <img class="small_image" src="./img/member_sum/odagiri.jpg">
-            <a class="profile_name" title="小田切裕史　
+            <a class="profile_name" name="小田切裕史　
             <div class='explain'>
               <h1>ニート</h1>
               <div class='explain_text'>1993年 山梨生まれ。趣味はJohn Lennonを聞くこと。</br>
@@ -253,7 +253,7 @@ See below for details.</br>
           <!--------------------------Profile Start -------------------------->
           <div class="profile">
             <img class="small_image" src="./img/member_sum/dai.jpg">
-            <a class="profile_name" title="dainmt　
+            <a class="profile_name" name="dainmt　
             <div class='explain'>
               <h1>占い師</h1>
               <div class='explain_text'>1981年 神奈川県出身。日本最古の占い館 原宿占い館 塔里木（タリム)®専属鑑定師。
@@ -275,7 +275,7 @@ See below for details.</br>
         <!--------------------------Profile Start -------------------------->
           <div class="profile">
             <img class="small_image" src="./img/member_sum/haga.jpg">
-            <a class="profile_name" title="芳賀仁志
+            <a class="profile_name" name="芳賀仁志
             <div class='explain'>
               <h1>会社員</h1>
               <div class='explain_text'>1985年 神奈川県横須賀市出身。慶應義塾大学卒。2009年よりエイベックスに勤務
@@ -295,7 +295,7 @@ See below for details.</br>
         <!--------------------------Profile Start -------------------------->
           <div class="profile">
             <img class="small_image" src="./img/member_sum/numa.jpg">
-            <a class="profile_name" title="ぬま / 福原拓海
+            <a class="profile_name" name="ぬま / 福原拓海
             <div class='explain'>
               <h1>映像屋</h1>
               <div class='explain_text'>1988年生まれ。高校中退後、ドラマー、ラッパー等の音楽活動を経て、2011年にジョン・ジョストが講師を務めるデジタル・シネマ・ワークショップを受講して以来、映像制作を開始する。以降、街頭ビジョン用のPRビデオの制作や、イベントの撮影、編集を手がける。2013年8月に渋家メンバー入り。自身の映像作品も制作する傍、他のメンバーの活動の記録映像なども制作している。。</br>
@@ -314,7 +314,7 @@ See below for details.</br>
         <!--------------------------Profile Start -------------------------->
           <div class="profile">
             <img class="small_image" src="./img/member_sum/yavao.jpg">
-            <a class="profile_name" title="YAVAO / 小池将樹
+            <a class="profile_name" name="YAVAO / 小池将樹
             <div class='explain'>
               <h1>media artist</h1>
               <div class='explain_text'>1988年生まれ。武蔵野美術大学芸術文化学科卒業
@@ -335,7 +335,7 @@ See below for details.</br>
         <!--------------------------Profile Start -------------------------->
           <div class="profile">
             <img class="small_image" src="./img/member_sum/Mr.jpg">
-            <a class="profile_name" title="ストレンジラヴ
+            <a class="profile_name" name="ストレンジラヴ
             <div class='explain'>
               <h1>ダダイスト</h1>
               <div class='explain_text'>1993/08/30 詩を書かない詩人。</br>
@@ -358,7 +358,7 @@ See below for details.</br>
         <!--------------------------Profile Start -------------------------->
           <div class="profile">
             <img class="small_image" src="./img/member_sum/atsushi_nishida.jpg">
-            <a class="profile_name" title="西田篤史　
+            <a class="profile_name" name="西田篤史　
             <div class='explain'>
               <h1>編集者</h1>
               <div class='explain_text'>1986年 富山県出身。エディトリアルプロダクション451℃
@@ -382,7 +382,7 @@ See below for details.</br>
         <!--------------------------Profile Start -------------------------->
           <div class="profile">
             <img class="small_image" src="./img/member_sum/dokukinoko.jpg">
-            <a class="profile_name" title="毒k!n⊗k¤p!nk™
+            <a class="profile_name" name="毒k!n⊗k¤p!nk™
             <div class='explain'>
               <h1>FashionCreator / DJ / SJ</h1>
               <div class='explain_text'>拡張される身体。</br>
@@ -404,7 +404,7 @@ See below for details.</br>
         <!--------------------------Profile Start -------------------------->
           <div class="profile">
             <img class="small_image" src="./img/member_sum/zaqi.jpg">
-            <a class="profile_name" title="磯崎愛生 / zaqi
+            <a class="profile_name" name="磯崎愛生 / zaqi
             <div class='explain'>
               <h1>ビデオ・アーティスト / VJ</h1>
               <div class='explain_text'>1988年生まれ。日藝映画学科映像コース卒業。2013年より渋家に参加。一般的に多く普及されている【映像を用いて物語にアプローチする作品】【消費を志向した映像】【エンターテイメントとしての映像】ではなく、【映像自体にアプローチをしていく作品
@@ -425,7 +425,7 @@ See below for details.</br>
         <!--------------------------Profile Start -------------------------->
           <div class="profile">
             <img class="small_image" src="./img/member_sum/ami_inaba02.jpg">
-            <a class="profile_name" title="いなばあみ
+            <a class="profile_name" name="いなばあみ
             <div class='explain'>
               <h1>photographer</h1>
               <div class='explain_text'>日常生活を軸にスナップを撮っています。</br>
@@ -444,7 +444,7 @@ See below for details.</br>
           <!--------------------------Profile Start -------------------------->
           <div class="profile">
             <img class="small_image" src="./img/member_sum/kajiya.jpg">
-            <a class="profile_name" title="加治屋文晶
+            <a class="profile_name" name="加治屋文晶
             <div class='explain'>
               <h1>飲食店経営</h1>
               <div class='explain_text'>渋家４代目代表。マーチングで全米3位の過去がある。バイクと車が好き。</br>
@@ -460,7 +460,7 @@ See below for details.</br>
         <!--------------------------Profile Start -------------------------->
           <div class="profile">
             <img class="small_image" src="./img/member_sum/gosupi.jpg">
-            <a class="profile_name" title="ゴッドスコーピオン
+            <a class="profile_name" name="ゴッドスコーピオン
             <div class='explain'>
               <h1>ゴッドスコーピオン</h1>
               <div class='explain_text'>2012年6月より高野政所、Tomad、芳川よしのらに師事を受けDJ活動を開始。催眠術やクンダリーニ・ヨーガを駆使し料理、キックボクシング等を嗜む。タイ最大の音楽フェスBIG MOUNTAINへの参加や日本の平均的かつ最先端なクラブアシッドパンダカフェやカルチャーハザード渋家の地下で行われるクラブイベント
@@ -478,7 +478,7 @@ See below for details.</br>
       
           <div class="profile">
             <img class="small_image" src="./img/member_sum/yu_oota.jpg">
-            <a class="profile_name" title="太田悠
+            <a class="profile_name" name="太田悠
             <div class='explain'>
               <h1>アーティスト</h1>
               <div class='explain_text'>美学校にて絵画とドローイングを学ぶ。2011年渋
@@ -498,7 +498,7 @@ See below for details.</br>
           <!--------------------------Profile Start -------------------------->
           <div class="profile">
             <img class="small_image" src="./img/member_sum/taiki.jpg">
-            <a class="profile_name" title="増沢大輝
+            <a class="profile_name" name="増沢大輝
             <div class='explain'>
               <h1>ダンサー・振付家</h1>
               <div class='explain_text'>
@@ -522,7 +522,7 @@ See below for details.</br>
           <!--------------------------Profile Start -------------------------->
           <div class="profile">
             <img class="small_image" src="./img/member_sum/Kenta_kobayashi.jpg">
-            <a class="profile_name" title="小林健太
+            <a class="profile_name" name="小林健太
             <div class='explain'>
               <h1>写真家 / アーティスト</h1>
               <div class='explain_text'>1992年生まれ。 デジタル一眼、フィルムカメラから
@@ -542,7 +542,7 @@ See below for details.</br>
           <!--------------------------Profile Start -------------------------->
           <div class="profile">
             <img class="small_image" src="./img/member_sum/hiryu.jpg">
-            <a class="profile_name" title="岡村飛龍
+            <a class="profile_name" name="岡村飛龍
             <div class='explain'>
               <h1>アーティスト / 料理人</h1>
               <div class='explain_text'>1988年7月26日千葉県産まれ。2012年、多摩美術大学卒業。同年、渋家、参加。幼少期より、料理に触れ、大学在学中に北大路魯山人の著書に感
@@ -563,7 +563,7 @@ See below for details.</br>
             <!--------------------------Profile Start -------------------------->
           <div class="profile">
             <img class="small_image" src="./img/member_sum/Sanae_sugai.jpg">
-            <a class="profile_name" title="菅井早苗
+            <a class="profile_name" name="菅井早苗
             <div class='explain'>
               <h1>5代目渋家代表 / デザイナー</h1>
               <div class='explain_text'>終電で帰るつもりだったけど3年が経ちました。よろしくどうぞ
@@ -580,7 +580,7 @@ See below for details.</br>
           <!--------------------------Profile Start -------------------------->
           <div class="profile">
             <img class="small_image" src="./img/member_sum/hayasaka_masumi.jpg">
-            <a class="profile_name" title="早坂真純
+            <a class="profile_name" name="早坂真純
             <div class='explain'>
               <h1>学生 / ライフヒーラー</h1>
               <div class='explain_text'>2010年渋家加入。造形大学5年目(現在３年生)。渋家のバスタオルと生
@@ -597,7 +597,7 @@ See below for details.</br>
           <!--------------------------Profile Start -------------------------->
           <div class="profile">
             <img class="small_image" src="./img/member_sum/kikawasei.jpg">
-            <a class="profile_name" title="木皮成
+            <a class="profile_name" name="木皮成
             <div class='explain'>
               <h1>振付家 / ダンストゥルグ</h1>
               <div class='explain_text'>1990年、和歌山県出身。多摩美術大学映像演劇学科卒。
@@ -617,7 +617,7 @@ See below for details.</br>
           <!--------------------------Profile Start -------------------------->
           <div class="profile">
             <img class="small_image" src="./img/member_sum/kuroda.jpg">
-            <a class="profile_name" title="黒田玲兎
+            <a class="profile_name" name="黒田玲兎
             <div class='explain'>
               <h1>音楽家</h1>
               <div class='explain_text'>くろだれいと。kurodalate. シンガーソングライタ
@@ -644,7 +644,7 @@ See below for details.</br>
           
           <div class="profile">
             <img class="small_image" src="./img/member_sum/akiyama.jpg">
-            <a class="profile_name" title="秋山亮
+            <a class="profile_name" name="秋山亮
             <div class='explain'>
               <h1>Artist</h1>
               <div class='explain_text'>
@@ -664,7 +664,7 @@ See below for details.</br>
           
           <div class="profile">
             <img class="small_image" src="./img/member_sum/IMG_7476.jpg">
-            <a class="profile_name" title="角空穂
+            <a class="profile_name" name="角空穂
             <div class='explain'>
               <h1>utubo</h1>
               <div class='explain_text'>Born:1989男#Art#Martial Arts#武術#Karate#Ninja#Dancing#Painting#現代美術#平行四辺形#Metamorphose#建築#Spirituality#</br>人間の能力の極地</br>
@@ -681,7 +681,7 @@ See below for details.</br>
           
           <div class="profile">
             <img class="small_image" src="./img/member_sum/maharu.jpg">
-            <a class="profile_name" title="カルロスまーちゃん
+            <a class="profile_name" name="カルロスまーちゃん
             <div class='explain'>
               <h1>アーティスト / テルミン奏者（練習中）</h1>
               <div class='explain_text'>一人称は、まはる。</br>

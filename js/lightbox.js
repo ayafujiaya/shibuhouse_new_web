@@ -123,7 +123,7 @@ Licensed under the Creative Commons Attribution 2.5 License - http://creativecom
           a = _ref[i];
           this.album.push({
             link: $(a).attr('href'),
-            title: $(a).attr('title')
+            title: $(a).attr('name')
           });
           if ($(a).attr('href') === $link.attr('href')) {
             imageNumber = i;
@@ -133,7 +133,7 @@ Licensed under the Creative Commons Attribution 2.5 License - http://creativecom
         if ($link.attr('rel') === 'lightbox') {
           this.album.push({
             link: $link.attr('href'),
-            title: $link.attr('title')
+            title: $link.attr('name')
           });
         } else {
           _ref1 = $($link.prop("tagName") + '[rel="' + $link.attr('rel') + '"]');
@@ -141,7 +141,7 @@ Licensed under the Creative Commons Attribution 2.5 License - http://creativecom
             a = _ref1[i];
             this.album.push({
               link: $(a).attr('href'),
-              title: $(a).attr('title')
+              title: $(a).attr('name')
             });
             if ($(a).attr('href') === $link.attr('href')) {
               imageNumber = i;
