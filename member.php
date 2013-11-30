@@ -184,8 +184,7 @@ See below for details.</br>
               <h1>Interactive Media Engineer / Burner(Burningman 2012)</h1>
               <div class='explain_text'>
 		人とシステムとの間の関係性に着目し、その中での「相互作用性」をテーマに、web, ハードウェア, VJアプリケーション等、多岐にわたるメディアでのクリエイティブなシステムを
-作り続けている。フリーランスのエンジニアとして活動する傍ら、表現者として作品作りも行う。代表作に、ステージと観客との関係性に着目した「ofxHuez」, 建築とそこに住まう人々との関係性に
-着目した「House API Project」がある。
+作り続けている。フリーランスのエンジニアとして仕事をする傍ら、表現者として作品作りも行う。代表作に、ステージと観客との関係性に着目した「ofxHuez」, 建築とそこに住まう人々との関係性に着目した「House API Project」がある。メディアアーティストユニット「huez」の一人。
                 <hr>
                 VJアプリケーション</br>
                 <a href='https://www.youtube.com/watch?v=4tcx01-wffs'>ofxHuez</a>
