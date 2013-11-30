@@ -192,7 +192,7 @@ See below for details.</br>
                 House API Project Web Site<br>
                 <a href='http://house-api-project.org'>Hoouse API Project</a>
 		<br>
-		Youtube Channel
+		Youtube Channel<br>
 		<a href='https://www.youtube.com/user/ayafuZip'>ayafuji</a>
               </br>
               </br>
