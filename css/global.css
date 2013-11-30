@@ -649,4 +649,8 @@ max-height: 400px;
 
 }
 
+#hot_topics_text > ul > li:hover {
+   background-color:rgb(69, 93, 173);
+}
+
 
