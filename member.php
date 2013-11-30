@@ -189,11 +189,13 @@ See below for details.</br>
                 VJアプリケーション</br>
                 <a href='https://www.youtube.com/watch?v=4tcx01-wffs'>ofxHuez</a>
                 <br>
+		<br>
                 House API Project Web Site<br>
                 <a href='http://house-api-project.org'>Hoouse API Project</a>
 		<br>
-		Youtube Channel<br>
-		<a href='https://www.youtube.com/user/ayafuZip'>ayafuji</a>
+		<br>
+		Youtube Videos<br>
+		<a href='https://www.youtube.com/user/ayafuZip/videos'>ayafujis videos</a>
               </br>
               </br>
               <a  target='_blank' href='https://twitter.com/_ayafuji_'><img src='./img/twitter.png' border='0'></a>
