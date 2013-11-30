@@ -100,6 +100,6 @@
   			$('#ex_title').html(text);
 		});
     </script>
-
+    <script type="text/javasciprt" src="./js/parseuri.js"></script>
   </body>
 </html>
