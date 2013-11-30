@@ -29,7 +29,7 @@
           <table>
             <tr>
               <td>
-                <a href="./index.php"><img src="img/logo.png"></a></br>
+                <a href="http://shibuhouse.com"><img src="img/logo.png"></a></br>
               </td>
             </tr>
             <tr>
@@ -47,7 +47,7 @@
 <a style="width:80px;" href="https://twitter.com/share" class="twitter-share-button" data-hashtags="shibuhouse">Tweet</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 		</td>
-                <td style="padding: 2px 5px 6px 14px; color:#FFFFFF; font-family: monospace;">
+                <td style="padding: 2px 5px 6px 0px; color:#FFFFFF; font-family: monospace;">
 <div class="fb-like" data-href="http://shibuhouse.com" data-width="200" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
 		</td>
               </tr>
