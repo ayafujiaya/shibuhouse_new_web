@@ -40,7 +40,7 @@
         </div><!-- hot_topics_pic -->
         <div id="hot_topics_text">
           <ul>
-            <li class="topics"><sep class="topics_date">2013/12/2</sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[ART]   <a href="http://the-container.com/" target="_blank">12/2（月）- 2/17（月）グループ展「Multi(Multi)(ple(s))」（The Container）参加</a></sep></li>
+            <li class="topics"><sep class="topics_date">2013/12/02</sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[ART]   <a href="http://the-container.com/" target="_blank">12/02（月）- 02/17（月）グループ展「Multi(Multi)(ple(s))」（The Container）参加</a></sep></li>
             <li class="topics"><sep class="topics_date">2013/11/29</sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[ART]   <a href="http://www.mori.art.museum/contents/roppongix2013/" target="_blank">12/22（日）「六本木クロッシング2013展」関連イベント「ディスカーシブ・プラットホームとは？」（森美術館）出演</a></sep></li>
             <li class="topics"><sep class="topics_date">2013/11/29</sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[EVENT] <a href="http://golden-maximum-fantastic-extream.tumblr.com/">12/22（日）「渋家ゴールデンマキシマムファンタスティックエクストリームホームパーティー」（ニュージャパン）主催</a></sep></li>
             <li class="topics"><sep class="topics_date">2013/11/29</sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[ART]   <a href="http://ca-mp.blogspot.jp/" target="_blank">12/21（土）CAMP主催イベント「現在のアート＜2013＞」（森美術館）出演</a></sep></li>
