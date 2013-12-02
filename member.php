@@ -220,7 +220,7 @@ See below for details.</br>
               、風俗嬢という立場から性や男女の問題に関するイベントに出演。
               避妊を訴え、コンドームを配布する「セックス漫談」を渋家ホームパーティーで不定期開催。</br>
               </br>
-              <a  target='_blank' href='https://twitter.com/menherahhshitt '><img src='./img/twitter.png' border='0'></a>
+              <!-- <a  target='_blank' href='https://twitter.com/menherahhshitt '><img src='./img/twitter.png' border='0'></a> -->
               &nbsp;
               <a  target='_blank' href='http://s.ameblo.jp/menherahhshit'>[&nbsp;ameblo&nbsp;]</a>
 
