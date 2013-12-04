@@ -41,7 +41,7 @@
         </div><!-- hot_topics_pic -->
         <div id="hot_topics_text">
           <ul>
-            <li class="topics"><sep class="topics_date">2013/12/04</sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[MEMBER]<a href="https://www.facebook.com/events/560368644051891/" target="_blank">12/10（火）「Bar齋藤篤史」（歌舞伎町はな）店長</a></sep></li>
+            <li class="topics"><sep class="topics_date">2013/12/04</sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[MEMBER] <a href="https://www.facebook.com/events/560368644051891/" target="_blank">12/10（火）「Bar齋藤篤史」（歌舞伎町はな）店長</a></sep></li>
             <li class="topics"><sep class="topics_date">2013/12/02</sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[ART]   <a href="http://the-container.com/" target="_blank">12/02（月）- 02/17（月）グループ展「Multi(Multi)(ple(s))」（The Container）参加</a></sep></li>
             <li class="topics"><sep class="topics_date">2013/11/29</sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[ART]   <a href="http://www.mori.art.museum/contents/roppongix2013/" target="_blank">12/22（日）「六本木クロッシング2013展」関連イベント「ディスカーシブ・プラットホームとは？」（森美術館）出演</a></sep></li>
             <li class="topics"><sep class="topics_date">2013/11/29</sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[EVENT] <a href="http://golden-maximum-fantastic-extream.tumblr.com/" target="_blank">12/22（日）「渋家ゴールデンマキシマムファンタスティックエクストリームホームパーティー」（ニュージャパン）主催</a></sep></li>
