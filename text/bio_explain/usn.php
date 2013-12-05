@@ -1,8 +1,14 @@
+
+<?php 
+var full_image = './img/exhibition_full/usn/usn_002.jpg';
+var sum_image = './img/exhibition_sum/usn/usn_001.jpg';
+var comment = 'ultra super new!!';
+?>
 <div id="ex_image">
   <!-- hrefの部分にポップアップ後の画像のパスを書く-->
-  <a name="ultra super new!" rel="lightbox[imagegroup]" data-lightbox="roadtrip" href="./img/exhibition_full/usn/usn_002.jpg">
+  <a name="<?php echo comment ?>" rel="lightbox[imagegroup]" data-lightbox="roadtrip" href="<?php echo full_image ?>">
     <!-- テキストでも画像でもよいけど、<a>タグでポップアップのために押させたいボタンを囲んであげる。 -->
-    <img class="inner_ex_image" src="./img/exhibition_sum/usn/usn_001.jpg">
+    <img class="inner_ex_image" src="<?php echo sum_image ?>">
   </a><!-- aタグ締め -->
 </div>
 
