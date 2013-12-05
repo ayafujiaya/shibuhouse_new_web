@@ -1,5 +1,4 @@
 
-
 <!-- ここから -->
 <?php 
 #ポップアップ後の画像の位置
@@ -9,12 +8,11 @@ $sum_image = './img/exhibition_sum/usn/usn_001.jpg';
 #ポップアップ後のコメントの内容(空でも良い)
 $comment = 'ultra super new!!';
 ?>
+
 <div id="ex_image">
-  <!-- hrefの部分にポップアップ後の画像のパスを書く-->
   <a name="<?php echo $comment ?>" rel="lightbox[imagegroup]" data-lightbox="roadtrip" href="<?php echo $full_image ?>">
-    <!-- テキストでも画像でもよいけど、<a>タグでポップアップのために押させたいボタンを囲んであげる。 -->
     <img class="inner_ex_image" src="<?php echo $sum_image ?>">
-  </a><!-- aタグ締め -->
+  </a>
 </div>
 <!-- ここまでをテンプレートとして使う -->
 
