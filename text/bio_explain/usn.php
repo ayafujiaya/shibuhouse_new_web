@@ -1,6 +1,11 @@
 <div id="ex_image">
-	<img class="inner_ex_image" src="./img/exhibition_sum/usn/usn_001.jpg">
+  <!-- hrefの部分にポップアップ後の画像のパスを書く-->
+  <a name="" rel="lightbox[imagegroup]" data-lightbox="roadtrip" href="./img/exhibition_full/usu/usu_002.jpg">
+    <!-- テキストでも画像でもよいけど、<a>タグでポップアップのために押させたいボタンを囲んであげる。 -->
+    <img class="inner_ex_image" src="./img/exhibition_sum/usn/usn_001.jpg">
+  </a><!-- aタグ締め -->
 </div>
+
 <div id="ex_text">
 「THE NEW BLACK」<br />
 日程：2013.7.11 - 7.26<br />
