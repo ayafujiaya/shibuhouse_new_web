@@ -1,6 +1,6 @@
 <div id="ex_image">
   <!-- hrefの部分にポップアップ後の画像のパスを書く-->
-  <a name="" rel="lightbox[imagegroup]" data-lightbox="roadtrip" href="./img/exhibition_full/usu/usu_002.jpg">
+  <a name="ultra super new!" rel="lightbox[imagegroup]" data-lightbox="roadtrip" href="./img/exhibition_full/usu/usu_002.jpg">
     <!-- テキストでも画像でもよいけど、<a>タグでポップアップのために押させたいボタンを囲んであげる。 -->
     <img class="inner_ex_image" src="./img/exhibition_sum/usn/usn_001.jpg">
   </a><!-- aタグ締め -->
