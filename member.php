@@ -5,12 +5,13 @@
     <!-- typesqure 用タグ -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <link href='./css/popup_member.css' rel='stylesheet' type='text/css'>  
+      
     <link href='./css/reset.css' rel='stylesheet' type='text/css'>  
     <script type="text/javascript" src="//typesquare.com/accessor/script/typesquare.js?E2mGUC7TkZ8%3D" charset="utf-8"></script>
     <!-- スライドショー -->
     <link href='./css/flexslider.css' rel='stylesheet' type='text/css'>
     <link href="css/lightbox.css" rel="stylesheet" />
+    <link href='./css/popup_member.css' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="js/modernizr.js"></script>
     <script type="text/javascript">
     if (navigator.userAgent.indexOf('iPhone') > 0 || navigator.userAgent.indexOf('iPad') > 0 || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0 || navigator.userAgent.indexOf('Mobile') > 0) {
