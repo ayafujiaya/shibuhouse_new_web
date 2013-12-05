@@ -1,0 +1,362 @@
+@charset "utf-8";
+
+/* ==============================================================================
+*
+*	CSS infomation
+*	
+*		1. Reset
+*		2. Base Layout
+*		3. Commom Style
+*		4. Global-Nav
+*		5. Content
+*		6. Fixed Nav
+*
+============================================================================== */
+
+/* ===================================================================
+
+	1.Reset
+
+=================================================================== */
+
+html {
+	overflow-y: scroll;
+}
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:bottom;
+    background:transparent;
+}
+body {
+    line-height:1;
+}
+blockquote, q {
+    quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+a {
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:100%;
+    color: #fff;
+    vertical-align:bottom;
+    background:transparent;
+}
+a:hover{
+	text-decoration: none;
+}
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+    border-bottom:1px dotted #000;
+    cursor:help;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+input, select {
+    vertical-align:middle;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size: 100%;
+	margin-bottom: 10px;
+}
+img,abbr,acronym,fieldset {
+	border: 0;
+}
+li {
+	list-style-type: none;
+}
+img {
+	vertical-align: bottom;
+}
+
+/* ===================================================================
+
+	2. Base Layout
+
+=================================================================== */
+
+body{
+	background: #000000 url(../images/click_03.png) repeat;
+	text-align: center;
+	padding-top: 80px;
+}
+#wrapper{
+	background: url("./../images/bg_bottom.jpg") bottom center no-repeat;
+	padding-bottom: 300px;
+}
+
+/* ===================================================================
+
+	3.Common Style
+
+=================================================================== */
+
+/* Clearfix */
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+
+/* ===================================================================
+
+	4.global-nav
+
+=================================================================== */
+
+nav{
+	width: 358px;
+	margin: 20px auto 180px auto;
+	
+}
+nav ul{
+}
+nav li{
+	float: left;
+}
+nav li span{
+	display: none;
+}
+nav li a{
+	background: url(../images/nav.png) no-repeat;
+	height: 22px;
+	display: block;
+}
+nav #menu_works a{
+	background-position: 0 0;
+	width: 120px;
+}
+nav #menu_about a{
+	background-position: -120px 0;
+	width: 120px;
+}
+nav #menu_contact a{
+	background-position: -240px 0;
+	width: 118px;
+}
+nav #menu_works a:hover{
+	background-position: 0 bottom;
+	width: 120px;
+}
+nav #menu_about a:hover{
+	background-position: -120px bottom;
+	width: 120px;
+}
+nav #menu_contact a:hover{
+	background-position: -240px bottom;
+	width: 118px;
+}
+
+/* ===================================================================
+
+	5.Content
+
+=================================================================== */
+
+#works{
+	padding-top: 100px;
+	width: 880px;
+	margin: 0 auto;
+}
+.loadbox{
+
+}
+.loadbox li{
+	float: left;
+	margin: 40px;
+
+}
+#about{
+	padding-top: 200px;
+}
+#contact{
+	margin-top: 140px;
+}
+section h1{
+	margin-bottom: 20px;
+}
+#contact table{
+	width:700px;
+	margin: 100px auto 0;
+	padding:0;
+}
+#contact table th{
+	text-align: right;
+	vertical-align: top;
+	color: #fff;
+	font-weight: normal;
+	font-size: 0.9em;
+	padding-top: 8px;
+	padding-right: 10px;
+}
+#contact table td{
+	text-align: left;
+	vertical-align: top;
+	padding-bottom: 10px;
+}
+.formde{
+	width:370px !important;
+	height:20px !important;
+	border: none;
+	padding: 2px 5px;
+	opacity: 0.7;
+}
+
+textarea.formte{
+	width:530px !important;
+	height:140px !important;
+	padding: 5px;
+	opacity: 0.7;
+	border: none;
+}
+footer{
+	margin-top: 200px;
+}
+footer p{
+	color: #fff;
+	font-size: 0.8em;
+	padding: 20px 0;
+	
+}
+
+.more{
+	margin-top: 50px;
+	margin-bottom: 300px;
+}
+#page-top{
+ position:fixed;
+ bottom:30px;
+ right:30px;
+}
+/* ===================================================================
+
+	6.Fixed Nav
+
+=================================================================== */
+
+#fixednavi{
+	position: fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:177px;
+	background:url(../images/bg_header.png) center top no-repeat;
+	padding-top: 20px;
+}
+
+
+p a:hover img {
+/*ロールオーバーしたときにIMGタグの画像を消す*/
+/*visibility:hidden;にするとテキストリーダーで読めない*/
+/*text-indent:-9999px;が使えるのはIEだけ*/
+  position:relative;
+/*left:-9999px;にするとNetscape7でずれる*/
+  z-index:-1;
+}
+
+div#sample1{
+display:block;
+width:100%;
+padding:2000px auto;
+}
+
+
+p{
+color:#ffffff;
+width:95%;
+overflow:hidden;
+font-size:3em;
+text-align:center;
+letter-spacing:100%;
+display:block;
+padding-bottom:100px;
+font-family:"ヒラギノ明朝 Pro W6", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", serif;
+}
+
+#party{
+display:block;
+margin-top:2000px;
+width:100%;
+}
+
+#party2{
+color:#ffffff;
+width:100%;
+font-size:5em;
+text-align:center;
+letter-spacing:100%;
+display:block;
+padding-bottom:20px;
+font-family:"ヒラギノ明朝 Pro W6", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", serif;
+
+}
+
+#sample2{
+display:block;
+width:100%;
+float:right;
+
+}
+#sample4{
+display:block;
+width:160%;
+float:right;
+
+}
+#sample5{
+display:block;
+width:160%;
+float:right;
+
+}

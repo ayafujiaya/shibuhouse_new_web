@@ -1,0 +1,17 @@
+.lb-number {
+	display: none !important;
+}
+.lb-caption {
+	font-size: 40px !important;
+}
+.lb-dataContainer {
+top: 0px;
+left: 20%;
+position: absolute;
+width: 90% !important;
+}
+
+.lb-outerContainer {
+	margin: 0px;
+	left: 58%;
+}
