@@ -1,4 +1,3 @@
-<div id="ex_image">
 <!-- ここから -->
 <?php 
 $full_image = './img/exhibition_full/ike/ike_001.jpg';
