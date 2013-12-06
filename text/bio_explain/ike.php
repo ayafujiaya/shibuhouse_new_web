@@ -3,18 +3,21 @@
 $full_image = './img/exhibition_full/ike/ike_001.jpg';
 $sum_image = './img/exhibition_sum/ike/ike_001.jpg';
 $comment = 'Ikeru Kigasuru01';
+?>
 
-
+<?php 
 $full_image = './img/exhibition_full/ike/ike_002.jpg';
 $sum_image = './img/exhibition_sum/ike/ike_002.jpg';
 $comment = 'Ikeru Kigasuru02';
+?>
 
-
+<?php 
 $full_image = './img/exhibition_full/ike/ike_003.jpg';
 $sum_image = './img/exhibition_sum/ike/ike_003.jpg';
 $comment = 'Ikeru Kigasuru03';
+?>
 
-
+<?php 
 $full_image = './img/exhibition_full/ike/ike_004.jpg';
 $sum_image = './img/exhibition_sum/ike/ike_004.jpg';
 $comment = 'Ikeru Kigasuru04';
