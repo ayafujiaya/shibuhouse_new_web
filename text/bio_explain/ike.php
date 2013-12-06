@@ -1,9 +1,30 @@
 <div id="ex_image">
-	<img class="inner_ex_image" src="./img/exhibition_sum/ike/ike_001.jpg">
-	<img class="inner_ex_image" src="./img/exhibition_sum/ike/ike_002.jpg">
-	<img class="inner_ex_image" src="./img/exhibition_sum/ike/ike_003.jpg">
-	<img class="inner_ex_image" src="./img/exhibition_sum/ike/ike_004.jpg">
+<!-- ここから -->
+<?php 
+$full_image = './img/exhibition_full/ike/ike_001.jpg';
+$sum_image = './img/exhibition_sum/ike/ike_001.jpg';
+$comment = 'Ikeru Kigasuru';
+
+$full_image = './img/exhibition_full/ike/ike_002.jpg';
+$sum_image = './img/exhibition_sum/ike/ike_002.jpg';
+$comment = 'Ikeru Kigasuru';
+
+$full_image = './img/exhibition_full/ike/ike_003.jpg';
+$sum_image = './img/exhibition_sum/ike/ike_003.jpg';
+$comment = 'Ikeru Kigasuru';
+
+$full_image = './img/exhibition_full/ike/ike_004.jpg';
+$sum_image = './img/exhibition_sum/ike/ike_004.jpg';
+$comment = 'Ikeru Kigasuru';
+?>
+
+<div id="ex_image">
+  <a name="<?php echo $comment ?>" rel="lightbox[imagegroup]" data-lightbox="roadtrip" href="<?php echo $full_image ?>">
+    <img class="inner_ex_image" src="<?php echo $sum_image ?>">
+  </a>
 </div>
+<!-- ここまでをテンプレートとして使う -->
+
 <div id="ex_text">
 「渋家「イケる気がする展」- 第一回渋家アート選手権大会 -」<br />
 日程：2013.4.19 - 4.24&nbsp;&nbsp; <br />
