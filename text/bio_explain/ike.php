@@ -5,35 +5,17 @@ $sum_image = './img/exhibition_sum/ike/ike_001.jpg';
 $comment = 'Ikeru Kigasuru01';
 ?>
 
-<div id="ex_image">
-  <a name="<?php echo $comment ?>" rel="lightbox[imagegroup]" data-lightbox="roadtrip" href="<?php echo $full_image ?>">
-    <img class="inner_ex_image" src="<?php echo $sum_image ?>">
-  </a>
-</div>
-
 <?php 
 $full_image = './img/exhibition_full/ike/ike_002.jpg';
 $sum_image = './img/exhibition_sum/ike/ike_002.jpg';
 $comment = 'Ikeru Kigasuru02';
 ?>
 
-<div id="ex_image">
-  <a name="<?php echo $comment ?>" rel="lightbox[imagegroup]" data-lightbox="roadtrip" href="<?php echo $full_image ?>">
-    <img class="inner_ex_image" src="<?php echo $sum_image ?>">
-  </a>
-</div>
-
 <?php 
 $full_image = './img/exhibition_full/ike/ike_003.jpg';
 $sum_image = './img/exhibition_sum/ike/ike_003.jpg';
 $comment = 'Ikeru Kigasuru03';
 ?>
-
-<div id="ex_image">
-  <a name="<?php echo $comment ?>" rel="lightbox[imagegroup]" data-lightbox="roadtrip" href="<?php echo $full_image ?>">
-    <img class="inner_ex_image" src="<?php echo $sum_image ?>">
-  </a>
-</div>
 
 <?php 
 $full_image = './img/exhibition_full/ike/ike_004.jpg';
