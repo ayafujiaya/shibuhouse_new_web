@@ -27,7 +27,7 @@
           <ul class="slides">
             <li><a target="_blank" href="./member.php"><img src="./img/topimage/top_05.jpg"></a></li>
             <li><a target="_blank" href="http://golden-maximum-fantastic-extream.tumblr.com/"><img src="./img/topimage/goldenparty.jpg"></a></li>
-            <!--<li><a target="_blank" href="./shibu_e/bourei.html"><img src="./img/topimage/top_bourei.jpg"></a></li>-->
+            <li><a target="_blank" href="./shibu_e/bourei.html"><img src="./img/topimage/top_bourei.jpg"></a></li>
             <li><a target="_blank" href="http://great-saito.jimdo.com/"><img src="./img/topimage/saitou2.jpg"></a></li>
             <li><a target="_blank" href="https://www.facebook.com/events/560368644051891/"><img src="./img/topimage/000.jpg"></a></li>
           </ul>
@@ -42,7 +42,7 @@
         </div><!-- hot_topics_pic -->
         <div id="hot_topics_text">
           <ul>
-           <!-- <li class="topics"><sep class="topics_date">[NEW] 2013/12/05</sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[MEMBER] <a href="./shibu_e/bourei.html" target="_blank">12/22（日）「渋家脱出ゲーム」公演</a></sep></li>-->
+            <li class="topics"><sep class="topics_date">[NEW] 2013/12/05</sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[MEMBER] <a href="./shibu_e/bourei.html" target="_blank">12/22（日）「渋家脱出ゲーム」公演</a></sep></li>
             <li class="topics"><sep class="topics_date">[NEW] 2013/12/05</sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[MEMBER] <a href="http://www.bigmountainmusicfestival.com/" target="_blank">12/07（土）- 12/08（日）DJ God Scorpion「Big Mountain」（Thailand）出演</a></sep></li>
             <li class="topics"><sep class="topics_date">[NEW] 2013/12/05</sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[NEWS]   <a href="http://j-mediaarts.jp/awards/recommends?locale=ja&section_id=2" target="_blank">12/05（木）エキソニモ/渋家/Maltine Records「第17回 文化庁メディア芸術祭」審査委員会推薦作品選出</a></sep></li>
             <li class="topics"><sep class="topics_date">[NEW] 2013/12/04</sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[MEMBER] <a href="https://www.facebook.com/events/560368644051891/" target="_blank">12/10（火）齋藤桂太 西田篤史「Bar齋藤篤史」（歌舞伎町はな）店長</a></sep></li>
