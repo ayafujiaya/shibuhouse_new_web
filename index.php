@@ -25,9 +25,9 @@
             <div id="slide">
         <div class="flexslider">
           <ul class="slides">
-            <li><a target="_blank" href="./member.php"><img src="./img/topimage/top_05.jpg"></a></li>
-            <li><a target="_blank" href="http://golden-maximum-fantastic-extream.tumblr.com/"><img src="./img/topimage/goldenparty.jpg"></a></li>
             <li><a target="_blank" href="./shibu_e/bourei.html"><img src="./img/topimage/top_bourei.png"></a></li>
+            <li><a target="_blank" href="http://golden-maximum-fantastic-extream.tumblr.com/"><img src="./img/topimage/goldenparty.jpg"></a></li>
+            <li><a target="_blank" href="./member.php"><img src="./img/topimage/top_05.jpg"></a></li>
             <li><a target="_blank" href="http://great-saito.jimdo.com/"><img src="./img/topimage/saitou2.jpg"></a></li>
             <li><a target="_blank" href="https://www.facebook.com/events/560368644051891/"><img src="./img/topimage/000.jpg"></a></li>
           </ul>
