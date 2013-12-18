@@ -42,6 +42,7 @@
         </div><!-- hot_topics_pic -->
         <div id="hot_topics_text">
           <ul>
+            <li class="topics"><sep class="topics_date">[NEW] 2013/12/18</sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[NEWS]   <a href="http://jmaf-promote.jp/global/18.html" target="_blank">01/29（水）-02/02（日）エキソニモ/渋家/Maltine Records「トランスメディアーレ2014」（Germany）参加</a></sep></li>
             <li class="topics"><sep class="topics_date">[NEW] 2013/12/18</sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[MEMBER] <a href="http://bisyoku-vansankai.info/" target="_blank">12/29（日）岡村飛龍「美食晩餐会」参加</a></sep></li>
             <li class="topics"><sep class="topics_date">[NEW] 2013/12/12</sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[EVENT] <a href="./shibu_e/bourei.html" target="_blank">12/22（日）「渋家脱出ゲーム」（風林会館）公演</a></sep></li>
             <li class="topics"><sep class="topics_date">　　　 2013/12/05</sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[MEMBER] <a href="http://www.bigmountainmusicfestival.com/" target="_blank">12/07（土）- 12/08（日）DJ God Scorpion「Big Mountain」（Thailand）出演</a></sep></li>
