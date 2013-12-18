@@ -4,8 +4,7 @@
     <title>渋家 || SHIBUHOUSE</title>
     <!-- typesqure 用タグ -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-      
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>      
     <link href='./css/reset.css' rel='stylesheet' type='text/css'>  
     <script type="text/javascript" src="//typesquare.com/accessor/script/typesquare.js?E2mGUC7TkZ8%3D" charset="utf-8"></script>
     <!-- スライドショー -->
