@@ -41,9 +41,9 @@
         </div><!-- hot_topics_pic -->
         <div id="hot_topics_text">
           <ul>
+            <li class="topics"><sep class="topics_date">　　　 </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[ART]   <a href="http://j-mediaarts.jp/awards/recommends?locale=ja&section_id=2" target="_blank">02/05（水）- 02/16（日）エキソニモ/渋家/Maltine Records「第17回 文化庁メディア芸術祭」（国立新美術館）展示</a></sep></li>
+            <li class="topics"><sep class="topics_date">　　　 </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[ART]   <a href="http://jmaf-promote.jp/global/18.html" target="_blank">01/29（水）- 02/02（日）エキソニモ/渋家/Maltine Records「トランスメディアーレ2014」（Germany）展示</a></sep></li>
             <li class="topics"><sep class="topics_date">[NEW] </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[MEMBER] <a href="http://kentacobayashi.com/" target="_blank">01/11（土）- 02/28（金）小林健太 グループ展「THE EXPOSED #7」（G/P＋g3/ gallery）出展</a></sep></li>
-            <li class="topics"><sep class="topics_date">[NEW] </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[ART]   <a href="http://j-mediaarts.jp/awards/recommends?locale=ja&section_id=2" target="_blank">02/05（水）- 02/16（日）エキソニモ/渋家/Maltine Records「第17回 文化庁メディア芸術祭」（国立新美術館）展示</a></sep></li>
-            <li class="topics"><sep class="topics_date">[NEW] </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[ART]   <a href="http://jmaf-promote.jp/global/18.html" target="_blank">01/29（水）- 02/02（日）エキソニモ/渋家/Maltine Records「トランスメディアーレ2014」（Germany）展示</a></sep></li>
             <li class="topics"><sep class="topics_date">[NEW] </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[MEMBER] <a href="http://www.loft-prj.co.jp/schedule/naked/20614" target="_blank">01/08（水）齋藤桂太 西田篤史「シェアハウスとは何だったのか？ 脱法ハウス問題と無縁化する社会」（Naked Loft）出演</a></sep></li>
             <li class="topics"><sep class="topics_date">[NEW] </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[MEMBER] <a href="http://bisyoku-vansankai.info/" target="_blank">12/29（日）岡村飛龍「美食晩餐会」（渋谷ICON）女体盛り提供</a></sep></li>
             <li class="topics"><sep class="topics_date">　　　 </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[EVENT] <a href="./shibu_e/bourei.html" target="_blank">12/22（日）「渋家脱出ゲーム」（風林会館）公演</a></sep></li>
