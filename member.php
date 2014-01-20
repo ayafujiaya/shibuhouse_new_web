@@ -253,28 +253,6 @@ See below for details.</br>
             </div>
             </a>
           </div>
-          <!--------------------------Profile Start -------------------------->
-          <div class="profile">
-            <img class="small_image" src="./img/member_sum/dai.jpg">
-            <a class="profile_name" name="dainmt　
-            <div class='explain'>
-              <h1>占い師</h1>
-              <div class='explain_text'>1981年 神奈川県出身。日本最古の占い館 原宿占い館 塔里木（タリム)®専属鑑定師。
-              神出鬼没に現れ、都内を中心に存在拡散が行われはじめている。主な出演イベントは「†Majyocco Sabbath†」「Sex Pot Night」など。</br>
-              </br>
-              <a  target='_blank' href='https://twitter.com/dainmt'><img src='./img/twitter.png' border='0'></a>
-              &nbsp;
-              <a  target='_blank' href='https://www.facebook.com/dai.nmt'><img src='./img/facebook.png' border='0'></a>
-              &nbsp;
-              <a  target='_blank' href='http://uranai-tarim.jp/'>[&nbsp;web&nbsp;]</a>
-              </div>
-            </div>
-            " data-lightbox="roadtrip" href='./img/member_full/dai.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
-            <div>
-              <p class="full_name">dainmt　</p>
-            </div>
-            </a>
-          </div>
         <!--------------------------Profile Start -------------------------->
           <div class="profile">
             <img class="small_image" src="./img/member_sum/haga.jpg">
@@ -544,22 +522,16 @@ See below for details.</br>
           </div>
           <!--------------------------Profile Start -------------------------->
           <div class="profile">
-            <img class="small_image" src="./img/member_sum/hiryu.jpg">
-            <a class="profile_name" name="岡村飛龍
+            <img class="small_image" src="./img/member_sum/serina.jpg">
+            <a class="profile_name" name="serina
             <div class='explain'>
-              <h1>アーティスト / 料理人</h1>
-              <div class='explain_text'>1988年7月26日千葉県産まれ。2012年、多摩美術大学卒業。同年、渋家、参加。幼少期より、料理に触れ、大学在学中に北大路魯山人の著書に感
-              銘を受け、自らの表現に料理を取り入れる。主な活動に、ART FAIR TOKYO 2013（有楽町、国際フ
-              ォーラム）にてケータリング、CONEXIÓN ORIGEN DESTINO 東京BCN10443（バロセロナ、Olivart Art 
-              Gallery）に出展、MTV HAPPY TIME supported by NI
-              VEA（渋谷、2.5Ｄ）にてケータリングなどがある。</br>
-              </br>
-              Email:&nbsp;o.hiryu@gamail.com   &nbsp;Tel:&nbsp;08033190871
+              <h1>大学生</h1>
+              <div class='explain_text'>20歳。B型。さそり座。</br>
               </div>
             </div>
-            " data-lightbox="roadtrip" href='./img/member_full/hiryu.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+            " data-lightbox="roadtrip" href='./img/member_full/serina.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
             <div>
-              <p class="full_name">岡村飛龍</p>
+              <p class="full_name">serina</p>
             </div>
             </a>
           </div>
