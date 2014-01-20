@@ -153,6 +153,8 @@ border-radius: 5px;        /* CSS3草案 */
 
 #hot_topics_text {
 	margin-left:-10px;
+	overflow: scroll;
+	height: 300px;
 }
 
 .topics_date {
