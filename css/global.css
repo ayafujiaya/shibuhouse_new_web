@@ -165,9 +165,14 @@ a {
 
 
 #hot_topics_text {
+    background-color:#D4DFE9;
 	margin-left:-10px;
 	overflow-y: scroll;
 	height: 300px;
+	border-radius: 5px;        /* CSS3草案 */
+	-webkit-border-radius: 5px;    /* Safari,Google Chrome用 */
+	-moz-border-radius: 5px;   /* Firefox用 */ 
+
 }
 
 .topics_date {
