@@ -140,13 +140,26 @@ a {
 	position: relative;
 	background-color:rgb(73, 73, 73);
 	list-style: none;
-margin: 10px;
-color: #FFFFFF;
-border-radius: 5px;        /* CSS3草案 */  
-    -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
-    -moz-border-radius: 5px;   /* Firefox用 */ 
-    line-height: 32px;
-    font-size: 12px;
+	margin: 10px;
+	color: #FFFFFF;
+	border-radius: 5px;        /* CSS3草案 */  
+	-webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
+	-moz-border-radius: 5px;   /* Firefox用 */ 
+	line-height: 32px;
+	font-size: 12px;
+}
+
+.topics_new {
+    	position: relative;
+	background-color:rgb(204,51,153);
+	list-style: none;
+	margin: 10px;
+	color: #FFFFFF;
+	border-radius: 5px;        /* CSS3草案 */  
+	-webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
+	-moz-border-radius: 5px;   /* Firefox用 */ 
+	line-height: 32px;
+	font-size: 12px;
 }
 
 
