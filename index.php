@@ -25,9 +25,10 @@
             <div id="slide">
         <div class="flexslider">
           <ul class="slides">
-            <li><a target="_blank" href="http://www.geocities.jp/azabubu/s12/"><img src="./img/topimage/taiki.jpg"></a></li>
+<!--            <li><a target="_blank" href="http://www.geocities.jp/azabubu/s12/"><img src="./img/topimage/taiki.jpg"></a></li>
             <li><a target="_blank" href="http://kentacobayashi.com/"><img src="./img/topimage/kokuchi.jpg"></a></li>
-            <li><a target="_blank" href="./member.php"><img src="./img/topimage/akeome.jpg"></a></li>
+            <li><a target="_blank" href="./member.php"><img src="./img/topimage/akeome.jpg"></a></li> 
+-->
             <li><a target="_blank" href="http://great-saito.jimdo.com/"><img src="./img/topimage/saitou2.jpg"></a></li>
             <li><a target="_blank" href="https://www.facebook.com/events/560368644051891/"><img src="./img/topimage/000.jpg"></a></li>
            </ul>
