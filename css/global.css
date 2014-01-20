@@ -166,7 +166,7 @@ a {
 
 #hot_topics_text {
 	margin-left:-10px;
-	overflow: scroll;
+	overflow-y: scroll;
 	height: 300px;
 }
 
