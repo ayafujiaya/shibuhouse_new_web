@@ -40,8 +40,8 @@
         </div><!-- hot_topics_pic -->
         <div id="hot_topics_text">
           <ul>
-            <li class="topics_new"><sep class="topics_date">[NEW] </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[EVENT] <a href="http://shibuhouse-image-fes.tumblr.com/" target="_blank">03/22（水）「第2回渋家映像祭」（渋家）開催</a></sep></li>
-            <li class="topics_new"><sep class="topics_date">[NEW] </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[EVENT] <a href="http://shibuhouse.com/" target="_blank">02/22（水）「渋家22日パーティ」（渋家）開催</a></sep></li>
+            <li class="topics_new"><sep class="topics_date">[NEW] </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[EVENT] <a href="http://shibuhouse-image-fes.tumblr.com/" target="_blank">03/22（土）「第2回渋家映像祭」（渋家）開催</a></sep></li>
+            <li class="topics_new"><sep class="topics_date">[NEW] </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[EVENT] <a href="http://shibuhouse.com/" target="_blank">02/22（土）「渋家22日パーティ」（渋家）開催</a></sep></li>
             <li class="topics_new"><sep class="topics_date">[NEW] </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[EVENT] <a href="http://www-shibuya.jp/schedule/1402/004744.html" target="_blank">02/13（火）「OL Killer presents "WIFE"vol.5」（WWW）出演</a></sep></li>
             <li class="topics_new"><sep class="topics_date">[NEW] </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[ART]   <a href="http://j-mediaarts.jp/awards/recommends?locale=ja&section_id=2" target="_blank">02/05（水）- 02/16（日）エキソニモ/渋家/Maltine Records「第17回 文化庁メディア芸術祭」（国立新美術館）受賞</a></sep></li>
             <li class="topics_new"><sep class="topics_date">[NEW] </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[MEMBER] <a href="http://www.and-a.com/news/2014/01/15110032/">02/02（日）ayafuji「Maltine Girls Waveインストアライブ」（And A渋谷店）参加</a></sep></li>
