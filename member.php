@@ -41,7 +41,7 @@
               <div class='explain_text'>デザインとアート作品制作したい気持ち多い</br>
               </div>
                           </br>
-              <a  target='_blank' href='https://https://twitter.com/Re_o_jpeg'><img src='./img/twitter.png' border='0'></a>
+              <a  target='_blank' href='https://twitter.com/Re_o_jpeg'><img src='./img/twitter.png' border='0'></a>
               &nbsp;
               <a  target='_blank' href='http://rei-nakanishi.tumblr.com/'>[Tumblr]</a>
               </div>
