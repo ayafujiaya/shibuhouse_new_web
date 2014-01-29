@@ -55,6 +55,22 @@
 
           <!--------------------------Profile Start -------------------------->
           <div class="profile">
+            <img class="small_image" src="./img/member_sum/serina.jpg">
+            <a class="profile_name" name="serina
+            <div class='explain'>
+              <h1>大学生</h1>
+              <div class='explain_text'>20歳。B型。さそり座。</br>
+              </div>
+            </div>
+            " data-lightbox="roadtrip" href='./img/member_full/serina.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+            <div>
+              <p class="full_name">serina</p>
+            </div>
+            </a>
+          </div>
+
+          <!--------------------------Profile Start -------------------------->
+          <div class="profile">
             <img class="small_image" src="./img/member_sum/shigeno_sum.jpg">
             <a class="profile_name" name="茂野８点
             <div class='explain'>
@@ -66,22 +82,6 @@
             " data-lightbox="roadtrip" href='./img/member_full/shigeno.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
             <div>
               <p class="full_name">茂野８点</p>
-            </div>
-            </a>
-          </div>
-
-          <!--------------------------Profile Start -------------------------->
-          <div class="profile">
-            <img class="small_image" src="./img/member_sum/serina.jpg">
-            <a class="profile_name" name="serina
-            <div class='explain'>
-              <h1>大学生</h1>
-              <div class='explain_text'>20歳。B型。さそり座。</br>
-              </div>
-            </div>
-            " data-lightbox="roadtrip" href='./img/member_full/serina.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
-            <div>
-              <p class="full_name">serina</p>
             </div>
             </a>
           </div>
