@@ -62,7 +62,7 @@
             <li class="topics"><sep class="topics_date">　　　 </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[MEMBER] <a href="http://www.bigmountainmusicfestival.com/" target="_blank">12/07（土）- 12/08（日）DJ God Scorpion「Big Mountain」（Thailand）出演</a></sep></li>
             <li class="topics_new"><sep class="topics_date">　　　 </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[ART]   <a href="http://the-container.com/" target="_blank">12/02（月）- 02/17（月）グループ展「Multi(Multi)(ple(s))」（The Container）参加</a></sep></li>
             <li class="topics"><sep class="topics_date">　　　 </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[MEDIA] <a href="http://www.nhk.or.jp/jirenma/" target="_blank">11/30（土）齋藤桂太 NHK Eテレ「ニッポンのジレンマ」出演</a></sep></li>
-            <li class="topics"><sep class="topics_date">　　　 </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[MEDIA] <a href="http://www.eater.co.jp/" target="_blank">11/29（金）記事掲載 『EATER 2014 REBIRTH』（地引雄一:編集）発売</a></sep></li>
+            <li class="topics_new"><sep class="topics_date">　　　 </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[MEDIA] <a href="http://www.eater.co.jp/" target="_blank">11/29（金）記事掲載 『EATER 2014 REBIRTH』（地引雄一:編集）発売</a></sep></li>
             <li class="topics"><sep class="topics_date">　　　 </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[NEWS]  <a href="http://great-saito.jimdo.com/" target="_blank">11/22（金）「渋家」代表交代 6代目代表に齋藤桂太が就任</a></sep></li>
           </ul>
         </div><!-- hot_topics_text -->
