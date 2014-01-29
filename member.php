@@ -31,6 +31,47 @@
       </div>-->
       <div id="member_profile">
         <div id="inner_member_profile">
+        
+          <!--------------------------Profile Start -------------------------->
+          <div class="profile">
+            <img class="small_image" src="./img/member_sum/reikun_sum.gif">
+            <a class="profile_name" name="れいくん
+            <div class='explain'>
+              <h1>アーティスト / グラフィックデザイナー</h1>
+              <div class='explain_text'>デザインとアート作品制作したい気持ち多い</br>
+              </div>
+                          </br>
+              <a  target='_blank' href='https://https://twitter.com/Re_o_jpeg'><img src='./img/twitter.png' border='0'></a>
+              &nbsp;
+              <a  target='_blank' href='http://rei-nakanishi.tumblr.com/'>[Tumblr]</a>
+              </div>
+            </div>
+            " data-lightbox="roadtrip" href='./img/member_full/reikun.gif' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+            <div>
+              <p class="full_name">れいくん</p>
+            </div>
+            </a>
+          </div>
+
+          <!--------------------------Profile Start -------------------------->
+          <div class="profile">
+            <img class="small_image" src="./img/member_sum/shigeno_sum.jpg">
+            <a class="profile_name" name="茂野８点
+            <div class='explain'>
+              <h1>お笑い芸人</h1>
+              <div class='explain_text'>1983年 千葉県出身。NSC東京10期(中退)。映像コント集団•うんこちんこ大好き「木曜会R」所属。大学休学中、吉本NSCに入学するもノイローゼにより9カ月で中退。その後、木曜会R所属芸人として小劇場を中心に活動するがノイローゼにより中退。千葉の実家での5年の療養期間を経て、30歳のとき主治医の先生から許可され、ピン芸人として活動を再開。現在、ノイローゼ再発中。</br>
+              </div>
+            </div>
+            " data-lightbox="roadtrip" href='./img/member_full/shigeno.jpg' style="display:block; width:165px; height:247px; position:absolute; top:0px; left:0px;">
+            <div>
+            </br>
+              <a  target='_blank' href='https://twitter.com/shigeno8ten'><img src='./img/twitter.png' border='0'></a>
+              </div>
+              <p class="full_name">茂野８点</p>
+            </div>
+            </a>
+          </div>
+
           <!--------------------------Profile Start -------------------------->
           <div class="profile">
             <img class="small_image" src="./img/member_sum/serina.jpg">
