@@ -417,7 +417,7 @@ See below for details.</br>
             <img class="small_image" src="./img/member_sum/dokukinoko.jpg">
             <a class="profile_name" name="毒k!n⊗k¤p!nk™
             <div class='explain'>
-              <h1>FashionCreator / DJ / SJ</h1>
+              <h1>haute couture artist / DJ / SJ</h1>
               <div class='explain_text'>拡張される身体。</br>
               </br>
               <a  target='_blank' href='https://twitter.com/kinokopink'><img src='./img/twitter.png' border='0'></a>
