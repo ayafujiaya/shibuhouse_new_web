@@ -154,10 +154,8 @@
             <img class="small_image" src="./img/member_sum/atsushi_nishida.jpg">
             <a class="profile_name" name="西田篤史　
             <div class='explain'>
-              <h1>編集者</h1>
-              <div class='explain_text'>1986年 富山県出身。エディトリアルプロダクション451℃
-              代表。月刊誌の編集者を経て、2013年、編集プロダクションを設立。企画•編集•執
-              筆•販促などから、出版プロデュース、トークイベントの主催まで多岐にわたって活動。現在、クラウドファンディングによる本の未来を作るプロジェクト推進中。</br>
+              <h1>編集者 / 渋家編集長</h1>
+              <div class='explain_text'>1986年 富山県出身。エディトリアルプロダクション451℃ 代表。出版社勤務を経て、2013年からフリーとして活動。現在、「編集」の概念を拡張させるべく、現代アート、ZINE、クラウドファンディングの3方向から、さまざまなプロジェクトを推進中。</br>
               
               </br>
               <a  target='_blank' href='https://twitter.com/hon_nishi'><img src='./img/twitter.png' border='0'></a>
