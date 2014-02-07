@@ -42,11 +42,11 @@
         </div><!-- hot_topics_pic -->
         <div id="hot_topics_text">
           <ul>
-            <li class="topics_new"><sep class="topics_date">[NEW] </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[EVENT] <a href="http://shibuhouse-image-fes.tumblr.com/" target="_blank">03/22（土）「第2回渋家映像祭」（渋家）開催</a></sep></li>
+            <li class="topics_new"><sep class="topics_date">[NEW] </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[EVENT] <a href="http://shibuhouse-image-fes.tumblr.com/" target="_blank">03/22（土）「渋家22日パーティー × 第2回渋家映像祭」（渋家）同時開催</a></sep></li>
             <li class="topics_new"><sep class="topics_date">[NEW] </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[ART]   <a href="https://www.facebook.com/events/203896739818170/?ref_dashboard_filter=upcoming" target="_blank">03/01（土）House Conference Project「蔵屋美香と林道郎と金藤みなみ＋増沢大輝が渋家を語る」（渋家）開催</a></sep></li>
             <li class="topics_new"><sep class="topics_date">[NEW] </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[MEMBER] <a href="https://www.facebook.com/events/737247209621552/?ref_dashboard_filter=upcoming&source=1" target="_blank">02/28（金）齋藤桂太「地方進化論〜地方で何して生きていく？〜」（京都・きんせ旅館）出演</a></sep></li>
 
-            <li class="topics_new"><sep class="topics_date">[NEW] </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[EVENT] <a href="https://www.facebook.com/events/1390855861175162/?ref=2&ref_dashboard_filter=upcoming" target="_blank">02/22（土）「渋家22日パーティ」（渋家）開催</a></sep></li>
+            <li class="topics_new"><sep class="topics_date">[NEW] </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[EVENT] <a href="https://www.facebook.com/events/1390855861175162/?ref=2&ref_dashboard_filter=upcoming" target="_blank">02/22（土）「渋家22日パーティー × ⚡タリホー！⚡」（渋家）同時開催</a></sep></li>
             <li class="topics_new"><sep class="topics_date">[NEW] </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[EVENT] <a href="https://www.facebook.com/events/579325442161551/?ref=2&ref_dashboard_filter=upcoming" target="_blank">02/13（火）「OL Killer presents "WIFE"vol.5」（WWW）出演</a></sep></li>
             <li class="topics_new"><sep class="topics_date">[NEW] </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[MEMBER] <a href="http://gptokyo.jp/archives/1592" target="_blank">02/08（土）小林健太「EXPOSED TALK」（G/P gallery）出演</a></sep></li>
 
