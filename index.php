@@ -25,9 +25,11 @@
             <div id="slide">
         <div class="flexslider">
           <ul class="slides">
-            <li><a target="_blank" href="http://kentacobayashi.com/"><img src="./img/topimage/syuugou.jpg"></a></li>
-            <li><a target="_blank" href="http://great-saito.jimdo.com/"><img src="./img/topimage/saitoudaihyou.jpg"></a></li>
-            <li><a target="_blank" href="https://www.facebook.com/events/560368644051891/"><img src="./img/topimage/barsaitouatsushi.jpg"></a></li>
+            <li><a target="_blank" href="https://www.facebook.com/events/579325442161551/?ref=2&ref_dashboard_filter=upcoming/"><img src="./img/topimage/ol.jpg"></a></li>
+            <li><a target="_blank" href="http://https://www.facebook.com/events/1390855861175162/?ref=2&ref_dashboard_filter=upcoming/"><img src="./img/topimage/shibuhouseart.jpg"></a></li>
+            <li><a target="_blank" href="http://https://www.facebook.com/events/1390855861175162/?ref=2&ref_dashboard_filter=upcoming"><img src="./img/topimage/22.jpg"></a></li>
+            <li><a target="_blank" href="http://https://www.facebook.com/events/737247209621552/?ref_dashboard_filter=upcoming&source=1"><img src="./img/topimage/chihou.jpg"></a></li>
+            <li><a target="_blank" href="http://shibuhouse-image-fes.tumblr.com/"><img src="./img/topimage/eigasai.jpg"></a></li>
            </ul>
         </div>
       </div><!-- #slide -->
@@ -41,12 +43,17 @@
         <div id="hot_topics_text">
           <ul>
             <li class="topics_new"><sep class="topics_date">[NEW] </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[EVENT] <a href="http://shibuhouse-image-fes.tumblr.com/" target="_blank">03/22（土）「第2回渋家映像祭」（渋家）開催</a></sep></li>
-            <li class="topics_new"><sep class="topics_date">[NEW] </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[EVENT] <a href="http://shibuhouse.com/" target="_blank">02/22（土）「渋家22日パーティ」（渋家）開催</a></sep></li>
-            <li class="topics_new"><sep class="topics_date">[NEW] </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[EVENT] <a href="http://www-shibuya.jp/schedule/1402/004744.html" target="_blank">02/13（火）「OL Killer presents "WIFE"vol.5」（WWW）出演</a></sep></li>
-            <li class="topics_new"><sep class="topics_date">[NEW] </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[ART]   <a href="http://j-mediaarts.jp/awards/recommends?locale=ja&section_id=2" target="_blank">02/05（水）- 02/16（日）エキソニモ/渋家/Maltine Records「第17回 文化庁メディア芸術祭」（国立新美術館）受賞</a></sep></li>
-            <li class="topics_new"><sep class="topics_date">[NEW] </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[MEMBER] <a href="http://www.and-a.com/news/2014/01/15110032/">02/02（日）ayafuji「Maltine Girls Waveインストアライブ」（And A渋谷店）参加</a></sep></li>
-            <li class="topics_new"><sep class="topics_date">[NEW] </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[MEMBER] <a href="http://berlin.yami1.biz/jp/" target="_blank">02/02（日）インターネットおじさん「インターネットヤミ市 in ベルリン」（Germany）参加</a></sep></li>
-            <li class="topics_new"><sep class="topics_date">[NEW] </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[ART]   <a href="http://jmaf-promote.jp/global/18.html" target="_blank">01/29（水）- 02/02（日）エキソニモ/渋家/Maltine Records「トランスメディアーレ2014」（Germany）参加</a></sep></li>
+            <li class="topics_new"><sep class="topics_date">[NEW] </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[ART]   <a href="https://www.facebook.com/events/1390855861175162/?ref=2&ref_dashboard_filter=upcoming" target="_blank">03/01（土）House Conference Project「蔵屋美香と林道郎と金藤みなみ＋増沢大輝が渋家を語る」（渋家）開催</a></sep></li>
+            <li class="topics_new"><sep class="topics_date">[NEW] </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[MEMBER] <a href="https://www.facebook.com/events/737247209621552/?ref_dashboard_filter=upcoming&source=1" target="_blank">02/28（金）齋藤桂太「地方進化論〜地方で何して生きていく？〜」（京都・きんせ旅館）出演</a></sep></li>
+
+            <li class="topics_new"><sep class="topics_date">[NEW] </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[EVENT] <a href="https://www.facebook.com/events/1390855861175162/?ref=2&ref_dashboard_filter=upcoming" target="_blank">02/22（土）「渋家22日パーティ」（渋家）開催</a></sep></li>
+            <li class="topics_new"><sep class="topics_date">[NEW] </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[EVENT] <a href="https://www.facebook.com/events/579325442161551/?ref=2&ref_dashboard_filter=upcoming" target="_blank">02/13（火）「OL Killer presents "WIFE"vol.5」（WWW）出演</a></sep></li>
+            <li class="topics_new"><sep class="topics_date">[NEW] </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[MEMBER] <a href="http://gptokyo.jp/archives/1592" target="_blank">02/08（土）小林健太「EXPOSED TALK」（G/P gallery）出演</a></sep></li>
+
+            <li class="topics_new"><sep class="topics_date">　　　 </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[ART]   <a href="http://j-mediaarts.jp/awards/recommends?locale=ja&section_id=2" target="_blank">02/05（水）- 02/16（日）エキソニモ/渋家/Maltine Records「第17回 文化庁メディア芸術祭」（国立新美術館）受賞</a></sep></li>
+            <li class="topics"><sep class="topics_date">　　　 </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[MEMBER] <a href="http://www.and-a.com/news/2014/01/15110032/">02/02（日）ayafuji「Maltine Girls Waveインストアライブ」（And A渋谷店）参加</a></sep></li>
+            <li class="topics"><sep class="topics_date">　　　 </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[MEMBER] <a href="http://berlin.yami1.biz/jp/" target="_blank">02/02（日）インターネットおじさん「インターネットヤミ市 in ベルリン」（Germany）参加</a></sep></li>
+            <li class="topics"><sep class="topics_date">　　　 </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[ART]   <a href="http://jmaf-promote.jp/global/18.html" target="_blank">01/29（水）- 02/02（日）エキソニモ/渋家/Maltine Records「トランスメディアーレ2014」（Germany）参加</a></sep></li>
             <li class="topics"><sep class="topics_date">　　　 </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[EVENT] <a href="http://shibuhouse.com/" target="_blank">01/22（水）「渋家22日パーティ」（渋家）開催</a></sep></li>
             <li class="topics_new"><sep class="topics_date">　　　 </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[MEMBER] <a href="http://www.jackemedia.co.jp/kera/" target="_blank">1/16（木）ちゃんもも◎ 連載記事掲載『KERA』（3月号）発売</a></sep></li>
             <li class="topics_new"><sep class="topics_date">　　　 </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[MEMBER] <a href="http://g3gallery.jp/archives/668" target="_blank">01/11（土）- 02/28（金）小林健太 グループ展「THE EXPOSED #7」（G/P＋g3/ gallery）出展</a></sep></li>
