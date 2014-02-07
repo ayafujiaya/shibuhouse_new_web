@@ -48,6 +48,7 @@
 
             <li class="topics_new"><sep class="topics_date">[NEW] </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[EVENT] <a href="https://www.facebook.com/events/1390855861175162/?ref=2&ref_dashboard_filter=upcoming" target="_blank">02/22（土）「渋家22日パーティー × ⚡タリホー！⚡」（渋家）同時開催</a></sep></li>
             <li class="topics_new"><sep class="topics_date">[NEW] </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[EVENT] <a href="https://www.facebook.com/events/579325442161551/?ref=2&ref_dashboard_filter=upcoming" target="_blank">02/13（火）「OL Killer presents "WIFE"vol.5」（WWW）出演</a></sep></li>
+            <li class="topics_new"><sep class="topics_date">[NEW] </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[MEMBER] <a href="https://www.facebook.com/events/1430024563901547/?ref_dashboard_filter=upcoming" target="_blank">02/11（火）増沢大輝 金藤みなみ「ファウンデーション - 日常をふるまいからひもとく発表会 - 」（としまアートステーション「Z」）出演</a></sep></li>
             <li class="topics_new"><sep class="topics_date">[NEW] </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[MEMBER] <a href="http://gptokyo.jp/archives/1592" target="_blank">02/08（土）小林健太「EXPOSED TALK」（G/P gallery）出演</a></sep></li>
 
             <li class="topics_new"><sep class="topics_date">　　　 </sep><img class="arrow" src="./img/arrow.png"><sep class="topics_date">[ART]   <a href="http://j-mediaarts.jp/awards/recommends?locale=ja&section_id=2" target="_blank">02/05（水）- 02/16（日）エキソニモ/渋家/Maltine Records「第17回 文化庁メディア芸術祭」（国立新美術館）受賞</a></sep></li>
