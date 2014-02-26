@@ -28,8 +28,9 @@ a {
 }
 
 #ios_title {
-	font-size: 130%;
+	font-size: 40px;
 	background-color: rgb(191, 191, 191);
+	text-align: center;
 }
 
 #header {
@@ -44,7 +45,7 @@ a {
 }
 
 #ios_info {
-	width:100%;
+	font-size: 40px;
 	margin: 20px auto;
 	text-align: center;
 }
