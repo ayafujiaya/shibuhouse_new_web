@@ -49,6 +49,11 @@ a {
 	min-width: 1240px;
 	padding-top: 100px;
 }
+
+#ios_info {
+	display: none;
+}
+
 #text_information {
 	text-align: center;
 	background-color:rgb(50, 65, 108);
