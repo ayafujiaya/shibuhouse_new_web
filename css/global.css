@@ -28,8 +28,12 @@ a {
 }
 #wrap {
 	min-width: 1240px;
-	
 }
+
+#ios_title {
+	display: none;
+	}
+
 #header {
 	display: block;
 	height: 57px;
