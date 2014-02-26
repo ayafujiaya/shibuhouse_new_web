@@ -28,6 +28,7 @@ a {
 }
 
 #ios_title {
+	padding: 15px 0px;
 	font-size: 50px;
 	background-color: rgb(191, 191, 191);
 	text-align: center;
@@ -46,7 +47,8 @@ a {
 
 #ios_info {
 	font-size: 40px;
-	margin: 20px auto;
+	padding: 20px 0px;
+	margin: 0 auto;
 	text-align: center;
 	background-color: rgb(191, 191, 191);
 }
