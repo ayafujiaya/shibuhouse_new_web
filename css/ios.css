@@ -37,6 +37,13 @@ a {
 	position: relative;
 	min-width: 1240px;
 }
+
+#ios_info {
+	width:100%;
+	margin: 10px auto;
+	
+}
+
 #text_information {
 	text-align: center;
 	background-color:rgb(50, 65, 108);
