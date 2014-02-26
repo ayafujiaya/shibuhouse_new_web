@@ -25,8 +25,13 @@ a {
 }
 #wrap {
 	min-width: 1240px;
-
 }
+
+#ios_title {
+	font-size: 130%;
+	background-color: rgb(191, 191, 191);
+}
+
 #header {
 	display: none;
 }
