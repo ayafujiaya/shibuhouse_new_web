@@ -21,6 +21,7 @@
   </head>
   <body>
     <div id="wrap">
+      <div id="ios_title">渋家のサイト</div>
       <?php require './header.php' ?>
             <div id="slide">
         <div class="flexslider">
