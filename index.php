@@ -13,7 +13,7 @@
     <script type="text/javascript" src="js/modernizr.js"></script>
     <script type="text/javascript">
     if (navigator.userAgent.indexOf('iPhone') != -1) {
-      document.write("<link href='./css/iphone.css' rel='stylesheet' type='text/css'>");
+      document.write("<link href='./css/ios.css' rel='stylesheet' type='text/css'>");
     } else {
       document.write("<link href='./css/global.css' rel='stylesheet' type='text/css'>");
     }
