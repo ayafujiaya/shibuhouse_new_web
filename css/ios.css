@@ -58,7 +58,7 @@ a {
 
 #logo {
 	float: left;
-	display: inline;
+	display: none;
 	position: fixed;
 	margin: 30px;
 	z-index: 2;
