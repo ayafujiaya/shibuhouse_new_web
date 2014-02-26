@@ -1,8 +1,5 @@
 #scroll-top {
-    z-index: 10;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
+	display: none;
 }
 
 #scroll-top a {
@@ -31,15 +28,7 @@ a {
 
 }
 #header {
-	display: block;
-	height: 57px;
-	background-color:rgb(73, 73, 73);
-	z-index:1;
-	width: 100%;
-	padding: 13px 0 30px 0;
-	position: fixed;
-	opacity: 0.8;
-	min-width: 1240px;
+	display: none;
 }
 
 #slide {
@@ -47,7 +36,6 @@ a {
 	margin: 0 auto;
 	position: relative;
 	min-width: 1240px;
-	padding-top: 100px;
 }
 #text_information {
 	text-align: center;
@@ -82,11 +70,7 @@ a {
 }
 
 #contact {
-	display: inline;
-	position: fixed;
-	top: 20px;
-	right: 22px;
-	z-index: 2;
+	display: none;
 }
 #nav img{
 	margin-bottom: 5px;
@@ -123,9 +107,7 @@ a {
 }
 
 #hot_topics {
-	width: 920px;
-	min-height: 320px;
-	margin: 0 auto 50px auto;
+	display: none;
 }
 
 #hot_topics_pic {
