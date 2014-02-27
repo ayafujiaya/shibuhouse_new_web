@@ -1,0 +1,119 @@
+[% INCLUDE 'tmpl/html_header.tmpl' %]
+
+
+
+
+
+<div id="contwrapper" class="clearfix">
+  <div id="left_cont">
+  <div id="left_menu">
+    <div id="left_cont_in">
+      <table id="left_cont_table">
+        <tr>
+          <td class="title box"><img src="img/menu.jpg" alt="" /></td>
+        </tr>
+		          <tr><td height="20"></td></tr>
+
+  [% INCLUDE 'tmpl/html_setting_menu.tmpl' %]
+
+      </table>
+    </div>
+    </div>
+
+
+  [% INCLUDE 'tmpl/html_left_banner.tmpl' %]
+
+  </div>
+  
+
+  
+  <div id="right_cont">
+    <div id="right_cont_title">
+      <table id="right_cont_table_title">
+        <tr>
+          <td class="title box">
+              各種設定<img src="img/big_arrow.jpg" alt="" />設定エクスポート<img src="img/big_arrow.jpg" alt="" />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="right_cont_contens">
+    <div id="right_cont_contens_in">
+
+
+
+
+
+
+<div align="center">
+[% IF oktext %]
+<font color="red"><b>[% oktext %]</b></font><br>
+[% END %]
+</div>
+<div class="tabContainer">
+
+<div align="center">
+<font color="red">[% error_message %]</font>
+<font color="blue"><b>[% IF form.okedit %]更新しました[% END %]</b></font>
+</div>
+<!-- システム設定 -->
+
+
+   <table id="right_cont_table">
+
+  <tr><td class="td_2 box listtitle" bgcolor="#EEEEEE" align="center">
+  設定エクスポート
+  </td></tr>
+	
+    <tr valign="top"> 
+      
+      <td bgcolor="#FFFFFF" class="td_2 box"> 
+	  ここでダウンロードされるファイルはacmailerで使用しているデータとなります。<br>
+	  acmailer3.6のバージョンアップ時にエクスポートしたデータをインポートしたり、データのバックアップとして使用することができます。<br>
+	  <font color="red">※ダウンロードされるデータは中身を編集しないでください。中身を編集したデータをインポートすると正常に動作しなくなる恐れがあります。</font><br><br>
+	  <a href="export.cgi?mode=admin">メール・システム・送信サーバー・空メール・予約配信・不着・トップページメモ・携帯ドメイン</a>
+	  <br><br>
+	  <a href="export.cgi?mode=freecol">自由項目設定</a>
+	  <br><br>
+	  <a href="export.cgi?mode=form">自動返信メール設定</a>
+	  <br><br>
+	  <a href="export.cgi?mode=template">メールテンプレート設定</a>
+	  <br><br>
+	  <a href="export.cgi?mode=hist">履歴データ</a>
+	  <br><br>
+	  <a href="export.cgi?mode=autoform">フォーム設定</a>
+	  <br>
+	  ※フォーム設定をエクスポートする場合は自由項目設定もエクスポートしなければ完全なフォームを復元することができません。
+	  <br><br>
+	  <a href="export.cgi?mode=license">ライセンスデータ</a>
+
+	  
+	  </td>
+    </tr>
+	
+  </table>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+      </div>
+      </div>
+    </div>
+	</div>
+
+
+
+
+
+
+
+
+[% INCLUDE 'tmpl/html_footer.tmpl' %]

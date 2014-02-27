@@ -1,0 +1,275 @@
+/* コンテンツ
+---------------------------------------------*/
+#contwrapper {
+	padding-top:20px;
+}
+#left_cont {
+	width:200px;
+	float:left;
+}
+#left_menu{
+	margin-bottom:10px;
+}
+#left_cont_in {
+	padding-top:5px;
+	padding-bottom:25px;
+	background-color:#FFF;
+}
+#left_cont_table {
+	width:192px;
+	margin:0 auto;
+}
+.left_bunner{
+	padding-bottom:5px;
+}
+.left_cont_bunner {
+	padding-top:5px;
+	padding-bottom:5px;
+	background-color:#FFF;
+}
+.left_cont_table_bunner {
+	width:192px;
+	margin:0 auto;
+}
+td {
+	vertical-align:middle;
+	padding-left:12px;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+.title {
+	font-size:100%;
+	letter-spacing:0.1em;
+	font-weight:bold;
+	padding-top:0px;
+	padding-bottom:0px;
+	height:50px;
+}
+.title img{
+	vertical-align:middle;
+	padding-left:10px;
+	padding-right:15px;
+}
+.box {
+	border:solid 1px #E6E6E6;
+}
+
+.menu {
+	border-bottom:solid 1px #E6E6E6;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+.menu a{
+	display:block;
+	width:175px;
+}
+.left_bunner a{
+	display:block;
+	width:175px;
+}
+.topmenu {
+	padding-top:25px;
+}
+.lastmenu {
+}
+#right_cont {
+	width:680px;
+	float:right;
+}
+#right_cont_title {
+	background-color:#FFF;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+#right_cont_table_title {
+	width:672px;
+	margin:0 auto;
+}
+#right_cont_table_title li {}
+#right_cont_table_title li span {
+	font-size:90%;
+	padding-left:10px;
+}
+#right_cont_contens {
+	background-color:#FFF;
+	margin-top:10px;
+}
+#right_cont_contens_in {
+	padding-top:5px;
+	padding-bottom:5px;
+}
+#right_cont_table {
+	width:672px;
+	margin:0 auto;
+}
+.td_1 {
+	width:150px;
+}
+.td_2 {}
+span img{
+	vertical-align:middle;
+	padding-right:5px;
+}
+.td_10 {
+	width:115px;
+}
+
+.red {
+	color:#D92173;
+	padding-left:15px;
+}
+.search{
+	margin-top:2px;
+	margin-bottom:2px;
+}
+#mail_body{
+	width:480px;
+	height:200px;
+	overflow:auto;
+}
+#hensu_btn{
+	text-align:right;
+	padding-top:5px;
+	padding-bottom:0px;
+	padding-right:10px;
+	_padding-right:12px;
+}
+#submit_btn{
+	text-align:center;
+	padding-top:10px;
+	padding-bottom:15px;
+}
+#textarea{
+	overflow:auto;
+}
+#left_cont_table img{
+	padding-left:0px;
+}
+.listtitle{
+	background-image:url(../img/bg_img_01.jpg);
+	background-repeat:repeat-x;
+	background-position:bottom;
+}
+#dispcol_edit_title{
+	text-align:center;
+}
+#dispcol_edit_text{
+	font-size:10px;
+	padding-top:5px;
+	text-align:center;
+}
+.listtitle02{
+	background-image:url(../img/bg_img_03.jpg);
+	background-position:top;
+	background-repeat:repeat-x;
+	color:#FFF;
+}
+
+/* ----- admin_autoform_edit.tmplページ用(2010/04/07追加)  ----- */
+td#autoform_url{
+	text-align:center;
+	vertical-align:middle;
+}
+td#autoform_url p#autoform_url_container{
+	text-align:center;
+	vertical-align:middle;
+	margin:20px 0px;
+}
+td#autoform_url img{
+	vertical-align:middle;
+}
+#autoform_url span{
+	padding-right:0.4em;
+}
+#autoform_url input#autoform_url_txt{
+	width:350px;
+	margin-right:1em;
+}
+#autoform_url input.autoform_url_radio{
+	vertical-align:middle;
+}
+
+
+
+
+.autoform{
+	vertical-align:top;
+	padding:0;
+}
+.autoform_td{
+	padding:4px 0px 4px 0px;
+}
+
+.autoform_td_1{
+	width:35px;
+	text-align:center;
+}
+.autoform_td_2{
+	padding-left:10px;
+	padding-right:5px;
+}
+.autoform_td_2 input{
+	width:270px;
+}
+.autoform_td_2 span{
+	display:block;
+	line-height:2em;
+	padding-left:0.2em;
+}
+.autoform_td_2 span input{
+	width:15px;
+	margin-right:0.2em;
+}
+.autoform_td_3{
+	padding-left:5px;
+	padding-right:5px;
+}
+.autoform_td_4{
+	padding-left:5px;
+}
+
+.autoform_title{
+	line-height:2em;
+	background-color:#333;
+	color:#FFF;
+	text-align:center;
+}
+.autoform_td_1_num{
+	text-align:center;
+}
+.autoform_view_btn{
+	background-color:#E6E6E6;
+}
+.border_t_b{
+	border-top:solid 1px #E6E6E6;
+	border-bottom:solid 1px #E6E6E6;
+}
+.border_r{
+	border-right:solid 1px #E6E6E6;
+}
+.border_l{
+	border-right:solid 1px #E6E6E6;
+}
+#autoform_caution{
+	margin:10px 5px 10px 5px;
+	padding:10px 10px 0px 10px;
+	border-top:solid 1px #E6E6E6;
+}
+#autoform_caution p{
+	line-height:1.2em;
+}
+/* ----- /admin_autoform_edit.tmpl  ----- */
+
+/* ----- admin_edit.tmpl & admin_autoform_edit.tmplページ用(2010/04/08追加)  ----- */
+#admin_autoform_edit_title{
+	text-align:center;
+}
+#admin_autoform_edit_title_text{
+	font-size:10px;
+	padding-top:5px;
+	text-align:center;
+}
+#admin_autoform_edit_title_text a{
+	padding:0px 0.2em;
+}
+/* ----- /admin_edit.tmpl & admin_autoform_edit.tmpl  ----- */

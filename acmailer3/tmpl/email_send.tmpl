@@ -1,0 +1,1155 @@
+[% INCLUDE 'tmpl/html_header.tmpl' %]
+<script src="./js/drag.js" type="text/javascript"></script>
+<script>
+function beginScript() {
+    var rs = DragHandler.attach(document.getElementById('confirm_ahref'));
+    var rs2 = DragHandler.attach(document.getElementById('colorChart'));
+}
+</script>
+
+<style>
+[% IF form.id %]
+.td_1 {
+	background-color:#CCFFFF;
+}
+.reserve_no_edit {
+	background-color:#CCFFFF;
+}
+[% END %]
+</style>
+
+<div id="contwrapper" class="clearfix">
+  <div id="left_cont">
+  <div id="left_menu">
+    <div id="left_cont_in">
+      <table id="left_cont_table">
+        <tr>
+          <td class="title box"><img src="img/menu.jpg" alt="" /></td>
+        </tr>
+          <tr><td height="20"></td></tr>
+        [% IF form.id %]
+		<tr>
+			<td class="menu menubgcolor"><a href="hist_list.cgi">配信履歴</a></td>
+		</tr>
+		<tr>
+			<td class="menu"><a href="backnumber.cgi" target="blank">バックナンバー</a></td>
+		</tr>
+		[% ELSE %]
+        <tr>
+          <td class="menu[% IF form.mode=="" %] menubgcolor[% END %]"><a href="email_send.cgi">テキストメール配信</a></td>
+        </tr>
+        <tr>
+          <td class="menu[% IF form.mode=="html" %] menubgcolor[% END %]"><a href="email_send.cgi?mode=html">HTMLメール配信</a></td>
+        </tr>
+        <tr>
+          <td class="menu lastmenu"><a href="email_send.cgi?mode=deco">デコメール配信</a></td>
+        </tr>
+        [% END %]
+      </table>
+    </div>
+    </div>
+
+
+  [% INCLUDE 'tmpl/html_left_banner.tmpl' %]
+
+  </div>
+  
+
+  
+  <div id="right_cont">
+    <div id="right_cont_title">
+      <table id="right_cont_table_title">
+        <tr>
+          <td class="title box">
+          		[% IF form.id %]
+			配信履歴<img src="img/big_arrow.jpg" alt="" />配信履歴詳細<img src="img/big_arrow.jpg" alt="" />予約内容編集<img src="img/big_arrow.jpg" alt="" />
+          		[% ELSE %]
+              メール配信<img src="img/big_arrow.jpg" alt="" />[% IF form.mode=="html" %]HTML[% ELSE %]テキスト[% END %]メール配信<img src="img/big_arrow.jpg" alt="" />
+              	[% END %]
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="right_cont_contens">
+    <div id="right_cont_contens_in">
+
+
+
+
+<form name="form1" method="post" action="email_send_check.cgi">
+
+  <input type="hidden" name="mail_session_id" value="[% form.mail_session_id %]" />
+   <table id="right_cont_table">
+    <tr valign="top"> 
+      <td class="td_1 box">送信先件数</td>
+      <td class="td_2 box reserve_no_edit">[% emailnum %]/[% totalnum %]　<a class="no_underline" href="email_list.cgi"><span class="red"><img src="img/arrow.jpg" alt="" />送信先確認</span></a></td>
+    </tr>
+    <tr valign="top"> 
+      <td class="td_1 box">差出人</td>
+      <td class="td_2 box reserve_no_edit">[% admin_name %] &lt;[% admin_email %]&gt;　<a class="no_underline" href="admin_edit.cgi"><span class="red"><img src="img/arrow.jpg" alt="" />変更</span></a></td>
+    </tr>
+	[% IF form.id %]
+    <tr valign="top"> 
+      <td class="td_1 box">送信モード</td>
+      <td class="td_2 box reserve_no_edit">
+      	[% IF form.mode=="html" %]
+      	HTMLメール
+      	[% ELSE %]
+      	テキストメール
+      	[% END %] 
+	  </td>
+    </tr>
+    [% END %]
+	[% IF reserve %]
+		<tr valign="top">
+		<td class="td_1 box">配信日時</td>
+		<td class="td_2 box">
+		[% IF form.id %]
+		<input type="hidden" name="reserve_mode" value="1">
+		[% ELSE %]
+		<input type="radio" id="reserve_mode" name="reserve_mode" value="" onclick="javascript:change_reserve('radio');" [% IF form.reserve_mode=='' || form.reserve_mode == '0' %]checked[% END %]>今すぐ <br>
+		<input type="radio" id="reserve_mode_on" name="reserve_mode" value="1" [% IF form.reserve_mode=='1' %]checked[% END %]>予約
+		[% END %]
+		<select name="send_year" id="send_year">
+		<option value="">---
+		[% FOREACH v=send_year %]
+		<option value="[% v.value %]" [% IF form.send_year==v.value %]selected[% ELSE %][% END %]>[% v.value %]
+		[% END %]
+		</select>
+		年
+		<select name="send_mon" id="send_mon">
+		<option value="">---
+		[% FOREACH v=send_mon %]
+		<option value="[% v.value %]" [% IF form.send_mon==v.value %]selected[% ELSE %][% END %]>[% v.value %]
+		[% END %]
+		</select>
+		月
+		<select name="send_day" id="send_day">
+		<option value="">---
+		[% FOREACH v=send_day %]
+		<option value="[% v.value %]" [% IF form.send_day==v.value %]selected[% ELSE %][% END %]>[% v.value %]
+		[% END %]
+		</select>
+		日
+		<select name="send_hour" id="send_hour">
+		<option value="">---
+		[% FOREACH v=send_hour %]
+		<option value="[% v.value %]" [% IF form.send_hour==v.value %]selected[% ELSE %][% END %]>[% v.value %]
+		[% END %]
+		</select>
+		時
+		<select name="send_min" onchange="javascript:change_reserve('');" id="send_min">
+		<option value="">---
+		[% FOREACH v=send_min %]
+		<option value="[% v.value %]" [% IF form.send_min==v.value %]selected[% ELSE %][% END %]>[% v.value %]
+		[% END %]
+		</select>
+		分
+		</td>
+		</tr>
+	[% END %]
+    <tr valign="top"> 
+      <td class="td_1 box">絞込</td>
+      <td class="td_2 box">
+[% FOREACH v=search %]
+<div id="searchbox[% v.search_id %]" style="text-align:left;">
+	<select name="search[% v.search_id %]" id="search[% v.search_id %]">
+	<option value="email">メールアドレス
+	[% FOREACH v2=v.select %]
+	<option value="[% v2.col %]" [% IF v2.selected%]selected[% END %]>[% v2.colname|html %]
+	[% END %]
+	</select>
+	<input type="text" name="search_text[% v.search_id %]" size="30" value="[% v.search_text|html %]" style="width:200px;">
+	<select name="searchlike[% v.search_id %]">
+	<option value="" [% IF v.searchlike == "" %] selected[% END %]>含む
+	<option value="2" [% IF v.searchlike == "2" %] selected[% END %]>含まない
+	<option value="1" [% IF v.searchlike == "1" %] selected[% END %]>一致
+	</select>
+	<input type="button" value="条件追加" onclick="javascript:add_row([% v.search_id %]);" id="addbutton[% v.search_id %]" class="buttonstyle"><br>
+</div>
+[% END %]
+      
+      </td>
+    </tr>
+	
+<input type="hidden" name="disp_id" value="[% form.disp_id %]" id="disp_id">
+<script>
+var __onload_save = window.onload;
+window.onload = function() {
+	if (__onload_save) __onload_save();
+	init_row();
+}
+
+function init_row() {
+
+	var did = document.getElementById('disp_id').value;
+	if (!did) { did = 1; }
+	for(i = 1; i <= 5; i++) {
+		if (i == did && i != 5) {
+			document.getElementById('addbutton' + i).style.display = 'inline';
+		} else {
+			document.getElementById('addbutton' + i).style.display = 'none';
+		}
+		if (i > did) {
+			document.getElementById('searchbox' + i).style.display = 'none';
+		}
+	}
+}
+
+function add_row(id) {
+
+	 var id2 = id + 1;
+	if (id < 5) {
+		document.getElementById("searchbox" + id2).style.display = 'block';
+	}
+	for(i = 1; i <= 5; i++) {
+		if (i == id2 && i != 5) {
+			document.getElementById('addbutton' + i).style.display = 'inline';
+		} else {
+			  document.getElementById('addbutton' + i).style.display = 'none'
+		}
+		if (id2 < i) {
+			document.getElementById('searchbox' + i).style.display = 'none';
+		}
+	}
+	document.getElementById('disp_id').value = id2;
+}
+</script>
+
+    <tr valign="top"> 
+      <td class="td_1 box">条件</td>
+      <td class="td_2 box">
+	  <input type="radio" name="andor" value="and" [% IF form.andor=='and' || form.andor=='' %]checked[% END %]>AND検索
+	  <input type="radio" name="andor" value="or" [% IF form.andor=='or' %]checked[% END %]>OR検索
+	  </td>
+    </tr>
+
+	<tr>
+      <td class="td_1 box">ドメイン</td>
+      <td class="td_2 box">
+	  <input type="radio" name="search_domain" value="" [% IF form.search_domain=="" %]checked[% END %]>両方
+	  <input type="radio" name="search_domain" value="1" [% IF form.search_domain=="1" %]checked[% END %]>PC
+	  <input type="radio" name="search_domain" value="2" [% IF form.search_domain=="2" %]checked[% END %]>携帯
+	</tr>
+	
+    <tr valign="top"> 
+      <td class="td_1 box">配信テンプレート</td>
+      <td class="td_2 box">
+	  <select name="template_list" onchange="template_change();" id="template_list">
+	  <option value="">---
+	  [% FOREACH v=template_list %]
+	  <option value="[% v.id %]" [% IF v.selected %]selected[% END %]>[% v.template_name|html %]
+	  [% END %]
+	  </select>
+	  </td>
+    </tr>
+
+
+	[% IF form.mode=="html" %]
+	<input type="hidden" name="mail_type" value="html">
+	[% ELSE %]
+	<input type="hidden" name="mail_type" value="plain">
+	[% END %]
+    <tr valign="top"> 
+      <td class="td_1 box">件名</td>
+      <td class="td_2 box"><input type="text" name="mail_title" size="60" value="[% form.mail_title|html %]" id="mail_title" style="width:400px;">
+	  </td>
+    </tr>
+
+    <tr valign="top"> 
+      <td class="td_1 box">本文</td>
+      <td class="td_2 box">
+	  [%IF form.mode=="html" %]
+	  <a href="javascript:void(0)" onclick="javascript:insert_br();"><img src="image/insert_br_on.gif" border="0" alt="改行挿入" title="改行挿入"></a>
+	<a href="javascript:void(0)" onclick="insert_blink('body');"><img src="image/insert_blink_on.gif" border="0" title="点滅" alt="点滅"></a>
+	  <a href="javascript:void(0)" onclick="javascript:showColorPicker('font');return true"><img src="image/insert_forecolor_on.gif" border="0" title="文字色" alt="文字色"></a>
+	<a href="javascript:void(0)" onclick="showColorPicker('bodycolor', 'bgcolor');return true"><img src="image/insert_backcolor_on.gif" border="0" title="背景色" alt="背景色"></a><input type="text" style="vertical-align:top; width:75px;" size="10" name="bgcolor" id="bgcolor" value="" />
+	  <a href="javascript:void(0)" onclick="javascript:disp_ahref('body');return true"><img src="image/insert_hyperlink_on.gif" border="0" title="ハイパーリンク" alt="ハイパーリンク"></a>
+	  <a href="javascript:void(0)" onclick="javascript:showColorPicker('hrcolor');return true"><img src="image/insert_hr_on.gif" border="0" title="HR" alt="HR"></a>
+	  <a href="javascript:void(0)" onclick="javascript:insert_div('left');return true"><img src="image/justify_left_on.gif" border="0" title="左寄せ" alt="左寄せ"></a>
+	  <a href="javascript:void(0)" onclick="javascript:insert_div('center');return true"><img src="image/justify_center_on.gif" border="0" title="中央寄せ" alt="中央寄せ"></a>
+	  <a href="javascript:void(0)" onclick="javascript:insert_div('right');return true"><img src="image/justify_right_on.gif" border="0" title="右寄せ" alt="右寄せ"></a>
+	  
+	  <input type="button" name="Submit" value="HTMLプレビュー" onClick="javascript:preview();" class="buttonstyle"><br>
+	  [% END %]
+	  <textarea id="mail_body" name="mail_body" rows="25" cols="78" >[% form.mail_body|html %]</textarea><br />
+<div id="hensu_btn"><input type="button" name="Submit" value="使用可能変数を見る" onClick="window.open('hensu.cgi','sub','width=700,height=485,scrollbars=yes,resizable=yes')" class="buttonstyle"></div></td>
+    </tr>
+
+   
+   </table>
+   
+   <div id="submit_btn">
+   	[% IF form.id %]
+   	<input type="button" value="戻る" onclick="location.href='hist_detail.cgi?id=[% form.id %]'" class="buttonstyle">
+   	<input type="submit" name="Submit" value="確認" class="buttonstyle">
+   	<input type="hidden" name="id" value="[% form.id %]">
+   	[% ELSE %]
+   	<input type="submit" name="Submit" value="送信確認画面へ" class="buttonstyle">
+   	[% END %]
+   	
+   </div>
+	<input type="hidden" name="makepreview" value="">
+	<input type="hidden" name="mode" value="[% form.mode|html %]">
+	<input type="hidden" name="ins_ctl" value="">
+	
+	
+	
+</form>
+
+
+
+
+
+
+<div id="confirm_ahref" style="visibility:hidden;position:absolute;top:280px;left:400px;background-color:#FFFFFF;border:1px #000000 solid;">
+
+	<div onmousedown="javascript:SetNodrag(0);" onmouseup="javascript:SetNodrag(1);" style="text-align:left;height=20px;color=#000000;width:350px;background-image:url(./img/bg_img_01.jpg);background-position:center bottom;background-repeat:repeat-x;border:solid 1px #EEEEEE;border-width:1px 1px 0px 1px;">
+		<div style="float:left;padding:3px;"><b>リンク</b></div>
+		<div style="text-align:right;padding:3px;"><a href="javascript:no_ahref();"><img src="img/close.gif"></a></div>
+	
+	</div>
+	
+	
+<div style="text-align:center;border:NONE;background-color:#FFF;width:295px;overflow:auto;scrollbar-3dlight-color:#ffffff;scrollbar-arrow-color:#ffffff;scrollbar-darkshadow-color:#ffffff;scrollbar-face-color:#fff;scrollbar-highlight-color:#ccc;scrollbar-shadow-color:#ccc;scrollbar-track-color:#ffffff;margin-bottom:5px;height:50;">
+<table bgcolor="#FF9900">
+<input type="text" name="gourl" value="" id="gourl" onclick="javascript:this.select();">
+<select name="gotarget" id="gotarget">
+<option value="">self
+<option value="blank">blank
+</select>
+<input type="button" value="挿入" onclick="javascript:insert_href();">
+</table></div>
+
+</div>
+
+
+<script>
+var glPickMode = 'font';
+function mpos(xy){
+
+	var event=windowEvent();
+
+	if (!event.pageX) event.pageX = event.clientX + document.body.scrollLeft;
+	if (!event.pageY) event.pageY = event.clientY + document.body.scrollTop;
+
+	if (xy == "x") {
+		return event.pageX;
+	} else {
+		return event.pageY;
+	}
+}
+
+function windowEvent(){
+	if(window.event) return window.event;
+	var caller = arguments.callee.caller;
+	while(caller){
+		var ob = caller.arguments[0];
+		if(ob && ob.constructor == MouseEvent) return ob;
+		caller = caller.caller;
+	}
+	return null;
+}
+
+<!-- TMPL_VAR NAME=java_array -->
+[% java_array %]
+function template_change() {
+	var id = document.form1.template_list.value;
+	if (!id) {
+		document.form1.mail_title.value = "";
+		document.form1.mail_body.value = "";
+		return "";
+	}
+	document.form1.mail_title.value = arrtemplate[id + "1"];
+	document.form1.mail_body.value = arrtemplate[id + "2"];
+	return 1;
+}
+
+function set(id) {
+	mode = document.forms['form1'].elements['ins_ctl'].value;
+	insert('mail_' + mode, id);
+	//document.forms['form1'].elements['mail_' + mode].value += id;
+	//window.close();
+}
+function no() {
+
+	combo_display("visible");
+	
+	document.getElementById("confirm").style.visibility="hidden";
+}
+function disp(mode) {
+	//document.getElementById("confirm").style.top = (mpos('y') - 150) + "px";
+	document.getElementById("confirm").style.left = mpos('x') - 150 + "px";
+	
+	combo_display("hidden");
+	
+	document.forms['form1'].elements['ins_ctl'].value = mode;
+	document.getElementById("confirm").style.visibility="visible";
+}
+
+function no_colorChart() {
+
+	combo_display("visible");
+	
+	document.getElementById("colorChart").style.display="none";
+}
+
+function no2() {
+
+	combo_display("visible");
+	
+	document.getElementById("confirm2").style.visibility="hidden";
+}
+function disp2(mode) {
+	//document.getElementById("confirm2").style.top = (mpos('y') - 250) + "px";
+	document.getElementById("confirm2").style.left = mpos('x') - 150 + "px";
+
+	combo_display("hidden");
+	
+	document.forms['form1'].elements['ins_ctl'].value = mode;
+	document.getElementById("confirm2").style.visibility="visible";
+}
+
+function no_ahref() {
+
+	combo_display("visible");
+	
+	document.getElementById("confirm_ahref").style.visibility="hidden";
+}
+function disp_ahref(mode) {
+	g_startend('mail_body');
+	
+	//document.getElementById("confirm_ahref").style.top = (mpos('y') - 100) + "px";
+	document.getElementById("confirm_ahref").style.left = mpos('x') - 150 + "px";
+
+	combo_display("hidden");
+	
+	document.forms['form1'].elements['ins_ctl'].value = mode;
+	document.getElementById("confirm_ahref").style.visibility="visible";
+}
+
+
+function insert_br(){
+	var ctl = 'mail_body';
+	//var str = '<br>' + "\n";
+	var str = '<br>';
+	document.forms['form1'].elements[ctl].focus();
+
+	var text_moji = document.forms['form1'].elements[ctl].value;  
+	var moji_len = text_moji.length;  
+
+	var selection = new Selection(document.getElementById(ctl));
+	var s = selection.create();
+	
+	var moji_pos = s.start;
+	
+	var moji_1 = text_moji.substr(0, moji_pos);  
+	var moji_2 = text_moji.substr(moji_pos, moji_len);  
+	document.forms['form1'].elements[ctl].value = moji_1 + str + moji_2;  
+	
+	var plus = str.length + moji_pos;
+	var elm = document.forms['form1'].elements[ctl];
+	elm.focus();
+	if (elm.createTextRange) {
+		var matchcount = moji_1.match(/\r\n|\r|\n/g);
+		if (!matchcount) { matchcount = ""; }
+		moji_1 = moji_1.replace(/\r\n|\r|\n/g, "");
+		if (!moji_1) { moji_1 = ""; }
+		var strcount = moji_1.length;
+		plus = strcount + str.length + matchcount.length;
+		var range = elm.createTextRange();
+		range.move('character', plus);
+		range.select();
+	} else if (elm.setSelectionRange) {
+		elm.setSelectionRange(plus, plus);
+	}
+
+	
+}
+
+function insert_hr(color){
+	var ctl = 'mail_body';
+	var str = '<hr color="' + color + '">';
+	document.forms['form1'].elements[ctl].focus();
+
+	var text_moji = document.forms['form1'].elements[ctl].value;  
+	var moji_len = text_moji.length;  
+
+	var selection = new Selection(document.getElementById(ctl));
+	var s = selection.create();
+	
+	var moji_pos = s.start;
+	
+	var moji_1 = text_moji.substr(0, moji_pos);  
+	var moji_2 = text_moji.substr(moji_pos, moji_len);  
+	document.forms['form1'].elements[ctl].value = moji_1 + str + moji_2;  
+	
+	var plus = str.length + moji_pos;
+	var elm = document.forms['form1'].elements[ctl];
+	elm.focus();
+	if (elm.createTextRange) {
+		var matchcount = moji_1.match(/\r\n|\r|\n/g);
+		if (!matchcount) { matchcount = ""; }
+		moji_1 = moji_1.replace(/\r\n|\r|\n/g, "");
+		if (!moji_1) { moji_1 = ""; }
+		var strcount = moji_1.length;
+		plus = strcount + str.length + matchcount.length;
+		var range = elm.createTextRange();
+		range.move('character', plus);
+		range.select();
+	} else if (elm.setSelectionRange) {
+		elm.setSelectionRange(plus, plus);
+	}
+
+	
+}
+function insert(ctl, str){
+	document.forms['form1'].elements[ctl].focus();
+
+	var text_moji = document.forms['form1'].elements[ctl].value;  
+	var moji_len = text_moji.length;  
+
+	var selection = new Selection(document.getElementById(ctl));
+	var s = selection.create();
+	
+	var moji_pos = s.start;
+	
+	var moji_1 = text_moji.substr(0, moji_pos);  
+	var moji_2 = text_moji.substr(moji_pos, moji_len);  
+	document.forms['form1'].elements[ctl].value = moji_1 + str + moji_2;  
+	
+	var plus = str.length + moji_pos;
+	var elm = document.forms['form1'].elements[ctl];
+	elm.focus();
+	if (elm.createTextRange) {
+		var matchcount = moji_1.match(/\r\n|\r|\n/g);
+		if (!matchcount) { matchcount = ""; }
+		moji_1 = moji_1.replace(/\r\n|\r|\n/g, "");
+		if (!moji_1) { moji_1 = ""; }
+		var strcount = moji_1.length;
+		plus = strcount + str.length + matchcount.length;
+		var range = elm.createTextRange();
+		range.move('character', plus);
+		range.select();
+	} else if (elm.setSelectionRange) {
+		elm.setSelectionRange(plus, plus);
+	}
+
+	
+}
+function preview() {
+	var obj = document.forms['form1'];
+	obj.action = 'email_send_previewhtml.cgi';
+	obj.method = "post";
+	obj.target = "blank";
+	obj.elements['makepreview'].value = 1;
+	obj.submit();
+	obj.action = 'email_send_check.cgi';
+	obj.method = "post";
+	obj.target = "";
+	obj.elements['makepreview'].value = "";
+	
+}
+
+
+
+
+// Cross Browser selectionStart/selectionEnd
+// Version 0.2
+// Copyright (c) 2005-2007 KOSEKI Kengo
+// 
+// This script is distributed under the MIT licence.
+// http://www.opensource.org/licenses/mit-license.php
+
+function Selection(textareaElement) {
+    this.element = textareaElement;
+}
+
+Selection.prototype.create = function() {
+    if (document.selection != null && this.element.selectionStart == null) {
+        return this._ieGetSelection();
+    } else {
+        return this._mozillaGetSelection();
+    }
+}
+
+Selection.prototype._mozillaGetSelection = function() {
+    return { 
+        start: this.element.selectionStart, 
+        end: this.element.selectionEnd 
+    };
+}
+
+Selection.prototype._ieGetSelection = function() {
+    this.element.focus();
+
+    var range = document.selection.createRange();
+    var bookmark = range.getBookmark();
+
+    var contents = this.element.value;
+    var originalContents = contents;
+    var marker = this._createSelectionMarker();
+    while(contents.indexOf(marker) != -1) {
+        marker = this._createSelectionMarker();
+    }
+
+    var parent = range.parentElement();
+    if (parent == null || (!(parent.type == "textarea" || parent.type == "text"))) {
+        return { start: 0, end: 0 };
+    }
+    range.text = marker + range.text + marker;
+    contents = this.element.value;
+
+    var result = {};
+    result.start = contents.indexOf(marker);
+    contents = contents.replace(marker, "");
+    result.end = contents.indexOf(marker);
+
+    this.element.value = originalContents;
+    range.moveToBookmark(bookmark);
+    range.select();
+
+    return result;
+}
+
+Selection.prototype._createSelectionMarker = function() {
+    return "##SELECTION_MARKER_" + Math.random() + "##";
+}
+
+
+
+
+
+
+
+
+function insert_color(str){
+
+	combo_display("visible");
+	
+	var ctl = 'mail_body';
+	
+	
+	if (glPickMode == 'font') {
+		str = '<font color="' + str + '">';
+	} else if (glPickMode == 'backcolor') {
+		str = '<font style="background-color:' + str + '">';
+	} else if (glPickMode == 'hrcolor') {
+		insert_hr(str);
+		return 1;
+	} else if (glPickMode == 'bodycolor') {
+		//str = '<body bgcolor="' + str + '">';
+		//var text_moji = document.forms['form1'].elements[ctl].value;
+
+		//document.forms['form1'].elements[ctl].value = str + text_moji + '</body>'; 
+		
+		document.forms['form1'].elements['bgcolor'].value = str;
+	
+		return 1;
+	}
+	document.forms['form1'].elements[ctl].focus();
+
+	var text_moji = document.forms['form1'].elements[ctl].value;
+	var moji_len = text_moji.length;
+
+	var selection = new Selection(document.getElementById(ctl));
+	var s = selection.create();
+	
+	var moji_pos = s.start;
+	var moji_pos_end = s.end;
+	
+	
+	var moji_1 = text_moji.substr(0, moji_pos);  
+	var moji_2 = text_moji.substr(moji_pos_end, moji_len);  
+	var moji_in = text_moji.substr(moji_pos, (moji_pos_end - moji_pos));
+
+	document.forms['form1'].elements[ctl].value = moji_1 + str + moji_in + '</font>' + moji_2;  
+	
+	var plus = str.length + moji_pos;
+	var elm = document.forms['form1'].elements[ctl];
+	elm.focus();
+	if (elm.createTextRange) {
+		var matchcount = moji_1.match(/\r\n|\r|\n/g);
+		if (!matchcount) { matchcount = ""; }
+		moji_1 = moji_1.replace(/\r\n|\r|\n/g, "");
+		if (!moji_1) { moji_1 = ""; }
+		var strcount = moji_1.length;
+		plus = strcount + str.length + matchcount.length;
+		var range = elm.createTextRange();
+		range.move('character', plus);
+		range.select();
+	} else if (elm.setSelectionRange) {
+		elm.setSelectionRange(plus, plus);
+	}
+
+	
+}
+
+
+
+function insert_div(str){
+
+	combo_display("visible");
+	
+	var ctl = 'mail_body';
+	
+	
+	str = '<div align="' + str + '">';
+	
+	document.forms['form1'].elements[ctl].focus();
+
+	var text_moji = document.forms['form1'].elements[ctl].value;
+	var moji_len = text_moji.length;
+
+	var selection = new Selection(document.getElementById(ctl));
+	var s = selection.create();
+	
+	var moji_pos = s.start;
+	var moji_pos_end = s.end;
+	
+	
+	var moji_1 = text_moji.substr(0, moji_pos);  
+	var moji_2 = text_moji.substr(moji_pos_end, moji_len);  
+	var moji_in = text_moji.substr(moji_pos, (moji_pos_end - moji_pos));
+
+	document.forms['form1'].elements[ctl].value = moji_1 + str + moji_in + '</div>' + moji_2;  
+	
+	var plus = str.length + moji_pos;
+	var elm = document.forms['form1'].elements[ctl];
+	elm.focus();
+	if (elm.createTextRange) {
+		var matchcount = moji_1.match(/\r\n|\r|\n/g);
+		if (!matchcount) { matchcount = ""; }
+		moji_1 = moji_1.replace(/\r\n|\r|\n/g, "");
+		if (!moji_1) { moji_1 = ""; }
+		var strcount = moji_1.length;
+		plus = strcount + str.length + matchcount.length;
+		var range = elm.createTextRange();
+		range.move('character', plus);
+		range.select();
+	} else if (elm.setSelectionRange) {
+		elm.setSelectionRange(plus, plus);
+	}
+
+	
+}
+
+
+function showColorPicker(colormode){
+	glPickMode = colormode;
+	
+	combo_display("hidden");
+	
+	//document.getElementById("colorChart").style.top = (mpos('y') - 100) + "px";
+	document.getElementById("colorChart").style.left = mpos('x') - 150 + "px";
+	document.getElementById('colorChart').style.display='block';
+}
+
+function pick(colorStr) {
+	insert_color(colorStr);
+	document.getElementById('colorChart').style.display='none';
+
+}
+
+
+function combo_display(mode) {
+
+	<!-- TMPL_LOOP NAME=search --> 
+	[% FOREACH v=search %]
+	document.getElementById("search[% v.search_id %]").style.visibility=mode;
+	[% END %]
+	<!-- /TMPL_LOOP -->
+	<!-- TMPL_IF NAME=reserve -->
+	[% IF reserve %]
+	document.getElementById("send_year").style.visibility=mode;
+	document.getElementById("send_mon").style.visibility=mode;
+	document.getElementById("send_day").style.visibility=mode;
+	document.getElementById("send_hour").style.visibility=mode;
+	document.getElementById("send_min").style.visibility=mode;
+	[% END %]
+	<!-- /TMPL_IF -->
+	document.getElementById("template_list").style.visibility=mode;
+}
+
+function change_reserve(mode) {
+	if (mode == "radio") {
+		document.forms['form1'].elements['send_min'].selectedIndex = 0;
+	} else {
+		if (document.forms['form1'].elements['send_min'].value == "") {
+			document.getElementById("reserve_mode").checked = true;
+		} else {
+			document.getElementById("reserve_mode_on").checked = true;
+		}
+	}
+}
+
+var g_start = "";
+var g_end = "";
+
+function g_startend(ctl) {
+	var text_moji = document.forms['form1'].elements[ctl].value;
+	var moji_len = text_moji.length;
+
+	var selection = new Selection(document.getElementById(ctl));
+	var s = selection.create();
+	
+	g_start = s.start;
+	g_end = s.end;
+	
+	return 1;
+}
+
+function insert_href(){
+	
+	var ctl = 'mail_body';
+	document.forms['form1'].elements[ctl].focus();
+	combo_display("visible");
+	document.getElementById("confirm_ahref").style.visibility="hidden";
+	
+	str = document.getElementById("gourl").value;
+	str2 = "";
+	str2 = document.getElementById("gotarget").options[document.getElementById("gotarget").selectedIndex].value;
+
+	
+	if (str2) { str2 = 'target="' + str2 + '"'; }
+	str = '<a href="' + str + '" ' + str2 + '>';
+	
+	document.forms['form1'].elements[ctl].focus();
+
+	var text_moji = document.forms['form1'].elements[ctl].value;
+	var moji_len = text_moji.length;
+
+	var selection = new Selection(document.getElementById(ctl));
+	var s = selection.create();
+	
+	var moji_pos = g_start;
+	var moji_pos_end = g_end;
+	
+	
+	var moji_1 = text_moji.substr(0, moji_pos);  
+	var moji_2 = text_moji.substr(moji_pos_end, moji_len);  
+	var moji_in = text_moji.substr(moji_pos, (moji_pos_end - moji_pos));
+
+	document.forms['form1'].elements[ctl].value = moji_1 + str + moji_in + '</a>' + moji_2;  
+	
+	var plus = str.length + moji_pos;
+	var elm = document.forms['form1'].elements[ctl];
+	elm.focus();
+	if (elm.createTextRange) {
+		var matchcount = moji_1.match(/\r\n|\r|\n/g);
+		if (!matchcount) { matchcount = ""; }
+		moji_1 = moji_1.replace(/\r\n|\r|\n/g, "");
+		if (!moji_1) { moji_1 = ""; }
+		var strcount = moji_1.length;
+		plus = strcount + str.length + matchcount.length;
+		var range = elm.createTextRange();
+		range.move('character', plus);
+		range.select();
+	} else if (elm.setSelectionRange) {
+		elm.setSelectionRange(plus, plus);
+	}
+
+	
+}
+
+function insert_blink(ctl){
+
+// 	combo_display("visible");
+	
+	var ctl = 'mail_body';
+	
+	
+	str = '<blink>';
+	
+	document.forms['form1'].elements[ctl].focus();
+
+	var text_moji = document.forms['form1'].elements[ctl].value;
+	var moji_len = text_moji.length;
+
+	var selection = new Selection(document.getElementById(ctl));
+	var s = selection.create();
+	
+	var moji_pos = s.start;
+	var moji_pos_end = s.end;
+	
+	
+	var moji_1 = text_moji.substr(0, moji_pos);  
+	var moji_2 = text_moji.substr(moji_pos_end, moji_len);  
+	var moji_in = text_moji.substr(moji_pos, (moji_pos_end - moji_pos));
+
+	document.forms['form1'].elements[ctl].value = moji_1 + str + moji_in + '</blink>' + moji_2;  
+	
+	var plus = str.length + moji_pos;
+	var elm = document.forms['form1'].elements[ctl];
+	elm.focus();
+	if (elm.createTextRange) {
+		var matchcount = moji_1.match(/\r\n|\r|\n/g);
+		if (!matchcount) { matchcount = ""; }
+		moji_1 = moji_1.replace(/\r\n|\r|\n/g, "");
+		if (!moji_1) { moji_1 = ""; }
+		var strcount = moji_1.length;
+		plus = strcount + str.length + matchcount.length;
+		var range = elm.createTextRange();
+		range.move('character', plus);
+		range.select();
+	} else if (elm.setSelectionRange) {
+		elm.setSelectionRange(plus, plus);
+	}
+
+	
+}
+
+</script>
+
+<div id="colorChart" style="top:280px;display:none;position:absolute;border:1px #000000 solid;">
+
+	<div onmousedown="javascript:SetNodrag(0);" onmouseup="javascript:SetNodrag(1);" style="text-align:left;height=20px;color=#000000;width:314px;background-image:url(./img/bg_img_01.jpg);background-position:center bottom;background-repeat:repeat-x;border:solid 1px #EEEEEE;border-width:1px 1px 0px 1px;">
+		<div style="float:left;padding:3px;"><b>カラーパレット</b></div>
+		<div style="text-align:right;padding:3px;"><a href="javascript:no_colorChart();"><img src="img/close.gif"></a></div>
+	
+	</div>
+	
+	<div>
+	<img src="image/colorpalet.gif" alt="WebSafe Color Chart" id="webSafeColorChart" usemap="#WebSafeColorMap" style="cursor:default" border="0">
+	<map name="WebSafeColorMap">
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#FF00FF" alt="#FF00FF" coords="2,178,18,194"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#00FFFF" alt="#00FFFF" coords="2,162,18,178"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#FFFF00" alt="#FFFF00" coords="2,146,18,162"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#0000FF" alt="#0000FF" coords="2,130,18,146"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#00FF00" alt="#00FF00" coords="2,114,18,130"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#FF0000" alt="#FF0000" coords="2,98,18,114"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#FFFFFF" alt="#FFFFFF" coords="2,82,18,98"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#CCCCCC" alt="#CCCCCC" coords="2,66,18,82"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#999999" alt="#999999" coords="2,50,18,66"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#666666" alt="#666666" coords="2,34,18,50"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#333333" alt="#333333" coords="2,18,18,34"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#000000" alt="#000000" coords="2,2,18,18"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#3399CC" alt="#3399CC" coords="167,66,183,82"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#FFFF00" alt="#FFFF00" coords="294,98,310,114"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#CCCCCC" alt="#CCCCCC" coords="182,162,198,178"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#9900CC" alt="#9900CC" coords="23,162,39,178"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#6600CC" alt="#6600CC" coords="214,66,230,82"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#FF99FF" alt="#FF99FF" coords="262,178,278,194"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#333333" alt="#333333" coords="135,18,151,34"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#006633" alt="#006633" coords="55,18,71,34"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#669900" alt="#669900" coords="262,2,278,18"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#CCCC33" alt="#CCCC33" coords="182,114,198,130"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#66CCFF" alt="#66CCFF" coords="278,82,294,98"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#CCCC66" alt="#CCCC66" coords="182,130,198,146"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#339966" alt="#339966" coords="167,34,183,50"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#CCFF99" alt="#CCFF99" coords="198,146,214,162"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#339933" alt="#339933" coords="167,18,183,34"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#CC6633" alt="#CC6633" coords="151,114,167,130"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#99CC00" alt="#99CC00" coords="87,98,103,114"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#999966" alt="#999966" coords="71,130,87,146"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#CC00CC" alt="#CC00CC" coords="119,162,135,178"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#006666" alt="#006666" coords="55,34,71,50"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#33CCCC" alt="#33CCCC" coords="182,66,198,82"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#666600" alt="#666600" coords="246,2,262,18"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#33FF66" alt="#33FF66" coords="198,34,214,50"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#333399" alt="#333399" coords="135,50,151,66"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#66FFCC" alt="#66FFCC" coords="294,66,310,82"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#FF6633" alt="#FF6633" coords="246,114,262,130"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#66FF66" alt="#66FF66" coords="294,34,310,50"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#339999" alt="#339999" coords="167,50,183,66"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#FFCC66" alt="#FFCC66" coords="278,130,294,146"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#CC3399" alt="#CC3399" coords="151,146,167,162"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#660066" alt="#660066" coords="214,34,230,50"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#FF66CC" alt="#FF66CC" coords="246,162,262,178"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#3333FF" alt="#3333FF" coords="135,82,151,98"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#0099FF" alt="#0099FF" coords="71,82,87,98"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#FF00FF" alt="#FF00FF" coords="214,178,230,194"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#993300" alt="#993300" coords="39,98,55,114"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#9933FF" alt="#9933FF" coords="39,178,55,194"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#FF6600" alt="#FF6600" coords="246,98,262,114"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#FF9900" alt="#FF9900" coords="262,98,278,114"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#669999" alt="#669999" coords="262,50,278,66"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#333366" alt="#333366" coords="135,34,151,50"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#FFFFCC" alt="#FFFFCC" coords="294,162,310,178"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#330099" alt="#330099" coords="119,50,135,66"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#FF3300" alt="#FF3300" coords="230,98,246,114"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#99CCCC" alt="#99CCCC" coords="87,162,103,178"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#660099" alt="#660099" coords="214,50,230,66"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#FF6699" alt="#FF6699" coords="246,146,262,162"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#33CC66" alt="#33CC66" coords="182,34,198,50"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#00CC00" alt="#00CC00" coords="87,2,103,18"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#CCCC99" alt="#CCCC99" coords="182,146,198,162"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#990066" alt="#990066" coords="23,130,39,146"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#66CC00" alt="#66CC00" coords="278,2,294,18"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#00CCCC" alt="#00CCCC" coords="87,66,103,82"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#0066CC" alt="#0066CC" coords="39,66,55,82"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#CC6600" alt="#CC6600" coords="151,98,167,114"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#003333" alt="#003333" coords="39,18,55,34"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#CC33CC" alt="#CC33CC" coords="151,162,167,178"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#009999" alt="#009999" coords="71,50,87,66"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#0099CC" alt="#0099CC" coords="71,66,87,82"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#336666" alt="#336666" coords="151,34,167,50"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#FFFF66" alt="#FFFF66" coords="294,130,310,146"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#00CCFF" alt="#00CCFF" coords="87,82,103,98"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#99CCFF" alt="#99CCFF" coords="87,178,103,194"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#33CCFF" alt="#33CCFF" coords="182,82,198,98"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#00FF99" alt="#00FF99" coords="103,50,119,66"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#660000" alt="#660000" coords="214,2,230,18"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#990099" alt="#990099" coords="23,146,39,162"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#CC33CC" alt="#CC33CC" coords="135,162,151,178"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#99CC66" alt="#99CC66" coords="87,130,103,146"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#FF66FF" alt="#FF66FF" coords="246,178,262,194"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#FFFF33" alt="#FFFF33" coords="294,114,310,130"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#6699FF" alt="#6699FF" coords="262,82,278,98"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#006699" alt="#006699" coords="55,50,71,66"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#9999CC" alt="#9999CC" coords="71,162,87,178"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#0033FF" alt="#0033FF" coords="39,82,55,98"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#9966CC" alt="#9966CC" coords="55,162,71,178"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#99CC33" alt="#99CC33" coords="87,114,103,130"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#CC3333" alt="#CC3333" coords="135,114,151,130"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#00CC33" alt="#00CC33" coords="87,18,103,34"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#FF00CC" alt="#FF00CC" coords="214,162,230,178"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#333300" alt="#333300" coords="135,2,151,18"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#3300CC" alt="#3300CC" coords="119,66,135,82"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#009933" alt="#009933" coords="71,18,87,34"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#00CC66" alt="#00CC66" coords="87,34,103,50"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#0000FF" alt="#0000FF" coords="23,82,39,98"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#669966" alt="#669966" coords="262,34,278,50"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#66FF99" alt="#66FF99" coords="294,50,310,66"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#339900" alt="#339900" coords="167,2,183,18"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#99FF33" alt="#99FF33" coords="103,114,119,130"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#663300" alt="#663300" coords="230,2,246,18"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#3333CC" alt="#3333CC" coords="135,66,151,82"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#33FF33" alt="#33FF33" coords="198,18,214,34"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#CCCC00" alt="#CCCC00" coords="182,98,198,114"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#CCCCFF" alt="#CCCCFF" coords="182,178,198,194"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#CCFFFF" alt="#CCFFFF" coords="198,178,214,194"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#993333" alt="#993333" coords="39,114,55,130"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#9933CC" alt="#9933CC" coords="39,162,55,178"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#FFCCFF" alt="#FFCCFF" coords="278,178,294,194"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#99FF99" alt="#99FF99" coords="103,146,119,162"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#33FFCC" alt="#33FFCC" coords="198,66,214,82"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#993399" alt="#993399" coords="39,146,55,162"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#CC99FF" alt="#CC99FF" coords="167,178,183,194"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#00FFCC" alt="#00FFCC" coords="103,66,119,82"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#FFCCCC" alt="#FFCCCC" coords="278,162,294,178"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#CC3300" alt="#CC3300" coords="135,98,151,114"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#666633" alt="#666633" coords="246,18,262,34"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#66CC66" alt="#66CC66" coords="278,34,294,50"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#3300FF" alt="#3300FF" coords="119,82,135,98"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#6666CC" alt="#6666CC" coords="246,66,262,82"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#000099" alt="#000099" coords="23,50,39,66"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#66FFFF" alt="#66FFFF" coords="294,82,310,98"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#3399FF" alt="#3399FF" coords="167,82,183,98"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#CCFF66" alt="#CCFF66" coords="198,130,214,146"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#0066FF" alt="#0066FF" coords="55,82,71,98"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#CC9966" alt="#CC9966" coords="167,130,183,146"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#009900" alt="#009900" coords="71,2,87,18"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#FF6666" alt="#FF6666" coords="246,130,262,146"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#CC00FF" alt="#CC00FF" coords="119,178,135,194"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#33FF00" alt="#33FF00" coords="198,2,214,18"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#9999FF" alt="#9999FF" coords="71,178,87,194"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#99FF00" alt="#99FF00" coords="103,98,119,114"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#99FFFF" alt="#99FFFF" coords="103,178,119,194"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#CC33FF" alt="#CC33FF" coords="151,178,167,194"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#CC33FF" alt="#CC33FF" coords="135,178,151,194"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#FFCC99" alt="#FFCC99" coords="278,146,294,162"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#996600" alt="#996600" coords="55,98,71,114"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#FFCC33" alt="#FFCC33" coords="278,114,294,130"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#CCFF33" alt="#CCFF33" coords="198,114,214,130"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#660033" alt="#660033" coords="214,18,230,34"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#330033" alt="#330033" coords="119,18,135,34"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#FF99CC" alt="#FF99CC" coords="262,162,278,178"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#6633FF" alt="#6633FF" coords="230,82,246,98"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#669933" alt="#669933" coords="262,18,278,34"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#000033" alt="#669933" coords="23,18,39,34"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#990000" alt="#990000" coords="23,98,39,114"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#00FF33" alt="#00FF33" coords="103,18,119,34"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#FF3333" alt="#FF3333" coords="230,114,246,130"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#FF0000" alt="#FF0000" coords="214,98,230,114"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#666699" alt="#666699" coords="246,50,262,66"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#663366" alt="#663366" coords="230,34,246,50"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#336633" alt="#336633" coords="151,18,167,34"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#3366CC" alt="#3366CC" coords="151,66,167,82"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#00CC99" alt="#00CC99" coords="87,50,103,66"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#FF3366" alt="#FF3366" coords="230,130,246,146"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#FF33CC" alt="#FF33CC" coords="230,162,246,178"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#99FF66" alt="#99FF66" coords="103,130,119,146"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#009966" alt="#009966" coords="71,34,87,50"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#996666" alt="#996666" coords="55,130,71,146"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#CC9999" alt="#CC9999" coords="167,146,183,162"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#66FF33" alt="#66FF33" coords="294,18,310,34"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#CC0000" alt="#CC0000" coords="119,98,135,114"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#FF0066" alt="#FF0066" coords="214,130,230,146"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#33FFFF" alt="#33FFFF" coords="198,82,214,98"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#666666" alt="#666666" coords="246,34,262,50"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#336600" alt="#336600" coords="151,2,167,18"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#33FF99" alt="#33FF99" coords="198,50,214,66"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#999933" alt="#999933" coords="71,114,87,130"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#999900" alt="#999900" coords="71,98,87,114"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#993366" alt="#993366" coords="39,130,55,146"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#6633CC" alt="#6633CC" coords="230,66,246,82"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#FF9966" alt="#FF9966" coords="262,130,278,146"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#996699" alt="#996699" coords="55,146,71,162"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#3366FF" alt="#3366FF" coords="151,82,167,98"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#CC9933" alt="#CC9933" coords="167,114,183,130"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#003300" alt="#003300" coords="39,2,55,18"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#CC9900" alt="#CC9900" coords="167,98,183,114"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#CC3366" alt="#CC3366" coords="135,130,151,146"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#FFCC00" alt="#FFCC00" coords="278,98,294,114"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#66CCCC" alt="#66CCCC" coords="278,66,294,82"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#CC99CC" alt="#CC99CC" coords="167,162,183,178"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#CC0033" alt="#CC0033" coords="119,114,135,130"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#99CC99" alt="#99CC99" coords="87,146,103,162"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#6666FF" alt="#6666FF" coords="246,82,262,98"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#CC0066" alt="#CC0066" coords="119,130,135,146"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#6699CC" alt="#6699CC" coords="262,66,278,82"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#33CC00" alt="#33CC00" coords="182,2,198,18"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#FFFF99" alt="#FFFF99" coords="294,146,310,162"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#CC3366" alt="#CC3366" coords="151,130,167,146"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#66FF00" alt="#66FF00" coords="294,2,310,18"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#999999" alt="#999999" coords="71,146,87,162"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#003366" alt="#003366" coords="39,34,55,50"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#006600" alt="#006600" coords="55,2,71,18"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#663333" alt="#663333" coords="230,18,246,34"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#990033" alt="#990033" coords="23,114,39,130"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#99FFCC" alt="#99FFCC" coords="103,162,119,178"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#9966FF" alt="#9966FF" coords="55,178,71,194"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#CCFFCC" alt="#CCFFCC" coords="198,162,214,178"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#0000CC" alt="#0000CC" coords="23,66,39,82"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#FFFFFF" alt="#FFFFFF" coords="294,178,310,194"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#66CC99" alt="#66CC99" coords="278,50,294,66"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#CC0099" alt="#CC0099" coords="119,146,135,162"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#FF3399" alt="#FF3399" coords="230,146,246,162"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#00FFFF" alt="#00FFFF" coords="103,82,119,98"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#CCFF00" alt="#CCFF00" coords="198,98,214,114"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#330066" alt="#330066" coords="119,34,135,50"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#336699" alt="#336699" coords="151,50,167,66"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#000066" alt="#000066" coords="23,34,39,50"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#CC3399" alt="#CC3399" coords="135,146,151,162"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#0033CC" alt="#0033CC" coords="55,66,71,82"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#996633" alt="#996633" coords="55,114,71,130"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#66CC33" alt="#66CC33" coords="278,18,294,34"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#00FF66" alt="#00FF66" coords="103,34,119,50"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#003399" alt="#003399" coords="39,50,55,66"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#FF0099" alt="#FF0099" coords="214,146,230,162"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#FF9933" alt="#FF9933" coords="262,114,278,130"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#FF9999" alt="#FF9999" coords="262,146,278,162"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#FF33FF" alt="#FF33FF" coords="230,178,246,194"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#000000" alt="#000000" coords="23,2,39,18"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#9900FF" alt="#9900FF" coords="23,178,39,194"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#663399" alt="#663399" coords="230,50,246,66"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#FF0033" alt="#FF0033" coords="214,114,230,130"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#330000" alt="#330000" coords="119,2,135,18"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#00FF00" alt="#00FF00" coords="103,2,119,18"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#33CC33" alt="#33CC33" coords="182,18,198,34"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#6600FF" alt="#6600FF" coords="214,82,230,98"/>
+	<area shape="rect" href="javascript:void(0)" onclick="pick(this.alt)" title="#33CC99" alt="#33CC99" coords="182,50,198,66"/>
+	</map>
+	</div>
+</div>
+
+
+
+      </div>
+      </div>
+    </div>
+	</div>
+
+
+[% INCLUDE 'tmpl/html_footer.tmpl' %]

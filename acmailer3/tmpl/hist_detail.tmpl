@@ -1,0 +1,175 @@
+[% INCLUDE 'tmpl/html_header.tmpl' %]
+
+[% USE Comma %]
+
+<script language="JavaScript">
+<!--
+function changenum_hist(dispnum,year){
+	window.location.href = "hist_list.cgi?dispnum=" + dispnum + '[% para %]' ;
+
+}
+//-->
+</script>
+
+
+
+
+<div id="contwrapper" class="clearfix">
+  <div id="left_cont">
+  <div id="left_menu">
+    <div id="left_cont_in">
+      <table id="left_cont_table">
+        <tr>
+			<td class="title box"><img src="img/menu.jpg" alt="" /></td>
+        </tr>
+		<tr>
+			<td height="20"></td>
+		</tr>
+		<tr>
+			<td class="menu menubgcolor"><a href="hist_list.cgi">配信履歴</a></td>
+		</tr>
+		<tr>
+			<td class="menu"><a href="backnumber.cgi" target="blank">バックナンバー</a></td>
+		</tr>
+      </table>
+    </div>
+    </div>
+
+
+  [% INCLUDE 'tmpl/html_left_banner.tmpl' %]
+
+  </div>
+  
+
+  
+  <div id="right_cont">
+    <div id="right_cont_title">
+      <table id="right_cont_table_title">
+        <tr>
+          <td class="title box">
+              配信履歴<img src="img/big_arrow.jpg" alt="" />配信履歴詳細<img src="img/big_arrow.jpg" alt="" />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="right_cont_contens">
+    <div id="right_cont_contens_in">
+
+
+
+	[% IF form.editok %]<div align="center"><p style="color:blue;font-weight:bold;">更新しました。</p></div>[% END %]
+   <table id="right_cont_table">
+    <tr valign="top"> 
+      <td class="td_1 box" bgcolor="[% bgcolor %]">送信開始日時</td>
+      <td class="td_2 box" bgcolor="[% bgcolor %]">[% start_send_date %]</td>
+	</tr>
+    <tr valign="top"> 
+      <td class="td_1 box" bgcolor="[% bgcolor %]">送信終了日時</td>
+      <td class="td_2 box" bgcolor="[% bgcolor %]">[% end_send_date %]</td>
+	</tr>
+    <tr valign="top"> 
+	  <td class="td_1 box" bgcolor="[% bgcolor %]">送信タイプ</td>
+	  <td class="td_2 box" bgcolor="[% bgcolor %]">[% IF send_type=="1" %]分割[% ELSIF send_type=="2" %]バックグランド処理[% ELSIF send_type=="0" %]ノーマル[% END %]</td>
+    </tr>
+    <tr valign="top"> 
+	  <td class="td_1 box" bgcolor="[% bgcolor %]">送信モード</td>
+	  <td class="td_2 box" bgcolor="[% bgcolor %]">[% IF mail_type=="plain" %]テキストメール[% ELSIF mail_type=="html" && deco_mode == "deco" %]デコメール[% ELSIF mail_type=="html" %]HTMLメール[% END %]</td>
+    </tr>
+    <tr valign="top"> 
+	  <td class="td_1 box" bgcolor="[% bgcolor %]">絞込み</td>
+	  <td class="td_2 box" bgcolor="[% bgcolor %]">
+	  
+	  [% IF search_text1 != "" %]
+	  [% dispcolname1|html %]：[% search_text1|html %] [% IF searchlike1=="1" %]と一致する[% ELSIF searchlike1=="2" %]を含まない[% ELSE %]を含む[% END %]<br>
+	  [% END %]
+	  
+	  [% IF search_text2 != "" %]
+	  [% dispcolname2|html %]：[% search_text2|html %] [% IF searchlike2=="1" %]と一致する[% ELSIF searchlike2=="2" %]を含まない[% ELSE %]を含む[% END %]<br>
+	  [% END %]
+	  [% IF search_text3 != "" %]
+	  [% dispcolname3|html %]：[% search_text3|html %] [% IF searchlike3=="1" %]と一致する[% ELSIF searchlike3=="2" %]を含まない[% ELSE %]を含む[% END %]<br>
+	  [% END %]
+	  [% IF search_text4 != "" %]
+	  [% dispcolname4|html %]：[% search_text4|html %] [% IF searchlike4=="1" %]と一致する[% ELSIF searchlike4=="2" %]を含まない[% ELSE %]を含む[% END %]<br>
+	  [% END %]
+	  [% IF search_text5 != "" %]
+	  [% dispcolname5|html %]：[% search_text5|html %] [% IF searchlike5=="1" %]と一致する[% ELSIF searchlike5=="2" %]を含まない[% ELSE %]を含む[% END %]<br>
+	  [% END %]
+	  
+	  
+	  条件：
+	  [% IF andor == 'and' %]
+	  AND検索<br>
+	  [% ELSIF andor == 'or' %]
+	  OR検索<br>
+	  [% END %]
+	  ドメイン：
+	  [% IF search_domain == '1' %]
+	  PCのみ
+	  [% ELSIF search_domain == '2' %]
+	  携帯のみ
+	  [% ELSE %]
+	  両方
+	  [% END %]
+	  </td>
+    </tr>
+	[% IF mail_type=="html" %]
+    <tr valign="top"> 
+	  <td class="td_1 box" bgcolor="[% bgcolor %]">HTMLプレビュー</td>
+	  <td class="td_2 box" bgcolor="[% bgcolor %]"><a href="email_send_previewhtml.cgi?mode=hist&id=[% id %]" target="blank">プレビュー</a></td>
+    </tr>
+	[% END %]
+    <tr valign="top"> 
+	  <td class="td_1 box" bgcolor="[% bgcolor %]">件名</td>
+	  <td class="td_2 box" bgcolor="[% bgcolor %]"><div class="wordBreakDiv"><pre>[% mail_title|html %]</pre></div></td>
+    </tr>
+    <tr valign="top"> 
+	  <td class="td_1 box" bgcolor="[% bgcolor %]">本文</td>
+	  <td class="td_2 box" bgcolor="[% bgcolor %]">
+	  <div class="wordBreakDiv">[% IF mail_type=="plain" %]<pre>[% mail_body|html %]</pre>[% ELSIF mail_type=="html" %][% mail_body %][% END %]</div>
+	  </td>
+    </tr>
+    <tr valign="top"> 
+	  <td class="td_1 box" bgcolor="[% bgcolor %]">送信件数</td>
+	  <td class="td_2 box" bgcolor="[% bgcolor %]">[% total_count %]通</td>
+    </tr>
+    <tr valign="top"> 
+	  <td class="td_1 box" bgcolor="[% bgcolor %]">不着件数</td>
+	  <td class="td_2 box" bgcolor="[% bgcolor %]">[% IF !errmail_count %]0通[% ELSE %][% errmail_count %][% END %]</td>
+    </tr>
+	
+	[% IF email_list %]
+    <tr valign="top"> 
+	  <td class="td_1 box" bgcolor="[% bgcolor %]">送信先</td>
+	  <td class="td_2 box" bgcolor="[% bgcolor %]">
+	[% FOREACH v=email_list %]
+	・[% v.email %]<br>
+	[% END %]
+	  </td>
+    </tr>
+	[% END %]
+  </table>
+</div>
+<br><div align="center">
+<input type="button" value="戻る" onclick="location.href='hist_list.cgi?back=1'" class="buttonstyle">
+
+[% IF reserve && status == "3" %]
+<input type="button" value="編集" onclick="location.href='email_send.cgi?id=[% id %]'" class="buttonstyle">
+<input type="button" value="予約キャンセル" onclick="javascript:cancelReserve();" class="buttonstyle"/>
+[% END %]
+</div><br>
+
+<script>
+function cancelReserve() {
+	if (confirm("予約をキャンセルしてもよろしいですか？")) {
+		location.href='hist_list.cgi?reserve_cancel=1&id=[% id %]';
+	}
+}
+</script>
+
+</div>
+</div>
+</div>
+</div>
+
+[% INCLUDE 'tmpl/html_footer.tmpl' %]

@@ -1,0 +1,137 @@
+[% INCLUDE 'tmpl/html_header_nomenu.tmpl' %]
+
+
+
+<br><br>
+
+<form action="[% admindata.homeurl %]reg.cgi" method="post" name="form2">
+  <table border="0" cellspacing="3" cellpadding="0" style="border:solid 1px #CCC; background-color:#FFF; text-align:left; border-collapse:separate; border-spacing:3px; width:500px;">
+    <tr>
+      <td style="background-color:#FFCC00; width:500px; color:#FFF; font-size:14px; font-weight:bold; padding-right:0px; padding-top:3px; padding-bottom:2px; text-align:left; padding-left:4px;" colspan="2">メルマガ登録</td>
+    </tr>
+    <tr>
+      <td style="width:200px; background-color:#FFF; padding:0px;">
+	 メールアドレス
+	  </td><td style="width:300px; background-color:#FFF; padding:0px;">
+	  <input type="text" name="email" value="">
+	  </td>
+    </tr>
+    [% FOREACH v = freecol_list %]
+		[% IF v.coldisp && v.coltype != "hidden" %]
+	    <tr>
+	      <td style="width:200px; background-color:#FFF; padding:0px;">
+		  [% v.colname|html %]
+		  </td><td style="width:300px; background-color:#FFF; padding:0px;">
+		  [% IF v.coltype == "text" %]
+		  <input type="text" name="col[% v.num %]" value="[% v.coltext|html %]" style="height:16px; width:135px; margin-top:5px; margin-bottom:1px;">
+		  [% ELSIF v.coltype == "textarea" %]
+		  <textarea name="col[% v.num %]" style="width:200px;height:100px;">[% v.coltext|html %]</textarea>
+		  [% ELSIF v.coltype == "radio" %]
+		  	[% FOREACH v2 = v.autodatalist %]
+		  	<input type="radio" name="col[% v.num %]" value="[% v2.coltext|html %]">[% v2.coltext|html %]
+		  	[% END %]
+		  [% ELSIF v.coltype == "checkbox" %]
+		  	[% FOREACH v2 = v.autodatalist %]
+		  	<input type="checkbox" name="col[% v.num %]" value="[% v2.coltext|html %]">[% v2.coltext|html %]
+		  	[% END %]
+		  [% ELSIF v.coltype == "select" %]
+		  	<select name="col[% v.num %]">
+			<option value="">---
+		  	[% FOREACH v2 = v.autodatalist %]
+		  	<option value="[% v2.coltext|html %]">[% v2.coltext|html %]
+		  	[% END %]
+			</select>
+		  [% END %]
+		  </td>
+	    </tr>
+		[% ELSIF v.coltype == "hidden" %]
+		<input type="hidden" name="col[% v.num %]" value="[% v.coltext|html %]">
+		[% END %]
+	[% END %]
+	<tr><td colspan="2" align="center">
+		<input type="hidden" name="reg" value="add">
+		<input type="submit" value="登録">
+		<input type="hidden" name="encode" value="文字コード">
+		<input type="hidden" name="checkbox_list" value="[% checkbox_list %]">
+
+	  </td></tr>
+    <tr>
+      <td style="background-color:#FFF; padding-left:0px; padding-top:4px; padding-bottom:2px; padding-right:0px; _padding-bottom:0px; _padding-top:0px;" colspan="2">
+	  [% UNLESS writing %]
+        <div style="text-align:right; padding-right:4px; font-size:10px; color:#999;">powered by<a href="http://www.acmailer.jp/" target="_blank" title="メール配信CGI acmailer"><img src="[% homeurl %]img/logo_form.jpg" alt="メール配信CGI acmailer" style="border:none; padding:0; margin:0; margin-left:5px; vertical-align:middle; height:auto;" /></a></div>
+       [% END %]</td>
+    </tr>
+  </table>
+</form>
+
+
+<br><br>
+
+
+
+
+<div id="textarea_box1" name="textarea_box1" style="display:block;background-color:#FFFFFF;border:1px #000000 solid;width:600px;">
+	<div onmousedown="javascript:SetNodrag(0);" onmouseup="javascript:SetNodrag(1);" id="textarea_box1_bar" name="textarea_box1_bar" style="text-align:left;height=20px;color=#000000;width:598px;background-image:url(./img/bg_img_01.jpg);background-position:center bottom;background-repeat:repeat-x;border:solid 1px #EEEEEE;border-width:1px 1px 0px 1px;">
+		<div style="float:left;padding:3px;"><b>自動生成HTMLタグ</b></div><div style="text-align:right;padding:3px;height:19px;">&nbsp;</div>
+	<!--	<div style="text-align:right;padding:3px;"><a href="javascript:window.close();"><img src="img/close.gif"></a></div>-->
+	
+	</div>
+	<div style="background-color:#000000;">
+              <span  id="file_in"><textarea id="showtext" style="width:600px; height:250px; overflow:auto;" onClick="this.select();">
+<form action="[% admindata.homeurl %]reg.cgi" method="post" name="form2">
+  <table border="0" cellspacing="3" cellpadding="0" style="border:solid 1px #CCC; background-color:#FFF; text-align:left; border-collapse:separate; border-spacing:3px; width:500px;">
+    <tr>
+      <td style="background-color:#FFCC00; width:500px; color:#FFF; font-size:14px; font-weight:bold; padding-right:0px; padding-top:3px; padding-bottom:2px; text-align:left; padding-left:4px;" colspan="2">メルマガ登録</td>
+    </tr>
+    <tr>
+      <td style="width:200px; background-color:#FFF; padding:0px;">
+	 メールアドレス
+	  </td><td style="width:300px; background-color:#FFF; padding:0px;">
+	  <input type="text" name="email" value="">
+	  </td>
+    </tr>  [% FOREACH v = freecol_list %]	[% IF v.coldisp && v.coltype != "hidden" %]    <tr>
+      <td style="width:200px; background-color:#FFF; padding:0px;">
+	  [% v.colname|html %]
+	  </td>
+	  <td style="width:300px; background-color:#FFF; padding:0px;">
+	  [% IF v.coltype == "text" %]	  <input type="text" name="col[% v.num %]" value="[% v.coltext|html %]" style="height:16px; width:135px; margin-top:5px; margin-bottom:1px;">
+	  [% ELSIF v.coltype == "textarea" %]	  &lt;textarea name="col[% v.num %]" style="width:200px;height:100px;"&gt;[% v.coltext|html %] &lt;/textarea&gt;
+	  [% ELSIF v.coltype == "radio" %]	  	[% FOREACH v2 = v.autodatalist %]
+	  <input type="radio" name="col[% v.num %]" value="[% v2.coltext|html %]">[% v2.coltext|html %]	  	[% END %]
+	  [% ELSIF v.coltype == "checkbox" %]	  	[% FOREACH v2 = v.autodatalist %]
+	  <input type="checkbox" name="col[% v.num %]" value="[% v2.coltext|html %]">[% v2.coltext|html %]	  	[% END %]
+	  [% ELSIF v.coltype == "select" %]	  	<select name="col[% v.num %]">
+		<option value="">---
+	  	[% FOREACH v2 = v.autodatalist %]	  	
+		<option value="[% v2.coltext|html %]">[% v2.coltext|html %]	  	[% END %]
+		</select>
+	  [% END %]
+	  </td>
+    </tr>
+	[% ELSIF v.coltype == "hidden" %]	  <input type="hidden" name="col[% v.num %]" value="[% v.coltext|html %]">
+	[% END %]	[% END %]
+	<tr><td colspan="2" align="center">
+		<input type="hidden" name="reg" value="add">
+		<input type="submit" value="登録">
+		<input type="hidden" name="encode" value="文字コード">
+		<input type="hidden" name="checkbox_list" value="[% checkbox_list %]">
+
+	  </td></tr>
+    <tr>
+      <td style="background-color:#FFF; padding-left:0px; padding-top:4px; padding-bottom:2px; padding-right:0px; _padding-bottom:0px; _padding-top:0px;" colspan="2">
+	  [% UNLESS writing %]
+        <div style="text-align:right; padding-right:4px; font-size:10px; color:#999;">powered by<a href="http://www.acmailer.jp/" target="_blank" title="メール配信CGI acmailer"><img src="[% homeurl %]img/logo_form.jpg" alt="メール配信CGI acmailer" style="border:none; padding:0; margin:0; margin-left:5px; vertical-align:middle; height:auto;" /></a></div>
+       [% END %]</td>
+    </tr>
+  </table>
+</form>
+              </textarea>
+			  </span>
+		</div>
+		
+	  </div>
+
+<br><br>
+<input type="button" value="このウィンドウを閉じる" onclick="javascript:window.close();">
+
+[% INCLUDE 'tmpl/html_footer_nomenu.tmpl' %]

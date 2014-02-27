@@ -1,0 +1,59 @@
+[% INCLUDE 'tmpl/html_mobileheader.tmpl' %]
+
+<div style="background-color:#FFCC00;text-align:center;padding:5px;">
+	ﾒｰﾙｱﾄﾞﾚｽ一括登録
+</div>
+
+
+[% IF oktext %]
+<p style="font-size:small;"><font size="1" color="red"><b>[% oktext %]</b></font></p>
+[% END %]
+
+<form name="form1" method="post" action="email_add.cgi" accept-charset="euc-jp">
+<table width="100%">
+	<tr>
+		<td class="td_title" style="background:#E6E6E6;">
+			<span style="font-size:small;">
+			<font size="1">
+			登録するﾒｰﾙｱﾄﾞﾚｽ一行ずつ入力してください<br>
+			（個別の情報はカンマ区切りで入力してください）
+			</font>
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td class="pb_10">
+			<span style="font-size:small;">
+			<font size="1">
+			<textarea  name="emailall" rows="3" cols="50" [% sys.input_type %]></textarea>
+			</font>
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td class="pb_10">
+			<span style="font-size:small;">
+			<font size="1">
+			<input type="radio" name="send_flg_read" value="1" checked>全て配信ﾌﾗｸﾞをON<br>
+			<input type="radio" name="send_flg_read" value="0">全て配信ﾌﾗｸﾞをOFF<br>
+			<input type="radio" name="send_flg_read" value="2">配信ﾌﾗｸﾞの変更無し
+			</font>
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td class="pb_10" style="text-align:center;">
+			<span style="font-size:small;">
+			<font size="1">
+				<input type="submit" name="Submit" value="一括登録">
+				<input type="hidden" name="sid" value="[% form.sid %]">
+				<input type="hidden" name="check" value="1">
+			</font>
+			</span>
+		</td>
+	</tr>
+</table>
+</form>
+
+
+[% INCLUDE 'tmpl/html_mobilefooter.tmpl' %]

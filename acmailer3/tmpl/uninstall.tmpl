@@ -1,0 +1,153 @@
+[% INCLUDE 'tmpl/html_header.tmpl' %]
+<script src="./js/drag.js" type="text/javascript"></script>
+
+
+
+
+
+
+<div id="contwrapper" class="clearfix">
+  <div id="left_cont">
+  <div id="left_menu">
+    <div id="left_cont_in">
+      <table id="left_cont_table">
+        <tr>
+          <td class="title box"><img src="img/menu.jpg" alt="" /></td>
+        </tr>
+		          <tr><td height="20"></td></tr>
+
+              <tr>
+                <td class="menu [% IF form.display=='mail' %]menubgcolor[% END %]"><a href="admin_edit.cgi?display=mail">メール設定</a></td>
+              </tr>
+              <tr>
+                <td class="menu [% IF form.display=='free' %]menubgcolor[% END %]"><a href="admin_edit.cgi?display=free">自由項目設定</a></td>
+              </tr>
+              <tr>
+                <td class="menu [% IF form.display=='default' %]menubgcolor[% END %]"><a href="admin_edit.cgi?display=default">全般設定</a></td>
+              </tr>
+              <tr>
+                <td class="menu [% IF form.display=='autoreg' %]menubgcolor[% END %]"><a href="admin_edit.cgi?display=autoreg">空メール設定</a></td>
+              </tr>
+              <tr>
+                <td class="menu [% IF form.display=='reserve' %]menubgcolor[% END %]"><a href="admin_edit.cgi?display=reserve">予約配信設定</a></td>
+              </tr>
+              <tr>
+                <td class="menu [% IF form.display=='errmail' %]menubgcolor[% END %]"><a href="admin_edit.cgi?display=errmail">不着設定</a></td>
+              </tr>
+              <tr>
+                <td class="menu [% IF form.display=='system' %]menubgcolor[% END %]"><a href="admin_edit.cgi?display=system">システム設定</a></td>
+              </tr>
+              <tr>
+                <td class="menu [% IF form.display=='license' %]menubgcolor[% END %]"><a href="admin_edit.cgi?display=license">ライセンス</a></td>
+              </tr>
+              <tr>
+                <td class="menu [% IF form.display=='topmemo' %]menubgcolor[% END %]"><a href="admin_edit.cgi?display=topmemo">トップページメモ</a></td>
+              </tr>
+              <tr>
+                <td class="menu [% IF form.display=='mobile' %]menubgcolor[% END %]"><a href="admin_edit.cgi?display=mobile">携帯ドメイン設定</a></td>
+              </tr>
+			  
+			[% IF admindata.double_opt == "1" %]
+			  <tr>
+                <td class="menu"><a href="clean_double_opt.cgi">仮登録データ一覧</a></td>
+              </tr>
+            [% END %]
+			[% IF admindata.errmail == "1" %]
+              <tr>
+                <td class="menu"><a href="errmail_list.cgi">不着メール管理</a></td>
+              </tr>
+			[% END %]
+              <tr>
+                <td class="menu"><a href="export.cgi">設定エクスポート</a></td>
+              </tr>
+              <tr>
+                <td class="menu lastmenu"><a href="import.cgi">設定インポート</a></td>
+              </tr>
+
+
+      </table>
+    </div>
+    </div>
+
+
+  [% INCLUDE 'tmpl/html_left_banner.tmpl' %]
+
+  </div>
+  
+
+  
+  <div id="right_cont">
+    <div id="right_cont_title">
+      <table id="right_cont_table_title">
+        <tr>
+          <td class="title box">
+              各種設定<img src="img/big_arrow.jpg" alt="" />アンインストール補助<img src="img/big_arrow.jpg" alt="" />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="right_cont_contens">
+    <div id="right_cont_contens_in">
+
+
+
+
+
+<div align="center">
+	<br><br>
+	削除を実行すると、ACMAILERが作成したdataディレクトリとsessionディレクトリが削除されることになります。<br>
+	削除される前にバックアップを取るなどの作業をお願いします。
+	<br><br>
+
+	<input type="button" value="ACMAILERデータ削除" onclick="javascript:disp();">
+
+
+
+
+	<br><br>
+	<div id="confirm" style="visibility:hidden;position: relative;border:solid 1px #000000;width:350px;">
+		<div onmousedown="javascript:SetNodrag(0);" onmouseup="javascript:SetNodrag(1);" style="text-align:left;height=20px;color=#000000;width:350px;background-image:url(./img/bg_img_01.jpg);background-position:center bottom;background-repeat:repeat-x;border:solid 1px #EEEEEE;border-width:1px 1px 0px 1px;">
+			<div style="float:left;padding:3px;"><b>確認</b></div>
+			<div style="text-align:right;padding:3px;"><a href="javascript:no();"><img src="img/close.gif"></a></div>
+	
+		</div>
+
+		<div style="background-color:#FFFFFF;height=200px;color=#000000;width:100%;font-size:12px;border:solid 1px #EBEBEB;">
+		ACMAILERが作成したファイルが削除され、<br><b><font color="red">元に戻すことができなくなります</font></b>。<br><br>
+		サーバに<font color="blue">アップロードされているファイルを編集されている方</font>は、このアンインストーラが正常に動作しない可能性があります。<br>
+		その場合は、手動でファイルを削除してください。
+		<br><br>
+
+		ACMAILERが作成したファイルを削除しますか？
+
+
+		<form action="uninstall.cgi" method="post">
+		<table width="200" style="width:200px;"><tr><td width="100"  align="center">
+		<input type="button" value="いいえ" onclick="javascript:no();">
+		</td><td width="100" align="center">
+		<input type="hidden" name="uninstall" value="1">
+		<input type="submit" value="はい">
+		</td></tr></table>
+		</form>
+
+		</div>
+	</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<script language="javascript">
+
+function no() {
+	document.getElementById("confirm").style.visibility="hidden";
+}
+function disp() {
+	document.getElementById("confirm").style.visibility="visible";
+}
+</script>
+
+
+[% INCLUDE 'tmpl/html_footer.tmpl' %]

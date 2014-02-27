@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+.tabContainer {
+	width: 700px;
+	text-align:left;
+}
+
+li {
+	list-style-type: none;
+}
+
+/* タブ */
+.tabContainer ul.tabMenu li {
+	float: left;
+	margin-right: 0px;
+	padding: 0;
+	position: relative;
+	/*letter-spacing: .1em;*/
+
+}
+
+/* 未選択 */
+.tabContainer ul.tabMenu li a {
+	display: block;
+	float: left;
+	padding: 3px 7px;
+	border-left: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	border-right: 1px solid #CCCCCC;
+	border-top: 1px solid #CCCCCC;
+	color: #999;
+	text-decoration: none;
+	font-size:12px;
+}
+
+/* 選択中 */
+.tabContainer ul.tabMenu li.active a {
+	position: relative;
+	top: 0px;
+	border-left: 1px solid orange;
+	border-bottom: 1px solid orange;
+	border-right: 1px solid orange;
+	border-top: 1px solid orange;
+	background-color:#FFCC66;
+	color: #000;
+}
+
+/* カーソル時 */
+.tabContainer ul.tabMenu li a:hover {
+	color: #000;
+}

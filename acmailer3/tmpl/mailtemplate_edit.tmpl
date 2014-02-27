@@ -1,0 +1,96 @@
+[% INCLUDE 'tmpl/html_header.tmpl' %]
+
+
+
+<div id="contwrapper" class="clearfix">
+  <div id="left_cont">
+  <div id="left_menu">
+    <div id="left_cont_in">
+      <table id="left_cont_table">
+        <tr>
+          <td class="title box"><img src="img/menu.jpg" alt="" /></td>
+        </tr>
+		
+		          <tr><td height="20"></td></tr>
+
+              <tr>
+                <td class="menu menubgcolor"><a href="mailtemplate_list.cgi">配信メール</a></td>
+              </tr>
+        
+              <tr>
+                <td class="menu lastmenu"><a href="form_edit.cgi">自動返信メール</a></td>
+              </tr>
+
+
+      </table>
+    </div>
+    </div>
+
+
+  [% INCLUDE 'tmpl/html_left_banner.tmpl' %]
+
+  </div>
+  
+
+  
+  <div id="right_cont">
+    <div id="right_cont_title">
+      <table id="right_cont_table_title">
+        <tr>
+          <td class="title box">
+              メールテンプレート<img src="img/big_arrow.jpg" alt="" />配信メールテンプレート編集<img src="img/big_arrow.jpg" alt="" />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="right_cont_contens">
+    <div id="right_cont_contens_in">
+
+
+  <br>
+<font color="red">[% error_message %]</font>
+<font color="blue"><b>[% IF updok %]更新しました[% END %][% IF addok %]新規追加しました[% END %]</b></font>
+  <form action="mailtemplate_edit.cgi" method="post">
+  
+  
+   <table id="right_cont_table">
+
+    <tr valign="top"> 
+      <td class="td_1 box">テンプレート名</td>
+      <td bgcolor="#FFFFFF" class="td_2 box"><input type="text" name="template_name" value="[% template_name|html %]" size="60"></td>
+	</tr>
+    <tr valign="top"> 
+	  <td class="td_1 box">件名</td>
+	  <td bgcolor="#FFFFFF" class="td_2 box"><input type="text" name="mail_title" value="[% mail_title|html %]" size="60"></td>
+    </tr>
+    <tr valign="top"> 
+	  <td class="td_1 box">本文</td>
+	  <td bgcolor="#FFFFFF" class="td_2 box"><textarea name="mail_body" rows="10" style="width:450px;">[% mail_body|html %]</textarea>
+	  <div id="hensu_btn"><input type="button" name="Submit" value="使用可能変数を見る" onClick="window.open('hensu.cgi','sub','width=700,height=485,scrollbars=yes,resizable=yes')" class="buttonstyle"></div>
+	  </td>
+    </tr>
+
+    <tr valign="top" class="td_2 box"> 
+	  <td bgcolor="#FFFFFF" colspan="2" align="center"><input type="submit" value="更新" class="buttonstyle">
+	  &nbsp;&nbsp;<input type="button" value="戻る" onclick="location.href='mailtemplate_list.cgi'" class="buttonstyle">
+	  </td>
+	  <input type="hidden" name="id" value="[% id %]">
+	  <input type="hidden" name="default" value="[% default %]">
+	  <input type="hidden" name="reg" value="1">
+    </tr>
+	
+	
+	
+	
+  </table>
+  </form>
+</div>
+
+
+      </div>
+      </div>
+    </div>
+	</div>
+
+
+[% INCLUDE 'tmpl/html_footer.tmpl' %]

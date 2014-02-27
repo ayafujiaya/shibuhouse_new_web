@@ -1,0 +1,276 @@
+[% INCLUDE 'tmpl/html_header.tmpl' %]
+
+<script language="JavaScript">
+<!--
+var set=0;
+function nidoosi() {
+if(set==0){
+set=1;
+}else{
+alert("ただ今送信中です。\nそのままお待ちください。");
+return false
+}
+}
+function go_submit(pMode) {
+	if (pMode == "hist") {
+		if (confirm("更新してもよろしいですか？")) {
+			document.form1.action = "email_send_check.cgi";
+			document.form1.submit();
+		}
+	} else {
+		if (confirm("送信を開始します。よろしいですか？")) {
+			document.form1.submit();
+		}
+	}
+}
+//-->
+</script>
+
+<style>
+[% IF form.id %]
+.td_1 {
+	background-color: #CCFFFF;
+}
+.reserve_no_edit {
+	background-color: #CCFFFF;
+}
+
+[% END %]
+</style>
+
+<div id="contwrapper" class="clearfix">
+  <div id="left_cont">
+  <div id="left_menu">
+    <div id="left_cont_in">
+      <table id="left_cont_table">
+        <tr>
+          <td class="title box"><img src="img/menu.jpg" alt="" /></td>
+        </tr>
+          <tr><td height="20"></td></tr>
+          [% IF form.id %]
+		<tr>
+			<td class="menu menubgcolor"><a href="hist_list.cgi">配信履歴</a></td>
+		</tr>
+		<tr>
+			<td class="menu"><a href="backnumber.cgi" target="blank">バックナンバー</a></td>
+		</tr>
+          [% ELSE %]
+        <tr>
+          <td class="menu[% IF form.mode=="" %] menubgcolor[% END %]"><a href="email_send.cgi">テキストメール配信</a></td>
+        </tr>
+        <tr>
+          <td class="menu[% IF form.mode=="html" %] menubgcolor[% END %]"><a href="email_send.cgi?mode=html">HTMLメール配信</a></td>
+        </tr>
+        <tr>
+          <td class="menu lastmenu[% IF form.mode=="deco" %] menubgcolor[% END %]"><a href="email_send.cgi?mode=deco">デコメール配信</a></td>
+        </tr>
+        [% END %]
+      </table>
+    </div>
+    </div>
+  
+  [% INCLUDE 'tmpl/html_left_banner.tmpl' %]
+  </div>
+  
+  <div id="right_cont">
+    <div id="right_cont_title">
+      <table id="right_cont_table_title">
+        <tr>
+          <td class="title box">
+          	[% IF form.id %]
+				配信履歴<img src="img/big_arrow.jpg" alt="" />配信履歴詳細<img src="img/big_arrow.jpg" alt="" />予約内容編集<img src="img/big_arrow.jpg" alt="" />
+            [% ELSE %]
+            	メール配信<img src="img/big_arrow.jpg" alt="" />メール配信確認<img src="img/big_arrow.jpg" alt="" />
+            [% END %]
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="right_cont_contens">
+    <div id="right_cont_contens_in">
+
+
+
+
+
+<div align="center">
+
+<form name="form1" method="post" action="email_send_ctl.cgi" onSubmit="return nidoosi()">
+
+  <input type="hidden" name="mail_session_id" value="[% form.mail_session_id %]" />
+
+   <table id="right_cont_table" style="text-align:left;">
+
+<tr>
+	<td colspan="2" class="listtitle box">送信確認画面</td>
+</tr>
+    <tr valign="top"> 
+      <td class="td_1 box">送信先件数</td>
+      <td class="td_2 box reserve_no_edit">[% sender_total %]/[% totalnum %]　 
+	  <input type="button" value="表示" onclick="window.open('email_send_list.cgi?mail_session_id=[% form.mail_session_id %]','sub','width=530,height=650,scrollbars=yes,resizable=yes');" class="buttonstyle"> 
+	  <input type="button" value="ダウンロード" onclick="location.href='email_send_list.cgi?down_mode=csv&mail_session_id=[% form.mail_session_id %]'" class="buttonstyle"></td>
+    </tr>
+    <tr valign="top"> 
+      <td class="td_1 box">差出人</td>
+      <td class="td_2 box reserve_no_edit">[% admin_name %] &lt;[% admin_email %]&gt;　</td>
+    </tr>
+	[% IF form.id %]
+    <tr valign="top"> 
+      <td class="td_1 box">送信モード</td>
+      <td class="td_2 box reserve_no_edit">
+      	[% IF form.mode=="html" %]
+      	HTMLメール
+      	[% ELSIF form.mode=="deco" %]
+      	デコメール
+      	[% ELSE %]
+      	テキストメール
+      	[% END %] 
+	  </td>
+    </tr>
+    [% END %]
+	[% IF reserve %]
+	<tr valign="top"> 
+      <td class="td_1 box">配信日時</td>
+      <td class="td_2 box">[% IF form.reserve_mode %]予約配信 [% send_year %]年[% send_mon %]月[% send_day %]日[% send_hour %]時[% send_min %]分[% ELSE %]今すぐ[% END %]
+	  <input type="hidden" name="reserve_mode" value="[% form.reserve_mode %]">
+	  <input type="hidden" name="send_year" value="[% send_year %]">
+	  <input type="hidden" name="send_mon" value="[% send_mon %]">
+	  <input type="hidden" name="send_day" value="[% send_day %]">
+	  <input type="hidden" name="send_hour" value="[% send_hour %]">
+	  <input type="hidden" name="send_min" value="[% send_min %]">
+	  </td>
+    </tr>
+	[% END %]
+    <tr valign="top"> 
+      <td class="td_1 box">絞込</td>
+      <td class="td_2 box">
+[% FOREACH v=search %]
+	[% IF v.search_text %]
+	[% v.search_col|html %]
+	：[% v.search_text|html %] 
+	[% IF v.searchlike == "1" %]
+	と一致する
+	[% ELSIF v.searchlike == "2" %]
+	を含まない
+	[% ELSE %]
+	を含む
+	[% END %]
+	<br>
+	<input type="hidden" name="search_text[% v.num %]" value="[% v.search_text|html %]">
+	<input type="hidden" name="search_colname[% v.num %]" value="[% v.search_col|html %]">
+	[% END %]
+[% END %]
+      
+      </td>
+    </tr>
+	
+    <tr valign="top"> 
+      <td class="td_1 box">条件</td>
+      <td class="td_2 box">
+		[% IF form.andor == 'and' %]
+		AND検索
+		[% ELSIF form.andor == 'or' %]
+		OR検索
+		[% END %]
+		
+	  </td>
+    </tr>
+
+	<tr>
+      <td class="td_1 box">ドメイン</td>
+      <td class="td_2 box">
+	  [% IF form.search_domain == '' %]
+	  両方
+	  [% ELSIF form.search_domain == '1' %]
+	  PCのみ
+	  [% ELSIF form.search_domain == '2' %]
+	  携帯のみ
+	  [% END %]
+	  
+	</tr>
+	
+	
+
+    <tr valign="top"> 
+      <td class="td_1 box">メール形式</td>
+      <td class="td_2 box">[% IF form.mail_type=="plain" %]テキスト[% ELSIF form.mail_type=="html" %]HTML[% END %]
+      <input type="hidden" name="mail_type" value="[% form.mail_type %]"></td>
+    </tr>
+    <tr valign="top"> 
+      <td class="td_1 box">件名</td>
+      <td class="td_2 box">
+      	<div class="wordBreakDiv"><pre>[% mail_title %]<input type="hidden" name="mail_title" value="[% mail_title|html %]"></pre></div>
+      </td>
+    </tr>
+
+    <tr valign="top"> 
+      <td class="td_1 box">本文</td>
+      <td class="td_2 box" bgcolor="#FFFFFF">
+      	<div class="wordBreakDiv"><pre>[% mail_body|html_line_break %]<input type="hidden" name="mail_body" value="[% mail_body|html %]"></pre></div>
+      </td>
+    </tr>
+
+	
+	[% IF form.mail_type=="html" %]
+	    <tr valign="top"> 
+      <td class="td_1 box">プレビュー</td>
+      <td class="td_2 box"><input type="button" name="Submit" value="表示" onclick="window.open('email_send_previewhtml.cgi?mail_session_id=[% form.mail_session_id %]&boutou=1&mail_type=[% form.mail_type %]');" class="buttonstyle"> </td>
+    </tr>
+	<input type="hidden" name="send_type" value="[% send_type %]">
+	[% END %]
+	
+
+	[% IF form.id %]
+  		<input type="hidden" name="id" value="[% form.id %]">
+  		<input type="hidden" name="regmode" value="hist">
+  		<input type="hidden" name="total_count" value="[% sender_total %]">
+	[% END %]
+	</form>
+	
+	
+<tr><td colspan="2" align="center" class="box">
+	<form action="email_send_ctl.cgi" method="post" target="blank">
+
+	  <input type="hidden" name="mail_session_id" value="[% form.mail_session_id %]" />
+
+	   <input type="text" name="test_email" value="[% admindata.admin_email|html %]" style="width:250px;"><input type="submit" value="テスト送信" style="margin-left:5px; width:100px;" class="buttonstyle">　※任意のアドレスへテストメールを送信します
+	   <br />
+	   <span style="color:red;font-weight:bold;">テスト送信では送信先リスト一件目の値が変数に差し替えられて配信されます。</span>
+	   <input type="hidden" name="send_test" value="1">
+	   <input type="hidden" name="mail_type" value="[% form.mail_type %]">
+	   <input type="hidden" name="disp_id" value="[% form.disp_id %]">
+	</form>
+</td></tr>
+    <tr valign="top"> 
+      <td colspan="2" bgcolor="#FFFFFF" style="text-align:center;"><div style="margin-top:15px; margin-bottom:50px;">
+			<input type="button" value="戻る" onclick="location.href='email_send.cgi?back=1&mail_session_id=[% form.mail_session_id %]&mode=[% form.mode %]'" class="buttonstyle">
+			&nbsp;&nbsp;
+      	[% IF form.id %]
+      		<input type="button" value="更新" onclick="javascript:go_submit('hist');" class="buttonstyle">
+      	[% ELSE %]
+            <input type="button" name="" value="送信開始" onclick="javascript:go_submit('');" class="buttonstyle">
+        [% END %]
+			
+		  </div></td>
+    </tr>
+
+
+  </table>
+
+</div>
+<div align="right" style="padding-right:15px; padding-top:15px;">
+
+
+</div>
+
+
+
+
+
+      </div>
+      </div>
+    </div>
+	</div>
+
+
+[% INCLUDE 'tmpl/html_footer.tmpl' %]

@@ -1,0 +1,54 @@
+[% INCLUDE 'tmpl/html_header.tmpl' %]
+
+
+<div align="center"><div class="title">アンケートデータ編集</div><br><br>
+
+[% IF oktext %]
+<font color="red"><b>[% oktext %]</b></font><br>
+[% END %]
+<font color="red">[% error_message %]</font>
+<form name="form1" method="post" action="enq_edit.cgi">
+  <table border="0" cellspacing="1" cellpadding="5" bgcolor="#FF9900">
+
+    <tr valign="top"> 
+      <td bgcolor="#FFCC66">アンケート名</td>
+      <td bgcolor="#FFFFFF"> <input type="text" name="enq_name" value="[% enq_name|html %]" size="60">
+      </td>
+    </tr>
+    <tr valign="top"> 
+      <td bgcolor="#FFCC66">アンケートキー(半角英字のみ)</td>
+      <td bgcolor="#FFFFFF"> <input type="text" name="enq_key" value="[% enq_key|html %]" size="60">
+      </td>
+    </tr>
+    <tr valign="top"> 
+      <td bgcolor="#FFCC66">アンケート内容</td>
+      <td bgcolor="#FFFFFF"> <input type="text" name="enq_question" value="[% enq_question|html %]" size="60">
+      </td>
+    </tr>
+    <tr valign="top"> 
+      <td bgcolor="#FFCC66">アンケートデータ</td>
+      <td bgcolor="#FFFFFF">
+	<textarea name="enq_data" cols="60" rows="5">[% enq_data %]</textarea>
+      </td>
+    </tr>
+
+    
+
+    <tr valign="top"> 
+      <td colspan="2" bgcolor="#FFFFFF"><div align="center"> 
+            <input type="submit" name="Submit" value="変更">
+			<input type="hidden" name="id" value="[% id %]">
+			  <input type="hidden" name="reg" value="1">
+          <br></div></td>
+    </tr>
+	
+	
+  </table>
+</form>
+</div>
+<br><div align="center"><a href="index.cgi">戻る</a> </div><br>
+
+
+
+
+[% INCLUDE 'tmpl/html_footer.tmpl' %]

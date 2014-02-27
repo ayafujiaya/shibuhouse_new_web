@@ -1,0 +1,24 @@
+
+
+<div id="page_bottom" style="background-color:#E6E6E6;font-size:small;">
+	<font size="1"><img src="img/001_c4.gif" /><a accesskey="1" href="index.cgi?sid=[% form.sid %]">ﾄｯﾌﾟ</a></font><br />
+	<font size="1"><img src="img/003_c4.gif" /><a accesskey="3" href="email_send.cgi?sid=[% form.sid %]">ﾒｰﾙ配信</a></font><br />
+	<font size="1"><img src="img/007_c4.gif" /><a accesskey="7" href="email_list.cgi?sid=[% form.sid %]&dispnum=10">ﾒｰﾙｱﾄﾞﾚｽ一覧</a></font><br />
+	<font size="1"><img src="img/009_c4.gif" /><a accesskey="9" href="hist_list.cgi?sid=[% form.sid %]&dispnum=10">配信履歴</a></font><br />
+	<font size="1"><img src="img/000_c4.gif" /><a accesskey="0" href="m_logout_ctl.cgi?sid=[% form.sid %]">ﾛｸﾞｱｳﾄ</a></font>
+</div>
+
+[% UNLESS writing %]
+
+<div id="box_footer" style="background-color:#FFFFFF;font-size:small;text-align:center;">
+<font size="1">
+メール配信CGI <a href="http://www.acmailer.jp/">acmailer</a><br>
+(C)2000- ahref.org
+</font>
+</div>
+
+[% END %]
+
+
+</body>
+</html>

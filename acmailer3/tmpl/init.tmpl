@@ -1,0 +1,67 @@
+[% INCLUDE 'tmpl/html_header_nomenu.tmpl' %]
+<link rel="stylesheet" href="./css/top.css" type="text/css">
+
+
+
+		
+        <div id="panel">
+        	<div id="panel_title">
+            	<p id="panel_title_1">acmailer&nbsp;初期設定画面</p>
+                <p id="panel_title_2"></p>
+            </div>
+					[% IF sendok %]<font color="blue"><b>パスワードを再送信しました。</b></font>[% END %]
+            <div id="panel_text">
+
+
+				<font color="red">[% IF error_message %][% error_message %]<BR>[% END %]</font>
+				<font size="-1">※ACMAILER3を使用するには以下の項目の設定を行ってください。<br>入力していただく項目は後で設定を変更できます。</font>
+				<form name="form1" method="post" action="init_ctl.cgi">
+				   <table id="right_cont_table" style="width:550px;">
+				  <tr><td align="center" class="td_2 box" width="120">
+				      差出人名</td>
+					  <td class="td_2 box" width="150"><input type="text" name="admin_name" value="[% admin_name|html %]"></td>
+					  <td class="td_2 box" width="300"><font size="-2">←メルマガを発行する際の送信元名になります。<br>
+	  ※差出人名には「"」「'」「&lt;」「&gt;」の文字列を使用することはできません。</font></td>
+				    </tr>
+				    <tr valign="top"> 
+				      <td align="center" class="td_2 box">メールアドレス</td>
+					  <td class="td_2 box"><input type="text" name="admin_email" value="[% admin_email|html %]"></td>
+					  <td class="td_2 box"><font size="-2">←メルマガを発行する際のメールアドレスになります。</font></td>
+				    </tr>
+				    <tr valign="top"> 
+				      <td align="center" class="td_2 box">ログインID</td>
+					  <td class="td_2 box"><input type="text" name="login_id" value="[% login_id|html %]"></td>
+					  <td class="td_2 box"><font size="-2">←ACMAILERにログインするIDになります。</font></td>
+				    </tr>
+				    <tr valign="top"> 
+				      <td align="center" class="td_2 box">ログインPW</td>
+					  <td class="td_2 box"><input type="password" name="login_pass" value="[% login_pass|html %]"></td>
+					  <td class="td_2 box"><font size="-2">←ACMAILERにログインするパスワードになります。</font></td>
+				    </tr>
+				    <tr valign="top"> 
+				      <td align="center" class="td_2 box">sendmailパス</td>
+					  <td class="td_2 box"><input type="text" name="sendmail_path" value="[% sendmail_path|html %]"></td>
+					  <td class="td_2 box"><font size="-2">←お使いのサーバのsendmailパスを入力してください。<br>わからない場合はサーバ管理者にお問い合わせください。</font></td>
+				    </tr>
+				    <tr valign="top"> 
+				      <td align="center" class="td_2 box">CGI設置URL</td>
+					  <td class="td_2 box"><input type="text" name="homeurl" value="[% homeurl %]"></td>
+					  <td class="td_2 box"><font size="-2">←CGIを設置しているURLです。</font></td>
+				    </tr>
+				    <tr valign="top"> 
+				      <td align="center" class="td_2 box">CGI設置場所</td>
+					  <td class="td_2 box"><input type="text" name="mypath" value="[% mypath %]"></td>
+					  <td class="td_2 box"><font size="-2">←CGIを設置しているサーバの場所です。<br>わからない場合は、このままにしておいてください。</font></td>
+				    </tr>
+				  </table>
+				  <br>
+  				<div align="center">
+				  <input type="submit" value="決定">
+				</div>
+				</form>
+				</div>
+			</div>
+		</div>
+
+
+[% INCLUDE 'tmpl/html_footer.tmpl' %]

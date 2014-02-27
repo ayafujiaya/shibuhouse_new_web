@@ -1,0 +1,376 @@
+[% INCLUDE 'tmpl/html_header.tmpl' %]
+<script type="text/javascript"><!--
+
+function AllCheck() {
+	objFrm = document.forms["emaillist"];
+	for (i = 0; i < objFrm.elements.length; i++) {
+		if (objFrm.elements[i] != undefined) {
+			switch (objFrm.elements[i].type) {
+				case "checkbox":
+					objFrm.elements[i].checked = true;
+					break;
+			}
+		}
+	}
+}
+
+function AllNoCheck() {
+	objFrm = document.forms["emaillist"];
+	for (i = 0; i < objFrm.elements.length; i++) {
+		if (objFrm.elements[i] != undefined) {
+			switch (objFrm.elements[i].type) {
+				case "checkbox":
+					objFrm.elements[i].checked = false;
+					break;
+			}
+		}
+	}
+}
+
+/**
+ * godel
+ * @param arg1
+ */
+
+function godel(id) {
+	if (confirm("このアドレスを削除しますか？")) {
+		window.location='email_edit.cgi?del=1&id=' + id;
+	}
+}
+
+// --></script>
+
+
+<link rel="stylesheet" href="./css/email_list2.css" type="text/css">
+
+<div id="contwrapper" class="clearfix">
+  <div id="left_cont">
+  <div id="left_menu">
+    <div id="left_cont_in">
+      <table id="left_cont_table">
+        <tr>
+          <td class="title box"><img src="img/menu.jpg" alt="" /></td>
+        </tr>
+          <tr><td height="20"></td></tr>
+
+
+              <tr>
+                <td class="menu menubgcolor"><a href="email_list.cgi">メールアドレス一覧</a></td>
+              </tr>
+              <tr>
+                <td class="menu"><a href="dispcol_edit.cgi">一覧表示項目の設定</a></td>
+              </tr>
+              <tr>
+                <td class="menu"><a href="email_add.cgi">メールアドレス登録</a></td>
+              </tr>
+              <tr>
+                <td class="menu"><a href="email_del.cgi">メールアドレス削除</a></td>
+              </tr>
+              <tr>
+                <td class="menu"><a href="email_csvdown.cgi">CSVダウンロード</a></td>
+              </tr>
+              <tr>
+                <td class="menu lastmenu"><a href="email_alldel.cgi">メールアドレス完全削除</a></td>
+              </tr>
+
+
+      </table>
+    </div>
+    </div>
+
+
+  [% INCLUDE 'tmpl/html_left_banner.tmpl' %]
+
+  </div>
+  
+
+  
+  <div id="right_cont">
+    <div id="right_cont_title">
+      <table id="right_cont_table_title">
+        <tr>
+          <td class="title box">
+              メールアドレス管理<img src="img/big_arrow.jpg" alt="" />メールアドレス一覧<img src="img/big_arrow.jpg" alt="" />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="right_cont_contens">
+    <div id="right_cont_contens_in">
+
+    <div id="cont_num">
+      <table id="right_cont_table1">
+        <tr>
+          <td class="td_1"><div id="td_1_1">総数 [ [% totalnum %] ]</div></td>
+          <td class="td_2">
+          	<div id="td_2_4"><p>有効総数 [ [% emailnum %] ]</p></div>
+          	<div id="td_2_3"><span>配信停止数 [ [% sendstopnum %] ]</span></div>
+          	<div id="td_2_2"><span>エラー数（重複除く） [ [% errornum %] ][% IF errornum %]<br><font size="-2"><a href="email_errordel_ctl.cgi" onclick="return confirm('エラーメールアドレスを一括削除しますか？（重複メールアドレス分のエラーメールも削除されます）')">(一括削除)</a></font>[% END %]</span></div>
+          	<div id="td_2_1"><span>重複 [ [% zyunum %] ][% IF zyunum %]<font size="-2"><a href="email_zyudel_ctl.cgi" onclick="return confirm('重複メールアドレスを一括削除しますか？')">(一括削除)</a></font>[% END %]</span></div>
+          </td>
+        </tr>
+      </table>
+	  
+    </div>
+
+<div align="center">
+	
+[% IF oktext %]
+<font color="red"><b>[% oktext %]</b></font><br>
+[% END %]
+</div>
+            <div id="cont_list">
+
+
+   <table id="right_cont_table" style="text-align:left;">
+
+  <form action="email_list.cgi" method="post" name="form1">
+
+	<tr>
+
+	  <td bgcolor="#EEEEEE"  class="td_2 box" colspan="2" align="left" style="width:75px; text-align:left; padding-left:5px;">項目</td>	
+	  <td bgcolor="#FFFFFF" class="td_2 box" colspan="4" style="padding-left:5px; text-align:left;">
+
+[% FOREACH v=search %]
+<div id="searchbox[% v.search_id %]" style="text-align:left;">
+	<select name="search[% v.search_id %]">
+	<option value="email">メールアドレス
+
+	[% FOREACH v2=v.select %]
+	<option value="[% v2.col %]" [% IF v2.selected %]selected[% END %]>[% v2.colname|html %]
+	[% END %]
+
+	</select>
+	
+	
+	<input type="text" name="search_text[% v.search_id %]" value="[% v.search_text|html %]" size="30">
+	
+	<select name="searchlike[% v.search_id %]">
+	<option value="" [% IF v.searchlike == "" %] selected[% END %]>含む
+	<option value="2" [% IF v.searchlike == "2" %]selected[% END %]>含まない
+	<option value="1" [% IF v.searchlike == "1" %] selected[% END %]>一致
+	</select>
+<input type="button" value="条件追加" onclick="javascript:add_row([% v.search_id %]);" id="addbutton[% v.search_id %]" class="buttonstyle">
+
+	
+</div>
+[% END %]
+
+<input type="hidden" name="disp_id" value="[% form.disp_id|html %]" id="disp_id">
+<script>
+var __onload_save = window.onload;
+window.onload = function() {
+	if (__onload_save) __onload_save();
+	init_row();
+}
+
+function init_row() {
+
+	var did = document.getElementById('disp_id').value;
+	if (!did) { did = 1; }
+	for(i = 1; i <= 5; i++) {
+		if (i == did && i != 5) {
+			document.getElementById('addbutton' + i).style.display = 'inline';
+		} else {
+			document.getElementById('addbutton' + i).style.display = 'none';
+		}
+		if (i > did) {
+			document.getElementById('searchbox' + i).style.display = 'none';
+		}
+	}
+}
+
+function add_row(id) {
+
+	 var id2 = id + 1;
+	if (id < 5) {
+		document.getElementById("searchbox" + id2).style.display = 'block';
+	}
+	for(i = 1; i <= 5; i++) {
+		if (i == id2 && i != 5) {
+			document.getElementById('addbutton' + i).style.display = 'inline';
+		} else {
+			document.getElementById('addbutton' + i).style.display = 'none';
+		}
+		if (id2 < i) {
+			document.getElementById('searchbox' + i).style.display = 'none';
+		}
+	}
+	document.getElementById('disp_id').value = id2;
+}
+function go_submit() {
+	document.form1.csv.value=1;
+	document.form1.submit();
+	document.form1.csv.value=0;
+}
+</script>
+
+	  </td>
+	</tr>
+	
+	<tr>
+	  <td bgcolor="#EEEEEE" colspan="2" class="td_2 box" align="left" style="width:75px; text-align:left; padding-left:5px;">条件</td>
+	  <td bgcolor="#FFFFFF" align="left" class="td_2 box" style="text-align:left; padding-left:5px;">
+	  <input type="radio" name="andor" value="and" [% IF form.andor=="" || form.andor=="and" %]checked[% END %]>AND
+	  <input type="radio" name="andor" value="or" [% IF form.andor=="or" %]checked[% END %]>OR
+	  </td>
+	  <td bgcolor="#EEEEEE" colspan="2" class="td_2 box" align="left" style="width:75px; text-align:left; padding-left:5px;">ドメイン</td>
+	  <td bgcolor="#FFFFFF" align="left" class="td_2 box" style="text-align:left; padding-left:5px;">
+	  <input type="radio" name="search_domain" value="" [% IF form.search_domain=="" %]checked[% END %]>両方
+	  <input type="radio" name="search_domain" value="1" [% IF form.search_domain=="1" %]checked[% END %]>PC
+	  <input type="radio" name="search_domain" value="2" [% IF form.search_domain=="2" %]checked[% END %]>携帯
+	  </td>
+	  </td>
+	</tr>
+	<tr>
+		  <td bgcolor="#EEEEEE" colspan="2" class="td_2 box" align="left" style="width:75px; text-align:left; padding-left:5px;">状態</td>
+	  <td bgcolor="#FFFFFF" align="left" class="td_2 box" style="text-align:left; padding-left:5px;">
+	  <input type="radio" name="sendstatus" value="all" [% IF form.sendstatus=="all" || form.sendstatus=="" %]checked[% END %]>全て
+	  <input type="radio" name="sendstatus" value="on" [% IF form.sendstatus=="on" %]checked[% END %]>配信可
+	  <input type="radio" name="sendstatus" value="off" [% IF form.sendstatus=="off" %]checked[% END %]>配信停止
+
+	<td bgcolor="#EEEEEE"  class="td_2 box" align="left" colspan="2" style="width:75px; text-align:left; padding-left:5px;">あいまい検索</td>
+	  <td bgcolor="#FFFFFF" align="left" class="td_2 box" style="text-align:left; padding-left:5px;">
+	  <input type="text" name="search_text_free" value="[% form.search_text_free|html %]" size="30" style="width:250px;">
+	  </td>
+	  <input type="hidden" name="dispnum" value="[% dispnum %]">
+	</tr>
+	<tr>
+		<td colspan="6" align="center" style="padding-top:15px;">
+				  <input type="submit" value="検索" style="padding-left:10px; padding-right:10px; padding-top:2px; padding-bottom:2px;">
+				  <span style="display:block; text-align:right; margin-right:5px; margin-top:-1.8em;"><input type="hidden" name="csv" value="">
+				  <a href="javascript:go_submit()">※検索結果をＣＳＶダウンロード</a></span>
+
+		</td>
+	</tr>
+  </form>
+   </table>
+
+		</div>
+		
+[% IF totalnum %]
+
+
+
+
+
+            <div id="cont_list" style="margin-top:25px;">
+	<form action="email_list.cgi" method="post" name="emaillist">
+              <table id="right_cont_table3">
+                <tr>
+                  <td class="listtitle listtitle_1 box"></td>
+                  <td class="listtitle listtitle_2 box posi_center">配信</td>
+				  [%IF dispcolname1 %]
+					  [% IF form.order=='disp1_asc' %]
+					  	<td class="listtitle listtitle_3 box"><a class="no_underline" href="email_list.cgi?order=disp1_desc[% para_non_order %]&dispnum=[% dispnum %]">[% dispcolname1|html %]<span class="sort_bottom">▼</span></a></td>
+					  [% ELSE %]
+	                  	<td class="listtitle listtitle_3 box"><a class="no_underline" href="email_list.cgi?order=disp1_asc[% para_non_order %]&dispnum=[% dispnum %]">[% dispcolname1|html %]<span class="sort_bottom">▲</span></a></td>
+					  [% END %]
+				  [% END %]
+                  [%IF dispcolname2 %]
+					  [% IF form.order=='disp2_asc' %]
+					  	<td class="listtitle listtitle_4 box"><a class="no_underline" href="email_list.cgi?order=disp2_desc[% para_non_order %]&dispnum=[% dispnum %]">[% dispcolname2|html %]<span class="sort_bottom">▼</span></a></td>
+					  [% ELSE %]
+	                  	<td class="listtitle listtitle_4 box"><a class="no_underline" href="email_list.cgi?order=disp2_asc[% para_non_order %]&dispnum=[% dispnum %]">[% dispcolname2|html %]<span class="sort_bottom">▲</span></a></td>
+					  [% END %]
+				  [% END %]
+                  [%IF dispcolname3 %]
+					  [% IF form.order=='disp3_asc' %]
+					  	<td class="listtitle listtitle_5 box"><a class="no_underline" href="email_list.cgi?order=disp3_desc[% para_non_order %]&dispnum=[% dispnum %]">[% dispcolname3|html %]<span class="sort_bottom">▼</span></a></td>
+					  [% ELSE %]
+	                  	<td class="listtitle listtitle_5 box"><a class="no_underline" href="email_list.cgi?order=disp3_asc[% para_non_order %]&dispnum=[% dispnum %]">[% dispcolname3|html %]<span class="sort_bottom">▲</span></a></td>
+					  [% END %]
+				  [% END %]
+                  <td class="listtitle listtitle_6 box posi_center">編集</td>
+                  <td class="listtitle listtitle_6 box posi_center">削除</td>
+                </tr>
+				
+[% FOREACH v=loop %]
+                <tr [% IF v.status %]bgcolor="#FFFFFF"[% ELSE %]bgcolor="#EBEBEB"[% END %]>
+                  <td class="box">[% v.i %]</td>
+                  <td class="box posi_center"><input type="checkbox" name="send_flg[% v.id|html %]" value="1" [% IF v.status %]checked[% END %]>
+	  <input type="hidden" name="hid_email[% v.id|html %]" value="[% v.id|html %]"></td>
+	  
+	  [%IF dispcolname1 %]<td class="box">[% v.dispdata1|html %]</td>[% END %]
+	  [%IF dispcolname2 %]<td class="box">[% v.dispdata2|html %]</td>[% END %]
+	  [%IF dispcolname3 %]<td class="box">[% v.dispdata3|html %]</td>[% END %]
+	  
+      <td class="box posi_center"><input type="button" value="編集" onclick="location.href='email_edit.cgi?id=[% v.id %]'" class="buttonstyle"></td>
+      <td class="box posi_center"><input type="button" value="削除" onclick="javascript:godel('[% v.id %]');" class="buttonstyle"></td>
+	  
+                </tr>
+				
+				
+				
+[% END %]
+<input type="hidden" name="mode" value="cng_send_flg">
+                <tr>
+                  <td colspan="7" class="listtitle box" id="page_posi"><p style="width:650px;">
+				  
+				  [% IF backlink %]
+					<A href="email_list.cgi?page=[% page_m1 %]&dispnum=[% dispnum %][% search_url %]" title="前のページ">＜前のページ</A>
+					[% END %]
+				  [% pagelink %]｜
+				  
+				  [% IF nextlink %]
+					<A href="email_list.cgi?page=[% page_p1 %]&dispnum=[% dispnum %][% search_url %]" title="次のページ">次のページ＞</A>
+					[% END %]
+				  </p></td>
+                </tr>
+                <tr>
+                  <td colspan="7" id="showpage_num"><p>
+						<SELECT name="dispnum"  onchange="changenum(options[selectedIndex].value)">
+						<OPTION value="">表示件数切替</OPTION>
+						<OPTION value="10" [% IF form.dispnum=="10" %]selected[% END %]>10件</OPTION>
+						<OPTION value="25" [% IF form.dispnum=="25" %]selected[% END %]>25件</OPTION>
+						<OPTION value="50" [% IF form.dispnum=="50" %]selected[% END %]>50件</OPTION>
+						<OPTION value="100" [% IF form.dispnum=="100" %]selected[% END %]>100件</OPTION>
+						<OPTION value="all" [% IF form.dispnum=="all" %]selected[% END %]>全件</OPTION>
+						</SELECT>
+                    </p></td>
+                </tr>
+                <tr>
+                  <td colspan="7" class="btn_select_area"><div class="btn_area">
+				  
+                    </div>
+                    <div class="select_btn"><a class="no_underline" href="javascript:AllCheck()">すべてを選択</a> - <a class="no_underline" href="javascript:AllNoCheck()">すべての選択を解除</a> </div></td>
+                </tr>
+              </table>
+            </div>
+
+  </table>
+  <br>
+	<div align="center">
+  <input type="submit" value="配信する・しないを更新" class="buttonstyle">
+  <input type="hidden" name="page" value="[% page %]">
+  <input type="hidden" name="dispnum" value="[% dispnum %]">
+     </div>
+	</form>
+<br>
+
+
+
+
+
+
+
+
+[% ELSE %]
+現在登録されているメールアドレスはありません
+
+
+[% END %]
+
+
+
+
+
+
+      </div>
+      </div>
+    </div>
+	</div>
+
+
+
+[% INCLUDE 'tmpl/html_footer.tmpl' %]

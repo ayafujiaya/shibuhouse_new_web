@@ -1,0 +1,157 @@
+[% INCLUDE 'tmpl/html_header.tmpl' %]
+
+
+
+
+
+
+
+
+<div id="contwrapper" class="clearfix">
+  <div id="left_cont">
+  <div id="left_menu">
+    <div id="left_cont_in">
+      <table id="left_cont_table">
+        <tr>
+          <td class="title box"><img src="img/menu.jpg" alt="" /></td>
+        </tr>
+		
+		          <tr><td height="20"></td></tr>
+
+              <tr>
+                <td class="menu"><a href="mailtemplate_list.cgi">配信メール</a></td>
+              </tr>
+        
+              <tr>
+                <td class="menu lastmenu menubgcolor"><a href="form_edit.cgi">自動返信メール</a></td>
+              </tr>
+
+
+      </table>
+    </div>
+    </div>
+
+
+  [% INCLUDE 'tmpl/html_left_banner.tmpl' %]
+
+  </div>
+  
+
+  
+  <div id="right_cont">
+    <div id="right_cont_title">
+      <table id="right_cont_table_title">
+        <tr>
+          <td class="title box">
+              メールテンプレート<img src="img/big_arrow.jpg" alt="" />自動返信メール<img src="img/big_arrow.jpg" alt="" />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="right_cont_contens">
+    <div id="right_cont_contens_in">
+
+<div align="center">
+[% IF oktext %]
+<font color="red"><b>[% oktext %]</b></font><br>
+[% END %]
+<font color="red">[% error_message %]</font>
+</div>
+<form name="form1" method="post" action="form_edit.cgi">
+
+   <table id="right_cont_table">
+
+    <tr valign="top"> 
+      <td class="td_1 box">登録用<br>自動返信メール</td>
+      <td bgcolor="#FFFFFF" class="td_2 box"> 件名：<input type="text" name="form_mailtitle" size="60" value="[% form_mailtitle|html %]" style="width:250px;"><br>
+      <textarea name="form_mailbody" cols="78" rows="10" style="width:450px; overflow:auto;">[% form_mailbody|html %]</textarea>
+      </td>
+    </tr>
+    <tr valign="top"> 
+      <td class="td_1 box">削除用<br>自動返信メール</td>
+      <td bgcolor="#FFFFFF" class="td_2 box"> 件名：<input type="text" name="form2_mailtitle" size="60" value="[% form2_mailtitle|html %]" style="width:250px;"><br>
+      <textarea name="form2_mailbody" cols="78" rows="10" style="width:450px; overflow:auto;">[% form2_mailbody|html %]</textarea>
+      </td>
+    </tr>
+
+    <tr valign="top"> 
+      <td class="td_1 box">ダブルオプトイン<br>仮登録メール</td>
+      <td bgcolor="#FFFFFF" class="td_2 box"> 件名：<input type="text" name="form_temp_mailtitle" size="60" value="[% form_temp_mailtitle|html %]" style="width:250px;"><br>
+      <textarea name="form_temp_mailbody" cols="78" rows="10" style="width:450px; overflow:auto;">[% form_temp_mailbody|html %]</textarea><br>
+	  
+      </td>
+    </tr>
+	
+
+    <tr valign="top"> 
+      <td class="td_1 box">アドレス変更用<br>自動返信メール</td>
+      <td bgcolor="#FFFFFF" class="td_2 box"> 件名：<input type="text" name="form_change_mailtitle" size="60" value="[% form_change_mailtitle|html %]" style="width:250px;"><br>
+      <textarea name="form_change_mailbody" cols="78" rows="10" style="width:450px; overflow:auto;">[% form_change_mailbody|html %]</textarea>
+      </td>
+    </tr>
+    <tr valign="top"> 
+      <td class="td_1 box">ダブルオプトイン<br>仮変更メール</td>
+      <td bgcolor="#FFFFFF" class="td_2 box"> 件名：<input type="text" name="form_temp_change_mailtitle" size="60" value="[% form_temp_change_mailtitle|html %]" style="width:250px;"><br>
+      <textarea name="form_temp_change_mailbody" cols="78" rows="10" style="width:450px; overflow:auto;">[% form_temp_change_mailbody|html %]</textarea><br>
+	  
+      </td>
+    </tr>
+	
+    <tr valign="top"> 
+      <td class="td_1 box">フォーム付き空メール用<br>自動返信メール</td>
+      <td bgcolor="#FFFFFF" class="td_2 box"> 件名：<input type="text" name="form_autoform_mailtitle" size="60" value="[% form_autoform_mailtitle|html %]" style="width:250px;"><br>
+      <textarea name="form_autoform_mailbody" cols="78" rows="10" style="width:450px; overflow:auto;">[% form_autoform_mailbody|html %]</textarea>
+      </td>
+    </tr>
+	
+    <tr valign="top"> 
+      <td class="td_1 box">再登録拒否メール用<br />自動返信メール</td>
+      <td bgcolor="#FFFFFF" class="td_2 box"> 件名：<input type="text" name="form_regdeny_mailtitle" size="60" value="[% form_regdeny_mailtitle|html %]" style="width:250px;"><br>
+      <textarea name="form_regdeny_mailbody" cols="78" rows="10" style="width:450px; overflow:auto;">[% form_regdeny_mailbody|html %]</textarea>
+      </td>
+    </tr>
+	
+	
+    <tr valign="top"> 
+      <td class="td_1 box">送信タイプ</td>
+      <td bgcolor="#FFFFFF" class="td_2 box"><input type="radio" name="send_type" value="regular" [% IF send_type=="regular" %]checked[% END %]>通常&nbsp;<input type="radio" name="send_type" value="html" [% IF send_type=="html" %]checked[% END %]>HTML
+      </td>
+    </tr>
+
+    <tr valign="top"> 
+      <td colspan="2" bgcolor="#FFFFFF" class="td_2 box">
+      	<div id="hensu_btn"> 
+			<input type="button" name="Submit" value="使用可能変数を見る" onClick="window.open('hensu.cgi?form_edit=1','sub','width=700,height=620,scrollbars=yes,resizable=yes')" class="buttonstyle">
+			</div>
+	  </td>
+    </tr>
+    <tr valign="top"> 
+      <td colspan="2" bgcolor="#FFFFFF" class="td_2">
+      	<div align="center"> 
+		<input type="submit" name="Submit" value="変更" class="buttonstyle">
+			<input type="hidden" name="upd" value="1">
+			</div>
+	  </td>
+    </tr>
+	
+
+
+
+
+	
+  </table>
+</form>
+</div>
+
+
+
+      </div>
+      </div>
+    </div>
+	</div>
+
+
+
+
+
+[% INCLUDE 'tmpl/html_footer.tmpl' %]

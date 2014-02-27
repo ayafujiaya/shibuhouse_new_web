@@ -1,0 +1,22 @@
+[% INCLUDE 'tmpl/html_mobileheader.tmpl' %]
+
+<div style="background-color:#FFCC00;text-align:center;padding:5px;">
+	ﾒｰﾙ送信完了
+</div>
+
+<span style="font-size:small">
+<font size="1">
+[% IF reserve %]
+<b>配信予約完了</b>
+<br><br>
+[% ELSE %]
+<b>メール送信完了</b>
+<br><br>
+[% END %]
+
+送信内容・送信状態は<a href="hist_list.cgi?sid=[% form.sid %]&dispnum=10">履歴画面</a>よりご確認ください。
+<br><br>
+</font>
+</span>
+
+[% INCLUDE 'tmpl/html_mobilefooter.tmpl' %]

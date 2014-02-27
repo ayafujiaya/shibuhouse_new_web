@@ -1,0 +1,43 @@
+
+[% INCLUDE 'tmpl/html_header_nomenu.tmpl' %]
+
+
+
+		
+        <div id="panel">
+        	<div id="panel_title">
+            	<p id="panel_title_1">acmailer&nbsp;コントロールパネル&nbsp;に&nbsp;ログイン</p>
+                <p id="panel_title_2"><a href="m_login.cgi">携帯版</a></p>
+            </div>
+			[% IF sendok %]<font color="blue"><b>送信しました。</b></font>[% END %]
+<font color="red">[% error_message %]</font>
+            <div id="panel_text">
+			<form name="form1" method="post" action="login.cgi">
+			
+	設定されている送信元メールアドレスを入力してください。<br>
+	  入力されたメールアドレスへパスワードを送信します。
+	  
+	  
+            	<table id="id_pass">
+				
+                	<tr>
+                    	<td id="id_text">メールアドレス</td>
+                        <td id="pass_text"><input type="text" name="email"/></td>
+                        <td id="submit_btn"><input type="submit" value="送信"></td>
+                    </tr>
+                	<tr>
+                    	<td></td>
+                        <td colspan="2" id="re_pass"><a href="login.cgi">ログイン画面に戻る</a></td>
+                    </tr>
+                </table>
+	  
+	  <br><br>
+
+<input type="hidden" name="send" value="1">
+<input type="hidden" name="mode" value="forget">
+  
+  
+			</form>
+			
+
+[% INCLUDE 'tmpl/html_footer_nomenu.tmpl' %]

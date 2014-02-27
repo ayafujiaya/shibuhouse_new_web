@@ -1,0 +1,1393 @@
+[% INCLUDE 'tmpl/html_header.tmpl' %]
+<link rel="stylesheet" href="./css/form_sample.css" type="text/css">
+<script src="./js/drag.js" type="text/javascript"></script>
+<script>
+function beginScript() {
+    var rs = DragHandler.attach(document.getElementById('textarea_box1'));
+    var rs1 = DragHandler.attach(document.getElementById('textarea_box2'));
+    var rs2 = DragHandler.attach(document.getElementById('textarea_box3'));
+    var rs3 = DragHandler.attach(document.getElementById('textarea_box4'));
+    var rs4 = DragHandler.attach(document.getElementById('textarea_box5'));
+    var rs5 = DragHandler.attach(document.getElementById('textarea_box6'));
+    var rs6 = DragHandler.attach(document.getElementById('textarea_box7'));
+    var rs7 = DragHandler.attach(document.getElementById('textarea_box8'));
+    var rs8 = DragHandler.attach(document.getElementById('textarea_box9'));
+    var rs9 = DragHandler.attach(document.getElementById('textarea_box10'));
+    var rs9 = DragHandler.attach(document.getElementById('textarea_box11'));
+    var rs9 = DragHandler.attach(document.getElementById('textarea_box12'));
+    var rs9 = DragHandler.attach(document.getElementById('textarea_box13'));
+}
+
+
+</script>
+
+
+<style>
+textarea{
+	width:350px;
+}
+</style>
+
+
+<div id="contwrapper" class="clearfix">
+  <div id="left_cont">
+  <div id="left_menu">
+    <div id="left_cont_in">
+      <table id="left_cont_table">
+        <tr>
+          <td class="title box"><img src="img/menu.jpg" alt="" /></td>
+        </tr>
+		          <tr><td height="20"></td></tr>
+              <tr>
+                <td class="menu"><a href="autoform_edit.cgi">フォーム設定</a></td>
+              </tr>
+              <tr>
+                <td class="menu menubgcolor"><a href="regform.cgi">サンプルソース</a></td>
+              </tr>
+      </table>
+    </div>
+  </div>
+
+
+  [% INCLUDE 'tmpl/html_left_banner.tmpl' %]
+
+  </div>
+  
+
+  
+  <div id="right_cont">
+    <div id="right_cont_title">
+      <table id="right_cont_table_title">
+        <tr>
+          <td class="title box">
+              メルマガ登録フォーム<img src="img/big_arrow.jpg" alt="" />サンプルソース<img src="img/big_arrow.jpg" alt="" />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="right_cont_contens">
+    <div id="right_cont_contens_in">
+
+
+			
+			
+			
+			
+			
+			
+            <div id="cont_list">
+              <table id="right_cont_table3">
+	      
+	      <tr>
+	      	<td colspan="2" class="listtitle02 box" style="padding-top:5px; padding-bottom:5px;">▼タイトルをクリックするとソースのサンプルが表示されます(コピーしてご利用ください)</td>
+	      </tr>
+	      <tr><td><br /></td><td></td></tr>
+			  
+                
+                
+<script>
+function opensource(id) {
+	document.getElementById("textarea_box" + id).style.display = 'block';
+	hidden_select();
+}
+
+function closesource(id) {
+	document.getElementById("textarea_box" + id).style.display = 'none';
+	disp_select();
+}
+
+</script>
+                
+                
+                
+                
+                
+                
+                <tr>
+                  <td class="listtitle listtitle_2 box"><a href="javascript:opensource(1);">登録・削除一体型フォーム（CSSタイプ）</a></td>
+                  <td class="listtitle listtitle_2 box"><a href="javascript:opensource(2);">登録・削除一体型フォーム（HTMLタイプ）</a></td>
+                </tr>
+                <tr>
+                  
+                  <td class="box">
+                  
+                  
+                  
+                  
+<br />
+<form action="[% admindata.homeurl %]reg.cgi" method="post">
+  <table border="0" cellspacing="3" cellpadding="0" style="border:solid 1px #CCC; background-color:#FFF; border-collapse:separate; border-spacing:3px; width:120px;">
+    <tr>
+      <td style="background-color:#FFCC00; color:#FFF; font-size:14px; font-weight:bold; padding-top:3px; padding-bottom:2px; text-align:center; padding-left:0px; width:120px;">メルマガ登録</td>
+    </tr>
+    <tr>
+      <td style="background-color:#FFF; width:120px; padding-left:0px; padding-left:0px; padding-top:0px; padding-bottom:0px;"><input type="text" name="email" style="height:17px; width:114px; margin-top:5px; margin-bottom:1px;"></td>
+    </tr>
+    <tr>
+      <td style="background-color:#FFF; padding:0px; width:120px;"><div style="float:left;">
+          <p style="font-size:13px; margin:0;">
+            <input type="radio" name="reg" value="add" checked>
+            登録</p>
+          <p style="font-size:13px; margin:0;">
+            <input type="radio" name="reg" value="del">
+            削除</p>
+        </div>
+        <div style="float:right;">
+          <input type="submit" value="送信" name="submit" style="margin-top:9px; _padding:1px 5px;">
+		  <input type="hidden" name="encode" value="文字コード">
+        </div></td>
+    </tr>
+    <tr>
+      <td style="background-color:#FFF; padding-right:0px; padding-left:0px; padding-top:4px; padding-bottom:2px; _ padding-bottom:0px; _padding-top:0px; width:120px;">
+	  [% UNLESS writing %]
+        <div align="center" style="font-size:10px; color:#999;">powered by<a href="http://www.acmailer.jp/" target="_blank" title="メール配信CGI acmailer"><img src="[% admindata.homeurl %]img/logo_form.jpg" alt="メール配信CGI acmailer" style="border:none; padding:0; margin:0; margin-left:5px; vertical-align:middle; height:auto;" /></a></div>
+	   [% END %]
+        </td>
+    </tr>
+  </table>
+</form>
+幅：120px
+<br /><br />
+
+
+
+
+                  </td>
+                  
+                  <td class="box">
+                  
+                  
+                  
+                  
+                  
+<br />                  
+<form action="[% admindata.homeurl %]reg.cgi" method="post">
+  <table bgcolor="#FFCC00">
+    <tr>
+      <td colspan="3" bgcolor="#FFCC00" height="30" style="padding:0; margin:0;"><font color=#FFFFFF><b>メルマガ登録</b></font></td>
+    </tr>
+    <tr>
+      <td colspan="3" bgcolor="#FFFFFF" style="padding:0; margin:0;"><input type="text" name="email"></td>
+    </tr>
+    <tr>
+      <td bgcolor="#FFFFFF" style="padding:0; margin:0;"><input type="radio" name="reg" value="add" checked>登録</td>
+      <td bgcolor="#FFFFFF" style="padding:0; margin:0;"><input type="radio" name="reg" value="del">削除</td>
+      <td bgcolor="#FFFFFF" style="padding:0; margin:0;"><input type="submit" value="送信" name="submit"><input type="hidden" name="encode" value="文字コード"></td>
+    </tr>
+    <tr>
+      <td colspan="3" bgcolor="#FFFFFF" style="padding:0; margin:0;">
+	  [% UNLESS writing %]<font size=-2 color=#999999>powered by</font><a href="http://www.acmailer.jp/" target="_blank" title="メール配信CGI acmailer"><img src="img/logo_form.jpg" alt="メール配信CGI acmailer" style="padding:0; margin:0; margin-left:5px; vertical-align:middle; _padding-top:2px; height:auto;" /></a>
+	  [% END %]
+	  </td>
+    </tr>
+  </table>
+</form>
+<br />
+
+
+
+
+
+
+                  </td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <tr>
+                  <td class="listtitle listtitle_2 box"><a href="javascript:opensource(3);">登録専用フォーム（CSSタイプ）</a></td>
+                  <td class="listtitle listtitle_2 box"><a href="javascript:opensource(4);">登録専用フォーム（HTMLタイプ）</a></td>
+                </tr>
+                
+                
+                <tr>
+                  <td class="box">
+                  
+                  
+                  
+                  
+<br />
+<form action="[% admindata.homeurl %]reg.cgi" method="post">
+  <table border="0" cellspacing="3" cellpadding="0" style="border:solid 1px #CCC; background-color:#FFF; text-align:left; border-collapse:separate; border-spacing:3px; width:200px;">
+    <tr>
+      <td style="background-color:#FFCC00; width:200px; color:#FFF; font-size:14px; font-weight:bold; padding-right:0px; padding-top:3px; padding-bottom:2px; text-align:left; padding-left:4px;">メルマガ登録</td>
+    </tr>
+    <tr>
+      <td style="width:200px; background-color:#FFF; padding:0px;"><input type="text" name="email" style="height:16px; width:135px; margin-top:5px; margin-bottom:1px;">
+	  <input type="submit" value="登録" name="submit" style="margin-top:9px; margin-left:3px; _padding:1px 3px;">
+	  <input type="hidden" name="reg" value="add"><input type="hidden" name="encode" value="文字コード">
+	  </td>
+    </tr>
+    <tr>
+      <td style="width:200px; background-color:#FFF; padding-left:0px; padding-top:4px; padding-bottom:2px; padding-right:0px; _padding-bottom:0px; _padding-top:0px;">
+	  [% UNLESS writing %]
+        <div style="text-align:right; padding-right:4px; font-size:10px; color:#999;">powered by<a href="http://www.acmailer.jp/" target="_blank" title="メール配信CGI acmailer"><img src="img/logo_form.jpg" alt="メール配信CGI acmailer" style="border:none; padding:0; margin:0; margin-left:5px; vertical-align:middle; height:auto;" /></a></div>
+       [% END %]</td>
+    </tr>
+  </table>
+</form>
+幅：200px
+<br /><br />
+
+
+
+
+                  </td>
+                  <td class="box">
+                  
+                  
+                  
+                  
+                  
+<br />                  
+<form action="[% admindata.homeurl %]reg.cgi" method="post">
+  <table bgcolor="#FFCC00">
+    <tr>
+      <td colspan="2" bgcolor="#FFCC00" height="30" style="padding:0; margin:0;"><font color=#FFFFFF><b>メルマガ登録</b></font></td>
+    </tr>
+    <tr>
+      <td bgcolor="#FFFFFF" style="padding:0; margin:0;"><input type="text" name="email"></td>
+      <td bgcolor="#FFFFFF" style="padding:0; margin:0;"><input type="submit" value="登録" name="submit"><input type="hidden" name="reg" value="add"></td>
+    </tr>
+    <tr>
+      <td colspan="2" bgcolor="#FFFFFF" style="padding:0; margin:0;">
+	  [% UNLESS writing %]
+	  <font size=-2 color=#999999>powered by</font><a href="http://www.acmailer.jp/" target="_blank" title="メール配信CGI acmailer"><img src="img/logo_form.jpg" alt="メール配信CGI acmailer" style="padding:0; margin:0; margin-left:5px; vertical-align:middle; _padding-top:2px; height:auto;" /></a>
+	  [% END %]
+	  </td>
+    </tr>
+  </table>
+</form>
+<br />
+
+
+
+
+
+
+                  </td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <tr>
+                  <td class="listtitle listtitle_2 box"><a href="javascript:opensource(5);">解除専用フォーム（CSSタイプ）</a></td>
+                  <td class="listtitle listtitle_2 box"><a href="javascript:opensource(6);">解除専用フォーム（HTMLタイプ）</a></td>
+                </tr>
+                
+                
+                <tr>
+                  <td class="box">
+                  
+                  
+                  
+                  
+<br />
+<form action="[% admindata.homeurl %]reg.cgi" method="post">
+  <table border="0" cellspacing="3" cellpadding="0" style="width:200px; border:solid 1px #CCC; background-color:#FFF; text-align:left; border-collapse:separate; border-spacing:3px;">
+    <tr>
+      <td style="width:200px; background-color:#FFCC00; color:#FFF; font-size:14px; font-weight:bold; padding-top:3px; padding-bottom:2px; text-align:left; padding-left:4px; padding-right:0px;">メルマガ登録解除</td>
+    </tr>
+    <tr>
+      <td style="width:200px; background-color:#FFF; padding:0px;"><input type="text" name="email" style="height:16px; width:135px; margin-top:5px; margin-bottom:1px;">
+	  <input type="hidden" name="reg" value="del"><input type="hidden" name="encode" value="文字コード">
+	  <input type="submit" value="解除" name="submit" style="margin-top:9px; margin-left:3px; _padding:1px 3px;"></td>
+    </tr>
+    <tr>
+      <td style="width:200px; background-color:#FFF; padding-right:0px; padding-left:0px; padding-top:4px; padding-bottom:2px; _padding-bottom:0px; _padding-top:0px;">
+	  [% UNLESS writing %]
+        <div style="text-align:right; padding-right:4px; font-size:10px; color:#999;">powered by<a href="http://www.acmailer.jp/" target="_blank" title="メール配信CGI acmailer"><img src="img/logo_form.jpg" alt="メール配信CGI acmailer" style="border:none; padding:0; margin:0; margin-left:5px; vertical-align:middle; height:auto;" /></a></div>
+      [% END %]</td>
+    </tr>
+  </table>
+</form>
+幅：200px
+<br /><br />
+
+
+
+
+                  </td>
+                  <td class="box">
+                  
+                  
+                  
+                  
+                  
+<br />                  
+<form action="[% admindata.homeurl %]reg.cgi" method="post">
+  <table bgcolor="#FFCC00">
+    <tr>
+      <td colspan="2" bgcolor="#FFCC00" height="30" style="padding:0; margin:0;"><font color=#FFFFFF><b>メルマガ登録解除</b></font></td>
+    </tr>
+    <tr>
+      <td bgcolor="#FFFFFF" style="padding:0; margin:0;"><input type="text" name="email"></td>
+      <td bgcolor="#FFFFFF" style="padding:0; margin:0;"><input type="submit" value="解除" name="submit"><input type="hidden" name="reg" value="del"></td>
+    </tr>
+    <tr>
+      <td colspan="2" bgcolor="#FFFFFF" style="padding:0; margin:0;">
+	  [% UNLESS writing %]
+	  <font size=-2 color=#999999>powered by</font><a href="http://www.acmailer.jp/" target="_blank" title="メール配信CGI acmailer"><img src="img/logo_form.jpg" alt="メール配信CGI acmailer" style="padding:0; margin:0; margin-left:5px; vertical-align:middle; _padding-top:2px; height:auto;" /></a>
+	  [% END %]
+	  </td>
+    </tr>
+  </table>
+</form>
+<br />
+
+
+
+
+
+
+                  </td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <tr>
+                  <td class="listtitle listtitle_2 box"><a href="javascript:opensource(7);">メールアドレス変更フォーム（CSSタイプ）</a></td>
+                  <td class="listtitle listtitle_2 box"><a href="javascript:opensource(8);">メールアドレス変更フォーム（HTMLタイプ）</a></td>
+                </tr>
+                
+                
+                
+                <tr>
+                  <td class="box">
+                  
+                  
+                  
+                  
+<br />
+<form action="[% admindata.homeurl %]reg.cgi" method="post">
+  <table border="0" cellspacing="3" cellpadding="0" style="width:234px; border:solid 1px #CCC; background-color:#FFF; text-align:left; border-collapse:separate; border-spacing:3px;">
+    <tr>
+      <td style="width:234px; background-color:#FFCC00; color:#FFF; font-size:14px; font-weight:bold; padding-top:3px; padding-bottom:2px; text-align:left; padding-left:4px; padding-right:0px;">登録アドレス変更</td>
+    </tr>
+    <tr>
+      <td style="width:234px; background-color:#FFF; padding:0px;"><div style="float:left;">
+          <p style="font-size:13px; margin:0; padding-left:5px;">
+            旧<input type="text" name="oldemail" style="height:16px; width:143px; margin-top:5px; margin-bottom:1px; margin-left:5px;"></p>
+          <p style="font-size:13px; margin:0; padding-left:5px;">
+            新<input type="text" name="newemail" style="height:16px; width:143px; margin-top:5px; margin-bottom:1px; margin-left:5px;"></p>
+        </div>
+        <div style="float:right;">
+          <input type="submit" value="変更" name="submit" style="margin-top:33px; _margin-top:35px; _padding:1px 3px;">
+		  <input type="hidden" name="reg" value="edit"><input type="hidden" name="encode" value="文字コード">
+        </div></td>
+    </tr>
+    <tr>
+      <td style="width:234px; background-color:#FFF; padding-left:0px; padding-right:0px; padding-top:4px; padding-bottom:2px; _padding-bottom:0px; _padding-top:0px;">
+	  [% UNLESS writing %]
+        <div style="text-align:right; padding-right:4px; font-size:10px; color:#999;">powered by<a href="http://www.acmailer.jp/" target="_blank" title="メール配信CGI acmailer"><img src="img/logo_form.jpg" alt="メール配信CGI acmailer" style="border:none; padding:0; margin:0; margin-left:5px; vertical-align:middle; height:auto;" /></a></div>
+       [% END %]</td>
+    </tr>
+  </table>
+</form>
+幅：234px
+<br /><br />
+
+
+
+
+                  </td>
+                  <td class="box">
+                  
+                  
+                  
+                  
+                  
+<br />                  
+<form action="[% admindata.homeurl %]reg.cgi" method="post">
+  <table bgcolor="#FFCC00">
+    <tr>
+      <td colspan="3" bgcolor="#FFCC00" height="30" style="padding:0; margin:0;"><font color=#FFFFFF><b>登録アドレス変更</b></font></td>
+    </tr>
+    <tr>
+      <td  bgcolor="#FFFFFF"style="padding:0; margin:0;">旧</td>
+      <td bgcolor="#FFFFFF" style="padding:0; margin:0;"><input type="text" name="oldemail"></td>
+      <td bgcolor="#FFFFFF" style="padding:0; margin:0;"></td>
+    </tr>
+    <tr>
+      <td bgcolor="#FFFFFF" style="padding:0; margin:0;">新</td>
+      <td bgcolor="#FFFFFF" style="padding:0; margin:0;"><input type="text" name="newemail"></td>
+      <td bgcolor="#FFFFFF" style="padding:0; margin:0;"><input type="submit" value="変更" name="submit"><input type="hidden" name="reg" value="edit"></td>
+    </tr>
+    <tr>
+      <td colspan="3" bgcolor="#FFFFFF" style="padding:0; margin:0;">
+	  [% UNLESS writing %]
+	  <font size=-2 color=#999999>powered by</font><a href="http://www.acmailer.jp/" target="_blank" title="メール配信CGI acmailer"><img src="img/logo_form.jpg" alt="メール配信CGI acmailer" style="padding:0; margin:0; margin-left:5px; vertical-align:middle; _padding-top:2px; height:auto;" /></a>
+	  [% END %]
+	  </td>
+    </tr>
+  </table>
+</form>
+<br />
+
+
+
+
+
+
+                  </td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <tr>
+                  <td class="listtitle listtitle_2 box"><a href="javascript:opensource(9);">メールアドレス＋項目１（CSSタイプ）</a></td>
+                  <td class="listtitle listtitle_2 box"><a href="javascript:opensource(10);">メールアドレス＋項目１（HTMLタイプ）</a></td>
+                </tr>
+                
+                
+                
+                
+                <tr>
+                  <td class="box">
+                  
+                  
+                  
+                  
+<br />
+<form action="[% admindata.homeurl %]reg.cgi" method="post">
+  <table border="0" cellspacing="3" cellpadding="0" style="width:234px; border:solid 1px #CCC; background-color:#FFF; text-align:left; border-collapse:separate; border-spacing:3px;">
+    <tr>
+      <td style="width:234px; background-color:#FFCC00; color:#FFF; font-size:14px; font-weight:bold; padding-top:3px; padding-bottom:2px; text-align:left; padding-left:4px; padding-right:0px;">メルマガ登録</td>
+    </tr>
+    <tr>
+    	<td style="width:234px; background-color:#FFF; padding:0px;">
+          <p style="font-size:13px; margin:0;">
+            <input type="text" name="email" style="height:16px; width:220px; margin-top:5px; margin-bottom:1px;">
+          </p>
+		</td>
+    </tr>
+    <tr>
+      <td style="width:234px; background-color:#FFF; padding:0px;"><div style="float:left; vertical-align:middle">
+          <p style="font-size:13px; margin:0; padding-left:3px;">
+            性別<select name="col1" style="margin-top:5px; margin-bottom:1px; margin-left:5px;">
+              <option value="1">男
+              <option value="2">女
+            </select>
+          </p>
+        </div>
+        <div style="float:right;">
+          <input type="submit" value="登録" name="submit" style="margin-top:3px; _margin-top:4px; _padding:1px 3px;"><input type="hidden" name="reg" value="add"><input type="hidden" name="encode" value="文字コード">
+        </div></td>
+    </tr>
+    <tr>
+      <td style="width:234px; background-color:#FFF; padding-left:0px; padding-right:0px; padding-top:4px; padding-bottom:2px; _padding-bottom:0px; _padding-top:0px;">
+	  [% UNLESS writing %]
+        <div style="text-align:right; padding-right:4px; font-size:10px; color:#999;">powered by<a href="http://www.acmailer.jp/" target="_blank" title="メール配信CGI acmailer"><img src="img/logo_form.jpg" alt="メール配信CGI acmailer" style="border:none; padding:0; margin:0; margin-left:5px; vertical-align:middle; height:auto;" /></a></div>
+        [% END %]</td>
+    </tr>
+  </table>
+</form>
+幅：234px
+<br /><br />
+
+
+
+
+                  </td>
+                  <td class="box">
+                  
+                  
+                  
+                  
+                  
+<br />                  
+<form action="[% admindata.homeurl %]reg.cgi" method="post">
+  <table bgcolor="#FFCC00">
+    <tr>
+      <td colspan="3" bgcolor="#FFCC00" height="30" style="padding:0; margin:0;"><font color=#FFFFFF><b>メルマガ登録</b></font></td>
+    </tr>
+    <tr>
+    	<td bgcolor="#FFFFFF" colspan="3" style="padding:0; margin:0;"><input type="text" name="email"></td>
+    </tr>
+    <tr>
+      <td bgcolor="#FFFFFF" style="padding:0; margin:0;">性別</td>
+      <td bgcolor="#FFFFFF" style="padding:0; margin:0;">
+      	<select name="col1" style="margin-top:5px; margin-bottom:1px; margin-left:5px;">
+      		<option value="1">男
+            <option value="2">女
+      	</select>
+      </td>
+      <td bgcolor="#FFFFFF" style="padding:0; margin:0;">
+      	<input type="submit" value="登録" name="submit">
+		<input type="hidden" name="reg" value="add"><input type="hidden" name="encode" value="文字コード">
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3" bgcolor="#FFFFFF" style="padding:0; margin:0;">
+	  [% UNLESS writing %]
+	  <font size=-2 color=#999999>powered by</font><a href="http://www.acmailer.jp/" target="_blank" title="メール配信CGI acmailer"><img src="img/logo_form.jpg" alt="メール配信CGI acmailer" style="padding:0; margin:0; margin-left:5px; vertical-align:middle; _padding-top:2px; height:auto;" /></a>
+	  [% END %]
+	  </td>
+    </tr>
+  </table>
+</form>
+<br />
+
+
+
+
+
+
+                  </td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <tr>
+                  <td class="listtitle listtitle_2 box"><a href="javascript:opensource(11);">メールアドレス＋項目１＋項目２＋項目３（CSSタイプ）</a></td>
+                  <td class="listtitle listtitle_2 box"><a href="javascript:opensource(12);">メールアドレス＋項目１＋項目２＋項目３（HTMLタイプ）</a></td>
+                </tr>
+                
+                
+                
+                
+                <tr>
+                  <td class="box">
+                  
+                  
+                  
+                  
+<br />
+<form action="[% admindata.homeurl %]reg.cgi" method="post">
+  <table border="0" cellspacing="3" cellpadding="0" style="width:234px; border:solid 1px #CCC; background-color:#FFF; text-align:left; border-collapse:separate; border-spacing:3px;">
+    <tr>
+      <td style="background-color:#FFCC00; width:234px; color:#FFF; font-size:14px; font-weight:bold; padding-top:3px; padding-bottom:2px; text-align:left; padding-left:4px; padding-right:0px;">メルマガ登録</td>
+    </tr>
+    <tr>
+    	<td style="width:234px; background-color:#FFF; padding:0px;">
+          <p style="font-size:13px; margin:0;">
+            <input type="text" name="email" style="height:16px; width:220px; margin-top:5px; margin-bottom:1px;">
+          </p>
+		</td>
+    </tr>
+    <tr>
+      <td style="width:234px; background-color:#FFF; padding:0px;"><div style="float:left;">
+          <p style="font-size:13px; margin:0; padding-left:3px;">
+            Name<input type="text" name="col1" style="height:16px; width:110px; margin-top:5px; margin-bottom:1px;">
+          </p>
+          <p style="font-size:13px; margin:0; padding-left:3px;">
+            Sex<select name="col2" style="margin-top:5px; margin-bottom:1px; margin-left:5px;">
+              <option value="1">M
+              <option value="2">F
+            </select>
+          </p>
+          <p style="font-size:13px; margin:0; padding-left:3px;">
+            OS<select name="col3" style="margin-top:5px; margin-bottom:1px; margin-left:5px;">
+              <option value="1">Windows
+              <option value="2">Mac
+            </select>
+          </p>
+        </div>
+        <div style="float:right;">
+          <input type="submit" value="登録" name="submit" style="margin-top:33px; _margin-top:35px; _padding:1px 3px;">
+		  <input type="hidden" name="reg" value="add"><input type="hidden" name="encode" value="文字コード">
+        </div></td>
+    </tr>
+    <tr>
+      <td style="width:234px; background-color:#FFF; padding-left:0px; padding-right:0px; padding-top:4px; padding-bottom:2px; _padding-bottom:0px; _padding-top:0px;">
+	  [% UNLESS writing %]
+        <div style="text-align:right; padding-right:4px; font-size:10px; color:#999;">powered by<a href="http://www.acmailer.jp/" target="_blank" title="メール配信CGI acmailer"><img src="img/logo_form.jpg" alt="メール配信CGI acmailer" style="border:none; padding:0; margin:0; margin-left:5px; vertical-align:middle; height:auto;" /></a></div>
+       [% END %]</td>
+    </tr>
+  </table>
+</form>
+幅：234px
+<br /><br />
+
+
+
+
+                  </td>
+                  <td class="box">
+                  
+                  
+                  
+                  
+                  
+<br />                  
+<form action="[% admindata.homeurl %]reg.cgi" method="post">
+  <table bgcolor="#FFCC00">
+    <tr>
+    	<td colspan="3" bgcolor="#FFCC00" height="30" style="padding:0; margin:0;"><font color=#FFFFFF><b>メルマガ登録</b></font></td>
+    </tr>
+    <tr>
+    	<td bgcolor="#FFFFFF" colspan="3" style="padding:0; margin:0;"><input type="text" name="email" style="width:152px;"></td>
+    </tr>
+    <tr>
+    	<td bgcolor="#FFFFFF" style="padding:0; margin:0;">Name</td>
+        <td bgcolor="#FFFFFF" style="padding:0; margin:0;"><input type="text" name="col1"></td>
+        <td bgcolor="#FFFFFF" style="padding:0; margin:0;"></td>
+    </tr>
+    <tr>
+    	<td bgcolor="#FFFFFF" style="padding:0; margin:0;">Sex</td>
+        <td bgcolor="#FFFFFF" style="padding:0; margin:0;">
+			<select name="col2">
+				<option value="1">M
+    			<option value="2">F
+			</select>
+        </td>
+        <td bgcolor="#FFFFFF" style="padding:0; margin:0;"><input type="submit" value="登録" name="submit">
+		<input type="hidden" name="reg" value="add"><input type="hidden" name="encode" value="文字コード">
+		</td>
+    </tr>
+    <tr>
+    	<td bgcolor="#FFFFFF" style="padding:0; margin:0;">OS</td>
+        <td bgcolor="#FFFFFF" style="padding:0; margin:0;">
+			<select name="col3" style="margin-top:5px; margin-bottom:1px; margin-left:5px;">
+				<option value="1">Windows
+				<option value="2">Mac
+			</select>
+        </td>
+        <td bgcolor="#FFFFFF" style="padding:0; margin:0;"></td>
+    </tr>
+    <tr>
+      <td colspan="3" bgcolor="#FFFFFF" style="padding:0; margin:0;">
+	  [% UNLESS writing %]
+	  <font size=-2 color=#999999>powered by</font><a href="http://www.acmailer.jp/" target="_blank" title="メール配信CGI acmailer"><img src="img/logo_form.jpg" alt="メール配信CGI acmailer" style="padding:0; margin:0; margin-left:5px; vertical-align:middle; _padding-top:2px; height:auto;" /></a>
+	  [% END %]
+	  </td>
+    </tr>
+  </table>
+</form>
+<br />
+
+
+
+
+
+
+                  </td>
+                </tr>
+                
+                
+                
+		
+		
+		
+                
+                <tr>
+                  <td colspan="2" class="listtitle listtitle_2 box"><a href="javascript:opensource(13);">登録数カウンター</a></td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="box">
+		  	<br />
+				<table>
+				<tr>
+				<td>
+				    <img src="[% admindata.homeurl %]counter.cgi" border="0" title="登録数">
+				</td>
+				</tr>
+				</table>
+		  	<br />
+		  </td>
+		</tr>
+		
+		
+		
+		
+		
+		
+		
+                
+                
+                
+                
+                
+                
+                
+                
+                
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+			<!-- 1 -->
+		<div id="textarea_box1" name="textarea_box1" style="display:none;position:absolute;top:350px;left:200px;background-color:#FFFFFF;border:1px #000000 solid;width:700px;">
+			<div onmousedown="javascript:SetNodrag(0);" onmouseup="javascript:SetNodrag(1);" id="textarea_box1_bar" name="textarea_box1_bar" style="text-align:left;height=20px;color=#000000;width:698px;background-image:url(./img/bg_img_01.jpg);background-position:center bottom;background-repeat:repeat-x;border:solid 1px #EEEEEE;border-width:1px 1px 0px 1px;">
+				<div style="float:left;padding:3px;"><b>登録・削除一体型フォーム（CSSタイプ）</b></div>
+				<div style="text-align:right;padding:3px;"><a href="javascript:closesource(1);"><img src="img/close.gif"></a></div>
+			
+			</div>
+			<div style="background-color:#000000;">
+                      <span  id="file_in"><textarea style="width:650px; height:250px; overflow:auto;" onClick="this.select();">
+<form action="[% admindata.homeurl %]reg.cgi" method="post">
+  <table border="0" cellspacing="3" cellpadding="0" style="border:solid 1px #CCC; background-color:#FFF; border-collapse:separate; border-spacing:3px; width:120px;">
+    <tr>
+      <td style="background-color:#FFCC00; color:#FFF; font-size:14px; font-weight:bold; padding-top:3px; padding-bottom:2px; text-align:center; padding-left:0px; width:120px;">メルマガ登録</td>
+    </tr>
+    <tr>
+      <td style="background-color:#FFF; width:120px; padding-left:0px; padding-left:0px; padding-top:0px; padding-bottom:0px;"><input type="text" name="email" style="height:17px; width:114px; margin-top:5px; margin-bottom:1px;"></td>
+    </tr>
+    <tr>
+      <td style="background-color:#FFF; padding:0px; width:120px;"><div style="float:left;">
+          <p style="font-size:13px; margin:0;">
+            <input type="radio" name="reg" value="add" checked>
+            登録</p>
+          <p style="font-size:13px; margin:0;">
+            <input type="radio" name="reg" value="del">
+            削除</p>
+        			</div>
+		        <div style="float:right;">
+		          <input type="submit" value="送信" name="submit" style="margin-top:9px; _padding:1px 5px;"><input type="hidden" name="encode" value="文字コード">
+		        </div>
+		</td>
+    </tr>
+    <tr>
+      <td style="background-color:#FFF; padding-right:0px; padding-left:0px; padding-top:4px; padding-bottom:2px; _ padding-bottom:0px; _padding-top:0px; width:120px;">
+	  [% UNLESS writing %]
+        <div align="center" style="font-size:10px; color:#999;">powered by<a href="http://www.acmailer.jp/" target="_blank" title="メール配信CGI acmailer"><img src="[% admindata.homeurl %]img/logo_form.jpg" alt="メール配信CGI acmailer" style="border:none; padding:0; margin:0; margin-left:5px; vertical-align:middle; height:auto;" /></a></div>
+	  [% END %]
+        </td>
+    </tr>
+  </table>
+</form>
+
+                      </textarea>
+					  </span>
+				</div>
+				
+			  </div>
+			  
+
+			<!-- 2 -->
+		<div id="textarea_box2" style="display:none;position:absolute;top:350px;left:200px;background-color:#FFFFFF;border:1px #000000 solid;width:700px;">
+			<div onmousedown="javascript:SetNodrag(0);" onmouseup="javascript:SetNodrag(1);" style="text-align:left;height=20px;color=#000000;width:698px;background-image:url(./img/bg_img_01.jpg);background-position:center bottom;background-repeat:repeat-x;border:solid 1px #EEEEEE;border-width:1px 1px 0px 1px;">
+				<div style="float:left;padding:3px;"><b>登録・削除一体型フォーム（HTMLタイプ）</b></div>
+				<div style="text-align:right;padding:3px;"><a href="javascript:closesource(2);"><img src="img/close.gif"></a></div>
+			
+			</div>
+			<div style="background-color:#000000;">
+                      <span  id="file_in"><textarea style="width:650px;; height:250px; overflow:auto;" onClick="this.select()">
+<form action="[% admindata.homeurl %]reg.cgi" method="post">
+  <table bgcolor="#FFFFFF">
+    <tr>
+      <td colspan="3" bgcolor="#FFCC00"><font color=#FFFFFF><b>メルマガ登録</b></font></td>
+    </tr>
+    <tr>
+      <td colspan="3"><input type="text" name="email"></td>
+    </tr>
+    <tr>
+      <td><input type="radio" name="reg" value="add" checked>登録</td>
+      <td><input type="radio" name="reg" value="del">削除</td>
+      <td><input type="submit" value="送信" name="submit"><input type="hidden" name="encode" value="文字コード"></td>
+    </tr>
+    <tr>
+      <td colspan="3" bgcolor="#FFFFFF">
+	  [% UNLESS writing %]
+	  <font size="-2" color=#999999>powered by</font><a href="http://www.acmailer.jp/" target="_blank" title="メール配信CGI acmailer"><img src="[% admindata.homeurl %]img/logo_form.jpg" alt="メール配信CGI acmailer" border="0" /></a>
+	  [% END %]
+	  </td>
+    </tr>
+  </table>
+</form>
+
+                      </textarea>
+					  </span>
+				</div>
+				
+			  </div>
+
+
+			<!-- 3 -->
+		<div id="textarea_box3" style="display:none;position:absolute;top:400px;left:200px;background-color:#FFFFFF;border:1px #000000 solid;width:700px;">
+			<div onmousedown="javascript:SetNodrag(0);" onmouseup="javascript:SetNodrag(1);" style="text-align:left;height=20px;color=#000000;width:698px;background-image:url(./img/bg_img_01.jpg);background-position:center bottom;background-repeat:repeat-x;border:solid 1px #EEEEEE;border-width:1px 1px 0px 1px;">
+				<div style="float:left;padding:3px;"><b>登録専用フォーム（CSSタイプ）</b></div>
+				<div style="text-align:right;padding:3px;"><a href="javascript:closesource(3);"><img src="img/close.gif"></a></div>
+			
+			</div>
+			<div style="background-color:#000000;">
+                      <span  id="file_in"><textarea style="width:650px; height:250px; overflow:auto;" onClick="this.select()">
+<form action="[% admindata.homeurl %]reg.cgi" method="post">
+  <table border="0" cellspacing="3" cellpadding="0" style="border:solid 1px #CCC; background-color:#FFF; text-align:left; border-collapse:separate; border-spacing:3px; width:200px;">
+    <tr>
+      <td style="background-color:#FFCC00; width:200px; color:#FFF; font-size:14px; font-weight:bold; padding-right:0px; padding-top:3px; padding-bottom:2px; text-align:left; padding-left:4px;">メルマガ登録</td>
+    </tr>
+    <tr>
+      <td style="width:200px; background-color:#FFF; padding:0px;"><input type="text" name="email" style="height:16px; width:135px; margin-top:5px; margin-bottom:1px;"><input type="submit" value="登録" name="submit" style="margin-top:9px; margin-left:3px; _padding:1px 3px;"><input type="hidden" name="reg" value="add"><input type="hidden" name="encode" value="文字コード"></td>
+    </tr>
+    <tr>
+      <td style="width:200px; background-color:#FFF; padding-left:0px; padding-top:4px; padding-bottom:2px; padding-right:0px; _padding-bottom:0px; _padding-top:0px;">
+	  [% UNLESS writing %]
+        <div style="text-align:right; padding-right:4px; font-size:10px; color:#999;">powered by<a href="http://www.acmailer.jp/" target="_blank" title="メール配信CGI acmailer"><img src="[% admindata.homeurl %]img/logo_form.jpg" alt="メール配信CGI acmailer" style="border:none; padding:0; margin:0; margin-left:5px; vertical-align:middle; height:auto;" /></a></div>
+	  [% END %]
+        </td>
+    </tr>
+  </table>
+</form>
+                      </textarea>
+					  </span>
+				</div>
+				
+			  </div>
+
+
+
+			<!-- 4 -->
+		<div id="textarea_box4" style="display:none;position:absolute;top:400px;left:200px;background-color:#FFFFFF;border:1px #000000 solid;width:700px;">
+			<div onmousedown="javascript:SetNodrag(0);" onmouseup="javascript:SetNodrag(1);" style="text-align:left;height=20px;color=#000000;width:698px;background-image:url(./img/bg_img_01.jpg);background-position:center bottom;background-repeat:repeat-x;border:solid 1px #EEEEEE;border-width:1px 1px 0px 1px;">
+				<div style="float:left;padding:3px;"><b>登録専用フォーム（HTMLタイプ）</b></div>
+				<div style="text-align:right;padding:3px;"><a href="javascript:closesource(4);"><img src="img/close.gif"></a></div>
+			
+			</div>
+			<div style="background-color:#000000;">
+                      <span  id="file_in"><textarea style="width:650px; height:250px; overflow:auto;" onClick="this.select()">
+
+<form action="[% admindata.homeurl %]reg.cgi" method="post">
+  <table bgcolor="#FFFFFF">
+    <tr>
+      <td colspan="2" bgcolor="#FFCC00"><font color=#FFFFFF><b>メルマガ登録</b></font></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="email"></td>
+      <td><input type="submit" value="登録" name="submit"><input type="hidden" name="reg" value="add"><input type="hidden" name="encode" value="文字コード"></td>
+    </tr>
+    <tr>
+      <td colspan="2" bgcolor="#FFFFFF">
+	  [% UNLESS writing %]
+	  <font size="-2" color=#999999>powered by</font><a href="http://www.acmailer.jp/" target="_blank" title="メール配信CGI acmailer"><img src="[% admindata.homeurl %]img/logo_form.jpg" alt="メール配信CGI acmailer" border="0" /></a>
+	  [% END %]
+	  </td>
+    </tr>
+  </table>
+</form>
+                      </textarea>
+					  </span>
+				</div>
+				
+			  </div>
+
+
+
+			<!-- 5 -->
+		<div id="textarea_box5" style="display:none;position:absolute;top:600px;left:200px;background-color:#FFFFFF;border:1px #000000 solid;width:700px;">
+			<div onmousedown="javascript:SetNodrag(0);" onmouseup="javascript:SetNodrag(1);" style="text-align:left;height=20px;color=#000000;width:698px;background-image:url(./img/bg_img_01.jpg);background-position:center bottom;background-repeat:repeat-x;border:solid 1px #EEEEEE;border-width:1px 1px 0px 1px;">
+				<div style="float:left;padding:3px;"><b>解除専用フォーム（CSSタイプ）</b></div>
+				<div style="text-align:right;padding:3px;"><a href="javascript:closesource(5);"><img src="img/close.gif"></a></div>
+			
+			</div>
+			<div style="background-color:#000000;">
+                      <span  id="file_in"><textarea style="width:650px; height:250px; overflow:auto;" onClick="this.select()">
+
+<form action="[% admindata.homeurl %]reg.cgi" method="post">
+  <table border="0" cellspacing="3" cellpadding="0" style="width:200px; border:solid 1px #CCC; background-color:#FFF; text-align:left; border-collapse:separate; border-spacing:3px;">
+    <tr>
+      <td style="width:200px; background-color:#FFCC00; color:#FFF; font-size:14px; font-weight:bold; padding-top:3px; padding-bottom:2px; text-align:left; padding-left:4px; padding-right:0px;">メルマガ登録解除</td>
+    </tr>
+    <tr>
+      <td style="width:200px; background-color:#FFF; padding:0px;"><input type="text" name="email" style="height:16px; width:135px; margin-top:5px; margin-bottom:1px;"><input type="submit" value="解除" name="submit" style="margin-top:9px; margin-left:3px; _padding:1px 3px;"><input type="hidden" name="reg" value="del"><input type="hidden" name="encode" value="文字コード"></td>
+    </tr>
+    <tr>
+      <td style="width:200px; background-color:#FFF; padding-right:0px; padding-left:0px; padding-top:4px; padding-bottom:2px; _padding-bottom:0px; _padding-top:0px;">
+	  [% UNLESS writing %]
+        <div style="text-align:right; padding-right:4px; font-size:10px; color:#999;">powered by<a href="http://www.acmailer.jp/" target="_blank" title="メール配信CGI acmailer"><img src="[% admindata.homeurl %]img/logo_form.jpg" alt="メール配信CGI acmailer" style="border:none; padding:0; margin:0; margin-left:5px; vertical-align:middle; height:auto;" /></a></div>
+      [% END %]
+        </td>
+    </tr>
+  </table>
+</form>
+                      </textarea>
+					  </span>
+				</div>
+				
+			  </div>
+
+
+
+
+			<!-- 6 -->
+		<div id="textarea_box6" style="display:none;position:absolute;top:600px;left:200px;background-color:#FFFFFF;border:1px #000000 solid;width:700px;">
+			<div onmousedown="javascript:SetNodrag(0);" onmouseup="javascript:SetNodrag(1);" style="text-align:left;height=20px;color=#000000;width:698px;background-image:url(./img/bg_img_01.jpg);background-position:center bottom;background-repeat:repeat-x;border:solid 1px #EEEEEE;border-width:1px 1px 0px 1px;">
+				<div style="float:left;padding:3px;"><b>解除専用フォーム（HTMLタイプ）</b></div>
+				<div style="text-align:right;padding:3px;"><a href="javascript:closesource(6);"><img src="img/close.gif"></a></div>
+			
+			</div>
+			<div style="background-color:#000000;">
+                      <span  id="file_in"><textarea style="width:650px; height:250px; overflow:auto;" onClick="this.select()">
+
+<form action="[% admindata.homeurl %]reg.cgi" method="post">
+  <table bgcolor="#FFFFFF">
+    <tr>
+      <td colspan="2" bgcolor="#FFCC00"><font color=#FFFFFF><b>メルマガ登録解除</b></font></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="email"></td>
+      <td><input type="submit" value="解除" name="submit"><input type="hidden" name="reg" value="del"><input type="hidden" name="encode" value="文字コード"></td>
+    </tr>
+    <tr>
+      <td colspan="2" bgcolor="#FFFFFF">
+	  [% UNLESS writing %]
+	  <font size="-2" color=#999999>powered by</font><a href="http://www.acmailer.jp/" target="_blank" title="メール配信CGI acmailer"><img src="[% admindata.homeurl %]img/logo_form.jpg" alt="メール配信CGI acmailer" border="0"/></a>
+	  [% END %]
+	  </td>
+    </tr>
+  </table>
+</form>                      </textarea>
+					  </span>
+				</div>
+				
+			  </div>
+
+
+
+
+
+
+			<!-- 7 -->
+		<div id="textarea_box7" style="display:none;position:absolute;top:800px;left:200px;background-color:#FFFFFF;border:1px #000000 solid;width:700px;">
+			<div onmousedown="javascript:SetNodrag(0);" onmouseup="javascript:SetNodrag(1);" style="text-align:left;height=20px;color=#000000;width:698px;background-image:url(./img/bg_img_01.jpg);background-position:center bottom;background-repeat:repeat-x;border:solid 1px #EEEEEE;border-width:1px 1px 0px 1px;">
+				<div style="float:left;padding:3px;"><b>メールアドレス変更フォーム（CSSタイプ）</b></div>
+				<div style="text-align:right;padding:3px;"><a href="javascript:closesource(7);"><img src="img/close.gif"></a></div>
+			
+			</div>
+			<div style="background-color:#000000;">
+                      <span  id="file_in"><textarea style="width:650px; height:250px; overflow:auto;" onClick="this.select()">
+<form action="[% admindata.homeurl %]reg.cgi" method="post">
+  <table border="0" cellspacing="3" cellpadding="0" style="width:234px; border:solid 1px #CCC; background-color:#FFF; text-align:left; border-collapse:separate; border-spacing:3px;">
+    <tr>
+      <td style="width:234px; background-color:#FFCC00; color:#FFF; font-size:14px; font-weight:bold; padding-top:3px; padding-bottom:2px; text-align:left; padding-left:4px; padding-right:0px;">登録アドレス変更</td>
+    </tr>
+    <tr>
+      <td style="width:234px; background-color:#FFF; padding:0px;"><div style="float:left;">
+          <p style="font-size:13px; margin:0; padding-left:5px;">
+            旧<input type="text" name="oldemail" style="height:16px; width:143px; margin-top:5px; margin-bottom:1px; margin-left:5px;"></p>
+          <p style="font-size:13px; margin:0; padding-left:5px;">
+            新<input type="text" name="newemail" style="height:16px; width:143px; margin-top:5px; margin-bottom:1px; margin-left:5px;"></p>
+        </div>
+        <div style="float:right;">
+          <input type="submit" value="変更" name="submit" style="margin-top:33px; _margin-top:35px; _padding:1px 3px;">
+		  <input type="hidden" name="reg" value="edit"><input type="hidden" name="encode" value="文字コード">
+        </div></td>
+    </tr>
+    <tr>
+      <td style="width:234px; background-color:#FFF; padding-left:0px; padding-right:0px; padding-top:4px; padding-bottom:2px; _padding-bottom:0px; _padding-top:0px;">
+	  [% UNLESS writing %]
+        <div style="text-align:right; padding-right:4px; font-size:10px; color:#999;">powered by<a href="http://www.acmailer.jp/" target="_blank" title="メール配信CGI acmailer"><img src="[% admindata.homeurl %]img/logo_form.jpg" alt="メール配信CGI acmailer" style="border:none; padding:0; margin:0; margin-left:5px; vertical-align:middle; height:auto;" /></a></div>
+	  [% END %]
+        </td>
+    </tr>
+  </table>
+</form>                    </textarea>
+					  </span>
+				</div>
+				
+			  </div>
+
+
+
+
+
+
+
+
+			<!-- 8 -->
+		<div id="textarea_box8" style="display:none;position:absolute;top:800px;left:200px;background-color:#FFFFFF;border:1px #000000 solid;width:700px;">
+			<div onmousedown="javascript:SetNodrag(0);" onmouseup="javascript:SetNodrag(1);" style="text-align:left;height=20px;color=#000000;width:698px;background-image:url(./img/bg_img_01.jpg);background-position:center bottom;background-repeat:repeat-x;border:solid 1px #EEEEEE;border-width:1px 1px 0px 1px;">
+				<div style="float:left;padding:3px;"><b>メールアドレス変更フォーム（HTMLタイプ）</b></div>
+				<div style="text-align:right;padding:3px;"><a href="javascript:closesource(8);"><img src="img/close.gif"></a></div>
+			
+			</div>
+			<div style="background-color:#000000;">
+                      <span  id="file_in"><textarea style="width:650px; height:250px; overflow:auto;" onClick="this.select()">
+<form action="[% admindata.homeurl %]reg.cgi" method="post">
+  <table bgcolor="#FFFFFF">
+    <tr>
+      <td colspan="3" bgcolor="#FFCC00"><font color=#FFFFFF><b>登録アドレス変更</b></font></td>
+    </tr>
+    <tr>
+      <td>旧</td>
+      <td><input type="text" name="oldemail"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>新</td>
+      <td><input type="text" name="newemail"></td>
+      <td><input type="submit" value="変更" name="submit"></td>
+	  <input type="hidden" name="reg" value="edit"><input type="hidden" name="encode" value="文字コード">
+    </tr>
+    <tr>
+      <td colspan="3" bgcolor="#FFFFFF">
+	  [% UNLESS writing %]
+	  <font size="-2" color=#999999>powered by</font><a href="http://www.acmailer.jp/" target="_blank" title="メール配信CGI acmailer"><img src="[% admindata.homeurl %]img/logo_form.jpg" alt="メール配信CGI acmailer" border="0" /></a>
+	  [% END %]
+	  </td>
+    </tr>
+  </table>
+</form>			</textarea>		  </span>
+				</div>
+				
+			  </div>
+
+
+
+
+
+
+
+
+
+			<!-- 9 -->
+		<div id="textarea_box9" style="display:none;position:absolute;top:1000px;left:200px;background-color:#FFFFFF;border:1px #000000 solid;width:700px;">
+			<div onmousedown="javascript:SetNodrag(0);" onmouseup="javascript:SetNodrag(1);" style="text-align:left;height=20px;color=#000000;width:698px;background-image:url(./img/bg_img_01.jpg);background-position:center bottom;background-repeat:repeat-x;border:solid 1px #EEEEEE;border-width:1px 1px 0px 1px;">
+				<div style="float:left;padding:3px;"><b>メールアドレス＋項目１（CSSタイプ）</b></div>
+				<div style="text-align:right;padding:3px;"><a href="javascript:closesource(9);"><img src="img/close.gif"></a></div>
+			
+			</div>
+			<div style="background-color:#000000;">
+                      <span  id="file_in"><textarea style="width:650px; height:250px; overflow:auto;" onClick="this.select()">
+
+
+<form action="[% admindata.homeurl %]reg.cgi" method="post">
+  <table border="0" cellspacing="3" cellpadding="0" style="width:234px; border:solid 1px #CCC; background-color:#FFF; text-align:left; border-collapse:separate; border-spacing:3px;">
+    <tr>
+      <td style="width:234px; background-color:#FFCC00; color:#FFF; font-size:14px; font-weight:bold; padding-top:3px; padding-bottom:2px; text-align:left; padding-left:4px; padding-right:0px;">メルマガ登録</td>
+    </tr>
+    <tr>
+    	<td style="width:234px; background-color:#FFF; padding:0px;">
+          <p style="font-size:13px; margin:0;">
+            <input type="text" name="email" style="height:16px; width:220px; margin-top:5px; margin-bottom:1px;">
+          </p>
+		</td>
+    </tr>
+    <tr>
+      <td style="width:234px; background-color:#FFF; padding:0px;"><div style="float:left; vertical-align:middle">
+          <p style="font-size:13px; margin:0; padding-left:3px;">
+            性別<select name="col1" style="margin-top:5px; margin-bottom:1px; margin-left:5px;">
+              <option value="1">男
+              <option value="2">女
+            </select>
+          </p>
+        </div>
+        <div style="float:right;">
+          <input type="submit" value="登録" name="submit" style="margin-top:3px; _margin-top:4px; _padding:1px 3px;">
+		  <input type="hidden" name="reg" value="add"><input type="hidden" name="encode" value="文字コード">
+        </div></td>
+    </tr>
+    <tr>
+      <td style="width:234px; background-color:#FFF; padding-left:0px; padding-right:0px; padding-top:4px; padding-bottom:2px; _padding-bottom:0px; _padding-top:0px;">
+	  [% UNLESS writing %]
+        <div style="text-align:right; padding-right:4px; font-size:10px; color:#999;">powered by<a href="http://www.acmailer.jp/" target="_blank" title="メール配信CGI acmailer"><img src="[% admindata.homeurl %]img/logo_form.jpg" alt="メール配信CGI acmailer" style="border:none; padding:0; margin:0; margin-left:5px; vertical-align:middle; height:auto;" /></a></div>
+	  [% END %]
+        </td>
+    </tr>
+  </table>
+</form>
+
+
+	</textarea>
+					  </span>
+				</div>
+				
+			  </div>
+
+
+
+
+
+
+
+
+
+			<!-- 10 -->
+		<div id="textarea_box10" style="display:none;position:absolute;top:1000px;left:200px;background-color:#FFFFFF;border:1px #000000 solid;width:700px;">
+			<div onmousedown="javascript:SetNodrag(0);" onmouseup="javascript:SetNodrag(1);" style="text-align:left;height=20px;color=#000000;width:698px;background-image:url(./img/bg_img_01.jpg);background-position:center bottom;background-repeat:repeat-x;border:solid 1px #EEEEEE;border-width:1px 1px 0px 1px;">
+				<div style="float:left;padding:3px;"><b>メールアドレス＋項目１（HTMLタイプ）</b></div>
+				<div style="text-align:right;padding:3px;"><a href="javascript:closesource(10);"><img src="img/close.gif"></a></div>
+			
+			</div>
+			<div style="background-color:#000000;">
+                      <span  id="file_in"><textarea style="width:650px; height:250px; overflow:auto;" onClick="this.select()">
+
+
+<form action="[% admindata.homeurl %]reg.cgi" method="post">
+  <table bgcolor="#FFFFFF">
+    <tr>
+      <td colspan="3" bgcolor="#FFCC00"><font color=#FFFFFF><b>メルマガ登録</b></font></td>
+    </tr>
+    <tr>
+    	<td colspan="3"><input type="text" name="email"></td>
+    </tr>
+    <tr>
+      <td>性別</td>
+      <td>
+      	<select name="col1">
+      		<option value="1">男
+		<option value="2">女
+      	</select>
+      </td>
+      <td>
+      	<input type="submit" value="登録" name="submit">
+	<input type="hidden" name="reg" value="add"><input type="hidden" name="encode" value="文字コード">
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3" bgcolor="#FFFFFF">
+	  [% UNLESS writing %]
+	  <font size="-2" color=#999999>powered by</font><a href="http://www.acmailer.jp/" target="_blank" title="メール配信CGI acmailer"><img src="[% admindata.homeurl %]img/logo_form.jpg" alt="メール配信CGI acmailer" border="0"/></a>
+	  [% END %]
+	  </td>
+    </tr>
+  </table>
+</form>
+
+
+	</textarea>
+					  </span>
+				</div>
+				
+			  </div>
+
+
+
+
+
+
+
+
+
+			<!-- 11 -->
+		<div id="textarea_box11" style="display:none;position:absolute;top:1200px;left:200px;background-color:#FFFFFF;border:1px #000000 solid;width:700px;">
+			<div onmousedown="javascript:SetNodrag(0);" onmouseup="javascript:SetNodrag(1);" style="text-align:left;height=20px;color=#000000;width:698px;background-image:url(./img/bg_img_01.jpg);background-position:center bottom;background-repeat:repeat-x;border:solid 1px #EEEEEE;border-width:1px 1px 0px 1px;">
+				<div style="float:left;padding:3px;"><b>メールアドレス＋項目１＋項目２＋項目３（CSSタイプ）</b></div>
+				<div style="text-align:right;padding:3px;"><a href="javascript:closesource(11);"><img src="img/close.gif"></a></div>
+			
+			</div>
+			<div style="background-color:#000000;">
+                      <span  id="file_in"><textarea style="width:650px; height:250px; overflow:auto;" onClick="this.select()">
+
+<form action="[% admindata.homeurl %]reg.cgi" method="post">
+  <table border="0" cellspacing="3" cellpadding="0" style="width:234px; border:solid 1px #CCC; background-color:#FFF; text-align:left; border-collapse:separate; border-spacing:3px;">
+    <tr>
+      <td style="background-color:#FFCC00; width:234px; color:#FFF; font-size:14px; font-weight:bold; padding-top:3px; padding-bottom:2px; text-align:left; padding-left:4px; padding-right:0px;">メルマガ登録</td>
+    </tr>
+    <tr>
+    	<td style="width:234px; background-color:#FFF; padding:0px;">
+          <p style="font-size:13px; margin:0;">
+            <input type="text" name="email" style="height:16px; width:220px; margin-top:5px; margin-bottom:1px;">
+          </p>
+		</td>
+    </tr>
+    <tr>
+      <td style="width:234px; background-color:#FFF; padding:0px;"><div style="float:left;">
+          <p style="font-size:13px; margin:0; padding-left:3px;">
+            Name<input type="text" name="col1" style="height:16px; width:110px; margin-top:5px; margin-bottom:1px;">
+          </p>
+          <p style="font-size:13px; margin:0; padding-left:3px;">
+            Sex<select name="col2" style="margin-top:5px; margin-bottom:1px; margin-left:5px;">
+              <option value="1">M
+              <option value="2">F
+            </select>
+          </p>
+          <p style="font-size:13px; margin:0; padding-left:3px;">
+            OS<select name="col3" style="margin-top:5px; margin-bottom:1px; margin-left:5px;">
+              <option value="1">Windows
+              <option value="2">Mac
+            </select>
+          </p>
+        </div>
+        <div style="float:right;">
+          <input type="submit" value="登録" name="submit" style="margin-top:33px; _margin-top:35px; _padding:1px 3px;">
+		  <input type="hidden" name="reg" value="add"><input type="hidden" name="encode" value="文字コード">
+        </div></td>
+    </tr>
+    <tr>
+      <td style="width:234px; background-color:#FFF; padding-left:0px; padding-right:0px; padding-top:4px; padding-bottom:2px; _padding-bottom:0px; _padding-top:0px;">
+	  [% UNLESS writing %]
+        <div style="text-align:right; padding-right:4px; font-size:10px; color:#999;">powered by<a href="http://www.acmailer.jp/" target="_blank" title="メール配信CGI acmailer"><img src="[% admindata.homeurl %]img/logo_form.jpg" alt="メール配信CGI acmailer" style="border:none; padding:0; margin:0; margin-left:5px; vertical-align:middle; height:auto;" /></a></div>
+	  [% END %]
+        </td>
+    </tr>
+  </table>
+</form>
+
+
+	</textarea>
+					  </span>
+				</div>
+				
+			  </div>
+
+
+
+
+
+
+
+
+
+
+			<!-- 12 -->
+		<div id="textarea_box12" style="display:none;position:absolute;top:1200px;left:200px;background-color:#FFFFFF;border:1px #000000 solid;width:700px;">
+			<div onmousedown="javascript:SetNodrag(0);" onmouseup="javascript:SetNodrag(1);" style="text-align:left;height=20px;color=#000000;width:698px;background-image:url(./img/bg_img_01.jpg);background-position:center bottom;background-repeat:repeat-x;border:solid 1px #EEEEEE;border-width:1px 1px 0px 1px;">
+				<div style="float:left;padding:3px;"><b>メールアドレス＋項目１＋項目２＋項目３（HTMLタイプ）</b></div>
+				<div style="text-align:right;padding:3px;"><a href="javascript:closesource(12);"><img src="img/close.gif"></a></div>
+			
+			</div>
+			<div style="background-color:#000000;">
+                      <span  id="file_in"><textarea style="width:650px; height:250px; overflow:auto;" onClick="this.select()">
+
+<form action="[% admindata.homeurl %]reg.cgi" method="post">
+  <table bgcolor="#FFFFFF">
+    <tr>
+    	<td colspan="3" bgcolor="#FFCC00"><font color=#FFFFFF><b>メルマガ登録</b></font></td>
+    </tr>
+    <tr>
+    	<td colspan="3"><input type="text" name="email"></td>
+    </tr>
+    <tr>
+    	<td>Name</td>
+        <td><input type="text" name="col1"></td>
+        <td></td>
+    </tr>
+    <tr>
+    	<td>Sex</td>
+        <td>
+		<select name="col2">
+			<option value="1">M
+    			<option value="2">F
+		</select>
+        </td>
+        <td><input type="submit" value="登録" name="submit"><input type="hidden" name="reg" value="add"><input type="hidden" name="encode" value="文字コード"></td>
+    </tr>
+    <tr>
+    	<td>OS</td>
+        <td>
+		<select name="col3">
+			<option value="1">Windows
+			<option value="2">Mac
+		</select>
+        </td>
+        <td></td>
+    </tr>
+    <tr>
+      <td colspan="3" bgcolor="#FFFFFF">
+	  [% UNLESS writing %]
+	  <font size="-2" color=#999999>powered by</font><a href="http://www.acmailer.jp/" target="_blank" title="メール配信CGI acmailer"><img src="[% admindata.homeurl %]img/logo_form.jpg" alt="メール配信CGI acmailer" border="0"/></a>
+	  [% END %]
+	  </td>
+    </tr>
+  </table>
+</form>
+
+
+	</textarea>
+					  </span>
+				</div>
+				
+			  </div>
+
+
+
+
+
+
+
+
+
+			<!-- 13 -->
+		<div id="textarea_box13" style="display:none;position:absolute;top:1200px;left:200px;background-color:#FFFFFF;border:1px #000000 solid;width:700px;">
+			<div onmousedown="javascript:SetNodrag(0);" onmouseup="javascript:SetNodrag(1);" style="text-align:left;height=20px;color=#000000;width:698px;background-image:url(./img/bg_img_01.jpg);background-position:center bottom;background-repeat:repeat-x;border:solid 1px #EEEEEE;border-width:1px 1px 0px 1px;">
+				<div style="float:left;padding:3px;"><b>登録数カウンター</b></div>
+				<div style="text-align:right;padding:3px;"><a href="javascript:closesource(13);"><img src="img/close.gif"></a></div>
+			
+			</div>
+			<div style="background-color:#000000;">
+                      <span  id="file_in"><textarea style="width:650px; height:250px; overflow:auto;" onClick="this.select()"><table>
+<tr>
+<td>
+<img src="[% admindata.homeurl %]counter.cgi" border="0" title="登録数">
+</td>
+</tr>
+</table></textarea>
+					  </span>
+				</div>
+				
+			  </div>
+
+
+
+
+
+<script>
+function hidden_select() {
+	 var obj=document.getElementsByTagName("select");
+	for(i = 0; i <= obj.length;i++) {
+		if (obj.item(i)) {
+			obj.item(i).style.visibility='hidden';
+		}
+	}
+	
+}
+
+function disp_select() {
+	
+	 var obj=document.getElementsByTagName("select");
+	for(i = 0; i <= obj.length;i++) {
+		if (obj.item(i)) {
+			obj.item(i).style.visibility='visible';
+		}
+	}
+}
+</script>
+
+
+
+[% INCLUDE 'tmpl/html_footer.tmpl' %]

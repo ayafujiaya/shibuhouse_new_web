@@ -1,0 +1,101 @@
+html{
+	background-color:#666666;
+	text-align:left;
+}
+body{
+	margin:20px 0;
+}
+a {
+	color:#666;
+	text-decoration:none;
+}
+a:visited {
+	color:#666;
+}
+a:hover {
+	color:#CCC;
+	text-decoration:underline;
+}
+
+
+
+
+
+
+/* ヘッダー・フッター
+---------------------------------------------*/
+#containt_panel_wrapper{
+	width:680px;
+	margin:0 auto;
+	background-color:#FFF;
+}
+#containt_panel{
+	width:610px;
+	padding:40px 35px 25px 35px;
+}
+#panel_head{
+	margin-bottom:15px;
+}
+#panel_head_left{
+	float:left;
+}
+#panel_head_left a{}
+#panel_head_left img{
+	padding-top:10px;
+}
+#panel_head_right{
+	float:right;
+}
+#panel_head_right a{}
+#panel_head_right img{}
+#panel_foot{
+	margin-top:15px;
+	text-align:right;
+}
+/* フォーム
+---------------------------------------------*/
+#form_table{
+	width:610px;
+	padding:5px 0px;
+	/* background-color:#F1F1F1; */
+}
+table{
+	width:600px;
+	margin:0 auto;
+}
+tr{}
+td{
+	line-height:2em;
+}
+
+#zine_title{
+	line-height:4em;
+	font-size:92%;
+	font-weight:bold;
+}
+.td_left{
+	width:30%;
+	text-align:right;
+	background-color:#F4F4F4;
+	border:solid 1px #ccc;
+	padding:0.5em;
+}
+.td_right{
+	width:70%;
+	text-align:left;
+	background-color:#FFFFFF;
+	border:solid 1px #ccc;
+	padding:0.5em;
+}
+td.td_right span{
+	white-space:nowrap;
+}
+input.txt_box, textarea{
+	width:95%;
+	padding:0.1em;
+}
+#zine_btn{}
+#zine_btn input{
+	margin:1em 0 1em;
+	padding:0.1em 1em;
+}

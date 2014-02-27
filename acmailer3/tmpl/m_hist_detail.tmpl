@@ -1,0 +1,234 @@
+[% INCLUDE 'tmpl/html_mobileheader.tmpl' %]
+
+<div style="background-color:#FFCC00;text-align:center;padding:5px;">
+	履歴詳細
+</div>
+
+<table width="100%">
+	<tr>
+		<td class="td_title" style="background:#E6E6E6;">
+			<font size="2">
+			送信開始
+			</font>
+			<input type="hidden" name="sid" value="[% form.sid %]">
+		</td>
+	</tr>
+	<tr>
+		<td class="pb_10">
+			<span style="font-size:small;">
+			<font size="1">
+			[% start_send_date %]
+			</font>
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title" style="background:#E6E6E6;">
+			<font size="2">
+			送信終了
+			</font>
+			<input type="hidden" name="sid" value="[% form.sid %]">
+		</td>
+	</tr>
+	<tr>
+		<td class="pb_10">
+			<span style="font-size:small;">
+			<font size="1">
+			[% end_send_date %]
+			</font>
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title" style="background:#E6E6E6;">
+			<font size="2">
+			送信タイプ
+			</font>
+			<input type="hidden" name="sid" value="[% form.sid %]">
+		</td>
+	</tr>
+	<tr>
+		<td class="pb_10">
+			<span style="font-size:small;">
+			<font size="1">
+			[% IF send_type=="1" %]分割[% ELSIF send_type=="2" %]バックグランド処理[% ELSIF send_type=="0" %]ノーマル[% END %]
+			</font>
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title" style="background:#E6E6E6;">
+			<font size="2">
+			メールタイプ
+			</font>
+			<input type="hidden" name="sid" value="[% form.sid %]">
+		</td>
+	</tr>
+	<tr>
+		<td class="pb_10">
+			<span style="font-size:small;">
+			<font size="1">
+			[% IF mail_type=="plain" %]テキストメール[% ELSIF mail_type=="html" %]HTMLメール[% END %]
+			</font>
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title" style="background:#E6E6E6;">
+			<font size="2">
+			絞込み
+			</font>
+			<input type="hidden" name="sid" value="[% form.sid %]">
+		</td>
+	</tr>
+	<tr>
+		<td class="pb_10">
+			<span style="font-size:small;">
+			<font size="1">
+	  [% IF search_text1 != "" %]
+	  [% dispcolname1|html %]：[% search_text1|html %] [% IF searchlike1=="1" %]と一致する[% ELSIF searchlike1=="2" %]を含まない[% ELSE %]を含む[% END %]<br>
+	  [% END %]
+	  
+	  [% IF search_text2 != "" %]
+	  [% dispcolname2|html %]：[% search_text2|html %] [% IF searchlike2=="1" %]と一致する[% ELSIF searchlike2=="2" %]を含まない[% ELSE %]を含む[% END %]<br>
+	  [% END %]
+	  [% IF search_text3 != "" %]
+	  [% dispcolname3|html %]：[% search_text3|html %] [% IF searchlike3=="1" %]と一致する[% ELSIF searchlike3=="2" %]を含まない[% ELSE %]を含む[% END %]<br>
+	  [% END %]
+	  [% IF search_text4 != "" %]
+	  [% dispcolname4|html %]：[% search_text4|html %] [% IF searchlike4=="1" %]と一致する[% ELSIF searchlike4=="2" %]を含まない[% ELSE %]を含む[% END %]<br>
+	  [% END %]
+	  [% IF search_text5 != "" %]
+	  [% dispcolname5|html %]：[% search_text5|html %] [% IF searchlike5=="1" %]と一致する[% ELSIF searchlike5=="2" %]を含まない[% ELSE %]を含む[% END %]<br>
+	  [% END %]
+			  条件：
+			  [% IF andor == 'and' %]
+			  AND検索<br>
+			  [% ELSIF andor == 'or' %]
+			  OR検索<br>
+			  [% END %]
+			  ドメイン：
+			  [% IF search_domain == '1' %]
+			  PCのみ
+			  [% ELSIF search_domain == '2' %]
+			  携帯のみ
+			  [% ELSE %]
+			  両方
+			  [% END %]
+			</font>
+			</span>
+		</td>
+	</tr>
+	[% IF mail_type=="html" %]
+	<tr>
+		<td class="td_title" style="background:#E6E6E6;">
+			<font size="2">
+			HTMLプレビュー
+			</font>
+			<input type="hidden" name="sid" value="[% form.sid %]">
+		</td>
+	</tr>
+	<tr>
+		<td class="pb_10">
+			<span style="font-size:small;">
+			<font size="1">
+			<a href="email_send_previewhtml.cgi?mode=hist&id=[% id %]&sid=[% form.sid %]" target="blank">プレビュー</a>
+			</font>
+			</span>
+		</td>
+	</tr>
+	[% END %]
+	<tr>
+		<td class="td_title" style="background:#E6E6E6;">
+			<font size="2">
+			件名
+			</font>
+			<input type="hidden" name="sid" value="[% form.sid %]">
+		</td>
+	</tr>
+	<tr>
+		<td class="pb_10">
+			<span style="font-size:small;">
+			<font size="1">
+			[% mail_title|html %]
+			</font>
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title" style="background:#E6E6E6;">
+			<font size="2">
+			本文
+			</font>
+			<input type="hidden" name="sid" value="[% form.sid %]">
+		</td>
+	</tr>
+	<tr>
+		<td class="pb_10">
+			<span style="font-size:small;">
+			<font size="1">
+			[% mail_body|html %]
+			</font>
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title" style="background:#E6E6E6;">
+			<font size="2">
+			送信件数
+			</font>
+			<input type="hidden" name="sid" value="[% form.sid %]">
+		</td>
+	</tr>
+	<tr>
+		<td class="pb_10">
+			<span style="font-size:small;">
+			<font size="1">
+			[% total_count %]
+			</font>
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title" style="background:#E6E6E6;">
+			<font size="2">
+			不着件数
+			</font>
+			<input type="hidden" name="sid" value="[% form.sid %]">
+		</td>
+	</tr>
+	<tr>
+		<td class="pb_10">
+			<span style="font-size:small;">
+			<font size="1">
+			[% errmail_count %]
+			</font>
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title" style="background:#E6E6E6;">
+			<font size="2">
+			処理
+			</font>
+			<input type="hidden" name="sid" value="[% form.sid %]">
+		</td>
+	</tr>
+	<tr>
+		<td class="pb_10">
+			<span style="font-size:small;">
+			<font size="1">
+			[% IF reserve && status == "3" %]
+			<a href="email_send.cgi?id=[% id %]&sid=[% form.sid %]">編集する</a>
+			&nbsp;
+			[% END %]
+			<a href="m_hist_del_check.cgi?id=[% id %]&sid=[% form.sid %]">削除する</a>
+			</font>
+			</span>
+		</td>
+	</tr>
+</table>
+
+<br>
+
+[% INCLUDE 'tmpl/html_mobilefooter.tmpl' %]

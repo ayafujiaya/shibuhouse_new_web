@@ -1,0 +1,30 @@
+
+[% INCLUDE 'tmpl/html_header_nomenu.tmpl' %]
+
+
+		
+        <div id="panel">
+        	<div id="panel_title">
+            	<p id="panel_title_1"></p>
+                <p id="panel_title_2">削除確認</p>
+            </div>
+            <div id="panel_text">
+
+<div align="center">
+[% email %]を削除してもよろしいですか？
+<br><br>
+<form action="reg.cgi" method="post">
+<input type="hidden" name="reg" value="del">
+<input type="hidden" name="email" value="[% email|html %]">
+<input type="submit" value="削除">
+<input type="hidden" name="checkok" value="1">
+</form>
+</div>
+            </div>
+        </div>
+
+
+
+
+
+[% INCLUDE 'tmpl/html_footer_nomenu.tmpl' %]

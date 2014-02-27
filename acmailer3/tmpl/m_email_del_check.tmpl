@@ -1,0 +1,91 @@
+[% INCLUDE 'tmpl/html_mobileheader.tmpl' %]
+
+<div style="background-color:#FFCC00;text-align:center;padding:5px;">
+	ﾒｰﾙｱﾄﾞﾚｽ一括削除
+</div>
+
+[% IF addnum %]
+<form name="form1" method="post" action="email_del.cgi" accept-charset="euc-jp">
+<table width="100%">
+	<tr>
+		<td>
+		<td style="font-size:small">
+			<font size="1">
+			以下の内容で削除します。よろしければ削除ボタンを押してください。
+			</font>
+		</td>
+	</tr>
+	<tr>
+		<td style="font-size:small">
+			<font size="1">
+			削除可能数：[% addnum %]件
+			</font>
+		</td>
+	</tr>
+	<tr>
+		<td style="text-align:center">
+			<font size="2">
+			<input type="submit" value="一括削除">
+			</font>
+		</td>
+	</tr>
+</table>
+
+<table width="100%">
+	<tr>
+		<!-- <td class="td_title" style="background:#E6E6E6;">
+		</td> -->
+		<td class="td_title" style="background:#E6E6E6;">
+			<font size="2">
+			ﾒｰﾙｱﾄﾞﾚｽ
+			</font>
+			<input type="hidden" name="sid" value="[% form.sid %]">
+		</td>
+		<td class="td_title" style="background:#E6E6E6;">
+			<font size="2">
+			状態
+			</font>
+			<input type="hidden" name="sid" value="[% form.sid %]">
+		</td>
+	</tr>
+	[% FOREACH v=loop %]
+	<tr>
+		<!-- <td class="pb_10">
+			<span style="font-size:small;">
+			<font size="1">
+			[% v.i %]
+			</font>
+			</span>
+		</td> -->
+		<td class="pb_10">
+			<span style="font-size:small;">
+			<font size="1">
+			[% v.email %]
+			</font>
+			</span>
+		</td>
+		<td class="pb_10">
+			<span style="font-size:small;">
+			<font size="1">
+			[% v.status %]
+			</font>
+			</span>
+		</td>
+	</tr>
+	[% END %]
+	<tr>
+		<td>
+		<input type="hidden" name="emailall" value="[% emailall %]">
+		<input type="hidden" name="sid" value="[% form.sid %]">
+		<input type="hidden" name="del" value="1">
+		</td>
+		<td>
+		</td>
+	</tr>
+</table>
+</form>
+[% ELSE %]
+削除できるﾃﾞｰﾀがありません。
+[% END %]
+
+[% INCLUDE 'tmpl/html_mobilefooter.tmpl' %]

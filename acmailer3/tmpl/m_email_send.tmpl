@@ -1,0 +1,257 @@
+[% INCLUDE 'tmpl/html_mobileheader.tmpl' %]
+
+<div style="background-color:#FFCC00;text-align:center;padding:5px;">
+[% IF form.id %]
+予約内容編集
+[% ELSE %]
+ﾒｰﾙ配信
+[% END %]
+</div>
+
+<form name="form1" method="post" action="email_send_check.cgi" accept-charset="euc-jp">
+
+  <input type="hidden" name="mail_session_id" value="[% form.mail_session_id %]" />
+
+<table width="100%">
+	<tr>
+		<td class="td_title" style="background:#E6E6E6;">
+			<font size="2">
+			送信先件数
+			</font>
+			<input type="hidden" name="sid" value="[% form.sid %]">
+		</td>
+	</tr>
+	<tr>
+		<td class="pb_10">
+			<span style="font-size:small;">
+			<font size="1">
+			[% emailnum %]/[% totalnum %]件
+			</font>
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title" style="background:#E6E6E6;">
+			<font size="2">差出人</font>
+		</td>
+	</tr>
+	<tr>
+		<td class="pb_10">
+			<span style="font-size:small;">
+			<font size="1">[% admin_name %] &lt;[% admin_email %]&gt;</font>
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title" style="background:#E6E6E6;">
+			<font size="2">ﾒｰﾙ形式</font>
+		</td>
+	</tr>
+	<tr>
+		<td class="pb_10">
+			<span style="font-size:small;">
+			<font size="1">
+			[% IF form.id %]
+			<input type="hidden" name="mail_type" value="[% form.mail_type|html %]" />
+			[% IF form.mail_type == "plain" %]ﾃｷｽﾄ[% ELSE %]HTML[% END %]
+			[% ELSE %]
+			<input type="radio" name="mail_type" value="plain" [% IF form.mail_type == "plain" || form.mail_type == "" %]checked[% END %]>ﾃｷｽﾄ
+			<input type="radio" name="mail_type" value="html" [% IF form.mail_type == "html" %]checked[% END %]>HTML
+			[% END %]
+			</font>
+			</span>
+		</td>
+	</tr>
+	
+	[% IF reserve %]
+	<tr>
+		<td class="td_title" style="background:#E6E6E6;">
+			<font size="2">配信日時</font>
+		</td>
+	</tr>
+	<tr>
+		<td class="pb_10">
+			<span style="font-size:small;">
+			<font size="1">
+			[% IF form.id %]
+			<input type="hidden" name="reserve_mode" value="1">
+			[% ELSE %]
+			<input type="radio" name="reserve_mode" value="0" [% IF form.reserve_mode == '' || form.reserve_mode=='0'%]checked[% END %]>今すぐ 
+			<input type="radio" name="reserve_mode" value="1" [% IF form.reserve_mode == '1' %]checked[% END %]>予約<br />
+			[% END %]
+			<select name="send_year">
+			<option value=""></option>
+			[% FOREACH v=send_year %]
+			<option value="[% v.value %]" [% IF form.send_year==v.value %]selected[% ELSE %][% END %]><span class="fs_1">[% v.value %]</span></option>
+			[% END %]
+			</select>
+			年
+			<select name="send_mon">
+			<option value=""></option>
+			[% FOREACH v=send_mon %]
+			<option value="[% v.value %]" [% IF form.send_mon==v.value %]selected[% ELSE %][% END %]><span class="fs_1">[% v.value %]</span></option>
+			[% END %]
+
+			</select>
+			月
+			<select name="send_day">
+			<option value=""></option>
+			[% FOREACH v=send_day %]
+			<option value="[% v.value %]" [% IF form.send_day==v.value %]selected[% ELSE %][% END %]><span class="fs_1">[% v.value %]</span></option>
+			[% END %]
+			</select>
+			日
+			<br />
+			
+			<select name="send_hour">
+			<option value=""></option>
+			[% FOREACH v=send_hour %]
+			<option value="[% v.value %]" [% IF form.send_hour==v.value %]selected[% ELSE %][% END %]><span class="fs_1">[% v.value %]</span></option>
+			[% END %]
+			</select>
+			時
+			<select name="send_min">
+			<option value=""></option>
+			[% FOREACH v=send_min %]
+			<option value="[% v.value %]" [% IF form.send_min==v.value %]selected[% ELSE %][% END %]><span class="fs_1">[% v.value %]</span></option>
+			[% END %]
+			</select>
+			分
+			</font>
+			</span>
+		</td>
+	</tr>
+	[% END %]
+
+	<tr>
+		<td class="td_title" style="background:#E6E6E6;">
+			<font size="2">絞込</font>
+		</td>
+	</tr>
+	<tr>
+		<td class="pb_10">
+			<span style="font-size:small;">
+			<font size="1">
+			[% FOREACH v=search %]
+			[%IF loop.count < 3 %]
+				<select name="search[% v.search_id %]">
+				<option value="email"><span class="fs_1">ﾒｰﾙｱﾄﾞﾚｽ</span>
+				[% FOREACH v2=v.select %]
+				<option value="[% v2.col %]" [% IF v2.selected %]selected[% END %]><span class="fs_1">[% v2.colname|html %]</span>
+				[% END %]
+				</select>
+				<input type="text" class="fs_1" name="search_text[% v.search_id %]" size="20" value="[% v.search_text|html %]" [% sys.input_type %]>
+				<select name="searchlike[% v.search_id %]">
+				<option value="" [% IF v.searchlike == "" %] selected[% END %]>含む
+				<option value="2" [% IF v.searchlike == "2" %] selected[% END %]>含まない
+				<option value="1" [% IF v.searchlike == "1" %] selected[% END %]>一致
+				</select><br />
+			[% END %]
+			[% END %]
+			</font>
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title" style="background:#E6E6E6;">
+			<font size="2">条件</font>
+		</td>
+	</tr>
+	<tr>
+		<td class="pb_10">
+			<span style="font-size:small;">
+			<font size="1">
+			<input type="radio" name="andor" value="and" [% IF form.andor == 'and' || form.andor == '' %]checked[% END %]>AND検索 
+			<input type="radio" name="andor" value="or" [% IF form.andor == 'or' %]checked[% END %]>OR検索
+			</font>
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title" style="background:#E6E6E6;">
+			<font size="2">ﾄﾞﾒｲﾝ</font>
+		</td>
+	</tr>
+	<tr>
+		<td class="pb_10">
+			<span style="font-size:small;">
+			<font size="1">
+			<input type="radio" name="search_domain" value="" [% IF form.search_domain=="" || form.search_domain == '' %]checked[% END %]>両方
+			<input type="radio" name="search_domain" value="1" [% IF form.search_domain=="1" %]checked[% END %]>PCのみ
+			<input type="radio" name="search_domain" value="2" [% IF form.search_domain=="2" %]checked[% END %]>携帯のみ
+			</font>
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title" style="background:#E6E6E6;">
+			<font size="2">件名</font>
+		</td>
+	</tr>
+	<tr>
+		<td class="pb_10">
+			<span style="font-size:small;">
+			<font size="1">
+			<input class="fs_1" type="text" name="mail_title" size="35" value="[% form.mail_title|html %]">
+			</font>
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title" style="background:#E6E6E6;">
+			<font size="2">本文</font>
+		</td>
+	</tr>
+	<tr>
+		<td class="pb_10">
+			<span style="font-size:small;">
+			<font size="1">
+			<textarea class="fs_1" name="mail_body" rows="5" cols="60" >[% form.mail_body|html %]</textarea>
+			</font>
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title" style="background:#E6E6E6;">
+			<font size="2">変数ｵﾌﾟｼｮﾝ</font>
+		</td>
+	</tr>
+	<tr>
+		<td class="pb_10">
+			<span style="font-size:small;">
+			<font size="1">
+			{REGURL}：１ｸﾘｯｸ登録URL<br />
+			{DELURL}：１ｸﾘｯｸ解除URL<br />
+			{EMAIL}：登録されたﾒｰﾙｱﾄﾞﾚｽ<br />
+			
+			[% FOREACH v=col_list %]
+			{COL[% v.num %]}：[% v.colname|html %]<br />
+			[% END %]
+			
+			</font>
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title" style="background:#E6E6E6;">
+			<font size="2">ｵﾌﾟｼｮﾝ</font>
+		</td>
+	</tr>
+	
+	<tr>
+		<td class="pb_10" align="center">
+			<span style="font-size:small;">
+			<font size="1">
+				<input type="submit" name="Submit" value="[% IF form.id %]確認[% ELSE %]送信確認画面へ[% END %]">
+				<input type="hidden" name="sid" value="[% form.sid %]">
+				<input type="hidden"name="id" value="[% form.id %]" />
+				<input type="hidden" name="mode" value="[% form.mode %]">
+                <input type="hidden" name="send_type" value="2">
+			</font>
+			</span>
+		</td>
+	</tr>
+</table>
+</form>
+
+[% INCLUDE 'tmpl/html_mobilefooter.tmpl' %]

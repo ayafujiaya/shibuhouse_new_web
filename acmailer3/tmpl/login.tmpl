@@ -1,0 +1,48 @@
+[% INCLUDE 'tmpl/html_header_login.tmpl' %]
+
+<script>
+var __onload_save = window.onload;
+window.onload = function() {
+	if (__onload_save) __onload_save();
+	init();
+}
+
+function init() {
+  document.getElementById("login_id").focus();
+}
+</script>
+
+
+        <div id="panel">
+        	<div id="panel_title">
+            	<p id="panel_title_1">acmailer&nbsp;コントロールパネル&nbsp;に&nbsp;ログイン</p>
+                <p id="panel_title_2"><a href="m_login.cgi">携帯版</a></p>
+            </div>
+					[% IF sendok %]<font color="blue"><b>パスワードを再送信しました。</b></font>[% END %]
+            <div id="panel_text">
+			<form name="form1" method="post" action="login_ctl.cgi">
+            	<table id="id_pass">
+                	<tr>
+                    	<td id="id_title">ID</td>
+                        <td id="pass_title">PASS</td>
+                        <td></td>
+                    </tr>
+                	<tr>
+                    	<td id="id_text"><input type="text" name="login_id" id="login_id" name="login_id" /></td>
+                        <td id="pass_text"><input type="password" name="login_pass"/></td>
+                        <td id="submit_btn"><input type="submit" value="ログイン" /></td>
+                    </tr>
+                	<tr>
+                    	<td></td>
+                        <td colspan="2" id="re_pass"><a href="login.cgi?mode=forget">パスワードを忘れた方はこちら</a></td>
+                    </tr>
+                </table>
+			</form>
+            </div>
+        </div>
+
+
+
+	
+
+[% INCLUDE 'tmpl/html_footer.tmpl' %]

@@ -1,0 +1,165 @@
+[% INCLUDE 'tmpl/html_header.tmpl' %]
+
+
+<link rel="stylesheet" href="./css/email_list2.css" type="text/css">
+
+
+<div id="contwrapper" class="clearfix">
+  <div id="left_cont">
+  <div id="left_menu">
+    <div id="left_cont_in">
+      <table id="left_cont_table">
+        <tr>
+          <td class="title box"><img src="img/menu.jpg" alt="" /></td>
+        </tr>
+		          <tr><td height="20"></td></tr>
+
+  [% INCLUDE 'tmpl/html_setting_menu.tmpl' %]
+
+      </table>
+    </div>
+    </div>
+
+
+  [% INCLUDE 'tmpl/html_left_banner.tmpl' %]
+
+  </div>
+  
+
+  
+  <div id="right_cont">
+    <div id="right_cont_title">
+      <table id="right_cont_table_title">
+        <tr>
+          <td class="title box">
+              各種設定<img src="img/big_arrow.jpg" alt="" />再登録拒否リスト<img src="img/big_arrow.jpg" alt="" />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="right_cont_contens">
+    <div id="right_cont_contens_in">
+
+
+<div align="center">
+
+[% IF oktext %]
+<font color="red"><b>[% oktext %]</b></font><br>
+[% END %]
+
+</div>
+
+
+
+[% IF totalnum %]
+
+   <table id="right_cont_table">
+	<tr>
+		<td colspan="2" bgcolor="#EEEEEE" align="center" class="td_2 box listtitle">再登録拒否リスト([% totalnum %]件)</td>
+	</tr>
+	<tr>
+		<td bgcolor="#FFFFFF" class="td_2 box">
+		<form action="regdeny_list.cgi" method="post">
+		メールアドレス
+		<input type="text" name="search_word" value="[% form.search_word|html %]" style="width:150px;">
+		<input type="hidden" name="search" value="1">
+		<input type="submit" value="検索" class="buttonstyle">　
+		<a href="admin_edit.cgi?display=system">再登録拒否設定はこちら</a>
+		</form>
+		</td>
+	</tr>
+	</table>
+   
+	<br>
+
+
+
+     <table id="right_cont_table3">
+
+	    <tr bgcolor="#EEEEEE">
+		  <td align="center" class="listtitle listtitle_3 box">削除日時</td>
+		  <td align="center" class="listtitle listtitle_3 box">拒否期間</td>
+	          <td align="center" class="listtitle listtitle_3 box">メールアドレス</td>
+		  <td align="center" class="listtitle listtitle_3 box">拒否リストから</td>
+	    </tr>
+	
+	[% FOREACH v=loop %]
+	[% IF v.email %]
+	    <tr bgcolor="#FFFFFF"> 
+	      <td class="td_1 box">[% v.del_date_disp %]</td>
+	      <td class="td_1 box">[% IF v.limit_date_disp %][% v.limit_date_disp %][% ELSE %]無期限[% END %]</td>
+	      <td class="td_2 box">[% v.email %]</td>
+      	      <td class="td_2 box"><input type="button" value="除外" onclick="javascript:goReset([% v.id %]);" class="buttonstyle"></td>
+	    </tr>
+	    [% END %]
+	[% END %]
+	
+
+    <tr>
+      <td colspan="4" class="listtitle box" id="page_posi"><p>
+	  
+	[% IF backlink %]
+	<A href="regdeny_list.cgi?page=[% page_m1 %]&dispnum=[% dispnum %][% para %]" title="前のページ">＜前のページ</A>
+	[% END %]
+	  [% pagelink %]｜
+	  
+	[% IF nextlink %]
+	<A href="regdeny_list.cgi?page=[% page_p1 %]&dispnum=[% dispnum %][% para %]" title="次のページ">次のページ＞</A>
+	[% END %]
+	  </p></td>
+	  
+    </tr>
+    <tr>
+    	<td colspan="4" align="center">
+		<br />
+		<form action="regdeny_list.cgi" method="post">
+			<input type="submit" value="一括除外" onclick="return confirm('リストのメールアドレスをすべて除外しますが、よろしいですか？')" class="buttonstyle">
+			<input type="hidden" name="alldel" value="1">
+		</form>
+	</td>
+    </tr>
+        <tr>
+      <td colspan="4" id="showpage_num"><p>
+	<SELECT name="dispnum"  onchange="changenum_double_opt(options[selectedIndex].value)">
+	<OPTION value="">表示件数切替</OPTION>
+	<OPTION value="10" [% IF dispnum=="10" %]selected[% END %]>10件</OPTION>
+	<OPTION value="25" [% IF dispnum=="25" %]selected[% END %]>25件</OPTION>
+	<OPTION value="50" [% IF dispnum=="50" %]selected[% END %]>50件</OPTION>
+	<OPTION value="100" [% IF dispnum=="100" %]selected[% END %]>100件</OPTION>
+	<OPTION value="all" [% IF dispnum=="all" %]selected[% END %]>全件</OPTION>
+	</SELECT>
+	</td></tr>
+	  </table>
+
+
+
+[% ELSE %]
+<div align="center">
+	現在登録されている再登録拒否メールアドレスはありません
+</div>
+	<br><br>
+	<br><div align="center"><a href="index.cgi">戻る</a> </div><br>
+
+[% END %]
+
+
+
+      </div>
+      </div>
+    </div>
+	</div>
+<script language="JavaScript">
+<!--
+function changenum_double_opt(dispnum,year){
+	window.location.href = "regdeny_list.cgi?dispnum=" + dispnum + '[% para %]' ;
+	
+}
+function goReset(p_id) {
+	if (confirm("リセットしてもよろしいですか？")) {
+		window.location = "regdeny_list.cgi?del=1&id=" + p_id;
+	}
+}
+//-->
+</script>
+
+[% INCLUDE 'tmpl/html_footer.tmpl' %]

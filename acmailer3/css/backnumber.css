@@ -1,0 +1,253 @@
+/* リセットCSS
+-------------------------------------------*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+	word-break:break-all;
+}
+fieldset,img { 
+	border:0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+ol,ul {
+	list-style:none;
+}
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym { border:0;
+}
+div{
+	word-wrap:break-word;
+}
+
+
+/* clearfix
+-------------------------------------------*/
+.clearfix:after {
+  content: ".";  /* 新しい要素を作る */
+  display: block;  /* ブロックレベル要素に */
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+.clearfix {
+  min-height: 1px;
+}
+
+* html .clearfix {
+  height: 1px;
+  /*\*//*/
+  height: auto;
+  overflow: hidden;
+  /**/
+}
+/* -------------------------------------------
+ font-size
+------------------------------------------- */
+body {
+	font-family:'メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+	color:#666666;
+	font-size:83%; line-height:1.4;
+}
+.fs9{font-size:55%; line-height:1.4;}
+.fs10{font-size:69%; line-height:1.4;}
+.fs11{font-size:75%; line-height:1.4;}
+.fs12{font-size:83%; line-height:1.4;}
+.fs14{font-size:90%; line-height:1.4;}
+.fs16{font-size:100%; line-height:1.4;}
+p {
+	/* hides MacIE5 \*/
+	letter-spacing: 0.05em;
+	/* end */
+	_letter-spacing:0;
+}
+img {
+	border: none;
+	vertical-align:top;
+}
+
+/* リンクカラー
+---------------------------------------------*/
+a {
+	color:#666;
+	text-decoration:none;
+}
+a:visited {
+	color:#666;
+}
+a:hover {
+	color:#FFF;
+	text-decoration:none;
+}
+
+#next_prev a {
+	color:#666;
+	text-decoration:none;
+}
+#next_prev a:visited {
+	color:#666;
+}
+#next_prev a:hover {
+	color:#CCC;
+	text-decoration:none;
+}
+
+
+/* 共通
+---------------------------------------------*/
+html {
+	background-color: #E6E6E6;
+}
+body {
+	text-align:center;
+}
+
+/*Firefox用スクロールバー*/
+html{
+	height:100%;
+	margin-bottom:1px;
+}
+select, input, textarea{
+	font-family:'メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+	color:#666666;
+	font-size:100%;
+	line-height:1.4;
+}
+
+/* コンテンツ
+---------------------------------------------*/
+#top_container{
+	background-color:#FFF;
+	border-bottom:10px #454546 solid;
+}
+#header_container{
+	width:900px;
+	margin:0 auto;
+	text-align:left;
+	padding:0;
+}
+#header{
+	padding-left:14px;
+}
+h1{
+	font-size:24px;
+	padding-top:15px;
+	padding-bottom:15px;
+}
+#header_title{
+	float:left;
+}
+#header_logo{
+	float:right;
+}
+#header_logo img{
+	margin-left:10px;
+	margin-right:15px;
+}
+#container {
+	width:900px;
+	margin:0 auto;
+	text-align:left;
+	padding:0;
+}
+#maincont{
+	background-image:url(../img/backnum_bg.jpg);
+	background-repeat:repeat-y;
+	background-color:#CCCCCC;
+	padding-bottom:100px;
+}
+#leftcont{
+	float:left;
+	width:200px;
+	height:100%;
+}
+#leftcont_container{
+	width:170px;
+	margin:0 auto;
+}
+#leftcont_text{
+	margin-top:20px;
+}
+#leftcont_text p{}
+#date_title{
+	font-size:14px;
+	margin-bottom:10px;
+}
+ul{}
+li{}
+.date_list{
+	font-size:12px;
+	padding-top:2px;
+	padding-bottom:2px;
+	padding-left:15px;
+	border-bottom:#FFF 1px dotted;
+}
+#leftcont_text li{
+	list-style:none;
+}
+#select_backnum{
+	letter-spacing:0.1em;
+}
+#rightcont{
+	float:right;
+	width:680px;
+	background-color:#FFF;
+	border-left:20px solid #E6E6E6;
+}
+#backnum_title_cont{
+	padding-bottom:15px;
+	border-bottom:1px solid #454546;
+}
+#backnum_title_container{
+	width:650px;
+	margin:0 auto;
+}
+.backnum_title_date{
+	margin-top:20px;
+	font-size:14px;
+	letter-spacing:0.1em;
+	margin-bottom:10px;
+}
+.backnum_title{
+	font-size:12px;
+	letter-spacing:0.1em;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+.backnum_title a:hover {
+	color:#FFCC00;
+	text-decoration:none;
+}
+#backnum_text_container{
+	width:650px;
+	margin:0 auto;
+}
+#backnum_text{
+	margin-top:15px;
+	margin-bottom:15px;
+}
+#backnum_text p{}
+
+#footer{
+	background-color:#454546;
+	padding-top:15px;
+	padding-bottom:15px;
+	text-align:center;
+	color:#FFF;
+}

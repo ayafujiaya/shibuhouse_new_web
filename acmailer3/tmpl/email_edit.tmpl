@@ -1,0 +1,137 @@
+[% INCLUDE 'tmpl/html_header.tmpl' %]
+
+
+
+
+<div id="contwrapper" class="clearfix">
+  <div id="left_cont">
+  <div id="left_menu">
+    <div id="left_cont_in">
+      <table id="left_cont_table">
+        <tr>
+          <td class="title box"><img src="img/menu.jpg" alt="" /></td>
+        </tr>
+          <tr><td height="20"></td></tr>
+
+              <tr>
+                <td class="menu menubgcolor"><a href="email_list.cgi">メールアドレス一覧</a></td>
+              </tr>
+              <tr>
+                <td class="menu"><a href="dispcol_edit.cgi">一覧表示項目の設定</a></td>
+              </tr>
+              <tr>
+                <td class="menu"><a href="email_add.cgi">メールアドレス登録</a></td>
+              </tr>
+              <tr>
+                <td class="menu"><a href="email_del.cgi">メールアドレス削除</a></td>
+              </tr>
+              <tr>
+                <td class="menu"><a href="email_csvdown.cgi">CSVダウンロード</a></td>
+              </tr>
+              <tr>
+                <td class="menu lastmenu"><a href="email_alldel.cgi">メールアドレス完全削除</a></td>
+              </tr>
+
+
+      </table>
+    </div>
+    </div>
+
+
+  [% INCLUDE 'tmpl/html_left_banner.tmpl' %]
+
+  </div>
+  
+
+  
+  <div id="right_cont">
+    <div id="right_cont_title">
+      <table id="right_cont_table_title">
+        <tr>
+          <td class="title box">
+              メールアドレス管理<img src="img/big_arrow.jpg" alt="" />メールアドレス編集<img src="img/big_arrow.jpg" alt="" />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="right_cont_contens">
+    <div id="right_cont_contens_in">
+
+
+
+
+
+
+
+<font color="red">[% error_message %]</font>
+<form name="form1" method="post" action="email_edit.cgi">
+   <table id="right_cont_table">
+
+    <tr> 
+      <td class="td_1 box">メールアドレス</td>
+      <td class="td_2 box"><font size="-2">(必須)</font></td>
+      <td class="td_2 box"> <input type="text" name="email" size="50" value="[% email %]" style="width:350px;">
+		<input type="hidden" name="email_org" size="50" value="[% email_org %]">
+		</td>
+    </tr>
+[% FOREACH v=freecol_list %]
+    <tr> 
+      <td class="td_1 box">[% v.colname|html %]&nbsp;</td>
+      <td class="td_2 box">[% IF v.colcheck %]<font size="-2">(必須)</font>[% END %]&nbsp;</td>
+      <td class="td_2 box"> <input type="text" name="col[% v.num %]" size="50" value="[% v.col|html %]" style="width:350px;"></td>
+    </tr>
+[% END %]
+
+    <tr> 
+      <td class="td_1 box">配信フラグ</td>
+      <td class="td_2 box">&nbsp;</td>
+      <td class="td_2 box"><input type="checkbox" name="status" value="1" [% IF status %]checked[% END %]>配信する</td>
+    </tr>
+
+    <tr> 
+      <td class="td_1 box">登録日時</td>
+      <td class="td_2 box">&nbsp;</td>
+      <td class="td_2 box">[% add_date %]
+	  <input type="hidden" name="add_date" value="[% add_date|html %]">
+	  </td>
+    </tr>
+
+    <tr> 
+      <td class="td_1 box">更新日時</td>
+      <td class="td_2 box">&nbsp;</td>
+      <td class="td_2 box">[% edit_date %]
+	  <input type="hidden" name="edit_date" value="[% edit_date|html %]">
+	  </td>
+    </tr>
+
+    <tr valign="top"> 
+      <td colspan="3"><div align="center"> 
+            <input type="hidden" name="id" value="[% id %]">
+            <input type="submit" name="Submit" value="編集" class="buttonstyle">
+			<input type="hidden" name="edit" value="1">
+            <input type="button" name="Submit" onClick="location.href='email_list.cgi?back=1'" value="戻る" class="buttonstyle">
+
+          <br></div></td>
+    </tr>
+  </table>
+</form>
+<div align="center"><a href="admin_edit.cgi?display=free" class="no_underline"><span class="red"><img src="img/arrow.jpg" alt="" />項目1-10の名称、必須設定</span></a> </div><br>
+
+
+
+
+
+
+
+
+
+
+      </div>
+      </div>
+    </div>
+	</div>
+
+
+
+
+[% INCLUDE 'tmpl/html_footer.tmpl' %]

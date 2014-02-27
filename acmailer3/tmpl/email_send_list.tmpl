@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP" />
+<title>acmailer│control panel</title>
+<link rel="stylesheet" href="./css/common.css" type="text/css">
+<link rel="stylesheet" href="./css/sendlist.css" type="text/css">
+</head>
+<body>
+
+<div id="wrapper">
+  <div id="containt_wrapper">
+    <div id="content">
+      <div id="content_title" class="clearfix">
+        <div id="content_title_left"> 送信先一覧 </div>
+        <div id="content_title_right">
+          <form>
+            <input type='button' value='このウィンドウを閉じる' onClick='window.close();'>
+          </form>
+        </div>
+      </div>
+      <div id="cont_wrapper">
+        <div id="cont_left">
+          <div class="cont_list">
+            <ul>
+              [% FOREACH v=pre_list %]
+              <li> <span class="listNum">[% v.num %]</span> <span>[% v.email %]</span> </li>
+              [% END %]
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

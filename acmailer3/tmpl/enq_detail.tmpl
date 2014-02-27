@@ -1,0 +1,49 @@
+[% INCLUDE 'tmpl/html_header.tmpl' %]
+
+
+<div align="center"><div class="title">アンケートデータ詳細</div><br><br>
+
+[% IF oktext %]
+<font color="red"><b>[% oktext %]</b></font><br>
+[% END %]
+<font color="red">[% error_message %]</font>
+<form name="form1" method="post" action="enq_edit.cgi">
+  <table border="0" cellspacing="1" cellpadding="5" bgcolor="#FF9900">
+
+    <tr valign="top"> 
+      <td bgcolor="#FFCC66">アンケート名</td>
+      <td bgcolor="#FFFFFF"> [% enq_name|html %]
+      </td>
+    </tr>
+    <tr valign="top"> 
+      <td bgcolor="#FFCC66">アンケート内容</td>
+      <td bgcolor="#FFFFFF">
+	[% enq_question|html %]
+      </td>
+    </tr>
+    <tr valign="top"> 
+      <td bgcolor="#FFCC66">アンケートデータ<br>([% total_count%]件)</td>
+      <td bgcolor="#FFFFFF">
+	<table>
+	[% FOREACH v=list %]
+	<tr><td>
+	  <a href="enq_detail_mail.cgi?id=[% form.id %]&answer_id=[% v.rownum %]" target="blank">[% v.value|html %]</a>
+	  </td><td>[% v.answer_count %]件</td></tr>
+	  
+	[% END %]
+	</table>
+      </td>
+    </tr>
+
+    
+    
+	
+  </table>
+</form>
+</div>
+<br><div align="center"><a href="enq_list.cgi">戻る</a> </div><br>
+
+
+
+
+[% INCLUDE 'tmpl/html_footer.tmpl' %]

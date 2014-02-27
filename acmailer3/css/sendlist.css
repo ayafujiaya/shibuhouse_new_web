@@ -1,0 +1,112 @@
+/* -------------------------------------------
+ font-size
+------------------------------------------- */
+body {
+	font-family:'ＭＳ Ｐゴシック',sans-serif;
+	color:#666666;
+	font-size:83%; line-height:1.4;
+}
+.fs9{font-size:55%; line-height:1.4;}
+.fs10{font-size:69%; line-height:1.4;}
+.fs11{font-size:75%; line-height:1.4;}
+.fs12{font-size:83%; line-height:1.4;}
+.fs14{font-size:90%; line-height:1.4;}
+.fs16{font-size:100%; line-height:1.4;}
+p {
+	/* hides MacIE5 \*/
+	letter-spacing: 0.05em;
+	/* end */
+	_letter-spacing:0;
+}
+img {
+	border: none;
+	vertical-align:top;
+}
+
+/* リンクカラー
+---------------------------------------------*/
+a {
+	color:#666;
+	text-decoration:none;
+}
+a:visited {
+	color:#666;
+}
+a:hover {
+	color:#CCC;
+	text-decoration:none;
+}
+
+/* 共通
+---------------------------------------------*/
+html {
+	background-color: #E6E6E6;
+}
+body {
+	text-align:center;
+}
+#wrapper {
+	width:510px;
+	margin:0 auto;
+	text-align:left;
+	padding:0;
+	background-color:#FFF;
+}
+
+/*Firefox用スクロールバー*/
+html{
+	height:100%;
+	margin-bottom:1px;
+}
+select, input, textarea, form{
+	font-family:'メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+	color:#666666;
+	font-size:95%;
+}
+
+/* コンテンツ
+---------------------------------------------*/
+#containt_wrapper{
+	padding-top:4px;
+	padding-bottom:4px;
+}
+#content{
+	width:500px;
+	margin:0 auto;
+	border:solid 1px #E6E6E6;
+}
+#content_title{
+	border-bottom:solid 1px #E6E6E6;
+	font-size:100%;
+	letter-spacing:0.1em;
+	font-weight:bold;
+	padding-top:1em;
+	padding-bottom:1em;
+	padding-left:12px;
+}
+#content_title_left{
+	float:left;
+}
+#content_title_right{
+	float:right;
+	padding-right:6px;
+}
+#content_title_right form{}
+
+#cont_wrapper{
+	padding:7px 0;
+}
+#cont_left{}
+
+.cont_title{
+	padding-top:12px;
+	padding-bottom:12px;
+	padding-left:12px;
+}
+.cont_list{}
+
+li{
+	padding-left:12px;
+	padding-bottom:4px;
+}
+span.listNum{}

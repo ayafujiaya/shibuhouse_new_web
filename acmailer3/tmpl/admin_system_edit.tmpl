@@ -1,0 +1,234 @@
+[% INCLUDE 'tmpl/html_header.tmpl' %]
+
+
+<link href="./css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+
+
+<script src="./js/jquery.js" type="text/javascript"></script>
+<script src="./js/qaTab.js" type="text/javascript"></script>
+
+
+
+<div id="contwrapper" class="clearfix">
+  <div id="left_cont">
+  <div id="left_menu">
+    <div id="left_cont_in">
+      <table id="left_cont_table">
+        <tr>
+          <td class="title box"><img src="img/menu.jpg" alt="" /></td>
+        </tr>
+		          <tr><td height="20"></td></tr>
+
+  [% INCLUDE 'tmpl/html_setting_menu.tmpl' %]
+
+
+      </table>
+    </div>
+    </div>
+
+
+  [% INCLUDE 'tmpl/html_left_banner.tmpl' %]
+
+	</div>
+
+
+  <div id="right_cont">
+    <div id="right_cont_title">
+	<table id="right_cont_table_title">
+        <tr>
+          <td class="title box">
+              各種設定<img src="img/big_arrow.jpg" alt="" />システム設定<img src="img/big_arrow.jpg" alt="" />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="right_cont_contens">
+    <div id="right_cont_contens_in">
+
+
+
+
+
+
+<div align="center">
+[% IF oktext %]
+<font color="red"><b>[% oktext %]</b></font><br>
+[% END %]
+</div>
+
+
+<div align="center">
+<font color="red">[% error_message %]</font>
+<font color="blue"><b>[% IF okedit %]更新しました[% END %]</b></font>
+</div>
+<!-- システム設定 -->
+<form name="form1" method="post" action="admin_edit.cgi">
+	<table id="right_cont_table">
+	<tr><td colspan="2" bgcolor="#EEEEEE" align="center" class="td_2 box listtitle">
+  システム設定
+  </td></tr>
+	<tr valign="top">
+		<td class="td_1 box">ログインID</td>
+		<td bgcolor="#FFFFFF" class="td_2 box"> <input type="text" name="login_id" size="30" value="[% login_id|html %]" style="width:150px;"><br>※半角英数字</td>
+	</tr>
+	<tr valign="top"> 
+		<td class="td_1 box">パスワード</td>
+		<td bgcolor="#FFFFFF" class="td_2 box"> <input type="password" name="login_pass" size="30" value="[% login_pass|html %]" style="width:150px;"><br>※半角英数字</td>
+	</tr>
+	<tr valign="top">
+		<td class="td_1 box">パスワード<br>(確認用)</td>
+		<td bgcolor="#FFFFFF" class="td_2 box"> <input type="password" name="login_pass2" size="30" value="" style="width:150px;"><br>※半角英数字</td>
+	</tr>
+	<tr valign="top"> 
+		<td class="td_1 box">タイトル</td>
+		<td bgcolor="#FFFFFF" class="td_2 box"> <input type="text" name="title" size="60" value="[% title|html %]" style="width:350px;"></td>
+	</tr>
+	<tr valign="top">
+		<td class="td_1 box">カウンター表示</td>
+		<td bgcolor="#FFFFFF" class="td_2 box"> <input type="checkbox" name="counter_disp" value="1" [% IF counter_disp %]checked[% END %]>ON</td>
+	</tr>
+	<tr valign="top"> 
+		<td class="td_1 box">バックナンバー表示</td>
+		<td bgcolor="#FFFFFF" class="td_2 box"> <input type="checkbox" name="backnumber_disp" value="1" [% IF backnumber_disp %]checked[% END %]>ON</td>
+	</tr>
+	<tr valign="top">
+		<td class="td_1 box">バックナンバー表示件数</td>
+		<td bgcolor="#FFFFFF" class="td_2 box"> <input type="text" name="backnumber_num" value="[% backnumber_num|html %]" size="4" style="width:30px;"></td>
+	</tr>
+	<tr valign="top">
+		<td class="td_1 box">メルマガ登録・削除<br>メール設定</td>
+		<td bgcolor="#FFFFFF" class="td_2 box"> <input type="checkbox" name="merumaga_usermail" value="1" [% IF merumaga_usermail %]checked[% END %]>登録ユーザに自動返信メールを送る<br>
+		<input type="checkbox" name="merumaga_adminmail" value="1" [% IF merumaga_adminmail%]checked[% END %]>管理者にメールを送る
+		</td>
+	</tr>
+	<tr valign="top">
+		<td class="td_1 box">ダブルオプトイン</td>
+		<td bgcolor="#FFFFFF" class="td_2 box">
+		<input type="checkbox" name="double_opt" value="1" [% IF double_opt %]checked[% END %]>ダブルオプトイン機能を使う
+		</td>
+	</tr>
+	<tr valign="top">
+		<td class="td_1 box">削除時の動作</td>
+		<td bgcolor="#FFFFFF" class="td_2 box"> 
+		<input type="radio" name="delmode" value="del" [% IF delmode == "del" %]checked[% END %]>削除
+		<input type="radio" name="delmode" value="stop" [% IF delmode == "stop" %]checked[% END %]>配信停止<br>
+		<font color="red" size="-1">※空メール機能を使う場合、空メールでの削除処理も同様の処理が適用されます</font>
+		<br>
+		<input type="checkbox" name="delconfirm" value="1" [% IF delconfirm=="1" %]checked[% END %]>確認画面を表示する
+		<br>
+		<font color="red">※空メール削除には適用されません。</font>
+		</td>
+	</tr>
+	<tr valign="top"> 
+	  <td class="td_1 box">再登録拒否設定</td>
+	  <td bgcolor="#FFFFFF" class="td_2 box"> 
+	  <input type="checkbox" name="regdeny" value="1" [% IF regdeny=="1" %]checked[% END %]>再登録拒否機能を利用する
+	  &nbsp;&nbsp;
+	  拒否期間<input type="text" name="regdeny_timelimit" value="[% regdeny_timelimit %]" style="width:20px;">時間 　※1〜4320（6ヶ月）、0＝無期限
+	  <br />
+	  <font color="red">※この機能を利用するとメールアドレス削除（解除）後、一定期間再登録できなくなります。</font><br />
+	  <a href="regdeny_list.cgi">再登録拒否リストはこちら</a>
+	  </td>
+	</tr>
+	</tr>
+	<tr valign="top">
+	  <td class="td_1 box">重複データの登録</td>
+	  <td bgcolor="#FFFFFF" class="td_2 box">
+	  <input type="checkbox" name="double_reg" value="1" [% IF double_reg %]checked[% END %]>管理画面での重複登録を許可する
+	  
+	  <br>
+	  <input type="checkbox" name="double_reg_form" value="1" [% IF double_reg_form %]checked[% END %]>公開フォーム、空メールでの重複登録を許可する<br>
+	  <font color="red">公開フォームや空メールで削除される場合、該当するメールアドレスデータ全て
+	が削除されますのでご注意ください。</font>
+	  
+	  </td>
+	</tr>
+	<tr valign="top">
+	  <td class="td_1 box">機種依存文字チェック</td>
+	  <td bgcolor="#FFFFFF" class="td_2 box"> <input type="checkbox" name="str_check" value="1" [% IF str_check %]checked[% END %]>機種依存文字が含まれている場合は送信しない<br>※機種依存文字をチェックすることによりメールの文字化けを防ぐことができます。<br>このチェックをはずした場合はメール本文・履歴一覧にて文字化けが発生する可能性が起こります。</td>
+	</tr>
+	<tr valign="top">
+	  <td class="td_1 box">CGI設置URL</td>
+	  <td bgcolor="#FFFFFF" class="td_2 box"> <input type="text" name="homeurl" value="[% homeurl|html %]" size="60" style="width:450px;">
+	  <br>※CGIを設置しているURLを入力してください。<br>記入例：http://www.ahref.org/acmailer3/<br><br>
+	  <font color="red" size="-1">※ここで入力されるURLは「メルマガフォーム設定例」のフォームタグとバックナンバーページで利用されます。</font>
+	  </td>
+	</tr>
+	[% IF autoreg %]
+	<tr valign="top">
+	  <td class="td_1 box">CGI設置パス</td>
+	  <td bgcolor="#FFFFFF" class="td_2 box"> <input type="text" name="mypath" value="[% mypath|html %]" size="60" style="width:450px;">
+	  <br><font color="red" size="-1">※ここで入力されるパスは空メール登録や予約配信プログラムに使用されます。<br>パスがわからない場合はサーバ管理者にお問い合わせください。</font>
+	  </td>
+	</tr>
+	[% END %]
+	<tr valign="top">
+	  <td class="td_1 box">アンインストール補助</td>
+	  <td bgcolor="#FFFFFF" class="td_2 box">
+	  <a href="uninstall.cgi">→アンインストール補助画面へ</a><br>
+	<font color="red" size="-1">※アンインストール補助画面で削除したファイルは二度と元には戻せませんのでご注意ください。</font>
+	
+	  </td>
+	</tr>
+	<tr valign="top">
+	  <td class="td_1 box">システム情報</td>
+	  <td bgcolor="#FFFFFF" class="td_2 box">
+	  <a href="admin_edit.cgi?display=system&mode=sysdown">こちらよりシステム情報をダウンロードください</a>
+	  </td>
+	</tr>
+</table>
+<!--
+    <tr valign="top"> 
+      <td bgcolor="#FFCC66">送信履歴ログ</td>
+      <td bgcolor="#FFFFFF"> <input type="checkbox" name="rireki_email" value="1" [% IF rireki_email %]checked[% END %]>送信メールアドレスも記憶する<br>
+	  <font color="red">※送信メールアドレスを記憶するとACMAILERの動作が遅くなる場合があります</font></td>
+    </tr>
+--> 
+
+
+<br>
+<div align="center">
+      <input type="hidden" name="login_pass_org" size="30" value="[% login_pass_org|html %]">
+            <input type="submit" name="Submit" value="更新" class="buttonstyle">
+			<input type="hidden" name="edit" value="1">
+			<input type="hidden" name="display" value="[% form.display %]">
+          <br>
+</div>
+
+</form>
+</div>
+
+
+
+<script>
+function test_sendmail() {
+	if (document.form1.test_send.value == "") {
+		alert("テスト送信先を入力してください。");
+		return 0;
+	}
+
+
+	var cnt = document.form1.elements.length;
+	var mode = "";
+	for( i=0 ; i < cnt ; i++ ) {
+		if (document.form1.elements[i].type == "radio" && document.form1.elements[i].name == "relay_send_mode" && document.form1.elements[i].checked) {
+			mode = document.form1.elements[i].value;
+		}
+	}
+	
+	window.open('test_relay_send.cgi?to=' + document.form1.test_send.value + "&port=" + document.form1.relay_port.value + "&from=" + document.form1.admin_email.value + '&relay_user=' + document.form1.relay_user.value + '&relay_pass=' + document.form1.relay_pass.value + '&relay_send_mode=' + mode + "&relay_host=" + document.form1.relay_host.value);
+}
+
+</script>
+
+
+
+      </div>
+      </div>
+    </div>
+	</div>
+
+
+
+[% INCLUDE 'tmpl/html_footer.tmpl' %]

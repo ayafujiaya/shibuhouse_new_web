@@ -1,0 +1,79 @@
+[% INCLUDE 'tmpl/html_mobileheader.tmpl' %]
+
+<div style="background-color:#FFCC00;text-align:center;padding:5px;">
+	ﾒｰﾙｱﾄﾞﾚｽ編集
+</div>
+
+<form name="form1" method="post" action="email_edit.cgi" accept-charset="euc-jp">
+<table width="100%">
+	<tr>
+		<td class="td_title" style="background:#E6E6E6;">
+			<font size="2">
+			ﾒｰﾙｱﾄﾞﾚｽ(必須)
+			</font>
+			<input type="hidden" name="sid" value="[% form.sid %]">
+		</td>
+	</tr>
+	<tr>
+		<td class="pb_10">
+			<span style="font-size:small;">
+			<font size="1">
+			<input type="hidden" name="email_org" size="15" value="[% email %]">
+			<input type="text" name="email" size="15" value="[% email %]" [% sys.input_type %]>
+			</font>
+			</span>
+		</td>
+	</tr>
+[% FOREACH v=freecol_list %]
+	<tr>
+		<td class="td_title" style="background:#E6E6E6;">
+			<font size="2">
+			[% v.colname|html %][% IF v.colcheck %](必須)[% END %]&nbsp;
+			</font>
+			<input type="hidden" name="sid" value="[% form.sid %]">
+		</td>
+	</tr>
+	<tr>
+		<td class="pb_10">
+			<span style="font-size:small;">
+			<font size="1">
+			<input type="text" name="col[% v.num %]" size="15" value="[% v.col|html %]">
+			</font>
+			</span>
+		</td>
+	</tr>
+[% END %]
+	<tr>
+		<td class="td_title" style="background:#E6E6E6;">
+			<font size="2">
+			配信ｽﾃｰﾀｽ
+			</font>
+			<input type="hidden" name="sid" value="[% form.sid %]">
+		</td>
+	</tr>
+	<tr>
+		<td class="pb_10">
+			<span style="font-size:small;">
+			<font size="1">
+			<input type="checkbox" name="status" value="1" [% IF status %]checked[% END %]>配信する
+			</font>
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td class="pb_10" style="text-align:center;">
+			<span style="font-size:small;">
+			<font size="1">
+				<input type="hidden" name="id" value="[% id %]">
+				<input type="submit" name="Submit" value="編集">
+				<input type="hidden" name="sid" value="[% form.sid %]">
+				<input type="hidden" name="edit" value="1">
+			</font>
+			</span>
+		</td>
+	</tr>
+</table>
+</form>
+
+
+[% INCLUDE 'tmpl/html_mobilefooter.tmpl' %]

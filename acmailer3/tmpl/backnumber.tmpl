@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP" />
+<title>バックナンバー一覧│[% mail_title|html %]</title>
+<link rel="stylesheet" href="./css/backnumber.css" type="text/css">
+</head>
+<body>
+<div id="top_container">
+  <div id="header_container">
+    <div id="header" class="clearfix">
+      <h1 id="header_title"><a href="backnumber.cgi">バックナンバー一覧</a></h1>
+      <div id="header_logo"></div>
+    </div>
+  </div>
+</div>
+
+<div id="container">
+  <div id="maincont" class="clearfix">
+    <div id="leftcont">
+      <div id="leftcont_container">
+        <div id="leftcont_text">
+          <p id="date_title">日付一覧</p>
+  [% FOREACH v=backnumber_list %]
+  
+	[% IF form.id == v.id %]
+  <li class="date_list" id="select_backnum">
+	  <font color="#000000">[% v.send_year %]/[% v.send_mon %]/[% v.send_day %] [% v.send_hour %]:[% v.send_min %]:[% v.send_sec %]</font>
+  </li>
+	[% ELSE %]
+  <li class="date_list">
+	  <a href="backnumber.cgi?id=[% v.id %]">[% v.send_year %]/[% v.send_mon %]/[% v.send_day %] [% v.send_hour %]:[% v.send_min %]:[% v.send_sec %]</a>
+  </li>
+    [% END %]
+	
+  
+  [% END %]
+  
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="rightcont">
+      <div id="backnum_title_cont">
+        <div id="backnum_title_container">
+
+
+
+[% UNLESS backnumber_list.0 %]
+	バンクナンバーはありません。
+[% ELSE %]
+
+
+	<div id="next_prev" style="padding:3px;">
+	[% IF next_id %]<a href="backnumber.cgi?sid=[% form.sid %]&id=[% next_id %]">&lt;前へ</a>[% END %]
+	[% IF back_id %]<a href="backnumber.cgi?sid=[% form.sid %]&id=[% back_id %]">次へ&gt;</a>[% END %]
+	</div>
+	<div class="backnum_title_date">[% send_year %]/[% send_mon %]/[% send_day %] [% send_hour %]:[% send_min %]:[% send_sec %]</div>
+          <ul>
+            <li class="backnum_title">[% IF mail_type=="html" %]<a href="backnumber_previewhtml.cgi?id=[% id %]" target="blank">プレビュー</a>[% END %]</li>
+            <li class="backnum_title">[% mail_title|html %]</li>
+          </ul>
+        </div>
+      </div>
+      <div id="backnum_text_container">
+        <div id="backnum_text">
+		  <p>
+	[% IF mail_type=="plain" %]
+		[% mail_body|html|html_line_break %]
+	[% ELSIF mail_type=="html" %]
+		[% mail_body %]
+	[% END %]
+		</p>
+        </div>
+      </div>
+[% END %]
+
+
+    </div>
+  </div>
+
+
+
+
+
+    <div id="footer">
+
+<div align="center" style="font-size:10px; color:#999;">powered by<a href="http://www.acmailer.jp/" target="_blank" title="メール配信CGI acmailer"><img src="img/footer_logo.jpg" alt="メール配信CGI acmailer" style="border:none; padding:0; margin:0; margin-left:5px; vertical-align:middle; height:auto;" /></a></div>
+
+    </div>
+  </div>
+</div>
+</body>
+</html>

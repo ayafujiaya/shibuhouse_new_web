@@ -1,0 +1,694 @@
+[% INCLUDE 'tmpl/html_header.tmpl' %]
+
+
+<link href="./css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+<script src="./js/jquery.js" type="text/javascript"></script>
+<script src="./js/qaTab.js" type="text/javascript"></script>
+
+
+
+<div id="contwrapper" class="clearfix">
+  <div id="left_cont">
+  <div id="left_menu">
+    <div id="left_cont_in">
+      <table id="left_cont_table">
+        <tr>
+          <td class="title box"><img src="img/menu.jpg" alt="" /></td>
+        </tr>
+		          <tr><td height="20"></td></tr>
+
+  [% INCLUDE 'tmpl/html_setting_menu.tmpl' %]
+
+
+      </table>
+    </div>
+    </div>
+
+
+  [% INCLUDE 'tmpl/html_left_banner.tmpl' %]
+
+  </div>
+  
+
+  
+  <div id="right_cont">
+    <div id="right_cont_title">
+      <table id="right_cont_table_title">
+        <tr>
+          <td class="title box">
+              各種設定<img src="img/big_arrow.jpg" alt="" />各種設定<img src="img/big_arrow.jpg" alt="" />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="right_cont_contens">
+    <div id="right_cont_contens_in">
+
+
+
+
+
+
+
+
+[% IF oktext %]
+<font color="red"><b>[% oktext %]</b></font><br>
+[% END %]
+
+<div class="tabContainer">
+<ul class="tabMenu">
+<li id="qa02"><a href="#qa02_area">メール設定</a></li>
+<li id="qa03"><a href="#qa03_area">自由項目設定</a></li>
+<li id="qa04"><a href="#qa04_area">全般設定</a></li>
+<li id="qa05"><a href="#qa05_area">空メール設定</a></li>
+<li id="qa06"><a href="#qa06_area">予約配信設定</a></li>
+<li id="qa07"><a href="#qa07_area">不着メール設定</a></li>
+<li id="qa01"><a href="#qa01_area">システム設定</a></li>
+<li id="qa08"><a href="#qa08_area">ライセンス</a></li>
+<li id="qa09"><a href="#qa09_area">トップページメモ</a></li>
+<li id="qa10"><a href="#qa10_area">携帯ドメイン設定</a></li>
+</ul>
+
+<br>
+<br>
+<form name="form1" method="post" action="admin_edit.cgi">
+
+<font color="red">[% error_message %]</font>
+<font color="blue"><b>[% IF okedit %]更新しました[% END %]</b></font>
+<!-- システム設定 -->
+<dl id="qa01_area">
+<br>
+  <table border="0" cellspacing="1" cellpadding="5" width="700" bgcolor="#FF9900">
+  <tr><td colspan="2" bgcolor="#FFCC66" align="center">
+  システム設定
+  </td></tr>
+	
+    <tr valign="top"> 
+      <td bgcolor="#FFCC66">ログインID</td>
+      <td bgcolor="#FFFFFF"> <input type="text" name="login_id" size="30" value="[% login_id|html %]"><br>※半角英数字</td>
+    </tr>
+    <tr valign="top"> 
+      <td bgcolor="#FFCC66">パスワード</td>
+      <td bgcolor="#FFFFFF"> <input type="password" name="login_pass" size="30" value="[% login_pass|html %]"><br>※半角英数字</td>
+    </tr>
+    <tr valign="top"> 
+      <td bgcolor="#FFCC66">パスワード<br>(確認用)</td>
+      <td bgcolor="#FFFFFF"> <input type="password" name="login_pass2" size="30" value="[% login_pass|html %]"><br>※半角英数字</td>
+    </tr>
+    <tr valign="top"> 
+      <td bgcolor="#FFCC66">sendmailパス</td>
+      <td bgcolor="#FFFFFF"> <input type="text" name="sendmail_path" size="30" value="[% sendmail_path|html %]"><br><font color="red" size="-1">[% sendmail_path_check|html %]</font></td>
+    </tr>
+    <tr valign="top"> 
+      <td bgcolor="#FFCC66">QMAIL</td>
+      <td bgcolor="#FFFFFF"> <input type="checkbox" name="qmail" value="1" [% IF qmail %]checked[% END %]>QMAIL
+      <br>※MTAがqmailの場合このチェックを入れないとリターンパスが正しく設定されない場合があります。
+      </td>
+    </tr>
+	
+	
+	    <tr valign="top"> 
+      <td bgcolor="#FFCC66">SMTPサーバ</td>
+      <td bgcolor="#FFFFFF"> 外部のSMTPサーバを利用する <input type="checkbox" name="relay_use" value="1" [% IF relay_use %]checked[% END %]>利用する</td>
+    </tr>
+	
+    <tr valign="top"> 
+      <td bgcolor="#FFCC66">送信方法</td>
+      <td bgcolor="#FFEAB6"> <input type="radio" name="relay_send_mode" value="" [% IF relay_send_mode=="" %]checked [% END %]>特になし <input type="radio" name="relay_send_mode" value="smtp_auth" [%IF relay_send_mode=="smtp_auth" %]checked[% END %]>SMTP認証
+	   <input type="radio" name="relay_send_mode" value="popbefore" [% IF relay_send_mode=="popbefore" %]checked[% END %]>POP BEFORE SMTP
+	   <br>テスト送信：<input type="text" name="test_send" value="" size="20">この宛先へ<input type="button" value="送信" onclick="javascript:test_sendmail();">
+	   </td>
+    </tr>
+	
+    <tr valign="top"> 
+      <td bgcolor="#FFCC66">ホスト名</td>
+      <td bgcolor="#FFEAB6"> <input type="text" name="relay_host" value="[% relay_host|html %]" size="40"> ポート<input type="text" name="relay_port" value="[% IF relay_port %][% relay_port %][% ELSE %]25[% END %]" size="3"><font color="red" size="-1">
+	  
+	  <br>SMTPサーバを利用するにチェックをした場合、利用するホスト名を入力してください。</font></td>
+    </tr>
+	
+    <tr valign="top"> 
+      <td bgcolor="#FFCC66">ユーザ名</td>
+      <td bgcolor="#FFEAB6"> <input type="text" name="relay_user" value="[% relay_user|html %]" size="40">
+	  <font color="red" size="-1">認証が必要な場合ユーザ名を入力してください。</font>
+	  </td>
+    </tr>
+	
+    <tr valign="top"> 
+      <td bgcolor="#FFCC66">パスワード</td>
+      <td bgcolor="#FFEAB6"> <input type="text" name="relay_pass" value="[% relay_pass|html %]" size="40">
+	  <font color="red" size="-1">認証が必要な場合パスワードを入力してください。</font>
+	  </td>
+    </tr>
+	
+
+	
+	
+    <tr valign="top"> 
+      <td bgcolor="#FFCC66">CGI設置URL</td>
+      <td bgcolor="#FFFFFF"> <input type="text" name="homeurl" value="[% homeurl|html %]" size="60">
+	  <br>※CGIを設置しているURLを入力してください。<br>記入例：http://www.ahref.org/acmailer3/<br><br>
+	  <font color="red" size="-1">※ここで入力されるURLは「メルマガフォーム設定例」のフォームタグとバックナンバーページで利用されます。</font>
+	  </td>
+    </tr>
+	[% IF autoreg %]
+    <tr valign="top"> 
+      <td bgcolor="#FFCC66">CGI設置パス</td>
+      <td bgcolor="#FFFFFF"> <input type="text" name="mypath" value="[% mypath|html %]" size="60">
+	  <br><font color="red" size="-1">※ここで入力されるパスは空メール登録や予約配信プログラムに使用されます。<br>パスがわからない場合はサーバ管理者にお問い合わせください。</font>
+	  </td>
+    </tr>
+	[% END %]
+	
+    <tr valign="top"> 
+      <td bgcolor="#FFCC66">アンインストール</td>
+      <td bgcolor="#FFFFFF">
+	  <a href="uninstall.cgi">→アンインストール画面へ</a><br>
+<font color="red" size="-1">※アンインストールを行うと、すべてのデータが削除されます。二度と元には戻せませんのでご注意ください。</font>
+
+	  </td>
+    </tr>
+  </table>
+
+</dl>
+
+
+
+
+
+
+
+
+
+<!-- メール送信設定 -->
+<dl id="qa02_area">
+<br>
+  <table border="0" cellspacing="1" cellpadding="5" width="700" bgcolor="#FF9900">
+  <tr><td colspan="2" bgcolor="#FFCC66" align="center">
+  メール設定
+  </td></tr>
+   <tr valign="top"> 
+      <td bgcolor="#FFCC66">メール差出人名</td>
+      <td bgcolor="#FFFFFF"> <input type="text" name="admin_name" size="60" value="[% admin_name|html %]"></td>
+    </tr>
+    <tr valign="top"> 
+      <td bgcolor="#FFCC66">メール差出人メールアドレス</td>
+      <td bgcolor="#FFFFFF"> <input type="text" name="admin_email" size="60" value="[% admin_email|html %]"><br>※半角英数字</td>
+    </tr>
+
+    <tr valign="top"> 
+      <td bgcolor="#FFCC66">タイトル</td>
+      <td bgcolor="#FFFFFF"> <input type="text" name="title" size="60" value="[% title|html %]"></td>
+    </tr>
+	 
+	 
+    <tr valign="top"> 
+      <td bgcolor="#FFCC66">送信モード</td>
+      <td bgcolor="#FFFFFF">
+		<input type="radio" name="send_type" size="30" value="0" [% IF !send_type %]checked[% END %]>ノーマル<br>
+		<input type="radio" name="send_type" size="30" value="1" [% IF send_type == 1 %]checked[% END %]>分割送信　
+		分割送信件数<input type="text" name="divnum" size="4" value="[% divnum|html %]">件
+		分割待ち時間<input type="text" name="divwait" size="4" value="[% divwait|html %]">秒<br>
+		<input type="radio" name="send_type" value="2" [% IF send_type == 2 %]checked[% END %]>バックグラウンド送信
+		
+		</td>
+    </tr>
+	 
+    <tr valign="top"> 
+      <td bgcolor="#FFCC66">機種依存文字チェック</td>
+      <td bgcolor="#FFFFFF"> <input type="checkbox" name="str_check" value="1" [% IF str_check %]checked[% END %]>機種依存文字が含まれている場合は送信しない<br>※機種依存文字をチェックすることによりメールの文字化けを防ぐことができます。<br>このチェックをはずした場合はメール本文・履歴一覧にて文字化けが発生する可能性が起こります。</td>
+    </tr>
+	
+	
+
+	
+  </table>
+</dl>
+
+
+
+
+
+
+
+
+<!-- 自由項目送信設定 -->
+<dl id="qa03_area">
+<br>
+  <table border="0" cellspacing="1" cellpadding="5" width="700" bgcolor="#FF9900">
+  <tr><td colspan="2" bgcolor="#FFCC66" align="center">
+  自由項目設定
+  </td></tr>
+    <tr valign="top"> 
+      <td bgcolor="#FFCC66">自由項目設定</td>
+      <td bgcolor="#FFFFFF">
+		<table>
+		<tr><td></td><td>名称</td><td>必須</td></tr>
+		
+		[% FOREACH v = freecol_list %]
+		<tr><td>項目[% v.num %]</td><td><input type="text" name="col[% v.num %]name" size="30" value="[% v.colname|html %]"></td><td><input type="checkbox" name="col[% v.num %]checked" size="40" value="checked" [% v.colcheck %]>必須</td></tr>
+		[% END %]
+		
+		</table>
+		※必須にチェックが入っていると、メールアドレス登録時にエラーチェックを行います。
+		</td>
+    </tr>
+	 
+  </table>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 全般設定 -->
+<dl id="qa04_area">
+<br>
+  <table border="0" cellspacing="1" cellpadding="5" width="700" bgcolor="#FF9900">
+  <tr><td colspan="2" bgcolor="#FFCC66" align="center">
+  全般設定
+  </td></tr>
+
+    <tr valign="top"> 
+      <td bgcolor="#FFCC66">バックナンバー表示</td>
+      <td bgcolor="#FFFFFF"> <input type="checkbox" name="backnumber_disp" value="1" [% IF backnumber_disp %]checked[% END %]>ON</td>
+    </tr>
+	 
+    <tr valign="top"> 
+      <td bgcolor="#FFCC66">バックナンバー表示件数</td>
+      <td bgcolor="#FFFFFF"> <input type="text" name="backnumber_num" value="[% backnumber_num|html %]" size="4"></td>
+    </tr>
+	 
+    <tr valign="top"> 
+      <td bgcolor="#FFCC66">メルマガ登録・削除<br>メール設定</td>
+      <td bgcolor="#FFFFFF"> <input type="checkbox" name="merumaga_usermail" value="1" [% IF merumaga_usermail %]checked[% END %]>登録ユーザに自動返信メールを送る<br>
+	  <input type="checkbox" name="merumaga_adminmail" value="1" [% IF merumaga_adminmail%]checked[% END %]>管理者にメールを送る
+	  </td>
+    </tr>
+	
+	<tr valign="top">
+	  <td bgcolor="#FFCC66">重複データの登録</td>
+	  <td bgcolor="#FFFFFF">
+	  <input type="checkbox" name="double_reg" value="1" [% IF double_reg %]checked[% END %]>管理画面からの重複データの登録を許可する
+	  </td>
+	</tr>
+	<tr valign="top">
+	  <td bgcolor="#FFCC66">ダブルオプトイン</td>
+	  <td bgcolor="#FFFFFF">
+	  <input type="checkbox" name="double_opt" value="1" [% IF double_opt %]checked[% END %]>ダブルオプトイン機能を使う
+	  </td>
+	</tr>
+	
+    <tr valign="top"> 
+      <td bgcolor="#FFCC66">削除時の動作</td>
+      <td bgcolor="#FFFFFF"> 
+	  <input type="radio" name="delmode" value="del" [% IF delmode == "del" %]checked[% END %]>削除
+	  <input type="radio" name="delmode" value="stop" [% IF delmode == "stop" %]checked[% END %]>配信停止<br>
+	  <font color="red" size="-1">※空メール機能を使う場合、空メールでの削除処理も同様の処理が適用されます</font>
+	  </td>
+    </tr>
+	
+    <tr valign="top"> 
+      <td bgcolor="#FFCC66">カウンター表示</td>
+      <td bgcolor="#FFFFFF"> <input type="checkbox" name="counter_disp" value="1" [% IF counter_disp %]checked[% END %]>ON</td>
+    </tr>
+<!--
+    <tr valign="top"> 
+      <td bgcolor="#FFCC66">送信履歴ログ</td>
+      <td bgcolor="#FFFFFF"> <input type="checkbox" name="rireki_email" value="1" [% IF rireki_email %]checked[% END %]>送信メールアドレスも記憶する<br>
+	  <font color="red">※送信メールアドレスを記憶するとACMAILERの動作が遅くなる場合があります</font></td>
+    </tr>
+--> 
+	 
+  </table>
+</dl>
+
+
+
+
+
+<!-- 空メール設定 -->
+<dl id="qa05_area">
+<br>
+  <table border="0" cellspacing="1" cellpadding="5" width="700" bgcolor="#FF9900">
+  <tr><td colspan="2" bgcolor="#FFCC66" align="center">
+  空メール設定
+  </td></tr>
+	[% IF mypath_ok %]
+    <tr valign="top"> 
+      <td bgcolor="#FFCC66">パイプ処理用<br>
+文字列</td>
+      <td bgcolor="#FFFFFF"> 
+	  <table><tr><td>登録用</td><td><input type="text" value="| [% mypath|html %]lib/autoreg.pl reg" size="85" class="textcolor"></tr></table>
+	  <table><tr><td>削除用</td><td><input type="text" value="| [% mypath|html %]lib/autoreg.pl del" size="85" class="textcolor"></tr></table>
+	  <font color="red" size="-1">※qmailの場合このままコピーしてお使いください。</font>
+	  </td>
+    </tr>
+	[% END %]
+	<!-- /TMPL_IF -->
+	<tr valign="top">
+	<td colspan="2" bgcolor="#FFFFFF">
+
+■空メール設定方法：qmailの場合<br><br>
+登録用、削除用それぞれのメールアドレスに対応する.qmailファイルの設置場所を確認します。<br>
+.qmailにはメールを受信したらautoreg.plが起動するように設定をします。
+<br><br>
+【例：登録用アドレス acmailer_reg@example.com】<br>
+.qmail-acmailer_reg　を作成しautoreg.plの設置場所をサーバの絶対パスで記入します。<br>
+
+autoreg.plの引数には「reg」を指定します。
+
+<p style="background-color:#333333;color:#FFFFFF;width:450px;padding:3px 3px 3px 3px;">| [% mypath|html %]lib/autoreg.pl reg</p>
+
+<br>
+【例：削除用アドレス acmailer_del@example.com】<br>
+.qmail-acmailer_del　を作成しautoreg.plの設置場所をサーバの絶対パスで記入します。<br>
+autoreg.plの引数には「del」を指定します。
+
+<p style="background-color:#333333;color:#FFFFFF;width:450px;padding:3px 3px 3px 3px;">| [% mypath|html %]lib/autoreg.pl del</p>
+
+
+autoreg.plのパーミッションは777、755などqmailの権限で実行できるように設定してください。<br><br>
+詳しくはサーバー管理者にご相談ください。<br><br>
+以上でサーバー設定完了です。<br>
+<br><br>
+
+
+<p class="text_bold">■自由項目の設定</p>
+
+<p>空メール本文に以下の書式にて、登録時に自由項目の値を登録できます。<br>
+</p>
+<p>項目名:値</p>
+<p>例<br>
+性別:男<br>
+
+都道府県:東京</p>
+<p><br>
+※「:」は半角コロンです<br>
+※項目名は、各種設定で登録した自由項目1〜10の名称を入力します。<br>
+※複数項目がある場合は、一つずつ改行で区切ります。<br>
+※順番は特にありません。</p>
+
+				
+
+	</td>
+	</tr>
+  </table>
+
+</dl>
+
+
+
+<!-- 予約配信設定 -->
+<dl id="qa06_area">
+<br>
+  <table border="0" cellspacing="1" cellpadding="5" width="700" bgcolor="#FF9900">
+  <tr><td colspan="2" bgcolor="#FFCC66" align="center">
+  予約配信設定
+  </td></tr>
+  <tr><td bgcolor="#FFCC66">
+  予約配信
+  </td><td bgcolor="#FFFFFF">
+  <input type="checkbox" name="reserve" value="1" [% IF reserve %]checked[% END %]>使用する
+  </td></tr>
+	<!-- TMPL_IF NAME=mypath_ok -->
+	[% IF mypath_ok %]
+    <tr valign="top"> 
+      <td bgcolor="#FFCC66">CRON設定<br>
+	  文字列</td>
+      <td bgcolor="#FFFFFF"> 
+	  <table>
+	  <tr><td width="70">CRONTAB用</td><td><input type="text" value="*/15 * * * *  {UNIXアカウント名} [% mypath|html %]lib/reserve.pl" size="95" class="textcolor"></td></tr>
+	  <tr><td width="70">実行パス</td><td><input type="text" value="[% mypath|html %]lib/reserve.pl" size="95" class="textcolor"></td></tr>
+	  </table>
+
+	  </td>
+    </tr>
+    <tr valign="top"> 
+      <td bgcolor="#FFCC66">WEBCRON用URL</td>
+      <td bgcolor="#FFFFFF"> 
+	  <table>
+	  <tr><td width="70">URL</td><td><input type="text" value="[% homeurl|html %]webcron.cgi" size="95" class="textcolor"></td></tr>
+	  </table>
+
+	  </td>
+    </tr>
+	[% END %]
+	<!-- /TMPL_IF -->
+	<tr valign="top">
+	<td colspan="2" bgcolor="#FFFFFF">
+	予約配信<br><br>
+	■CRONによる設定<br>
+	SSH等で直接CRONTABを編集する場合は、上記「CRONTAB用」を設定してください。<br>※UNIXアカウント名は必要に応じて変更してください。<br><br>
+	さくらサーバーなどWEB管理ツールから設定する場合は、実行コマンドを上記「実行パス」で設定してください。<br><br>
+	<b>CRONとは</b>
+	<br>
+	CRONとはLinuxなどのサーバにおいて、定期的にコマンドを実行するための仕組みのことです。<br>
+	ご利用中のサーバーでCRONが利用できるかはサーバー管理者にご相談ください。<br><br>
+	■WEBCRONによる設定<br>
+	一定間隔で
+	<a href="[% homeurl|html %]webcron.cgi" target="blank">[% homeurl|html %]webcron.cgi</a><BR>
+	にアクセスすることにより予約データを配信することができます。
+
+	</td>
+	</tr>
+  </table>
+
+</dl>
+
+
+
+
+
+
+<!-- 不着メール設定 -->
+<dl id="qa07_area">
+<br>
+  <table border="0" cellspacing="1" cellpadding="5" width="700" bgcolor="#FF9900">
+  <tr><td colspan="2" bgcolor="#FFCC66" align="center">
+  不着メール設定
+  </td></tr>
+  <tr><td bgcolor="#FFCC66">
+  不着メール管理
+  </td><td bgcolor="#FFFFFF">
+  <input type="checkbox" name="errmail" value="1" [% IF errmail %]checked[% END %]>使用する
+  </td></tr>
+  <tr><td bgcolor="#FFCC66">
+  不着受信用メールアドレス
+  </td><td bgcolor="#FFFFFF">
+  <input type="text" name="errmail_email" value="[% errmail_email|html %]" size="50">
+  <br><font color="red" size="-1">※不着メールの戻り先メールアドレスを指定してください。</font>
+  <br><font color="red" size="-1">※不着メール受信はサーバーに負担がかかりますので、よくよくご注意ください。</font>
+  <br><font color="red" size="-1">※必ず、ご自身の管理上にあるメールアドレスをご指定ください。</font>
+
+  </td></tr>
+    <tr valign="top"> 
+      <td bgcolor="#FFCC66">配信停止設定</td>
+      <td bgcolor="#FFFFFF"> <input type="text" name="send_stop" value="[% send_stop|html %]" size="2">回以上、不着の場合に配信停止を自動的に行う<br>
+	  ※ゼロ(0)に設定した場合は自動的に配信停止になりません</td>
+    </tr>
+	 
+    <tr valign="top"> 
+      <td bgcolor="#FFCC66">不着ログ保存件数</td>
+      <td bgcolor="#FFFFFF">最新履歴から <input type="text" name="errmail_log_num" value="[% errmail_log_num|html %]" size="2">件分<br>
+	  ※デフォルトは10件です。不着ログ保存件数を増やすと処理が重たくなります。</td>
+    </tr>
+	[% IF mypath_ok %]
+    <tr valign="top"> 
+      <td bgcolor="#FFCC66">パイプ処理用文字列</td>
+      <td bgcolor="#FFFFFF"> 
+		<input type="text" value="| [% mypath|html %]lib/errmail.pl" size="85" class="textcolor">
+		<br>※上記で設定された不着受信用メールアドレスのパイプ設定を行ってください
+	  </td>
+    </tr>
+	[% END %]
+	
+	<tr valign="top">
+	<td colspan="2" bgcolor="#FFFFFF">
+	
+■不着メール設定方法：qmailの場合<br><br>
+不着受信用メールアドレスの.qmailファイルの設置場所を確認します。<br>
+.qmailにはメールを受信したらerrmail.plが起動するように設定をします。
+<br><br>
+【例：不着受信用アドレス acmailer_return@example.com】<br>
+.qmail-acmailer_return　を作成しerrmail.plの設置場所をサーバの絶対パスで記入します。<br>
+
+
+<p style="background-color:#333333;color:#FFFFFF;width:450px;padding:3px 3px 3px 3px;">| [% mypath|html %]lib/errmail.pl</p>
+
+errmail.plのパーミッションは777、755などqmailの権限で実行できるように設定してください。<br><br>
+詳しくはサーバー管理者にご相談ください。<br><br>
+以上でサーバー設定完了です。<br>
+<br><br>
+
+
+				
+
+	</td>
+	</tr>
+  </table>
+
+</dl>
+
+
+
+
+
+
+<!-- ユーザ登録 -->
+<dl id="qa08_area">
+<br>
+  <table border="0" cellspacing="1" cellpadding="5" width="700" bgcolor="#FF9900">
+  <tr><td colspan="2" bgcolor="#FFCC66" align="center">
+  ライセンス登録
+  </td></tr>
+  
+  [% IF !sys.license_ok %]
+  <tr><td bgcolor="#FFCC66">
+  ライセンスお申し込み
+  </td><td bgcolor="#FFFFFF">
+  <a href="http://www.ahref.org/cgi/acmailer/license.html" target="blank">ACMAILER各種ライセンスお申し込み</a>
+  </td></tr>
+  [% END %]
+  
+  <tr><td bgcolor="#FFCC66">
+  ライセンスキー
+  </td><td bgcolor="#FFFFFF">
+  <input type="password" name="license1" value="[% license1|html %]" size="4">-
+  <input type="password" name="license2" value="[% license2|html %]" size="4">-
+  <input type="password" name="license3" value="[% license3|html %]" size="4">-
+  <input type="password" name="license4" value="[% license4|html %]" size="4">
+  </td></tr>
+  
+  <tr><td bgcolor="#FFCC66">
+  ライセンス種別
+  </td><td bgcolor="#FFFFFF">
+  [% IF license_kind %]
+  	[% license_kind %]
+  [% ELSE %]
+  	フリーライセンス
+  [% END %]
+  </td></tr>
+  
+  [% IF sys.license_ok %]
+  <tr><td bgcolor="#FFCC66">
+  著作権非表示
+  </td><td bgcolor="#FFFFFF">
+  <input type="checkbox" name="writing_hide" value="1" [% IF writing_hide %]checked[% END %]>非表示設定
+  </td></tr>
+  [% END %]
+  </table>
+
+</dl>
+
+
+
+<!-- トップページ用メモ -->
+<dl id="qa09_area">
+<br>
+  <table border="0" cellspacing="1" cellpadding="5" width="700" bgcolor="#FF9900">
+  <tr><td colspan="2" bgcolor="#FFCC66" align="center">
+  トップページ用メモ
+  </td></tr>
+  
+  
+  <tr><td bgcolor="#FFCC66">
+  自由入力
+  </td><td bgcolor="#FFFFFF">
+  <textarea name="free_memo" cols="80" rows="40">[% free_memo %]</textarea>
+  </td></tr>
+  
+  
+  </table>
+
+</dl>
+
+
+<!-- 携帯ドメイン設定 -->
+<dl id="qa10_area">
+<br>
+  <table border="0" cellspacing="1" cellpadding="5" width="700" bgcolor="#FF9900">
+  <tr><td colspan="2" bgcolor="#FFCC66" align="center">
+  携帯ドメイン設定
+  </td></tr>
+  
+  
+  <tr><td bgcolor="#FFCC66">
+  携帯ドメインを改行を入れて入力してください。
+  </td><td bgcolor="#FFFFFF">
+  <textarea name="mobiledomain" cols="60" rows="10">[% mobiledomain %]</textarea>
+  </td></tr>
+  
+  
+  </table>
+
+</dl>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+  <table border="0" cellspacing="1" cellpadding="5" width="700" bgcolor="#FF9900">
+ 
+	 
+    <tr valign="top"> 
+      <td colspan="2" bgcolor="#FFFFFF"><div align="center"> 
+      <input type="hidden" name="login_pass_org" size="30" value="[% login_pass|html %]">
+            <input type="submit" name="Submit" value="更新">
+			<input type="hidden" name="edit" value="1">
+          <br></div></td>
+    </tr>
+  </table>
+</form>
+</div>
+
+
+
+<script>
+function test_sendmail() {
+	if (document.form1.test_send.value == "") {
+		alert("テスト送信先を入力してください。");
+		return 0;
+	}
+
+
+	var cnt = document.form1.elements.length;
+	var mode = "";
+	for( i=0 ; i < cnt ; i++ ) {
+		if (document.form1.elements[i].type == "radio" && document.form1.elements[i].name == "relay_send_mode" && document.form1.elements[i].checked) {
+			mode = document.form1.elements[i].value;
+		}
+	}
+	
+	window.open('test_relay_send.cgi?to=' + document.form1.test_send.value + "&port=" + document.form1.relay_port.value + "&from=" + document.form1.admin_email.value + '&relay_user=' + document.form1.relay_user.value + '&relay_pass=' + document.form1.relay_pass.value + '&relay_send_mode=' + mode + "&relay_host=" + document.form1.relay_host.value);
+}
+</script>
+
+
+
+      </div>
+      </div>
+    </div>
+	</div>
+
+
+
+[% INCLUDE 'tmpl/html_footer.tmpl' %]

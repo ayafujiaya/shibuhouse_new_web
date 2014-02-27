@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="EUC-JP"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=EUC-JP" />
+<title>ﾊﾞｯｸﾅﾝﾊﾞｰ一覧 | [% mail_title|html %]</title>
+<body>
+<style>
+	#box_title{
+		background-color:#FFCC00;
+		text-align:center;
+		padding:5px;
+	}
+	#box_footer{
+		text-align:center;
+	}
+	#page_bottom{
+		background-color:#E6E6E6;
+		padding:3px;
+	}
+	.box_menu{
+		background-color:#E6E6E6;
+		padding:3px;
+	}
+	.box_con{
+		background-color:#FFFFFF;
+		padding-bottom:5px;
+	}
+	.td_title{
+		background:#E6E6E6;
+	}
+	.td_con{
+		background:#FFFFFF;
+	}
+	.fs_1{
+		font-size:1;
+	}
+	.fs_2{
+		font-size:2;
+	}
+	.fs_3{
+		font-size:3;
+	}
+	.pb_5{
+		padding-bottom:5px;
+	}
+	.pb_10{
+		padding-bottom:10px;
+	}
+</style>
+<div id="page_top"></div>
+
+
+<div style="background-color:#FFCC00;text-align:center;padding:5px;">
+	ﾊﾞｯｸﾅﾝﾊﾞｰ
+</div>
+
+
+[% UNLESS backnumber_list.0 %]
+	<span style="font-size:small"><font size="1">バックナンバーはありません。</font></span>
+[% ELSE %]
+	<table width="100%">
+		<tr>
+			<td>
+				<span style="font-size:small">
+				<font size="1">
+				[% IF next_id %]<span style="font-size:small"><font size="1"><img src="img/004_c4.gif" /><a accesskey="4" href="backnumber.cgi?mobile=1&sid=[% form.sid %]&id=[% next_id %]">&lt;前へ</a>[% END %]
+				[% IF back_id %]<span style="font-size:small"><font size="1"><img src="img/006_c4.gif" /><a accesskey="6" href="backnumber.cgi?mobile=1&sid=[% form.sid %]&id=[% back_id %]">次へ&gt;</a>[% END %]
+				<br>
+				[% send_year %]/[% send_mon %]/[% send_day %] [% send_hour %]:[% send_min %]:[% send_sec %]
+				
+				</font>
+				</span>
+			</td>
+		</tr>
+		[% IF mail_type=="html" %]
+		<tr>
+			<td>
+				<span style="font-size:small">
+				<font size="1">
+				<a href="backnumber_previewhtml.cgi?mobile=1&id=[% id %]&sid=[% form.sid %]" target="blank">プレビュー</a>
+				</font>
+				</span>
+			</td>
+		</tr>
+		[% END %]
+		<tr>
+			<td>
+				<span style="font-size:small">
+				<font size="1">
+				[% mail_title|html %]
+				</font>
+				</span>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<span style="font-size:small">
+				<font size="1">
+				[% IF mail_type=="plain" %]
+					[% mail_body|html|html_line_break %]
+				[% ELSIF mail_type=="html" %]
+					[% mail_body %]
+				[% END %]
+				</font>
+				</span>
+			</td>
+		</tr>
+	</table>
+[% END %]
+<br />
+<div class="box_menu" style="background-color:#E6E6E6;padding:3px;">
+	日付一覧
+</div>
+	<span style="font-size:small;">
+	<font size="1">
+	[% FOREACH v=backnumber_list %]
+		[% IF form.id == v.id %]
+			[% v.send_year %]/[% v.send_mon %]/[% v.send_day %] [% v.send_hour %]:[% v.send_min %]:[% v.send_sec %]<br>
+		[% ELSE %]
+			<a href="backnumber.cgi?mobile=1&id=[% v.id %]&sid=[% form.sid %]">[% v.send_year %]/[% v.send_mon %]/[% v.send_day %] [% v.send_hour %]:[% v.send_min %]:[% v.send_sec %]</a><br>
+		[% END %]
+	[% END %]
+	</font>
+	</span>
+<br />
+<div style="font-size:small">
+	<font size="1"><img src="img/002_c4.gif" /><a accesskey="2" href="?sid=[% form.sid %]&id=[% form.id %]#page_top">上へ</a></font>
+</div>
+
+
+[% INCLUDE 'tmpl/html_mobilefooter_nomenu.tmpl' %]

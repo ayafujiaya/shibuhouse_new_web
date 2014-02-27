@@ -1,0 +1,48 @@
+
+              <tr>
+                <td class="menu [% IF form.display=='mail' %]menubgcolor[% END %]"><a href="admin_edit.cgi?display=mail">メール設定</a></td>
+              </tr>
+              <tr>
+                <td class="menu [% IF form.display=='free' %]menubgcolor[% END %]"><a href="admin_edit.cgi?display=free">自由項目設定</a></td>
+              </tr>
+              <tr>
+                <td class="menu [% IF form.display=='system' %]menubgcolor[% END %]"><a href="admin_edit.cgi?display=system">システム設定</a></td>
+              </tr>
+              <tr>
+                <td class="menu [% IF form.display=='default' %]menubgcolor[% END %]"><a href="admin_edit.cgi?display=default">送信サーバー設定</a></td>
+              </tr>
+              <tr>
+                <td class="menu [% IF form.display=='autoreg' %]menubgcolor[% END %]"><a href="admin_edit.cgi?display=autoreg">空メール設定</a></td>
+              </tr>
+              <tr>
+                <td class="menu [% IF form.display=='reserve' %]menubgcolor[% END %]"><a href="admin_edit.cgi?display=reserve">予約配信設定</a></td>
+              </tr>
+              <tr>
+                <td class="menu [% IF form.display=='errmail' %]menubgcolor[% END %]"><a href="admin_edit.cgi?display=errmail">不着メール設定</a></td>
+              </tr>
+	      [% IF admindata.errmail == "1" %]
+              <tr>
+                <td class="menu [% IF sys.scriptname=='errmail_list.cgi' %]menubgcolor[% END %]"><a href="errmail_list.cgi">不着メール管理</a></td>
+              </tr>
+	      [% END %]
+              <tr>
+                <td class="menu [% IF form.display=='topmemo' %]menubgcolor[% END %]"><a href="admin_edit.cgi?display=topmemo">トップページメモ</a></td>
+              </tr>
+              <tr>
+                <td class="menu [% IF form.display=='mobile' %]menubgcolor[% END %]"><a href="admin_edit.cgi?display=mobile">携帯ドメイン設定</a></td>
+              </tr>
+	      <tr>
+                <td class="menu [% IF sys.scriptname=='regdeny_list.cgi' %]menubgcolor[% END %]"><a href="regdeny_list.cgi">再登録拒否リスト</a></td>
+              </tr>
+	      <tr>
+                <td class="menu [% IF sys.scriptname=='clean_double_opt.cgi' %]menubgcolor[% END %]"><a href="clean_double_opt.cgi">仮登録データ一覧</a></td>
+              </tr>
+              <tr>
+                <td class="menu [% IF sys.scriptname=='export.cgi' %]menubgcolor[% END %]"><a href="export.cgi">設定エクスポート</a></td>
+              </tr>
+              <tr>
+                <td class="menu [% IF sys.scriptname=='import.cgi' %]menubgcolor[% END %] lastmenu"><a href="import.cgi">設定インポート</a></td>
+              </tr>
+              <tr>
+                <td class="menu [% IF form.display=='license' %]menubgcolor[% END %]"><a href="admin_edit.cgi?display=license">ライセンス登録</a></td>
+              </tr>

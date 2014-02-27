@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP" />
+<title>acmailer│control panel</title>
+<link rel="stylesheet" href="./css/common.css" type="text/css">
+<link rel="stylesheet" href="./css/hensu.css" type="text/css">
+</head>
+<body>
+<div id="wrapper">
+  <div id="containt_wrapper">
+    <div id="content">
+      <div id="content_title" class="clearfix"> 
+      	<div id="content_title_left">
+      		使用可能変数
+      	</div>
+      	<div id="content_title_right">
+      		<form><input type='button' value='このウィンドウを閉じる' onClick='window.close();'></form>
+      	</div>
+      </div>
+      <div id="cont_wrapper" class="clearfix">
+      <div id="cont_left">
+        <div class="cont_title"> [ デフォルト項目 ] </div>
+        <div class="cont_list clearfix">
+          <ul>
+            <li><span class="cont_list_title">{YEAR}</span>配信時の年<span class="cont_list_ex">例：</span>2009</li>
+            <li><span class="cont_list_title">{MONTH}</span>配信時の月<span class="cont_list_ex">例：</span>3</li>
+            <li><span class="cont_list_title">{MONTH-00}</span>配信時の月（2桁）<span class="cont_list_ex">例：</span>03</li>
+            <li><span class="cont_list_title">{DAY}</span>配信時の日<span class="cont_list_ex">例：</span>1</li>
+            <li><span class="cont_list_title">{DAY-00}</span>配信時の日（2桁）<span class="cont_list_ex">例：</span>01</li>
+            <li><span class="cont_list_title">{HOUR}</span>配信時の時<span class="cont_list_ex">例：</span>15</li>
+            <li><span class="cont_list_title">{HOUR-00}</span>配信時の時（2桁）<span class="cont_list_ex">例：</span>15</li>
+            <li><span class="cont_list_title">{MINUTE}</span>配信時の分<span class="cont_list_ex">例：</span>24</li>
+            <li><span class="cont_list_title">{MINUTE-00}</span>配信時の分<span class="cont_list_ex">例：</span>24</li>
+            <li><span class="cont_list_title">{SECOND}</span>配信時の秒<span class="cont_list_ex">例：</span>59</li>
+            <li><span class="cont_list_title">{SECOND-00}</span>配信時の秒<span class="cont_list_ex">例：</span>59</li>
+            <li><span class="cont_list_title">{WEEK}</span>配信時の曜日（英語表記）<span class="cont_list_ex">例：</span>Fri</li>
+            <li><span class="cont_list_title">{WEEK-JP}</span>配信時の曜日（日本語表記）<span class="cont_list_ex">例：</span>金</li>
+            <li><span class="cont_list_title">{REGURL}</span>1クリック登録URL</li>
+            <li><span class="cont_list_title">{DELURL}</span>1クリック解除URL</li>
+            <li><span class="cont_list_title">{EMAIL}</span>登録されたメールアドレス</li>
+			[% IF form.form_edit %]
+			<li><span class="cont_list_title">{NEWEMAIL}</span>変更後メールアドレス（変更フォームの場合のみ）</li>
+			<li><span class="cont_list_title">{OLDEMAIL}</span>変更前メールアドレス（変更フォームの場合のみ）</li>
+			<li><span class="cont_list_title">{CHANGEURL_DOPT}</span>ダブルオプトイン用メール変更本登録URL（変更フォームの場合のみ）</li>
+			<li><span class="cont_list_title">{AUTOFORMURL_DOPT}</span>フォーム付き用本登録フォームURL</li>
+			
+			
+			[% END %]
+			
+          </ul>
+        </div>
+      </div>
+      <div id="cont_right">
+        <div class="cont_title"> [ 自由項目 ] </div>
+        <div class="cont_list">
+          <ul>
+	  [% FOREACH v=col_list %]
+	  <li><span class="cont_list_title_right">{COL[%v.num %]}</span>[% IF v.colname %][% v.colname|html %][% ELSE %]&nbsp;[% END %]</li>
+	  [% END %]
+          </ul>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

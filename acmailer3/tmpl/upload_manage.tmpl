@@ -1,0 +1,105 @@
+[% INCLUDE 'tmpl/html_header.tmpl' %]
+
+
+<link rel="stylesheet" href="./css/upload_manage.css" type="text/css">
+
+<div id="contwrapper" class="clearfix">
+  <div id="left_cont">
+  <div id="left_menu">
+    <div id="left_cont_in">
+      <table id="left_cont_table">
+        <tr>
+          <td class="title box"><img src="img/menu.jpg" alt="" /></td>
+        </tr>
+				          <tr><td height="20"></td></tr>
+
+              <tr>
+                <td class="menu menubgcolor"><a href="upload_manage.cgi">アップロード済みファイル</a></td>
+              </tr>
+        
+		
+
+      </table>
+    </div>
+    </div>
+
+
+  [% INCLUDE 'tmpl/html_left_banner.tmpl' %]
+
+  </div>
+  
+
+  
+  <div id="right_cont">
+    <div id="right_cont_title">
+      <table id="right_cont_table_title">
+        <tr>
+          <td class="title box">
+              画像管理<img src="img/big_arrow.jpg" alt="" />アップロード済みファイル<img src="img/big_arrow.jpg" alt="" />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="right_cont_contens">
+    <div id="right_cont_contens_in">
+
+
+            <div id="cont_num">
+<form action="upload_manage.cgi" method="post" enctype="multipart/form-data">
+              <table id="right_cont_table1">
+                <tr>
+                  <td id="file_select" class=" box"><div id="file_select_title">ファイル選択(100KBまで)</div>
+                    <div id="file">
+                      <span  id="file_in"> <input type="file" name="imagefile" style="height:1.8em;"></span></div>
+                    <div id="file_select_btn" style="margin-left:10px; float:left;">
+                     
+<input type="submit" value="アップロード" style="float:left; margin-left:10px;" class="buttonstyle">
+                    </div></td>
+                </tr>
+              </table>
+</form>
+            </div>
+			<div align="center">
+			[% IF uploadok %]
+			<font color="blue"><b>アップロードしました。</b></font><br>
+			[% END %]
+			[% IF delok %]
+			<font color="red"><b>削除しました。</b></font><br>
+			[% END %]
+			</div>
+            <div id="cont_list">
+              <table id="right_cont_table3">
+                <tr>
+                  <td class="listtitle listtitle_2 box">ファイル名</td>
+                  <td class="listtitle listtitle_3 box">イメージ</td>
+                  <td class="listtitle listtitle_1 box posi_center">削除</td>
+                </tr>
+[% FOREACH v=file_list %]
+                <tr>
+                  <td class="box time_lineheight">[% v.file_name %]</td>
+                  <td class="box time_lineheight"><a href="javascript:void(0);" onclick="javascript:window.open('./upload/[% v.file_name %]')"><img src="./upload/[% v.file_name %]" border="0"></a></td>
+                  <td class="box posi_center"><input type="button"value="削除" onclick="javascript:image_del('[% v.file_name %]')"></td>
+                </tr>
+[% END %]
+
+              </table>
+            </div>
+
+
+
+
+
+      </div>
+      </div>
+    </div>
+	</div>
+
+<script>
+function image_del(filename) {
+	if (confirm('削除しますか？')) {
+		window.location = 'upload_manage.cgi?mode=delete&file_name=' + filename;
+	}
+}
+</script>
+
+[% INCLUDE 'tmpl/html_footer.tmpl' %]

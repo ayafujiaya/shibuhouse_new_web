@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=[% sys.encode_type %]" />
+<title>[% admindata.title|html %]</title>
+<link rel="stylesheet" href="./css/common.css" type="text/css">
+<link rel="stylesheet" href="./css/default.css" type="text/css">
+<link rel="stylesheet" href="./css/login_etc.css" type="text/css">
+</head>
+<body>
+<div id="containt_panel_wrapper">
+	<div id="containt_panel">
+    	<div id="panel_head" class="clearfix">
+        	<div id="panel_head_left">
+			[% UNLESS writing %]
+			<a href="http://www.acmailer.jp"><img src="img/logo.jpg" alt="メール配信CGI acmailer" /></a>
+			[% END %]
+			</div>
+            <div id="panel_head_right">[% UNLESS writing %]<a href="http://www.ahref.org"><img src="img/ahref_2.jpg" alt="WEBアプリケーション、フリーCGI配布のahref（エーエイチレフ）" /></a>[% END %]</div>
+        </div>

@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<META http-equiv="content-type" content="text/html;charset=EUC-JP">
+
+<div align="center"><div class="title">[% enq_name|html %]</div><br><br>
+
+
+[% IF ok %]
+アンケートありがとうございました。
+
+
+[% ELSE %]
+<font color="red">[% error_message %]</font>
+
+<form name="form1" method="post" action="enq_form.cgi">
+  <table border="0" cellspacing="1" cellpadding="5" bgcolor="#FF9900">
+
+    <tr valign="top"> 
+      <td bgcolor="#FFFFFF">[% enq_question|html %]
+      </td>
+    </tr>
+    <tr valign="top"> 
+      <td bgcolor="#FFFFFF">
+	[% FOREACH v=list %]
+	  <input type="radio" name="answer_[% v.rownum %]" value="[% v.rownum %]">[% v.value|html %]
+	[% END %]
+      </td>
+    </tr>
+
+    
+
+    <tr valign="top"> 
+      <td colspan="2" bgcolor="#FFFFFF"><div align="center"> 
+            <input type="submit" name="Submit" value="投稿">
+			<input type="hidden" name="id" value="[% form.id %]">
+			<input type="hidden" name="mail_id" value="[% form.mail_id %]">
+			  <input type="hidden" name="key" value="[% form.key %]">
+			  <input type="hidden" name="reg" value="1">
+          <br></div></td>
+    </tr>
+	
+	
+  </table>
+</form>
+</div>
+
+
+
+[% END %]
+
+
+
+[% INCLUDE 'tmpl/html_footer.tmpl' %]

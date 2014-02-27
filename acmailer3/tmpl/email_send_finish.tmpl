@@ -1,0 +1,75 @@
+[% INCLUDE 'tmpl/html_header.tmpl' %]
+
+
+
+<div id="contwrapper" class="clearfix">
+  <div id="left_cont">
+  <div id="left_menu">
+    <div id="left_cont_in">
+      <table id="left_cont_table">
+        <tr>
+          <td class="title box"><img src="img/menu.jpg" alt="" /></td>
+        </tr>
+          <tr><td height="20"></td></tr>
+        <tr>
+          <td class="menu[% IF form.mode=="" %] menubgcolor[% END %]"><a href="email_send.cgi">テキストメール配信</a></td>
+        </tr>
+        <tr>
+          <td class="menu[% IF form.mode=="html" %] menubgcolor[% END %]"><a href="email_send.cgi?mode=html">HTMLメール配信</a></td>
+        </tr>
+        <tr>
+          <td class="menu lastmenu[% IF form.mode=="deco" %] menubgcolor[% END %]"><a href="email_send.cgi?mode=deco">デコメール配信</a></td>
+        </tr>
+      </table>
+    </div>
+    </div>
+  
+  [% INCLUDE 'tmpl/html_left_banner.tmpl' %]
+  </div>
+  
+  <div id="right_cont">
+    <div id="right_cont_title">
+      <table id="right_cont_table_title">
+        <tr>
+          <td class="title box">
+              メール配信<img src="img/big_arrow.jpg" alt="" />メール配信完了<img src="img/big_arrow.jpg" alt="" />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="right_cont_contens">
+    <div id="right_cont_contens_in">
+
+
+
+[% IF reserve %]
+
+<div align="center">
+<b>配信予約完了</b>
+<br><br>
+[% ELSE %]
+
+
+<div align="center">
+<b>メール配信完了</b>
+<br><br>
+[% END %]
+送信内容・送信状態は<a href="hist_list.cgi">履歴画面</a>よりお確かめください。
+<br><br>
+<a href="index.cgi">TOPに戻る</a>
+<br><br>
+
+
+
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+[% INCLUDE 'tmpl/html_footer.tmpl' %]

@@ -1,0 +1,122 @@
+[% INCLUDE 'tmpl/html_header.tmpl' %]
+
+
+
+<div id="contwrapper" class="clearfix">
+  <div id="left_cont">
+  <div id="left_menu">
+    <div id="left_cont_in">
+      <table id="left_cont_table">
+        <tr>
+          <td class="title box"><img src="img/menu.jpg" alt="" /></td>
+        </tr>
+		          <tr><td height="20"></td></tr>
+
+              <tr>
+                <td class="menu"><a href="email_list.cgi">メールアドレス一覧</a></td>
+              </tr>
+              <tr>
+                <td class="menu"><a href="dispcol_edit.cgi">一覧表示項目の設定</a></td>
+              </tr>
+              <tr>
+                <td class="menu menubgcolor"><a href="email_add.cgi">メールアドレス登録</a></td>
+              </tr>
+              <tr>
+                <td class="menu"><a href="email_del.cgi">メールアドレス削除</a></td>
+              </tr>
+              <tr>
+                <td class="menu"><a href="email_csvdown.cgi">CSVダウンロード</a></td>
+              </tr>
+              <tr>
+                <td class="menu lastmenu"><a href="email_alldel.cgi">メールアドレス完全削除</a></td>
+              </tr>
+
+
+      </table>
+    </div>
+    </div>
+
+
+  [% INCLUDE 'tmpl/html_left_banner.tmpl' %]
+
+  </div>
+  
+
+  
+  <div id="right_cont">
+    <div id="right_cont_title">
+      <table id="right_cont_table_title">
+        <tr>
+          <td class="title box">
+              メールアドレス管理<img src="img/big_arrow.jpg" alt="" />メールアドレス登録<img src="img/big_arrow.jpg" alt="" />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="right_cont_contens">
+    <div id="right_cont_contens_in">
+
+
+
+
+<form name="form1" method="post" action="email_add.cgi">
+  <div align="center">
+[% IF addnum %]
+	以下の内容で登録します。よろしければ登録ボタンを押してください。<br><br>
+
+	登録可能数：[% addnum|html %]/[% totalnum|html %]件<br /><br />
+        <input type="submit" value="一括登録" class="buttonstyle">　<INPUT type="button" onClick='history.back();' value="戻る" class="buttonstyle">
+	[% ELSE %]
+	登録できるデータがありません。<INPUT type="button" onClick='history.back();' value="戻る" class="buttonstyle">
+[% END %]
+</div>
+<br><br>
+
+[% IF has_detail %]
+   <table id="right_cont_table">
+    <tr bgcolor="#EEEEEE">
+      <td class="td_2 box">No.</td>
+      <td class="td_2 box">メールアドレス</td>
+	  [% FOREACH v=freecol_list %]
+      <td align="center" class="td_2 box">[% v.colname|html %]&nbsp;</td>
+	  [% END %]
+      <td class="td_2 box">&nbsp;</td>
+    </tr>
+    <tr bgcolor="#EEEEEE"> 
+      <td>&nbsp;</td>
+      <td align="center" class="td_2 box"><font size="-1">(必須)</font></td>
+	  [% FOREACH v=freecol_list %]
+      <td align="center" class="td_2 box">[% IF v.colcheck %]<font size="-1">(必須)</font>[% END %]&nbsp;</td>
+	  [% END %]
+	  
+      <td align="center" class="td_2 box">&nbsp;</td>
+    </tr>
+    [% FOREACH v=loop %]
+    <tr bgcolor="#FFFFFF"> 
+      <td class="td_2 box">[% v.i|html %]</td>
+      <td class="td_2 box">[% v.email|html %]</td>
+	  [% FOREACH v2=v.col_list %]
+      <td class="td_2 box">[% v2.col|html %]&nbsp;</td>
+	  [% END %]
+
+      <td class="td_2 box">[% v.status %]</td>
+    </tr>
+    [% END %]
+  </table>
+[% END %]
+
+<input type="hidden" name="emailall" value="[% emailall|html %]">
+<input type="hidden" name="add" value="1">
+</form>
+
+
+
+
+      </div>
+      </div>
+    </div>
+	</div>
+
+
+
+[% INCLUDE 'tmpl/html_footer.tmpl' %]

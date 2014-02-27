@@ -1,0 +1,35 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP" />
+<title>画像</title>
+</head>
+<body>
+
+<div align="center">
+
+
+<table bgcolor="#FF9900">
+<tr><td bgcolor="#FF9900">
+<b><font color="#FFFFFF">画像テーブル</font></b>
+</td></tr>
+
+[% FOREACH v=file_list %]
+<tr><td bgcolor="#FFFFFF">
+<a href="javascript:set('{img_[% v.file_name %]}');" border="0">
+<img src="./upload/[% v.file_name %]" border="0" height="60">
+</a>
+</td></tr>
+[% END %]
+
+</table>
+
+<input type="button" value="閉じる" onclick="javascript:window.close();">
+</div>
+<script language="javascript">
+function set(id) {
+	opener.document.forms['form1'].elements['mail_[% mode %]'].value += id;
+	//window.close();
+}
+</script>
+
+[% INCLUDE 'tmpl/html_footer.tmpl' %]

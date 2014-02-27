@@ -1,0 +1,210 @@
+[% INCLUDE 'tmpl/html_header.tmpl' %]
+
+
+<link href="./css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+<script src="./js/jquery.js" type="text/javascript"></script>
+<script src="./js/qaTab.js" type="text/javascript"></script>
+
+
+
+<div id="contwrapper" class="clearfix">
+  <div id="left_cont">
+  <div id="left_menu">
+    <div id="left_cont_in">
+      <table id="left_cont_table">
+        <tr>
+          <td class="title box"><img src="img/menu.jpg" alt="" /></td>
+        </tr>
+		          <tr><td height="20"></td></tr>
+
+  [% INCLUDE 'tmpl/html_setting_menu.tmpl' %]
+
+
+
+      </table>
+    </div>
+    </div>
+
+
+  [% INCLUDE 'tmpl/html_left_banner.tmpl' %]
+
+  </div>
+  
+
+  
+  <div id="right_cont">
+    <div id="right_cont_title">
+      <table id="right_cont_table_title">
+        <tr>
+          <td class="title box">
+              各種設定<img src="img/big_arrow.jpg" alt="" />空メール設定<img src="img/big_arrow.jpg" alt="" />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="right_cont_contens">
+    <div id="right_cont_contens_in">
+
+
+
+
+
+
+
+<div align="center">
+[% IF oktext %]
+<font color="red"><b>[% oktext %]</b></font><br>
+[% END %]
+</div>
+
+
+<form name="form1" method="post" action="admin_edit.cgi">
+<div align="center">
+<font color="red">[% error_message %]</font>
+<font color="blue"><b>[% IF okedit %]更新しました[% END %]</b></font>
+</div>
+
+
+
+   <table id="right_cont_table">
+  <tr><td colspan="2" bgcolor="#EEEEEE" align="center" class="td_2 box listtitle">
+  空メール設定
+  </td></tr>
+
+    <tr valign="top"> 
+      <td class="td_2 box">空メールアドレス<br>(メモ用)</td>
+      <td bgcolor="#FFFFFF" class="td_2 box"> 
+	  <table><tr><td>登録用</td><td><input type="text" name="reg_email" value="[% reg_email|html %]" size="60" class="textcolor" style="width:350px;"></tr><tr><td>削除用</td><td><input type="text" name="del_email" value="[% del_email|html %]" size="60" class="textcolor" style="width:350px;"></tr><tr><td>フォーム付き</td><td><input type="text" name="autoform_email" value="[% autoform_email|html %]" size="60" class="textcolor" style="width:350px;"></tr></table>
+	  <font color="red" size="-1">※空メール設定済みのメールアドレスのメモにお使いください。</font><br />
+	  <font color="red" size="-1">※ここでの入力により空メール設定が行われるわけではありません。 </font>
+	  </td>
+    </tr>
+
+
+	[% IF mypath_ok %]
+    <tr valign="top"> 
+      <td class="td_2 box">パイプ処理用<br>
+文字列</td>
+      <td bgcolor="#FFFFFF" class="td_2 box"> 
+	  <table><tr><td>登録用</td><td><input type="text" value="| [% mypath|html %]lib/autoreg.pl reg" size="60" class="textcolor" style="width:350px;"></tr><tr><td>削除用</td><td><input type="text" value="| [% mypath|html %]lib/autoreg.pl del" size="60" class="textcolor" style="width:350px;"></tr><tr><td>フォーム付き</td><td><input type="text" value="| [% mypath|html %]lib/autoreg.pl autoform" size="60" class="textcolor" style="width:350px;"></tr></table>
+	  <font color="red" size="-1">※qmailの場合このままコピーしてお使いください。</font>
+	  </td>
+    </tr>
+	[% END %]
+	
+	
+	<tr valign="top">
+	<td colspan="2" bgcolor="#FFFFFF" class="td_2 box" align="center">
+<input type="hidden" name="login_pass_org" size="30" value="[% login_pass|html %]">
+            <input type="submit" name="Submit" value="更新" class="buttonstyle">
+			<input type="hidden" name="edit" value="1">
+			<input type="hidden" name="display" value="[% form.display %]">
+	</td>
+	</tr>
+	
+	<tr valign="top">
+	<td colspan="2" bgcolor="#FFFFFF" class="td_2 box">
+
+■空メール設定方法：qmailの場合<br><br>
+登録用、削除用それぞれのメールアドレスに対応する.qmailファイルの設置場所を確認します。<br>
+.qmailにはメールを受信したらautoreg.plが起動するように設定をします。
+<br><br>
+【例：登録用アドレス acmailer_reg@example.com】<br>
+.qmail-acmailer_reg　を作成しautoreg.plの設置場所をサーバの絶対パスで記入します。<br>
+
+autoreg.plの引数には「reg」を指定します。
+
+<p style="background-color:#333333;color:#FFFFFF;width:550px;padding:3px 3px 3px 3px;">| [% mypath|html %]lib/autoreg.pl reg</p>
+
+<br>
+【例：削除用アドレス acmailer_del@example.com】<br>
+.qmail-acmailer_del　を作成しautoreg.plの設置場所をサーバの絶対パスで記入します。<br>
+autoreg.plの引数には「del」を指定します。
+
+<p style="background-color:#333333;color:#FFFFFF;width:550px;padding:3px 3px 3px 3px;">| [% mypath|html %]lib/autoreg.pl del</p>
+
+<br>
+【例：フォーム付きアドレス acmailer_autoform@example.com】<br>
+.qmail-acmailer_autoform　を作成しautoreg.plの設置場所をサーバの絶対パスで記入します。<br>
+autoreg.plの引数には「autoform」を指定します。
+
+<p style="background-color:#333333;color:#FFFFFF;width:550px;padding:3px 3px 3px 3px;">| [% mypath|html %]lib/autoreg.pl autoform</p>
+
+
+
+autoreg.plのパーミッションは777、755などqmailの権限で実行できるように設定してください。<br><br>
+詳しくは<a href="http://www.acmailer.jp/docs/manual/admin-edit/36.html"target="blank">オンラインマニュアル</a>をご覧になるか、お使いのサーバーの管理者にご相談ください。<br><br>
+以上でサーバー設定完了です。<br>
+<br><br>
+
+
+<p class="text_bold">■フォーム付き機能</p>
+
+<p>フォーム付き機能を利用するには<a href="autoform_edit.cgi">フォーム自動作成</a>でフォームを使用するにチェックしてください。<br>
+</p>
+
+<br>
+
+【ご利用方法】<br>
+(1)専用メールアドレスの作成<br>
+フォーム付き空メールを利用するには、専用のメールアドレスが必要となります。<br>
+　
+例：acmailer_autoform@example.com<br>
+
+今までの空メール送信先（例：acmailer_reg@example.com）とは異なります。<br><br>
+
+(2)フォームの編集<br>
+「メルマガ登録フォーム」 →「フォーム設定」にて、フォームを編集してください。<br>
+ステータスを公開する”と設定すると、フォーム用のURLが有効になります。<br>
+自由項目と連動しているため、タイトルを変更すると自由項目名も変更されます。<br><br>
+
+(3)自動返信メールの編集<br>
+「メールテンプレート」→「自動返信メール」から<br>
+「フォーム付き空メール用自動返信メール」を編集してください。<br><br>
+
+フォームのURLを表示する変数は、{AUTOFORMURL_DOPT} です。<br>
+<br><br>
+
+
+	</td>
+	</tr>
+  </table>
+
+
+
+</form>
+</div>
+
+
+
+<script>
+function test_sendmail() {
+	if (document.form1.test_send.value == "") {
+		alert("テスト送信先を入力してください。");
+		return 0;
+	}
+
+
+	var cnt = document.form1.elements.length;
+	var mode = "";
+	for( i=0 ; i < cnt ; i++ ) {
+		if (document.form1.elements[i].type == "radio" && document.form1.elements[i].name == "relay_send_mode" && document.form1.elements[i].checked) {
+			mode = document.form1.elements[i].value;
+		}
+	}
+	
+	window.open('test_relay_send.cgi?to=' + document.form1.test_send.value + "&port=" + document.form1.relay_port.value + "&from=" + document.form1.admin_email.value + '&relay_user=' + document.form1.relay_user.value + '&relay_pass=' + document.form1.relay_pass.value + '&relay_send_mode=' + mode + "&relay_host=" + document.form1.relay_host.value);
+}
+</script>
+
+
+
+      </div>
+      </div>
+    </div>
+	</div>
+
+
+
+[% INCLUDE 'tmpl/html_footer.tmpl' %]

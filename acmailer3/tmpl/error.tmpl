@@ -1,0 +1,23 @@
+
+[% INCLUDE 'tmpl/html_header_nomenu.tmpl' %]
+
+
+
+		
+        <div id="panel">
+        	<div id="panel_title">
+            	<p id="panel_title_1"><span class="red">エラー</span></p>
+            </div>
+            <div id="panel_text">
+            	[% ERRDATA %]
+                
+            </div>
+			<br>
+			<div style="text-align:center;">
+			<input type="button" value="戻る" onclick="javascript:history.back();"/>
+			</div>
+        </div>
+
+
+
+[% INCLUDE 'tmpl/html_footer_nomenu.tmpl' %]

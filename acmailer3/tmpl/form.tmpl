@@ -1,0 +1,69 @@
+[% INCLUDE 'tmpl/html_header_form.tmpl' %]
+	
+	
+    <div id="form_table">
+    <form action="[% admindata.homeurl %]reg.cgi" method="post">
+      <table>
+        <tr>
+          <td colspan="2" id="zine_title">メルマガ登録</td>
+        </tr>
+        <tr>
+          <td class="td_left">メールアドレス</td>
+          <td class="td_right"> [% IF doptdata.id %]
+            [% doptdata.email|html %]
+            [% ELSE %]
+            <input class="txt_box" type="text" name="email" value="">
+            [% END %] </td>
+        </tr>
+        [% FOREACH v = freecol_list %]
+        [% IF v.coldisp && v.coltype != "hidden" %]
+        <tr>
+          <td class="td_left"> [% v.colname|html %] </td>
+          <td class="td_right"> [% IF v.coltype == "text" %]
+            <input class="txt_box" type="text" name="col[% v.num %]" value="[% v.coltext|html %]">
+            [% ELSIF v.coltype == "textarea" %]
+            <textarea name="col[% v.num %]">[% v.coltext|html %]</textarea>
+            [% ELSIF v.coltype == "radio" %]
+            [% FOREACH v2 = v.autodatalist %]
+            <span><input type="radio" name="col[% v.num %]" value="[% v2.coltext|html %]">
+            [% v2.coltext|html %]</span>
+            [% END %]
+            [% ELSIF v.coltype == "checkbox" %]
+            [% FOREACH v2 = v.autodatalist %]
+            <span><input type="checkbox" name="col[% v.num %]" value="[% v2.coltext|html %]">
+            [% v2.coltext|html %]</span>
+            [% END %]
+            [% ELSIF v.coltype == "select" %]
+            <select name="col[% v.num %]">
+              <option value="">---
+              [% FOREACH v2 = v.autodatalist %]
+              <option value="[% v2.coltext|html %]">[% v2.coltext|html %]
+              [% END %]
+            </select></td>
+        </tr>
+        [% END %]
+        [% ELSIF v.coltype == "hidden" %]
+        <input type="hidden" name="col[% v.num %]" value="[% v.coltext|html %]">
+        [% END %]
+        [% END %]
+        <tr>
+          <td colspan="2" align="center" id="zine_btn"> [% IF doptdata.id %]
+            <input type="hidden" name="email" value="[% doptdata.email|html %]">
+            <input type="hidden" name="id" value="[% doptdata.id|html %]">
+            <input type="submit" value="登録" name="submit">
+            <input type="hidden" name="mode" value="autoform">
+            <input type="hidden" name="encode" value="文字コード">
+            [% ELSE %]
+            <input type="submit" value="登録" name="submit">
+            <input type="hidden" name="reg" value="add">
+            <input type="hidden" name="encode" value="文字コード">
+            [% END %]
+            <input type="hidden" name="checkbox_list" value="[% checkbox_list %]"></td>
+        </tr>
+      </table>
+    </form>
+    </div>
+	
+
+
+[% INCLUDE 'tmpl/html_footer_nomenu.tmpl' %]

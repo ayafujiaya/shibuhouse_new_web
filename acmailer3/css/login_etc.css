@@ -1,0 +1,133 @@
+html{
+	background-color:#666666;
+	text-align:left;
+}
+body{
+	margin-top:20px;
+}
+#containt_panel_wrapper{
+	width:680px;
+	margin:0 auto;
+	background-color:#FFF;
+}
+#containt_panel{
+	width:610px;
+	padding:40px 35px 25px 35px;
+}
+#panel_head{}
+#panel_head_left{
+	float:left;
+}
+#panel_head_left a{}
+#panel_head_left img{
+	padding-top:10px;
+}
+
+#panel_head_right{
+	float:right;
+}
+#panel_head_right a{}
+#panel_head_right img{}
+
+#panel{
+	padding-left:52px;
+	padding-top:23px;
+	text-align:left;
+}
+#panel_title{}
+#panel_title p{}
+#panel_title a{}
+
+#panel_title_1{}
+#panel_title_2{
+	background-image:url(../img/arrow_1.jpg);
+	background-repeat:no-repeat;
+	padding-left:15px;
+	margin-top:5px;
+}
+#panel_title_2 a{}
+
+#panel_text{
+	padding-top:50px;
+}
+#panel_text li{
+	background-image:url(../img/list_img_01.jpg);
+	background-repeat:no-repeat;
+	background-position:0px 4px;
+	padding-left:15px;
+	width:400px;
+}
+table{
+	width:558px;
+}
+tr{}
+td{}
+input{}
+#id_pass{}
+#id_title{
+	height:28px;
+	vertical-align:top;
+}
+#pass_title{
+	height:28px;
+	vertical-align:top;
+}
+
+#id_text{
+	width:175px;
+}
+#id_text input{
+	font-size:13px;
+	width:160px;
+	height:18px;
+	padding-top:2px;
+	vertical-align:middle;
+	border-style:inset;
+}
+#pass_text{
+	width:220px;
+}
+#pass_text input{
+	font-size:13px;
+	width:205px;
+	height:18px;
+	padding-top:2px;
+	vertical-align:middle;
+	border-style:inset;
+}
+#submit_btn{
+	text-align:right;
+}
+#submit_btn input{
+	padding:0px 30px;
+	_padding:0px 20px;
+}
+#re_pass{
+	padding-top:10px;
+	padding-left:5px;
+	font-size:11px;
+}
+a {
+	color:#666;
+	text-decoration:none;
+}
+a:visited {
+	color:#666;
+}
+a:hover {
+	color:#CCC;
+	text-decoration:underline;
+}
+.red{
+	color:#C00;
+	background-image:url(../img/error.jpg);
+	background-repeat:no-repeat;
+	background-position:left center;
+	padding-left:20px;
+	font-size:15px;
+}
+
+#panel_foot{
+	margin-top:95px;
+	text-align:right;
+}

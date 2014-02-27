@@ -1,0 +1,106 @@
+[% INCLUDE 'tmpl/html_header.tmpl' %]
+
+
+
+
+
+
+
+<div id="contwrapper" class="clearfix">
+  <div id="left_cont">
+  <div id="left_menu">
+    <div id="left_cont_in">
+      <table id="left_cont_table">
+        <tr>
+          <td class="title box"><img src="img/menu.jpg" alt="" /></td>
+        </tr>
+		          <tr><td height="20"></td></tr>
+
+              <tr>
+                <td class="menu"><a href="email_list.cgi">メールアドレス一覧</a></td>
+              </tr>
+              <tr>
+                <td class="menu"><a href="dispcol_edit.cgi">一覧表示項目の設定</a></td>
+              </tr>
+              <tr>
+                <td class="menu"><a href="email_add.cgi">メールアドレス登録</a></td>
+              </tr>
+              <tr>
+                <td class="menu"><a href="email_del.cgi">メールアドレス削除</a></td>
+              </tr>
+              <tr>
+                <td class="menu"><a href="email_csvdown.cgi">CSVダウンロード</a></td>
+              </tr>
+              <tr>
+                <td class="menu lastmenu menubgcolor"><a href="email_alldel.cgi">メールアドレス完全削除</a></td>
+              </tr>
+
+
+      </table>
+    </div>
+    </div>
+
+
+  [% INCLUDE 'tmpl/html_left_banner.tmpl' %]
+
+  </div>
+  
+
+  
+  <div id="right_cont">
+    <div id="right_cont_title">
+      <table id="right_cont_table_title">
+        <tr>
+          <td class="title box">
+              メールアドレス管理<img src="img/big_arrow.jpg" alt="" />メールアドレス完全削除<img src="img/big_arrow.jpg" alt="" />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="right_cont_contens">
+    <div id="right_cont_contens_in">
+
+
+
+
+
+
+
+
+
+
+
+<form name="form1" method="post" action="email_alldel.cgi">
+   <table id="right_cont_table">
+
+
+    <tr valign="top"> 
+      <td class="td_2 box">
+登録されているメールアドレスをすべて削除します。よろしければ「完全削除」ボタンをクリックしてください。
+
+
+
+	   <div id="submit_btn"><input type="submit" name="Submit" value="完全削除" class="buttonstyle"></div>
+
+            
+			<input type="hidden" name="del" value="1">
+       </div>
+
+		</td>
+    </tr>
+	</table>
+
+</form>
+
+
+
+
+      </div>
+      </div>
+    </div>
+	</div>
+
+
+
+
+[% INCLUDE 'tmpl/html_footer.tmpl' %]

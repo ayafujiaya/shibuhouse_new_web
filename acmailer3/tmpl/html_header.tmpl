@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP" />
+<TITLE>[% admindata.title|html %]</TITLE>
+<link rel="stylesheet" href="./css/common.css" type="text/css">
+<link rel="stylesheet" href="./css/default.css" type="text/css">
+<link rel="stylesheet" href="./css/top.css" type="text/css">
+
+<script language="JavaScript">
+function changenum(dispnum,year){
+	window.location.href = "email_list.cgi?dispnum=" + dispnum + '[% search_url %]' ;
+}
+</script>
+
+</head>
+<body>
+<div id="wrapper">
+  <div id="container">
+    <div id="header">
+      <div id="header_top" class="clearfix">
+        <div id="header_left"><a href="index.cgi"><img src="img/logo.jpg" alt="" /></a></div>
+		<div id="header_left_2"><p>ver [% sys.version %]</p></div>
+        <div id="header_right" class="clearfix">
+          <div id="header_right_in">
+            <div id="header_right_l"> <img src="img/title_conpane.jpg" alt="" /> </div>
+            <div id="header_right_r"> [% UNLESS writing %]<a href="http://www.ahref.org/" target="_blank"><img id="ahref_logo" src="img/ahref.jpg" alt="WEBアプリケーション、フリーCGI配布のahref（エーエイチレフ）"/></a>[% END %]<a href="logout_ctl.cgi"><img id="btn_logout" src="img/btn_logout.jpg" alt="" /></a> </div>
+          </div>
+        </div>
+      </div>
+      <div id="g_navi_container">
+        <div id="g_navi" class="clearfix">
+          <ul>
+            <li class="fs14"><a href="index.cgi">TOP</a></li>
+            <li class="fs14"><a href="email_send.cgi">メール配信</a></li>
+            <li class="fs14"><a href="email_list.cgi">メールアドレス管理</a></li>
+            <li class="fs14"><a href="hist_list.cgi">配信履歴</a></li>
+            <li class="fs14"><a href="admin_edit.cgi">各種設定</a></li>
+            <li class="fs14"><a href="mailtemplate_list.cgi">メールテンプレート</a></li>
+            <li class="fs14"><a href="autoform_edit.cgi">メルマガ登録フォーム</a></li>
+            <li class="fs14"><a href="upload_manage.cgi">画像管理</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>

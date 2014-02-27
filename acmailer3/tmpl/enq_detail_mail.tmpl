@@ -1,0 +1,34 @@
+[% INCLUDE 'tmpl/html_header.tmpl' %]
+
+
+<div align="center"><div class="title">アンケートデータ詳細</div><br><br>
+
+[% IF oktext %]
+<font color="red"><b>[% oktext %]</b></font><br>
+[% END %]
+<font color="red">[% error_message %]</font>
+<form name="form1" method="post" action="enq_edit.cgi">
+  <table border="0" cellspacing="1" cellpadding="5" bgcolor="#FF9900">
+    <tr>
+      [%IF dispcolname1 %]<td align="center">[% dispcolname1|html %]</td>[% END %]
+      [%IF dispcolname2 %]<td align="center">[% dispcolname2|html %]</td>[% END %]
+	  [%IF dispcolname3 %]<td align="center">[% dispcolname3|html %]</td>[% END %]
+	  </tr>
+[% FOREACH v=list %]
+    <tr valign="top"> 
+	  [%IF dispcolname1 %]<td bgcolor="#FFFFFF">[% v.dispdata1|html %]</td>[% END %]
+	  [%IF dispcolname2 %]<td bgcolor="#FFFFFF">[% v.dispdata2|html %]</td>[% END %]
+	  [%IF dispcolname3 %]<td bgcolor="#FFFFFF">[% v.dispdata3|html %]</td>[% END %]
+    </tr>
+[% END %]
+	
+	
+  </table>
+</form>
+</div>
+<br><div align="center"><a href="index.cgi">戻る</a> </div><br>
+
+
+
+
+[% INCLUDE 'tmpl/html_footer.tmpl' %]

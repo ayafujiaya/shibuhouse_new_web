@@ -1,0 +1,84 @@
+[% INCLUDE 'tmpl/html_mobileheader.tmpl' %]
+
+<div style="background-color:#FFCC00;text-align:center;padding:5px;">
+登録
+</div>
+<div class="box_con" style="background-color:#FFFFFF;padding-bottom:5px;font-size:small;">
+<br>
+<form action="[% admindata.homeurl %]reg.cgi" method="post" accept-charset="euc-jp">
+<table>
+    <tr>
+      <td bgcolor="#FFCC00">
+メールアドレス
+	  </td>
+	</tr>
+	<tr>
+	  <td style="width:300px; background-color:#FFF; padding:0px;">
+
+[% IF doptdata.id %]
+	[% doptdata.email|html %]
+[% ELSE %]
+	<input type="text" name="email" value="">
+[% END %]
+
+	  </td>
+    </tr>
+    [% FOREACH v = freecol_list %]
+		[% IF v.coldisp && v.coltype != "hidden" %]
+	    <tr>
+	      <td bgcolor="#FFCC00">
+		  [% v.colname|html %]
+		  </td>
+		  </tr>
+		  <tr>
+		  <td style="width:300px; background-color:#FFF; padding:0px;">
+		  [% IF v.coltype == "text" %]
+		  <input type="text" name="col[% v.num %]" value="[% v.coltext|html %]" size="100">
+		  [% ELSIF v.coltype == "textarea" %]
+		  <textarea name="col[% v.num %]" style="width:200px;height:100px;">[% v.coltext|html %]</textarea>
+		  [% ELSIF v.coltype == "radio" %]
+		  	[% FOREACH v2 = v.autodatalist %]
+		  	<input type="radio" name="col[% v.num %]" value="[% v2.coltext|html %]">[% v2.coltext|html %]
+		  	[% END %]
+		  [% ELSIF v.coltype == "checkbox" %]
+		  	[% FOREACH v2 = v.autodatalist %]
+		  	<input type="checkbox" name="col[% v.num %]" value="[% v2.coltext|html %]">[% v2.coltext|html %]
+		  	[% END %]
+		  [% ELSIF v.coltype == "select" %]
+		  	<select name="col[% v.num %]">
+			<option value="">---
+		  	[% FOREACH v2 = v.autodatalist %]
+		  	<option value="[% v2.coltext|html %]">[% v2.coltext|html %]
+		  	[% END %]
+			</select>
+		  [% END %]
+		  </td>
+	    </tr>
+		
+		[% ELSIF v.coltype == "hidden" %]
+		<input type="hidden" name="col[% v.num %]" value="[% v.coltext|html %]">
+		[% END %]
+	[% END %]
+	<tr><td align="center">
+	
+
+	[% IF doptdata.id %]
+	  <input type="hidden" name="email" value="[% doptdata.email|html %]">
+	  <input type="hidden" name="id" value="[% doptdata.id|html %]">
+	  <input type="submit" value="登録" name="submit" style="margin-top:9px; margin-left:3px; _padding:1px 3px;">
+	  <input type="hidden" name="mode" value="autoform"><input type="hidden" name="encode" value="文字コード">
+	[% ELSE %]
+	  
+	  <input type="submit" value="登録" name="submit" style="margin-top:9px; margin-left:3px; _padding:1px 3px;">
+	  <input type="hidden" name="reg" value="add"><input type="hidden" name="encode" value="文字コード">
+	 [% END %]
+	
+	  <input type="hidden" name="checkbox_list" value="[% checkbox_list %]">
+	  </td></tr>
+    <tr>
+</table>
+<br>
+</form>
+</div>
+
+[% INCLUDE 'tmpl/html_mobilefooter_nomenu.tmpl' %]

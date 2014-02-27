@@ -1,0 +1,130 @@
+[% INCLUDE 'tmpl/html_mobileheader.tmpl' %]
+
+<div style="background-color:#FFCC00;text-align:center;padding:5px;">
+	送信履歴
+</div>
+
+
+<!-- <form action="hist_list.cgi" method="post" accept-charset="euc-jp">
+<table width="100%">
+	<tr>
+		<td class="td_title" style="background:#E6E6E6;">
+			<font size="2">
+			検索
+			</font>
+			<input type="hidden" name="sid" value="[% form.sid %]">
+		</td>
+	</tr>
+	<tr>
+		<td class="pb_10">
+			<span style="font-size:small;">
+			<font size="1">
+			<input type="text" name="s_year" value="[% s_year %]" size="4" istyle="4" format="*N" MODE="numeric">年<input type="text" name="s_mon" value="[% s_mon %]" size="2" istyle="4" format="*N" MODE="numeric">月<input type="text" name="s_day" value="[% s_day %]" size="2" istyle="4" format="*N" MODE="numeric">日〜
+			<br />
+			<input type="text" name="e_year" value="[% e_year %]" size="4" istyle="4" format="*N" MODE="numeric">年<input type="text" name="e_mon" value="[% e_mon %]" size="2" istyle="4" format="*N" MODE="numeric">月<input type="text" name="e_day" value="[% e_day %]" size="2" istyle="4" format="*N" MODE="numeric">日
+			</font>
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td class="pb_10" style="text-align:center;">
+			<span style="font-size:small;">
+			<font size="1">
+				<input type="submit" value="検索">
+				<input type="hidden" name="dispnum" value="[% dispnum %]">
+				<input type="hidden" name="sid" value="[% form.sid %]">
+			</font>
+			</span>
+		</td>
+	</tr>
+</table>
+</form>
+ -->
+	[% IF backlink %]
+	<span style="font-size:small"><font size="1"><img src="img/004_c4.gif" /><a accesskey="4" href="hist_list.cgi?page=[% page_m1 %]&dispnum=[% dispnum %][% search_url %]&sid=[% form.sid %]" title="前のページ">←前へ</a></font></span>
+	[% END %]
+
+	[% IF nextlink %]
+	<span style="font-size:small"><font size="1"><img src="img/006_c4.gif" /><a accesskey="6" href="hist_list.cgi?page=[% page_p1 %]&dispnum=[% dispnum %][% search_url %]&sid=[% form.sid %]" title="次のページ">次へ→</a></font></span>
+	[% END %]
+	<br />
+
+<table width="100%">
+	<tr>
+		<td class="td_title" style="background:#E6E6E6;">
+			<font size="2">
+			一覧
+			</font>
+			<input type="hidden" name="sid" value="[% form.sid %]">
+		</td>
+	</tr>
+	[% FOREACH v=hist_list %]
+	<tr>
+		<td class="pb_10" [%IF (loop.count mod 2)==0 %]bgcolor="#FFFFFF"[% ELSE %]bgcolor="#E6F4FF"[% END %]>
+			<span style="font-size:small;">
+			<font size="1">
+			[
+			[% IF v.status=="1" OR v.status=="" %]
+			<font color="#FF0000">失敗</font>
+			[% ELSIF v.status=="3" %]
+			<font color="#FF9900">予約中</font>
+			[% ELSIF v.status=="4" %]
+			<font color="#99CC00">予約ｷｬﾝｾﾙ</font>
+			[% ELSE %]
+			<font color="#3366FF">完了</font>
+			[% END %]
+			]
+			[% v.start_send_date %]
+			<br />
+			送信数 [% v.total_count %]通[% IF v.errmail_count %](不着[% v.errmail_count %]通）[% END %]<br />
+			<a href="hist_detail.cgi?id=[% v.id %]&sid=[% form.sid %]">[% v.mail_title|html %]</a>
+			</font>
+			</span>
+		</td>
+	</tr>
+	[% END %]
+</table>
+
+	[% IF backlink %]
+	<span style="font-size:small"><font size="1"><img src="img/004_c4.gif" /><a accesskey="4" href="hist_list.cgi?page=[% page_m1 %]&dispnum=[% dispnum %][% search_url %]&sid=[% form.sid %]" title="前のページ">←前へ</a></font></span>
+	[% END %]
+
+	[% IF nextlink %]
+	<span style="font-size:small"><font size="1"><img src="img/006_c4.gif" /><a accesskey="6" href="hist_list.cgi?page=[% page_p1 %]&dispnum=[% dispnum %][% search_url %]&sid=[% form.sid %]" title="次のページ">次へ→</a></font></span>
+	[% END %]
+	<br /><br />
+
+<div style="font-size:small;">
+<font size="1"><img src="img/002_c4.gif" /><a accesskey="2" href="?sid=[% form.sid %]&dispnum=[% form.dispnum %]&page=[% form.page %][% search_url %]#page_top">▲上へ</a></font><br />
+</div>
+
+
+<!-- <tr>
+<td align="center" bgcolor="#FFFFFF">
+<form action="hist_list.cgi?[% search_url %]" method="get" accept-charset="euc-jp">
+<font size="-2">
+<SELECT name="dispnum">
+<OPTION value="">表示件数</OPTION>
+<OPTION value="10" [% IF form.dispnum==10 %]selected[% END %]>10件</OPTION>
+<OPTION value="25" [% IF form.dispnum==25 %]selected[% END %]>25件</OPTION>
+<OPTION value="50" [% IF form.dispnum==50 %]selected[% END %]>50件</OPTION>
+<OPTION value="100" [% IF form.dispnum==100 %]selected[% END %]>100件</OPTION>
+<OPTION value="all" [% IF form.dispnum=="all" %]selected[% END %]>全件</OPTION>
+</SELECT>
+<input type="hidden" name="sid" value="[% form.sid %]">
+<input type="hidden" name="s_year" value="[% form.s_year|html %]">
+<input type="hidden" name="s_mon" value="[% form.s_mon|html %]">
+<input type="hidden" name="s_day" value="[% form.s_day|html %]">
+<input type="hidden" name="e_year" value="[% form.e_year|html %]">
+<input type="hidden" name="e_mon" value="[% form.e_mon|html %]">
+<input type="hidden" name="e_day" value="[% form.e_day|html %]">
+	
+<input type="submit" value="変更">
+<br><br>
+<a href="index.cgi?sid=[% form.sid %]">戻る</a>
+
+</font>
+</form>
+ -->
+
+[% INCLUDE 'tmpl/html_mobilefooter.tmpl' %]

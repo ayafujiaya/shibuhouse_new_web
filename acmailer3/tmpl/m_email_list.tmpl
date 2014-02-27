@@ -1,0 +1,119 @@
+[% INCLUDE 'tmpl/html_mobileheader.tmpl' %]
+
+<div style="background-color:#FFCC00;text-align:center;padding:5px;">
+	ﾒｰﾙｱﾄﾞﾚｽ一覧
+</div>
+
+
+[% IF oktext %]
+<p style="font-size:small"><font size="1" color="red"><b>[% oktext %]</b></font></p>
+[% END %]
+
+[% IF totalnum %]
+
+<div class="box_menu" style="background-color:#E6E6E6;padding:3px;">
+	検索([% totalnum %]件)
+</div>
+<div class="box_con" style="background-color:#FFFFFF;padding-bottom:5px;font-size:small;">
+	  <form action="email_list.cgi" method="post" accept-charset="euc-jp">
+<!--
+	[% FOREACH v=search %]
+		<select name="search[% v.search_id %]">
+		<option value="email">メールアドレス
+		[% FOREACH v2=v.select %]
+		<option value="[% v2.col %]" [% v2.selected %]>[% v2.colname %]
+		[% END %]
+		</select>
+		<input type="text" name="search_text[% v.search_id %]" value="[% v.search_text %]" size="10"><br>
+	[% END %]
+-->
+		<font size="1">
+		あいまい検索
+		<input type="text" name="search_text_free" value="[% form.search_text_free|html %]" size="30">
+		<br>
+		<input type="radio" name="sendstatus" value="all" [% IF form.sendstatus=="all" || form.sendstatus=="" %]checked[% END %]>全て
+		<input type="radio" name="sendstatus" value="on" [% IF form.sendstatus=="on" %]checked[% END %]>配信可
+		<input type="radio" name="sendstatus" value="off" [% IF form.sendstatus=="off" %]checked[% END %]>配信停止
+		<input type="hidden" name="dispnum" value="[% dispnum %]">
+		<br>
+		<center>
+		<input type="submit" value="検索">
+		</center>
+		<input type="hidden" name="dispnum" value="[% dispnum %]">
+		<input type="hidden" name="sid" value="[% form.sid %]">
+		</font>
+	  </form>
+</div>
+<div class="box_menu" style="background-color:#E6E6E6;padding:3px;">
+	一覧
+</div>
+
+	
+	[% IF backlink %]
+	<span style="font-size:small"><font size="1"><img src="img/004_c4.gif" /><a accesskey="4" href="email_list.cgi?page=[% page_m1 %]&dispnum=[% dispnum %][% search_url %]&sid=[% form.sid %]" title="前のページ">←前へ</a></font></span>
+	[% END %]
+
+	[% IF nextlink %]
+	<span style="font-size:small"><font size="1"><img src="img/006_c4.gif" /><a accesskey="6" href="email_list.cgi?page=[% page_p1 %]&dispnum=[% dispnum %][% search_url %]&sid=[% form.sid %]" title="次のページ">次へ→</a></font></span>
+	[% END %]
+	<br>
+
+<table width="100%">
+	[% FOREACH v=loop %]
+	<tr valign="top"> 
+		<td [%IF (loop.count mod 2)==0 %]bgcolor="#FFFFFF"[% ELSE %]bgcolor="#E6F4FF"[% END %]>
+		    <span style="font-size:small;">
+		    <font size="1">
+		    [% v.email %]
+			<br>
+		    [% IF v.status %]配信○[% ELSE %]配信×[% END %]　
+		    <a href="email_edit.cgi?id=[% v.id %]&sid=[% form.sid %]">編集</a>・
+		    <a href="m_email_del_one_check.cgi?id=[% v.id %]&sid=[% form.sid %]">削除</a>
+		    </font>
+		    </span>
+	</td></tr>
+	[% END %]
+</table>
+
+	<!-- [% pagelink %]｜ -->
+	
+	[% IF backlink %]
+	<span style="font-size:small"><font size="1"><img src="img/004_c4.gif" /><a accesskey="4" href="email_list.cgi?page=[% page_m1 %]&dispnum=[% dispnum %][% search_url %]&sid=[% form.sid %]" title="前のページ">←前へ</a></font></span>
+	[% END %]
+
+	[% IF nextlink %]
+	<span style="font-size:small"><font size="1"><img src="img/006_c4.gif" /><a accesskey="6" href="email_list.cgi?page=[% page_p1 %]&dispnum=[% dispnum %][% search_url %]&sid=[% form.sid %]" title="次のページ">次へ→</a></font></span>
+	[% END %]
+
+<!-- 
+<font size="-2">
+<form action="email_list.cgi?[% search_url %]" method="get" accept-charset="euc-jp">
+<SELECT name="dispnum">
+<OPTION value="">件数切替</OPTION>
+<OPTION value="10" [% IF form.dispnum=="10" %]selected[% END %]>10件</OPTION>
+<OPTION value="25" [% IF form.dispnum=="25" %]selected[% END %]>25件</OPTION>
+<OPTION value="50" [% IF form.dispnum=="50" %]selected[% END %]>50件</OPTION>
+<OPTION value="100" [% IF form.dispnum=="100" %]selected[% END %]>100件</OPTION>
+<OPTION value="all" [% IF form.dispnum=="all" %]selected[% END %]>全件</OPTION>
+</SELECT>
+<input type="hidden" name="sid" value="[% form.sid %]">
+<input type="hidden" name="search_text_free" value="[% form.search_text_free|html %]">
+<input type="hidden" name="sendstatus" value="[% form.sendstatus|html %]">
+<input type="submit" value="変更">
+</form>
+</font>
+-->
+
+<div style="font-size:small;">
+<font size="1"><img src="img/002_c4.gif" /><a accesskey="2" href="?sid=[% form.sid %]&dispnum=[% dispnum %]&page=[% form.page %][% search_url %]#page_top">▲上へ</a></font><br />
+</div>
+
+[% ELSE %]
+
+	<font size="-2">現在登録されているﾒｰﾙｱﾄﾞﾚｽはありません</font>
+
+[% END %]
+
+<br><br>
+
+[% INCLUDE 'tmpl/html_mobilefooter.tmpl' %]

@@ -1,0 +1,129 @@
+[% INCLUDE 'tmpl/html_header.tmpl' %]
+
+<script language="JavaScript"><!--
+function radio_clear()
+{
+    var obj = document.mailtemplate.elements;
+    for(i=0;i<obj.length;i++){
+		if (obj[i].name.match("default")) {
+	        obj[i].checked = false;
+		}
+    }
+}
+// --></script>
+
+
+
+
+<div id="contwrapper" class="clearfix">
+  <div id="left_cont">
+  <div id="left_menu">
+    <div id="left_cont_in">
+      <table id="left_cont_table">
+        <tr>
+          <td class="title box"><img src="img/menu.jpg" alt="" /></td>
+        </tr>
+		          <tr><td height="20"></td></tr>
+
+              <tr>
+                <td class="menu menubgcolor"><a href="mailtemplate_list.cgi">配信メール</a></td>
+              </tr>
+        
+              <tr>
+                <td class="menu lastmenu"><a href="form_edit.cgi">自動返信メール</a></td>
+              </tr>
+
+
+      </table>
+    </div>
+    </div>
+
+
+  [% INCLUDE 'tmpl/html_left_banner.tmpl' %]
+
+  </div>
+  
+
+  
+  <div id="right_cont">
+    <div id="right_cont_title">
+      <table id="right_cont_table_title">
+        <tr>
+
+          <td class="title box">
+              メールテンプレート<img src="img/big_arrow.jpg" alt="" />配信メール<img src="img/big_arrow.jpg" alt="" />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="right_cont_contens">
+    <div id="right_cont_contens_in">
+
+
+
+
+
+<div align="center">
+[% IF form.delok %]<font color="blue"><b>削除しました。</b></font>[% END %]
+[% IF form.addok %]<font color="blue"><b>新規追加しました。</b></font>[% END %]
+[% IF form.updok %]<font color="blue"><b>更新しました。</b></font>[% END %]
+</div>
+
+   <table id="right_cont_table">
+
+
+    <tr valign="top">
+	  <td class="td_2 box listtitle">テンプレート名</td>
+	  <td class="td_2 box listtitle">詳細</td>
+	  <td class="td_2 box listtitle">削除</td>
+	  <td class="td_2 box listtitle">デフォルト表示</td>
+    </tr>
+	<form action="mailtemplate_edit.cgi" method="post" name="mailtemplate">
+	
+	[% FOREACH v=template_list %]
+    <tr valign="top"> 
+      <td bgcolor="#FFFFFF" class="td_2 box">[% v.template_name|html %]</td>
+	  <td bgcolor="#FFFFFF" class="td_2 box"><input type="button" value="編集" onclick="location.href='mailtemplate_edit.cgi?id=[% v.id %]'" class="buttonstyle"></td>
+	  <td bgcolor="#FFFFFF" class="td_2 box"><input type="button" value="削除" onclick="javascript:godel('[% v.id %]')" class="buttonstyle"></td>
+	  <td bgcolor="#FFFFFF" class="td_2 box"><input type="radio" name="default" value="[% v.id %]" [% IF v.default %]checked[% END %]></td>
+    </tr>
+	[% END %]
+	</table>
+
+
+<script>
+
+
+
+/**
+ * godel
+ * @param id
+ */
+
+function godel(id) {
+	if (confirm("削除してもよろしいですか？")) {
+		window.location = 'mailtemplate_edit.cgi?del=1&id=' + id;
+	}
+}
+</script>
+
+	  
+	
+	<input type="hidden" name="mode" value="default">
+	
+	
+	<input type="hidden" name="default_change" value="1">
+		
+	<div align="center">
+		<br>
+		<input type="button" value="クリア" onclick="javascript:radio_clear();" class="buttonstyle">
+	</div>
+		   <div id="submit_btn"><input type="submit" value="デフォルト更新" class="buttonstyle">&nbsp;&nbsp;<input type="button" value="新規登録" onclick="location.href='mailtemplate_edit.cgi'" class="buttonstyle"></div>
+
+	</form>
+		</div>
+	</div>
+  </div>
+</div>
+
+[% INCLUDE 'tmpl/html_footer.tmpl' %]

@@ -1,0 +1,147 @@
+[% INCLUDE 'tmpl/html_header.tmpl' %]
+
+
+
+<div id="contwrapper" class="clearfix">
+  <div id="left_cont">
+  <div id="left_menu">
+    <div id="left_cont_in">
+      <table id="left_cont_table">
+        <tr>
+          <td class="title box"><img src="img/menu.jpg" alt="" /></td>
+        </tr>
+		          <tr><td height="20"></td></tr>
+
+              <tr>
+                <td class="menu"><a href="email_list.cgi">メールアドレス一覧</a></td>
+              </tr>
+              <tr>
+                <td class="menu menubgcolor"><a href="dispcol_edit.cgi">一覧表示項目の設定</a></td>
+              </tr>
+              <tr>
+                <td class="menu"><a href="email_add.cgi">メールアドレス登録</a></td>
+              </tr>
+              <tr>
+                <td class="menu"><a href="email_del.cgi">メールアドレス削除</a></td>
+              </tr>
+              <tr>
+                <td class="menu"><a href="email_csvdown.cgi">CSVダウンロード</a></td>
+              </tr>
+              <tr>
+                <td class="menu lastmenu"><a href="email_alldel.cgi">メールアドレス完全削除</a></td>
+              </tr>
+
+
+      </table>
+    </div>
+    </div>
+
+
+  [% INCLUDE 'tmpl/html_left_banner.tmpl' %]
+
+  </div>
+  
+
+  
+  <div id="right_cont">
+    <div id="right_cont_title">
+      <table id="right_cont_table_title">
+        <tr>
+          <td class="title box">
+              メールアドレス管理<img src="img/big_arrow.jpg" alt="" />一覧表示項目の設定<img src="img/big_arrow.jpg" alt="" />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="right_cont_contens">
+    <div id="right_cont_contens_in">
+
+
+
+
+
+
+<div align="center">
+[% IF oktext %]
+<font color="red"><b>[% oktext %]</b></font><br>
+[% END %]
+</div>
+
+<form name="form1" method="post" action="dispcol_edit.cgi">
+<div align="center">
+<font color="red">[% error_message %]</font>
+<font color="blue"><b>[% IF form.okedit %]更新しました[% END %]</b></font>
+</div>
+<!-- システム設定 -->
+
+    <table id="right_cont_table">
+
+    <tr valign="top"> 
+      <td colspan="2" class="td_2 box listtitle">
+  <p id="dispcol_edit_title">メールアドレス一覧表示の項目を設定</p>
+  <p id="dispcol_edit_text"> * 自由項目設定で設定した項目の中から選択することができます（最大３項目）</p>
+  </td></tr>
+  <tr>
+  	<td></td>
+  </tr>
+	
+    <tr valign="top"> 
+      <td class="td_1 box">表示順</td>
+      <td class="td_2 box"> 
+	  <select name="dispcol1">
+	  <option value="">---
+	  <option value="email" [%IF dispcol1=="email" %]selected[% END %]>メールアドレス
+	  [% FOREACH v=freecol_list %]
+	  	[%IF v.colname %]
+	  		<option value="[% v.num %]" [% IF dispcol1==v.num %]selected[% END %]>[% v.colname|html %]
+	  	[% END %]
+	  [% END %]
+	  </select>
+	  <select name="dispcol2">
+	  <option value="">---
+	  <option value="email" [%IF dispcol2=="email" %]selected[% END %]>メールアドレス
+	  [% FOREACH v=freecol_list %]
+	  	[%IF v.colname %]
+	  		<option value="[% v.num %]" [% IF dispcol2==v.num %]selected[% END %]>[% v.colname|html %]
+		[% END %]
+	  [% END %]
+	  </select>
+	  <select name="dispcol3">
+	  <option value="">---
+	  <option value="email" [%IF dispcol3=="email" %]selected[% END %]>メールアドレス
+	  [% FOREACH v=freecol_list %]
+	  	[%IF v.colname %]
+	  		<option value="[% v.num %]" [% IF dispcol3==v.num %]selected[% END %]>[% v.colname|html %]
+	  	[% END %]
+	  [% END %]
+	  </select>
+	  </td>
+    </tr>
+  </table>
+	   <div id="submit_btn"> <input type="submit" name="Submit" value="更新" class="buttonstyle"></div>
+			<input type="hidden" name="edit" value="1">
+
+</form>
+
+
+
+
+
+
+
+
+      </div>
+      </div>
+    </div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+[% INCLUDE 'tmpl/html_footer.tmpl' %]

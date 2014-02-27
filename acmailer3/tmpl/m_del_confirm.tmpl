@@ -1,0 +1,20 @@
+[% INCLUDE 'tmpl/html_mobileheader.tmpl' %]
+
+<div style="background-color:#FFCC00;text-align:center;padding:5px;">
+削除確認
+</div>
+<div class="box_con" style="background-color:#FFFFFF;padding-bottom:5px;font-size:small;">
+
+
+	<font size="1">[% email %]を削除してもよろしいですか？
+	<br>
+<form action="reg.cgi" method="post">
+<input type="hidden" name="reg" value="del">
+<input type="hidden" name="email" value="[% email|html %]">
+<input type="submit" value="削除">
+<input type="hidden" name="checkok" value="1">
+</form></font>
+
+</div>
+
+[% INCLUDE 'tmpl/html_mobilefooter_nomenu.tmpl' %]

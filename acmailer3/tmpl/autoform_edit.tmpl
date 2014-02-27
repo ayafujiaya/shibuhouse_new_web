@@ -1,0 +1,199 @@
+[% INCLUDE 'tmpl/html_header.tmpl' %]
+
+
+<link href="./css/style.css" rel="stylesheet" type="text/css" media="all" />
+<script language="javascript">
+function beginScript() {
+    var rs = DragHandler.attach(document.getElementById('textarea_box1'));
+}
+
+function opensource(message,status) {
+	//message = htmlspecialchars(message);
+	document.getElementById("showtext").value = message;
+	document.getElementById("textarea_box1").style.display = 'block';
+	hidden_select();
+}
+
+function closesource(id) {
+	document.getElementById("textarea_box" + id).style.display = 'none';
+	disp_select();
+}
+
+function hidden_select() {
+	 var obj=document.getElementsByTagName("select");
+	for(i = 0; i <= obj.length;i++) {
+		if (obj.item(i)) {
+			obj.item(i).style.visibility='hidden';
+		}
+	}
+}
+
+function disp_select() {
+	 var obj=document.getElementsByTagName("select");
+	for(i = 0; i <= obj.length;i++) {
+		if (obj.item(i)) {
+			obj.item(i).style.visibility='visible';
+		}
+	}
+}
+
+function preview_form() {
+	var obj = document.form1;
+	obj.target = "blank";
+	obj.action = "form.cgi";
+	obj.preview.value = "1";
+	
+	obj.submit();
+	obj.target = "";
+	obj.preview.value = "";
+	obj.action="autoform_edit.cgi";
+}
+
+
+function preview_html() {
+	var obj = document.form1;
+	obj.target = "blank";
+	obj.action = "autoform_edit_showhtml.cgi";
+	obj.preview.value = "1";
+	
+	obj.submit();
+	obj.target = "";
+	obj.preview.value = "";
+	obj.action="autoform_edit.cgi";
+}
+</script>
+
+
+
+
+<div id="contwrapper" class="clearfix">
+  <div id="left_cont">
+  <div id="left_menu">
+    <div id="left_cont_in">
+      <table id="left_cont_table">
+        <tr>
+          <td class="title box"><img src="img/menu.jpg" alt="" /></td>
+        </tr>
+		          <tr><td height="20"></td></tr>
+              <tr>
+                <td class="menu menubgcolor"><a href="autoform_edit.cgi">フォーム設定</a></td>
+              </tr>
+              <tr>
+                <td class="menu"><a href="regform.cgi">サンプルソース</a></td>
+              </tr>
+
+      </table>
+    </div>
+    </div>
+
+
+  [% INCLUDE 'tmpl/html_left_banner.tmpl' %]
+
+  </div>
+  
+
+  
+  
+  <div id="right_cont">
+    <div id="right_cont_title">
+      <table id="right_cont_table_title">
+        <tr>
+          <td class="title box">
+              メルマガ登録フォーム<img src="img/big_arrow.jpg" alt="" />フォーム設定<img src="img/big_arrow.jpg" alt="" />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="right_cont_contens">
+    <div id="right_cont_contens_in">
+
+
+<div align="center">
+[% IF oktext %]
+<font color="red"><b>[% oktext %]</b></font><br>
+[% END %]
+</div>
+<form name="form1" method="post" action="autoform_edit.cgi">
+
+<div align="center">
+<font color="red">[% error_message %]</font>
+<font color="blue"><b>[% IF okedit %]更新しました[% END %]</b></font>
+</div>
+
+   <table id="right_cont_table">
+  <tr><td colspan="4" align="center" class="td_2 box listtitle">
+  	<p id="admin_autoform_edit_title">フォーム設定</p>
+  	<p id="admin_autoform_edit_title_text"> * タイトルは<a href="admin_edit.cgi?display=free">自由項目設定</a>で設定した内容と連動していますので、編集にはご注意ください。</p>
+  </td></tr>
+    
+    
+    <tr>
+    	<td colspan="4" id="autoform_url" class="autoform">
+		<p id="autoform_url_container"><!-- <img alt="" src="img/arrow_1.jpg"> --><span>フォームURL</span><input id="autoform_url_txt" type="textbox" value="[% admindata.homeurl %]form.cgi" style="background-color:#FFFFFF;" onclick="this.select()" readonly/><input class="autoform_url_radio" type="radio" name="autoform_use" value="1" [% IF autoform_use=="1" %]checked[% END %]>公開する<input class="autoform_url_radio" type="radio" name="autoform_use" value="" [% IF autoform_use=="" %]checked[% END %]>公開しない</p>
+	</td>
+    </tr>
+    <tr class="box">
+    	<td class="autoform autoform_td_1 autoform_title">項目</td>
+	<td class="autoform autoform_td_2 autoform_title">タイトル</td>
+	<td class="autoform autoform_td_3 autoform_title">タイプ</td>
+	<td class="autoform autoform_td_4 autoform_title">初期値</td>
+    </tr>
+    [% FOREACH v = freecol_list %]
+    <tr valign="top"> 
+      <td class="box autoform autoform_td autoform_td_1_num">[% v.num %]</td>
+      <td class="border_t_b autoform autoform_td autoform_td_2">
+      	<input type="text" name="col[% v.num %]name" value="[% v.colname|html %]" /><br />
+	<span><input type="checkbox" name="col[% v.num %]disp" value="1" [% IF v.coldisp %]checked[% END %]>使用&nbsp;&nbsp;<input type="checkbox" name="col[% v.num %]checked" size="40" value="checked" [% IF v.colcheck %]checked[% END %]>必須</span>
+      </td>
+      <td class="border_t_b autoform autoform_td">
+	  <select name="col[% v.num %]type">
+	  <option value="text" [% IF v.coltype == "text" %]selected[% END %]>テキストボックス
+	  <option value="textarea" [% IF v.coltype == "textarea" %]selected[% END %]>テキストエリア
+	  <option value="radio" [% IF v.coltype == "radio" %]selected[% END %]>ラジオボタン
+	  <option value="checkbox" [% IF v.coltype == "checkbox" %]selected[% END %]>チェックボックス
+	  <option value="select" [% IF v.coltype == "select" %]selected[% END %]>セレクトボックス
+	  <option value="hidden" [% IF v.coltype == "hidden" %]selected[% END %]>hidden値
+	  </select>
+      </td>
+      <td class="border_t_b border_r autoform autoform_td"><textarea name="col[% v.num %]text" style="width:200px;height:50px;margin-left:2px;">
+[% v.coltext|html %]</textarea>
+</td>
+    </tr>
+      [% END %]
+      <tr>
+      	<td colspan="4" align="right" class="autoform_view_btn box">
+		<input type="button" value="フォームをプレビュー" onclick="javascript:preview_form();" class="buttonstyle">
+		<input type="button" value="貼り付け用タグを表示" onclick="javascript:preview_html();" style="margin-right:10px;" class="buttonstyle">
+	</td>
+      </tr>
+  </table>
+
+
+<div align="center" style="margin:10px 0px;"> 
+	<input type="hidden" name="login_pass_org" size="30" value="[% login_pass|html %]">
+	<input type="submit" name="Submit" value="更新" style="padding:2px 15px;" class="buttonstyle">
+		<input type="hidden" name="edit" value="1">
+		<input type="hidden" name="display" value="[% form.display|html %]">
+			<input type="hidden" name="preview" value="">
+</div>
+
+
+</form>
+<div id="autoform_caution">
+	<p>※使用にチェックを入れることで、フォームに反映されます。</p>
+	<p>※必須にチェックを入れると、登録時にエラーチェックを行います。</p>
+	<p>※初期値入力の際、改行することで、複数の項目を設定することができます。</p>
+</div>
+</div>
+
+
+
+
+
+      </div>
+      </div>
+    </div>
+	</div>
+	
+	
+[% INCLUDE 'tmpl/html_footer.tmpl' %]

@@ -1,0 +1,143 @@
+[% INCLUDE 'tmpl/html_header.tmpl' %]
+
+
+<link rel="stylesheet" href="./css/email_list2.css" type="text/css">
+
+
+<div id="contwrapper" class="clearfix">
+  <div id="left_cont">
+  <div id="left_menu">
+    <div id="left_cont_in">
+      <table id="left_cont_table">
+        <tr>
+          <td class="title box"><img src="img/menu.jpg" alt="" /></td>
+        </tr>
+		          <tr><td height="20"></td></tr>
+
+  [% INCLUDE 'tmpl/html_setting_menu.tmpl' %]
+
+      </table>
+    </div>
+    </div>
+
+
+  [% INCLUDE 'tmpl/html_left_banner.tmpl' %]
+
+  </div>
+  
+
+  
+  <div id="right_cont">
+    <div id="right_cont_title">
+      <table id="right_cont_table_title">
+        <tr>
+          <td class="title box">
+              各種設定<img src="img/big_arrow.jpg" alt="" />仮登録データ一覧<img src="img/big_arrow.jpg" alt="" />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="right_cont_contens">
+    <div id="right_cont_contens_in">
+
+
+
+
+
+<div align="center">
+[% IF oktext %]
+<font color="red"><b>[% oktext %]</b></font><br>
+[% END %]
+</div>
+
+[% IF totalnum %]
+
+   <table id="right_cont_table">
+	  <form action="clean_double_opt.cgi" method="post">
+	  <tr><td colspan="2" bgcolor="#EEEEEE" align="center" class="td_2 box listtitle">
+	  仮登録データ([% totalnum %]件)</td>
+		</tr>
+		<tr>
+		  <td bgcolor="#FFFFFF" class="td_2 box">
+	<input type="text" name="del_y" value="[% del_y %]" size="4">年<input type="text" name="del_m" value="[% del_m %]" size="2">月<input type="text" name="del_d" value="[% del_d %]" size="2">日以前のデータを
+		  <input type="submit" value="削除" onclick="return confirm('削除しますか？')" class="buttonstyle">
+		  <input type="hidden" name="dispnum" value="[% dispnum %]">
+		  <input type="hidden" name="del" value="1">
+		  </td>
+		</tr>
+	  </form>
+	   </table>
+   
+	<br>
+
+
+
+     <table id="right_cont_table3">
+
+	    <tr bgcolor="#EEEEEE">
+		  <td align="center" class="listtitle listtitle_3 box">登録日</td>
+	      <td align="center" class="listtitle listtitle_3 box">メールアドレス</td>
+	    </tr>
+	
+	[% FOREACH v=loop %]
+	    <tr bgcolor="#FFFFFF"> 
+	      <td class="td_1 box">[% v.date_disp %]</td>
+	      <td class="td_2 box">[% v.email %]</td>
+      
+	    </tr>
+	[% END %]
+	
+
+    <tr>
+      <td colspan="2" class="listtitle box" id="page_posi"><p>
+	  
+	[% IF backlink %]
+	<A href="clean_double_opt.cgi?page=[% page_m1 %]&dispnum=[% dispnum %][% search_url %]" title="前のページ">＜前のページ</A>
+	[% END %]
+	  [% pagelink %]｜
+	  
+	[% IF nextlink %]
+	<A href="clean_double_opt.cgi?page=[% page_p1 %]&dispnum=[% dispnum %][% search_url %]" title="次のページ">次のページ＞</A>
+	[% END %]
+	  </p></td>
+    </tr>
+        <tr>
+      <td colspan="2" id="showpage_num"><p>
+	<SELECT name="dispnum"  onchange="changenum_double_opt(options[selectedIndex].value)">
+	<OPTION value="">表示件数切替</OPTION>
+	<OPTION value="10" [% IF dispnum=="10" %]selected[% END %]>10件</OPTION>
+	<OPTION value="25" [% IF dispnum=="25" %]selected[% END %]>25件</OPTION>
+	<OPTION value="50" [% IF dispnum=="50" %]selected[% END %]>50件</OPTION>
+	<OPTION value="100" [% IF dispnum=="100" %]selected[% END %]>100件</OPTION>
+	<OPTION value="all" [% IF dispnum=="all" %]selected[% END %]>全件</OPTION>
+	</SELECT>
+	</td></tr>
+	  </table>
+
+
+
+[% ELSE %]
+<div align="center">
+	現在仮登録されているメールアドレスはありません
+</div>
+	<br><br>
+	<br><div align="center"><a href="index.cgi">戻る</a> </div><br>
+
+[% END %]
+
+
+
+      </div>
+      </div>
+    </div>
+	</div>
+<script language="JavaScript">
+<!--
+function changenum_double_opt(dispnum,year){
+	window.location.href = "clean_double_opt.cgi?dispnum=" + dispnum + '[% search_url %]' ;
+	
+}
+//-->
+</script>
+
+[% INCLUDE 'tmpl/html_footer.tmpl' %]

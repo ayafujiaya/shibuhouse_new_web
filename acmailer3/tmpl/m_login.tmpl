@@ -1,0 +1,35 @@
+[% INCLUDE 'tmpl/html_mobileheader.tmpl' %]
+
+<div style="background-color:#FFCC00;text-align:center;padding:5px;">
+	[% admindata.title|html %] ﾛｸﾞｲﾝ画面
+</div>
+<div class="box_con" style="background-color:#FFFFFF;padding-bottom:5px;font-size:small;">
+	<form name="form1" method="post" action="m_login_ctl.cgi" accept-charset="euc-jp">
+	<table width="100%">
+		<tr>
+			<td style="font-size:small;text-align:center;">
+				<font size="1">
+				ID  <input type="text" name="login_id" size="16" [% sys.input_type %]>
+				</font>
+			</td>
+		</tr>
+		<tr>
+			<td style="font-size:small;text-align:center;">
+				<font size="1">
+				PW  <input type="password" name="login_pass" size="16" [% sys.input_type %]>
+				</font>
+			</td>
+		</tr>
+		<tr>
+			<td style="font-size:small;text-align:center;">
+				<font size="1">
+					<input type="submit" value="ログイン">
+				</font>
+			</td>
+		</tr>
+	</table>
+	</form>
+</div>
+
+
+[% INCLUDE 'tmpl/html_mobilefooter_login.tmpl' %]

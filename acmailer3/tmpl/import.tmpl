@@ -1,0 +1,161 @@
+[% INCLUDE 'tmpl/html_header.tmpl' %]
+
+
+
+
+<div id="contwrapper" class="clearfix">
+  <div id="left_cont">
+  <div id="left_menu">
+    <div id="left_cont_in">
+      <table id="left_cont_table">
+        <tr>
+          <td class="title box"><img src="img/menu.jpg" alt="" /></td>
+        </tr>
+		          <tr><td height="20"></td></tr>
+  [% INCLUDE 'tmpl/html_setting_menu.tmpl' %]
+
+      </table>
+    </div>
+    </div>
+
+
+  [% INCLUDE 'tmpl/html_left_banner.tmpl' %]
+
+  </div>
+  
+
+  
+  <div id="right_cont">
+    <div id="right_cont_title">
+      <table id="right_cont_table_title">
+        <tr>
+          <td class="title box">
+              各種設定<img src="img/big_arrow.jpg" alt="" />設定インポート<img src="img/big_arrow.jpg" alt="" />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="right_cont_contens">
+    <div id="right_cont_contens_in">
+
+
+
+
+
+
+<div align="center">
+[% IF okedit %]
+<font color="red"><b>データを上書きしました</b></font><br>
+[% END %]
+</div>
+<div class="tabContainer">
+
+<div align="center">
+<font color="red">[% error_message %]</font>
+<font color="blue"><b>[% IF form.okedit %]更新しました[% END %]</b></font>
+<!-- システム設定 -->
+</div>
+
+
+
+   <table id="right_cont_table">
+
+
+  <tr><td bgcolor="#EEEEEE" align="center" class="td_2 box listtitle">
+  設定インポート
+  </td>
+  </tr>
+	
+    <tr valign="top"> 
+      
+      <td bgcolor="#FFFFFF" class="td_2 box"> 
+	  ここでアップロードされる内容は取り消しできません。<br>
+	システム設定をインポートする際、インポートするデータのIDとパスワードが現在の設定と異なる場合は新しいIDとパスワードで再度ログインしなければなりません。
+	  <br>
+	  アップロードする前に<a href="export.cgi">こちら</a>より対象の設定ファイルを<a href="export.cgi">バックアップ</a>を取得されることをお勧めします。
+	  <br><br><br>
+	  
+	  メール・システム・送信サーバー・空メール・予約配信・不着・トップページメモ・携帯ドメイン設定
+	  <form action="import.cgi" enctype="multipart/form-data" method="post">
+	  <input type="file" name="data">
+	  <input type="hidden" name="mode" value="admin">
+	  <input type="submit" value="アップロード" onclick="return confirm('アップロードしますか？アップロードする前にエクスポート機能でバックアップすることをお勧めします。')" class="buttonstyle">
+	  </form>
+	  <br><br>
+	  自由項目設定
+	  <form action="import.cgi" enctype="multipart/form-data" method="post">
+	  <input type="file" name="data">
+	  <input type="hidden" name="mode" value="freecol">
+	  <input type="submit" value="アップロード" onclick="return confirm('アップロードしますか？アップロードする前にエクスポート機能でバックアップすることをお勧めします。')" class="buttonstyle">
+	  </form>
+	  <br><br>
+	  自動返信メール設定
+	  <form action="import.cgi" enctype="multipart/form-data" method="post">
+	  <input type="file" name="data">
+	  <input type="hidden" name="mode" value="form">
+	  <input type="submit" value="アップロード" onclick="return confirm('アップロードしますか？アップロードする前にエクスポート機能でバックアップすることをお勧めします。')" class="buttonstyle">
+	  </form>
+	  
+	  <br><br>
+	  メールテンプレート設定
+	  <form action="import.cgi" enctype="multipart/form-data" method="post">
+	  <input type="file" name="data">
+	  <input type="hidden" name="mode" value="template">
+	  <input type="submit" value="アップロード" onclick="return confirm('アップロードしますか？アップロードする前にエクスポート機能でバックアップすることをお勧めします。')" class="buttonstyle">
+	  </form>
+	  <br><br>
+	  履歴データ
+	  <form action="import.cgi" enctype="multipart/form-data" method="post">
+	  <input type="file" name="data">
+	  <input type="hidden" name="mode" value="hist">
+	  <input type="submit" value="アップロード" onclick="return confirm('アップロードしますか？アップロードする前にエクスポート機能でバックアップすることをお勧めします。')" class="buttonstyle">
+	  </form>
+	  <br><br>
+	  フォーム設定
+	  <form action="import.cgi" enctype="multipart/form-data" method="post">
+	  <input type="file" name="data">
+	  <input type="hidden" name="mode" value="autoform">
+	  <input type="submit" value="アップロード" onclick="return confirm('アップロードしますか？アップロードする前にエクスポート機能でバックアップすることをお勧めします。')" class="buttonstyle">
+	  </form>
+	  <br>
+	  ※フォーム設定をインポートする場合は自由項目もセットでインポートしてください。
+	  <br><br>
+
+	  ライセンスデータ
+	  <form action="import.cgi" enctype="multipart/form-data" method="post">
+	  <input type="file" name="data">
+	  <input type="hidden" name="mode" value="license">
+	  <input type="submit" value="アップロード" onclick="return confirm('アップロードしますか？アップロードする前にエクスポート機能でバックアップすることをお勧めします。')" class="buttonstyle">
+	  </form>
+	  <br><br>
+
+	  
+	  </td>
+    </tr>
+	
+  </table>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+      </div>
+      </div>
+    </div>
+	</div>
+
+
+
+
+
+
+[% INCLUDE 'tmpl/html_footer.tmpl' %]

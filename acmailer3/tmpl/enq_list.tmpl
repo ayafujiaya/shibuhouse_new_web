@@ -1,0 +1,44 @@
+[% INCLUDE 'tmpl/html_header.tmpl' %]
+
+[% USE Comma %]
+
+<script language="JavaScript">
+<!--
+function changenum_hist(dispnum,year){
+	window.location.href = "hist_list.cgi?dispnum=" + dispnum + '[% para %]' ;
+
+}
+//-->
+</script>
+<style>
+td { font-size:12px; }
+</style>
+<div align="center"><div class="title">アンケートデータ</div><br><br>
+
+<a href="enq_edit.cgi">新規作成</a>
+  <br>
+  <table border="0" cellspacing="1" cellpadding="5" width="650" bgcolor="#FF9900">
+    <tr valign="top">
+	  <td bgcolor="#FFCC66">アンケート名</td>
+	  <td bgcolor="#FFCC66">詳細</td>
+	  <td bgcolor="#FFCC66">編集</td>
+	  <td bgcolor="#FFCC66">削除</td>
+    </tr>
+	[% FOREACH v=list %]
+	<tr>	
+	  <td bgcolor="#FFFFFF">
+	  <a href="enq_form.cgi?key=[% v.enq_key %]&mail_id=admin" target="blank">[% v.enq_name|html %]</a>
+	  </td>
+        <td bgcolor="#FFFFFF"><a href="enq_detail.cgi?id=[% v.id %]">詳細</a></td>
+	  <td bgcolor="#FFFFFF"><a href="enq_edit.cgi?id=[% v.id %]">編集</a></td>
+	  <td bgcolor="#FFFFFF"><a href="enq_list.cgi?del=1&id=[% v.id %]" onclick="return confirm('削除してもよろしいですか？')">削除</a></td>
+    </tr>
+	[% END %]
+
+
+  </table>
+</div>
+
+
+
+[% INCLUDE 'tmpl/html_footer.tmpl' %]

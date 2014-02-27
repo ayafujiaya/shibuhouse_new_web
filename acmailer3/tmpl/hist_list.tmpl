@@ -1,0 +1,246 @@
+[% INCLUDE 'tmpl/html_header.tmpl' %]
+<link rel="stylesheet" href="./css/hist_list.css" type="text/css">
+
+[% USE Comma %]
+
+<script language="JavaScript">
+function changenum_hist(dispnum,year){
+	window.location.href = "hist_list.cgi?dispnum=" + dispnum + '[% para %]' ;
+
+}
+function data_clear() {
+	document.form1.s_year.value = "";
+	document.form1.s_mon.value = "";
+	document.form1.s_day.value = "";
+	document.form1.e_year.value = "";
+	document.form1.e_mon.value = "";
+	document.form1.e_day.value = "";
+}
+function data_delete(id) {
+	if (confirm('削除しますか？')) {
+		window.location = 'hist_list.cgi?hist_del=1&id=' + id;
+	}
+}
+</script>
+
+
+<style>
+.icon {
+	border:1px solid #0066CC;
+	font-size:10px;
+	width:10px;
+	float:left;
+	margin:1px;
+	color:red;
+}
+</style>
+
+<div id="contwrapper" class="clearfix">
+  <div id="left_cont">
+  <div id="left_menu">
+    <div id="left_cont_in">
+      <table id="left_cont_table">
+        <tr>
+          <td class="title box"><img src="img/menu.jpg" alt="" /></td>
+        </tr>
+		          <tr><td height="20"></td></tr>
+
+              <tr>
+                <td class="menu menubgcolor"><a href="hist_list.cgi">配信履歴</a></td>
+              </tr>
+
+              <tr>
+                <td class="menu"><a href="backnumber.cgi" target="blank">バックナンバー</a></td>
+              </tr>
+
+      </table>
+    </div>
+    </div>
+
+
+  [% INCLUDE 'tmpl/html_left_banner.tmpl' %]
+
+  </div>
+  
+
+  
+  <div id="right_cont">
+    <div id="right_cont_title">
+      <table id="right_cont_table_title">
+        <tr>
+          <td class="title box">
+              配信履歴<img src="img/big_arrow.jpg" alt="" />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="right_cont_contens">
+    <div id="right_cont_contens_in">
+
+            <div id="cont_num">
+			<form action="hist_list.cgi" method="post" name="form1">
+              <table id="right_cont_table1">
+                <tr>
+                  <td id="y_m_d_select" class=" box"><div id="y_m_d_select_title">表示期間</div>
+                    <div id="y_m_d">
+                      <span  id="y_m_d_in"><input type="text" name="s_year" value="[% s_year|html %]" size="4">年<input type="text" name="s_mon" value="[% s_mon|html %]" size="2">月<input type="text" name="s_day" value="[% s_day|html %]" size="2">日
+					   から
+                      <input type="text" name="e_year" value="[% e_year|html %]" size="4">年<input type="text" name="e_mon" value="[% e_mon|html %]" size="2">月<input type="text" name="e_day" value="[% e_day|html %]" size="2">日 まで</span></div>
+                    <div id="y_m_d_select_btn">
+                      <input type="submit" name="Submit" value="表示" /><input type="button" value="クリア" onclick="javascript:data_clear();" />
+					  <input type="hidden" name="dispnum" value="[% dispnum %]">
+                    </div></td>
+                </tr>
+              </table>
+			  </form>
+            </div>
+			<div align="center">
+				[% IF delok %]
+				<font color="red"><b>削除しました。</b></font><br>
+				[% END %]
+				[% IF backnumberok %]
+				<font color="blue"><b>バックナンバーを設定しました。</b></font><br>
+				[% END %]
+				[% IF cancelok %]
+				<font color="red"><b>予約キャンセルしました。</b></font><br>
+				[% END %]
+			</div>
+            <div id="cont_list">
+<form action="hist_list.cgi" method="post" name="hist_list">
+	<input type="hidden" name="mode" value="add">
+	<input type="hidden" name="page" value="[% page %]">
+	<input type="hidden" name="dispnum" value="[% dispnum %]">
+	<input type="hidden" name="back_number_add" value="1">
+              <table id="right_cont_table3" class="hist_list_table">
+                <tr>
+                  <td class="listtitle listtitle_1 box posi_center">選択</td>
+                  <td class="listtitle listtitle_2 box posi_center" style="width:80px;">開始</td>
+                  <td class="listtitle listtitle_3 box posi_center" style="width:80px;">終了</td>
+				  <!--
+                  <td class="listtitle listtitle_4 box">タイプ</td>
+				  -->
+                  <td class="listtitle listtitle_5 box posi_center">件名</td>
+                  <td class="listtitle listtitle_6 box posi_center" style="width:50px;">配信</td>
+                  <td class="listtitle listtitle_7 box posi_center" style="width:50px;">不着</td>
+                  <td class="listtitle listtitle_8 box posi_center">削除</td>
+                </tr>
+				
+	[% FOREACH v=hist_list %]
+				
+		[% IF v.status=="1" OR v.status=="" %]
+	    <tr valign="top" bgcolor="#FFCCCC">
+		[% ELSIF v.status=="3" %]
+		<tr valign="top" bgcolor="#CCFFFF">
+		[% ELSIF v.status=="4" %]
+	    <tr valign="top" bgcolor="#FFCCCC">
+		[% ELSE %]
+	    <tr valign="top" bgcolor="#FFFFFF">
+		[% END %]
+                  <td class="box posi_center" style="font-size:11px;">
+				  
+				  [% IF v.status=="1" OR v.status=="" %]
+	  送信中
+	  [% ELSIF v.status=="3" %]
+	  
+	  <a href="email_send.cgi?id=[% v.id %]">予約内容編集</a>
+	  <br><a href="hist_list.cgi?reserve_cancel=1&id=[% v.id %]" onclick="return confirm('予約をキャンセルしてもよろしいですか？')">予約ｷｬﾝｾﾙ</a>
+	  
+	  [% ELSIF v.status=="4" %]
+	  ｷｬﾝｾﾙ
+	  
+	  [% ELSE %]
+	  <input type="checkbox" name="[% v.id %]_backnumber" value="1" [% IF v.backnumber %]checked[% END %]>
+	  <input type="hidden" name="hid_id[% v.id %]" value="[% v.id %]">
+	  [% END %]
+				  </td>
+                  <td class="box time_lineheight" style="width:80px;">[% v.start_send_date %]</td>
+                  <td class="box time_lineheight" style="width:80px;">[% v.end_send_date %]</td>
+				  <!--
+                  <td class="box">[% IF v.send_type=="1" %]分割[% ELSIF v.send_type=="2" %]バックグランド送信[% ELSIF v.send_type=="0" %]ノーマル[% END %]</td>
+				  -->
+                  <td class="box"><a href="hist_detail.cgi?id=[% v.id %]">[% v.mail_title|html %]    </a></td>
+                  <td class="box posi_right" style="width:50px;">[% IF v.total_count %][% v.total_count|comma %]通[% END %]</td>
+                  <td class="box posi_right" style="width:50px;">[% IF v.errmail_count %][% v.errmail_count|comma %]通[% END %]</td>
+                  <td class="box posi_center"><input type="button" value="削除" onclick="javascript:data_delete('[% v.id %]')" class="buttonstyle"></td>
+                </tr>
+	[% END %]
+				
+
+
+                <tr>
+                  <td colspan="8" class="listtitle box" id="page_posi"><p>
+				  [% IF backlink %]
+					<A href="hist_list.cgi?page=[% page_m1 %]&dispnum=[% dispnum %][% para %]" title="前のページ">＜前のページ</A>
+					[% END %]
+				  
+				  [% pagelink %]｜
+				  
+				  [% IF nextlink %]
+					<A href="hist_list.cgi?page=[% page_p1 %]&dispnum=[% dispnum %][% para %]" title="次のページ">次のページ＞</A>
+					[% END %]
+				  </p></td>
+                </tr>
+                <tr>
+                  <td colspan="8" id="showpage_num"><p>
+						<SELECT name="dispnum"  onchange="changenum_hist(options[selectedIndex].value)">
+						<OPTION value="">表示件数切替</OPTION>
+						<OPTION value="10" [% IF form.dispnum=="10" %]selected[% END %]>10件</OPTION>
+						<OPTION value="25" [% IF form.dispnum=="25" %]selected[% END %]>25件</OPTION>
+						<OPTION value="50" [% IF form.dispnum=="50" %]selected[% END %]>50件</OPTION>
+						<OPTION value="100" [% IF form.dispnum=="100" %]selected[% END %]>100件</OPTION>
+						<OPTION value="all" [% IF form.dispnum=="all" %]selected[% END %]>全件</OPTION>
+						</SELECT>
+                    </p></td>
+                </tr>
+                <tr>
+                  <td colspan="8" class="btn_select_area"><div class="btn_area">
+<input type="submit" value="バックナンバーに設定" class="buttonstyle">
+
+                    </div>
+                    <div class="select_btn"><a class="no_underline" href="javascript:AllCheck();">すべてを選択</a> - <a class="no_underline" href="javascript:AllNoCheck();">すべての選択を解除</a> </div></td>
+                </tr>
+              </table>
+            </div>
+
+
+
+      </div>
+      </div>
+    </div>
+	</div>
+
+
+<script type="text/javascript"><!--
+
+function AllCheck() {
+	objFrm = document.forms["hist_list"];
+	for (i = 0; i < objFrm.elements.length; i++) {
+		if (objFrm.elements[i] != undefined) {
+			switch (objFrm.elements[i].type) {
+				case "checkbox":
+					objFrm.elements[i].checked = true;
+					break;
+			}
+		}
+	}
+}
+
+function AllNoCheck() {
+	objFrm = document.forms["hist_list"];
+	for (i = 0; i < objFrm.elements.length; i++) {
+		if (objFrm.elements[i] != undefined) {
+			switch (objFrm.elements[i].type) {
+				case "checkbox":
+					objFrm.elements[i].checked = false;
+					break;
+			}
+		}
+	}
+}
+
+
+// --></script>
+
+
+
+[% INCLUDE 'tmpl/html_footer.tmpl' %]

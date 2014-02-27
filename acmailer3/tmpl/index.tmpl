@@ -1,0 +1,111 @@
+[% INCLUDE 'tmpl/html_header.tmpl' %]
+
+
+    <div id="contwrapper" class="clearfix">
+      <div id="left_cont">
+	  <!--
+      <div id="left_menu">
+        <div id="left_cont_in">
+          <table id="left_cont_table">
+            <tr>
+              <td class="title box"><img src="img/menu.jpg" alt="" /></td>
+            </tr>
+              <tr><td height="20"></td></tr>
+            <tr>
+              <td class="menu menubgcolor"><a href="">テキストメール配信</a></td>
+            </tr>
+            <tr>
+              <td class="menu"><a href="">HTMLメール配信</a></td>
+            </tr>
+            <tr>
+              <td class="menu lastmenu"><a href="">デコメール配信</a></td>
+            </tr>
+          </table>
+        </div>
+        </div>
+		-->
+		  [% INCLUDE 'tmpl/html_left_banner.tmpl' %]
+
+
+
+        <table>
+          <tr>
+            <td style="padding-left:0px;">
+
+
+
+
+
+<form action="http://www.ahref.org/cgi/acmailer/userreg/reg.cgi" method="post">
+  <table border="0" cellspacing="3" cellpadding="0" style="border:solid 1px #CCC; background-color:#FFF; text-align:left; border-collapse:separate; border-spacing:3px; width:200px;">
+    <tr>
+      <td class="listtitle02" style="width:200px; font-size:12px; padding-right:10px; padding-top:3px; padding-bottom:2px; text-align:left; padding-left:10px;">最新情報をお送りします！<br />→ acmailer ユーザー登録</td>
+    </tr>
+    <tr>
+      <td style="width:200px; background-color:#FFF; padding:0px;"><input type="text" name="email" style="height:16px; width:135px; margin-top:5px; margin-bottom:1px;"><input type="submit" value="登録" name="submit" style="margin-top:9px; margin-left:3px; _padding:1px 3px;"><input type="hidden" name="reg" value="add"></td>
+    </tr>
+    <tr>
+      <td style="width:200px; background-color:#FFF; padding-left:0px; padding-top:4px; padding-bottom:2px; padding-right:0px; _padding-bottom:0px; _padding-top:0px;">
+        <div style="text-align:right; padding-right:4px; font-size:10px; color:#999;">powered by<a href="http://www.acmailer.jp/" target="_blank" title="メール配信CGI acmailer"><img src="img/logo_form.jpg" alt="メール配信CGI acmailer" style="border:none; padding:0; margin:0; margin-left:5px; vertical-align:middle; height:auto;" /></a></div>
+        </td>
+    </tr>
+  </table>
+</form>
+
+
+
+
+
+
+	    	
+	    </td>
+          </tr>
+        </table>
+
+        <table>
+          <tr>
+            <td style="padding-left:0px;">
+
+
+<a href="http://twitter.com/acmailer" target="blank"><img src="image/acmailer_twitter_200.jpg"></a>
+
+
+
+	    </td>
+          </tr>
+        </table>
+
+
+
+
+      </div>
+	  
+
+	  
+      <div id="right_cont">
+        <div id="right_cont_contens" style="margin-top:0px;">
+        <div id="right_cont_contens_in">
+
+
+
+
+
+   <table id="right_cont_table">
+
+  <tr><td bgcolor="#FFFFFF" class="td_2 box" style="padding-left:0;">
+
+[% admindata.free_memo|html_line_break %]
+
+      </td>
+    </tr>
+  </table>
+
+
+      </div>
+      </div>
+    </div>
+	</div>
+
+
+
+[% INCLUDE 'tmpl/html_footer.tmpl' %]

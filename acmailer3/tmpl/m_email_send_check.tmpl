@@ -1,0 +1,348 @@
+[% INCLUDE 'tmpl/html_mobileheader.tmpl' %]
+
+<div style="background-color:#FFCC00;text-align:center;padding:5px;">
+[% IF form.id %]
+予約内容編集
+[% ELSE %]
+ﾒｰﾙ配信
+[% END %]
+</div>
+
+
+<form name="form1" method="post" action="email_send_ctl.cgi" accept-charset="euc-jp">
+
+  <input type="hidden" name="mail_session_id" value="[% form.mail_session_id %]" />
+
+<table width="100%">
+	<tr>
+		<td class="td_title" style="background:#E6E6E6;">
+			<font size="2">
+			送信先件数
+			</font>
+		</td>
+	</tr>
+	<tr>
+		<td class="pb_10">
+			<span style="font-size:small;">
+			<font size="1">
+			[% sender_total %]/[% totalnum %]
+			</font>
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title" style="background:#E6E6E6;">
+			<font size="2">
+			差出人
+			</font>
+		</td>
+	</tr>
+	<tr>
+		<td class="pb_10">
+			<span style="font-size:small;">
+			<font size="1">
+			[% admin_name %] &lt;[% admin_email %]&gt;
+			</font>
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title" style="background:#E6E6E6;">
+			<font size="2">
+			ﾒｰﾙ形式
+			</font>
+		</td>
+	</tr>
+	<tr>
+		<td class="pb_10">
+			<span style="font-size:small;">
+			<font size="1">
+			[% IF form.mail_type=="plain" %]ﾃｷｽﾄ[% ELSIF form.mail_type=="html" %]HTML[% END %]
+			</font>
+			</span>
+			<input type="hidden" name="mail_type" value="[% form.mail_type %]">
+		</td>
+	</tr>
+	[% IF reserve %]
+	<tr>
+		<td class="td_title" style="background:#E6E6E6;">
+			<font size="2">
+			配信日時
+			</font>
+		</td>
+	</tr>
+	<tr>
+		<td class="pb_10">
+			<span style="font-size:small;">
+			<font size="1">
+			[% IF reserve_mode %]予約配信 <br>[% send_year %]年[% send_mon %]月[% send_day %]日[% send_hour %]時[% send_min %]分[% ELSE %]今すぐ[% END %]
+			</font>
+			</span>
+			<input type="hidden" name="reserve_mode" value="[% reserve_mode %]">
+			<input type="hidden" name="send_year" value="[% send_year %]">
+			<input type="hidden" name="send_mon" value="[% send_mon %]">
+			<input type="hidden" name="send_day" value="[% send_day %]">
+			<input type="hidden" name="send_hour" value="[% send_hour %]">
+			<input type="hidden" name="send_min" value="[% send_min %]">
+		</td>
+	</tr>
+	[% END %]
+	<tr>
+		<td class="td_title" style="background:#E6E6E6;">
+			<font size="2">
+			絞込
+			</font>
+		</td>
+	</tr>
+	<tr>
+		<td class="pb_10">
+			<span style="font-size:small;">
+			<font size="1">
+			[% FOREACH v=search %]
+				[% IF v.search_text %]
+					[% v.search_col|html %]：[% v.search_text|html %]
+					[% IF v.searchlike == "1" %]
+					と一致する
+					[% ELSIF v.searchlike == "2" %]
+					を含まない
+					[% ELSE %]
+					を含む
+					[% END %]
+
+					<br>
+					<input type="hidden" name="search_text[% v.num %]" value="[% v.search_text|html %]">
+					<input type="hidden" name="search_colname[% v.num %]" value="[% v.search_col|html %]">
+				[% END %]
+			[% END %]
+			</font>
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title" style="background:#E6E6E6;">
+			<font size="2">
+			条件
+			</font>
+		</td>
+	</tr>
+	<tr>
+		<td class="pb_10">
+			<span style="font-size:small;">
+			<font size="1">
+			[% IF form.andor == 'and' %]
+			AND検索
+			[% ELSE %]
+			OR検索
+			[% END %]
+			</font>
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title" style="background:#E6E6E6;">
+			<font size="2">
+			ﾄﾞﾒｲﾝ
+			</font>
+		</td>
+	</tr>
+	<tr>
+		<td class="pb_10">
+			<span style="font-size:small;">
+			<font size="1">
+			[% IF form.search_domain == '' %]
+			両方
+			[% ELSIF form.search_domain == '1' %]
+			PCのみ
+			[% ELSIF form.search_domain == '2' %]
+			携帯のみ
+			[% END %]
+			</font>
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title" style="background:#E6E6E6;">
+			<font size="2">
+			件名
+			</font>
+		</td>
+	</tr>
+	<tr>
+		<td class="pb_10">
+			<span style="font-size:small;">
+			<font size="1">
+			[% mail_title %]
+			</font>
+			</span>
+			<input type="hidden" name="mail_title" value="[% mail_title|html %]">
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title" style="background:#E6E6E6;">
+			<font size="2">
+			本文
+			</font>
+		</td>
+	</tr>
+	<tr>
+		<td class="pb_10">
+			<span style="font-size:small;">
+			<font size="1">
+			[% mail_body|html_line_break %]
+			</font>
+			</span>
+			<input type="hidden" name="mail_body" value="[% mail_body|html %]">
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title" style="background:#E6E6E6;">
+			<font size="2">
+			ｵﾌﾟｼｮﾝ
+			</font>
+		</td>
+	</tr>
+	[% IF htmlpreview %]
+	<tr>
+		<td class="td_title" style="background:#E6E6E6;">
+			<font size="2">
+			HTMLﾌﾟﾚﾋﾞｭｰ
+			</font>
+		</td>
+	</tr>
+	<tr>
+		<td class="pb_10">
+			<span style="font-size:small;">
+			<font size="1">
+			<a href="email_send_previewhtml.cgi?mail_session_id=[% form.mail_session_id %]&sid=[% form.sid %]" target="blank">ﾌﾟﾚﾋﾞｭｰ</a>
+			</font>
+			</span>
+		</td>
+	</tr>
+	[% END %]
+	<tr>
+		<td class="pb_10" style="text-align:center;">
+			<span style="font-size:small;">
+			<font size="1">
+			[% IF !form.id %]
+			<input type="submit" name="Submit" value="送信開始">
+			[% END %]
+			<input type="hidden" name="sid" value="[% form.sid %]">
+			<input type="hidden" name="send_type" value="[% form.send_type %]">
+			</font>
+			</span>
+		</td>
+	</tr>
+</table>
+</form>
+
+[% IF form.id %]
+<form action="email_send_check.cgi" method="post">
+<table width="100%">
+	<tr>
+		<td class="td_title" style="background:#E6E6E6;">
+			<font size="2">
+			登録
+			</font>
+		</td>
+	</tr>
+	<tr>
+		<td class="pb_10" style="text-align:center;">
+			<span style="font-size:small;">
+			<font size="1">
+				<input type="submit" value="登録" />
+		  		<input type="hidden" name="id" value="[% form.id %]">
+		  		<input type="hidden" name="regmode" value="hist">
+		  		<input type="hidden" name="total_count" value="[% sender_total %]">
+				<input type="hidden" name="reserve_mode" value="[% reserve_mode %]">
+				<input type="hidden" name="send_year" value="[% send_year %]">
+				<input type="hidden" name="send_mon" value="[% send_mon %]">
+				<input type="hidden" name="send_day" value="[% send_day %]">
+				<input type="hidden" name="send_hour" value="[% send_hour %]">
+				<input type="hidden" name="send_min" value="[% send_min %]">
+
+
+				[% FOREACH v=search %]
+					[% IF v.search_text %]
+						<input type="hidden" name="search_text[% v.num %]" value="[% v.search_text|html %]">
+						<input type="hidden" name="search_colname[% v.num %]" value="[% v.search_col|html %]">
+					[% END %]
+				[% END %]
+				<input type="hidden" name="mail_type" value="[% form.mail_type %]">
+				<input type="hidden" name="mail_title" value="[% mail_title|html %]">
+				<input type="hidden" name="mail_body" value="[% mail_body|html %]">
+				<input type="hidden" name="sid" value="[% form.sid %]">
+				<input type="hidden" name="send_type" value="[% form.send_type %]">
+				<input type="hidden" name="regmode" value="hist">
+  			</font>
+  			</span>
+		</td>
+	</tr>
+
+
+</table>
+</form>
+[% END %]
+
+<form action="email_send_ctl.cgi" method="post">
+
+  <input type="hidden" name="mail_session_id" value="[% form.mail_session_id %]" />
+
+<table>
+	<tr>
+		<td class="td_title" style="background:#E6E6E6;">
+			<font size="2">
+			テスト送信
+			</font>
+		</td>
+	</tr>
+	<tr>
+		<td class="pb_10" style="text-align:center;">
+			<span style="font-size:small;">
+			<font size="1">
+			<input type="text" name="test_email" value="[% admindata.admin_email|html %]" style="width:250px;">
+			<br>
+			<input type="submit" value="テスト送信">
+			<br>※任意のアドレスへテストメールを送信します
+		   <input type="hidden" name="send_test" value="1">
+		   <input type="hidden" name="mail_type" value="[% form.mail_type %]">
+		   <input type="hidden" name="disp_id" value="[% form.disp_id %]">
+		   <input type="hidden" name="sid" value="[% form.sid %]">
+	   		</font>
+		</td>
+	</tr>
+</form>
+
+<form name="form3" method="post" action="email_send.cgi" accept-charset="euc-jp">
+<table width="100%">
+
+	<tr>
+		<td class="td_title" style="background:#E6E6E6;text-align:center;">
+			<input type="submit" value="戻る">
+			<input type="hidden" name="back" value="1">
+			<input type="hidden" name="sid" value="[% form.sid %]">
+		</td>
+	</tr>
+
+</table>
+</form>
+
+<table width="100%">
+	<tr>
+		<td class="pb_10">
+			<span style="font-size:small;">
+			<font size="1">
+			[% IF form.send_type %]
+			※携帯版ではバックグランド送信になります。
+			[% ELSE %]
+			※バックグランド送信が使用できない環境のため、ノーマル送信します。<br>
+			送信件数・サーバ環境によっては正しく全件送信されない可能性があります。<br>
+			確実に送信する場合、PC版ACMAILERより送信を行ってください。
+			[% END %]
+			</font>
+			</span>
+		</td>
+	</tr>
+
+</table>
+
+[% INCLUDE 'tmpl/html_mobilefooter.tmpl' %]

@@ -1,0 +1,28 @@
+[% INCLUDE 'tmpl/html_mobileheader.tmpl' %]
+
+<div style="background-color:#FFCC00;text-align:center;padding:5px;">
+	[% admindata.title|html %]
+</div>
+<div class="box_menu" style="background-color:#E6E6E6;padding:3px;">
+	ﾒｰﾙ配信
+</div>
+<div class="box_con" style="background-color:#FFFFFF;padding-bottom:5px;font-size:small;">
+	<font size="1"><a href="email_send.cgi?sid=[% form.sid %]">ﾒｰﾙ配信</a></font>
+</div>
+<div class="box_menu" style="background-color:#E6E6E6;padding:3px;">
+	ﾒｰﾙｱﾄﾞﾚｽ管理
+</div>
+<div class="box_con" style="background-color:#FFFFFF;padding-bottom:5px;font-size:small;">
+		<font size="1"><a href="email_list.cgi?sid=[% form.sid %]&dispnum=10">ﾒｰﾙｱﾄﾞﾚｽ一覧</a></font><br>
+		<font size="1"><a href="email_add.cgi?sid=[% form.sid %]">ﾒｰﾙｱﾄﾞﾚｽ登録</a></font><br>
+		<font size="1"><a href="email_del.cgi?sid=[% form.sid %]">ﾒｰﾙｱﾄﾞﾚｽ削除</a></font>
+</div>
+<div class="box_menu" style="background-color:#E6E6E6;padding:3px;">
+	配信履歴
+</div>
+<div class="box_con" style="background-color:#FFFFFF;padding-bottom:5px;font-size:small;">
+         <font size="1"><a href="hist_list.cgi?sid=[% form.sid %]&dispnum=10">配信履歴</font></a></font><br>
+         <font size="1"><a href="backnumber.cgi?sid=[% form.sid %]&mobile=1">ﾊﾞｯｸﾅﾝﾊﾞｰ</font></a></font>
+</div>
+
+[% INCLUDE 'tmpl/html_mobilefooter.tmpl' %]

@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP" />
+<title>絵文字</title>
+</head>
+<body>
+
+<div align="center">
+<div class="title"><b>絵文字テーブル</b></div>
+<br><br>
+
+<table><tr><td>
+[% FOREACH v=image_list %]
+<div style="float:left;">
+<a href="javascript:set('{[% v.name %]}');" border="0">
+<img src="[% v.image_url %]" border="0" height="32">
+</a>
+</div>
+[% END %]
+</td></tr></table>
+
+<input type="button" value="閉じる" onclick="javascript:window.close();">
+</div>
+<script language="javascript">
+function set(id) {
+	opener.document.forms['form1'].elements['mail_body'].value += id;
+	//window.close();
+}
+</script>
+
+[% INCLUDE 'tmpl/html_footer.tmpl' %]

@@ -1,0 +1,186 @@
+[% INCLUDE 'tmpl/html_header.tmpl' %]
+
+<link rel="stylesheet" href="./css/email_list2.css" type="text/css">
+
+
+<script language="JavaScript">
+<!--
+function changenum_errmail(dispnum,year){
+	window.location.href = "errmail_list.cgi?search=1&dispnum=" + dispnum + '[% search_url %]' ;
+
+}
+//-->
+</script>
+
+
+
+
+<div id="contwrapper" class="clearfix">
+  <div id="left_cont">
+  <div id="left_menu">
+    <div id="left_cont_in">
+      <table id="left_cont_table">
+        <tr>
+          <td class="title box"><img src="img/menu.jpg" alt="" /></td>
+        </tr>
+		          <tr><td height="20"></td></tr>
+
+  [% INCLUDE 'tmpl/html_setting_menu.tmpl' %]
+
+      </table>
+    </div>
+    </div>
+
+
+  [% INCLUDE 'tmpl/html_left_banner.tmpl' %]
+
+  </div>
+  
+
+  
+  <div id="right_cont">
+    <div id="right_cont_title">
+      <table id="right_cont_table_title">
+        <tr>
+          <td class="title box">
+              各種設定<img src="img/big_arrow.jpg" alt="" />不着メール管理<img src="img/big_arrow.jpg" alt="" />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="right_cont_contens">
+    <div id="right_cont_contens_in">
+
+
+
+
+
+
+
+[% IF oktext %]
+<font color="red"><b>[% oktext %]</b></font><br>
+[% END %]
+
+
+
+
+   <table id="right_cont_table">
+
+
+    <tr> 
+      <td colspan="2" bgcolor="#EEEEEE" align="center" class="td_2 box listtitle">不着メール管理</td>
+	</tr>
+	
+	<tr>
+	  <td bgcolor="#FFFFFF" class="td_3 box">
+	  
+	  <table><tr><td>
+<form action="errmail_list.cgi" method="post">
+最新[% admindata.errmail_log_num %]件の履歴より
+<input type="hidden" name="mode" value="scan">
+<input type="submit" value="不着データを更新" style="font-weight:bold;" class="buttonstyle">
+</form>
+	</td><td>
+<form action="errmail_list.cgi" method="post">
+<input type="hidden" name="mode" value="alldel">
+<input type="submit" value="不着データオールクリア" style="font-weight:bold;" onclick="return confirm('不着データが全てなくなります。よろしいですか？')" class="buttonstyle">
+</form>
+	</td></tr></table>
+  
+	  </td>
+	</tr>
+    <tr> 
+      <td bgcolor="#EEEEEE" align="center" class="td_3 box listtitle">不着メール一覧</td>
+	</tr>
+	<tr>
+	  <td bgcolor="#FFFFFF" class="td_3 box">
+	
+  <form action="errmail_list.cgi" method="post" name="form1">
+
+	  
+<input type="text" name="over_count" value="[% form.over_count|html %]" size="4" style="margin-right:4px; width:40px;">回以上不着のデータを
+<input type="hidden" name="search" value="1">
+<input type="submit" value="表示" class="buttonstyle">
+<input type="hidden" name="mode" value="">
+<input type="button" value="CSVとしてダウンロード" onclick="javascript:down_csv();" class="buttonstyle"><br><br>
+<font color="#D90000">メールアドレスを一括削除したい場合は、「CSVとしてダウンロードする」にチェックをし、ダウンロードしたCSVのメールアドレスのデータを<a href="email_del.cgi">メールアドレス一括削除</a>画面に貼り付けてください。</font>
+	  </td>
+	</tr>
+  </form>
+   </table>
+   
+   <br>
+ 
+[% IF totalnum %]
+ 	[% IF form.search %]
+<center>
+   <table id="right_cont_table">
+    <tr bgcolor="#EEEEEE">
+	  <td align="center" class="listtitle listtitle_3 box">メールアドレス</td>
+      <td align="center" class="listtitle listtitle_3 box">不着回数</td>
+    </tr>
+	[% FOREACH v=loop %]
+    <tr bgcolor="#FFFFFF"> 
+      <td class="td_3 box">[% v.email %]</td>
+      <td align="right" class="td_3 box">[% v.count %]</td>
+      
+    </tr>
+	[% END %]
+
+
+    <tr>
+      <td colspan="2" class="listtitle box" id="page_posi"><p>
+		[% IF backlink %]
+		<A href="errmail_list.cgi?search=1&page=[% page_m1 %]&dispnum=[% dispnum %][% search_url %]" title="前のページ">＜前のページ</A>
+		[% END %]
+			  [% pagelink %]｜
+	  
+		[% IF nextlink %]
+		<A href="errmail_list.cgi?search=1&page=[% page_p1 %]&dispnum=[% dispnum %][% search_url %]" title="次のページ">次のページ＞</A>
+		[% END %]
+	  </p></td>
+    </tr>
+    <tr>
+      <td colspan="2" id="showpage_num"><p>
+			<SELECT name="dispnum"  onchange="changenum_errmail(options[selectedIndex].value)">
+			<OPTION value="">表示件数切替</OPTION>
+			<OPTION value="10" [% IF form.dispnum=="10" %]selected[% END %]>10件</OPTION>
+			<OPTION value="25" [% IF form.dispnum=="25" %]selected[% END %]>25件</OPTION>
+			<OPTION value="50" [% IF form.dispnum=="50" %]selected[% END %]>50件</OPTION>
+			<OPTION value="100" [% IF form.dispnum=="100" %]selected[% END %]>100件</OPTION>
+			<OPTION value="all" [% IF form.dispnum=="all" %]selected[% END %]>全件</OPTION>
+			</SELECT>
+        </p></td>
+    </tr>
+
+  </table>
+
+</center>
+[% END %]
+
+[% ELSE %]
+不着メールはありません。
+<br><br>
+
+[% END %]
+
+
+
+
+
+      </div>
+      </div>
+    </div>
+	</div>
+
+
+
+<script>
+function down_csv() {
+	document.form1.mode.value="csv";
+	document.form1.submit();
+}
+</script>
+
+
+[% INCLUDE 'tmpl/html_footer.tmpl' %]
