@@ -1,0 +1,642 @@
+<html><head><title>Request-log-analyzer report</title><style type="text/css">
+        body {
+        	font: normal 11px auto "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+        	color: #4f6b72;
+        	background: #E6EAE9;
+        	padding-left:20px;
+        	padding-top:20px;
+        	padding-bottom:20px;
+        }
+
+        a {
+        	color: #c75f3e;
+        }
+
+        .color_bar {
+          border: 1px solid;
+          height:10px;
+        	background: #CAE8EA;
+        }
+
+        #mytable {
+        	width: 700px;
+        	padding: 0;
+        	margin: 0;
+        	padding-bottom:10px;
+        }
+
+        caption {
+        	padding: 0 0 5px 0;
+        	width: 700px;	
+        	font: italic 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+        	text-align: right;
+        }
+
+        th {
+        	font: bold 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+        	color: #4f6b72;
+        	border-right: 1px solid #C1DAD7;
+        	border-bottom: 1px solid #C1DAD7;
+        	border-top: 1px solid #C1DAD7;
+        	letter-spacing: 2px;
+        	text-transform: uppercase;
+        	text-align: left;
+        	padding: 6px 6px 6px 12px;
+        	background: #CAE8EA url(images/bg_header.jpg) no-repeat;
+        }
+
+        td {
+        	font: bold 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+        	border-right: 1px solid #C1DAD7;
+        	border-bottom: 1px solid #C1DAD7;
+        	background: #fff;
+        	padding: 6px 6px 6px 12px;
+        	color: #4f6b72;
+        }
+
+        td.alt {
+        	background: #F5FAFA;
+        	color: #797268;
+        }
+        </style></head><body><h1>Request-log-analyzer summary report</h1><p>Version 1.12.10 - written by Willem van Bergen and Bart ten Brinke</p><h2>Request summary</h2>
+<table id="mytable" cellspacing="0"><tr><td class="alt">Processsed File:</td>
+<td class="alt">/home/debian/tmp/tmp/log</td></tr><tr><td>Parsed lines:</td>
+<td>22842</td></tr><tr><td class="alt">Skipped lines:</td>
+<td class="alt">0</td></tr><tr><td>Parsed requests:</td>
+<td>22842</td></tr><tr><td class="alt">Skipped requests:</td>
+<td class="alt">0</td></tr></table>
+<table id="mytable" cellspacing="0"><tr><td class="alt">First request:</td>
+<td class="alt">2014-01-10 02:45:02</td></tr><tr><td>Last request:</td>
+<td>2014-01-29 20:48:08</td></tr><tr><td class="alt">Total time analyzed:</td>
+<td class="alt">20 days</td></tr></table><h2>Request distribution per hour</h2>
+<table id="mytable" cellspacing="0"><tr><td class="alt">  0:00</td>
+<td class="alt">94 hits/day</td>
+<td class="alt"><div class='color_bar' style="width:16px;"/></td></tr><tr><td>  1:00</td>
+<td>55 hits/day</td>
+<td><div class='color_bar' style="width:9px;"/></td></tr><tr><td class="alt">  2:00</td>
+<td class="alt">38 hits/day</td>
+<td class="alt"><div class='color_bar' style="width:6px;"/></td></tr><tr><td>  3:00</td>
+<td>24 hits/day</td>
+<td><div class='color_bar' style="width:4px;"/></td></tr><tr><td class="alt">  4:00</td>
+<td class="alt">18 hits/day</td>
+<td class="alt"><div class='color_bar' style="width:2px;"/></td></tr><tr><td>  5:00</td>
+<td>16 hits/day</td>
+<td><div class='color_bar' style="width:2px;"/></td></tr><tr><td class="alt">  6:00</td>
+<td class="alt">11 hits/day</td>
+<td class="alt"><div class='color_bar' style="width:1px;"/></td></tr><tr><td>  7:00</td>
+<td>20 hits/day</td>
+<td><div class='color_bar' style="width:3px;"/></td></tr><tr><td class="alt">  8:00</td>
+<td class="alt">21 hits/day</td>
+<td class="alt"><div class='color_bar' style="width:3px;"/></td></tr><tr><td>  9:00</td>
+<td>24 hits/day</td>
+<td><div class='color_bar' style="width:4px;"/></td></tr><tr><td class="alt"> 10:00</td>
+<td class="alt">31 hits/day</td>
+<td class="alt"><div class='color_bar' style="width:5px;"/></td></tr><tr><td> 11:00</td>
+<td>40 hits/day</td>
+<td><div class='color_bar' style="width:6px;"/></td></tr><tr><td class="alt"> 12:00</td>
+<td class="alt">46 hits/day</td>
+<td class="alt"><div class='color_bar' style="width:7px;"/></td></tr><tr><td> 13:00</td>
+<td>37 hits/day</td>
+<td><div class='color_bar' style="width:6px;"/></td></tr><tr><td class="alt"> 14:00</td>
+<td class="alt">55 hits/day</td>
+<td class="alt"><div class='color_bar' style="width:9px;"/></td></tr><tr><td> 15:00</td>
+<td>36 hits/day</td>
+<td><div class='color_bar' style="width:6px;"/></td></tr><tr><td class="alt"> 16:00</td>
+<td class="alt">46 hits/day</td>
+<td class="alt"><div class='color_bar' style="width:7px;"/></td></tr><tr><td> 17:00</td>
+<td>96 hits/day</td>
+<td><div class='color_bar' style="width:16px;"/></td></tr><tr><td class="alt"> 18:00</td>
+<td class="alt">68 hits/day</td>
+<td class="alt"><div class='color_bar' style="width:11px;"/></td></tr><tr><td> 19:00</td>
+<td>83 hits/day</td>
+<td><div class='color_bar' style="width:14px;"/></td></tr><tr><td class="alt"> 20:00</td>
+<td class="alt">117 hits/day</td>
+<td class="alt"><div class='color_bar' style="width:20px;"/></td></tr><tr><td> 21:00</td>
+<td>44 hits/day</td>
+<td><div class='color_bar' style="width:7px;"/></td></tr><tr><td class="alt"> 22:00</td>
+<td class="alt">65 hits/day</td>
+<td class="alt"><div class='color_bar' style="width:11px;"/></td></tr><tr><td> 23:00</td>
+<td>84 hits/day</td>
+<td><div class='color_bar' style="width:14px;"/></td></tr></table><h2>HTTP methods</h2>
+<table id="mytable" cellspacing="0"><tr><td class="alt">OPTIONS</td>
+<td class="alt">17413 hits</td>
+<td class="alt">76.2%</td>
+<td class="alt"><div class='color_bar' style="width:152px;"/></td></tr><tr><td>GET</td>
+<td>5330 hits</td>
+<td>23.3%</td>
+<td><div class='color_bar' style="width:46px;"/></td></tr><tr><td class="alt">HEAD</td>
+<td class="alt">60 hits</td>
+<td class="alt">0.3%</td>
+<td class="alt"><div class='color_bar' style="width:0px;"/></td></tr><tr><td>POST</td>
+<td>36 hits</td>
+<td>0.2%</td>
+<td><div class='color_bar' style="width:0px;"/></td></tr><tr><td class="alt">CONNECT</td>
+<td class="alt">3 hits</td>
+<td class="alt">0.0%</td>
+<td class="alt"><div class='color_bar' style="width:0px;"/></td></tr></table><h2>HTTP statuses</h2>
+<table id="mytable" cellspacing="0"><tr><td class="alt">200</td>
+<td class="alt">21008 hits</td>
+<td class="alt">92.0%</td>
+<td class="alt"><div class='color_bar' style="width:183px;"/></td></tr><tr><td>404</td>
+<td>1170 hits</td>
+<td>5.1%</td>
+<td><div class='color_bar' style="width:10px;"/></td></tr><tr><td class="alt">304</td>
+<td class="alt">653 hits</td>
+<td class="alt">2.9%</td>
+<td class="alt"><div class='color_bar' style="width:5px;"/></td></tr><tr><td>405</td>
+<td>3 hits</td>
+<td>0.0%</td>
+<td><div class='color_bar' style="width:0px;"/></td></tr><tr><td class="alt">401</td>
+<td class="alt">3 hits</td>
+<td class="alt">0.0%</td>
+<td class="alt"><div class='color_bar' style="width:0px;"/></td></tr><tr><td>206</td>
+<td>2 hits</td>
+<td>0.0%</td>
+<td><div class='color_bar' style="width:0px;"/></td></tr><tr><td class="alt">400</td>
+<td class="alt">2 hits</td>
+<td class="alt">0.0%</td>
+<td class="alt"><div class='color_bar' style="width:0px;"/></td></tr><tr><td>301</td>
+<td>1 hits</td>
+<td>0.0%</td>
+<td><div class='color_bar' style="width:0px;"/></td></tr></table><h2>Most popular URIs</h2>
+<table id="mytable" cellspacing="0"><tr><td class="alt">*</td>
+<td class="alt">17413 hits</td>
+<td class="alt">76.2%</td>
+<td class="alt"><div class='color_bar' style="width:152px;"/></td></tr><tr><td>/</td>
+<td>718 hits</td>
+<td>3.1%</td>
+<td><div class='color_bar' style="width:6px;"/></td></tr><tr><td class="alt">/robots.txt</td>
+<td class="alt">271 hits</td>
+<td class="alt">1.2%</td>
+<td class="alt"><div class='color_bar' style="width:2px;"/></td></tr><tr><td>/favicon.ico</td>
+<td>65 hits</td>
+<td>0.3%</td>
+<td><div class='color_bar' style="width:0px;"/></td></tr><tr><td class="alt">/img/topimage/syuugou.jpg</td>
+<td class="alt">54 hits</td>
+<td class="alt">0.2%</td>
+<td class="alt"><div class='color_bar' style="width:0px;"/></td></tr><tr><td>/js/jquery.flexslider.js</td>
+<td>49 hits</td>
+<td>0.2%</td>
+<td><div class='color_bar' style="width:0px;"/></td></tr><tr><td class="alt">/img/arrow_to_top.png</td>
+<td class="alt">48 hits</td>
+<td class="alt">0.2%</td>
+<td class="alt"><div class='color_bar' style="width:0px;"/></td></tr><tr><td>/img/topimage/saitoudaihyou.jpg</td>
+<td>47 hits</td>
+<td>0.2%</td>
+<td><div class='color_bar' style="width:0px;"/></td></tr><tr><td class="alt">/js/scroll_top.js</td>
+<td class="alt">47 hits</td>
+<td class="alt">0.2%</td>
+<td class="alt"><div class='color_bar' style="width:0px;"/></td></tr><tr><td>/img/search.png</td>
+<td>47 hits</td>
+<td>0.2%</td>
+<td><div class='color_bar' style="width:0px;"/></td></tr><tr><td class="alt">/js/modernizr.js</td>
+<td class="alt">47 hits</td>
+<td class="alt">0.2%</td>
+<td class="alt"><div class='color_bar' style="width:0px;"/></td></tr><tr><td>/css/lightbox.css</td>
+<td>47 hits</td>
+<td>0.2%</td>
+<td><div class='color_bar' style="width:0px;"/></td></tr><tr><td class="alt">/css/flexslider.css</td>
+<td class="alt">47 hits</td>
+<td class="alt">0.2%</td>
+<td class="alt"><div class='color_bar' style="width:0px;"/></td></tr><tr><td>/css/reset.css</td>
+<td>47 hits</td>
+<td>0.2%</td>
+<td><div class='color_bar' style="width:0px;"/></td></tr><tr><td class="alt">/img/information.png</td>
+<td class="alt">46 hits</td>
+<td class="alt">0.2%</td>
+<td class="alt"><div class='color_bar' style="width:0px;"/></td></tr><tr><td>/img/life.png</td>
+<td>46 hits</td>
+<td>0.2%</td>
+<td><div class='color_bar' style="width:0px;"/></td></tr><tr><td class="alt">/img/logo.png</td>
+<td class="alt">46 hits</td>
+<td class="alt">0.2%</td>
+<td class="alt"><div class='color_bar' style="width:0px;"/></td></tr><tr><td>/img/arrow.png</td>
+<td>46 hits</td>
+<td>0.2%</td>
+<td><div class='color_bar' style="width:0px;"/></td></tr><tr><td class="alt">/img/bio_midashi.png</td>
+<td class="alt">46 hits</td>
+<td class="alt">0.2%</td>
+<td class="alt"><div class='color_bar' style="width:0px;"/></td></tr><tr><td>/member.php</td>
+<td>46 hits</td>
+<td>0.2%</td>
+<td><div class='color_bar' style="width:0px;"/></td></tr></table><h2>User agents</h2>
+<table id="mytable" cellspacing="0"><tr><td class="alt">Apache/2.2.22 (Ubuntu) (internal dummy connection)</td>
+<td class="alt">17413 hits</td>
+<td class="alt">76.2%</td>
+<td class="alt"><div class='color_bar' style="width:152px;"/></td></tr><tr><td>Mozilla/5.0 (iPhone; CPU iPhone OS 7_0_4 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Version/7.0 Mobile/11B554a Safari/9537.53</td>
+<td>827 hits</td>
+<td>3.6%</td>
+<td><div class='color_bar' style="width:7px;"/></td></tr><tr><td class="alt">Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:26.0) Gecko/20100101 Firefox/26.0</td>
+<td class="alt">579 hits</td>
+<td class="alt">2.5%</td>
+<td class="alt"><div class='color_bar' style="width:5px;"/></td></tr><tr><td>Mozilla/5.0 (X11; Linux i686; rv:17.0) Gecko/20131030 Firefox/17.0 Iceweasel/17.0.10</td>
+<td>419 hits</td>
+<td>1.8%</td>
+<td><div class='color_bar' style="width:3px;"/></td></tr><tr><td class="alt">Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:26.0) Gecko/20100101 Firefox/26.0</td>
+<td class="alt">290 hits</td>
+<td class="alt">1.3%</td>
+<td class="alt"><div class='color_bar' style="width:2px;"/></td></tr><tr><td>Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)</td>
+<td>288 hits</td>
+<td>1.3%</td>
+<td><div class='color_bar' style="width:2px;"/></td></tr><tr><td class="alt">Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36</td>
+<td class="alt">230 hits</td>
+<td class="alt">1.0%</td>
+<td class="alt"><div class='color_bar' style="width:2px;"/></td></tr><tr><td>Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)</td>
+<td>224 hits</td>
+<td>1.0%</td>
+<td><div class='color_bar' style="width:1px;"/></td></tr><tr><td class="alt">Mozilla/5.0 (iPad; CPU OS 7_0_4 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Version/7.0 Mobile/11B554a Safari/9537.53</td>
+<td class="alt">134 hits</td>
+<td class="alt">0.6%</td>
+<td class="alt"><div class='color_bar' style="width:1px;"/></td></tr><tr><td>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_3) AppleWebKit/536.29.13 (KHTML, like Gecko) Version/6.0.4 Safari/536.29.13</td>
+<td>130 hits</td>
+<td>0.6%</td>
+<td><div class='color_bar' style="width:1px;"/></td></tr><tr><td class="alt">Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.73.11 (KHTML, like Gecko) Version/7.0.1 Safari/537.73.11</td>
+<td class="alt">110 hits</td>
+<td class="alt">0.5%</td>
+<td class="alt"><div class='color_bar' style="width:0px;"/></td></tr><tr><td>Mozilla/5.0 (Linux; U; Android 4.2.2; ja-jp; SH-06E Build/S9190) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30</td>
+<td>106 hits</td>
+<td>0.5%</td>
+<td><div class='color_bar' style="width:0px;"/></td></tr><tr><td class="alt">msnbot-media/1.1 (+http://search.msn.com/msnbot.htm)</td>
+<td class="alt">104 hits</td>
+<td class="alt">0.5%</td>
+<td class="alt"><div class='color_bar' style="width:0px;"/></td></tr><tr><td>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36</td>
+<td>99 hits</td>
+<td>0.4%</td>
+<td><div class='color_bar' style="width:0px;"/></td></tr><tr><td class="alt">Mozilla/5.0 (Windows NT 6.1; WOW64; rv:26.0) Gecko/20100101 Firefox/26.0</td>
+<td class="alt">99 hits</td>
+<td class="alt">0.4%</td>
+<td class="alt"><div class='color_bar' style="width:0px;"/></td></tr><tr><td>Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0)</td>
+<td>98 hits</td>
+<td>0.4%</td>
+<td><div class='color_bar' style="width:0px;"/></td></tr><tr><td class="alt">Mozilla/5.0 (iPhone; CPU iPhone OS 7_0_4 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) GSA/3.2.0.25255 Mobile/11B554a Safari/8536.25</td>
+<td class="alt">97 hits</td>
+<td class="alt">0.4%</td>
+<td class="alt"><div class='color_bar' style="width:0px;"/></td></tr><tr><td>Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)</td>
+<td>96 hits</td>
+<td>0.4%</td>
+<td><div class='color_bar' style="width:0px;"/></td></tr><tr><td class="alt">-</td>
+<td class="alt">92 hits</td>
+<td class="alt">0.4%</td>
+<td class="alt"><div class='color_bar' style="width:0px;"/></td></tr><tr><td>Mozilla/5.0 (iPhone; CPU iPhone OS 7_0_2 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Version/7.0 Mobile/11A501 Safari/9537.53</td>
+<td>89 hits</td>
+<td>0.4%</td>
+<td><div class='color_bar' style="width:0px;"/></td></tr></table><h2>Referers</h2>
+<table id="mytable" cellspacing="0"><tr><td class="alt">http://shibuhouse.com/</td>
+<td class="alt">1875 hits</td>
+<td class="alt">62.2%</td>
+<td class="alt"><div class='color_bar' style="width:124px;"/></td></tr><tr><td>http://shibuhouse.com/member.php</td>
+<td>746 hits</td>
+<td>24.7%</td>
+<td><div class='color_bar' style="width:49px;"/></td></tr><tr><td class="alt">http://shibuhouse.com/css/global.css</td>
+<td class="alt">105 hits</td>
+<td class="alt">3.5%</td>
+<td class="alt"><div class='color_bar' style="width:6px;"/></td></tr><tr><td>http://shibuhouse.com/about.php</td>
+<td>76 hits</td>
+<td>2.5%</td>
+<td><div class='color_bar' style="width:5px;"/></td></tr><tr><td class="alt">http://shibuhouse.com/bio.php</td>
+<td class="alt">61 hits</td>
+<td class="alt">2.0%</td>
+<td class="alt"><div class='color_bar' style="width:4px;"/></td></tr><tr><td>http://shibuhouse.com/css/lightbox.css</td>
+<td>24 hits</td>
+<td>0.8%</td>
+<td><div class='color_bar' style="width:1px;"/></td></tr><tr><td class="alt">https://www.google.co.jp/</td>
+<td class="alt">22 hits</td>
+<td class="alt">0.7%</td>
+<td class="alt"><div class='color_bar' style="width:1px;"/></td></tr><tr><td>http://t.co/wvxIZD7k8W</td>
+<td>15 hits</td>
+<td>0.5%</td>
+<td><div class='color_bar' style="width:0px;"/></td></tr><tr><td class="alt">http://metropolis.co.jp/listings/other/</td>
+<td class="alt">8 hits</td>
+<td class="alt">0.3%</td>
+<td class="alt"><div class='color_bar' style="width:0px;"/></td></tr><tr><td>http://www.google.co.jp/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=0CCsQFjAA&url=http%3A%2F%2Fshibuhouse.com%2F&ei=z-DoUouRHIjlkAWuzoGIDw&usg=AFQjCNFfsthvRKmMxUHfKqp7dn9M1oL5vw&sig2=Fxb2FOz7NCTiJ_o1o23MyQ</td>
+<td>5 hits</td>
+<td>0.2%</td>
+<td><div class='color_bar' style="width:0px;"/></td></tr><tr><td class="alt">http://www.shibuhouse.com/</td>
+<td class="alt">4 hits</td>
+<td class="alt">0.1%</td>
+<td class="alt"><div class='color_bar' style="width:0px;"/></td></tr><tr><td>http://www.shibuhouse.com/robots.txt</td>
+<td>4 hits</td>
+<td>0.1%</td>
+<td><div class='color_bar' style="width:0px;"/></td></tr><tr><td class="alt">http://beamfall.info/info/pragosifegimono</td>
+<td class="alt">3 hits</td>
+<td class="alt">0.1%</td>
+<td class="alt"><div class='color_bar' style="width:0px;"/></td></tr><tr><td>http://news020.blog13.fc2.com/blog-entry-1870.html</td>
+<td>3 hits</td>
+<td>0.1%</td>
+<td><div class='color_bar' style="width:0px;"/></td></tr><tr><td class="alt">http://yukiishida.com/friend/</td>
+<td class="alt">3 hits</td>
+<td class="alt">0.1%</td>
+<td class="alt"><div class='color_bar' style="width:0px;"/></td></tr><tr><td>http://www.google.com/url?sa=D&q=http://www.shibuhouse.com/&usg=AFQjCNGihgj5Va1T2YGwi91oW5cXZLuxSg</td>
+<td>3 hits</td>
+<td>0.1%</td>
+<td><div class='color_bar' style="width:0px;"/></td></tr><tr><td class="alt">http://kentacobayashi.com/</td>
+<td class="alt">3 hits</td>
+<td class="alt">0.1%</td>
+<td class="alt"><div class='color_bar' style="width:0px;"/></td></tr><tr><td>http://www.google.co.jp/search?biw=320&bih=416&tbm=isch&sa=1&ei=FcPoUq29NsrKkgW-94GIBA&q=%E6%B8%8B%E5%AE%B6+%E3%81%A1%E3%82%83%E3%82%93%E3%82%82%E3%82%82&oq=%E6%B8%8B%E5%AE%B6+%E3%81%A1%E3%82%83%E3%82%93%E3%82%82%E3%82%82&gs_l=mobile-gws-serp.3..0j0i24.139534.141474.0.141974.8.4.0.4.4.1.417.1107.2-1j1j1.3.0....0...1c.1.32.mobile-gws-serp..2.6.851.z4Y6IjI_3LU#biv=i%7C18%3Bd%7Ct58ttTG6GT2zrM%3A</td>
+<td>2 hits</td>
+<td>0.1%</td>
+<td><div class='color_bar' style="width:0px;"/></td></tr><tr><td class="alt">http://www.johnnyschannel.com/d/141/43767.html</td>
+<td class="alt">2 hits</td>
+<td class="alt">0.1%</td>
+<td class="alt"><div class='color_bar' style="width:0px;"/></td></tr><tr><td>http://matome.naver.jp/m/odai/2135068522334900501</td>
+<td>2 hits</td>
+<td>0.1%</td>
+<td><div class='color_bar' style="width:0px;"/></td></tr></table><br/>
+<table id="mytable" cellspacing="0"><tr><th>Traffic - by sum</th>
+<th>Hits</th>
+<th>Sum</th>
+<th>Mean</th>
+<th>StdDev</th>
+<th>Min</th>
+<th>Max</th>
+<th>95 %tile</th></tr><tr><td class="alt">/img/topimage/barsaitouatsushi.jpg</td>
+<td class="alt">45</td>
+<td class="alt">28 MB</td>
+<td class="alt">632 kB</td>
+<td class="alt">274 kB</td>
+<td class="alt">189 B</td>
+<td class="alt">749 kB</td>
+<td class="alt">185 B-758 kB</td></tr><tr><td>/img/topimage/saitoudaihyou.jpg</td>
+<td>47</td>
+<td>16 MB</td>
+<td>359 kB</td>
+<td>155 kB</td>
+<td>189 B</td>
+<td>427 kB</td>
+<td>185 B-436 kB</td></tr><tr><td class="alt">/img/topimage/syuugou.jpg</td>
+<td class="alt">54</td>
+<td class="alt">10 MB</td>
+<td class="alt">190 kB</td>
+<td class="alt">80 kB</td>
+<td class="alt">189 B</td>
+<td class="alt">224 kB</td>
+<td class="alt">185 B-224 kB</td></tr><tr><td>*</td>
+<td>17413</td>
+<td>2194 kB</td>
+<td>126 B</td>
+<td>0 B</td>
+<td>126 B</td>
+<td>126 B</td>
+<td>125 B-133 B</td></tr><tr><td class="alt">/img/member_sum/momo.jpg</td>
+<td class="alt">26</td>
+<td class="alt">1979 kB</td>
+<td class="alt">76 kB</td>
+<td class="alt">22 kB</td>
+<td class="alt">189 B</td>
+<td class="alt">82 kB</td>
+<td class="alt">185 B-83 kB</td></tr><tr><td>/img/member_sum/gesuyama.jpg</td>
+<td>19</td>
+<td>1349 kB</td>
+<td>71 kB</td>
+<td>24 kB</td>
+<td>190 B</td>
+<td>79 kB</td>
+<td>185 B-80 kB</td></tr><tr><td class="alt">/img/member_sum/gosupi.jpg</td>
+<td class="alt">19</td>
+<td class="alt">1308 kB</td>
+<td class="alt">68 kB</td>
+<td class="alt">24 kB</td>
+<td class="alt">189 B</td>
+<td class="alt">76 kB</td>
+<td class="alt">185 B-78 kB</td></tr><tr><td>/img/member_sum/dokukinoko.jpg</td>
+<td>19</td>
+<td>1296 kB</td>
+<td>68 kB</td>
+<td>23 kB</td>
+<td>189 B</td>
+<td>76 kB</td>
+<td>185 B-76 kB</td></tr><tr><td class="alt">/img/member_sum/hayasaka_masumi.jpg</td>
+<td class="alt">19</td>
+<td class="alt">1295 kB</td>
+<td class="alt">68 kB</td>
+<td class="alt">23 kB</td>
+<td class="alt">189 B</td>
+<td class="alt">76 kB</td>
+<td class="alt">185 B-76 kB</td></tr><tr><td>/img/member_sum/kuroda.jpg</td>
+<td>20</td>
+<td>1153 kB</td>
+<td>57 kB</td>
+<td>19 kB</td>
+<td>188 B</td>
+<td>64 kB</td>
+<td>185 B-64 kB</td></tr><tr><td class="alt">/img/member_sum/maharu.jpg</td>
+<td class="alt">19</td>
+<td class="alt">1132 kB</td>
+<td class="alt">59 kB</td>
+<td class="alt">20 kB</td>
+<td class="alt">189 B</td>
+<td class="alt">66 kB</td>
+<td class="alt">185 B-66 kB</td></tr><tr><td>/img/member_sum/kikawasei.jpg</td>
+<td>19</td>
+<td>1114 kB</td>
+<td>58 kB</td>
+<td>20 kB</td>
+<td>188 B</td>
+<td>65 kB</td>
+<td>185 B-66 kB</td></tr><tr><td class="alt">/img/member_sum/Kenta_kobayashi.jpg</td>
+<td class="alt">20</td>
+<td class="alt">1106 kB</td>
+<td class="alt">55 kB</td>
+<td class="alt">18 kB</td>
+<td class="alt">188 B</td>
+<td class="alt">61 kB</td>
+<td class="alt">185 B-63 kB</td></tr><tr><td>/img/member_sum/Toshikuni_yamaguchi.jpg</td>
+<td>19</td>
+<td>1105 kB</td>
+<td>58 kB</td>
+<td>20 kB</td>
+<td>188 B</td>
+<td>65 kB</td>
+<td>185 B-66 kB</td></tr><tr><td class="alt">/img/member_sum/zaqi.jpg</td>
+<td class="alt">19</td>
+<td class="alt">1095 kB</td>
+<td class="alt">57 kB</td>
+<td class="alt">20 kB</td>
+<td class="alt">189 B</td>
+<td class="alt">64 kB</td>
+<td class="alt">185 B-64 kB</td></tr><tr><td>/img/member_sum/IMG01799.jpg</td>
+<td>19</td>
+<td>1037 kB</td>
+<td>54 kB</td>
+<td>19 kB</td>
+<td>188 B</td>
+<td>61 kB</td>
+<td>185 B-61 kB</td></tr><tr><td class="alt">/img/member_sum/yuki_ishida.jpg</td>
+<td class="alt">19</td>
+<td class="alt">1030 kB</td>
+<td class="alt">54 kB</td>
+<td class="alt">19 kB</td>
+<td class="alt">188 B</td>
+<td class="alt">60 kB</td>
+<td class="alt">185 B-61 kB</td></tr><tr><td>/img/member_sum/yavao.jpg</td>
+<td>19</td>
+<td>1017 kB</td>
+<td>53 kB</td>
+<td>18 kB</td>
+<td>188 B</td>
+<td>59 kB</td>
+<td>185 B-61 kB</td></tr><tr><td class="alt">/img/member_sum/Keita_saito.jpg</td>
+<td class="alt">20</td>
+<td class="alt">1014 kB</td>
+<td class="alt">50 kB</td>
+<td class="alt">17 kB</td>
+<td class="alt">188 B</td>
+<td class="alt">56 kB</td>
+<td class="alt">185 B-56 kB</td></tr><tr><td>/img/member_sum/Sanae_sugai.jpg</td>
+<td>19</td>
+<td>958 kB</td>
+<td>50 kB</td>
+<td>17 kB</td>
+<td>188 B</td>
+<td>56 kB</td>
+<td>185 B-56 kB</td></tr></table><br/>
+<table id="mytable" cellspacing="0"><tr><th>Traffic - by mean</th>
+<th>Hits</th>
+<th>Sum</th>
+<th>Mean</th>
+<th>StdDev</th>
+<th>Min</th>
+<th>Max</th>
+<th>95 %tile</th></tr><tr><td class="alt">/awstats/awstats.pl</td>
+<td class="alt">1</td>
+<td class="alt">657 kB</td>
+<td class="alt">657 kB</td>
+<td class="alt">0 B</td>
+<td class="alt">657 kB</td>
+<td class="alt">657 kB</td>
+<td class="alt">642 kB-679 kB</td></tr><tr><td>/img/topimage/barsaitouatsushi.jpg</td>
+<td>45</td>
+<td>28 MB</td>
+<td>632 kB</td>
+<td>274 kB</td>
+<td>189 B</td>
+<td>749 kB</td>
+<td>185 B-758 kB</td></tr><tr><td class="alt">/img/member_sum/ayafuji.gif</td>
+<td class="alt">2</td>
+<td class="alt">765 kB</td>
+<td class="alt">382 kB</td>
+<td class="alt">0 B</td>
+<td class="alt">382 kB</td>
+<td class="alt">382 kB</td>
+<td class="alt">380 kB-401 kB</td></tr><tr><td>/img/topimage/saitoudaihyou.jpg</td>
+<td>47</td>
+<td>16 MB</td>
+<td>359 kB</td>
+<td>155 kB</td>
+<td>189 B</td>
+<td>427 kB</td>
+<td>185 B-436 kB</td></tr><tr><td class="alt">/img/exhibition_full/usn/usn_002.jpg</td>
+<td class="alt">1</td>
+<td class="alt">349 kB</td>
+<td class="alt">349 kB</td>
+<td class="alt">0 B</td>
+<td class="alt">349 kB</td>
+<td class="alt">349 kB</td>
+<td class="alt">340 kB-359 kB</td></tr><tr><td>/img/topimage/syuugou.jpg</td>
+<td>54</td>
+<td>10 MB</td>
+<td>190 kB</td>
+<td>80 kB</td>
+<td>189 B</td>
+<td>224 kB</td>
+<td>185 B-224 kB</td></tr><tr><td class="alt">/img/member_full/serina.jpg</td>
+<td class="alt">8</td>
+<td class="alt">691 kB</td>
+<td class="alt">86 kB</td>
+<td class="alt">13 B</td>
+<td class="alt">86 kB</td>
+<td class="alt">86 kB</td>
+<td class="alt">85 kB-90 kB</td></tr><tr><td>/img/member_sum/momo.jpg</td>
+<td>26</td>
+<td>1979 kB</td>
+<td>76 kB</td>
+<td>22 kB</td>
+<td>189 B</td>
+<td>82 kB</td>
+<td>185 B-83 kB</td></tr><tr><td class="alt">/img/member_sum/gesuyama.jpg</td>
+<td class="alt">19</td>
+<td class="alt">1349 kB</td>
+<td class="alt">71 kB</td>
+<td class="alt">24 kB</td>
+<td class="alt">190 B</td>
+<td class="alt">79 kB</td>
+<td class="alt">185 B-80 kB</td></tr><tr><td>/img/member_sum/gosupi.jpg</td>
+<td>19</td>
+<td>1308 kB</td>
+<td>68 kB</td>
+<td>24 kB</td>
+<td>189 B</td>
+<td>76 kB</td>
+<td>185 B-78 kB</td></tr><tr><td class="alt">/img/member_sum/dokukinoko.jpg</td>
+<td class="alt">19</td>
+<td class="alt">1296 kB</td>
+<td class="alt">68 kB</td>
+<td class="alt">23 kB</td>
+<td class="alt">189 B</td>
+<td class="alt">76 kB</td>
+<td class="alt">185 B-76 kB</td></tr><tr><td>/img/member_sum/hayasaka_masumi.jpg</td>
+<td>19</td>
+<td>1295 kB</td>
+<td>68 kB</td>
+<td>23 kB</td>
+<td>189 B</td>
+<td>76 kB</td>
+<td>185 B-76 kB</td></tr><tr><td class="alt">/img/member_sum/maharu.jpg</td>
+<td class="alt">19</td>
+<td class="alt">1132 kB</td>
+<td class="alt">59 kB</td>
+<td class="alt">20 kB</td>
+<td class="alt">189 B</td>
+<td class="alt">66 kB</td>
+<td class="alt">185 B-66 kB</td></tr><tr><td>/img/member_sum/kikawasei.jpg</td>
+<td>19</td>
+<td>1114 kB</td>
+<td>58 kB</td>
+<td>20 kB</td>
+<td>188 B</td>
+<td>65 kB</td>
+<td>185 B-66 kB</td></tr><tr><td class="alt">/img/member_sum/Toshikuni_yamaguchi.jpg</td>
+<td class="alt">19</td>
+<td class="alt">1105 kB</td>
+<td class="alt">58 kB</td>
+<td class="alt">20 kB</td>
+<td class="alt">188 B</td>
+<td class="alt">65 kB</td>
+<td class="alt">185 B-66 kB</td></tr><tr><td>/img/member_sum/kuroda.jpg</td>
+<td>20</td>
+<td>1153 kB</td>
+<td>57 kB</td>
+<td>19 kB</td>
+<td>188 B</td>
+<td>64 kB</td>
+<td>185 B-64 kB</td></tr><tr><td class="alt">/img/member_sum/zaqi.jpg</td>
+<td class="alt">19</td>
+<td class="alt">1095 kB</td>
+<td class="alt">57 kB</td>
+<td class="alt">20 kB</td>
+<td class="alt">189 B</td>
+<td class="alt">64 kB</td>
+<td class="alt">185 B-64 kB</td></tr><tr><td>/img/member_sum/Kenta_kobayashi.jpg</td>
+<td>20</td>
+<td>1106 kB</td>
+<td>55 kB</td>
+<td>18 kB</td>
+<td>188 B</td>
+<td>61 kB</td>
+<td>185 B-63 kB</td></tr><tr><td class="alt">/img/member_sum/IMG01799.jpg</td>
+<td class="alt">19</td>
+<td class="alt">1037 kB</td>
+<td class="alt">54 kB</td>
+<td class="alt">19 kB</td>
+<td class="alt">188 B</td>
+<td class="alt">61 kB</td>
+<td class="alt">185 B-61 kB</td></tr><tr><td>/img/member_sum/yuki_ishida.jpg</td>
+<td>19</td>
+<td>1030 kB</td>
+<td>54 kB</td>
+<td>19 kB</td>
+<td>188 B</td>
+<td>60 kB</td>
+<td>185 B-61 kB</td></tr></table><br/>
+<strong>Traffic</strong> - total: <strong>103 MB</strong><br/>
+<hr /><h2>Thanks for using request-log-analyzer</h2><p>For more information please visit the <a href="http://github.com/wvanbergen/request-log-analyzer">Request-log-analyzer website</a></p><p>If you need an expert who can analyze your application, mail to <a href="mailto:contact@railsdoctors.com">contact@railsdoctors.com</a> or visit us at <a href="http://railsdoctors.com">http://railsdoctors.com</a>.</p></body></html>
