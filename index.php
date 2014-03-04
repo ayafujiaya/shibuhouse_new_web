@@ -28,8 +28,7 @@
           <ul class="slides">
             <li><a target="_blank" href="http://shibuhouse-image-fes.tumblr.com/"><img src="./img/topimage/eigasai_last.jpg"></a></li>
             <li><a target="_blank" href="https://www.facebook.com/events/339720959504482/"><img src="./img/topimage/home_party_icon.jpg"></a></li>
-            <li><a target="_blank" href="https://www.facebook.com/events/203896739818170/?ref_dashboard_filter=upcoming"><img src="./img/topimage/shibuhouseart.jpg"></a></li>
-            <li><a target="_blank" href="https://www.facebook.com/events/737247209621552/?ref=2&ref_dashboard_filter=upcoming"><img src="./img/topimage/chihou.jpg"></a></li>
+            
             
            </ul>
         </div>
