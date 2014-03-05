@@ -1,0 +1,12 @@
+#container {
+    width:90%;
+    margin:20px auto;
+    /*background-color:#DDDDDD;*/
+    border-radius: 10px;        /* CSS3Áð°Æ */  
+    -webkit-border-radius: 10px;    /* Safari,Google ChromeÍÑ */  
+    -moz-border-radius: 10px;   /* FirefoxÍÑ */  
+}
+
+body {
+   /* background-image:url(../img/background.png);*/
+}
