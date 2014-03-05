@@ -22,7 +22,7 @@
     <div class="col-lg-12  gridsample">
         <img src="./img/komekome.jpg" width="100%">
     </div>
-<div class="col-lg-12" style="color:#DDDDDD;">
+<div class="col-lg-12" style="color:#FFFFFF;">
 hello
 </div>
 
@@ -31,7 +31,7 @@ hello
 
 	<h1>米米Clubとは</h1>
 	<img src="./img/kome_party.png"></br>
-	「おなかがすいてしにそうだ、だけどパーティをしていたい。」
+	「おなかがすいてしにそうだ、だけどパーティをしていたい。」</br>
 	米米Clubは、食料を入場と入場券を交換できるイベントです。渋家のメンバーがお腹いっぱいになるために、精一杯DJやVJ, LJをします。そのために、来ていただく皆さんにはお気持ち程度の食料を持ってきていただきたいのです。
 	<h1>Facebook Page</h1>
 	<a href="https://www.facebook.com/events/1394900507446022/1395210474081692/"><img src="./img/fb_kome.png"></a>
