@@ -13,8 +13,10 @@
         <script src="../../assets/js/html5shiv.js"></script>
         <script src="../../assets/js/respond.min.js"></script>
     <![endif]-->
+    
     </head>
     <body>
+      <canvas id="canvas"></canvas>
       <div id="container">
 <div class="row">
     <div class="col-lg-12  gridsample">
@@ -51,9 +53,71 @@ hello
 
 
 </div><!-- #container -->
-
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="//code.jquery.com/jquery.js"></script>
+	<script>
+	  var canvas = document.getElementById('canvas');
+function expandCanvas(){
+    var b = document.body;
+    var d = document.documentElement;
+    canvas.width = Math.max(b.clientWidth , b.scrollWidth, d.scrollWidth, d.clientWidth);
+    canvas.height = Math.max(b.clientHeight , b.scrollHeight, d.scrollHeight, d.clientHeight);
+}
+
+expandCanvas();
+	</script>
+
+	<script>
+	  //canvas no code
+	  onload = function() {
+	  draw();
+	  };
+function draw() {
+  /* canvas要素のノードオブジェクト */
+  var canvas = document.getElementById('canvas');
+  /* canvas要素の存在チェックとCanvas未対応ブラウザの対処 */
+  if ( ! canvas || ! canvas.getContext ) {
+    return false;
+  }
+  var ctx = canvas.getContext('2d');
+  
+  var imageLoadDone;  
+  var img = new Image();
+  img.src = "./img/cloud.png";
+img.onload = function(){
+    // 読み込み終了した状態を保存
+    imageLoadDone = true;
+};
+
+    //options
+    var point = {x:0,y:0};//座標
+    var par = {x:2,y:0};//変化量
+    var parax = {x:0.001, y:0.002}
+    var timer;//タイマー
+    var delay = 50;//タイマーを実行する間隔
+    
+    //描画処理を行う関数。loop()関数の中で呼び出す。
+	  
+    //繰り返し描画を行う関数。
+    var loop = function(){
+	ctx.clearRect(0,0,2000, 2000);
+	//ctx.fillStyle = 'rgb(255,255,255)';
+	//ctx.fillRect(0,0,500,500);
+        //pointの数値をparの分だけ増やす
+	par.x = par.x + parax.x;
+	par.y = par.y + parax.y;
+        point.x = point.x + par.x;
+        point.y = point.y + par.y;
+        //描画処理を呼び出す
+	if(imageLoadDone) ctx.drawImage(img, point.x, point.y);
+        //タイマー(一度クリアしてから再設定。)
+        clearTimeout(timer);
+       timer = setTimeout(loop,delay);
+    }
+   loop();
+
+}
+	</script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
     </body>
