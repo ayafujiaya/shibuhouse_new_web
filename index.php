@@ -26,7 +26,7 @@
             <div id="slide">
         <div class="flexslider">
           <ul class="slides">
-            <li><a target="_blank" href="https://www.facebook.com/events/1394900507446022/"><img src="./img/topimage/komekome.jpg"></a></li>
+            <li><a target="_blank" href="http://shibuhouse.com/komekome/"><img src="./img/topimage/komekome.jpg"></a></li>
             <li><a target="_blank" href="http://shibuhouse-image-fes.tumblr.com/"><img src="./img/topimage/eigasai_last.jpg"></a></li>
             <li><a target="_blank" href="https://www.facebook.com/events/339720959504482/"><img src="./img/topimage/home_party_icon.jpg"></a></li>
             
