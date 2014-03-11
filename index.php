@@ -28,7 +28,7 @@
           <ul class="slides">
             <li><a target="_blank" href="http://shibuhouse-image-fes.tumblr.com/"><img src="./img/topimage/eigasai_last.jpg"></a></li>
             <li><img src="./img/topimage/comingsoon.jpg"></li>
-            <li><a target="_blank" href="https://www.facebook.com/events/339720959504482/"><img src="./img/topimage/home_party_icon.jpg"></a></li>
+            <li><img src="./img/topimage/newmenber_2014.jpg"></li>
             
             
            </ul>
