@@ -51,7 +51,7 @@ a {
 	margin: 0 auto;
 	position: relative;
 	min-width: 1240px;
-	padding-top: 100px;
+	/*padding-top: 100px;*/
 }
 
 #ios_info {
