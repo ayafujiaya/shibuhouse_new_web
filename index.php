@@ -34,9 +34,9 @@
            </ul>
         </div>
       </div><!-- #slide -->
-      <!--<div id="text_information">
-        渋家新メンバー！　池田愛恵里さんです -> Official Web <a href="http://ameblo.jp/ikeda-aeri/">池田愛恵里オフィシャルブログ「ようこそ池田農園へ。」 powered by Ameba</a>
-      </div>-->
+      <div id="text_information">
+        渋家は365日24時間オープンしているオルタナティブスペースです。来訪の際はお気軽にお電話を。
+      </div>
       <div id="ios_info">080-3310-4083 shibuhouseinfo@gmail.com</div>
       <div id="hot_topics">
         <div id="hot_topics_pic">
