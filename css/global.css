@@ -40,9 +40,9 @@ a {
 	background-color:rgb(73, 73, 73);
 	z-index:1;
 	width: 100%;
-	padding: 13px 0 30px 0;
+	padding: 13px 0 20px 0;
 	position: fixed;
-	opacity: 0.8;
+	opacity: 0.5;
 	min-width: 1240px;
 }
 
