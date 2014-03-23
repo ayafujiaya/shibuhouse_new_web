@@ -26,7 +26,7 @@
             <div id="slide">
         <div class="flexslider">
           <ul class="slides">
-            
+            <li><img src="./img/topimage/ndg.jpg"></li>
             <li><a href="https://www.facebook.com/events/508556962586192/" target="_blank"><img src="./img/topimage/comingsoon.jpg"></a></li>
             <li><img src="./img/topimage/newmenber_2014.jpg"></li>
             
