@@ -26,8 +26,8 @@
             <div id="slide">
         <div class="flexslider">
           <ul class="slides">
-            <li><a target="_blank" href="http://shibuhouse-image-fes.tumblr.com/"><img src="./img/topimage/eigasai_last.jpg"></a></li>
-            <li><img src="./img/topimage/comingsoon.jpg"></li>
+            
+            <li><a href="https://www.facebook.com/events/508556962586192/" target="_blank"><img src="./img/topimage/comingsoon.jpg"></a></li>
             <li><img src="./img/topimage/newmenber_2014.jpg"></li>
             
             
