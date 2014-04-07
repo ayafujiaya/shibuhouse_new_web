@@ -27,7 +27,7 @@
         <div class="flexslider">
           <ul class="slides">
             <li><a href="https://www.facebook.com/events/508556962586192/" target="_blank"><img src="./img/topimage/comingsoon.jpg"></a></li>
-            <li><a href="https://twitter.com/picture_saikou" target="_blank"><img src="./img/topimage/pic_party.jpg"></a></li>
+            <li><a href="http://to.be/fields/w4j9Vw" target="_blank"><img src="./img/topimage/pic_party.jpg"></a></li>
             
             
             
