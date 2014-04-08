@@ -10,19 +10,19 @@
 </tr>
 <tr>
 <th>2014.02</th>
-<td style="" onclick='");'><div id="">「インターネットヤミ市 in ベルリン」/トランスメディアーレ2014</div></td>
+<td style="cursor: pointer" onclick='");'><div id="">「インターネットヤミ市 in ベルリン」/トランスメディアーレ2014</div></td>
 </tr>
 <tr>
 <th>2013.12</th>
-<td style="" onclick='");'><div id="">「ディスカーシブ・プラットホームとは？」/森美術館</div></td>
+<td style="cursor: pointer" onclick='");'><div id="">「ディスカーシブ・プラットホームとは？」/森美術館</div></td>
 </tr>
 <tr>
 <th>2013.12</th>
-<td style="" onclick='");'><div id="">「現在のアート＜2013＞」/森美術館</div></td>
+<td style="cursor: pointer" onclick='");'><div id="">「現在のアート＜2013＞」/森美術館</div></td>
 </tr>
 <tr>
 <th>2013.12</th>
-<td style="" onclick='");'><div id="">「Multi(Multi)(ple(s))」/The Container</div></td>
+<td style="cursor: pointer" onclick='");'><div id="">「Multi(Multi)(ple(s))」/The Container</div></td>
 </tr>
 
 <tr>
