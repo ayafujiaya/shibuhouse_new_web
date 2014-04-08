@@ -1,9 +1,20 @@
 <table>
 <tr>
+<th>2014.02</th>
+<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/jirenma.php");'><div id="bio_background">『中庭』[中庭編集部]</div></td>
+</tr>
+<tr>
 <th>2013.11</th>
 <td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/jirenma.php");'><div id="bio_background">「ニッポンのジレンマ」[NHK]/「新ＴＯＫＹＯ論」</div></td>
 </tr>
-
+<tr>
+<th>2013.11</th>
+<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/jirenma.php");'><div id="bio_background">『EATER 2014 REBIRTH』[K&Bパブリッシャーズ]</div></td>
+</tr>
+<tr>
+<th>2013.11</th>
+<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/jirenma.php");'><div id="bio_background">「Zigg」/「渋谷の民家「渋家」の6代目代表に齋藤桂太が就任」</div></td>
+</tr>
 <tr>
 <th>2013.10</th>
 <td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/ropponngi_2013.php");'><div id="bio_background">『六本木クロッシング2013展 アウト・オブ・ダウト』[森美術館]</div></td>
