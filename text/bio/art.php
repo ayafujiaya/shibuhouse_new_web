@@ -2,27 +2,27 @@
 
 <tr>
 <th>2014.03</th>
-<div id="">「蔵屋美香と林道郎と金藤みなみ＋増沢大輝が渋家を語る」/渋家</div></td>
+<td style="cursor: pointer" onclick='");'><div id="">「蔵屋美香と林道郎と金藤みなみ＋増沢大輝が渋家を語る」/渋家</div></td>
 </tr>
 <tr>
 <th>2014.02</th>
-<div id="">「第17回 文化庁メディア芸術祭」/国立新美術館</div></td>
+<td style="cursor: pointer" onclick='");'><div id="">「第17回 文化庁メディア芸術祭」/国立新美術館</div></td>
 </tr>
 <tr>
 <th>2014.02</th>
-<td style="" '");'><div id="">「インターネットヤミ市 in ベルリン」/トランスメディアーレ2014</div></td>
+<td style="cursor: pointer" onclick='");'><div id="">「インターネットヤミ市 in ベルリン」/トランスメディアーレ2014</div></td>
 </tr>
 <tr>
 <th>2013.12</th>
-<td style="" '");'><div id="">「ディスカーシブ・プラットホームとは？」/森美術館</div></td>
+<td style="cursor: pointer" onclick='");'><div id="">「ディスカーシブ・プラットホームとは？」/森美術館</div></td>
 </tr>
 <tr>
 <th>2013.12</th>
-<td style="" '");'><div id="">「現在のアート＜2013＞」/森美術館</div></td>
+<td style="cursor: pointer" onclick='");'><div id="">「現在のアート＜2013＞」/森美術館</div></td>
 </tr>
 <tr>
 <th>2013.12</th>
-<td style="" '");'><div id="">「Multi(Multi)(ple(s))」/The Container</div></td>
+<td style="cursor: pointer" onclick='");'><div id="">「Multi(Multi)(ple(s))」/The Container</div></td>
 </tr>
 
 <tr>
