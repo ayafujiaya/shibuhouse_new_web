@@ -1,19 +1,19 @@
 <table>
 <tr>
 <th>2014.02</th>
-<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/vivivi.php");'><div id="bio_background"> 「OL Killer presents "WIFE"vol.5」/WWW</div></td>
+<td style="cursor: pointer" onclick='");'><div id=""> 「OL Killer presents "WIFE"vol.5」/WWW</div></td>
 </tr>
 <tr>
 <th>2013.12</th>
-<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/vivivi.php");'><div id="bio_background"> 「渋家脱出ゲーム」/風林会館</div></td>
+<td style="cursor: pointer" onclick='");'><div id=""> 「渋家脱出ゲーム」/風林会館</div></td>
 </tr>
 <tr>
 <th>2013.12</th>
-<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/vivivi.php");'><div id="bio_background"> 「渋家ゴールデンマキシマムファンタスティックエクストリームホームパーティー」/風林会館</div></td>
+<td style="cursor: pointer" onclick='");'><div id=""> 「渋家ゴールデンマキシマムファンタスティックエクストリームホームパーティー」/風林会館</div></td>
 </tr>
 <tr>
 <th>2013.12</th>
-<td style="cursor: pointer" onclick='dynamic_ex_load("./text/bio_explain/vivivi.php");'><div id="bio_background"> 「山」/WWW</div></td>
+<td style="cursor: pointer" onclick='");'><div id=""> 「山」/WWW</div></td>
 </tr>
 <tr>
 <th>2013.10</th>
